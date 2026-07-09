@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOEIC LISTENING</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,300;0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,300;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&display=swap" rel="stylesheet">
+
+    
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css?v=1.3.8">
+</head>
+<body class="dark-mode">
+    <!-- Canvas for Confetti celebrations -->
+    <canvas id="confettiCanvas" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 10000;"></canvas>
+
+    <!-- Glowing Background Blobs -->
+    <div class="bg-blobs-container" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; overflow: hidden; z-index: -1; pointer-events: none;">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+    
+    <div class="app-layout">
+        
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo" style="display: flex; align-items: center; gap: 0px; flex-grow: 1; overflow: hidden;">
+                    <div style="display: flex; flex-direction: column; overflow: hidden;">
+                        <span style="font-weight: 700; font-size: 0.95rem; color: var(--text-main); line-height: 1.2; letter-spacing: 0.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 4px 0;">TOEIC LISTENING</span>
+                    </div>
+                </div>
+                <button class="toggle-sidebar-btn" id="toggleSidebarBtn" style="flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
+                    <span id="toggleIcon" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px;">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17-5-5 5-5M18 17l-5-5 5-5"/></svg>
+                    </span>
+                </button>
+            </div>
+            
+            <!-- Student Profile -->
+            <div class="sidebar-profile" id="sidebarProfileBox" style="display: none; padding: 12px 20px; border-bottom: 1px solid var(--border); background: rgba(255, 255, 255, 0.01); align-items: center; gap: 0px;">
+                <div class="profile-avatar" id="profileAvatar" style="display: none !important;">H</div>
+                <div style="display: flex; flex-direction: column; overflow: hidden; flex-grow: 1;">
+                    <span style="font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; line-height: 1.2;">Học viên</span>
+                    <span id="sidebarStudentName" style="font-weight: 600; font-size: 0.9rem; color: var(--text-main); text-overflow: ellipsis; overflow: hidden; white-space: nowrap; line-height: 1.3;">Nguyễn Văn A</span>
+                </div>
+                <button id="changeNameBtn" title="Đổi tên học viên" style="background: none; border: none; color: var(--text-muted); cursor: pointer; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; padding: 4px; transition: all 0.2s; flex-shrink: 0;">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="m20.17 5.17-5 5L13 11l.83-2.17 5-5a1 1 0 1 1 1.34 1.34Z"/></svg>
+                </button>
+            </div>
+            
+            <!-- Sidebar Navigation Menu -->
+            <nav class="sidebar-nav">
+                <div class="nav-item active" id="navHomeBtn">
+                    <span class="nav-item-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </span>
+                    <span class="nav-item-text">TRANG CHỦ</span>
+                </div>
+                
+                <!-- Bật/Tắt Đèn (Light/Dark Mode Theme Toggle) -->
+                <div class="nav-item" id="themeToggleBtn">
+                    <span class="nav-item-icon" id="themeIcon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                    </span>
+                    <span class="nav-item-text" id="themeText">TẮT ĐÈN</span>
+                </div>
+                
+                <!-- Route Progress Tracker -->
+                <div class="progress-container" style="padding: 10px 18px 20px 18px; border-bottom: 1px solid var(--border);">
+                    <div class="progress-info" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                        <span class="progress-text" style="font-size: 0.75rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em;">Lộ trình</span>
+                        <span id="progress-percentage" class="progress-percentage" style="font-size: 0.85rem; font-weight: 800; color: var(--color-cyan);">0%</span>
+                    </div>
+                    <div class="progress-bar-bg" style="height: 6px; background: rgba(255, 255, 255, 0.05); overflow: hidden;">
+                        <div id="progress-bar-fill" class="progress-bar-fill" style="width: 0%; height: 100%; background: linear-gradient(90deg, var(--color-cyan) 0%, var(--color-purple) 100%); transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);"></div>
+                    </div>
+                </div>
+                
+                <div class="sidebar-nav-section-title">CHƯƠNG TRÌNH HỌC</div>
+                
+                <div class="nav-item disabled" id="navPart1Btn" style="cursor: not-allowed; opacity: 0.4;">
+                    <span class="nav-item-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                    </span>
+                    <span class="nav-item-text">PART 01: PHOTOGRAPHS</span>
+                    <span style="font-size: 0.7rem; color: var(--color-gold); margin-left: auto; display: flex; align-items: center;">
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </span>
+                </div>
+                
+                <div class="nav-item" id="navPart2Btn">
+                    <span class="nav-item-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                    </span>
+                    <span class="nav-item-text">PART 02: QUESTIONS-RESPONSES</span>
+                </div>
+                
+                <div class="nav-item" id="navPart3Btn">
+                    <span class="nav-item-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    </span>
+                    <span class="nav-item-text">PART 03: SHORT CONVERSATIONS</span>
+                    <span style="font-size: 0.7rem; color: var(--text-muted); margin-left: auto; display: flex; align-items: center;" id="part3ExpandIcon">
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </span>
+                </div>
+                
+                <!-- Collapsible Submenu Container for Part 3 -->
+                <div class="part3-collapsible-submenu" id="part3SubmenuContainer" style="display: none; padding-left: 10px; border-left: 1px solid var(--border); margin-left: 28px;">
+                    <div class="sidebar-nav-section-title" style="margin-top: 10px; font-size: 0.75rem; padding-left: 10px;">DẠNG CÂU HỎI</div>
+                    <div class="sidebar-submenu" id="concepts-nav-list" style="margin-left: 0; border-left: none; padding-left: 0;">
+                        <!-- Dynamic submenu items will be inserted here -->
+                    </div>
+                    
+                    <div class="sidebar-nav-section-title" style="margin-top: 15px; font-size: 0.75rem; padding-left: 10px;">CHỦ ĐỀ NGHE</div>
+                    <div class="sidebar-submenu" id="topics-nav-list" style="margin-left: 0; border-left: none; padding-left: 0;">
+                        <!-- Dynamic submenu items will be inserted here -->
+                    </div>
+                </div>
+                
+                <div class="nav-item disabled" id="navPart4Btn" style="cursor: not-allowed; opacity: 0.4;">
+                    <span class="nav-item-icon">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                    </span>
+                    <span class="nav-item-text">PART 04: SHORT TALKS</span>
+                    <span style="font-size: 0.7rem; color: var(--color-gold); margin-left: auto; display: flex; align-items: center;">
+                        <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                    </span>
+                </div>
+            </nav>
+        </aside>
+        
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            <div class="container">
+                
+                <!-- Header Info -->
+                <header class="app-header">
+                    <a href="https://www.facebook.com/nguyetpham28" target="_blank" class="badge badge-link">
+                        ENGLISH WITH MISS NGUYET
+                    </a>
+                    <div class="title-wrapper">
+                        <img src="cat.jpg" alt="Mascot" class="mascot-img mascot-left">
+                        <h1 id="main-title-text">PART 03 - SHORT CONVERSATIONS</h1>
+                        <img src="cat.jpg" alt="Mascot" class="mascot-img mascot-right">
+                    </div>
+                </header>
+                
+                <!-- HOME VIEW -->
+                <section id="view-home" class="content-view">
+                    <div class="dashboard-hero">
+                        <h2>XIN CHÀO HỌC VIÊN! 👋</h2>
+                        <p>Hệ thống hỗ trợ tự học lý thuyết và luyện tập trực tuyến, giúp nâng cao kỹ năng nghe hiểu TOEIC của bạn.</p>
+                    </div>
+                    
+                    <div class="dashboard-grid">
+                        <div class="dashboard-card highlight" id="card-part3">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            </div>
+                            <h3>PART 03 - SHORT CONVERSATIONS</h3>
+                            <p>Đoạn hội thoại ngắn. Học các dạng câu hỏi chi tiết, luyện tập từ vựng chuyên ngành và làm các câu hỏi thực chiến kèm transcript.</p>
+                            <span class="status-tag active">ĐÃ SẴN SÀNG</span>
+                        </div>
+                        
+                        <div class="dashboard-card" id="card-part2">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            </div>
+                            <h3>PART 02 - QUESTIONS & RESPONSES</h3>
+                            <p>Câu hỏi & Phản hồi. Xem slide lý thuyết và các mẫu ví dụ để học phản xạ trả lời nhanh trong bài nghe.</p>
+                            <span class="status-tag active">SLIDE SẴN SÀNG</span>
+                        </div>
+
+                        <div class="dashboard-card locked">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                            </div>
+                            <h3>PART 01 - PHOTOGRAPHS</h3>
+                            <p>Mô tả tranh ảnh. Luyện kỹ năng quan sát tranh và chọn câu mô tả chính xác nhất.</p>
+                            <span class="status-tag coming-soon">ĐANG CẬP NHẬT</span>
+                        </div>
+                        
+                        <div class="dashboard-card locked">
+                            <div class="card-icon">
+                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                            </div>
+                            <h3>PART 04 - SHORT TALKS</h3>
+                            <p>Đoạn thông tin ngắn. Luyện nghe các bài nói một người (tin thời tiết, thông báo sân bay, quảng cáo...).</p>
+                            <span class="status-tag coming-soon">ĐANG CẬP NHẬT</span>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- PART 02 VIEW -->
+                <section id="view-part2" class="content-view">
+                    <div class="part02-container">
+                        <div class="slide-viewer-card">
+                            <div class="slide-screen">
+                                <img id="part02-slide" src="" alt="Slide Part 2 Loading...">
+                                <div class="slide-loading-spinner" id="slide-spinner">
+                                    <svg class="fa-spin" viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" style="animation: spin 1s linear infinite; display: inline-block; vertical-align: middle;"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                                </div>
+                            </div>
+                            <div class="slide-controls">
+                                <button id="slide-prev" class="control-btn" style="display: flex; align-items: center; gap: 6px;"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg> LÙI LẠI</button>
+                                <div class="slide-info">
+                                    SLIDE <span id="slide-current">1</span> / <span id="slide-total">318</span>
+                                </div>
+                                <button id="slide-next" class="control-btn" style="display: flex; align-items: center; gap: 6px;">TIẾP TỤC <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg></button>
+                            </div>
+                            <div class="slide-input-goto">
+                                <label for="goto-slide-input">Đi nhanh đến Slide:</label>
+                                <input type="number" id="goto-slide-input" min="1" max="318" placeholder="10">
+                                <button id="goto-slide-btn" class="mini-btn">ĐI</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- PART 03 VIEW -->
+                <section id="view-part3" class="content-view active">
+                    <div class="part3-panel">
+                        <!-- Header with breadcrumbs -->
+                        <div class="panel-header">
+                            <div class="breadcrumbs">
+                                <span id="bread-parent">Dạng bài</span> &nbsp;/&nbsp; <span id="bread-current">Câu hỏi chủ đề</span>
+                            </div>
+                            <h3 id="panel-title">Tên Dạng Bài</h3>
+                        </div>
+                        
+                        <!-- Panel navigation (Lý thuyết / Ví dụ / Bài tập) -->
+                         <div class="panel-sections" id="panel-sections-bar">
+                             <button class="panel-section-btn active" id="sec-btn-theory" data-section="theory" style="display: flex; align-items: center; gap: 6px;">
+                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2zM22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg> LÝ THUYẾT
+                             </button>
+                             <button class="panel-section-btn hidden" id="sec-btn-vocabulary" data-section="vocabulary" style="display: flex; align-items: center; gap: 6px;">
+                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 2 2 4-4M12 21H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9l2 2h7a2 2 0 0 1 2 2v6"/></svg> TỪ VỰNG
+                             </button>
+                             <button class="panel-section-btn" id="sec-btn-examples" data-section="examples" style="display: flex; align-items: center; gap: 6px;">
+                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A5 5 0 0 0 8 8c0 1 .3 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5M9 18h6M10 22h4"/></svg> VÍ DỤ MINH HỌA
+                             </button>
+                             <button class="panel-section-btn" id="sec-btn-practice" data-section="practice" style="display: flex; align-items: center; gap: 6px;">
+                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg> BÀI TẬP ÁP DỤNG
+                             </button>
+                         </div>
+                         
+                         <!-- Panel Body -->
+                         <div class="panel-body">
+                             
+                             <!-- THEORY SECTION -->
+                             <div id="sec-theory" class="panel-content active">
+                                 <div class="theory-container" id="theory-content-area">
+                                     <!-- Rendered dynamically -->
+                                 </div>
+                             </div>
+                             
+                             <!-- VOCABULARY SECTION -->
+                             <div id="sec-vocabulary" class="panel-content">
+                                 <div class="vocabulary-container" id="vocabulary-content-area">
+                                     <!-- Rendered dynamically -->
+                                 </div>
+                             </div>
+                             
+                             <!-- EXAMPLES SECTION -->
+                             <div id="sec-examples" class="panel-content">
+                                 <div class="examples-container" id="examples-content-area">
+                                     <!-- Rendered dynamically -->
+                                 </div>
+                             </div>
+                             
+                             <!-- PRACTICE SECTION -->
+                             <div id="sec-practice" class="panel-content">
+                                 <div class="practice-container" id="practice-content-area">
+                                     <!-- Rendered dynamically -->
+                                 </div>
+                             </div>
+                             
+                         </div>
+                    </div>
+                </section>
+                
+            </div>
+        </main>
+    </div>
+    
+    <!-- RESULT MODAL -->
+    <div id="result-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h2>KẾT QUẢ LÀM BÀI</h2>
+            <div class="score-display-modal">
+                <span id="modal-score" class="score-correct">0</span><span id="modal-total" class="score-total">/3</span>
+            </div>
+            <p id="modal-message" class="modal-message">Tuyệt vời! Hãy xem lại đáp án và transcript để củng cố kiến thức nhé.</p>
+            <div class="modal-actions">
+                <button class="btn-review" id="modal-review-btn">XEM LẠI ĐÁP ÁN</button>
+                <button class="btn-retry" id="modal-retry-btn">LÀM LẠI BÀI NÀY</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Name Entry Screen overlay -->
+    <div id="nameEntryOverlay" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(9, 8, 18, 0.85); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); z-index: 9999; display: flex; align-items: center; justify-content: center; opacity: 1; transition: opacity 0.5s ease;">
+        <div class="glass-panel" style="max-width: 480px; width: 90%; padding: 40px; text-align: center; border: 1px solid var(--border); box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);">
+            <div style="width: 70px; height: 70px; background: linear-gradient(135deg, #a855f7, #ec4899); display: flex; align-items: center; justify-content: center; margin: 0 auto 24px auto; color: white; box-shadow: 0 0 20px rgba(168, 85, 247, 0.4); border-radius: 0px !important;">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5M21.5 12v6"/></svg>
+            </div>
+            <h2 class="welcome-title" style="font-size: 1.8rem; margin-bottom: 12px; font-weight: 800;">BẮT ĐẦU HỌC TẬP</h2>
+            <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 28px;">Chào mừng bạn đến với chuyên trang luyện nghe TOEIC. Vui lòng nhập họ và tên của bạn để bắt đầu bài học.</p>
+            
+            <div style="position: relative; margin-bottom: 24px;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted);"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <input type="text" id="studentNameInput" placeholder="Nhập họ và tên của bạn..." style="width: 100%; padding: 14px 16px 14px 44px; background: rgba(0, 0, 0, 0.2); border: 1px solid var(--border); color: var(--text-main); font-size: 1.05rem; outline: none; transition: border-color 0.2s;" />
+                <div id="nameInputError" style="color: var(--danger); font-size: 0.85rem; margin-top: 6px; text-align: left; display: none;">Họ và tên không được để trống!</div>
+            </div>
+            
+            <button class="btn btn-primary" id="startLearningBtn" style="width: 100%; padding: 14px; font-size: 1.05rem; display: flex; align-items: center; justify-content: center; gap: 8px;">
+                BẮT ĐẦU HỌC <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M13.8 12H3"/></svg>
+            </button>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="data/part03_data.js?v=1.3.8"></script>
+    <script src="js/app.js?v=1.3.8"></script>
+</body>
+</html>
