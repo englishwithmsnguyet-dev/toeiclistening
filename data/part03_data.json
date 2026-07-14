@@ -4702,16 +4702,16 @@
         "slide_index": 327,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05  </span></strong><br><strong><span style=\"color: #000000;\">Question 02.</span></strong><span style=\"color: #000000;\"> Look at the graphic. Which month do the speakers agree to discuss? </span>",
         "choices": {
-          "A": "March </span>",
-          "B": "<span style=\"color: #000000;\">April  </span>",
+          "A": "March",
+          "B": "April",
           "C": "May",
-          "D": "<span style=\"color: #000000;\">June </span>"
+          "D": "June"
         },
         "answer": "C",
         "audio": "media104.mp3",
         "transcript": [
-          "<strong><span style=\"color: #000000;\">W</span></strong><span style=\"color: #000000;\">: I know. Productivity hasn&#x27;t been stable recently. </span><strong><span style=\"color: #FF0000;\">(2)</span></strong><span style=\"color: #000000;\"> </span><span style=\"color: #000000;\">We had a month of strong production, but the next month was the lowest we&#x27;ve had in a year</span><span style=\"color: #000000;\">! </span>",
-          "<strong><span style=\"color: #000000;\">M</span></strong><span style=\"color: #000000;\">: Right... </span><strong><span style=\"color: #FF0000;\">(2)</span></strong><span style=\"color: #000000;\"> </span><span style=\"color: #000000;\">So at today&#x27;s meeting, let&#x27;s focus on the month when productivity was very low</span><span style=\"color: #000000;\">. </span>"
+          "<strong>W</strong>: I know. Productivity hasn't been stable recently. <strong><span style=\"color: #FF0000;\">(2) We had a month of strong production, but the next month was the lowest we've had in a year!</span></strong>",
+          "<strong>M</strong>: Right... <strong><span style=\"color: #FF0000;\">(2) So at today's meeting, let's focus on the month when productivity was very low.</span></strong>"
         ],
         "vietnamese_question": "BÀI TẬP 05 Câu 02. Quan sát hình vẽ. Tháng nào các diễn giả đồng ý thảo luận?",
         "vietnamese_choices": {
@@ -4721,8 +4721,8 @@
           "D": "Tháng sáu"
         },
         "vietnamese_transcript": [
-          "W: Tôi biết. Năng suất gần đây không ổn định. (2) Chúng tôi đã có một tháng sản xuất mạnh mẽ, nhưng tháng tiếp theo là tháng sản xuất thấp nhất trong một năm!",
-          "M: Đúng rồi... (2) Vậy tại cuộc họp hôm nay, hãy tập trung vào tháng mà năng suất rất thấp."
+          "W: Tôi biết. Năng suất gần đây không ổn định. <strong><span style=\"color: #FF0000;\">(2) Chúng tôi đã có một tháng sản xuất mạnh mẽ, nhưng tháng tiếp theo là tháng sản xuất thấp nhất trong một năm!</span></strong>",
+          "M: Đúng rồi... <strong><span style=\"color: #FF0000;\">(2) Vậy tại cuộc họp hôm nay, hãy tập trung vào tháng mà năng suất rất thấp.</span></strong>"
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tháng năm</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"We had a month of strong production, but the next month was the lowest we've had in a year! ... let's focus on the month when productivity was very low.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chúng ta đã có một tháng sản xuất mạnh mẽ, nhưng tháng tiếp theo là tháng thấp nhất trong năm! ... chúng ta hãy tập trung vào tháng có năng suất rất thấp.\"</span><br><strong>Giải thích hình ảnh:</strong> Theo lời thoại, năng suất của tháng cần thảo luận là tháng thấp nhất tiếp sau tháng sản xuất mạnh mẽ. Nhìn vào biểu đồ cột trên slide, tháng 4 (April) có cột cao nhất (strong production), tháng tiếp theo là tháng 5 (May) có cột thấp nhất. Do đó đáp án là Tháng năm (May).</div>"
       },
@@ -4850,10 +4850,10 @@
         "slide_index": 481,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 04 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which item does the man want to return? </span>",
         "choices": {
-          "A": "The jacket </span>",
-          "B": "<span style=\"color: #000000;\">The sweater </span>",
+          "A": "The jacket",
+          "B": "The sweater",
           "C": "The scarf",
-          "D": "<span style=\"color: #000000;\">The T-shirt </span>"
+          "D": "The T-shirt"
         },
         "answer": "C",
         "audio": "media127.mp3",
@@ -4878,9 +4878,9 @@
         "slide_index": 490,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where will the woman go next? </span>",
         "choices": {
-          "A": "To Building 1 </span>",
-          "B": "<span style=\"color: #000000;\">To Building 2 </span>",
-          "C": "To Building 3 </span>",
+          "A": "To Building 1",
+          "B": "To Building 2",
+          "C": "To Building 3",
           "D": "To Building 4"
         },
         "answer": "D",
