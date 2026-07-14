@@ -1271,12 +1271,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!cleanLine) return;
                 
                 // Match bullets, potentially preceded by leading HTML tags (e.g. <em>, <strong>)
-                const htmlBulletRegex = /^((?:<[^>]+>\s*)*)(?:•|o|-|\*|◦)\s+/i;
+                const htmlBulletRegex = /^((?:<[^>]+>\s*)*)(•|o|-|\*|◦)\s+/i;
                 
-                if (htmlBulletRegex.test(cleanLine)) {
+                const bulletMatch = cleanLine.match(htmlBulletRegex);
+                if (bulletMatch) {
+                    const bulletChar = bulletMatch[2];
                     const cleanedHtml = cleanLine.replace(htmlBulletRegex, "$1").trim();
+                    const isExample = bulletChar === "o" || bulletChar === "-";
+                    const bulletClass = isExample ? "theory-bullet example-bullet" : "theory-bullet main-bullet";
+                    
                     docHtml += `
-                        <div class="theory-bullet" style="margin-bottom: 12px;">
+                        <div class="${bulletClass}" style="margin-bottom: 12px;">
                             <span>${cleanedHtml}</span>
                         </div>
                     `;
