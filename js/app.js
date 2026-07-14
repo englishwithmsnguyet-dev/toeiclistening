@@ -1104,12 +1104,15 @@ document.addEventListener("DOMContentLoaded", () => {
             const lineViet = vietTranscriptList && vietTranscriptList[idx] ? vietTranscriptList[idx] : "";
             let transHtml = "";
             if (lineViet) {
-                const cleanViet = lineViet.replace(/^[A-Za-z]+[-A-Za-z]*\s*:\s*/, "");
-                transHtml = `<div class="line-trans-text" style="color: var(--text-muted); font-size: 0.88rem; font-style: italic; margin-top: 4px; border-left: 2px solid var(--border); padding-left: 8px;">${cleanViet}</div>`;
+                const cleanViet = lineViet.replace(/^[A-Za-z0-9]+[-A-Za-z0-9]*\s*:\s*/, "");
+                const highlightedViet = cleanViet.replace(/(\(\d+\)[^.?!]*?[.?!]?)/g, '<strong style="color: var(--color-purple); font-style: italic;">$1</strong>');
+                transHtml = `<div class="line-trans-text" style="color: var(--text-muted); font-size: 0.88rem; font-style: italic; margin-top: 4px; border-left: 2px solid var(--border); padding-left: 8px;">${highlightedViet}</div>`;
             }
+            let formattedLine = line.replace(/(\(\d+\)[^.?!]*?[.?!]?)/g, '<strong style="color: var(--color-purple); font-style: italic;">$1</strong>');
+            formattedLine = formattedLine.replace(/^([A-Za-z0-9]+[-A-Za-z0-9]*\s*:\s*)/, '<strong style="color: var(--color-blue);">$1</strong>');
             html += `
                 <div class="transcript-line-wrapper" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border); text-align: left;">
-                    <p class="transcript-line" style="margin: 0; font-weight: 500; line-height: 1.5;">${line}</p>
+                    <p class="transcript-line" style="margin: 0; font-weight: 500; line-height: 1.5;">${formattedLine}</p>
                     ${transHtml}
                 </div>
             `;
@@ -1460,8 +1463,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 set.questions.forEach(sq => {
                     if (sq.explanation) {
                         explanationHtml += `
-                            <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-cyan); background: rgba(0, 242, 254, 0.01);">
-                                <h5 style="color: var(--color-cyan); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                            <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                                <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
                                     Giải thích QUESTION ${sq.id}:
                                 </h5>
                                 <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
@@ -1533,8 +1536,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 let explanationHtml = "";
                 if (ex.explanation) {
                     explanationHtml = `
-                        <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-cyan); background: rgba(0, 242, 254, 0.01);">
-                            <h5 style="color: var(--color-cyan); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                        <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                            <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
                                 GIẢI THÍCH ĐÁP ÁN:
                             </h5>
                             <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
@@ -1699,8 +1702,8 @@ document.addEventListener("DOMContentLoaded", () => {
         let explanationHtml = "";
         if (q.explanation) {
             explanationHtml = `
-                <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-cyan); background: rgba(0, 242, 254, 0.01);">
-                    <h5 style="color: var(--color-cyan); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                    <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
                         GIẢI THÍCH ĐÁP ÁN:
                     </h5>
                     <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
@@ -1929,8 +1932,8 @@ document.addEventListener("DOMContentLoaded", () => {
             let explanationHtml = "";
             if (q.explanation) {
                 explanationHtml = `
-                    <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-cyan); background: rgba(0, 242, 254, 0.01);">
-                        <h5 style="color: var(--color-cyan); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                    <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                        <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
                             GIẢI THÍCH ĐÁP ÁN:
                         </h5>
                         <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
@@ -2140,8 +2143,8 @@ document.addEventListener("DOMContentLoaded", () => {
         set.questions.forEach(sq => {
             if (sq.explanation) {
                 explanationHtml += `
-                    <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-cyan); background: rgba(0, 242, 254, 0.01);">
-                        <h5 style="color: var(--color-cyan); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                    <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                        <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
                             Giải thích QUESTION ${sq.id}:
                         </h5>
                         <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
@@ -2431,8 +2434,8 @@ document.addEventListener("DOMContentLoaded", () => {
             set.questions.forEach(sq => {
                 if (sq.explanation) {
                     explanationHtml += `
-                        <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-cyan); background: rgba(0, 242, 254, 0.01);">
-                            <h5 style="color: var(--color-cyan); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                        <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                            <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
                                 Giải thích QUESTION ${sq.id}:
                             </h5>
                             <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
