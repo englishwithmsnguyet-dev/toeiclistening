@@ -2025,6 +2025,53 @@ document.addEventListener("DOMContentLoaded", () => {
         progressHeader.appendChild(progressScore);
         practiceContentArea.appendChild(progressHeader);
 
+        // Navigator Row
+        const navigatorRow = document.createElement("div");
+        navigatorRow.className = "quiz-navigator-row";
+        navigatorRow.style.display = "flex";
+        navigatorRow.style.flexWrap = "wrap";
+        navigatorRow.style.gap = "8px";
+        navigatorRow.style.marginBottom = "20px";
+        navigatorRow.style.justifyContent = "center";
+        
+        sets.forEach((s, idx) => {
+            const navBtn = document.createElement("button");
+            navBtn.style.padding = "8px 14px";
+            navBtn.style.fontSize = "0.85rem";
+            navBtn.style.fontWeight = "700";
+            navBtn.style.border = "1px solid var(--border)";
+            navBtn.style.cursor = "pointer";
+            navBtn.style.minWidth = "36px";
+            navBtn.style.borderRadius = "0px";
+            navBtn.style.transition = "all 0.2s ease";
+            
+            navBtn.textContent = idx + 1;
+            
+            const isCompleted = state.setQuiz.completedSets[s.set_index] !== undefined;
+            
+            if (idx === currentIdx) {
+                navBtn.style.background = "var(--color-blue)";
+                navBtn.style.color = "white";
+                navBtn.style.borderColor = "var(--color-blue)";
+            } else if (isCompleted) {
+                navBtn.style.background = "rgba(16, 185, 129, 0.15)";
+                navBtn.style.color = "#10b981";
+                navBtn.style.borderColor = "#10b981";
+            } else {
+                navBtn.style.background = "transparent";
+                navBtn.style.color = "var(--text-main)";
+            }
+            
+            navBtn.addEventListener("click", () => {
+                state.setQuiz.currentIdx = idx;
+                renderPracticeSets(sets, section);
+            });
+            
+            navigatorRow.appendChild(navBtn);
+        });
+        
+        practiceContentArea.appendChild(navigatorRow);
+
         // Set Card Wrapper
         const setWrapper = document.createElement("div");
         setWrapper.className = "practice-set-card";
@@ -2105,6 +2152,37 @@ document.addEventListener("DOMContentLoaded", () => {
         submitRow.style.display = "flex";
         submitRow.style.justifyContent = "space-between";
         submitRow.style.alignItems = "center";
+        submitRow.style.gap = "12px";
+        
+        // Left Column: Quay lại button
+        const leftCol = document.createElement("div");
+        leftCol.style.flex = "1";
+        leftCol.style.textAlign = "left";
+        if (currentIdx > 0) {
+            const prevBtn = document.createElement("button");
+            prevBtn.className = "action-btn btn-secondary";
+            prevBtn.style.padding = "12px 20px";
+            prevBtn.style.background = "transparent";
+            prevBtn.style.border = "1px solid var(--border)";
+            prevBtn.style.color = "var(--text-main)";
+            prevBtn.style.cursor = "pointer";
+            prevBtn.style.borderRadius = "0px";
+            prevBtn.innerHTML = `&larr; QUAY LẠI`;
+            prevBtn.addEventListener("click", () => {
+                state.setQuiz.currentIdx--;
+                renderPracticeSets(sets, section);
+            });
+            leftCol.appendChild(prevBtn);
+        }
+        submitRow.appendChild(leftCol);
+        
+        // Center Column: Submit button or result score
+        const centerCol = document.createElement("div");
+        centerCol.style.flex = "2";
+        centerCol.style.display = "flex";
+        centerCol.style.justifyContent = "center";
+        centerCol.style.alignItems = "center";
+        centerCol.style.gap = "16px";
         
         const scoreSpan = document.createElement("span");
         scoreSpan.className = "score-display";
@@ -2119,23 +2197,57 @@ document.addEventListener("DOMContentLoaded", () => {
         submitBtn.disabled = true;
         submitBtn.style.borderRadius = "0px !important";
         
-        const nextBtn = document.createElement("button");
-        nextBtn.className = "action-btn btn-primary";
-        nextBtn.style.padding = "12px 24px";
-        nextBtn.style.display = "none";
-        nextBtn.textContent = "ĐOẠN TIẾP THEO";
-        nextBtn.style.borderRadius = "0px !important";
-        
         if (setAlreadySubmitted) {
             const score = state.setQuiz.completedSets[set.set_index];
             scoreSpan.textContent = `Kết quả: ${score} / ${set.questions.length} câu đúng`;
-            submitBtn.style.display = "none";
-            nextBtn.style.display = "flex";
-        } else {
-            submitRow.appendChild(scoreSpan);
-            submitRow.appendChild(submitBtn);
         }
-        submitRow.appendChild(nextBtn);
+        
+        centerCol.appendChild(scoreSpan);
+        if (!setAlreadySubmitted) {
+            centerCol.appendChild(submitBtn);
+        }
+        submitRow.appendChild(centerCol);
+        
+        // Right Column: Next / Skip buttons
+        const rightCol = document.createElement("div");
+        rightCol.style.flex = "1";
+        rightCol.style.textAlign = "right";
+        
+        const nextBtn = document.createElement("button");
+        nextBtn.className = "action-btn btn-primary";
+        nextBtn.style.padding = "12px 24px";
+        nextBtn.innerHTML = `ĐOẠN TIẾP THEO &rarr;`;
+        nextBtn.style.borderRadius = "0px !important";
+        nextBtn.style.display = "none";
+        
+        const skipBtn = document.createElement("button");
+        skipBtn.className = "action-btn btn-secondary";
+        skipBtn.style.padding = "12px 20px";
+        skipBtn.style.background = "transparent";
+        skipBtn.style.border = "1px solid var(--border)";
+        skipBtn.style.color = "var(--text-muted)";
+        skipBtn.style.cursor = "pointer";
+        skipBtn.style.borderRadius = "0px";
+        skipBtn.innerHTML = `BỎ QUA &rarr;`;
+        skipBtn.style.display = "none";
+        
+        skipBtn.addEventListener("click", () => {
+            state.setQuiz.currentIdx++;
+            renderPracticeSets(sets, section);
+        });
+        
+        if (currentIdx < sets.length - 1) {
+            rightCol.appendChild(nextBtn);
+            rightCol.appendChild(skipBtn);
+            
+            if (setAlreadySubmitted) {
+                nextBtn.style.display = "flex";
+            } else {
+                skipBtn.style.display = "flex";
+            }
+        }
+        
+        submitRow.appendChild(rightCol);
         setWrapper.appendChild(submitRow);
         
         // Transcript & Explanations Card
@@ -2198,7 +2310,10 @@ document.addEventListener("DOMContentLoaded", () => {
             
             scoreSpan.textContent = `Kết quả: ${correctCount} / ${numQs} câu đúng`;
             submitBtn.style.display = "none";
-            nextBtn.style.display = "flex";
+            if (currentIdx < sets.length - 1) {
+                skipBtn.style.display = "none";
+                nextBtn.style.display = "flex";
+            }
             innerScriptCard.classList.remove("hidden");
             
             // Show result modal
