@@ -795,7 +795,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Render Chủ đề nghe (topics)
         state.part03Data.forEach(item => {
-            if (item.type === "topic") {
+            if (item.type === "topic" || item.type === "test") {
                 const submenuItem = document.createElement("div");
                 submenuItem.className = "submenu-item";
                 submenuItem.setAttribute("data-id", item.id);
@@ -884,8 +884,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (foundNode) {
             displayTitle = foundNode.title;
-        } else if (section.type === "topic") {
-            parentText = "Chủ đề nghe";
+        } else if (section.type === "topic" || section.type === "test") {
+            parentText = "Luyện tập ETS 2026";
             displayTitle = section.title;
         }
         
@@ -1366,7 +1366,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
         
-        if (section.type === "topic") {
+        if (section.type === "topic" || section.type === "test") {
             // Render example sets for topics
             section.examples.forEach((set, setIdx) => {
                 const setWrapper = document.createElement("div");
@@ -1610,7 +1610,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (section.type === "subsection" || section.type === "overview" || section.type === "tips") {
             renderPracticeQuestions(section.practice, section);
-        } else if (section.type === "topic") {
+        } else if (section.type === "topic" || section.type === "test") {
             renderPracticeSets(section.practice_sets, section);
         }
     }
