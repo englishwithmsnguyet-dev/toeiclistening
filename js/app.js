@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
     const LOCKED_SECTIONS = [
-        "dang_visual_questions",
         "topic_01", "topic_02", "topic_03", "topic_04", "topic_05", "topic_06"
     ];
 
@@ -997,8 +996,37 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderQuestionTextHtml(q, idLabel, textPrefix = "") {
         const qText = q.question;
         const qViet = q.vietnamese_question || "";
+        
+        let graphicHtml = "";
+        const lowerQText = (qText || "").toLowerCase();
+        const lowerQViet = (qViet || "").toLowerCase();
+        const isVisual = lowerQText.includes("look at the graphic") || 
+                         lowerQText.includes("look at the map") ||
+                         lowerQText.includes("look at the schedule") ||
+                         lowerQText.includes("look at the chart") ||
+                         lowerQText.includes("look at the diagram") ||
+                         lowerQViet.includes("quan sát hình") ||
+                         lowerQViet.includes("nhìn vào hình") ||
+                         lowerQViet.includes("quan sát sơ đồ") ||
+                         lowerQViet.includes("nhìn vào sơ đồ");
+                         
+        if (isVisual) {
+            graphicHtml = `
+                <div class="visual-graphic-container" style="margin: 16px 0; text-align: center; width: 100%;">
+                    <img class="visual-graphic-img" 
+                         src="../TOECI LISTENING - PART 03/Slide${q.slide_index}.png" 
+                         onerror="this.onerror=null; this.src='../TOEIC LISTENING - PART 03/Slide${q.slide_index}.png';"
+                         style="max-width: 100%; max-height: 450px; border: 2px solid var(--border); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; margin: 0 auto;" 
+                         alt="Look at the graphic (Slide ${q.slide_index})">
+                </div>
+            `;
+        }
+
         if (!qViet) {
-            return `<div class="question-text">${textPrefix}${qText}</div>`;
+            return `
+                <div class="question-text">${textPrefix}${qText}</div>
+                ${graphicHtml}
+            `;
         }
         
         return `
@@ -1010,6 +1038,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     ${qViet}
                 </div>
             </div>
+            ${graphicHtml}
         `;
     }
 

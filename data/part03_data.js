@@ -4655,7 +4655,46 @@ window.part03Data = [
     "title": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "parent_title": "CÂU HỎI KẾT HỢP HÌNH ẢNH",
     "type": "subsection",
-    "theory": [],
+    "theory": [
+      {
+        "slide_index": 325,
+        "text": [
+          "<strong><span style=\"color: #FF0000;\">V. CÂU HỎI KẾT HỢP HÌNH ẢNH (VISUAL QUESTIONS)</span></strong>",
+          "Đây là dạng câu hỏi yêu cầu thí sinh <strong><span style=\"color: #00B0F0;\">vừa nghe cuộc hội thoại vừa quan sát một hình ảnh kèm theo</span></strong> (biểu đồ, sơ đồ, bản đồ, hóa đơn, lịch trình...) để tìm ra câu trả lời đúng.",
+          "<strong>Các dạng hình ảnh phổ biến:</strong>",
+          "• <strong>Sơ đồ/Bản đồ (Maps / Floor plans)</strong>: Sơ đồ văn phòng, vị trí các phòng, bản đồ khu phố.",
+          "• <strong>Bảng biểu/Lịch trình (Tables / Schedules)</strong>: Thời gian bay, chuyến tàu, bảng giá, danh sách phòng.",
+          "• <strong>Hóa đơn/Đơn đặt hàng (Invoices / Order forms)</strong>: Số lượng, giá tiền, tên sản phẩm, mã hàng.",
+          "• <strong>Biểu đồ (Charts)</strong>: Biểu đồ cột thể hiện năng suất, doanh số, phần trăm tròn."
+        ],
+        "vietnamese_text": [
+          "V. CÂU HỎI KẾT HỢP HÌNH ẢNH (VISUAL QUESTIONS)",
+          "Yêu cầu thí sinh kết hợp thông tin nghe được và hình ảnh trực quan để chọn đáp án.",
+          "• Các loại sơ đồ/hình ảnh thường gặp trong đề thi.",
+          "• Sơ đồ phòng, bản đồ đường đi, lịch trình tàu xe, hóa đơn bán hàng, biểu đồ so sánh số liệu."
+        ]
+      },
+      {
+        "slide_index": 326,
+        "text": [
+          "<strong><span style=\"color: #FF0000;\">CHIẾN THUẬT LÀM BÀI</span></strong>",
+          "1. <strong>Đọc trước câu hỏi và quan sát hình ảnh thật nhanh:</strong>",
+          "  Xác định câu hỏi đang hỏi về thông tin gì (Ví dụ: <em>Which month...? Which room...?</em>). Nhìn nhanh vào hình vẽ xem thông tin đó nằm ở đâu.",
+          "2. <strong>Quy tắc \"Không chọn những gì nghe thấy trực tiếp\":</strong>",
+          "  Thông tin đáp án đúng thường <strong><span style=\"color: #00B0F0;\">KHÔNG được đọc trực tiếp</span></strong> từ các từ ngữ có sẵn trong 4 phương án lựa chọn, mà sẽ được nói gián tiếp thông qua thông tin liên kết khác trên hình vẽ.",
+          "  <em>Ví dụ:</em> Nếu 4 phương án là tên các phòng, băng nghe sẽ nói về tên người làm việc ở phòng đó. Bạn phải nhìn vào sơ đồ phòng để xem phòng của người đó là phòng số mấy.",
+          "3. <strong>Chú ý các liên từ và từ chuyển ý:</strong>",
+          "  Nghe kỹ các từ như <em>But, However, Actually, Oh wait...</em> vì thông tin thay đổi hoặc chốt đáp án thường nằm ngay sau các từ này."
+        ],
+        "vietnamese_text": [
+          "CHIẾN THUẬT LÀM BÀI",
+          "Phương pháp xử lý dạng câu hỏi kết hợp hình ảnh hiệu quả.",
+          "• 1. Tận dụng thời gian đọc trước câu hỏi và quét nhanh hình vẽ để định vị thông tin.",
+          "• 2. Áp dụng quy tắc liên kết thông tin: Đáp án đúng thường là thông tin liên kết trực quan chứ không phải từ khóa được đọc trực tiếp trong băng nghe.",
+          "• 3. Lắng nghe các bẫy đổi hướng thông tin thông qua liên từ nghịch ý."
+        ]
+      }
+    ],
     "vocabulary": [],
     "examples": [],
     "practice": [
@@ -4676,16 +4715,16 @@ window.part03Data = [
         ],
         "vietnamese_question": "BÀI TẬP 05 Câu 02. Quan sát hình vẽ. Tháng nào các diễn giả đồng ý thảo luận?",
         "vietnamese_choices": {
-          "A": "Bước đều",
+          "A": "Tháng ba",
           "B": "Tháng tư",
-          "C": "Có thể",
+          "C": "Tháng năm",
           "D": "Tháng sáu"
         },
         "vietnamese_transcript": [
           "W: Tôi biết. Năng suất gần đây không ổn định. (2) Chúng tôi đã có một tháng sản xuất mạnh mẽ, nhưng tháng tiếp theo là tháng sản xuất thấp nhất trong một năm!",
           "M: Đúng rồi... (2) Vậy tại cuộc họp hôm nay, hãy tập trung vào tháng mà năng suất rất thấp."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Có thể</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"<strong><span style=\"color: #000000;\">W</span></strong><span style=\"color: #000000;\">: I know. Productivity hasn&#x27;t been stable recently. </span><strong><span style=\"color: #FF0000;\">(2)</span></strong><span style=\"color: #000000;\"> </span><span style=\"color: #000000;\">We had a month of strong production, but the next month was the lowest we&#x27;ve had in a year</span><span style=\"color: #000000;\">! </span>\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi biết. Năng suất gần đây không ổn định. (2) Chúng tôi đã có một tháng sản xuất mạnh mẽ, nhưng tháng tiếp theo là tháng sản xuất thấp nhất trong một năm!\"</span></div>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tháng năm</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"We had a month of strong production, but the next month was the lowest we've had in a year! ... let's focus on the month when productivity was very low.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chúng ta đã có một tháng sản xuất mạnh mẽ, nhưng tháng tiếp theo là tháng thấp nhất trong năm! ... chúng ta hãy tập trung vào tháng có năng suất rất thấp.\"</span><br><strong>Giải thích hình ảnh:</strong> Theo lời thoại, năng suất của tháng cần thảo luận là tháng thấp nhất tiếp sau tháng sản xuất mạnh mẽ. Nhìn vào biểu đồ cột trên slide, tháng 4 (April) có cột cao nhất (strong production), tháng tiếp theo là tháng 5 (May) có cột thấp nhất. Do đó đáp án là Tháng năm (May).</div>"
       },
       {
         "slide_index": 336,
@@ -4725,10 +4764,10 @@ window.part03Data = [
         "slide_index": 436,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05  </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which seat does the woman request? </span>",
         "choices": {
-          "A": "<span style=\"color: #000000;\">A</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> 26D </span>",
+          "A": "26D",
           "B": "26F",
-          "C": "27D </span>",
-          "D": "<span style=\"color: #000000;\">D</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> 27E </span>"
+          "C": "27D",
+          "D": "27E"
         },
         "answer": "B",
         "audio": "media120.mp3",
@@ -4737,10 +4776,10 @@ window.part03Data = [
         ],
         "vietnamese_question": "BÀI TẬP 05 Câu 03. Quan sát hình vẽ. Người phụ nữ yêu cầu chỗ ngồi nào?",
         "vietnamese_choices": {
-          "A": "A. 26D",
+          "A": "26D",
           "B": "26F",
           "C": "27D",
-          "D": "D. 27E"
+          "D": "27E"
         },
         "vietnamese_transcript": [
           "W: Ngày đó sẽ phù hợp với tôi. (3) Tôi muốn ngồi cạnh cửa sổ hơn, nếu có."
@@ -4752,9 +4791,9 @@ window.part03Data = [
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 06 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where are the speakers going? </span>",
         "choices": {
           "A": "To Los Angeles",
-          "B": "B</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> To San Antonio </span>",
-          "C": "<span style=\"color: #000000;\">C</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> To San Jose </span>",
-          "D": "<span style=\"color: #000000;\">D</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> To Las Vegas </span>"
+          "B": "To San Antonio",
+          "C": "To San Jose",
+          "D": "To Las Vegas"
         },
         "answer": "B",
         "audio": "media121.mp3",
@@ -4764,9 +4803,9 @@ window.part03Data = [
         "vietnamese_question": "BÀI TẬP 06 Câu 02. Quan sát hình vẽ. Các diễn giả đang đi đâu?",
         "vietnamese_choices": {
           "A": "Đến Los Angeles",
-          "B": "B. Đến San Antonio",
-          "C": "C. Đến San Jose",
-          "D": "D. Đến Las Vegas"
+          "B": "Đến San Antonio",
+          "C": "Đến San Jose",
+          "D": "Đến Las Vegas"
         },
         "vietnamese_transcript": [
           "M: Đừng lo lắng. Tôi vừa đến đây và thấy rằng (2) chuyến bay của chúng tôi bị hoãn một giờ. Tôi chắc chắn bạn sẽ làm được."
@@ -4867,10 +4906,10 @@ window.part03Data = [
         "slide_index": 540,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Why is the woman&#x27;s ticket discounted? </span>",
         "choices": {
-          "A": "<span style=\"color: #000000;\">A</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> It is a Monday. </span>",
-          "B": "B</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> It is after 5 P.M. </span>",
-          "C": "<span style=\"color: #000000;\">C</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> She is a student. </span>",
-          "D": "<span style=\"color: #000000;\">She is a member. </span>"
+          "A": "It is a Monday.",
+          "B": "It is after 5 P.M.",
+          "C": "She is a student.",
+          "D": "She is a member."
         },
         "answer": "B",
         "audio": "media136.mp3",
@@ -4880,9 +4919,9 @@ window.part03Data = [
         ],
         "vietnamese_question": "BÀI TẬP 05 Câu 02. Quan sát hình vẽ. Tại sao vé của người phụ nữ được giảm giá?",
         "vietnamese_choices": {
-          "A": "A. Hôm nay là thứ Hai.",
-          "B": "B. Bây giờ là sau 5 giờ chiều.",
-          "C": "C. Cô ấy là sinh viên.",
+          "A": "Hôm nay là thứ Hai.",
+          "B": "Bây giờ là sau 5 giờ chiều.",
+          "C": "Cô ấy là sinh viên.",
           "D": "Cô ấy là một thành viên."
         },
         "vietnamese_transcript": [
