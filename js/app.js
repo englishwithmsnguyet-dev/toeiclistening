@@ -1011,10 +1011,24 @@ document.addEventListener("DOMContentLoaded", () => {
                          lowerQViet.includes("nhìn vào sơ đồ");
                          
         if (isVisual) {
+            const CROPPED_GRAPHICS = {
+                327: "data/graphics/Slide327.png",
+                336: "data/graphics/Slide336.png",
+                436: "data/graphics/Slide436.png",
+                441: "data/graphics/Slide441.png",
+                455: "data/graphics/Slide455.png",
+                481: "data/graphics/Slide481.png",
+                490: "data/graphics/Slide490.png",
+                540: "data/graphics/Slide540.png"
+            };
+            let imgSrc = `../TOECI LISTENING - PART 03/Slide${q.slide_index}.png`;
+            if (CROPPED_GRAPHICS[q.slide_index]) {
+                imgSrc = CROPPED_GRAPHICS[q.slide_index];
+            }
             graphicHtml = `
                 <div class="visual-graphic-container" style="margin: 16px 0; text-align: center; width: 100%;">
                     <img class="visual-graphic-img" 
-                         src="../TOECI LISTENING - PART 03/Slide${q.slide_index}.png" 
+                         src="${imgSrc}" 
                          onerror="this.onerror=null; this.src='../TOEIC LISTENING - PART 03/Slide${q.slide_index}.png';"
                          style="max-width: 100%; max-height: 450px; border: 2px solid var(--border); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; margin: 0 auto;" 
                          alt="Look at the graphic (Slide ${q.slide_index})">
