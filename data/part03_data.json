@@ -8,7 +8,7 @@
         "slide_index": 2,
         "text": [
           "<strong><span style=\"color: #FF0000;\">I. </span></strong><strong><span style=\"color: #FF0000;\">TỔNG QUAN </span></strong>",
-          "• Số lượng câu hỏi: <strong>39 câu </strong>(từ câu 32 đến câu 70).",
+          "• <strong><span style=\"color: #00B0F0;\">Số lượng câu hỏi</span></strong>: <strong><span style=\"color: #7030A0;\">39 câu (từ câu 32 đến câu 70).</span></strong>",
           "• Gồm <strong>13 đoạn hội thoại</strong>.",
           "• Mỗi đoạn hội thoại đi kèm <strong>03 câu hỏi</strong>.",
           "• Mỗi đoạn hội thoại có <strong>từ 02 đến 03 người nói</strong>.",
@@ -29,7 +29,7 @@
         "slide_index": 3,
         "text": [
           "• Sau mỗi đoạn hội thoại, thí sinh <strong>trả lời 03</strong> <strong>câu hỏi </strong>liên quan đến nội dung vừa nghe.",
-          "<strong>LƯU Ý: </strong>Trong thời gian trả lời câu hỏi, hãy <em><strong>tranh thủ đánh dấu đáp án và đọc trước bộ câu hỏi tiếp theo </strong></em>để dự đoán nội dung của đoạn hội thoại sắp nghe."
+          "<strong><span style=\"color: #00B0F0;\">LƯU Ý</span></strong>: <strong><span style=\"color: #7030A0;\">Trong thời gian trả lời câu hỏi, hãy tranh thủ đánh dấu đáp án và đọc trước bộ câu hỏi tiếp theo để dự đoán nội dung của đoạn hội thoại sắp nghe.</span></strong>"
         ],
         "vietnamese_text": [
           "• Sau mỗi đoạn hội thoại, thí sinh trả lời 03 câu hỏi liên quan đến nội dung vừa nghe.",
@@ -50,7 +50,7 @@
         "text": [
           "<strong><span style=\"color: #FF0000;\">1. CHỦ ĐỀ</span></strong>",
           "Đây là dạng câu hỏi yêu cầu <em><strong><span style=\"color: #00B0F0;\">xác định nội dung chính hoặc chủ đề </span></strong></em>mà những người nói đang thảo luận.",
-          "<strong>Một số dạng câu hỏi thường gặp:</strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số dạng câu hỏi thường gặp</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "• <em>What is the <strong>topic</strong> of the conversation? </em>",
           "• <em>What are the speakers <strong>discussing</strong>? </em>",
           "• <em>What are they <strong>talking about</strong>? </em>",
@@ -75,7 +75,7 @@
       {
         "slide_index": 5,
         "text": [
-          "<strong>CÁCH LÀM BÀI:</strong>",
+          "<strong><span style=\"color: #00B0F0;\">CÁCH LÀM BÀI</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "• Tập trung <em><strong><span style=\"color: #00B0F0;\">nghe những câu mở đầu </span></strong></em>của cuộc hội thoại vì chủ đề thường được giới thiệu ngay từ đầu.",
           "• Chú ý các <em><strong><span style=\"color: #00B0F0;\">từ hoặc cụm từ được lặp lại nhiều lần</span></strong></em>.",
           "• Không chọn đáp án chỉ dựa trên một từ khóa xuất hiện trong bài nghe; hãy <em><strong><span style=\"color: #00B0F0;\">chọn đáp án thể hiện nội dung chính </span></strong></em>của toàn bộ cuộc hội thoại.",
@@ -96,11 +96,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a music festival – lễ hội âm nhạc</span></strong>",
-          "<span style=\"color: #00B050;\">stage</span> /steɪdʒ/ (n): sân khấu",
-          "<span style=\"color: #00B050;\">band</span> /bænd/ (n): ban nhạc",
-          "<span style=\"color: #00B050;\">crowd</span> /kraʊd/ (n): đám đông",
-          "<span style=\"color: #00B050;\">soundcheck</span> /ˈsaʊnd.tʃek/ (n): kiểm tra âm thanh",
-          "<span style=\"color: #00B050;\">ticket</span> /ˈtɪk.ɪt/ (n): vé"
+          "<strong><span style=\"color: #00B0F0;\">stage /steɪdʒ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sân khấu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">band /bænd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">ban nhạc</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">crowd /kraʊd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đám đông</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">soundcheck /ˈsaʊnd.tʃek/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kiểm tra âm thanh</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">ticket /ˈtɪk.ɪt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">vé</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -117,11 +117,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a sporting event – sự kiện thể thao</span></strong>",
-          "<span style=\"color: #00B050;\">stadium</span> /ˈsteɪ.di.əm/ (n): sân vận động",
-          "<span style=\"color: #00B050;\">team</span> /tiːm/ (n): đội",
-          "<span style=\"color: #00B050;\">match</span> /mætʃ/ (n): trận đấu",
-          "<span style=\"color: #00B050;\">score</span> /skɔːr/ (n): điểm số",
-          "<span style=\"color: #00B050;\">cheer</span> /tʃɪər/ (v): cổ vũ"
+          "<strong><span style=\"color: #00B0F0;\">stadium /ˈsteɪ.di.əm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sân vận động</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">team /tiːm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đội</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">match /mætʃ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">trận đấu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">score /skɔːr/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">điểm số</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">cheer /tʃɪər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">cổ vũ</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -138,10 +138,10 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">an orientation session – buổi định hướng</span></strong>",
-          "<span style=\"color: #00B050;\">welcome</span> /ˈwel.kəm/ (n): lời chào mừng",
-          "<span style=\"color: #00B050;\">new staff</span> /njuː stɑːf/ (n): nhân viên mới",
-          "<span style=\"color: #00B050;\">schedule</span> /ˈʃed.juːl/ (n): lịch trình",
-          "<span style=\"color: #00B050;\">policy</span> /ˈpɒl.ə.si/ (n): chính sách"
+          "<strong><span style=\"color: #00B0F0;\">welcome /ˈwel.kəm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lời chào mừng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">new staff /njuː stɑːf/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên mới</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">schedule /ˈʃed.juːl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lịch trình</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">policy /ˈpɒl.ə.si/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chính sách</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -157,11 +157,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">an anniversary celebration – lễ kỷ niệm</span></strong>",
-          "<span style=\"color: #00B050;\">years</span> /jɪərz/ (n): số năm (kỷ niệm)",
-          "<span style=\"color: #00B050;\">invite</span> /ɪnˈvaɪt/ (n): thư mời",
-          "<span style=\"color: #00B050;\">speech</span> /spiːtʃ/ (n): bài phát biểu",
-          "<span style=\"color: #00B050;\">cake</span> /keɪk/ (n): bánh kem",
-          "<span style=\"color: #00B050;\">memory</span> /ˈmem.ər.i/ (n): kỷ niệm"
+          "<strong><span style=\"color: #00B0F0;\">years /jɪərz/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">số năm (kỷ niệm)</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">invite /ɪnˈvaɪt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thư mời</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">speech /spiːtʃ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bài phát biểu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">cake /keɪk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bánh kem</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">memory /ˈmem.ər.i/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kỷ niệm</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -178,11 +178,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a community fundraiser – buổi gây quỹ cộng đồng</span></strong>",
-          "<span style=\"color: #00B050;\">donation</span> /dəʊˈneɪ.ʃən/ (n): sự quyên góp",
-          "<span style=\"color: #00B050;\">raffle</span> /ˈræf.əl/ (n): bốc thăm trúng thưởng",
-          "<span style=\"color: #00B050;\">cause</span> /kɔːz/ (n): mục đích từ thiện",
-          "<span style=\"color: #00B050;\">support</span> /səˈpɔːt/ (n): sự ủng hộ",
-          "<span style=\"color: #00B050;\">volunteer</span> /ˌvɒl.ənˈtɪər/ (n): tình nguyện viên"
+          "<strong><span style=\"color: #00B0F0;\">donation /dəʊˈneɪ.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự quyên góp</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">raffle /ˈræf.əl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bốc thăm trúng thưởng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">cause /kɔːz/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">mục đích từ thiện</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">support /səˈpɔːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự ủng hộ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">volunteer /ˌvɒl.ənˈtɪər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tình nguyện viên</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -199,10 +199,10 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a press conference – cuộc họp báo</span></strong>",
-          "<span style=\"color: #00B050;\">media</span> /ˈmiː.di.ə/ (n): truyền thông",
-          "<span style=\"color: #00B050;\">spokesperson</span> /ˈspəʊksˌpɜː.sən/ (n): người phát ngôn",
-          "<span style=\"color: #00B050;\">announcement</span> /əˈnaʊns.mənt/ (n): thông báo",
-          "<span style=\"color: #00B050;\">live</span> /laɪv/ (adj): truyền trực tiếp"
+          "<strong><span style=\"color: #00B0F0;\">media /ˈmiː.di.ə/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">truyền thông</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">spokesperson /ˈspəʊksˌpɜː.sən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người phát ngôn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">announcement /əˈnaʊns.mənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thông báo</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">live /laɪv/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(adj)</em>: <strong><span style=\"color: #7030A0;\">truyền trực tiếp</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -218,11 +218,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a product demonstration – buổi trình diễn sản phẩm</span></strong>",
-          "<span style=\"color: #00B050;\">try out</span> /traɪ aʊt/ (v): thử nghiệm",
-          "<span style=\"color: #00B050;\">feature</span> /ˈfiː.tʃər/ (n): tính năng",
-          "<span style=\"color: #00B050;\">benefit</span> /ˈben.ɪ.fɪt/ (n): lợi ích",
-          "<span style=\"color: #00B050;\">sample</span> /ˈsɑːm.pəl/ (n): mẫu dùng thử",
-          "<span style=\"color: #00B050;\">showcase</span> /ˈʃəʊ.keɪs/ (v): trình bày, trưng bày"
+          "<strong><span style=\"color: #00B0F0;\">try out /traɪ aʊt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">thử nghiệm</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">feature /ˈfiː.tʃər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tính năng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">benefit /ˈben.ɪ.fɪt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lợi ích</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">sample /ˈsɑːm.pəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">mẫu dùng thử</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">showcase /ˈʃəʊ.keɪs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">trình bày, trưng bày</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -239,11 +239,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a charity auction – buổi đấu giá từ thiện</span></strong>",
-          "<span style=\"color: #00B050;\">bid</span> /bɪd/ (v/n): đấu giá",
-          "<span style=\"color: #00B050;\">item</span> /ˈaɪ.təm/ (n): món đồ",
-          "<span style=\"color: #00B050;\">cause</span> /kɔːz/ (n): mục đích từ thiện",
-          "<span style=\"color: #00B050;\">donation</span> /dəʊˈneɪ.ʃən/ (n): khoản quyên góp",
-          "<span style=\"color: #00B050;\">winner</span> /ˈwɪn.ər/ (n): người thắng"
+          "<strong><span style=\"color: #00B0F0;\">bid /bɪd/ (v/n)</span></strong>: <strong><span style=\"color: #7030A0;\">đấu giá</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">item /ˈaɪ.təm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">món đồ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">cause /kɔːz/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">mục đích từ thiện</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">donation /dəʊˈneɪ.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khoản quyên góp</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">winner /ˈwɪn.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người thắng</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -260,10 +260,10 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">an employee training – buổi đào tạo nhân viên</span></strong>",
-          "<span style=\"color: #00B050;\">instruction</span> /ɪnˈstrʌk.ʃən/ (n): hướng dẫn",
-          "<span style=\"color: #00B050;\">safety</span> /ˈseɪf.ti/ (n): an toàn",
-          "<span style=\"color: #00B050;\">skills</span> /skɪlz/ (n): kỹ năng",
-          "<span style=\"color: #00B050;\">handbook</span> /ˈhænd.bʊk/ (n): sổ tay"
+          "<strong><span style=\"color: #00B0F0;\">instruction /ɪnˈstrʌk.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hướng dẫn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">safety /ˈseɪf.ti/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">an toàn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">skills /skɪlz/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kỹ năng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">handbook /ˈhænd.bʊk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sổ tay</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -279,11 +279,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a company outing – chuyến đi chơi của công ty</span></strong>",
-          "<span style=\"color: #00B050;\">picnic</span> /ˈpɪk.nɪk/ (n): buổi dã ngoại",
-          "<span style=\"color: #00B050;\">event</span> /ɪˈvent/ (n): sự kiện",
-          "<span style=\"color: #00B050;\">bonding</span> /ˈbɒn.dɪŋ/ (n): sự gắn kết",
-          "<span style=\"color: #00B050;\">register</span> /ˈredʒ.ɪ.stər/ (v): đăng ký",
-          "<span style=\"color: #00B050;\">lunch</span> /lʌntʃ/ (n): bữa trưa"
+          "<strong><span style=\"color: #00B0F0;\">picnic /ˈpɪk.nɪk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">buổi dã ngoại</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">event /ɪˈvent/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự kiện</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">bonding /ˈbɒn.dɪŋ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự gắn kết</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">register /ˈredʒ.ɪ.stər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">đăng ký</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">lunch /lʌntʃ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bữa trưa</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -300,10 +300,10 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a school open house – ngày hội mở trường</span></strong>",
-          "<span style=\"color: #00B050;\">tour</span> /tʊər/ (n): chuyến tham quan",
-          "<span style=\"color: #00B050;\">parent</span> /ˈpeə.rənt/ (n): phụ huynh",
-          "<span style=\"color: #00B050;\">classroom</span> /ˈklɑːs.ruːm/ (n): lớp học",
-          "<span style=\"color: #00B050;\">introduction</span> /ˌɪn.trəˈdʌk.ʃən/ (n): sự giới thiệu"
+          "<strong><span style=\"color: #00B0F0;\">tour /tʊər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chuyến tham quan</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">parent /ˈpeə.rənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phụ huynh</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">classroom /ˈklɑːs.ruːm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lớp học</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">introduction /ˌɪn.trəˈdʌk.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự giới thiệu</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -319,11 +319,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a union meeting – cuộc họp công đoàn</span></strong>",
-          "<span style=\"color: #00B050;\">workers</span> /ˈwɜː.kərz/ (n): công nhân",
-          "<span style=\"color: #00B050;\">vote</span> /vəʊt/ (v/n): bầu chọn",
-          "<span style=\"color: #00B050;\">agreement</span> /əˈɡriː.mənt/ (n): thỏa thuận",
-          "<span style=\"color: #00B050;\">protest</span> /ˈprəʊ.test/ (n): cuộc biểu tình",
-          "<span style=\"color: #00B050;\">negotiation</span> /nɪˌɡəʊ.ʃiˈeɪ.ʃən/ (n): cuộc đàm phán"
+          "<strong><span style=\"color: #00B0F0;\">workers /ˈwɜː.kərz/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">công nhân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">vote /vəʊt/ (v/n)</span></strong>: <strong><span style=\"color: #7030A0;\">bầu chọn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">agreement /əˈɡriː.mənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thỏa thuận</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">protest /ˈprəʊ.test/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cuộc biểu tình</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">negotiation /nɪˌɡəʊ.ʃiˈeɪ.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cuộc đàm phán</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ CÁC SỰ KIỆN HAY XUẤT HIỆN",
@@ -697,7 +697,7 @@
           "<strong><span style=\"color: #FF0000;\">2. ĐỊA ĐIỂM</span></strong>",
           "<strong>1. Nhận biết câu hỏi</strong>",
           "Dạng câu hỏi này yêu cầu <strong>xác định địa điểm diễn ra cuộc hội thoại hoặc bài nói</strong>. Hầu hết các câu hỏi đều bắt đầu bằng từ để hỏi &quot;<strong>Where</strong>&quot;.",
-          "<strong>VÍ DỤ:</strong>",
+          "<strong><span style=\"color: #00B0F0;\">VÍ DỤ</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "• <em><strong>Where</strong> does the conversation most likely <strong>take place</strong>? </em>",
           "• <em><strong>Where</strong> are the <strong>speakers</strong>? </em>",
           "• <em><strong>Where</strong> is the <strong>announcement being made</strong>? </em>",
@@ -736,18 +736,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at a restaurant – tại nhà hàng</span></strong>",
-          "<span style=\"color: #00B050;\">menu</span> /ˈmen.juː/ (n): thực đơn",
-          "<span style=\"color: #00B050;\">waiter</span> /ˈweɪ.tər/ (n): bồi bàn nam",
-          "<span style=\"color: #00B050;\">customer</span> /ˈkʌs.tə.mər/ (n): khách hàng",
-          "<span style=\"color: #00B050;\">bill</span> /bɪl/ (n): hóa đơn",
-          "<span style=\"color: #00B050;\">seat</span> /siːt/ (n): chỗ ngồi",
-          "<span style=\"color: #00B050;\">meal</span> /miːl/ (n): bữa ăn",
-          "<span style=\"color: #00B050;\">receipt</span> /rɪˈsiːt/ (n): biên lai",
-          "<span style=\"color: #00B050;\">refreshment</span> /rɪˈfreʃ.mənt/ (n): món ăn nhẹ/giải khát",
-          "<span style=\"color: #00B050;\">reserve</span> /rɪˈzɜːv/ (v): đặt trước",
-          "<span style=\"color: #00B050;\">order</span> /ˈɔː.dər/ (v): gọi món",
-          "<span style=\"color: #00B050;\">book a table</span> /bʊk ə ˈteɪ.bəl/ (v phr): đặt bàn",
-          "<span style=\"color: #00B050;\">make a reservation</span> /meɪk ə ˌrez.əˈveɪ.ʃən/ (v phr): đặt chỗ trước"
+          "<strong><span style=\"color: #00B0F0;\">menu /ˈmen.juː/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thực đơn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">waiter /ˈweɪ.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bồi bàn nam</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">customer /ˈkʌs.tə.mər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khách hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">bill /bɪl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hóa đơn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">seat /siːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chỗ ngồi</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">meal /miːl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bữa ăn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">receipt /rɪˈsiːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">biên lai</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">refreshment /rɪˈfreʃ.mənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">món ăn nhẹ/giải khát</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">reserve /rɪˈzɜːv/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">đặt trước</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">order /ˈɔː.dər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">gọi món</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">book a table /bʊk ə ˈteɪ.bəl/ (v phr)</span></strong>: <strong><span style=\"color: #7030A0;\">đặt bàn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">make a reservation /meɪk ə ˌrez.əˈveɪ.ʃən/ (v phr)</span></strong>: <strong><span style=\"color: #7030A0;\">đặt chỗ trước</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -771,18 +771,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at a hotel – tại khách sạn</span></strong>",
-          "<span style=\"color: #00B050;\">front desk / reception desk</span> /ˌfrʌnt ˈdesk/ / /rɪˈsep.ʃən desk/ (n): quầy lễ tân",
-          "<span style=\"color: #00B050;\">room key</span> /ruːm kiː/ (n): chìa khóa phòng",
-          "<span style=\"color: #00B050;\">room service</span> /ˈruːm ˌsɜː.vɪs/ (n): dịch vụ phục vụ phòng",
-          "<span style=\"color: #00B050;\">bellboy</span> /ˈbel.bɔɪ/ (n): nhân viên khuân hành lý",
-          "<span style=\"color: #00B050;\">receptionist</span> /rɪˈsep.ʃən.ɪst/ (n): nhân viên lễ tân",
-          "<span style=\"color: #00B050;\">manager</span> /ˈmæn.ɪ.dʒər/ (n): quản lý",
-          "<span style=\"color: #00B050;\">lobby</span> /ˈlɒb.i/ (n): sảnh chờ",
-          "<span style=\"color: #00B050;\">housekeeping</span> /ˈhaʊsˌkiː.pɪŋ/ (n): bộ phận dọn phòng",
-          "<span style=\"color: #00B050;\">register</span> /ˈredʒ.ɪ.stər/ (v): đăng ký",
-          "<span style=\"color: #00B050;\">check in</span> /tʃek ɪn/ (v): nhận phòng",
-          "<span style=\"color: #00B050;\">check out</span> /tʃek aʊt/ (v): trả phòng",
-          "<span style=\"color: #00B050;\">guest</span> /ɡest/ (n): khách"
+          "<strong><span style=\"color: #00B0F0;\">front desk / reception desk /ˌfrʌnt ˈdesk/ / /rɪˈsep.ʃən desk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quầy lễ tân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">room key /ruːm kiː/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chìa khóa phòng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">room service /ˈruːm ˌsɜː.vɪs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">dịch vụ phục vụ phòng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">bellboy /ˈbel.bɔɪ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên khuân hành lý</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">receptionist /rɪˈsep.ʃən.ɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên lễ tân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">manager /ˈmæn.ɪ.dʒər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quản lý</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">lobby /ˈlɒb.i/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sảnh chờ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">housekeeping /ˈhaʊsˌkiː.pɪŋ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bộ phận dọn phòng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">register /ˈredʒ.ɪ.stər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">đăng ký</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">check in /tʃek ɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">nhận phòng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">check out /tʃek aʊt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">trả phòng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">guest /ɡest/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khách</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -806,18 +806,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at the bank – tại ngân hàng</span></strong>",
-          "<span style=\"color: #00B050;\">cash</span> /kæʃ/ (n): tiền mặt",
-          "<span style=\"color: #00B050;\">credit card</span> /ˈkred.ɪt kɑːd/ (n): thẻ tín dụng",
-          "<span style=\"color: #00B050;\">interest</span> /ˈɪn.trəst/ (n): lãi suất",
-          "<span style=\"color: #00B050;\">transaction</span> /trænˈzæk.ʃən/ (n): giao dịch",
-          "<span style=\"color: #00B050;\">client</span> /ˈklaɪ.ənt/ (n): khách hàng (dịch vụ)",
-          "<span style=\"color: #00B050;\">balance</span> /ˈbæl.əns/ (n): số dư",
-          "<span style=\"color: #00B050;\">ATM</span> /ˌeɪ.tiːˈem/ (n): máy rút tiền tự động",
-          "<span style=\"color: #00B050;\">transfer</span> /ˈtræns.fɜːr/ (v): chuyển khoản",
-          "<span style=\"color: #00B050;\">deposit</span> /dɪˈpɒz.ɪt/ (v): gửi tiền vào",
-          "<span style=\"color: #00B050;\">withdraw</span> /wɪðˈdrɔː/ (v): rút tiền",
-          "<span style=\"color: #00B050;\">account</span> /əˈkaʊnt/ (n): tài khoản",
-          "<span style=\"color: #00B050;\">loan</span> /ləʊn/ (n): khoản vay"
+          "<strong><span style=\"color: #00B0F0;\">cash /kæʃ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tiền mặt</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">credit card /ˈkred.ɪt kɑːd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thẻ tín dụng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">interest /ˈɪn.trəst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lãi suất</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">transaction /trænˈzæk.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giao dịch</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">client /ˈklaɪ.ənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khách hàng (dịch vụ)</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">balance /ˈbæl.əns/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">số dư</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">ATM /ˌeɪ.tiːˈem/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">máy rút tiền tự động</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">transfer /ˈtræns.fɜːr/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">chuyển khoản</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">deposit /dɪˈpɒz.ɪt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">gửi tiền vào</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">withdraw /wɪðˈdrɔː/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">rút tiền</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">account /əˈkaʊnt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tài khoản</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">loan /ləʊn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khoản vay</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -841,19 +841,19 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at the post office – tại bưu điện</span></strong>",
-          "<span style=\"color: #00B050;\">send</span> /send/ (v): gửi",
-          "<span style=\"color: #00B050;\">by air</span> /baɪ eə(r)/ (adv phr): bằng đường hàng không",
-          "<span style=\"color: #00B050;\">mailbox</span> /ˈmeɪl.bɒks/ (n): hộp thư",
-          "<span style=\"color: #00B050;\">address label</span> /əˈdres ˈleɪ.bəl/ (n): nhãn địa chỉ",
-          "<span style=\"color: #00B050;\">stamp</span> /stæmp/ (n): tem thư",
-          "<span style=\"color: #00B050;\">envelope</span> /ˈen.və.ləʊp/ (n): phong bì",
-          "<span style=\"color: #00B050;\">package</span> /ˈpæk.ɪdʒ/ (n): gói hàng",
-          "<span style=\"color: #00B050;\">postal code</span> /ˈpəʊ.stəl kəʊd/ (n): mã bưu chính",
-          "<span style=\"color: #00B050;\">ship</span> /ʃɪp/ (v): vận chuyển",
-          "<span style=\"color: #00B050;\">deliver</span> /dɪˈlɪv.ər/ (v): giao hàng",
-          "<span style=\"color: #00B050;\">delivery</span> /dɪˈlɪv.ər.i/ (n): sự giao hàng",
-          "<span style=\"color: #00B050;\">tracking number</span> /ˈtræk.ɪŋ ˌnʌm.bər/ (n): mã theo dõi",
-          "<span style=\"color: #00B050;\">registered mail</span> /ˌredʒ.ɪ.stəd ˈmeɪl/ (n): thư bảo đảm"
+          "<strong><span style=\"color: #00B0F0;\">send /send/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">gửi</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">by air /baɪ eə(r)/ (adv phr)</span></strong>: <strong><span style=\"color: #7030A0;\">bằng đường hàng không</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">mailbox /ˈmeɪl.bɒks/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hộp thư</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">address label /əˈdres ˈleɪ.bəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhãn địa chỉ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">stamp /stæmp/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tem thư</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">envelope /ˈen.və.ləʊp/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phong bì</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">package /ˈpæk.ɪdʒ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">gói hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">postal code /ˈpəʊ.stəl kəʊd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">mã bưu chính</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">ship /ʃɪp/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">vận chuyển</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">deliver /dɪˈlɪv.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">giao hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">delivery /dɪˈlɪv.ər.i/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự giao hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">tracking number /ˈtræk.ɪŋ ˌnʌm.bər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">mã theo dõi</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">registered mail /ˌredʒ.ɪ.stəd ˈmeɪl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thư bảo đảm</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -878,18 +878,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at a medical office – tại phòng khám</span></strong>",
-          "<span style=\"color: #00B050;\">doctor</span> /ˈdɒk.tər/ (n): bác sĩ",
-          "<span style=\"color: #00B050;\">nurse</span> /nɜːs/ (n): y tá",
-          "<span style=\"color: #00B050;\">patient</span> /ˈpeɪ.ʃənt/ (n): bệnh nhân",
-          "<span style=\"color: #00B050;\">medicine</span> /ˈmed.ɪ.sən/ (n): thuốc",
-          "<span style=\"color: #00B050;\">prescription</span> /prɪˈskrɪp.ʃən/ (n): đơn thuốc",
-          "<span style=\"color: #00B050;\">check-up</span> /ˈtʃek.ʌp/ (n): cuộc khám sức khỏe",
-          "<span style=\"color: #00B050;\">appointment</span> /əˈpɔɪnt.mənt/ (n): cuộc hẹn",
-          "<span style=\"color: #00B050;\">clinic</span> /ˈklɪn.ɪk/ (n): phòng khám",
-          "<span style=\"color: #00B050;\">treatment</span> /ˈtriːt.mənt/ (n): sự điều trị",
-          "<span style=\"color: #00B050;\">examination</span> /ɪɡˌzæm.ɪˈneɪ.ʃən/ (n): sự kiểm tra sức khỏe",
-          "<span style=\"color: #00B050;\">medical record</span> /ˈmed.ɪ.kəl ˌrek.ɔːd/ (n): hồ sơ y tế",
-          "<span style=\"color: #00B050;\">receptionist</span> /rɪˈsep.ʃən.ɪst/ (n): nhân viên lễ tân"
+          "<strong><span style=\"color: #00B0F0;\">doctor /ˈdɒk.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bác sĩ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">nurse /nɜːs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">y tá</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">patient /ˈpeɪ.ʃənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bệnh nhân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">medicine /ˈmed.ɪ.sən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thuốc</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">prescription /prɪˈskrɪp.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đơn thuốc</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">check-up /ˈtʃek.ʌp/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cuộc khám sức khỏe</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">appointment /əˈpɔɪnt.mənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cuộc hẹn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">clinic /ˈklɪn.ɪk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phòng khám</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">treatment /ˈtriːt.mənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự điều trị</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">examination /ɪɡˌzæm.ɪˈneɪ.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự kiểm tra sức khỏe</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">medical record /ˈmed.ɪ.kəl ˌrek.ɔːd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hồ sơ y tế</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">receptionist /rɪˈsep.ʃən.ɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên lễ tân</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -913,18 +913,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at the airport – tại sân bay</span></strong>",
-          "<span style=\"color: #00B050;\">passport</span> /ˈpɑːs.pɔːt/ (n): hộ chiếu",
-          "<span style=\"color: #00B050;\">boarding pass</span> /ˈbɔː.dɪŋ ˌpɑːs/ (n): thẻ lên máy bay",
-          "<span style=\"color: #00B050;\">passenger</span> /ˈpæs.ən.dʒər/ (n): hành khách",
-          "<span style=\"color: #00B050;\">luggage / baggage</span> /ˈlʌɡ.ɪdʒ/ / /ˈbæɡ.ɪdʒ/ (n): hành lý",
-          "<span style=\"color: #00B050;\">flight</span> /flaɪt/ (n): chuyến bay",
-          "<span style=\"color: #00B050;\">gate</span> /ɡeɪt/ (n): cổng ra máy bay",
-          "<span style=\"color: #00B050;\">departure</span> /dɪˈpɑː.tʃər/ (n): sự khởi hành",
-          "<span style=\"color: #00B050;\">arrival</span> /əˈraɪ.vəl/ (n): sự đến nơi",
-          "<span style=\"color: #00B050;\">terminal</span> /ˈtɜː.mɪ.nəl/ (n): nhà ga",
-          "<span style=\"color: #00B050;\">security check</span> /sɪˈkjʊə.rə.ti tʃek/ (n): kiểm tra an ninh",
-          "<span style=\"color: #00B050;\">airline</span> /ˈeə.laɪn/ (n): hãng hàng không",
-          "<span style=\"color: #00B050;\">carry-on bag</span> /ˈkæri ɒn bæɡ/ (n): hành lý xách tay"
+          "<strong><span style=\"color: #00B0F0;\">passport /ˈpɑːs.pɔːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hộ chiếu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">boarding pass /ˈbɔː.dɪŋ ˌpɑːs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thẻ lên máy bay</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">passenger /ˈpæs.ən.dʒər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hành khách</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">luggage / baggage /ˈlʌɡ.ɪdʒ/ / /ˈbæɡ.ɪdʒ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hành lý</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">flight /flaɪt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chuyến bay</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">gate /ɡeɪt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cổng ra máy bay</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">departure /dɪˈpɑː.tʃər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự khởi hành</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">arrival /əˈraɪ.vəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự đến nơi</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">terminal /ˈtɜː.mɪ.nəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà ga</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">security check /sɪˈkjʊə.rə.ti tʃek/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kiểm tra an ninh</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">airline /ˈeə.laɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hãng hàng không</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">carry-on bag /ˈkæri ɒn bæɡ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hành lý xách tay</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -948,19 +948,19 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at a shop/store – tại cửa hàng</span></strong>",
-          "<span style=\"color: #00B050;\">cashier</span> /kæʃˈɪər/ (n): thu ngân",
-          "<span style=\"color: #00B050;\">salesperson</span> /ˈseɪlzˌpɜː.sən/ (n): nhân viên bán hàng",
-          "<span style=\"color: #00B050;\">item</span> /aɪ.təm/ (n): món hàng",
-          "<span style=\"color: #00B050;\">in stock</span> /ɪn stɒk/ (adj phr): còn hàng",
-          "<span style=\"color: #00B050;\">out of stock</span> /ˌaʊt əv ˈstɒk/ (adj phr): hết hàng",
-          "<span style=\"color: #00B050;\">refund</span> /ˈriː.fʌnd/ (n): khoản hoàn tiền",
-          "<span style=\"color: #00B050;\">payment</span> /ˈpeɪ.mənt/ (n): khoản thanh toán",
-          "<span style=\"color: #00B050;\">shopping bag</span> /ˈʃɒp.ɪŋ bæɡ/ (n): túi mua sắm",
-          "<span style=\"color: #00B050;\">shopping cart</span> /ˈʃɒp.ɪŋ kɑːt/ (n): xe đẩy mua hàng",
-          "<span style=\"color: #00B050;\">on sale</span> /ɒn seɪl/ (adj phr): đang giảm giá",
-          "<span style=\"color: #00B050;\">receipt</span> /rɪˈsiːt/ (n): hóa đơn",
-          "<span style=\"color: #00B050;\">discount</span> /ˈdɪs.kaʊnt/ (n): chiết khấu, giảm giá",
-          "<span style=\"color: #00B050;\">price tag</span> /ˈpraɪs ˌtæɡ/ (n): mác giá"
+          "<strong><span style=\"color: #00B0F0;\">cashier /kæʃˈɪər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thu ngân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">salesperson /ˈseɪlzˌpɜː.sən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên bán hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">item /aɪ.təm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">món hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">in stock /ɪn stɒk/ (adj phr)</span></strong>: <strong><span style=\"color: #7030A0;\">còn hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">out of stock /ˌaʊt əv ˈstɒk/ (adj phr)</span></strong>: <strong><span style=\"color: #7030A0;\">hết hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">refund /ˈriː.fʌnd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khoản hoàn tiền</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">payment /ˈpeɪ.mənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khoản thanh toán</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">shopping bag /ˈʃɒp.ɪŋ bæɡ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">túi mua sắm</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">shopping cart /ˈʃɒp.ɪŋ kɑːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">xe đẩy mua hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">on sale /ɒn seɪl/ (adj phr)</span></strong>: <strong><span style=\"color: #7030A0;\">đang giảm giá</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">receipt /rɪˈsiːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hóa đơn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">discount /ˈdɪs.kaʊnt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chiết khấu, giảm giá</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">price tag /ˈpraɪs ˌtæɡ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">mác giá</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -985,18 +985,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at a warehouse – tại nhà kho</span></strong>",
-          "<span style=\"color: #00B050;\">shipment</span> /ˈʃɪp.mənt/ (n): lô hàng",
-          "<span style=\"color: #00B050;\">package</span> /ˈpæk.ɪdʒ/ (n): kiện hàng",
-          "<span style=\"color: #00B050;\">inventory</span> /ˈɪn.vən.tər.i/ (n): hàng tồn kho",
-          "<span style=\"color: #00B050;\">storage</span> /ˈstɔː.rɪdʒ/ (n): kho lưu trữ",
-          "<span style=\"color: #00B050;\">loading dock</span> /ˈləʊ.dɪŋ dɒk/ (n): khu bốc xếp hàng",
-          "<span style=\"color: #00B050;\">forklift</span> /ˈfɔː.klɪft/ (n): xe nâng",
-          "<span style=\"color: #00B050;\">load</span> /ləʊd/ (v): chất hàng",
-          "<span style=\"color: #00B050;\">unload</span> /ʌnˈləʊd/ (v): dỡ hàng",
-          "<span style=\"color: #00B050;\">stack</span> /stæk/ (v): xếp chồng",
-          "<span style=\"color: #00B050;\">label</span> /ˈleɪ.bəl/ (n): nhãn dán",
-          "<span style=\"color: #00B050;\">invoice</span> /ˈɪn.vɔɪs/ (n): hóa đơn",
-          "<span style=\"color: #00B050;\">drop off</span> /drɒp ɒf/ (v): giao hàng"
+          "<strong><span style=\"color: #00B0F0;\">shipment /ˈʃɪp.mənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lô hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">package /ˈpæk.ɪdʒ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kiện hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">inventory /ˈɪn.vən.tər.i/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hàng tồn kho</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">storage /ˈstɔː.rɪdʒ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kho lưu trữ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">loading dock /ˈləʊ.dɪŋ dɒk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khu bốc xếp hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">forklift /ˈfɔː.klɪft/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">xe nâng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">load /ləʊd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">chất hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">unload /ʌnˈləʊd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">dỡ hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">stack /stæk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">xếp chồng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">label /ˈleɪ.bəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhãn dán</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">invoice /ˈɪn.vɔɪs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hóa đơn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">drop off /drɒp ɒf/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">giao hàng</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1020,19 +1020,19 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at an office – tại văn phòng</span></strong>",
-          "<span style=\"color: #00B050;\">manager</span> /ˈmæn.ɪ.dʒər/ (n): quản lý",
-          "<span style=\"color: #00B050;\">employee</span> /ɪmˈplɔɪ.iː/ (n): nhân viên",
-          "<span style=\"color: #00B050;\">employer</span> /ɪmˈplɔɪ.ər/ (n): người tuyển dụng",
-          "<span style=\"color: #00B050;\">coworker / colleague</span> /ˈkəʊˌwɜː.kər/ / /ˈkɒl.iːɡ/ (n): đồng nghiệp",
-          "<span style=\"color: #00B050;\">department</span> /dɪˈpa:t.mənt/ (n): phòng ban",
-          "<span style=\"color: #00B050;\">interview</span> /ˈɪn.tə.vjuː/ (n): buổi phỏng vấn",
-          "<span style=\"color: #00B050;\">project</span> /ˈprɒdʒ.ekt/ (n): dự án",
-          "<span style=\"color: #00B050;\">meeting</span> /ˈmiː.tɪŋ/ (n): cuộc họp",
-          "<span style=\"color: #00B050;\">deadline</span> /ˈded.laɪn/ (n): hạn chót",
-          "<span style=\"color: #00B050;\">memo</span> /ˈmem.əʊ/ (n): thông báo nội bộ",
-          "<span style=\"color: #00B050;\">salary</span> /ˈsæl.ər.i/ (n): lương",
-          "<span style=\"color: #00B050;\">CEO</span> /ˌsiː.iːˈəʊ/ (n): giám đốc điều hành",
-          "<span style=\"color: #00B050;\">contract</span> /ˈkɒn.trækt/ (n): hợp đồng"
+          "<strong><span style=\"color: #00B0F0;\">manager /ˈmæn.ɪ.dʒər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quản lý</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">employee /ɪmˈplɔɪ.iː/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">employer /ɪmˈplɔɪ.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người tuyển dụng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">coworker / colleague /ˈkəʊˌwɜː.kər/ / /ˈkɒl.iːɡ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đồng nghiệp</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">department /dɪˈpa</span></strong>: <strong><span style=\"color: #7030A0;\">t.mənt/ (n): phòng ban</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">interview /ˈɪn.tə.vjuː/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">buổi phỏng vấn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">project /ˈprɒdʒ.ekt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">dự án</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">meeting /ˈmiː.tɪŋ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cuộc họp</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">deadline /ˈded.laɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hạn chót</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">memo /ˈmem.əʊ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thông báo nội bộ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">salary /ˈsæl.ər.i/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lương</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">CEO /ˌsiː.iːˈəʊ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giám đốc điều hành</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">contract /ˈkɒn.trækt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hợp đồng</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1057,19 +1057,19 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at a theater – tại rạp/nhà hát</span></strong>",
-          "<span style=\"color: #00B050;\">ticket</span> /ˈtɪk.ɪt/ (n): vé",
-          "<span style=\"color: #00B050;\">seat</span> /siːt/ (n): chỗ ngồi",
-          "<span style=\"color: #00B050;\">showtime</span> /ˈʃəʊ.taɪm/ (n): giờ chiếu",
-          "<span style=\"color: #00B050;\">curtain</span> /ˈkɜː.tən/ (n): màn sân khẩu",
-          "<span style=\"color: #00B050;\">play</span> /pleɪ/ (n): vở kịch",
-          "<span style=\"color: #00B050;\">movie</span> /ˈmuː.vi/ (n): phim",
-          "<span style=\"color: #00B050;\">performance</span> /pəˈfɔː.məns/ (n): buổi biểu diễn",
-          "<span style=\"color: #00B050;\">audience</span> /ˈɔː.di.əns/ (n): khán giả",
-          "<span style=\"color: #00B050;\">actor</span> /ˈæk.tər/ (n): nam diễn viên",
-          "<span style=\"color: #00B050;\">actress</span> /ˈæk.trəs/ (n): nữ diễn viên",
-          "<span style=\"color: #00B050;\">stage</span> /steɪdʒ/ (n): sân khấu",
-          "<span style=\"color: #00B050;\">director</span> /daɪˈrek.tər/ (n): đạo diễn",
-          "<span style=\"color: #00B050;\">sold out</span> /səʊld aʊt/ (adj): hết vé"
+          "<strong><span style=\"color: #00B0F0;\">ticket /ˈtɪk.ɪt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">vé</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">seat /siːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chỗ ngồi</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">showtime /ˈʃəʊ.taɪm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giờ chiếu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">curtain /ˈkɜː.tən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">màn sân khẩu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">play /pleɪ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">vở kịch</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">movie /ˈmuː.vi/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phim</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">performance /pəˈfɔː.məns/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">buổi biểu diễn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">audience /ˈɔː.di.əns/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khán giả</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">actor /ˈæk.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nam diễn viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">actress /ˈæk.trəs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nữ diễn viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">stage /steɪdʒ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sân khấu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">director /daɪˈrek.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đạo diễn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">sold out /səʊld aʊt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(adj)</em>: <strong><span style=\"color: #7030A0;\">hết vé</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1094,18 +1094,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at a real estate agency – tại công ty bất động sản</span></strong>",
-          "<span style=\"color: #00B050;\">apartment</span> /əˈpɑːt.mənt/ (n): căn hộ",
-          "<span style=\"color: #00B050;\">home</span> /həʊm/ (n): nhà",
-          "<span style=\"color: #00B050;\">rent</span> /rent/ (v): thuê",
-          "<span style=\"color: #00B050;\">landlord</span> /ˈlænd.lɔːd/ (n): chủ nhà (cho thuê)",
-          "<span style=\"color: #00B050;\">tenant</span> /ˈten.ənt/ (n): người thuê nhà",
-          "<span style=\"color: #00B050;\">lease</span> /liːs/ (n): hợp đồng thuê",
-          "<span style=\"color: #00B050;\">move in</span> /muːv ɪn/ (v): chuyển vào",
-          "<span style=\"color: #00B050;\">move out</span> /muːv aʊt/ (v): chuyển ra",
-          "<span style=\"color: #00B050;\">property</span> /ˈprɒp.ə.ti/ (n): bất động sản, tài sản",
-          "<span style=\"color: #00B050;\">contract</span> /ˈkɒn.trækt/ (n): hợp đồng",
-          "<span style=\"color: #00B050;\">real estate agent</span> /ˈrɪəl ɪˌsteɪt ˌeɪ.dʒənt/ (n): nhân viên môi giới nhà đất",
-          "<span style=\"color: #00B050;\">listing</span> /ˈlɪs.tɪŋ/ (n): danh sách bất động sản"
+          "<strong><span style=\"color: #00B0F0;\">apartment /əˈpɑːt.mənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">căn hộ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">home /həʊm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">rent /rent/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">thuê</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">landlord /ˈlænd.lɔːd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chủ nhà (cho thuê)</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">tenant /ˈten.ənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người thuê nhà</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">lease /liːs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hợp đồng thuê</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">move in /muːv ɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">chuyển vào</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">move out /muːv aʊt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">chuyển ra</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">property /ˈprɒp.ə.ti/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bất động sản, tài sản</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">contract /ˈkɒn.trækt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hợp đồng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">real estate agent /ˈrɪəl ɪˌsteɪt ˌeɪ.dʒənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên môi giới nhà đất</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">listing /ˈlɪs.tɪŋ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">danh sách bất động sản</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1129,18 +1129,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">at a train/bus station – tại trạm xe lửa/xe buýt</span></strong>",
-          "<span style=\"color: #00B050;\">ticket booth</span> /ˈtɪk.ɪt buːð/ (n): quầy bán vé",
-          "<span style=\"color: #00B050;\">schedule</span> /ˈʃed.juːl/ (n): lịch trình",
-          "<span style=\"color: #00B050;\">platform</span> /ˈplæt.fɔːm/ (n): sân ga",
-          "<span style=\"color: #00B050;\">departure</span> /dɪˈpɑː.tʃər/ (n): sự khởi hành",
-          "<span style=\"color: #00B050;\">arrival</span> /əˈraɪ.vəl/ (n): sự đến",
-          "<span style=\"color: #00B050;\">train</span> /treɪn/ (n): tàu",
-          "<span style=\"color: #00B050;\">bus</span> /bas/ (n): xe buýt",
-          "<span style=\"color: #00B050;\">track</span> /træk/ (n): đường ray",
-          "<span style=\"color: #00B050;\">conductor</span> /kənˈdʌk.tər/ (n): nhân viên soát vé",
-          "<span style=\"color: #00B050;\">route</span> /ruːt/ (n): tuyến đường",
-          "<span style=\"color: #00B050;\">stop</span> /stɒp/ (n): trạm dừng",
-          "<span style=\"color: #00B050;\">transfer</span> /ˈtræns.fɜːr/ (n): sự chuyển tuyến"
+          "<strong><span style=\"color: #00B0F0;\">ticket booth /ˈtɪk.ɪt buːð/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quầy bán vé</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">schedule /ˈʃed.juːl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lịch trình</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">platform /ˈplæt.fɔːm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sân ga</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">departure /dɪˈpɑː.tʃər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự khởi hành</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">arrival /əˈraɪ.vəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự đến</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">train /treɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tàu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">bus /bas/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">xe buýt</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">track /træk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đường ray</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">conductor /kənˈdʌk.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên soát vé</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">route /ruːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tuyến đường</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">stop /stɒp/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">trạm dừng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">transfer /ˈtræns.fɜːr/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự chuyển tuyến</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1164,11 +1164,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">an advertising company – tại công ty quảng cáo</span></strong>",
-          "<span style=\"color: #00B050;\">campaign</span> /kæmˈpeɪn/ (n): chiến dịch",
-          "<span style=\"color: #00B050;\">client</span> /ˈklaɪ.ənt/ (n): khách hàng (dịch vụ)",
-          "<span style=\"color: #00B050;\">marketing</span> /ˈmɑː.kɪ.tɪŋ/ (n): tiếp thị",
-          "<span style=\"color: #00B050;\">design</span> /dɪˈzaɪn/ (n): thiết kế",
-          "<span style=\"color: #00B050;\">pitch</span> /pɪtʃ/ (n): bài thuyết trình chào hàng"
+          "<strong><span style=\"color: #00B0F0;\">campaign /kæmˈpeɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chiến dịch</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">client /ˈklaɪ.ənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">khách hàng (dịch vụ)</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">marketing /ˈmɑː.kɪ.tɪŋ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tiếp thị</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">design /dɪˈzaɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thiết kế</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">pitch /pɪtʃ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bài thuyết trình chào hàng</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1185,10 +1185,10 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a factory – tại nhà máy</span></strong>",
-          "<span style=\"color: #00B050;\">machinery</span> /məˈʃiː.nər.i/ (n): máy móc",
-          "<span style=\"color: #00B050;\">production</span> /prəˈdʌk.ʃən/ (n): sản xuất",
-          "<span style=\"color: #00B050;\">assembly line</span> /əˈsem.bli ˌlaɪn/ (n): dây chuyền lắp ráp",
-          "<span style=\"color: #00B050;\">workers</span> /ˈwɜː.kərz/ (n): công nhân"
+          "<strong><span style=\"color: #00B0F0;\">machinery /məˈʃiː.nər.i/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">máy móc</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">production /prəˈdʌk.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sản xuất</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">assembly line /əˈsem.bli ˌlaɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">dây chuyền lắp ráp</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">workers /ˈwɜː.kərz/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">công nhân</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1204,11 +1204,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a newspaper / press office – tại tòa soạn báo/văn phòng báo chí</span></strong>",
-          "<span style=\"color: #00B050;\">reporter</span> /rɪˈpɔː.tər/ (n): phóng viên",
-          "<span style=\"color: #00B050;\">article</span> /ˈɑː.tɪ.kəl/ (n): bài báo",
-          "<span style=\"color: #00B050;\">deadline</span> /ˈded.laɪn/ (n): hạn chót",
-          "<span style=\"color: #00B050;\">editor</span> /ˈed.ɪ.tər/ (n): biên tập viên",
-          "<span style=\"color: #00B050;\">print</span> /prɪnt/ (v): in ấn"
+          "<strong><span style=\"color: #00B0F0;\">reporter /rɪˈpɔː.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phóng viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">article /ˈɑː.tɪ.kəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bài báo</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">deadline /ˈded.laɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hạn chót</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">editor /ˈed.ɪ.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">biên tập viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">print /prɪnt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">in ấn</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1225,11 +1225,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a customer service center – tại trung tâm dịch vụ khách hàng</span></strong>",
-          "<span style=\"color: #00B050;\">complaint</span> /kəmˈpleɪnt/ (n): lời phàn nàn",
-          "<span style=\"color: #00B050;\">inquiry</span> /ɪnˈkwaɪə.ri/ (n): yêu cầu thông tin",
-          "<span style=\"color: #00B050;\">hotline</span> /ˈhɒt.laɪn/ (n): đường dây nóng",
-          "<span style=\"color: #00B050;\">feedback</span> /ˈfiːd.bæk/ (n): phản hồi",
-          "<span style=\"color: #00B050;\">support</span> /səˈpɔːt/ (n): hỗ trợ"
+          "<strong><span style=\"color: #00B0F0;\">complaint /kəmˈpleɪnt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lời phàn nàn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">inquiry /ɪnˈkwaɪə.ri/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">yêu cầu thông tin</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">hotline /ˈhɒt.laɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đường dây nóng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">feedback /ˈfiːd.bæk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phản hồi</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">support /səˈpɔːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hỗ trợ</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1246,10 +1246,10 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a car dealership – tại đại lý ô tô</span></strong>",
-          "<span style=\"color: #00B050;\">test drive</span> /ˈtest ˌdraɪv/ (n): lái thử",
-          "<span style=\"color: #00B050;\">showroom</span> /ˈʃəʊ.ruːm/ (n): phòng trưng bày xe",
-          "<span style=\"color: #00B050;\">vehicle</span> /ˈvɪə.kəl/ (n): phương tiện",
-          "<span style=\"color: #00B050;\">salesman</span> /ˈsalesman/ (n): nhân viên bán hàng"
+          "<strong><span style=\"color: #00B0F0;\">test drive /ˈtest ˌdraɪv/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lái thử</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">showroom /ˈʃəʊ.ruːm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phòng trưng bày xe</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">vehicle /ˈvɪə.kəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phương tiện</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">salesman /ˈsalesman/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên bán hàng</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1265,10 +1265,10 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a fitness center / gym – tại phòng tập thể hình</span></strong>",
-          "<span style=\"color: #00B050;\">workout</span> /ˈwɜː.kaʊt/ (n): buổi tập luyện",
-          "<span style=\"color: #00B050;\">trainer</span> /ˈtreɪ.nər/ (n): huấn luyện viên",
-          "<span style=\"color: #00B050;\">membership</span> /ˈmem.bə.ʃɪp/ (n): thẻ hội viên",
-          "<span style=\"color: #00B050;\">treadmill</span> /ˈtred.mɪl/ (n): máy chạy bộ"
+          "<strong><span style=\"color: #00B0F0;\">workout /ˈwɜː.kaʊt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">buổi tập luyện</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">trainer /ˈtreɪ.nər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">huấn luyện viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">membership /ˈmem.bə.ʃɪp/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thẻ hội viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">treadmill /ˈtred.mɪl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">máy chạy bộ</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1284,11 +1284,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a university campus – tại khuôn viên trường đại học</span></strong>",
-          "<span style=\"color: #00B050;\">lecture</span> /ˈlek.tʃər/ (n): bài giảng",
-          "<span style=\"color: #00B050;\">student ID</span> /ˌstjuː.dənt aɪˈdiː/ (n): thẻ sinh viên",
-          "<span style=\"color: #00B050;\">dorm</span> /dɔːm/ (n): ký túc xá",
-          "<span style=\"color: #00B050;\">registrar</span> /ˌredʒ.ɪˈstrɑːr/ (n): phòng đào tạo",
-          "<span style=\"color: #00B050;\">semester</span> /sɪˈmes.tər/ (n): học kỳ"
+          "<strong><span style=\"color: #00B0F0;\">lecture /ˈlek.tʃər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bài giảng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">student ID /ˌstjuː.dənt aɪˈdiː/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thẻ sinh viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">dorm /dɔːm/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">ký túc xá</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">registrar /ˌredʒ.ɪˈstrɑːr/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phòng đào tạo</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">semester /sɪˈmes.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">học kỳ</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1305,11 +1305,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a grocery store – tại cửa hàng tạp hoá</span></strong>",
-          "<span style=\"color: #00B050;\">aisle</span> /aɪl/ (n): lối đi giữa các kệ",
-          "<span style=\"color: #00B050;\">cart</span> /kɑːt/ (n): xe đẩy hàng",
-          "<span style=\"color: #00B050;\">checkout</span> /ˈtʃek.aʊt/ (n): quầy thanh toán",
-          "<span style=\"color: #00B050;\">receipt</span> /rɪˈsiːt/ (n): biên lai",
-          "<span style=\"color: #00B050;\">promotion</span> /prəˈməʊ.ʃən/ (n): chương trình khuyến mãi"
+          "<strong><span style=\"color: #00B0F0;\">aisle /aɪl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lối đi giữa các kệ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">cart /kɑːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">xe đẩy hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">checkout /ˈtʃek.aʊt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quầy thanh toán</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">receipt /rɪˈsiːt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">biên lai</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">promotion /prəˈməʊ.ʃən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chương trình khuyến mãi</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1326,11 +1326,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a delivery hub – tại trung tâm phân phối hàng hóa</span></strong>",
-          "<span style=\"color: #00B050;\">parcel</span> /ˈpɑː.səl/ (n): bưu kiện",
-          "<span style=\"color: #00B050;\">dispatch</span> /dɪˈspætʃ/ (n): sự gửi hàng",
-          "<span style=\"color: #00B050;\">logistics</span> /ləˈdʒɪs.tɪks/ (n): hậu cần",
-          "<span style=\"color: #00B050;\">courier</span> /ˈkʊə.ri.ər/ (n): nhân viên giao hàng",
-          "<span style=\"color: #00B050;\">scan</span> /skæn/ (v): quét (mã, hàng)"
+          "<strong><span style=\"color: #00B0F0;\">parcel /ˈpɑː.səl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bưu kiện</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">dispatch /dɪˈspætʃ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sự gửi hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">logistics /ləˈdʒɪs.tɪks/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hậu cần</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">courier /ˈkʊə.ri.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên giao hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">scan /skæn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(v)</em>: <strong><span style=\"color: #7030A0;\">quét (mã, hàng)</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1347,11 +1347,11 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">a market – tại chợ</span></strong>",
-          "<span style=\"color: #00B050;\">vendor</span> /ˈven.dər/ (n): người bán hàng",
-          "<span style=\"color: #00B050;\">stall</span> /stɔːl/ (n): sạp hàng",
-          "<span style=\"color: #00B050;\">bargain</span> /ˈbɑː.ɡɪn/ (n): món hời, giá hời",
-          "<span style=\"color: #00B050;\">fresh produce</span> /freʃ ˈprɒ.djuːs/ (n): nông sản tươi",
-          "<span style=\"color: #00B050;\">price tag</span> /ˈpraɪs ˌtæɡ/ (n): mác giá"
+          "<strong><span style=\"color: #00B0F0;\">vendor /ˈven.dər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người bán hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">stall /stɔːl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sạp hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">bargain /ˈbɑː.ɡɪn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">món hời, giá hời</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">fresh produce /freʃ ˈprɒ.djuːs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nông sản tươi</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">price tag /ˈpraɪs ˌtæɡ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">mác giá</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG LIÊN QUAN ĐẾN ĐỊA ĐIỂM",
@@ -1752,7 +1752,7 @@
         "text": [
           "<strong><span style=\"color: #FF0000;\">3. NGHỀ NGHIỆP</span></strong>",
           "<strong>3.1. Nhận dạng câu hỏi</strong>",
-          "Đây là dạng câu hỏi yêu cầu <strong>xác định nghề nghiệp, công việc, chức vụ hoặc vai trò </strong>của một hoặc nhiều người nói trong đoạn hội thoại. <strong>Các câu hỏi thường gặp bao gồm</strong>:",
+          "<strong><span style=\"color: #00B0F0;\">Đây là dạng câu hỏi yêu cầu xác định nghề nghiệp, công việc, chức vụ hoặc vai trò của một hoặc nhiều người nói trong đoạn hội thoại. Các câu hỏi thường gặp bao gồm</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "• <em>Who are </em><em><strong>the speakers</strong></em><em>? </em>",
           "• <em>Who is </em><em><strong>the man </strong></em><em>/ </em><em><strong>the woman</strong></em><em>? </em>",
           "• <em>Who most likely is </em><em><strong>the man</strong></em><em> / </em><em><strong>the woman</strong></em><em>?</em>",
@@ -1794,16 +1794,16 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC GIÁO DỤC</span></strong>",
-          "<span style=\"color: #00B050;\">teacher</span> /ˈtiː.tʃər/ (n): giáo viên",
-          "<span style=\"color: #00B050;\">professor</span> /prəˈfes.ər/ (n): giáo sư",
-          "<span style=\"color: #00B050;\">tutor</span> /ˈtʃuː.tər/ (n): gia sư",
-          "<span style=\"color: #00B050;\">lecturer</span> /ˈlek.tʃər.ər/ (n): giảng viên đại học",
-          "<span style=\"color: #00B050;\">principal</span> /ˈprɪn.sə.pəl/ (n): hiệu trưởng (trường phổ thông)",
-          "<span style=\"color: #00B050;\">dean</span> /diːn/ (n): trưởng khoa",
-          "<span style=\"color: #00B050;\">librarian</span> /laɪˈbreə.ri.ən/ (n): thủ thư",
-          "<span style=\"color: #00B050;\">teaching assistant</span> /ˈtiː.tʃɪŋ əˌsɪs.tənt/ (n): trợ giảng",
-          "<span style=\"color: #00B050;\">academic advisor</span> /ˌæk.əˈdem.ɪk ədˈvaɪ.zər/ (n): cố vấn học tập",
-          "<span style=\"color: #00B050;\">school counselor</span> /ˈskuːl ˌkaʊn.səl.ər/ (n): chuyên viên tư vấn học đường"
+          "<strong><span style=\"color: #00B0F0;\">teacher /ˈtiː.tʃər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giáo viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">professor /prəˈfes.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giáo sư</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">tutor /ˈtʃuː.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">gia sư</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">lecturer /ˈlek.tʃər.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giảng viên đại học</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">principal /ˈprɪn.sə.pəl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hiệu trưởng (trường phổ thông)</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">dean /diːn/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">trưởng khoa</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">librarian /laɪˈbreə.ri.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thủ thư</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">teaching assistant /ˈtiː.tʃɪŋ əˌsɪs.tənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">trợ giảng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">academic advisor /ˌæk.əˈdem.ɪk ədˈvaɪ.zər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cố vấn học tập</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">school counselor /ˈskuːl ˌkaʊn.səl.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chuyên viên tư vấn học đường</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -1825,14 +1825,14 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC KHOA HỌC – NGHIÊN CỨU</span></strong>",
-          "<span style=\"color: #00B050;\">scientist</span> /ˈsaɪən.tɪst/ (n): nhà khoa học",
-          "<span style=\"color: #00B050;\">researcher</span> /rɪˈsɜː.tʃər/ (n): nhà nghiên cứu",
-          "<span style=\"color: #00B050;\">lab technician</span> /læb tekˈnɪʃ.ən/ (n): kỹ thuật viên phòng thí nghiệm",
-          "<span style=\"color: #00B050;\">chemist</span> /ˈkem.ɪst/ (n): nhà hóa học",
-          "<span style=\"color: #00B050;\">biologist</span> /baɪˈɒl.ə.dʒɪst/ (n): nhà sinh vật học",
-          "<span style=\"color: #00B050;\">physicist</span> /ˈfɪz.ɪ.sɪst/ (n): nhà vật lý học",
-          "<span style=\"color: #00B050;\">ecologist</span> /iˈkɒl.ə.dʒɪst/ (n): nhà sinh thái học",
-          "<span style=\"color: #00B050;\">data analyst</span> /ˈdeɪ.tə ˌæn.ə.lɪst/ (n): nhà phân tích dữ liệu"
+          "<strong><span style=\"color: #00B0F0;\">scientist /ˈsaɪən.tɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà khoa học</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">researcher /rɪˈsɜː.tʃər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà nghiên cứu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">lab technician /læb tekˈnɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kỹ thuật viên phòng thí nghiệm</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">chemist /ˈkem.ɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà hóa học</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">biologist /baɪˈɒl.ə.dʒɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà sinh vật học</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">physicist /ˈfɪz.ɪ.sɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà vật lý học</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">ecologist /iˈkɒl.ə.dʒɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà sinh thái học</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">data analyst /ˈdeɪ.tə ˌæn.ə.lɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà phân tích dữ liệu</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -1852,18 +1852,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC Y TẾ</span></strong>",
-          "<span style=\"color: #00B050;\">doctor</span> /ˈdɒk.tər/ (n): bác sĩ",
-          "<span style=\"color: #00B050;\">nurse</span> /nɜːs/ (n): y tá",
-          "<span style=\"color: #00B050;\">surgeon</span> /ˈsɜː.dʒən/ (n): bác sĩ phẫu thuật",
-          "<span style=\"color: #00B050;\">pharmacist</span> /ˈfɑː.mə.sɪst/ (n): dược sĩ",
-          "<span style=\"color: #00B050;\">dentist</span> /ˈden.tɪst/ (n): nha sĩ",
-          "<span style=\"color: #00B050;\">therapist</span> /ˈθer.ə.pɪst/ (n): chuyên viên trị liệu",
-          "<span style=\"color: #00B050;\">paramedic</span> /ˌpær.əˈmed.ɪk/ (n): nhân viên cấp cứu",
-          "<span style=\"color: #00B050;\">medical assistant</span> /ˈmed.ɪ.kəl əˈsɪs.tənt/ (n): trợ lý y tế",
-          "<span style=\"color: #00B050;\">receptionist</span> /rɪˈsep.ʃən.ɪst/ (n): nhân viên lễ tân",
-          "<span style=\"color: #00B050;\">lab technician</span> /læb tekˈnɪʃ.ən/ (n): kỹ thuật viên phòng thí nghiệm",
-          "<span style=\"color: #00B050;\">dietician</span> /ˌdaɪ.əˈtɪʃ.ən/ (n): chuyên gia dinh dưỡng",
-          "<span style=\"color: #00B050;\">physician</span> /fɪˈzɪʃ.ən/ (n): bác sĩ điều trị (nội khoa)"
+          "<strong><span style=\"color: #00B0F0;\">doctor /ˈdɒk.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bác sĩ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">nurse /nɜːs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">y tá</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">surgeon /ˈsɜː.dʒən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bác sĩ phẫu thuật</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">pharmacist /ˈfɑː.mə.sɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">dược sĩ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">dentist /ˈden.tɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nha sĩ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">therapist /ˈθer.ə.pɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chuyên viên trị liệu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">paramedic /ˌpær.əˈmed.ɪk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên cấp cứu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">medical assistant /ˈmed.ɪ.kəl əˈsɪs.tənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">trợ lý y tế</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">receptionist /rɪˈsep.ʃən.ɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên lễ tân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">lab technician /læb tekˈnɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kỹ thuật viên phòng thí nghiệm</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">dietician /ˌdaɪ.əˈtɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chuyên gia dinh dưỡng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">physician /fɪˈzɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">bác sĩ điều trị (nội khoa)</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -1887,18 +1887,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC KINH DOANH – HÀNH CHÍNH</span></strong>",
-          "<span style=\"color: #00B050;\">manager</span> /ˈmæn.ɪ.dʒər/ (n): quản lý",
-          "<span style=\"color: #00B050;\">accountant</span> /əˈkaʊn.tənt/ (n): kế toán",
-          "<span style=\"color: #00B050;\">supervisor</span> /ˈsuː.pə.vaɪ.zər/ (n): giám sát viên",
-          "<span style=\"color: #00B050;\">director</span> /daɪˈrek.tər/ (n): giám đốc",
-          "<span style=\"color: #00B050;\">assistant</span> /əˈsɪs.tənt/ (n): trợ lý",
-          "<span style=\"color: #00B050;\">executive</span> /ɪɡˈzek.jə.tɪv/ (n): nhân viên điều hành",
-          "<span style=\"color: #00B050;\">business analyst</span> /ˈbɪz.nəs ˌæn.ə.lɪst/ (n): nhà phân tích kinh doanh",
-          "<span style=\"color: #00B050;\">employee / clerk</span> /ɪmˈplɔɪ.iː/ / /klɑːk/ (n): nhân viên",
-          "<span style=\"color: #00B050;\">HR officer</span> /ˌeɪtʃ ˈɑː ˈɒf.ɪ.sər/ (n): nhân viên nhân sự",
-          "<span style=\"color: #00B050;\">consultant</span> /kənˈsʌl.tənt/ (n): cố vấn",
-          "<span style=\"color: #00B050;\">secretary</span> /ˈsek.rə.tri/ (n): thư ký",
-          "<span style=\"color: #00B050;\">financial advisor</span> /faɪˈnæn.ʃəl ədˈvaɪ.zər/ (n): cố vấn tài chính"
+          "<strong><span style=\"color: #00B0F0;\">manager /ˈmæn.ɪ.dʒər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quản lý</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">accountant /əˈkaʊn.tənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kế toán</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">supervisor /ˈsuː.pə.vaɪ.zər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giám sát viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">director /daɪˈrek.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giám đốc</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">assistant /əˈsɪs.tənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">trợ lý</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">executive /ɪɡˈzek.jə.tɪv/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên điều hành</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">business analyst /ˈbɪz.nəs ˌæn.ə.lɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà phân tích kinh doanh</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">employee / clerk /ɪmˈplɔɪ.iː/ / /klɑːk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">HR officer /ˌeɪtʃ ˈɑː ˈɒf.ɪ.sər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên nhân sự</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">consultant /kənˈsʌl.tənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cố vấn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">secretary /ˈsek.rə.tri/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thư ký</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">financial advisor /faɪˈnæn.ʃəl ədˈvaɪ.zər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cố vấn tài chính</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -1922,18 +1922,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC DỊCH VỤ – BÁN HÀNG</span></strong>",
-          "<span style=\"color: #00B050;\">cashier</span> /kæʃˈɪər/ (n): thu ngân",
-          "<span style=\"color: #00B050;\">store clerk</span> /stɔː klɑːk/ (n): nhân viên bán hàng (trong cửa hàng)",
-          "<span style=\"color: #00B050;\">store owner</span> /stɔːr ˈəʊ.nər/ (n): chủ cửa hàng",
-          "<span style=\"color: #00B050;\">waiter / waitress</span> /ˈweɪ.tər/ / /ˈweɪ.trəs/ (n): phục vụ bàn",
-          "<span style=\"color: #00B050;\">barista</span> /bəˈriː.stə/ (n): nhân viên pha chế cà phê",
-          "<span style=\"color: #00B050;\">salesperson</span> /ˈseɪlzˌpɜː.sən/ (n): nhân viên bán hàng",
-          "<span style=\"color: #00B050;\">delivery person</span> /dɪˈlɪv.ər.i ˌpɜː.sən/ (n): nhân viên giao hàng",
-          "<span style=\"color: #00B050;\">receptionist</span> /rɪˈsep.ʃən.ɪst/ (n): nhân viên lễ tân",
-          "<span style=\"color: #00B050;\">customer service rep</span> /ˈkʌs.tə.mər ˈsɜː.vɪs rep/ (n): nhân viên CSKH",
-          "<span style=\"color: #00B050;\">housekeeper</span> /ˈhaʊsˌkiː.pər/ (n): nhân viên dọn phòng",
-          "<span style=\"color: #00B050;\">caterer</span> /ˈkeɪ.tər.ər/ (n): người cung cấp dịch vụ ăn uống",
-          "<span style=\"color: #00B050;\">concierge</span> /ˌkɒn.siˈeəʒ/ (n): nhân viên hỗ trợ khách sạn"
+          "<strong><span style=\"color: #00B0F0;\">cashier /kæʃˈɪər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thu ngân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">store clerk /stɔː klɑːk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên bán hàng (trong cửa hàng)</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">store owner /stɔːr ˈəʊ.nər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chủ cửa hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">waiter / waitress /ˈweɪ.tər/ / /ˈweɪ.trəs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phục vụ bàn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">barista /bəˈriː.stə/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên pha chế cà phê</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">salesperson /ˈseɪlzˌpɜː.sən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên bán hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">delivery person /dɪˈlɪv.ər.i ˌpɜː.sən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên giao hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">receptionist /rɪˈsep.ʃən.ɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên lễ tân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">customer service rep /ˈkʌs.tə.mər ˈsɜː.vɪs rep/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên CSKH</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">housekeeper /ˈhaʊsˌkiː.pər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên dọn phòng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">caterer /ˈkeɪ.tər.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người cung cấp dịch vụ ăn uống</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">concierge /ˌkɒn.siˈeəʒ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên hỗ trợ khách sạn</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -1957,18 +1957,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG</span></strong>",
-          "<span style=\"color: #00B050;\">technician</span> /tekˈnɪʃ.ən/ (n): kỹ thuật viên",
-          "<span style=\"color: #00B050;\">programmer</span> /ˈprəʊ.ɡræm.ər/ (n): lập trình viên",
-          "<span style=\"color: #00B050;\">IT specialist</span> /ˌaɪˈtiː ˈspeʃ.əl.ɪst/ (n): chuyên viên công nghệ thông tin",
-          "<span style=\"color: #00B050;\">web developer</span> /web dɪˈvel.ə.pər/ (n): lập trình viên web",
-          "<span style=\"color: #00B050;\">designer</span> /dɪˈzaɪ.nər/ (n): nhà thiết kế",
-          "<span style=\"color: #00B050;\">editor</span> /ˈed.ɪ.tər/ (n): biên tập viên",
-          "<span style=\"color: #00B050;\">journalist</span> /ˈdʒɜː.nə.lɪst/ (n): nhà báo",
-          "<span style=\"color: #00B050;\">photographer</span> /fəˈtɒɡ.rə.fər/ (n): nhiếp ảnh gia",
-          "<span style=\"color: #00B050;\">publisher</span> /ˈpʌb.lɪ.ʃər/ (n): nhà xuất bản",
-          "<span style=\"color: #00B050;\">broadcaster</span> /ˈbrɔːdˌkɑː.stər/ (n): phát thanh viên",
-          "<span style=\"color: #00B050;\">news reporter</span> /njuːz rɪˈpɔː.tər/ (n): phóng viên",
-          "<span style=\"color: #00B050;\">sound engineer</span> /saʊnd ˌen.dʒɪˈnɪər/ (n): kỹ sư âm thanh"
+          "<strong><span style=\"color: #00B0F0;\">technician /tekˈnɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kỹ thuật viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">programmer /ˈprəʊ.ɡræm.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lập trình viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">IT specialist /ˌaɪˈtiː ˈspeʃ.əl.ɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chuyên viên công nghệ thông tin</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">web developer /web dɪˈvel.ə.pər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lập trình viên web</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">designer /dɪˈzaɪ.nər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà thiết kế</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">editor /ˈed.ɪ.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">biên tập viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">journalist /ˈdʒɜː.nə.lɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà báo</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">photographer /fəˈtɒɡ.rə.fər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhiếp ảnh gia</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">publisher /ˈpʌb.lɪ.ʃər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà xuất bản</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">broadcaster /ˈbrɔːdˌkɑː.stər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phát thanh viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">news reporter /njuːz rɪˈpɔː.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phóng viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">sound engineer /saʊnd ˌen.dʒɪˈnɪər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kỹ sư âm thanh</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -1992,28 +1992,28 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC XÂY DỰNG – GIAO THÔNG</span></strong>",
-          "<span style=\"color: #00B050;\">architect</span> /ˈɑː.kɪ.tekt/ (n): kiến trúc sư",
-          "<span style=\"color: #00B050;\">civil engineer</span> /ˈsɪv.əl ˌen.dʒɪˈnɪər/ (n): kỹ sư xây dựng dân dụng",
-          "<span style=\"color: #00B050;\">construction worker</span> /kənˈstrʌk.ʃən ˌwɜː.kər/ (n): công nhân xây dựng",
-          "<span style=\"color: #00B050;\">site supervisor</span> /saɪt ˈsuː.pə.vaɪ.zər/ (n): giám sát công trình",
-          "<span style=\"color: #00B050;\">project manager</span> /ˈprɒ.dʒekt ˈmæn.ɪ.dʒər/ (n): quản lý dự án",
-          "<span style=\"color: #00B050;\">crane operator</span> /kreɪn ˈɒp.ər.eɪ.tər/ (n): người điều khiển cần cẩu",
-          "<span style=\"color: #00B050;\">plumber</span> /ˈplʌm.ər/ (n): thợ sửa ống nước",
-          "<span style=\"color: #00B050;\">electrician</span> /ɪˌlekˈtrɪʃ.ən/ (n): thợ điện",
-          "<span style=\"color: #00B050;\">welder</span> /ˈwel.dər/ (n): thợ hàn",
-          "<span style=\"color: #00B050;\">bricklayer</span> /ˈbɪkˌleɪ.ər/ (n): thợ xây",
-          "<span style=\"color: #00B050;\">truck driver</span> /trʌk ˈdraɪ.vər/ (n): tài xế xe tải",
-          "<span style=\"color: #00B050;\">delivery driver</span> /dɪˈlɪv.ər.i ˈdraɪ.vər/ (n): tài xế giao hàng",
-          "<span style=\"color: #00B050;\">bus driver</span> /bʌs ˈdraɪ.vər/ (n): tài xế xe buýt",
-          "<span style=\"color: #00B050;\">taxi driver</span> /ˈtæk.si ˈdraɪ.vər/ (n): tài xế taxi",
-          "<span style=\"color: #00B050;\">train conductor</span> /treɪn kənˈdʌk.tər/ (n): trưởng tàu",
-          "<span style=\"color: #00B050;\">pilot</span> /ˈpaɪ.lət/ (n): phi công",
-          "<span style=\"color: #00B050;\">mechanic</span> /məˈkæn.ɪk/ (n): thợ máy",
-          "<span style=\"color: #00B050;\">road maintenance worker</span> /rəʊd ˈmeɪn.tə.nəns ˌwɜː.kər/ (n): công nhân bảo trì đường",
-          "<span style=\"color: #00B050;\">traffic controller</span> /ˈtræf.ɪk kənˌtrəʊ.lər/ (n): nhân viên điều phối giao thông",
-          "<span style=\"color: #00B050;\">forklift operator</span> /'fɔː.klɪft ˈɒp.ər.eɪ.tər/ (n): người lái xe nâng",
-          "<span style=\"color: #00B050;\">building contractor</span> /ˈbɪl.dɪŋ kənˈtræk.tər/ (n): nhà thầu xây dựng",
-          "<span style=\"color: #00B050;\">building inspector</span> /ˈbɪl.dɪŋ ɪnˈspek.tər/ (n): thanh tra xây dựng"
+          "<strong><span style=\"color: #00B0F0;\">architect /ˈɑː.kɪ.tekt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kiến trúc sư</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">civil engineer /ˈsɪv.əl ˌen.dʒɪˈnɪər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kỹ sư xây dựng dân dụng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">construction worker /kənˈstrʌk.ʃən ˌwɜː.kər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">công nhân xây dựng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">site supervisor /saɪt ˈsuː.pə.vaɪ.zər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giám sát công trình</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">project manager /ˈprɒ.dʒekt ˈmæn.ɪ.dʒər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quản lý dự án</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">crane operator /kreɪn ˈɒp.ər.eɪ.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người điều khiển cần cẩu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">plumber /ˈplʌm.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ sửa ống nước</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">electrician /ɪˌlekˈtrɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ điện</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">welder /ˈwel.dər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ hàn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">bricklayer /ˈbɪkˌleɪ.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ xây</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">truck driver /trʌk ˈdraɪ.vər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tài xế xe tải</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">delivery driver /dɪˈlɪv.ər.i ˈdraɪ.vər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tài xế giao hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">bus driver /bʌs ˈdraɪ.vər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tài xế xe buýt</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">taxi driver /ˈtæk.si ˈdraɪ.vər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tài xế taxi</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">train conductor /treɪn kənˈdʌk.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">trưởng tàu</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">pilot /ˈpaɪ.lət/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">phi công</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">mechanic /məˈkæn.ɪk/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ máy</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">road maintenance worker /rəʊd ˈmeɪn.tə.nəns ˌwɜː.kər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">công nhân bảo trì đường</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">traffic controller /ˈtræf.ɪk kənˌtrəʊ.lər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên điều phối giao thông</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">forklift operator /'fɔː.klɪft ˈɒp.ər.eɪ.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người lái xe nâng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">building contractor /ˈbɪl.dɪŋ kənˈtræk.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà thầu xây dựng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">building inspector /ˈbɪl.dɪŋ ɪnˈspek.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thanh tra xây dựng</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -2047,16 +2047,16 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ</span></strong>",
-          "<span style=\"color: #00B050;\">artist</span> /ˈɑː.tɪst/ (n): họa sĩ / nghệ sĩ",
-          "<span style=\"color: #00B050;\">actor</span> /ˈæk.tər/ (n): nam diễn viên",
-          "<span style=\"color: #00B050;\">actress</span> /ˈæk.trəs/ (n): nữ diễn viên",
-          "<span style=\"color: #00B050;\">singer</span> /ˈsɪŋ.ər/ (n): ca sĩ",
-          "<span style=\"color: #00B050;\">musician</span> /mjuˈzɪʃ.ən/ (n): nhạc công",
-          "<span style=\"color: #00B050;\">dancer</span> /ˈdɑːn.sər/ (n): vũ công",
-          "<span style=\"color: #00B050;\">composer</span> /kəmˈpəʊ.zər/ (n): nhà soạn nhạc",
-          "<span style=\"color: #00B050;\">film director</span> /ˈfɪlm daɪˈrek.tər/ (n): đạo diễn phim",
-          "<span style=\"color: #00B050;\">producer</span> /prəˈdʒuː.sər/ (n): nhà sản xuất",
-          "<span style=\"color: #00B050;\">model</span> /ˈmɒd.əl/ (n): người mẫu"
+          "<strong><span style=\"color: #00B0F0;\">artist /ˈɑː.tɪst/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">họa sĩ / nghệ sĩ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">actor /ˈæk.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nam diễn viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">actress /ˈæk.trəs/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nữ diễn viên</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">singer /ˈsɪŋ.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">ca sĩ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">musician /mjuˈzɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhạc công</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">dancer /ˈdɑːn.sər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">vũ công</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">composer /kəmˈpəʊ.zər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà soạn nhạc</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">film director /ˈfɪlm daɪˈrek.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đạo diễn phim</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">producer /prəˈdʒuː.sər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhà sản xuất</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">model /ˈmɒd.əl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người mẫu</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -2078,18 +2078,18 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC LUẬT – CHÍNH PHỦ</span></strong>",
-          "<span style=\"color: #00B050;\">lawyer</span> /ˈlɔɪ.ər/ (n): luật sư",
-          "<span style=\"color: #00B050;\">judge</span> /dʒʌdʒ/ (n): thẩm phán",
-          "<span style=\"color: #00B050;\">police officer</span> /pəˈliːs ˌɒf.ɪ.sər/ (n): cảnh sát",
-          "<span style=\"color: #00B050;\">detective</span> /dɪˈtek.tɪv/ (n): thám tử",
-          "<span style=\"color: #00B050;\">soldier</span> /ˈsəʊl.dʒər/ (n): người lính",
-          "<span style=\"color: #00B050;\">government official</span> /ˈɡʌv.ən.mənt əˈfɪʃ.əl/ (n): cán bộ nhà nước (viên chức, cán bộ bổ nhiệm)",
-          "<span style=\"color: #00B050;\">firefighter</span> /ˈfaɪəˌfaɪ.tər/ (n): lính cứu hỏa",
-          "<span style=\"color: #00B050;\">security guard</span> /sɪˈkjʊə.rə.ti ɡɑːd/ (n): nhân viên bảo vệ",
-          "<span style=\"color: #00B050;\">civil servant</span> /ˌsɪv.əl ˈsɜː.vənt/ (n): công chức chính phủ",
-          "<span style=\"color: #00B050;\">mayor</span> /meər/ (n): thị trưởng",
-          "<span style=\"color: #00B050;\">politician</span> /ˌpɒl.ɪˈtɪʃ.ən/ (n): chính trị gia",
-          "<span style=\"color: #00B050;\">town official</span> /taʊn əˈfɪʃ.əl/ (n): cán bộ/quan chức địa phương"
+          "<strong><span style=\"color: #00B0F0;\">lawyer /ˈlɔɪ.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">luật sư</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">judge /dʒʌdʒ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thẩm phán</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">police officer /pəˈliːs ˌɒf.ɪ.sər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cảnh sát</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">detective /dɪˈtek.tɪv/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thám tử</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">soldier /ˈsəʊl.dʒər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người lính</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">government official /ˈɡʌv.ən.mənt əˈfɪʃ.əl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cán bộ nhà nước (viên chức, cán bộ bổ nhiệm)</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">firefighter /ˈfaɪəˌfaɪ.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">lính cứu hỏa</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">security guard /sɪˈkjʊə.rə.ti ɡɑːd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên bảo vệ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">civil servant /ˌsɪv.əl ˈsɜː.vənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">công chức chính phủ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">mayor /meər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thị trưởng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">politician /ˌpɒl.ɪˈtɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chính trị gia</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">town official /taʊn əˈfɪʃ.əl/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">cán bộ/quan chức địa phương</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -2113,12 +2113,12 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC THỦ CÔNG – KỸ THUẬT</span></strong>",
-          "<span style=\"color: #00B050;\">carpenter</span> /ˈkɑː.pɪn.tər/ (n): thợ mộc",
-          "<span style=\"color: #00B050;\">blacksmith</span> /ˈblæk.smɪθ/ (n): thợ rèn",
-          "<span style=\"color: #00B050;\">tailor</span> /ˈteɪ.lər/ (n): thợ may",
-          "<span style=\"color: #00B050;\">shoemaker</span> /ˈʃuːˌmeɪ.kər/ (n): thợ đóng giày",
-          "<span style=\"color: #00B050;\">repair technician</span> /rɪˈpeər tekˈnɪʃ.ən/ (n): kỹ thuật viên sửa chữa",
-          "<span style=\"color: #00B050;\">locksmith</span> /ˈlock.smɪθ/ (n): thợ sửa khóa"
+          "<strong><span style=\"color: #00B0F0;\">carpenter /ˈkɑː.pɪn.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ mộc</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">blacksmith /ˈblæk.smɪθ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ rèn</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">tailor /ˈteɪ.lər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ may</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">shoemaker /ˈʃuːˌmeɪ.kər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ đóng giày</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">repair technician /rɪˈpeər tekˈnɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">kỹ thuật viên sửa chữa</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">locksmith /ˈlock.smɪθ/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">thợ sửa khóa</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -2136,12 +2136,12 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">LĨNH VỰC LOGISTICS – KHO VẬN</span></strong>",
-          "<span style=\"color: #00B050;\">warehouse worker</span> /ˈweə.haʊs ˌwɜː.kər/ (n): công nhân kho",
-          "<span style=\"color: #00B050;\">packer</span> /ˈpæk.ər/ (n): người đóng gói hàng",
-          "<span style=\"color: #00B050;\">forklift operator</span> /ˈfɔː.klɪft ˈɒp.ər.eɪ.tər/ (n): người lái xe nâng",
-          "<span style=\"color: #00B050;\">shipping manager</span> /ˈʃɪp.ɪŋ ˈmæn.ɪ.dʒər/ (n): quản lý vận chuyển",
-          "<span style=\"color: #00B050;\">logistician</span> /ˌləʊ.dʒɪˈstɪʃ.ən/ (n): chuyên viên hậu cần",
-          "<span style=\"color: #00B050;\">supply chain manager</span> /səˈplaɪ tʃeɪn ˈmæn.ɪ.dʒər/ (n): quản lý chuỗi cung ứng"
+          "<strong><span style=\"color: #00B0F0;\">warehouse worker /ˈweə.haʊs ˌwɜː.kər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">công nhân kho</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">packer /ˈpæk.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người đóng gói hàng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">forklift operator /ˈfɔː.klɪft ˈɒp.ər.eɪ.tər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người lái xe nâng</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">shipping manager /ˈʃɪp.ɪŋ ˈmæn.ɪ.dʒər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quản lý vận chuyển</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">logistician /ˌləʊ.dʒɪˈstɪʃ.ən/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chuyên viên hậu cần</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">supply chain manager /səˈplaɪ tʃeɪn ˈmæn.ɪ.dʒər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quản lý chuỗi cung ứng</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -2159,14 +2159,14 @@
         "text": [
           "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ</span></strong>",
           "• <strong><span style=\"color: #FF0000;\">MỘT SỐ NGHỀ NGHIỆP KHÁC</span></strong>",
-          "<span style=\"color: #00B050;\">tour guide</span> /tʊər ɡaɪd/ (n): hướng dẫn viên du lịch",
-          "<span style=\"color: #00B050;\">travel agent</span> /ˈtræv.əl ˌeɪ.dʒənt/ (n): đại lý du lịch",
-          "<span style=\"color: #00B050;\">flight attendant</span> /ˈflaɪt əˌten.dənt/ (n): tiếp viên hàng không",
-          "<span style=\"color: #00B050;\">real estate agent</span> /ˈrɪəl ɪˌsteɪt ˌeɪ.dʒənt/ (n): nhân viên bất động sản",
-          "<span style=\"color: #00B050;\">cleaner</span> /ˈkliː.nər/ (n): nhân viên vệ sinh",
-          "<span style=\"color: #00B050;\">babysitter</span> /ˈbeɪ.biˌsɪt.ər/ (n): người trông trẻ",
-          "<span style=\"color: #00B050;\">farmer</span> /ˈfɑː.mər/ (n): nông dân",
-          "<span style=\"color: #00B050;\">gardener</span> /ˈɡɑː.dən.ər/ (n): người làm vườn"
+          "<strong><span style=\"color: #00B0F0;\">tour guide /tʊər ɡaɪd/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">hướng dẫn viên du lịch</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">travel agent /ˈtræv.əl ˌeɪ.dʒənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đại lý du lịch</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">flight attendant /ˈflaɪt əˌten.dənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">tiếp viên hàng không</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">real estate agent /ˈrɪəl ɪˌsteɪt ˌeɪ.dʒənt/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên bất động sản</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">cleaner /ˈkliː.nər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên vệ sinh</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">babysitter /ˈbeɪ.biˌsɪt.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người trông trẻ</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">farmer /ˈfɑː.mər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nông dân</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">gardener /ˈɡɑː.dən.ər/</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">người làm vườn</span></strong>"
         ],
         "vietnamese_text": [
           "TỪ VỰNG VỀ NGHỀ NGHIỆP/CHỨC VỤ",
@@ -3008,10 +3008,10 @@
         "slide_index": 133,
         "text": [
           "<strong><span style=\"color: #FF0000;\">2. LÝ DO / MỤC ĐÍCH</span></strong>",
-          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi tại sao thường gặp: </span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi tại sao thường gặp</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "o <em><strong>Why</strong> is the man <strong>unavailable / surprised / disappointed</strong>? </em>",
           "o <em><strong>Why</strong> is the woman <strong>calling</strong>?</em>",
-          "<strong>Chú ý đến từ khoá trong câu hỏi: </strong>tên riêng, ngày tháng, địa điểm, động từ chính."
+          "<strong><span style=\"color: #00B0F0;\">Chú ý đến từ khoá trong câu hỏi</span></strong>: <strong><span style=\"color: #7030A0;\">tên riêng, ngày tháng, địa điểm, động từ chính.</span></strong>"
         ],
         "vietnamese_text": [
           "2. LÝ DO / MỤC ĐÍCH",
@@ -3024,7 +3024,7 @@
       {
         "slide_index": 134,
         "text": [
-          "<strong>Chú ý: </strong>Có nhiều câu hỏi &quot;Why&quot; nhưng nội dung câu hỏi là hỏi về <strong>mục đích </strong>đoạn hội thoại.",
+          "<strong><span style=\"color: #00B0F0;\">Chú ý</span></strong>: <strong><span style=\"color: #7030A0;\">Có nhiều câu hỏi &quot;Why&quot; nhưng nội dung câu hỏi là hỏi về mục đích đoạn hội thoại.</span></strong>",
           "o <em>Why is the man calling?</em>",
           "o <em>Why is the woman at the store? </em>",
           "o <em>Why is the woman in the city? </em>"
@@ -3039,7 +3039,7 @@
       {
         "slide_index": 135,
         "text": [
-          "<strong><span style=\"color: #00B0F0;\">Thông tin nói về mục đích của người nói thường bắt đầu bằng những cụm từ như:</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">Thông tin nói về mục đích của người nói thường bắt đầu bằng những cụm từ như</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "<em>\to I&#x27;m here to ... </em> (Tôi ở đây để...)",
           "<em>\to I came to ... </em> (Tôi đến để...)",
           "<em>\to I want to ... </em> (Tôi muốn...)",
@@ -3438,7 +3438,7 @@
         "slide_index": 161,
         "text": [
           "<strong><span style=\"color: #FF0000;\">1. YÊU CẦU</span></strong>",
-          "<strong>Một số câu hỏi thường gặp về nội dung yêu cầu: </strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi thường gặp về nội dung yêu cầu</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "o <em>What does the man <strong>request</strong>?</em>",
           "o <em>What does the woman <strong>inquired to do</strong>?</em>",
           "o <em>What does the man <strong>ask</strong> the woman <strong>to do</strong>? </em>"
@@ -3459,7 +3459,7 @@
           "<em>\to I&#x27;m wondering if you could + </em><em><strong>Vo</strong></em><em>. </em>",
           "<em>\to Would you please ...? </em>",
           "<em>\to Is there ...? </em>",
-          "<strong><span style=\"color: #00B0F0;\">Lưu ý</span></strong>: Câu hỏi hỏi người đàn ông yêu cầu cái gì thì tập trung vào giọng nam trong bài nghe. Câu hỏi hỏi người phụ nữ yêu cầu cái gì thì tập trung vào giọng nữ trong bài nghe."
+          "<strong><span style=\"color: #00B0F0;\">Lưu ý</span></strong>: <strong><span style=\"color: #7030A0;\">Câu hỏi hỏi người đàn ông yêu cầu cái gì thì tập trung vào giọng nam trong bài nghe. Câu hỏi hỏi người phụ nữ yêu cầu cái gì thì tập trung vào giọng nữ trong bài nghe.</span></strong>"
         ],
         "vietnamese_text": [
           "Một số cấu trúc mang ý nghĩa yêu cầu, nhờ vả người khác",
@@ -3635,7 +3635,7 @@
         "slide_index": 174,
         "text": [
           "<strong><span style=\"color: #FF0000;\">2. GỢI Ý / ĐỀ XUẤT</span></strong>",
-          "<strong>Một số câu hỏi gợi ý thường gặp: </strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi gợi ý thường gặp</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "o <em>What does the woman <strong>suggest</strong> the man do? </em>",
           "o <em>What does the man <strong>offer to do</strong>?</em>",
           "o <em>What does the man <strong>recommend doing</strong>?</em>",
@@ -3654,11 +3654,11 @@
         "slide_index": 175,
         "text": [
           "<strong><span style=\"color: #FF0000;\">2. CÂU HỎI GỢI Ý</span></strong>",
-          "<strong><span style=\"color: #00B0F0;\">Một số cấu trúc mang ý nghĩa gợi ý: </span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số cấu trúc mang ý nghĩa gợi ý</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "<em><strong><span style=\"color: #00B0F0;\">\t</span></strong></em><em>o You&#x27;ll want to + </em><em><strong>Vo</strong></em><em>.</em>",
           "<em>\to Why don&#x27;t you + </em><em><strong>Vo</strong></em><em>?</em>",
           "<em>\to We should + </em><em><strong>Vo</strong></em><em>.</em>",
-          "<em><strong>Lưu ý</strong></em><em>: Câu hỏi hỏi </em><em>người đàn ông</em><em> gợi ý làm gì thì tập trung vào </em><em>giọng nam</em><em> trong bài nghe. Câu hỏi hỏi </em><em>người phụ nữ</em><em> gợi ý làm gì thì tập trung vào </em><em>giọng nữ</em><em> trong bài nghe. </em>"
+          "<strong><span style=\"color: #00B0F0;\">Lưu ý</span></strong>: <strong><span style=\"color: #7030A0;\">Câu hỏi hỏi người đàn ông gợi ý làm gì thì tập trung vào giọng nam trong bài nghe. Câu hỏi hỏi người phụ nữ gợi ý làm gì thì tập trung vào giọng nữ trong bài nghe.</span></strong>"
         ],
         "vietnamese_text": [
           "2. CÂU HỎI GỢI Ý",
@@ -3859,7 +3859,7 @@
           "o <em>What does the man say will <strong>take place in 2 weeks</strong>? </em>",
           "<strong>Cách thức làm bài</strong>",
           "o <em>Tập trung nghe giọng nam hoặc giọng nữ tuỳ theo yêu cầu câu hỏi</em>",
-          "o <em>Xác định các từ khoá trước khi nghe: tên riêng, địa điểm, ngày tháng, động từ chính. </em>"
+          "o <strong><span style=\"color: #00B0F0;\">Xác định các từ khoá trước khi nghe</span></strong>: <strong><span style=\"color: #7030A0;\">tên riêng, địa điểm, ngày tháng, động từ chính.</span></strong>"
         ],
         "vietnamese_text": [
           "3. THÔNG TIN ĐỀ CẬP",
@@ -4046,7 +4046,7 @@
         "slide_index": 199,
         "text": [
           "<strong><span style=\"color: #FF0000;\">4. ACCORDING TO...</span></strong>",
-          "<strong>Một số câu hỏi dạng &quot;According to ...&quot; thường gặp: </strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi dạng &quot;According to ...&quot; thường gặp</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "o <em><strong>According to the man</strong>, what will <strong>happen in December</strong>?</em>",
           "o <em><strong>According to the woman</strong>, what is <strong>taking place next week</strong>?</em>",
           "o <em><strong>According to the woman</strong>, what <strong>complaint</strong> has been made about some employees? </em>"
@@ -4064,7 +4064,7 @@
         "text": [
           "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
           "o Tập trung vào giọng nam hoặc nữ tuỳ theo câu hỏi.",
-          "o Xác định từ khoá trước khi nghe: tên riêng, địa điểm, ngày tháng, động từ chính."
+          "o <strong><span style=\"color: #00B0F0;\">Xác định từ khoá trước khi nghe</span></strong>: <strong><span style=\"color: #7030A0;\">tên riêng, địa điểm, ngày tháng, động từ chính.</span></strong>"
         ],
         "vietnamese_text": [
           "• Cách thức làm bài",
@@ -4241,7 +4241,7 @@
         "slide_index": 212,
         "text": [
           "<strong><span style=\"color: #FF0000;\">1. HÀNH ĐỘNG TIẾP THEO</span></strong>",
-          "<strong>Một số câu hỏi dạng &quot;do next&quot; thường gặp: </strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi dạng &quot;do next&quot; thường gặp</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "o <em>What will the man / the woman most likely <strong>do next</strong>? </em>",
           "o <em>What will the speakers probably <strong>do next</strong>?</em>",
           "o <em>What will Dr. Watanabe <strong>do next</strong>? </em>"
@@ -4448,7 +4448,7 @@
         "slide_index": 225,
         "text": [
           "<strong><span style=\"color: #FF0000;\">2. NGỤ Ý</span></strong>",
-          "<strong>Một số câu hỏi thường gặp:</strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi thường gặp</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "o <em>What does the man <strong>mean when he says</strong> &quot; ............ &quot;?</em>",
           "o <em>What does the woman <strong>mean when he says</strong> &quot; .......&quot;? </em>"
         ],
@@ -4661,11 +4661,11 @@
         "text": [
           "<strong><span style=\"color: #FF0000;\">V. CÂU HỎI KẾT HỢP HÌNH ẢNH (VISUAL QUESTIONS)</span></strong>",
           "Đây là dạng câu hỏi yêu cầu thí sinh <strong><span style=\"color: #00B0F0;\">vừa nghe cuộc hội thoại vừa quan sát một hình ảnh kèm theo</span></strong> (biểu đồ, sơ đồ, bản đồ, hóa đơn, lịch trình...) để tìm ra câu trả lời đúng.",
-          "<strong>Các dạng hình ảnh phổ biến:</strong>",
-          "• <strong>Sơ đồ/Bản đồ (Maps / Floor plans)</strong>: Sơ đồ văn phòng, vị trí các phòng, bản đồ khu phố.",
-          "• <strong>Bảng biểu/Lịch trình (Tables / Schedules)</strong>: Thời gian bay, chuyến tàu, bảng giá, danh sách phòng.",
-          "• <strong>Hóa đơn/Đơn đặt hàng (Invoices / Order forms)</strong>: Số lượng, giá tiền, tên sản phẩm, mã hàng.",
-          "• <strong>Biểu đồ (Charts)</strong>: Biểu đồ cột thể hiện năng suất, doanh số, phần trăm tròn."
+          "<strong><span style=\"color: #00B0F0;\">Các dạng hình ảnh phổ biến</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">Sơ đồ/Bản đồ (Maps / Floor plans)</span></strong>: <strong><span style=\"color: #7030A0;\">Sơ đồ văn phòng, vị trí các phòng, bản đồ khu phố.</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">Bảng biểu/Lịch trình (Tables / Schedules)</span></strong>: <strong><span style=\"color: #7030A0;\">Thời gian bay, chuyến tàu, bảng giá, danh sách phòng.</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">Hóa đơn/Đơn đặt hàng (Invoices / Order forms)</span></strong>: <strong><span style=\"color: #7030A0;\">Số lượng, giá tiền, tên sản phẩm, mã hàng.</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">Biểu đồ (Charts)</span></strong>: <strong><span style=\"color: #7030A0;\">Biểu đồ cột thể hiện năng suất, doanh số, phần trăm tròn.</span></strong>"
         ],
         "vietnamese_text": [
           "V. CÂU HỎI KẾT HỢP HÌNH ẢNH (VISUAL QUESTIONS)",
@@ -4678,12 +4678,12 @@
         "slide_index": 326,
         "text": [
           "<strong><span style=\"color: #FF0000;\">CHIẾN THUẬT LÀM BÀI</span></strong>",
-          "1. <strong>Đọc trước câu hỏi và quan sát hình ảnh thật nhanh:</strong>",
-          "  Xác định câu hỏi đang hỏi về thông tin gì (Ví dụ: <em>Which month...? Which room...?</em>). Nhìn nhanh vào hình vẽ xem thông tin đó nằm ở đâu.",
-          "2. <strong>Quy tắc \"Không chọn những gì nghe thấy trực tiếp\":</strong>",
+          "<strong><span style=\"color: #00B0F0;\">1. Đọc trước câu hỏi và quan sát hình ảnh thật nhanh</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
+          "  <strong><span style=\"color: #00B0F0;\">Xác định câu hỏi đang hỏi về thông tin gì (Ví dụ</span></strong>: <strong><span style=\"color: #7030A0;\">Which month...? Which room...?). Nhìn nhanh vào hình vẽ xem thông tin đó nằm ở đâu.</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">2. Quy tắc \"Không chọn những gì nghe thấy trực tiếp\"</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "  Thông tin đáp án đúng thường <strong><span style=\"color: #00B0F0;\">KHÔNG được đọc trực tiếp</span></strong> từ các từ ngữ có sẵn trong 4 phương án lựa chọn, mà sẽ được nói gián tiếp thông qua thông tin liên kết khác trên hình vẽ.",
-          "  <em>Ví dụ:</em> Nếu 4 phương án là tên các phòng, băng nghe sẽ nói về tên người làm việc ở phòng đó. Bạn phải nhìn vào sơ đồ phòng để xem phòng của người đó là phòng số mấy.",
-          "3. <strong>Chú ý các liên từ và từ chuyển ý:</strong>",
+          "  <strong><span style=\"color: #00B0F0;\">Ví dụ</span></strong>: <strong><span style=\"color: #7030A0;\">Nếu 4 phương án là tên các phòng, băng nghe sẽ nói về tên người làm việc ở phòng đó. Bạn phải nhìn vào sơ đồ phòng để xem phòng của người đó là phòng số mấy.</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">3. Chú ý các liên từ và từ chuyển ý</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "  Nghe kỹ các từ như <em>But, However, Actually, Oh wait...</em> vì thông tin thay đổi hoặc chốt đáp án thường nằm ngay sau các từ này."
         ],
         "vietnamese_text": [
@@ -5084,10 +5084,10 @@
         "slide_index": 246,
         "text": [
           "<strong><span style=\"color: #FF0000;\">I. MỘT SỐ CẤU TRÚC THƯỜNG GẶP </span></strong>",
-          "• <em> I&#x27;d like to + Vo: tôi muốn ...</em>",
+          "• <strong><span style=\"color: #00B0F0;\">I&#x27;d like to + Vo</span></strong>: <strong><span style=\"color: #7030A0;\">tôi muốn ...</span></strong>",
           "o <strong>I&#x27;d like to </strong>cancel my membership.",
           "o <strong>I&#x27;d like </strong>you <strong>to </strong>translate this book into English.",
-          "• <em>I&#x27;m wondering if ...: tôi phân vân không biết ...</em>",
+          "• <strong><span style=\"color: #00B0F0;\">I&#x27;m wondering if ...</span></strong>: <strong><span style=\"color: #7030A0;\">tôi phân vân không biết ...</span></strong>",
           "o <strong>I&#x27;m wondering if </strong>you could lend me some money.",
           "o <strong>I&#x27;m wondering if </strong>you&#x27;d like to come to the concert with me."
         ],
@@ -5105,13 +5105,13 @@
         "slide_index": 247,
         "text": [
           "<strong><span style=\"color: #FF0000;\">II. MỘT SỐ DANH TỪ CHỈ NGƯỜI </span></strong>",
-          "• <span style=\"color: #00B0F0;\">employee</span> (n): <span style=\"color: #7030A0;\">nhân viên</span>",
-          "• <span style=\"color: #00B0F0;\">employer</span> (n): <span style=\"color: #7030A0;\">sếp</span>",
-          "• <span style=\"color: #00B0F0;\">colleague – co-worker </span>(n): <span style=\"color: #7030A0;\">đồng nghiệp</span>",
-          "• <span style=\"color: #00B0F0;\">president</span> (n): <span style=\"color: #7030A0;\">chủ tịch</span>",
-          "• <span style=\"color: #00B0F0;\">manager</span> (n): <span style=\"color: #7030A0;\">quản lý</span>",
-          "• <span style=\"color: #00B0F0;\">assistant</span> (n): <span style=\"color: #7030A0;\">trợ lý</span>",
-          "• <em>personal assistant: </em><em>trợ</em><em> </em><em>lý</em><em> </em><em>riêng</em>"
+          "• <strong><span style=\"color: #00B0F0;\">employee</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">nhân viên</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">employer</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">sếp</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">colleague – co-worker</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">đồng nghiệp</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">president</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">chủ tịch</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">manager</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">quản lý</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">assistant</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">trợ lý</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">personal assistant</span></strong>: <strong><span style=\"color: #7030A0;\">trợ lý riêng</span></strong>"
         ],
         "vietnamese_text": [
           "II. MỘT SỐ DANH TỪ CHỈ NGƯỜI",
@@ -5128,10 +5128,10 @@
         "slide_index": 248,
         "text": [
           "<strong><span style=\"color: #FF0000;\">II. MỘT SỐ DANH TỪ CHỈ NGƯỜI </span></strong>",
-          "• <span style=\"color: #00B0F0;\">candidate</span> (n): <span style=\"color: #7030A0;\">ứng viên</span>",
-          "• <em>job candidate: </em><em>ứng</em><em> </em><em>viên</em><em> </em><em>xin</em><em> </em><em>việc</em>",
-          "• <span style=\"color: #00B0F0;\">director</span> (n): <span style=\"color: #7030A0;\">giám đốc</span>",
-          "• <em><span style=\"color: #F79646;\">personnel director: </span></em><em><span style=\"color: #F79646;\">giám</span></em><em><span style=\"color: #F79646;\"> </span></em><em><span style=\"color: #F79646;\">đốc</span></em><em><span style=\"color: #F79646;\"> </span></em><em><span style=\"color: #F79646;\">nhân</span></em><em><span style=\"color: #F79646;\"> </span></em><em><span style=\"color: #F79646;\">sự</span></em>"
+          "• <strong><span style=\"color: #00B0F0;\">candidate</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">ứng viên</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">job candidate</span></strong>: <strong><span style=\"color: #7030A0;\">ứng viên xin việc</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">director</span></strong> <em style=\"color: var(--text-muted); font-size: 0.95rem;\">(n)</em>: <strong><span style=\"color: #7030A0;\">giám đốc</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">personnel director</span></strong>: <strong><span style=\"color: #7030A0;\">giám đốc nhân sự</span></strong>"
         ],
         "vietnamese_text": [
           "II. MỘT SỐ DANH TỪ CHỈ NGƯỜI",
@@ -5634,7 +5634,7 @@
         "text": [
           "<strong><span style=\"color: #FF0000;\">I. NỘI DUNG TỔNG QUÁT </span></strong>",
           "• Bài nghe về hội họp (meetings) thường là những bài đối thoại liên quan đến việc <em><span style=\"color: #0070C0;\">lên lịch họp</span></em>, <em><span style=\"color: #0070C0;\">thay đổi lịch họp</span></em>, <em><span style=\"color: #0070C0;\">sắp xếp địa điểm</span></em>, <em><span style=\"color: #0070C0;\">chuẩn bị bài thuyết trình</span></em>, <em><span style=\"color: #0070C0;\">trang thiết bị</span></em>, <em><span style=\"color: #0070C0;\">cơ sở vật chất cho một cuộc họp hay hội nghị</span></em>.",
-          "• Cụ thể, cuộc đối thoại về chủ đề này thường đề cập đến:",
+          "• <strong><span style=\"color: #00B0F0;\">Cụ thể, cuộc đối thoại về chủ đề này thường đề cập đến</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "<em>o Thời gian cuộc họp diễn ra.</em>",
           "<em>o Lý do không thể tham gia cuộc họp vì bận việc khác. </em>",
           "<em>o Vấn đề về chọn địa điểm cho cuộc họp. </em>",
@@ -6302,8 +6302,8 @@
         "slide_index": 340,
         "text": [
           "<strong><span style=\"color: #FF0000;\">I. NỘI DUNG TỔNG QUÁT </span></strong>",
-          "• Chủ đề này liên quan tới những vấn đề kỹ thuật của các thiết bị trong công ty như: <span style=\"color: #00B0F0;\">máy tính bị lỗi</span>, <span style=\"color: #00B0F0;\">máy điều hoà không hoạt động</span>, <span style=\"color: #00B0F0;\">máy photocopy bị hỏng không kết nối mạng</span>, <span style=\"color: #00B0F0;\">không đăng nhập được tài khoản</span>, ...",
-          "• Cuộc nói chuyện thường đề cập đến:",
+          "• <strong><span style=\"color: #00B0F0;\">Chủ đề này liên quan tới những vấn đề kỹ thuật của các thiết bị trong công ty như</span></strong>: <strong><span style=\"color: #7030A0;\">máy tính bị lỗi, máy điều hoà không hoạt động, máy photocopy bị hỏng không kết nối mạng, không đăng nhập được tài khoản, ...</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">Cuộc nói chuyện thường đề cập đến</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "<em>o </em><em><span style=\"color: #00B0F0;\">Vấn đề về máy tính </span></em><em>(không thể kết nối mạng Internet, bị nhiễm virus, ...). </em>",
           "<em>o </em><em><span style=\"color: #00B0F0;\">Vấn đề liên quan đến máy photocopy</span></em><em>. </em>",
           "<em>o </em><em><span style=\"color: #00B0F0;\">Vấn đề về máy điều hoà</span></em><em>.</em>"
@@ -6321,13 +6321,13 @@
         "slide_index": 341,
         "text": [
           "<strong><span style=\"color: #FF0000;\">II. MỘT SỐ CẤU TRÚC THƯỜNG GẶP</span></strong><strong><span style=\"color: #00B0F0;\">1. What’s happening? </span></strong><strong>- Có chuyện gì xảy ra thế?</strong>",
-          "<strong><span style=\"color: #00B0F0;\">2. There&#x27;s something wrong with </span></strong><strong>...: Có vấn đề với ... </strong>",
+          "<strong><span style=\"color: #00B0F0;\">2. There&#x27;s something wrong with ...</span></strong>: <strong><span style=\"color: #7030A0;\">Có vấn đề với ...</span></strong>",
           "o <em>There&#x27;s something wrong with the copier, isn&#x27;t there? </em>",
           "o <em>There&#x27;s something wrong with my car. It doesn&#x27;t even start. </em>",
-          "<strong><span style=\"color: #00B0F0;\">3. S + have to (has to) + Vo: S phải </span></strong><strong>... </strong>",
+          "<strong><span style=\"color: #00B0F0;\">3. S + have to (has to) + Vo</span></strong>: <strong><span style=\"color: #7030A0;\">S phải ...</span></strong>",
           "o <em>I have to stop by the Service Department to check an order. </em>",
           "o <em>We have to delay our presentation. </em>",
-          "<strong><span style=\"color: #00B0F0;\">4. S + is broken: S bị hư rồi</span></strong><strong>. </strong>",
+          "<strong><span style=\"color: #00B0F0;\">4. S + is broken</span></strong>: <strong><span style=\"color: #7030A0;\">S bị hư rồi.</span></strong>",
           "o <em>My motorbike is broken.</em>"
         ],
         "vietnamese_text": [
@@ -6995,7 +6995,7 @@
         "text": [
           "<strong><span style=\"color: #FF0000;\">I. NỘI DUNG TỔNG QUÁT </span></strong>",
           "• Chủ đề này liên quan tới vấn đề đi lại. Thông thường <span style=\"color: #00B0F0;\">đoạn đối thoại sẽ diễn ra ở sân bay</span> (the airport), <span style=\"color: #00B0F0;\">nhà ga xe lửa</span> (the train station), <span style=\"color: #00B0F0;\">trạm xe buýt </span>(the bus stop), ...",
-          "• Cuộc nói chuyện thường đề cập đến:",
+          "• <strong><span style=\"color: #00B0F0;\">Cuộc nói chuyện thường đề cập đến</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "o <span style=\"color: #00B0F0;\">Mua vé, đặt vé, đổi vé</span>.",
           "o <span style=\"color: #00B0F0;\">Hỏi về lịch trình khởi hành</span>.",
           "o <span style=\"color: #00B0F0;\">Đưa đón ai đó từ sân bay</span>."
@@ -7672,7 +7672,7 @@
         "slide_index": 448,
         "text": [
           "<strong><span style=\"color: #FF0000;\">I. NỘI DUNG TỔNG QUÁT </span></strong>",
-          "• Cuộc nói chuyện thường đề cập đến: o Hàng mua về bị hỏng.",
+          "• <strong><span style=\"color: #00B0F0;\">Cuộc nói chuyện thường đề cập đến</span></strong>: <strong><span style=\"color: #7030A0;\">o Hàng mua về bị hỏng.</span></strong>",
           "o <em><span style=\"color: #00B0F0;\">Nhờ tư vấn về sản phẩm</span></em>.",
           "o <em><span style=\"color: #00B0F0;\">Đổi lại hàng</span></em>.",
           "o <em><span style=\"color: #00B0F0;\">Phương thức thanh toán khi mua hàng </span></em>(trả tiền mặt - pay by cash), (trả bằng thẻ tín dụng - pay by credit card), (trả bằng séc - pay by cheque)."
@@ -8338,7 +8338,7 @@
         "text": [
           "<strong><span style=\"color: #FF0000;\">I. NỘI DUNG TỔNG QUÁT </span></strong>",
           "• Chủ đề này liên quan tới âm nhạc, phim, rạp hát, bảo tàng, ... Thông thường cuộc nói chuyện sẽ diễn ra ở <span style=\"color: #00B0F0;\">nhà hát </span>(at the theater), <span style=\"color: #00B0F0;\">ở viện bảo tàng</span> (at the museum), <span style=\"color: #00B0F0;\">ở rạp chiếu phim </span>(at the cinema), ...",
-          "• Cuộc nói chuyện thường đề cập đến:",
+          "• <strong><span style=\"color: #00B0F0;\">Cuộc nói chuyện thường đề cập đến</span></strong>: <strong><span style=\"color: #7030A0;\"></span></strong>",
           "o <em><span style=\"color: #00B0F0;\">Mua vé tham dự</span></em>.",
           "o <em><span style=\"color: #00B0F0;\">Mua một tác phẩm nghệ thuật</span></em>.",
           "o <em><span style=\"color: #00B0F0;\">Nhận xét về một bộ phim, một vở kịch</span></em>, ...",
