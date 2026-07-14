@@ -1105,10 +1105,10 @@ document.addEventListener("DOMContentLoaded", () => {
             let transHtml = "";
             if (lineViet) {
                 const cleanViet = lineViet.replace(/^[A-Za-z0-9]+[-A-Za-z0-9]*\s*:\s*/, "");
-                const highlightedViet = cleanViet.replace(/(\(\d+\)[^.?!]*?[.?!]?)/g, '<strong style="color: var(--color-purple); font-style: italic;">$1</strong>');
+                const highlightedViet = cleanViet.replace(/(\(\d+\)[^.?!]*(?:[.?!]|$))/g, '<strong style="color: #ff3333; font-style: italic;">$1</strong>');
                 transHtml = `<div class="line-trans-text" style="color: var(--text-muted); font-size: 0.88rem; font-style: italic; margin-top: 4px; border-left: 2px solid var(--border); padding-left: 8px;">${highlightedViet}</div>`;
             }
-            let formattedLine = line.replace(/(\(\d+\)[^.?!]*?[.?!]?)/g, '<strong style="color: var(--color-purple); font-style: italic;">$1</strong>');
+            let formattedLine = line.replace(/(\(\d+\)[^.?!]*(?:[.?!]|$))/g, '<strong style="color: #ff3333; font-style: italic;">$1</strong>');
             formattedLine = formattedLine.replace(/^([A-Za-z0-9]+[-A-Za-z0-9]*\s*:\s*)/, '<strong style="color: var(--color-blue);">$1</strong>');
             html += `
                 <div class="transcript-line-wrapper" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border); text-align: left;">
@@ -1204,7 +1204,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 </div>
 
-                <div style="font-size: 1.25rem; font-weight: 800; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--color-cyan); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+                <div style="font-size: 1.25rem; font-weight: 800; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--color-blue); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
                     <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg> CẤU TRÚC VÀ CÁC QUY TẮC TRỌNG TÂM
                 </div>
 
@@ -1262,7 +1262,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 
                 docHtml += `
-                    <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--color-cyan); margin: 0 0 24px 0; text-transform: uppercase; border-left: 4px solid var(--color-purple); padding-left: 14px; line-height: 1.4;">
+                    <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--color-blue); margin: 0 0 24px 0; text-transform: uppercase; border-left: 4px solid var(--color-purple); padding-left: 14px; line-height: 1.4;">
                         ${firstLine}
                     </h3>
                 `;
@@ -1834,7 +1834,7 @@ document.addEventListener("DOMContentLoaded", () => {
         summaryCard.innerHTML = `
             <div style="font-size: 3.5rem; color: var(--color-gold); margin-bottom: 20px;">🏆</div>
             <h3 style="font-size: 1.6rem; margin-bottom: 12px; font-weight: 800; text-transform: uppercase;">KẾT QUẢ BÀI TẬP</h3>
-            <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-cyan); margin-bottom: 16px;">
+            <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-blue); margin-bottom: 16px;">
                 ${score} / ${total}
             </div>
             <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 36px; line-height: 1.7; max-width: 500px; margin-left: auto; margin-right: auto;">${msg}</p>
@@ -2018,7 +2018,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const progressScore = document.createElement("span");
         progressScore.style.fontWeight = "800";
         progressScore.style.fontSize = "0.95rem";
-        progressScore.style.color = "var(--color-cyan)";
+        progressScore.style.color = "var(--color-blue)";
         progressScore.textContent = `HOÀN THÀNH: ${completedCount} / ${sets.length}`;
         
         progressHeader.appendChild(progressText);
@@ -2110,7 +2110,7 @@ document.addEventListener("DOMContentLoaded", () => {
         scoreSpan.className = "score-display";
         scoreSpan.style.fontWeight = "800";
         scoreSpan.style.fontSize = "1.05rem";
-        scoreSpan.style.color = "var(--color-cyan)";
+        scoreSpan.style.color = "var(--color-blue)";
         
         const submitBtn = document.createElement("button");
         submitBtn.className = "action-btn btn-primary";
@@ -2308,7 +2308,7 @@ document.addEventListener("DOMContentLoaded", () => {
         summaryCard.innerHTML = `
             <div style="font-size: 3.5rem; color: var(--color-gold); margin-bottom: 20px;">🏆</div>
             <h3 style="font-size: 1.6rem; margin-bottom: 12px; font-weight: 800; text-transform: uppercase;">KẾT QUẢ CHỦ ĐỀ LUYỆN TẬP</h3>
-            <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-cyan); margin-bottom: 16px;">
+            <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-blue); margin-bottom: 16px;">
                 ${totalScore} / ${totalQs}
             </div>
             <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 36px; line-height: 1.7; max-width: 500px; margin-left: auto; margin-right: auto;">${msg}</p>
