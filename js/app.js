@@ -1136,18 +1136,23 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function hookScriptCardToggler(idLabel) {
-        const revHeader = document.getElementById(`header-reveal-${idLabel}`);
-        const revContent = document.getElementById(`reveal-content-${idLabel}`);
-        if (revHeader && revContent) {
-            revHeader.addEventListener("click", () => {
-                revContent.classList.toggle("open");
-                if (revContent.classList.contains("open")) {
-                    revHeader.querySelector("svg").outerHTML = icons.chevronUp;
-                } else {
-                    revHeader.querySelector("svg").outerHTML = icons.chevronDown;
-                }
-            });
-        }
+        setTimeout(() => {
+            const revHeader = document.getElementById(`header-reveal-${idLabel}`);
+            const revContent = document.getElementById(`reveal-content-${idLabel}`);
+            if (revHeader && revContent) {
+                revHeader.addEventListener("click", () => {
+                    revContent.classList.toggle("open");
+                    const svg = revHeader.querySelector("svg");
+                    if (svg) {
+                        if (revContent.classList.contains("open")) {
+                            svg.outerHTML = icons.chevronUp;
+                        } else {
+                            svg.outerHTML = icons.chevronDown;
+                        }
+                    }
+                });
+            }
+        }, 50);
     }
 
     /* -------------------------------------------------------------
