@@ -5186,7 +5186,7 @@ window.part03Data = [
               "C": "Để hỏi về cơ hội việc làm",
               "D": "Để yêu cầu ước tính giá"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Để hỏi về cơ hội việc làm</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án C.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Để hỏi về cơ hội việc làm</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hello. I just saw an advertisement for a receptionist position at your hotel. If the job&#x27;s still available, I&#x27;d like to apply for it.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin chào. Tôi vừa thấy một quảng cáo tuyển vị trí lễ tân tại khách sạn của bạn. Nếu công việc vẫn còn trống, tôi muốn nộp đơn xin việc đó.\"</span></div>"
           },
           {
             "id": 3,
@@ -5206,7 +5206,7 @@ window.part03Data = [
               "C": "Xử lý hoàn tiền",
               "D": "Gửi một số mẫu"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Nói chuyện với đồng nghiệp</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Nói chuyện với đồng nghiệp</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Let me go and ask Elena Smith. She&#x27;s our hiring manager, so she&#x27;d know if the position has been filled yet.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Để tôi đi hỏi Elena Smith. Cô ấy là người quản lý tuyển dụng của chúng tôi, vì vậy cô ấy sẽ biết liệu vị trí đó đã được tuyển dụng chưa.\"</span></div>"
           }
         ],
         "transcript": [
@@ -5328,7 +5328,7 @@ window.part03Data = [
               "C": "Đối với một cuộc phỏng vấn việc làm",
               "D": "Đối với việc khai trương tòa nhà"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Đối với một cuộc phỏng vấn việc làm</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án C.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Đối với một cuộc phỏng vấn việc làm</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hi, Carrie, my name&#x27;s James Fitch, the personnel director at Regal Advertising. This is my colleague, Sanjay Patel.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin chào Carrie, tên tôi là James Fitch, giám đốc nhân sự tại Regal Ads. Đây là đồng nghiệp của tôi, Sanjay Patel.\"</span></div>"
           },
           {
             "id": 2,
@@ -5568,7 +5568,7 @@ window.part03Data = [
               "C": "Để giám sát tài chính",
               "D": "Để xử lý nhiều công việc"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Để xử lý nhiều công việc</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án D.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Để xử lý nhiều công việc</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"it would be learning to manage multiple priorities. I also worked unofficially as our director&#x27;s assistant, so I had a lot of responsibilities to juggle. That&#x27;s why I think I&#x27;d be a good fit to work as the Administrative Coordinator here.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"đó là học cách quản lý nhiều ưu tiên. Tôi cũng làm việc không chính thức với tư cách là trợ lý giám đốc nên tôi có rất nhiều trách nhiệm phải giải quyết. Đó là lý do tại sao tôi nghĩ mình phù hợp để làm Điều phối viên Hành chính ở đây.\"</span></div>"
           },
           {
             "id": 2,
@@ -5608,7 +5608,7 @@ window.part03Data = [
               "C": "Người đàn ông sẽ gửi e-mail một hợp đồng.",
               "D": "Người phụ nữ sẽ ứng tuyển vào một vị trí."
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Người đàn ông sẽ liên lạc với người phụ nữ.</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Người đàn ông sẽ liên lạc với người phụ nữ.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Yes, it does seem that you have excellent qualifications for the job. Thank you for coming in today, and we&#x27;ll be in touch by the end of the week.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Vâng, có vẻ như bạn có trình độ chuyên môn xuất sắc cho công việc này. Cảm ơn bạn đã đến hôm nay và chúng tôi sẽ liên lạc với bạn vào cuối tuần.\"</span></div>"
           }
         ],
         "transcript": [
@@ -5931,7 +5931,7 @@ window.part03Data = [
               "C": "Một chiến dịch quảng cáo",
               "D": "Thực đơn bữa trưa"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Một số sự chậm trễ vận chuyển</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Một số sự chậm trễ vận chuyển</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"No problem. However, my train arrives in Baltimore at eleven, so there may not be enough time before lunch.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Không vấn đề gì. Tuy nhiên, chuyến tàu của tôi đến Baltimore lúc 11 giờ, nên có thể không còn đủ thời gian trước bữa trưa.\"</span></div>"
           },
           {
             "id": 3,
@@ -5951,7 +5951,7 @@ window.part03Data = [
               "C": "Vào lúc 12 giờ trưa",
               "D": "Vào lúc 12:30 trưa"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Vào lúc 11:30 sáng</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Vào lúc 11:30 sáng</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Well, if I take a taxi from the train station, I&#x27;ll get there by eleven-thirty. It may be safer to have the meeting after lunch.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"À, nếu tôi bắt taxi từ ga xe lửa, tôi sẽ đến đó lúc 11 giờ 30. Có thể sẽ an toàn hơn nếu họp sau bữa trưa.\"</span></div>"
           }
         ],
         "transcript": [
@@ -6269,7 +6269,7 @@ window.part03Data = [
               "C": "Và Nhà hàng bít tết của Ana",
               "D": "Tại Buffet Ấn Độ của Aruna"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Tại Buffet Ấn Độ của Aruna</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án D.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Tại Buffet Ấn Độ của Aruna</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Oh, the guidebook lists a restaurant on Lord Street. It should be on this block. Let&#x27;s eat there.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Ồ, sách hướng dẫn có liệt kê một nhà hàng trên phố Lord. Nó phải ở trên khối này. Hãy ăn ở đó nhé.\"</span></div>"
           }
         ],
         "transcript": [
@@ -6623,7 +6623,7 @@ window.part03Data = [
               "C": "Một công nhân có trình độ cao.",
               "D": "Một khoản phí đã được thảo luận."
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Một sự thay đổi là không thể.</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Một sự thay đổi là không thể.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I understand. Unfortunately, we just don&#x27;t have that many strawberries this week. But blueberries are coming into season. Could you use those instead?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi hiểu. Thật không may, tuần này chúng tôi không có nhiều dâu tây như vậy. Nhưng quả việt quất đang vào mùa. Bạn có thể sử dụng những thứ đó thay thế không?\"</span></div>"
           },
           {
             "id": 3,
@@ -6643,7 +6643,7 @@ window.part03Data = [
               "C": "Liên hệ với một số doanh nghiệp",
               "D": "Đóng gói một số hàng hóa"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Thiết lập một cuộc họp</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Thiết lập một cuộc họp</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I&#x27;ll tell you what then... let me make a few phone calls to the farms around here and see if I can get you some more.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi sẽ nói cho bạn biết điều gì sau đó... để tôi gọi vài cuộc điện thoại đến các trang trại quanh đây và xem liệu tôi có thể lấy thêm cho bạn không.\"</span></div>"
           }
         ],
         "transcript": [
@@ -6725,7 +6725,7 @@ window.part03Data = [
               "C": "Để minh họa tuổi của sản phẩm",
               "D": "Để bày tỏ sự hối tiếc khi mua hàng"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Để giải thích sự chậm trễ</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Để giải thích sự chậm trễ</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"But that broke last week - the maintenance crew should have repaired that by now.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Nhưng nó bị hỏng vào tuần trước - lẽ ra đội bảo trì phải sửa nó bây giờ rồi.\"</span></div>"
           }
         ],
         "transcript": [
@@ -6767,7 +6767,7 @@ window.part03Data = [
               "C": "Để xác nhận tính khả dụng",
               "D": "Để bày tỏ sự ngạc nhiên"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Để bày tỏ sự ngạc nhiên</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án D.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Để bày tỏ sự ngạc nhiên</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Indira, do you have the sales figures from all our stores? Our meeting with Lian is in half an hour.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Indira, bạn có số liệu bán hàng từ tất cả các cửa hàng của chúng tôi không? Cuộc gặp của chúng ta với Lian sẽ diễn ra trong nửa giờ nữa.\"</span></div>"
           },
           {
             "id": 2,
@@ -7532,7 +7532,7 @@ window.part03Data = [
               "C": "Du lịch vào một ngày khác",
               "D": "D. Đặt chỗ ăn tối"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Du lịch vào một ngày khác</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án C.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Du lịch vào một ngày khác</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Are there any flights on June fifteenth?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Có chuyến bay nào vào ngày 15 tháng 6 không?\"</span></div>"
           },
           {
             "id": 3,
@@ -7826,7 +7826,7 @@ window.part03Data = [
               "C": "N-48",
               "D": "C-94"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>C-94</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án D.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>C-94</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Well, I want the kind of headphones that you wear on your head. And I&#x27;d like the ones that reduce noise. I&#x27;m an electrical engineer, and there&#x27;s a lot of noise on job sites. It makes it hard to focus.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"À, Tôi muốn loại tai nghe mà bạn đeo trên đầu. Và tôi muốn những cái làm giảm tiếng ồn. Tôi là kỹ sư điện và ở nơi làm việc có rất nhiều tiếng ồn. Nó khiến bạn khó tập trung.\"</span></div>"
           }
         ],
         "transcript": [
@@ -7946,7 +7946,7 @@ window.part03Data = [
               "C": "Tại một cửa hàng quần áo",
               "D": "Tại một cửa hàng thiết bị"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Tại một cửa hàng thiết bị</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án D.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Tại một cửa hàng thiết bị</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hello. My washing machine broke down, and I need to buy a new one. Could you help me with that?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin chào. Máy giặt của tôi bị hỏng và tôi cần mua một cái mới. Bạn có thể giúp tôi việc đó được không?\"</span></div>"
           },
           {
             "id": 2,
@@ -8188,7 +8188,7 @@ window.part03Data = [
               "C": "Một kỹ thuật viên sửa chữa",
               "D": "Một người giám sát tòa nhà"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Tài xế giao hàng</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Tài xế giao hàng</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hi, Joe. It&#x27;s Vanessa. I&#x27;m on Mill Street by the bus stop right now. I&#x27;m almost finished delivering the food orders. But this last one doesn&#x27;t have an address on it.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chào, Joe. Đó là Vanessa. Hiện giờ tôi đang ở phố Mill cạnh trạm xe buýt. Tôi sắp hoàn thành việc giao đồ ăn. Nhưng cái cuối cùng này không có địa chỉ trên đó.\"</span></div>"
           },
           {
             "id": 2,
@@ -8497,7 +8497,7 @@ window.part03Data = [
               "C": "Một bản đồ",
               "D": "Một tấm bưu thiếp"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Một tấm bưu thiếp</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án D.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Một bản đồ</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"OK, great. I&#x27;ll do that. Oh, and are there any maps?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Được rồi, tuyệt vời. Tôi sẽ làm điều đó. Ồ, và có bản đồ nào không?\"</span></div>"
           }
         ],
         "transcript": [
@@ -8577,7 +8577,7 @@ window.part03Data = [
               "C": "Một biên nhận",
               "D": "Mã xác nhận"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Một thẻ căn cước có ảnh</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án B.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Một thẻ căn cước có ảnh</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"No, no one brought in any gloves today. But if you show me the receipt from your visit this morning, I can let you in so you can go and check. They may still be there.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Không, hôm nay không ai mang găng tay vào cả. Nhưng nếu bạn cho tôi xem biên lai chuyến thăm của bạn sáng nay, tôi có thể cho bạn vào để bạn có thể đến kiểm tra. Họ có thể vẫn còn ở đó.\"</span></div>"
           }
         ],
         "transcript": [
@@ -8637,7 +8637,7 @@ window.part03Data = [
               "C": "Một khách hàng",
               "D": "Một người giám sát"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Một thực tập sinh</em>).<br><div style='margin-top: 8px; color: var(--text-secondary);'>Giải thích: Dựa vào nội dung cuộc hội thoại, người nói trao đổi thông tin phù hợp với phương án A.</div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Một thực tập sinh</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Great. I&#x27;d like you to meet Molly; she&#x27;ll be training you today. She&#x27;s been giving tours of the park for over twenty years. Molly, meet Julia.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tuyệt vời. Tôi muốn bạn gặp Molly; cô ấy sẽ đào tạo bạn ngày hôm nay. Cô ấy đã tổ chức các chuyến tham quan công viên trong hơn hai mươi năm. Molly, gặp Julia.\"</span></div>"
           },
           {
             "id": 3,
