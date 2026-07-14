@@ -994,7 +994,10 @@ document.addEventListener("DOMContentLoaded", () => {
        5.5 TRANSLATION HTML BUILDERS
        ------------------------------------------------------------- */
     function renderQuestionTextHtml(q, idLabel, textPrefix = "") {
-        const qText = q.question;
+        let qText = q.question;
+        if (qText && (qText.includes("PRACTICE") || qText.includes("Example") || qText.includes("EXAMPLE"))) {
+            textPrefix = "";
+        }
         const qViet = q.vietnamese_question || "";
         
         let graphicHtml = "";
