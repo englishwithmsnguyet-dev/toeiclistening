@@ -5561,5 +5561,1061 @@
         "graphic": "data/graphics/ets26_t02_q68_70.png"
       }
     ]
+  },
+  {
+    "id": "ets_test_03",
+    "title": "ETS 2026 - TEST 03",
+    "type": "test",
+    "theory": [],
+    "vocabulary": [],
+    "practice_sets": [
+      {
+        "set_index": 1,
+        "audio": "E26-T03-32-34.mp3",
+        "questions": [
+          {
+            "id": 32,
+            "slide_index": 3032,
+            "question": "Where do the speakers most likely work?",
+            "choices": {
+              "A": "At a shipping company",
+              "B": "At a restaurant",
+              "C": "At a gift shop",
+              "D": "At a farm"
+            },
+            "answer": "B",
+            "vietnamese_question": "Loa có khả năng hoạt động ở đâu nhất?",
+            "vietnamese_choices": {
+              "A": "Tại một công ty vận tải",
+              "B": "Tại một nhà hàng",
+              "C": "Tại một cửa hàng quà tặng",
+              "D": "Tại một trang trại"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Tại một nhà hàng</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hi, Chef Ayaka. I was looking over this week's sales, and I noticed that a lot of people ordered the beef stew special.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin chào, đầu bếp Ayaka. Tôi đang xem xét doanh số bán hàng của tuần này, và tôi nhận thấy rằng rất nhiều người đã gọi món thịt bò hầm đặc biệt.\"</span></div>"
+          },
+          {
+            "id": 33,
+            "slide_index": 3033,
+            "question": "What does the man suggest considering?",
+            "choices": {
+              "A": "An advertising strategy",
+              "B": "An online menu",
+              "C": "The price of an item",
+              "D": "The results of a survey"
+            },
+            "answer": "C",
+            "vietnamese_question": "Người đàn ông đề nghị xem xét điều gì?",
+            "vietnamese_choices": {
+              "A": "Một chiến lược quảng cáo",
+              "B": "Thực đơn trực tuyến",
+              "C": "Giá của một mặt hàng",
+              "D": "Kết quả của một cuộc khảo sát"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Giá của một mặt hàng</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Good idea. Beef prices change frequently, though, so we might need to consider that when we set the price for the dish if we're going to offer it daily.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Ý tưởng hay. Tuy nhiên, giá thịt bò thay đổi thường xuyên, vì vậy chúng ta có thể cần cân nhắc điều đó khi định giá cho món ăn nếu chúng ta định phục vụ món đó hàng ngày.\"</span></div>"
+          },
+          {
+            "id": 34,
+            "slide_index": 3034,
+            "question": "What does the woman say she will do?",
+            "choices": {
+              "A": "Pay a deposit",
+              "B": "Contact a supplier",
+              "C": "Reschedule a delivery",
+              "D": "Arrange some merchandise"
+            },
+            "answer": "B",
+            "vietnamese_question": "Người phụ nữ nói cô ấy sẽ làm gì?",
+            "vietnamese_choices": {
+              "A": "Trả tiền đặt cọc",
+              "B": "Liên hệ với nhà cung cấp",
+              "C": "Lên lịch lại việc giao hàng",
+              "D": "Sắp xếp một số hàng hóa"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Liên hệ với nhà cung cấp</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"OK. I'll call our supplier too. We need to make sure they can get us enough beef each week.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"ĐƯỢC RỒI. Tôi cũng sẽ gọi cho nhà cung cấp của chúng tôi. Chúng ta cần đảm bảo rằng họ có thể cung cấp đủ thịt bò cho chúng ta mỗi tuần.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "M: Hi, Chef Ayaka. I was looking over this week's sales, and (32) I noticed that a lot of people ordered the beef stew special.",
+          "W: Yeah. It's been very popular with patrons. In fact, I want to add it to the regular menu.",
+          "M: Good idea. (33) Beef prices change frequently, though, so we might need to consider that when we set the price for the dish if we're going to offer it daily.",
+          "W: OK. (34) I'll call our supplier too. We need to make sure they can get us enough beef each week."
+        ],
+        "vietnamese_transcript": [
+          "M: Xin chào, đầu bếp Ayaka. Tôi đang xem xét doanh số bán hàng của tuần này, và (32) tôi nhận thấy rằng rất nhiều người đã gọi món thịt bò hầm đặc biệt.",
+          "W: Vâng. Nó đã rất phổ biến với khách hàng quen. Trên thực tế, tôi muốn thêm nó vào menu thông thường.",
+          "M: Ý tưởng hay. (33) Tuy nhiên, giá thịt bò thay đổi thường xuyên, vì vậy chúng ta có thể cần cân nhắc điều đó khi định giá cho món ăn nếu chúng ta định phục vụ món đó hàng ngày.",
+          "W: ĐƯỢC RỒI. (34) Tôi cũng sẽ gọi cho nhà cung cấp của chúng tôi. Chúng ta cần đảm bảo rằng họ có thể cung cấp đủ thịt bò cho chúng ta mỗi tuần."
+        ]
+      },
+      {
+        "set_index": 2,
+        "audio": "E26-T03-35-37.mp3",
+        "questions": [
+          {
+            "id": 35,
+            "slide_index": 3035,
+            "question": "Where is the conversation most likely taking place?",
+            "choices": {
+              "A": "At a fitness center",
+              "B": "At a hotel",
+              "C": "At a train station",
+              "D": "At a corporate office"
+            },
+            "answer": "C",
+            "vietnamese_question": "Cuộc trò chuyện có nhiều khả năng diễn ra ở đâu nhất?",
+            "vietnamese_choices": {
+              "A": "Tại một trung tâm thể hình",
+              "B": "Tại một khách sạn",
+              "C": "Tại một nhà ga xe lửa",
+              "D": "Tại văn phòng công ty"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tại một nhà ga xe lửa</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Excuse me, does train 1401 stop at the Lexington Street station?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin lỗi, chuyến tàu 1401 có dừng ở ga Phố Lexington không?\"</span></div>"
+          },
+          {
+            "id": 36,
+            "slide_index": 3036,
+            "question": "What type of event will the men attend this evening?",
+            "choices": {
+              "A": "A company gala",
+              "B": "An opera",
+              "C": "A sports match",
+              "D": "A lecture"
+            },
+            "answer": "A",
+            "vietnamese_question": "Những người đàn ông sẽ tham dự loại sự kiện nào vào tối nay?",
+            "vietnamese_choices": {
+              "A": "Buổi dạ tiệc của công ty",
+              "B": "Một vở opera",
+              "C": "Một trận đấu thể thao",
+              "D": "Một bài giảng"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Buổi dạ tiệc của công ty</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Let's head over there now, Sergey. I'm really looking forward to our company gala event tonight.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Hãy đến đó ngay bây giờ, Sergey. Tôi thực sự mong chờ sự kiện gala của công ty chúng ta tối nay.\"</span></div>"
+          },
+          {
+            "id": 37,
+            "slide_index": 3037,
+            "question": "What did Sergey forget to bring?",
+            "choices": {
+              "A": "Gloves",
+              "B": "Sunglasses",
+              "C": "A hat",
+              "D": "An umbrella"
+            },
+            "answer": "D",
+            "vietnamese_question": "Sergey đã quên mang theo thứ gì?",
+            "vietnamese_choices": {
+              "A": "Găng tay",
+              "B": "Kính râm",
+              "C": "Một chiếc mũ",
+              "D": "Một chiếc ô"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Một chiếc ô</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Me too. Hey did you happen to bring an umbrella? I forgot mine. It might rain on our walk from the station.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi cũng vậy. Này bạn có mang theo ô không? Tôi quên mất của tôi. Trời có thể mưa khi chúng tôi đi bộ từ nhà ga.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "M1: Excuse me, (35) does train 1401 stop at the Lexington Street station?",
+          "W: Yes. It's a twenty-minute ride.",
+          "M2: Oh good, that gives us plenty of time to get to the party.",
+          "W: The train leaves from platform twelve in three minutes.",
+          "M2: Let's head over there now, Sergey. (36) I'm really looking forward to our company gala event tonight.",
+          "M1: Me too. (37) Hey did you happen to bring an umbrella? I forgot mine. It might rain on our walk from the station.",
+          "M2: I did! We can share it."
+        ],
+        "vietnamese_transcript": [
+          "M1: Xin lỗi, (35) chuyến tàu 1401 có dừng ở ga Phố Lexington không?",
+          "W: Đúng. Đó là một chuyến đi kéo dài hai mươi phút.",
+          "M2: Ồ tốt, điều đó giúp chúng ta có nhiều thời gian để đến bữa tiệc.",
+          "W: Tàu rời sân ga số 12 trong ba phút nữa.",
+          "M2: Hãy đến đó ngay bây giờ, Sergey. (36) Tôi thực sự mong chờ sự kiện gala của công ty chúng ta tối nay.",
+          "M1: Tôi cũng vậy. (37) Này bạn có mang theo ô không? Tôi quên mất của tôi. Trời có thể mưa khi chúng tôi đi bộ từ nhà ga.",
+          "M2: Tôi đã làm vậy! Chúng ta có thể chia sẻ nó."
+        ]
+      },
+      {
+        "set_index": 3,
+        "audio": "E26-T03-38-40.mp3",
+        "questions": [
+          {
+            "id": 38,
+            "slide_index": 3038,
+            "question": "What has Mr. Hoffman decided to do?",
+            "choices": {
+              "A": "Extend store hours",
+              "B": "Start a delivery service",
+              "C": "Offer a rewards program",
+              "D": "Stop selling certain products"
+            },
+            "answer": "B",
+            "vietnamese_question": "Ông Hoffman đã quyết định làm gì?",
+            "vietnamese_choices": {
+              "A": "Kéo dài giờ mở cửa hàng",
+              "B": "Bắt đầu dịch vụ giao hàng",
+              "C": "Cung cấp chương trình phần thưởng",
+              "D": "Ngừng bán một số sản phẩm nhất định"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Bắt đầu dịch vụ giao hàng</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I talked to Mr. Hoffman this morning, and he said he's decided to start a delivery service for our customers who have a difficult time picking up their prescriptions.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Sáng nay tôi đã nói chuyện với ông Hoffman và ông ấy nói rằng ông ấy đã quyết định bắt đầu dịch vụ giao hàng cho những khách hàng của chúng tôi, những người gặp khó khăn trong việc lấy đơn thuốc của họ.\"</span></div>"
+          },
+          {
+            "id": 39,
+            "slide_index": 3039,
+            "question": "What business do the speakers most likely work for?",
+            "choices": {
+              "A": "A bakery",
+              "B": "A flower shop",
+              "C": "A grocery store",
+              "D": "A pharmacy"
+            },
+            "answer": "D",
+            "vietnamese_question": "Các diễn giả thường làm việc cho lĩnh vực kinh doanh nào nhất?",
+            "vietnamese_choices": {
+              "A": "Một tiệm bánh",
+              "B": "Một cửa hàng hoa",
+              "C": "Một cửa hàng tạp hóa",
+              "D": "Một hiệu thuốc"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Một hiệu thuốc</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"That's a good idea. I know a lot of people find it inconvenient to come in person to get their medications. But many of our customers buy other things while they're here.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Đó là một ý tưởng tốt. Tôi biết nhiều người cảm thấy bất tiện khi đến trực tiếp nhận thuốc. Nhưng nhiều khách hàng của chúng tôi mua những thứ khác khi họ ở đây.\"</span></div>"
+          },
+          {
+            "id": 40,
+            "slide_index": 3040,
+            "question": "What does the woman ask the man to help her do?",
+            "choices": {
+              "A": "Mail some packages",
+              "B": "Take inventory",
+              "C": "Create a job posting",
+              "D": "Help some customers"
+            },
+            "answer": "C",
+            "vietnamese_question": "Người phụ nữ yêu cầu người đàn ông giúp cô ấy làm gì?",
+            "vietnamese_choices": {
+              "A": "Gửi một số gói",
+              "B": "Kiểm kê",
+              "C": "Tạo tin tuyển dụng",
+              "D": "Giúp đỡ một số khách hàng"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tạo tin tuyển dụng</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Oh, they'll be able to make other purchases too, to be delivered with their medicine. In fact, I'm supposed to draft a job posting for delivery drivers. Could you help me do that?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Ồ, họ cũng sẽ có thể thực hiện các giao dịch mua khác để được giao thuốc cùng với họ. Trên thực tế, tôi phải soạn thảo một tin tuyển dụng cho tài xế giao hàng. Bạn có thể giúp tôi làm điều đó?\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "W: (38) I talked to Mr. Hoffman this morning, and he said he's decided to start a delivery service for our customers who have a difficult time picking up their prescriptions.",
+          "M: That's a good idea. (39) I know a lot of people find it inconvenient to come in person to get their medications. But many of our customers buy other things while they're here.",
+          "W: Oh, they'll be able to make other purchases too, to be delivered with their medicine. In fact, (40) I'm supposed to draft a job posting for delivery drivers. Could you help me do that?"
+        ],
+        "vietnamese_transcript": [
+          "W: (38) Sáng nay tôi đã nói chuyện với ông Hoffman và ông ấy nói rằng ông ấy đã quyết định bắt đầu dịch vụ giao hàng cho những khách hàng của chúng tôi, những người gặp khó khăn trong việc lấy đơn thuốc của họ.",
+          "M: Đó là một ý tưởng tốt. (39) Tôi biết nhiều người cảm thấy bất tiện khi đến trực tiếp nhận thuốc. Nhưng nhiều khách hàng của chúng tôi mua những thứ khác khi họ ở đây.",
+          "W: Ồ, họ cũng sẽ có thể thực hiện các giao dịch mua khác để được giao thuốc cùng với họ. Trên thực tế, (40) tôi phải soạn thảo một tin tuyển dụng cho tài xế giao hàng. Bạn có thể giúp tôi làm điều đó?"
+        ]
+      },
+      {
+        "set_index": 4,
+        "audio": "E26-T03-41-43.mp3",
+        "questions": [
+          {
+            "id": 41,
+            "slide_index": 3041,
+            "question": "What problem does the woman mention?",
+            "choices": {
+              "A": "A product is faulty.",
+              "B": "A company's sales are decreasing.",
+              "C": "Some materials are damaged.",
+              "D": "A sales department is understaffed."
+            },
+            "answer": "B",
+            "vietnamese_question": "Người phụ nữ đề cập đến vấn đề gì?",
+            "vietnamese_choices": {
+              "A": "Một sản phẩm bị lỗi.",
+              "B": "Doanh số bán hàng của một công ty đang giảm.",
+              "C": "Một số vật liệu bị hư hỏng.",
+              "D": "Bộ phận bán hàng đang thiếu nhân lực."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Doanh số bán hàng của một công ty đang giảm.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Marcel, I don't know if you reviewed the latest report. Unfortunately, our sales are continuing to drop.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Marcel, tôi không biết bạn đã xem lại báo cáo mới nhất chưa. Thật không may, doanh số bán hàng của chúng tôi đang tiếp tục giảm.\"</span></div>"
+          },
+          {
+            "id": 42,
+            "slide_index": 3042,
+            "question": "Where do the speakers most likely work?",
+            "choices": {
+              "A": "At a publishing firm",
+              "B": "At a sporting goods company",
+              "C": "At a travel agency",
+              "D": "At a state park"
+            },
+            "answer": "B",
+            "vietnamese_question": "Loa có khả năng hoạt động ở đâu nhất?",
+            "vietnamese_choices": {
+              "A": "Tại một công ty xuất bản",
+              "B": "Tại một công ty đồ thể thao",
+              "C": "Tại một công ty du lịch",
+              "D": "Tại một công viên tiểu bang"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Tại một công ty đồ thể thao</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Well, we could probably benefit from having more direct input from athletes who use our gear. I was thinking maybe we could hire a professional rock climber to consult with our designers.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chà, chúng ta có thể hưởng lợi từ việc có thêm ý kiến ​​đóng góp trực tiếp từ các vận động viên sử dụng thiết bị của chúng ta. Tôi đang nghĩ có lẽ chúng ta có thể thuê một nhà leo núi chuyên nghiệp để tham khảo ý kiến ​​của các nhà thiết kế.\"</span></div>"
+          },
+          {
+            "id": 43,
+            "slide_index": 3043,
+            "question": "What does the man say he will do this afternoon?",
+            "choices": {
+              "A": "Sign a document",
+              "B": "Ship an order",
+              "C": "Review customer feedback",
+              "D": "Send a list"
+            },
+            "answer": "D",
+            "vietnamese_question": "Người đàn ông nói anh ta sẽ làm gì chiều nay?",
+            "vietnamese_choices": {
+              "A": "Ký một tài liệu",
+              "B": "Gửi đơn đặt hàng",
+              "C": "Xem xét phản hồi của khách hàng",
+              "D": "Gửi danh sách"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Gửi danh sách</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'll e-mail you a list this afternoon.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chiều nay tôi sẽ gửi email cho bạn một danh sách.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "W: Marcel, I don't know if you reviewed the latest report. (41) Unfortunately, our sales are continuing to drop.",
+          "M: Yes, competition is at an all-time high. More and more companies are selling clothing and gear for outdoor recreation.",
+          "W: We need better ways to make our brand stand out.",
+          "M: Well, (42) we could probably benefit from having more direct input from athletes who use our gear. I was thinking maybe we could hire a professional rock climber to consult with our designers.",
+          "W: That's an interesting idea. Is there anyone you have in mind?",
+          "M: (43) I'll e-mail you a list this afternoon."
+        ],
+        "vietnamese_transcript": [
+          "W: Marcel, tôi không biết bạn đã xem lại báo cáo mới nhất chưa. (41) Thật không may, doanh số bán hàng của chúng tôi đang tiếp tục giảm.",
+          "M: Vâng, sự cạnh tranh đang ở mức cao nhất mọi thời đại. Ngày càng có nhiều công ty bán quần áo và dụng cụ giải trí ngoài trời.",
+          "W: Chúng tôi cần những cách tốt hơn để làm cho thương hiệu của chúng tôi nổi bật.",
+          "M: Chà, (42) chúng ta có thể hưởng lợi từ việc có thêm ý kiến ​​đóng góp trực tiếp từ các vận động viên sử dụng thiết bị của chúng ta. Tôi đang nghĩ có lẽ chúng ta có thể thuê một nhà leo núi chuyên nghiệp để tham khảo ý kiến ​​của các nhà thiết kế.",
+          "W: Đó là một ý tưởng thú vị. Có ai trong tâm trí bạn không?",
+          "M: (43) Chiều nay tôi sẽ gửi email cho bạn một danh sách."
+        ]
+      },
+      {
+        "set_index": 5,
+        "audio": "E26-T03-44-46.mp3",
+        "questions": [
+          {
+            "id": 44,
+            "slide_index": 3044,
+            "question": "Why is the woman calling?",
+            "choices": {
+              "A": "To verify some facts",
+              "B": "To confirm a deadline",
+              "C": "To inquire about an article",
+              "D": "To apply for a position"
+            },
+            "answer": "C",
+            "vietnamese_question": "Tại sao người phụ nữ lại gọi?",
+            "vietnamese_choices": {
+              "A": "Để xác minh một số sự thật",
+              "B": "Để xác nhận thời hạn",
+              "C": "Để hỏi về một bài viết",
+              "D": "Để ứng tuyển vào một vị trí"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Để hỏi về một bài viết</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hello. I was featured in an article in your newspaper about five years ago. And now when I click on the link, nothing happens.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin chào. Tôi đã được giới thiệu trong một bài báo trên tờ báo của bạn khoảng năm năm trước. Và bây giờ khi tôi nhấp vào liên kết, không có gì xảy ra.\"</span></div>"
+          },
+          {
+            "id": 45,
+            "slide_index": 3045,
+            "question": "What does the man offer to do?",
+            "choices": {
+              "A": "Search a database",
+              "B": "Renew a subscription",
+              "C": "Consult with colleagues",
+              "D": "Send an updated schedule"
+            },
+            "answer": "A",
+            "vietnamese_question": "Người đàn ông đề nghị làm gì?",
+            "vietnamese_choices": {
+              "A": "Tìm kiếm cơ sở dữ liệu",
+              "B": "Gia hạn đăng ký",
+              "C": "Tham khảo ý kiến ​​đồng nghiệp",
+              "D": "Gửi lịch trình cập nhật"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Tìm kiếm cơ sở dữ liệu</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Oh, the public links expire after three years, but I can search for your article in our database. I just need keywords from the article to use in the search.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Ồ, các liên kết công khai sẽ hết hạn sau ba năm, nhưng tôi có thể tìm kiếm bài viết của bạn trong cơ sở dữ liệu của chúng tôi. Tôi chỉ cần từ khóa trong bài viết để sử dụng trong tìm kiếm.\"</span></div>"
+          },
+          {
+            "id": 46,
+            "slide_index": 3046,
+            "question": "Why does the man congratulate the woman?",
+            "choices": {
+              "A": "She appeared on television.",
+              "B": "She was nominated for an award.",
+              "C": "She is publishing a book.",
+              "D": "She is starting her own business."
+            },
+            "answer": "D",
+            "vietnamese_question": "Tại sao đàn ông lại chúc mừng phụ nữ?",
+            "vietnamese_choices": {
+              "A": "Cô ấy xuất hiện trên truyền hình.",
+              "B": "Cô đã được đề cử cho một giải thưởng.",
+              "C": "Cô ấy đang xuất bản một cuốn sách.",
+              "D": "Cô ấy đang bắt đầu công việc kinh doanh của riêng mình."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Cô ấy đang bắt đầu công việc kinh doanh của riêng mình.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Thanks. I was still in college when the article came out, but now I'm starting my own practice. And I'd like to hang the article on the wall.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Cảm ơn. Tôi vẫn đang học đại học khi bài báo xuất hiện, nhưng bây giờ tôi đang bắt đầu hành nghề của riêng mình. Và tôi muốn treo bài viết lên tường.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "W: Hello. (44) I was featured in an article in your newspaper about five years ago. And now when I click on the link, nothing happens.",
+          "M: Oh, the public links expire after three years, but (45) I can search for your article in our database. I just need keywords from the article to use in the search.",
+          "W: It was about my internship at a dental office.",
+          "M: OK. Let me check our archives.",
+          "W: Thanks. I was still in college when the article came out, but (46) now I'm starting my own practice. And I'd like to hang the article on the wall.",
+          "M: Oh! Congratulations."
+        ],
+        "vietnamese_transcript": [
+          "W: Xin chào. (44) Tôi đã được giới thiệu trong một bài báo trên tờ báo của bạn khoảng năm năm trước. Và bây giờ khi tôi nhấp vào liên kết, không có gì xảy ra.",
+          "M: Ồ, các liên kết công khai sẽ hết hạn sau ba năm, nhưng (45) tôi có thể tìm kiếm bài viết của bạn trong cơ sở dữ liệu của chúng tôi. Tôi chỉ cần từ khóa trong bài viết để sử dụng trong tìm kiếm.",
+          "W: Đó là về quá trình thực tập của tôi tại một văn phòng nha khoa.",
+          "M: ĐƯỢC RỒI. Hãy để tôi kiểm tra kho lưu trữ của chúng tôi.",
+          "W: Cảm ơn. Tôi vẫn đang học đại học khi bài báo xuất hiện, nhưng (46) bây giờ tôi đang bắt đầu hành nghề của riêng mình. Và tôi muốn treo bài viết lên tường.",
+          "M: Ồ! Chúc mừng."
+        ]
+      },
+      {
+        "set_index": 6,
+        "audio": "E26-T03-47-49.mp3",
+        "questions": [
+          {
+            "id": 47,
+            "slide_index": 3047,
+            "question": "Where does the conversation most likely take place?",
+            "choices": {
+              "A": "At a furniture store",
+              "B": "At an electronics store",
+              "C": "At a sporting goods store",
+              "D": "At a building supply store"
+            },
+            "answer": "D",
+            "vietnamese_question": "Cuộc trò chuyện có nhiều khả năng diễn ra ở đâu nhất?",
+            "vietnamese_choices": {
+              "A": "Tại một cửa hàng nội thất",
+              "B": "Tại một cửa hàng điện tử",
+              "C": "Tại một cửa hàng bán đồ thể thao",
+              "D": "Tại cửa hàng vật liệu xây dựng"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Tại cửa hàng vật liệu xây dựng</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Welcome to Scott's Supplies! Just so you know, all our power tools and ladders are twenty percent off today. Is there something I can help you with?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chào mừng đến với Nguồn cung cấp của Scott! Bạn biết đấy, tất cả các dụng cụ điện và thang của chúng tôi hôm nay đều giảm giá 20%. Tôi có thể giúp gì cho bạn được không?\"</span></div>"
+          },
+          {
+            "id": 48,
+            "slide_index": 3048,
+            "question": "Why does the man want a refund?",
+            "choices": {
+              "A": "He found a less expensive option.",
+              "B": "He bought the wrong size.",
+              "C": "He does not like the color of an item.",
+              "D": "He noticed an item is damaged."
+            },
+            "answer": "B",
+            "vietnamese_question": "Tại sao người đàn ông muốn hoàn lại tiền?",
+            "vietnamese_choices": {
+              "A": "Anh tìm được một lựa chọn ít tốn kém hơn.",
+              "B": "Anh mua nhầm size.",
+              "C": "Anh ấy không thích màu sắc của một món đồ.",
+              "D": "Ông nhận thấy một món đồ bị hư hỏng."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Anh mua nhầm size.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Yes. I came in last week to get some lumber for a home project I was working on, but the boards I purchased are the wrong width. I was wondering if I could get a refund.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Đúng. Tôi đến vào tuần trước để lấy một ít gỗ cho dự án gia đình mà tôi đang thực hiện, nhưng tấm ván tôi mua có chiều rộng sai. Tôi đã tự hỏi liệu tôi có thể được hoàn lại tiền không.\"</span></div>"
+          },
+          {
+            "id": 49,
+            "slide_index": 3049,
+            "question": "What does the woman imply when she says, \"Let me find the manager\"?",
+            "choices": {
+              "A": "She needs to attend to other customers.",
+              "B": "She does not have the authority to complete a request.",
+              "C": "A transaction was not processed correctly.",
+              "D": "A quality complaint needs to be documented."
+            },
+            "answer": "B",
+            "vietnamese_question": "Người phụ nữ có ý gì khi nói \"Hãy để tôi tìm người quản lý\"?",
+            "vietnamese_choices": {
+              "A": "Cô ấy cần phải tham dự với các khách hàng khác.",
+              "B": "Cô ấy không có thẩm quyền để hoàn thành một yêu cầu.",
+              "C": "Một giao dịch không được xử lý chính xác.",
+              "D": "Một khiếu nại về chất lượng cần phải được ghi lại."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Cô ấy không có thẩm quyền để hoàn thành một yêu cầu.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hmm, OK. Let me find the manager.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Ừm, được rồi. Để tôi tìm người quản lý.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "W: Welcome to Scott's Supplies! Just so you know, (47) all our power tools and ladders are twenty percent off today. Is there something I can help you with?",
+          "M: Yes. I came in last week to get some lumber for a home project I was working on, but (48) the boards I purchased are the wrong width. I was wondering if I could get a refund.",
+          "W: Sure. Do you have the receipt?",
+          "M: No, unfortunately. I must've lost it.",
+          "W: Hmm, OK. (49) Let me find the manager."
+        ],
+        "vietnamese_transcript": [
+          "W: Chào mừng đến với Nguồn cung cấp của Scott! Bạn biết đấy, (47) tất cả các dụng cụ điện và thang của chúng tôi hôm nay đều giảm giá 20%. Tôi có thể giúp gì cho bạn được không?",
+          "M: Đúng. Tôi đến vào tuần trước để lấy một ít gỗ cho dự án gia đình mà tôi đang thực hiện, nhưng (48) tấm ván tôi mua có chiều rộng sai. Tôi đã tự hỏi liệu tôi có thể được hoàn lại tiền không.",
+          "W: Chắc chắn. Bạn có biên lai không?",
+          "M: Không, thật không may. Chắc là tôi đã làm mất nó.",
+          "W: Ừm, được rồi. (49) Để tôi tìm người quản lý."
+        ]
+      },
+      {
+        "set_index": 7,
+        "audio": "E26-T03-50-52.mp3",
+        "questions": [
+          {
+            "id": 50,
+            "slide_index": 3050,
+            "question": "What most likely is the man's job?",
+            "choices": {
+              "A": "Plumber",
+              "B": "Auto mechanic",
+              "C": "Food delivery person",
+              "D": "Computer technician"
+            },
+            "answer": "C",
+            "vietnamese_question": "Công việc của người đàn ông có khả năng nhất là gì?",
+            "vietnamese_choices": {
+              "A": "Thợ sửa ống nước",
+              "B": "Thợ sửa xe",
+              "C": "Người giao đồ ăn",
+              "D": "Kỹ thuật viên máy tính"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Người giao đồ ăn</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Welcome back! How were your lunch deliveries?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chào mừng trở lại! Bữa trưa của bạn thế nào?\"</span></div>"
+          },
+          {
+            "id": 51,
+            "slide_index": 3051,
+            "question": "What did the woman do while the man was gone?",
+            "choices": {
+              "A": "She created an advertisement.",
+              "B": "She finalized a contract.",
+              "C": "She addressed a customer complaint.",
+              "D": "She had new software installed."
+            },
+            "answer": "D",
+            "vietnamese_question": "Người phụ nữ đã làm gì khi người đàn ông đi vắng?",
+            "vietnamese_choices": {
+              "A": "Cô ấy đã tạo ra một quảng cáo.",
+              "B": "Cô ấy đã hoàn tất một hợp đồng.",
+              "C": "Cô giải quyết khiếu nại của khách hàng.",
+              "D": "Cô ấy đã cài đặt phần mềm mới."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Cô ấy đã cài đặt phần mềm mới.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Well, I'm glad everything worked out. By the way, take a look at my screen! I got the new delivery software installed and running while you were gone.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chà, tôi mừng là mọi việc đã ổn thỏa. Nhân tiện, hãy nhìn vào màn hình của tôi! Tôi đã cài đặt và chạy phần mềm giao hàng mới khi bạn đi vắng.\"</span></div>"
+          },
+          {
+            "id": 52,
+            "slide_index": 3052,
+            "question": "What does the woman say has recently changed?",
+            "choices": {
+              "A": "Costs have been reduced.",
+              "B": "A competitor has opened a location nearby.",
+              "C": "The number of customers has increased.",
+              "D": "Safety regulations have been introduced."
+            },
+            "answer": "C",
+            "vietnamese_question": "Người phụ nữ nói điều gì gần đây đã thay đổi?",
+            "vietnamese_choices": {
+              "A": "Chi phí đã được giảm bớt.",
+              "B": "Một đối thủ cạnh tranh đã mở một địa điểm gần đó.",
+              "C": "Số lượng khách hàng đã tăng lên.",
+              "D": "Các quy định an toàn đã được đưa ra."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Số lượng khách hàng đã tăng lên.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Me too. And since we've recently had such a significant increase in customers, this will be really useful.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi cũng vậy. Và vì gần đây chúng tôi có lượng khách hàng tăng đáng kể nên điều này sẽ thực sự hữu ích.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "W: Welcome back! (50) How were your lunch deliveries?",
+          "M: All right, except one bag broke and the food container fell out right as I was walking up to a customer's door. The container was still sealed, and the customer accepted it, so it turned out OK in the end.",
+          "W: Well, I'm glad everything worked out. By the way, take a look at my screen! (51) I got the new delivery software installed and running while you were gone.",
+          "M: This looks great! I like how different areas can be grouped together so drivers can deliver more efficiently.",
+          "W: Me too. (52) And since we've recently had such a significant increase in customers, this will be really useful."
+        ],
+        "vietnamese_transcript": [
+          "W: Chào mừng trở lại! (50) Bữa trưa của bạn thế nào?",
+          "M: Được rồi, ngoại trừ một cái túi bị vỡ và hộp đựng thức ăn rơi ra ngay khi tôi đang bước tới cửa nhà khách hàng. Thùng hàng vẫn còn niêm phong, khách hàng nhận nên cuối cùng thì ổn.",
+          "W: Chà, tôi mừng là mọi việc đã ổn thỏa. Nhân tiện, hãy nhìn vào màn hình của tôi! (51) Tôi đã cài đặt và chạy phần mềm giao hàng mới khi bạn đi vắng.",
+          "M: Điều này có vẻ tuyệt vời! Tôi thích cách các khu vực khác nhau có thể được nhóm lại với nhau để tài xế có thể giao hàng hiệu quả hơn.",
+          "W: Tôi cũng vậy. (52) Và vì gần đây chúng tôi có lượng khách hàng tăng đáng kể nên điều này sẽ thực sự hữu ích."
+        ]
+      },
+      {
+        "set_index": 8,
+        "audio": "E26-T03-53-55.mp3",
+        "questions": [
+          {
+            "id": 53,
+            "slide_index": 3053,
+            "question": "What type of company do the speakers work for?",
+            "choices": {
+              "A": "An investment firm",
+              "B": "An advertising agency",
+              "C": "A staffing service",
+              "D": "A construction company"
+            },
+            "answer": "B",
+            "vietnamese_question": "Diễn giả làm việc cho loại công ty nào?",
+            "vietnamese_choices": {
+              "A": "Một công ty đầu tư",
+              "B": "Một công ty quảng cáo",
+              "C": "Một dịch vụ nhân sự",
+              "D": "Một công ty xây dựng"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Một công ty quảng cáo</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hi, Jin-Ah. I've got good news. We signed a contract to create an ad campaign for a new client.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chào Jin Ah. Tôi có tin tốt đây. Chúng tôi đã ký hợp đồng tạo chiến dịch quảng cáo cho một khách hàng mới.\"</span></div>"
+          },
+          {
+            "id": 54,
+            "slide_index": 3054,
+            "question": "What has HMD Incorporated recently done?",
+            "choices": {
+              "A": "It has built a new headquarters.",
+              "B": "It has donated to a charity.",
+              "C": "It has developed a new line of products.",
+              "D": "It has won an industry award."
+            },
+            "answer": "C",
+            "vietnamese_question": "Gần đây HMD Incorporated đã làm gì?",
+            "vietnamese_choices": {
+              "A": "Nó đã xây dựng một trụ sở mới.",
+              "B": "Nó đã quyên góp cho một tổ chức từ thiện.",
+              "C": "Nó đã phát triển một dòng sản phẩm mới.",
+              "D": "Nó đã giành được một giải thưởng công nghiệp."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Nó đã phát triển một dòng sản phẩm mới.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"It's HMD Incorporated, an organic snack company. They just developed a new line of snacks made entirely from vegetables. They want to market the snacks to sports teams as well as individuals.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Đó là HMD Incorporated, một công ty sản xuất đồ ăn nhẹ hữu cơ. Họ vừa phát triển một dòng sản phẩm đồ ăn nhẹ mới được làm hoàn toàn từ rau củ. Họ muốn tiếp thị đồ ăn nhẹ cho các đội thể thao cũng như các cá nhân.\"</span></div>"
+          },
+          {
+            "id": 55,
+            "slide_index": 3055,
+            "question": "What does the man say he will do?",
+            "choices": {
+              "A": "Update his team's goals",
+              "B": "Conduct some research",
+              "C": "Apply for a permit",
+              "D": "Arrange for a meeting"
+            },
+            "answer": "D",
+            "vietnamese_question": "Người đàn ông nói anh ta sẽ làm gì?",
+            "vietnamese_choices": {
+              "A": "Cập nhật mục tiêu của đội anh ấy",
+              "B": "Tiến hành một số nghiên cứu",
+              "C": "Xin giấy phép",
+              "D": "Sắp xếp cho một cuộc họp"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Sắp xếp cho một cuộc họp</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Exactly. We'll have the client come in to give us nutritional information, and provide us with some samples. I'll schedule a meeting with them soon.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chính xác. Chúng tôi sẽ yêu cầu khách hàng đến cung cấp thông tin dinh dưỡng và cung cấp cho chúng tôi một số mẫu. Tôi sẽ sớm sắp xếp một cuộc gặp với họ.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "M: Hi, Jin-Ah. I've got good news. (53) We signed a contract to create an ad campaign for a new client.",
+          "W: That's great! Who is it?",
+          "M: (54) It's HMD Incorporated, an organic snack company. They just developed a new line of snacks made entirely from vegetables. They want to market the snacks to sports teams as well as individuals.",
+          "W: Well, that sounds exciting but hard to understand. I guess we'll need to learn more about the products first.",
+          "M: Exactly. We'll have the client come in to give us nutritional information, and provide us with some samples. (55) I'll schedule a meeting with them soon."
+        ],
+        "vietnamese_transcript": [
+          "M: Chào Jin Ah. Tôi có tin tốt đây. (53) Chúng tôi đã ký hợp đồng tạo chiến dịch quảng cáo cho một khách hàng mới.",
+          "W: Thật tuyệt vời! Đó là ai?",
+          "M: (54) Đó là HMD Incorporated, một công ty sản xuất đồ ăn nhẹ hữu cơ. Họ vừa phát triển một dòng sản phẩm đồ ăn nhẹ mới được làm hoàn toàn từ rau củ. Họ muốn tiếp thị đồ ăn nhẹ cho các đội thể thao cũng như các cá nhân.",
+          "W: Chà, nghe có vẻ thú vị nhưng khó hiểu. Tôi đoán chúng ta sẽ cần tìm hiểu thêm về các sản phẩm trước tiên.",
+          "M: Chính xác. Chúng tôi sẽ yêu cầu khách hàng đến cung cấp thông tin dinh dưỡng và cung cấp cho chúng tôi một số mẫu. (55) Tôi sẽ sớm sắp xếp một cuộc gặp với họ."
+        ]
+      },
+      {
+        "set_index": 9,
+        "audio": "E26-T03-56-58.mp3",
+        "questions": [
+          {
+            "id": 56,
+            "slide_index": 3056,
+            "question": "What did the man perform a maintenance check on?",
+            "choices": {
+              "A": "A motorcycle",
+              "B": "A car",
+              "C": "A bus",
+              "D": "An airplane"
+            },
+            "answer": "D",
+            "vietnamese_question": "Người đàn ông đã thực hiện kiểm tra bảo trì cái gì?",
+            "vietnamese_choices": {
+              "A": "Một chiếc xe máy",
+              "B": "Một chiếc ô tô",
+              "C": "Một chiếc xe buýt",
+              "D": "Một chiếc máy bay"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Một chiếc máy bay</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Oliver, have you finished the maintenance check on the small airplane that came in this morning? The owner's hoping to fly it this weekend.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Oliver, bạn đã hoàn thành việc kiểm tra bảo trì trên chiếc máy bay nhỏ đến sáng nay chưa? Người chủ hy vọng sẽ bay nó vào cuối tuần này.\"</span></div>"
+          },
+          {
+            "id": 57,
+            "slide_index": 3057,
+            "question": "What news does Camille share?",
+            "choices": {
+              "A": "A delivery will be delayed.",
+              "B": "An expense will increase.",
+              "C": "A staff member is unavailable.",
+              "D": "A rainstorm is predicted."
+            },
+            "answer": "A",
+            "vietnamese_question": "Camille chia sẻ tin tức gì?",
+            "vietnamese_choices": {
+              "A": "Việc giao hàng sẽ bị trì hoãn.",
+              "B": "Một khoản chi phí sẽ tăng lên.",
+              "C": "Một nhân viên không có sẵn.",
+              "D": "Dự báo sẽ có mưa bão."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Việc giao hàng sẽ bị trì hoãn.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Unfortunately, no. The manufacturer said there'll be a delay, and it won't arrive until Monday.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Thật không may, không. Nhà sản xuất cho biết sẽ có sự chậm trễ và phải đến thứ Hai mới có hàng.\"</span></div>"
+          },
+          {
+            "id": 58,
+            "slide_index": 3058,
+            "question": "Why is the customer traveling to Toronto?",
+            "choices": {
+              "A": "To participate in a competition",
+              "B": "To present at a conference",
+              "C": "To attend a wedding",
+              "D": "To sign a contract"
+            },
+            "answer": "C",
+            "vietnamese_question": "Tại sao khách hàng lại đi du lịch đến Toronto?",
+            "vietnamese_choices": {
+              "A": "Để tham gia một cuộc thi",
+              "B": "Để trình bày tại một hội nghị",
+              "C": "Để tham dự một đám cưới",
+              "D": "Để ký hợp đồng"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Để tham dự một đám cưới</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I better let the customer know. She was planning to fly the plane to Toronto this weekend for a friend's wedding. She'll need to find another way to get there.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tốt hơn là tôi nên cho khách hàng biết. Cô ấy dự định bay tới Toronto vào cuối tuần này để dự đám cưới một người bạn. Cô ấy sẽ cần tìm cách khác để đến đó.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "W1: (56) Oliver, have you finished the maintenance check on the small airplane that came in this morning? The owner's hoping to fly it this weekend.",
+          "M: I finished checking it earlier this morning. It needs a new fuel injection pump, so I've asked Camille to order one. Oh, here she comes. Camille, will the new pump arrive today?",
+          "W2: (57) Unfortunately, no. The manufacturer said there'll be a delay, and it won't arrive until Monday.",
+          "W1: I better let the customer know. (58) She was planning to fly the plane to Toronto this weekend for a friend's wedding. She'll need to find another way to get there."
+        ],
+        "vietnamese_transcript": [
+          "W1: (56) Oliver, bạn đã hoàn thành việc kiểm tra bảo trì trên chiếc máy bay nhỏ đến sáng nay chưa? Người chủ hy vọng sẽ bay nó vào cuối tuần này.",
+          "M: Tôi đã kiểm tra xong vào sáng sớm nay. Nó cần một máy bơm phun nhiên liệu mới nên tôi đã nhờ Camille đặt mua một cái. Ồ, cô ấy đến rồi. Camille, hôm nay máy bơm mới có đến không?",
+          "W2: (57) Thật không may, không. Nhà sản xuất cho biết sẽ có sự chậm trễ và phải đến thứ Hai mới có hàng.",
+          "W1: Tốt hơn là tôi nên cho khách hàng biết. (58) Cô ấy dự định bay tới Toronto vào cuối tuần này để dự đám cưới một người bạn. Cô ấy sẽ cần tìm cách khác để đến đó."
+        ]
+      },
+      {
+        "set_index": 10,
+        "audio": "E26-T03-59-61.mp3",
+        "questions": [
+          {
+            "id": 59,
+            "slide_index": 3059,
+            "question": "What type of business does the man work for?",
+            "choices": {
+              "A": "An electric company",
+              "B": "An Internet provider",
+              "C": "A landscaping service",
+              "D": "A water supplier"
+            },
+            "answer": "B",
+            "vietnamese_question": "Người đàn ông làm việc cho loại hình kinh doanh nào?",
+            "vietnamese_choices": {
+              "A": "Một công ty điện lực",
+              "B": "Nhà cung cấp Internet",
+              "C": "Dịch vụ cảnh quan",
+              "D": "Nhà cung cấp nước"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Nhà cung cấp Internet</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hello, you've reached the customer service line for Quality Internet Service. How can I help you?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin chào, bạn đã gọi đến đường dây chăm sóc khách hàng Dịch vụ Internet Chất lượng. Tôi có thể giúp gì cho bạn?\"</span></div>"
+          },
+          {
+            "id": 60,
+            "slide_index": 3060,
+            "question": "What does the woman imply when she says, \"my company has asked me to relocate to Spain\"?",
+            "choices": {
+              "A": "She enjoys traveling for business.",
+              "B": "She was surprised by a job transfer.",
+              "C": "She has no complaints about a service.",
+              "D": "She would like paperwork sent to a different address."
+            },
+            "answer": "C",
+            "vietnamese_question": "Người phụ nữ có ý gì khi nói \"công ty của tôi đã yêu cầu tôi chuyển đến Tây Ban Nha\"?",
+            "vietnamese_choices": {
+              "A": "Cô thích đi du lịch để kinh doanh.",
+              "B": "Cô ấy rất ngạc nhiên trước sự chuyển việc.",
+              "C": "Cô ấy không có khiếu nại về một dịch vụ.",
+              "D": "Cô ấy muốn giấy tờ được gửi đến một địa chỉ khác."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Cô ấy không có khiếu nại về một dịch vụ.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Actually, my company has asked me to relocate to Spain.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Thực ra, công ty của tôi đã yêu cầu tôi chuyển đến Tây Ban Nha.\"</span></div>"
+          },
+          {
+            "id": 61,
+            "slide_index": 3061,
+            "question": "What does the woman agree to do?",
+            "choices": {
+              "A": "Pay a bill",
+              "B": "Read a policy",
+              "C": "Return a call",
+              "D": "Complete a survey"
+            },
+            "answer": "D",
+            "vietnamese_question": "Người phụ nữ đồng ý làm gì?",
+            "vietnamese_choices": {
+              "A": "Thanh toán hóa đơn",
+              "B": "Đọc một chính sách",
+              "C": "Trả lại cuộc gọi",
+              "D": "Hoàn thành một cuộc khảo sát"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Hoàn thành một cuộc khảo sát</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"When I'm done updating your records, would you be willing to stay on the phone line to take a survey about your experience as a customer?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Khi tôi cập nhật xong hồ sơ của bạn, bạn có sẵn lòng giữ máy để thực hiện một cuộc khảo sát về trải nghiệm của bạn với tư cách là khách hàng không?\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "M: (59) Hello, you've reached the customer service line for Quality Internet Service. How can I help you?",
+          "W: I'm Mona Shannak, and my account number's PK62H5. I'd like to close my account on June thirtieth.",
+          "M: Oh, have you been experiencing issues with the service?",
+          "W: (60) Actually, my company has asked me to relocate to Spain.",
+          "M: That's exciting! I'll take care of your request for you then.",
+          "W: Thank you—I appreciate that.",
+          "M: When I'm done updating your records, (61) would you be willing to stay on the phone line to take a survey about your experience as a customer?",
+          "W: Certainly."
+        ],
+        "vietnamese_transcript": [
+          "M: (59) Xin chào, bạn đã gọi đến đường dây chăm sóc khách hàng Dịch vụ Internet Chất lượng. Tôi có thể giúp gì cho bạn?",
+          "W: Tôi là Mona Shannak và số tài khoản của tôi là PK62H5. Tôi muốn đóng tài khoản của mình vào ngày 30 tháng 6.",
+          "M: Ồ, bạn có gặp vấn đề với dịch vụ không?",
+          "W: (60) Thực ra, công ty của tôi đã yêu cầu tôi chuyển đến Tây Ban Nha.",
+          "M: Thật thú vị! Vậy thì tôi sẽ giải quyết yêu cầu của bạn cho bạn.",
+          "W: Cảm ơn bạn—tôi đánh giá cao điều đó.",
+          "M: Khi tôi cập nhật xong hồ sơ của bạn, (61) bạn có sẵn lòng giữ máy để thực hiện một cuộc khảo sát về trải nghiệm của bạn với tư cách là khách hàng không?",
+          "W: Chắc chắn."
+        ]
+      },
+      {
+        "set_index": 11,
+        "audio": "E26-T03-62-64.mp3",
+        "questions": [
+          {
+            "id": 62,
+            "slide_index": 3062,
+            "question": "Look at the graphic. Which dollar amount will the man change?",
+            "choices": {
+              "A": "$2.37",
+              "B": "$4.55",
+              "C": "$7.86",
+              "D": "$2.91"
+            },
+            "answer": "A",
+            "vietnamese_question": "Nhìn vào đồ họa. Người đàn ông sẽ thay đổi số tiền nào?",
+            "vietnamese_choices": {
+              "A": "2,37 USD",
+              "B": "4,55 USD",
+              "C": "7,86 USD",
+              "D": "2,91 USD"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>2,37 USD</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Marco, you'll be restocking the cleaning products this morning, right? While you're doing that, could you also put the updated sale-price labels on the hand soap dispensers? They're on the shelf right above the laundry detergent.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Marco, sáng nay anh sẽ bổ sung lại các sản phẩm tẩy rửa phải không? Trong khi bạn đang làm điều đó, bạn có thể dán nhãn giá bán cập nhật lên hộp đựng xà phòng rửa tay được không? Chúng ở trên kệ ngay phía trên bột giặt.\"</span></div>"
+          },
+          {
+            "id": 63,
+            "slide_index": 3063,
+            "question": "What will be added at the front of the store?",
+            "choices": {
+              "A": "An additional checkout stand",
+              "B": "A holiday display",
+              "C": "A special food section",
+              "D": "A seating area"
+            },
+            "answer": "C",
+            "vietnamese_question": "Những gì sẽ được thêm vào ở phía trước của cửa hàng?",
+            "vietnamese_choices": {
+              "A": "Một quầy thanh toán bổ sung",
+              "B": "Một màn trình diễn kỳ nghỉ",
+              "C": "Khu ẩm thực đặc sắc",
+              "D": "Một khu vực chỗ ngồi"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Khu ẩm thực đặc sắc</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Can you make room for our new international foods section at the front of the store?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Bạn có thể nhường chỗ cho khu vực thực phẩm quốc tế mới của chúng tôi ở phía trước cửa hàng không?\"</span></div>"
+          },
+          {
+            "id": 64,
+            "slide_index": 3064,
+            "question": "According to the man, why did a shipment arrive late?",
+            "choices": {
+              "A": "He forgot to place an order.",
+              "B": "It was delivered to the wrong address.",
+              "C": "Some supplies were unavailable.",
+              "D": "Weather conditions were poor."
+            },
+            "answer": "D",
+            "vietnamese_question": "Theo người đàn ông, tại sao chuyến hàng lại về muộn?",
+            "vietnamese_choices": {
+              "A": "Anh quên đặt hàng rồi.",
+              "B": "Nó đã được gửi đến sai địa chỉ.",
+              "C": "Một số nguồn cung cấp không có sẵn.",
+              "D": "Điều kiện thời tiết rất kém."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Điều kiện thời tiết rất kém.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Oh, did the shipment finally arrive? That snowstorm up north really affected delivery schedules.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Ồ, cuối cùng chuyến hàng đã đến chưa? Cơn bão tuyết ở phía bắc đó đã thực sự ảnh hưởng đến lịch trình giao hàng.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "W: Marco, you'll be restocking the cleaning products this morning, right? While you're doing that, (62) could you also put the updated sale-price labels on the hand soap dispensers? They're on the shelf right above the laundry detergent.",
+          "M: No problem—that shouldn't take long. What else can I help with?",
+          "W: (63) Can you make room for our new international foods section at the front of the store?",
+          "M: (64) Oh, did the shipment finally arrive? That snowstorm up north really affected delivery schedules."
+        ],
+        "vietnamese_transcript": [
+          "W: Marco, sáng nay anh sẽ bổ sung lại các sản phẩm tẩy rửa phải không? Trong khi bạn đang làm điều đó, (62) bạn có thể dán nhãn giá bán cập nhật lên hộp đựng xà phòng rửa tay được không? Chúng ở trên kệ ngay phía trên bột giặt.",
+          "M: Không vấn đề gì—việc đó sẽ không mất nhiều thời gian. Tôi có thể giúp gì khác?",
+          "W: (63) Bạn có thể nhường chỗ cho khu vực thực phẩm quốc tế mới của chúng tôi ở phía trước cửa hàng không?",
+          "M: (64) Ồ, cuối cùng chuyến hàng đã đến chưa? Cơn bão tuyết ở phía bắc đó đã thực sự ảnh hưởng đến lịch trình giao hàng."
+        ],
+        "graphic": "data/graphics/ets26_t03_q62_64.png"
+      },
+      {
+        "set_index": 12,
+        "audio": "E26-T03-65-67.mp3",
+        "questions": [
+          {
+            "id": 65,
+            "slide_index": 3065,
+            "question": "What does the man say he needs to have done?",
+            "choices": {
+              "A": "He needs to schedule a job interview.",
+              "B": "He needs to cancel a doctor's appointment.",
+              "C": "He needs to have his photograph taken.",
+              "D": "He needs to renew his driver's license."
+            },
+            "answer": "C",
+            "vietnamese_question": "Người đàn ông nói anh ta cần phải làm gì?",
+            "vietnamese_choices": {
+              "A": "Anh ấy cần phải lên lịch phỏng vấn việc làm.",
+              "B": "Anh ấy cần phải hủy cuộc hẹn với bác sĩ.",
+              "C": "Anh ấy cần phải chụp ảnh anh ấy.",
+              "D": "Anh ấy cần gia hạn bằng lái xe."
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Anh ấy cần phải chụp ảnh anh ấy.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hello. I need to have a photo taken for a Canadian passport.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin chào. Tôi cần chụp ảnh hộ chiếu Canada.\"</span></div>"
+          },
+          {
+            "id": 66,
+            "slide_index": 3066,
+            "question": "What does the woman ask the man to bring to an appointment?",
+            "choices": {
+              "A": "An application form",
+              "B": "Some references",
+              "C": "A study guide",
+              "D": "A payment receipt"
+            },
+            "answer": "A",
+            "vietnamese_question": "Người phụ nữ yêu cầu người đàn ông mang gì đến cuộc hẹn?",
+            "vietnamese_choices": {
+              "A": "Một mẫu đơn",
+              "B": "Một số tài liệu tham khảo",
+              "C": "Hướng dẫn học tập",
+              "D": "Biên lai thanh toán"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Một mẫu đơn</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"OK. You can make an appointment Monday through Friday. Just bring in a copy of the application so we can see the size requirements.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"ĐƯỢC RỒI. Bạn có thể đặt lịch hẹn từ thứ Hai đến thứ Sáu. Chỉ cần mang theo bản sao đơn đăng ký để chúng tôi có thể xem yêu cầu về kích thước.\"</span></div>"
+          },
+          {
+            "id": 67,
+            "slide_index": 3067,
+            "question": "Look at the graphic. Which day will the man request an appointment for?",
+            "choices": {
+              "A": "Monday",
+              "B": "Tuesday",
+              "C": "Wednesday",
+              "D": "Thursday"
+            },
+            "answer": "C",
+            "vietnamese_question": "Nhìn vào đồ họa. Người đàn ông sẽ yêu cầu một cuộc hẹn vào ngày nào?",
+            "vietnamese_choices": {
+              "A": "Thứ hai",
+              "B": "Thứ ba",
+              "C": "Thứ Tư",
+              "D": "Thứ năm"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Thứ Tư</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"No problem. We're open until six P.M. one day a week.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Không vấn đề gì. Chúng tôi mở cửa đến sáu giờ chiều. một ngày một tuần.\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "W: Thanks for calling Kwon Photography Studio.",
+          "M: (65) Hello. I need to have a photo taken for a Canadian passport.",
+          "W: OK. You can make an appointment Monday through Friday. (66) Just bring in a copy of the application so we can see the size requirements.",
+          "M: I work nine to five every day at my current job. Do you have any openings after five P.M.?",
+          "W: (67) No problem. We're open until six P.M. one day a week."
+        ],
+        "vietnamese_transcript": [
+          "W: Cảm ơn bạn đã gọi đến Kwon Photography Studio.",
+          "M: (65) Xin chào. Tôi cần chụp ảnh hộ chiếu Canada.",
+          "W: ĐƯỢC RỒI. Bạn có thể đặt lịch hẹn từ thứ Hai đến thứ Sáu. (66) Chỉ cần mang theo bản sao đơn đăng ký để chúng tôi có thể xem yêu cầu về kích thước.",
+          "M: Tôi làm việc từ 9 đến 5 giờ mỗi ngày ở công việc hiện tại. Bạn có chỗ trống nào sau năm giờ chiều không?",
+          "W: (67) Không vấn đề gì. Chúng tôi mở cửa đến sáu giờ chiều. một ngày một tuần."
+        ],
+        "graphic": "data/graphics/ets26_t03_q65_67.png"
+      },
+      {
+        "set_index": 13,
+        "audio": "E26-T03-68-70.mp3",
+        "questions": [
+          {
+            "id": 68,
+            "slide_index": 3068,
+            "question": "What event did the woman attend last week?",
+            "choices": {
+              "A": "A professional conference",
+              "B": "A training workshop",
+              "C": "A car auction",
+              "D": "A product demonstration"
+            },
+            "answer": "A",
+            "vietnamese_question": "Người phụ nữ đã tham dự sự kiện gì vào tuần trước?",
+            "vietnamese_choices": {
+              "A": "Hội thảo chuyên nghiệp",
+              "B": "Một xưởng đào tạo",
+              "C": "Một cuộc đấu giá ô tô",
+              "D": "Buổi trình diễn sản phẩm"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Hội thảo chuyên nghiệp</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hi, Marina. Do you have receipts for your expenses from the dental hygienists' conference you attended last week?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chào Marina. Bạn có biên lai chi phí từ hội nghị vệ sinh răng miệng mà bạn đã tham dự tuần trước không?\"</span></div>"
+          },
+          {
+            "id": 69,
+            "slide_index": 3069,
+            "question": "What will the man do with the documents the woman provides?",
+            "choices": {
+              "A": "Process a request",
+              "B": "Postpone a reservation",
+              "C": "Make a schedule",
+              "D": "Finalize a report"
+            },
+            "answer": "A",
+            "vietnamese_question": "Người đàn ông sẽ làm gì với những tài liệu mà người phụ nữ cung cấp?",
+            "vietnamese_choices": {
+              "A": "Xử lý một yêu cầu",
+              "B": "Trì hoãn đặt chỗ",
+              "C": "Lập lịch trình",
+              "D": "Hoàn thiện một báo cáo"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Xử lý một yêu cầu</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Thanks very much. Once I receive them, I'll process your request for reimbursement. Don't forget to fill out the travel expenses form and include it in your e-mail, too.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Cảm ơn rất nhiều. Sau khi nhận được chúng, tôi sẽ xử lý yêu cầu hoàn tiền của bạn. Đừng quên điền vào biểu mẫu chi phí đi lại và gửi nó vào e-mail của bạn.\"</span></div>"
+          },
+          {
+            "id": 70,
+            "slide_index": 3070,
+            "question": "Look at the graphic. Which section does the woman ask about?",
+            "choices": {
+              "A": "Section 2",
+              "B": "Section 3",
+              "C": "Section 4",
+              "D": "Section 5"
+            },
+            "answer": "C",
+            "vietnamese_question": "Nhìn vào đồ họa. Người phụ nữ hỏi về phần nào?",
+            "vietnamese_choices": {
+              "A": "Phần 2",
+              "B": "Phần 3",
+              "C": "Phần 4",
+              "D": "Phần 5"
+            },
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Phần 4</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"OK. Remind me, what should I use for the department code?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Được rồi. Nhắc tôi, tôi nên sử dụng mã phòng ban nào?\"</span></div>"
+          }
+        ],
+        "transcript": [
+          "M: Hi, Marina. (68) Do you have receipts for your expenses from the dental hygienists' conference you attended last week?",
+          "W: Yes, I have them. I was just going to scan them and send them to you by e-mail.",
+          "M: Thanks very much. (69) Once I receive them, I'll process your request for reimbursement. Don't forget to fill out the travel expenses form and include it in your e-mail, too.",
+          "W: (70) OK. Remind me, what should I use for the department code?",
+          "M: Oh, sorry. I forgot to tell you. Use number 1009."
+        ],
+        "vietnamese_transcript": [
+          "M: Chào Marina. (68) Bạn có biên lai chi phí từ hội nghị vệ sinh răng miệng mà bạn đã tham dự tuần trước không?",
+          "W: Vâng, tôi có chúng. Tôi vừa định scan chúng và gửi chúng cho bạn qua e-mail.",
+          "M: Cảm ơn rất nhiều. (69) Sau khi nhận được chúng, tôi sẽ xử lý yêu cầu hoàn tiền của bạn. Đừng quên điền vào biểu mẫu chi phí đi lại và gửi nó vào e-mail của bạn.",
+          "W: (70) Được rồi. Nhắc tôi, tôi nên sử dụng mã phòng ban nào?",
+          "M: Ồ, xin lỗi. Tôi quên nói với bạn. Sử dụng số 1009."
+        ],
+        "graphic": "data/graphics/ets26_t03_q68_70.png"
+      }
+    ]
   }
 ]
