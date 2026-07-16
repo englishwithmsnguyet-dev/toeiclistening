@@ -672,10 +672,10 @@ document.addEventListener("DOMContentLoaded", () => {
         
         keys.forEach(k => {
             let val = choicesObj[k].trim();
-            let cleanVal = val.replace(/<[^>]+>/g, "").trim();
+            let cleanVal = val.replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").trim();
             let labelRegex = new RegExp("^" + k + "\\s*\\.\\s*", "i");
             if (!labelRegex.test(cleanVal)) {
-                parts.push(k + ". " + val);
+                parts.push(k + ". " + cleanVal);
             } else {
                 let textWithoutLabel = cleanVal.replace(labelRegex, "").trim();
                 parts.push(k + ". " + textWithoutLabel);

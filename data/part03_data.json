@@ -457,7 +457,7 @@
         "slide_index": 25,
         "question": "<strong>8. What information are the speakers discussing? </strong><br><strong>",
         "choices": {
-          "A": "</strong>Shipping dates",
+          "A": "Shipping dates",
           "B": "Product specifications",
           "C": "Marketing data",
           "D": "Business expenses"
@@ -473,7 +473,7 @@
         "slide_index": 27,
         "question": "<strong>9. What are the speakers mainly discussing? </strong><br><strong>",
         "choices": {
-          "A": "</strong>A free trial period",
+          "A": "A free trial period",
           "B": "Customer reviews",
           "C": "Job qualifications",
           "D": "A certification course"
@@ -1244,10 +1244,10 @@
         "slide_index": 56,
         "question": "<strong>3</strong><strong>. </strong><strong>Where do the speakers most likely work?</strong><br><strong><br><strong><span style=\"color: #FF0000;\"><br><strong><span style=\"color: #FF0000;\">",
         "choices": {
-          "A": "</strong>At a law office",
+          "A": "At a law office",
           "B": "At a supermarket",
-          "C": "</span></strong>At a medical clinic",
-          "D": "</span></strong>At a recreation center"
+          "C": "At a medical clinic",
+          "D": "At a recreation center"
         },
         "answer": "B",
         "audio": "media17.mp3",
@@ -1262,7 +1262,7 @@
         "choices": {
           "A": "In a parking garage",
           "B": "At a car rental agency",
-          "C": "</span></strong>On a train",
+          "C": "On a train",
           "D": "In a baggage claim area"
         },
         "answer": "B",
@@ -1311,7 +1311,7 @@
         "slide_index": 64,
         "question": "<strong>7. Where do the speakers most likely work?</strong><br><strong>",
         "choices": {
-          "A": "</strong>At a movie theater",
+          "A": "At a movie theater",
           "B": "At a construction firm",
           "C": "At an art gallery",
           "D": "At a furniture store"
@@ -1347,7 +1347,7 @@
         "slide_index": 68,
         "question": "<strong>9. Where most likely are the speakers?</strong><br><strong>",
         "choices": {
-          "A": "</strong>At a bookstore",
+          "A": "At a bookstore",
           "B": "At an art supply store",
           "C": "At a clothing retailer",
           "D": "At a supermarket"
@@ -2270,7 +2270,7 @@
         "slide_index": 131,
         "question": "<strong>10. What problem does the woman mention?</strong><br><strong>",
         "choices": {
-          "A": "</strong>An invoice is incorrect.",
+          "A": "An invoice is incorrect.",
           "B": "A window is broken.",
           "C": "A job is incomplete.",
           "D": "A water pipe is leaking."
@@ -3208,7 +3208,7 @@
         "slide_index": 232,
         "question": "<strong>1. What does the man imply when he says, &quot;I used to work at a hardware store&quot;? </strong><br><strong>",
         "choices": {
-          "A": "</strong>He can fix a problem.",
+          "A": "He can fix a problem.",
           "B": "He has experience in customer service.",
           "C": "He is not interested in an offer.",
           "D": "He is excited about teaching a new course."
@@ -3226,7 +3226,7 @@
         "slide_index": 234,
         "question": "<strong>2. What does the woman mean when she says, &quot;we&#x27;d really like to fill the position this week&quot;? </strong><br><strong>",
         "choices": {
-          "A": "</strong>A candidate should decide quickly.",
+          "A": "A candidate should decide quickly.",
           "B": "An alternative plan needs to be approved.",
           "C": "Additional funding will be required.",
           "D": "A manager will change a timeline."
@@ -3247,7 +3247,7 @@
           "A": "She does not have much experience with a task.",
           "B": "She thinks an activity has been popular.",
           "C": "She does not want to repeat an activity.",
-          "D": "She does not need directions to a location.<strong> </strong>"
+          "D": "She does not need directions to a location."
         },
         "answer": "C",
         "audio": "media92.mp3",
@@ -3273,13 +3273,13 @@
         "slide_index": 327,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05  </span></strong><br><strong><span style=\"color: #000000;\">Question 02.</span></strong><span style=\"color: #000000;\"> Look at the graphic. Which month do the speakers agree to discuss? </span><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><strong><span style=\"color: #FF0000;\"><br><span style=\"color: #000000;\">",
         "choices": {
-          "A": "March </span>",
-          "B": "</span><span style=\"color: #000000;\">April  </span>",
-          "C": "</span></strong>May",
-          "D": "</span><span style=\"color: #000000;\">June </span>"
+          "A": "March",
+          "B": "April",
+          "C": "May",
+          "D": "June"
         },
         "answer": "C",
-        "audio": "media104.mp3",
+        "audio": "media105.mp3",
         "transcript": [
           "<strong><span style=\"color: #000000;\">W</span></strong><span style=\"color: #000000;\">: I know. Productivity hasn&#x27;t been stable recently. </span><strong><span style=\"color: #FF0000;\">(2)</span></strong><span style=\"color: #000000;\"> </span><span style=\"color: #000000;\">We had a month of strong production, but the next month was the lowest we&#x27;ve had in a year</span><span style=\"color: #000000;\">! </span>",
           "<strong><span style=\"color: #000000;\">M</span></strong><span style=\"color: #000000;\">: Right... </span><strong><span style=\"color: #FF0000;\">(2)</span></strong><span style=\"color: #000000;\"> </span><span style=\"color: #000000;\">So at today&#x27;s meeting, let&#x27;s focus on the month when productivity was very low</span><span style=\"color: #000000;\">. </span>"
@@ -3295,7 +3295,7 @@
           "D": "At Aruna&#x27;s Indian Buffet"
         },
         "answer": "D",
-        "audio": "media105.mp3",
+        "audio": "media106.mp3",
         "transcript": [
           "<strong><span style=\"color: #000000;\">M</span></strong><span style=\"color: #000000;\">: The workshop starts in an hour, so we&#x27;d better get lunch now if we want to get back in time. </span>",
           "<strong><span style=\"color: #000000;\">W</span></strong><span style=\"color: #000000;\">: Well, I found some dining options for the area in this guidebook. Korean food is my favorite, but I think Main Street is a bit far from here. </span>",
@@ -3308,13 +3308,13 @@
         "slide_index": 436,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05  </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which seat does the woman request? </span><br><span style=\"color: #000000;\"><br><strong><span style=\"color: #FF0000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\">",
         "choices": {
-          "A": "</span><span style=\"color: #000000;\">A</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> 26D </span>",
-          "B": "</span></strong>26F",
-          "C": "27D </span>",
-          "D": "</span><span style=\"color: #000000;\">D</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> 27E </span>"
+          "A": "A. 26D",
+          "B": "26F",
+          "C": "27D",
+          "D": "D. 27E"
         },
         "answer": "B",
-        "audio": "media120.mp3",
+        "audio": "media121.mp3",
         "transcript": [
           "<strong>W</strong>: That date will work for me. <strong><span style=\"color: #FF0000;\">(3)</span></strong> I&#x27;d prefer a window seat, if there is one."
         ]
@@ -3323,13 +3323,13 @@
         "slide_index": 441,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 06 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where are the speakers going? </span><br><strong><span style=\"color: #FF0000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\">",
         "choices": {
-          "A": "</span></strong>To Los Angeles",
-          "B": "B</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> To San Antonio </span>",
-          "C": "</span><span style=\"color: #000000;\">C</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> To San Jose </span>",
-          "D": "</span><span style=\"color: #000000;\">D</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> To Las Vegas </span>"
+          "A": "To Los Angeles",
+          "B": "B. To San Antonio",
+          "C": "C. To San Jose",
+          "D": "D. To Las Vegas"
         },
         "answer": "B",
-        "audio": "media121.mp3",
+        "audio": "media122.mp3",
         "transcript": [
           "<strong><span style=\"color: #000000;\">M:</span></strong><span style=\"color: #000000;\"> Don&#x27;t worry. I just got here and saw that </span><strong><span style=\"color: #FF0000;\">(2)</span></strong><span style=\"color: #000000;\"> </span><span style=\"color: #000000;\">our flight&#x27;s been delayed an hour</span><span style=\"color: #000000;\">. I&#x27;m sure you&#x27;ll make it. </span>"
         ]
@@ -3357,13 +3357,13 @@
         "slide_index": 481,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 04 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which item does the man want to return? </span><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><strong><span style=\"color: #FF0000;\"><br><span style=\"color: #000000;\">",
         "choices": {
-          "A": "The jacket </span>",
-          "B": "</span><span style=\"color: #000000;\">The sweater </span>",
-          "C": "</span></strong>The scarf",
-          "D": "</span><span style=\"color: #000000;\">The T-shirt </span>"
+          "A": "The jacket",
+          "B": "The sweater",
+          "C": "The scarf",
+          "D": "The T-shirt"
         },
         "answer": "C",
-        "audio": "media127.mp3",
+        "audio": "media128.mp3",
         "transcript": [
           "<strong>W</strong>: I&#x27;m sorry about that. OK. <strong><span style=\"color: #FF0000;\">(2)</span></strong> So, it looks like you spent 32 dollars on the item.",
           "<strong>M</strong>: Right, and I used my credit card for the purchase."
@@ -3373,13 +3373,13 @@
         "slide_index": 490,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where will the woman go next? </span><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\">",
         "choices": {
-          "A": "To Building 1 </span>",
-          "B": "</span><span style=\"color: #000000;\">To Building 2 </span>",
-          "C": "To Building 3 </span>",
-          "D": "</span>To Building 4"
+          "A": "To Building 1",
+          "B": "To Building 2",
+          "C": "To Building 3",
+          "D": "To Building 4"
         },
         "answer": "D",
-        "audio": "media128.mp3",
+        "audio": "media129.mp3",
         "transcript": [
           "<strong>M</strong>: OK. Let me look that up... <strong><span style=\"color: #FF0000;\">(3)</span></strong> The Smith order needs to be delivered to the Hazelton apartment building - apartment twelve.",
           "<strong>W</strong>: Oh yes, <strong><span style=\"color: #FF0000;\">(3)</span></strong> on Durham Road-directly across from the park. Thanks!"
@@ -3389,13 +3389,13 @@
         "slide_index": 540,
         "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Why is the woman&#x27;s ticket discounted? </span><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\">",
         "choices": {
-          "A": "</span><span style=\"color: #000000;\">A</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> It is a Monday. </span>",
-          "B": "B</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> It is after 5 P.M. </span>",
-          "C": "</span><span style=\"color: #000000;\">C</span><span style=\"color: #000000;\">.</span><span style=\"color: #000000;\"> She is a student. </span>",
-          "D": "</span><span style=\"color: #000000;\">She is a member. </span>"
+          "A": "A. It is a Monday.",
+          "B": "B. It is after 5 P.M.",
+          "C": "C. She is a student.",
+          "D": "She is a member."
         },
         "answer": "B",
-        "audio": "media136.mp3",
+        "audio": "media137.mp3",
         "transcript": [
           "<strong>W</strong>: I&#x27;ll take one regular ticket, please. I&#x27;m here in the city on a business trip. I thought <strong><span style=\"color: #FF0000;\">(2)</span></strong> I&#x27;d stop by before my meetings to see your portrait collection.",
           "<strong>M</strong>: OK - <strong><span style=\"color: #FF0000;\">(2)</span></strong> that&#x27;ll be five dollars."
