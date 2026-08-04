@@ -1252,8 +1252,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
-                    if (LOCKED_SECTIONS.includes(node.id) && !isUnlocked) {
-                        showPaywallModal();
+                    if (LOCKED_SECTIONS.includes(node.id) && !window.isUnlocked) {
+                        window.showPaywallModal(() => loadSectionP1(node.id));
                         return;
                     }
                     loadSectionP1(node.id);
@@ -1280,8 +1280,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
-                        if (LOCKED_SECTIONS.includes(section.id) && !isUnlocked) {
-                            showPaywallModal();
+                        if (LOCKED_SECTIONS.includes(section.id) && !window.isUnlocked) {
+                            window.showPaywallModal(() => loadSectionP1(section.id));
                             return;
                         }
                         loadSectionP1(section.id);
@@ -3136,6 +3136,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
     function loadSectionP1(sectionId) {
+        if (LOCKED_SECTIONS.includes(sectionId) && !window.isUnlocked) {
+            window.showPaywallModal(() => loadSectionP1(sectionId));
+            return;
+        }
         if (!window.part01Data) return;
         const sectionData = window.part01Data.find(s => s.id === sectionId);
         if (!sectionData) return;
