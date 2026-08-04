@@ -234,42 +234,41 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const submitBtn = document.getElementById('submitPasswordBtn');
-        const cancelBtn = document.getElementById('cancelPasswordBtn');
-        const passInput = document.getElementById('passwordInput');
-        
-        if (submitBtn) {
-            submitBtn.addEventListener('click', () => {
-                if (passInput && passInput.value === "missnguyet2026") {
-                    window.isUnlocked = true;
-                    sessionStorage.setItem("portal_unlocked_v2", "true");
-                    window.closePasswordModal();
-                    if (window.pendingUnlockCallback) window.pendingUnlockCallback();
-                    
-                    // Refresh sidebars to remove lock icons
-                    if (typeof initializePart01Sidebar === 'function') initializePart01Sidebar();
-                    if (typeof initializePart03Sidebar === 'function') initializePart03Sidebar();
-                    if (typeof initializePart04Sidebar === 'function') initializePart04Sidebar();
-                    
-                    document.querySelectorAll('.dashboard-card').forEach(card => card.classList.remove('locked'));
-                } else {
-                    const err = document.getElementById('passwordError');
-                    if(err) err.style.display = 'block';
-                }
-            });
-        }
-        
-        if (cancelBtn) {
-            cancelBtn.addEventListener('click', window.closePasswordModal);
-        }
-        
-        if (passInput) {
-            passInput.addEventListener('keypress', (e) => {
-                if (e.key === 'Enter') submitBtn.click();
-            });
-        }
-    });
+    // Initialize modal event listeners directly (already in DOMContentLoaded)
+    const submitBtn = document.getElementById('submitPasswordBtn');
+    const cancelBtn = document.getElementById('cancelPasswordBtn');
+    const passInput = document.getElementById('passwordInput');
+    
+    if (submitBtn) {
+        submitBtn.addEventListener('click', () => {
+            if (passInput && passInput.value === "missnguyet2026") {
+                window.isUnlocked = true;
+                sessionStorage.setItem("portal_unlocked_v2", "true");
+                window.closePasswordModal();
+                if (window.pendingUnlockCallback) window.pendingUnlockCallback();
+                
+                // Refresh sidebars to remove lock icons
+                if (typeof initializePart01Sidebar === 'function') initializePart01Sidebar();
+                if (typeof initializePart03Sidebar === 'function') initializePart03Sidebar();
+                if (typeof initializePart04Sidebar === 'function') initializePart04Sidebar();
+                
+                document.querySelectorAll('.dashboard-card').forEach(card => card.classList.remove('locked'));
+            } else {
+                const err = document.getElementById('passwordError');
+                if(err) err.style.display = 'block';
+            }
+        });
+    }
+    
+    if (cancelBtn) {
+        cancelBtn.addEventListener('click', window.closePasswordModal);
+    }
+    
+    if (passInput) {
+        passInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') submitBtn.click();
+        });
+    }
     // --- END LOCK LOGIC ---
 
 
