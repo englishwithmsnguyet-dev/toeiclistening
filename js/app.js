@@ -202,7 +202,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     // --- LOCK & PASSWORD LOGIC ---
-    window.isUnlocked = sessionStorage.getItem("portal_unlocked") === "true";
+    window.isUnlocked = sessionStorage.getItem("portal_unlocked_v2") === "true";
     window.pendingUnlockCallback = null;
 
     window.showPaywallModal = function(callback) {
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", () => {
             submitBtn.addEventListener('click', () => {
                 if (passInput && passInput.value === "missnguyet2026") {
                     window.isUnlocked = true;
-                    sessionStorage.setItem("portal_unlocked", "true");
+                    sessionStorage.setItem("portal_unlocked_v2", "true");
                     window.closePasswordModal();
                     if (window.pendingUnlockCallback) window.pendingUnlockCallback();
                     
@@ -1377,7 +1377,7 @@ document.addEventListener("DOMContentLoaded", () => {
             window.showPaywallModal(() => loadSection(id));
             return;
             if (false) {
-                sessionStorage.setItem("portal_unlocked", "true");
+                sessionStorage.setItem("portal_unlocked_v2", "true");
                 alert("Mở khóa thành công!");
                 initializePart03Sidebar();
     initializePart01Sidebar();
@@ -3533,7 +3533,7 @@ document.addEventListener("DOMContentLoaded", () => {
             window.showPaywallModal(() => loadSection(id));
             return;
             if (false) {
-                sessionStorage.setItem("portal_unlocked", "true");
+                sessionStorage.setItem("portal_unlocked_v2", "true");
                 alert("Mở khóa thành công!");
                 initializePart03Sidebar();
     initializePart01Sidebar();
