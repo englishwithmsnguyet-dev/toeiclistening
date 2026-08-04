@@ -722,6 +722,14 @@ document.addEventListener("DOMContentLoaded", () => {
     navPart2Btn.addEventListener("click", () => switchView("part2"));
     
     navPart3Btn.addEventListener("click", () => {
+        if (!window.isUnlocked) {
+            window.showPaywallModal(() => {
+                if (state.activeView !== "part3") {
+                    loadSection(state.part03ActiveSection || "overview");
+                }
+            });
+            return;
+        }
         if (state.activeView === "part3") {
             const isVisible = part3SubmenuContainer.style.display === "block";
             togglePart3Submenu(!isVisible);
@@ -732,6 +740,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (typeof navPart4Btn !== 'undefined' && navPart4Btn) {
         navPart4Btn.addEventListener("click", () => {
+            if (!window.isUnlocked) {
+                window.showPaywallModal(() => {
+                    if (state.activeView !== "part4") {
+                        loadSectionP4(state.part04ActiveSection || "overview");
+                    }
+                });
+                return;
+            }
             if (state.activeView === "part4") {
                 const isVisible = part4SubmenuContainer.style.display === "block";
                 togglePart4Submenu(!isVisible);
@@ -1286,8 +1302,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function loadSection(id) {
         const isUnlocked = window.isUnlocked;
         if (LOCKED_SECTIONS.includes(id) && !isUnlocked) {
-            const pass = prompt("Phần này đang khóa. Vui lòng nhập mật khẩu để mở khóa:");
-            if (pass === "missnguyet2026") {
+            window.showPaywallModal(() => loadSection(id));
+            return;
+            if (false) {
                 sessionStorage.setItem("portal_unlocked", "true");
                 alert("Mở khóa thành công!");
                 initializePart03Sidebar();
@@ -3441,8 +3458,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function loadSectionP4(id) {
         const isUnlocked = window.isUnlocked;
         if (LOCKED_SECTIONS.includes(id) && !isUnlocked) {
-            const pass = prompt("Phần này đang khóa. Vui lòng nhập mật khẩu để mở khóa:");
-            if (pass === "missnguyet2026") {
+            window.showPaywallModal(() => loadSection(id));
+            return;
+            if (false) {
                 sessionStorage.setItem("portal_unlocked", "true");
                 alert("Mở khóa thành công!");
                 initializePart03Sidebar();
