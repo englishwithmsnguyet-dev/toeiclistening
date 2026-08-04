@@ -1,3 +1,72 @@
+
+
+window.playTTS = function(text, event) {
+    if (event) event.stopPropagation(); // prevent triggering row click
+    if (!('speechSynthesis' in window)) {
+        alert("Trình duyệt của bạn không hỗ trợ tính năng đọc từ!");
+        return;
+    }
+    
+    // Stop any currently playing audio
+    window.speechSynthesis.cancel();
+    
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    
+    // Try to find a good voice
+    const voices = window.speechSynthesis.getVoices();
+    let bestVoice = voices.find(v => v.lang === 'en-US' && v.name.includes('Google'));
+    if (!bestVoice) bestVoice = voices.find(v => v.lang.startsWith('en-'));
+    if (bestVoice) utterance.voice = bestVoice;
+    
+    // Adjust rate and pitch for clarity
+    utterance.rate = 0.9;
+    utterance.pitch = 1.0;
+    
+    window.speechSynthesis.speak(utterance);
+};
+
+window.selectPracticeOption = function(el) {
+    if (el.parentElement.hasAttribute('data-checked')) return;
+    const siblings = el.parentElement.querySelectorAll('.practice-option');
+    siblings.forEach(s => {
+        s.style.backgroundColor = '';
+        s.style.borderColor = 'var(--border)';
+        s.classList.remove('selected');
+    });
+    el.style.backgroundColor = '#f0f9ff';
+    el.style.borderColor = '#0284c7';
+    el.classList.add('selected');
+};
+
+window.checkPracticeAnswer = function(btn) {
+    const container = document.getElementById('practice-options-container');
+    const selected = container.querySelector('.practice-option.selected');
+    if (!selected) {
+        alert("Vui lòng chọn một đáp án trước khi kiểm tra!");
+        return;
+    }
+    
+    if (container.hasAttribute('data-checked')) return;
+    container.setAttribute('data-checked', 'true');
+    btn.style.opacity = '0.5';
+    btn.style.cursor = 'not-allowed';
+    
+    const options = container.querySelectorAll('.practice-option');
+    options.forEach(opt => {
+        const isCorrect = opt.getAttribute('data-correct') === 'true';
+        if (isCorrect) {
+            opt.style.backgroundColor = '#dcfce7';
+            opt.style.borderColor = '#16a34a';
+            opt.innerHTML = opt.innerHTML.replace('</strong>', '</strong> <span style="color: #16a34a;">✔️</span>');
+        } else if (opt === selected && !isCorrect) {
+            opt.style.backgroundColor = '#fee2e2';
+            opt.style.borderColor = '#dc2626';
+            opt.innerHTML = opt.innerHTML.replace('</strong>', '</strong> <span style="color: #dc2626;">❌</span>');
+        }
+    });
+};
+
 // -------------------------------------------------------------
 // TOEIC Listening Platform - Core Application Logic
 // Inspired by the Approved TOEIC Reading Premium Styling & Mechanics
@@ -82,15 +151,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
     const LOCKED_SECTIONS = [
-        "topic_01", "topic_02", "topic_03", "topic_04", "topic_05", "topic_06"
+        "topic_01", "topic_02", "topic_03", "topic_04", "topic_05", "topic_06",
+        "dang_02", "dang_03", "test_01", "test_02", "test_03", "test_04", "test_05"
     ];
 
     // App State
     const state = {
         activeView: "home",
         part03Data: null,
-        part03ActiveSection: "overview", // Active category ID (e.g. 'overview', 'dang_01_topic')
-        part03ActiveTab: "theory", // 'theory', 'vocabulary', 'examples', 'practice'
+        part04Data: null,
+        part03ActiveSection: "overview",
+        part04ActiveSection: "overview", // Active category ID (e.g. 'overview', 'dang_01_topic')
+        part03ActiveTab: "theory",
+        part04ActiveTab: "theory", // 'theory', 'vocabulary', 'examples', 'practice'
+        
+        // Part 1 state
+        part01ActiveSection: "overview",
+        part01CurrentSlide: 1,
+        part01TotalSlides: 1,
+        part01SlidesData: [],
         
         // Part 2 state
         part02CurrentSlide: 1,
@@ -186,6 +265,35 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ];
 
+    // Category tree mapping for Part 4
+    
+    const categoryTreeP1 = [
+        { type: "item", id: "overview", title: "Tổng quan Phần 01" },
+        { type: "item", id: "dang_01", title: "Dạng 1: Tranh 1 người" },
+        { type: "item", id: "dang_02", title: "Dạng 2: Tranh nhiều người" },
+        { type: "item", id: "dang_03", title: "Dạng 3: Tranh sự vật" }
+    ];
+
+    const categoryTreeP4 = [
+        {
+            type: "item",
+            id: "overview",
+            title: "Tổng quan Phần 04"
+        },
+        {
+            type: "group",
+            title: "CÁC CHỦ ĐỀ THƯỜNG GẶP",
+            items: [
+                { id: "topic_01", title: "1. Tin nhắn điện thoại" },
+                { id: "topic_02", title: "2. Thông báo" },
+                { id: "topic_03", title: "3. Quảng cáo" },
+                { id: "topic_04", title: "4. Buổi phát thanh" },
+                { id: "topic_05", title: "5. Bài diễn thuyết" },
+                { id: "topic_06", title: "6. Trích đoạn cuộc họp" }
+            ]
+        }
+    ];
+
     // Load progress from localStorage
     try {
         const savedProgress = localStorage.getItem("toeic_answered_questions");
@@ -214,6 +322,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const conceptsNavList = document.getElementById("concepts-nav-list");
     const topicsNavList = document.getElementById("topics-nav-list");
     
+    
+    // Part 1 elements
+
+    const part1SubmenuContainer = document.getElementById("part1SubmenuContainer");
+    const part1ExpandIcon = document.getElementById("part1ExpandIcon");
+    const part1ConceptsNavList = document.getElementById("part1-concepts-nav-list");
+    const part1TopicsNavList = document.getElementById("part1-topics-nav-list");
+    
+    const viewPart1 = document.getElementById("view-part1");
+    const part1Panel = document.getElementById("part1-panel");
+
+    // Part 4 elements
+    const navPart4Btn = document.getElementById("navPart4Btn");
+    const part4SubmenuContainer = document.getElementById("part4SubmenuContainer");
+    const part4ExpandIcon = document.getElementById("part4ExpandIcon");
+    const part4ConceptsNavList = document.getElementById("part4-concepts-nav-list");
+    const part4TopicsNavList = document.getElementById("part4-topics-nav-list");
+
     const contentViews = document.querySelectorAll(".content-view");
     const mainTitleText = document.getElementById("main-title-text");
 
@@ -237,6 +363,30 @@ document.addEventListener("DOMContentLoaded", () => {
     const vocabularyContentArea = document.getElementById("vocabulary-content-area");
     const examplesContentArea = document.getElementById("examples-content-area");
     const practiceContentArea = document.getElementById("practice-content-area");
+
+
+    // Part 4 elements (Main View)
+    const breadParentP4 = document.getElementById("bread-parent-p4");
+    const breadCurrentP4 = document.getElementById("bread-current-p4");
+    const panelTitleP4 = document.getElementById("panel-title-p4");
+    
+    const secBtnTheoryP4 = document.getElementById("sec-btn-theory-p4");
+    const secBtnVocabularyP4 = document.getElementById("sec-btn-vocabulary-p4");
+    const secBtnExamplesP4 = document.getElementById("sec-btn-examples-p4");
+    const secBtnPracticeP4 = document.getElementById("sec-btn-practice-p4");
+    
+    const secTheoryP4 = document.getElementById("sec-theory-p4");
+    const secVocabularyP4 = document.getElementById("sec-vocabulary-p4");
+    const secExamplesP4 = document.getElementById("sec-examples-p4");
+    const secPracticeP4 = document.getElementById("sec-practice-p4");
+    
+    const theoryContentAreaP4 = document.getElementById("theory-content-area-p4");
+    const vocabularyContentAreaP4 = document.getElementById("vocabulary-content-area-p4");
+    const examplesContentAreaP4 = document.getElementById("examples-content-area-p4");
+    const practiceContentAreaP4 = document.getElementById("practice-content-area-p4");
+    
+    const panelTabBtnsP4 = document.querySelectorAll(".panel-section-btn-p4");
+    const panelTabsP4 = document.querySelectorAll(".panel-content-p4");
 
     // Result Modal elements
     const resultModal = document.getElementById("result-modal");
@@ -391,6 +541,18 @@ document.addEventListener("DOMContentLoaded", () => {
     /* -------------------------------------------------------------
        2. VIEW SWITCHING & SUBMENU COLLAPSIBLE
        ------------------------------------------------------------- */
+    
+    function togglePart1Submenu(expand) {
+        if (!part1SubmenuContainer) return;
+        if (expand) {
+            part1SubmenuContainer.style.display = "block";
+            if (part1ExpandIcon) part1ExpandIcon.innerHTML = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>`;
+        } else {
+            part1SubmenuContainer.style.display = "none";
+            if (part1ExpandIcon) part1ExpandIcon.innerHTML = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>`;
+        }
+    }
+
     function togglePart3Submenu(expand) {
         if (expand) {
             part3SubmenuContainer.style.display = "block";
@@ -401,7 +563,21 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function togglePart4Submenu(expand) {
+        if (expand) {
+            part4SubmenuContainer.style.display = "block";
+            part4ExpandIcon.innerHTML = icons.chevronUp;
+        } else {
+            part4SubmenuContainer.style.display = "none";
+            part4ExpandIcon.innerHTML = icons.chevronDown;
+        }
+    }
+
     function switchView(viewName) {
+        if (!window.isUnlocked && (viewName === "part2" || viewName === "part3" || viewName === "part4")) {
+            window.showPaywallModal(() => switchView(viewName));
+            return;
+        }
         state.activeView = viewName;
         stopAudio();
         
@@ -410,15 +586,45 @@ document.addEventListener("DOMContentLoaded", () => {
             navHomeBtn.classList.add("active");
             navPart2Btn.classList.remove("active");
             navPart3Btn.classList.remove("active");
+            navPart4Btn.classList.remove("active");
             document.querySelectorAll(".submenu-item").forEach(item => item.classList.remove("active"));
+            if (typeof togglePart1Submenu !== "undefined") togglePart1Submenu(false);
             togglePart3Submenu(false);
+            togglePart4Submenu(false);
         } else if (viewName === "part2") {
             navHomeBtn.classList.remove("active");
             navPart2Btn.classList.add("active");
             navPart3Btn.classList.remove("active");
+            navPart4Btn.classList.remove("active");
             document.querySelectorAll(".submenu-item").forEach(item => item.classList.remove("active"));
             loadPart02Slide(state.part02CurrentSlide);
+            if (typeof togglePart1Submenu !== "undefined") togglePart1Submenu(false);
             togglePart3Submenu(false);
+            togglePart4Submenu(false);
+        
+        } else if (viewName === "part1") {
+            navHomeBtn.classList.remove("active");
+            navPart2Btn.classList.remove("active");
+            navPart3Btn.classList.remove("active");
+            if (navPart4Btn) navPart4Btn.classList.remove("active");
+            if (navPart1Btn) navPart1Btn.classList.add("active");
+            
+            document.querySelectorAll(".submenu-item").forEach(item => {
+                if (item.getAttribute("data-id") === state.part01ActiveSection) {
+                    item.classList.add("active");
+                } else {
+                    item.classList.remove("active");
+                }
+            });
+            if (typeof togglePart3Submenu !== 'undefined') togglePart3Submenu(false);
+            if (typeof togglePart4Submenu !== 'undefined') togglePart4Submenu(false);
+            togglePart1Submenu(true);
+            
+            if (!state.part01ActiveSection || state.part01ActiveSection === "overview") {
+                loadSectionP1("overview");
+            } else {
+                loadSectionP1(state.part01ActiveSection);
+            }
         } else if (viewName === "part3") {
             navHomeBtn.classList.remove("active");
             navPart2Btn.classList.remove("active");
@@ -430,7 +636,29 @@ document.addEventListener("DOMContentLoaded", () => {
                     item.classList.remove("active");
                 }
             });
+            if (typeof togglePart1Submenu !== "undefined") togglePart1Submenu(false);
             togglePart3Submenu(true);
+            togglePart4Submenu(false);
+        } else if (viewName === "part4") {
+            navHomeBtn.classList.remove("active");
+            navPart2Btn.classList.remove("active");
+            navPart3Btn.classList.remove("active");
+            navPart4Btn.classList.add("active");
+            document.querySelectorAll(".submenu-item").forEach(item => {
+                if (item.getAttribute("data-id") === state.part04ActiveSection) {
+                    item.classList.add("active");
+                } else {
+                    item.classList.remove("active");
+                }
+            });
+            togglePart3Submenu(false);
+            if (typeof togglePart1Submenu !== "undefined") togglePart1Submenu(false);
+            togglePart4Submenu(true);
+            if (!state.part04ActiveSection || state.part04ActiveSection === "overview") {
+                loadSectionP4("overview");
+            } else {
+                loadSectionP4(state.part04ActiveSection);
+            }
         }
         
         // Toggle views
@@ -447,12 +675,50 @@ document.addEventListener("DOMContentLoaded", () => {
             mainTitleText.textContent = "TOEIC LISTENING ZONE";
         } else if (viewName === "part2") {
             mainTitleText.textContent = "PART 02: QUESTIONS-RESPONSES";
+        
+        } else if (viewName === "part1") {
+            navHomeBtn.classList.remove("active");
+            navPart2Btn.classList.remove("active");
+            navPart3Btn.classList.remove("active");
+            if (navPart4Btn) navPart4Btn.classList.remove("active");
+            if (navPart1Btn) navPart1Btn.classList.add("active");
+            
+            document.querySelectorAll(".submenu-item").forEach(item => {
+                if (item.getAttribute("data-id") === state.part01ActiveSection) {
+                    item.classList.add("active");
+                } else {
+                    item.classList.remove("active");
+                }
+            });
+            if (typeof togglePart3Submenu !== 'undefined') togglePart3Submenu(false);
+            if (typeof togglePart4Submenu !== 'undefined') togglePart4Submenu(false);
+            togglePart1Submenu(true);
+            
+            if (!state.part01ActiveSection || state.part01ActiveSection === "overview") {
+                loadSectionP1("overview");
+            } else {
+                loadSectionP1(state.part01ActiveSection);
+            }
         } else if (viewName === "part3") {
             mainTitleText.textContent = "PART 03: SHORT CONVERSATIONS";
+        } else if (viewName === "part4") {
+            mainTitleText.textContent = "PART 04: SHORT TALKS";
         }
     }
     
     navHomeBtn.addEventListener("click", () => switchView("home"));
+    
+    if (navPart1Btn) {
+        navPart1Btn.addEventListener("click", () => {
+            if (state.activeView === "part1") {
+                const isVisible = part1SubmenuContainer.style.display === "block";
+                togglePart1Submenu(!isVisible);
+            } else {
+                switchView("part1");
+            }
+        });
+    }
+
     navPart2Btn.addEventListener("click", () => switchView("part2"));
     
     navPart3Btn.addEventListener("click", () => {
@@ -463,16 +729,37 @@ document.addEventListener("DOMContentLoaded", () => {
             loadSection(state.part03ActiveSection || "overview");
         }
     });
+
+    if (typeof navPart4Btn !== 'undefined' && navPart4Btn) {
+        navPart4Btn.addEventListener("click", () => {
+            if (state.activeView === "part4") {
+                const isVisible = part4SubmenuContainer.style.display === "block";
+                togglePart4Submenu(!isVisible);
+            } else {
+                loadSectionP4(state.part04ActiveSection || "overview");
+            }
+        });
+    }
     
     // Quick triggers from Dashboard
-    const cardPart3 = document.getElementById("card-part3");
-    if (cardPart3) {
-        cardPart3.addEventListener("click", () => loadSection("overview"));
+    const cardPart1 = document.getElementById("card-part1");
+    if (cardPart1) {
+        cardPart1.addEventListener("click", () => switchView("part1"));
     }
+    
     const cardPart2 = document.getElementById("card-part2");
     if (cardPart2) {
         cardPart2.addEventListener("click", () => switchView("part2"));
     }
+    const cardPart3 = document.getElementById("card-part3");
+    if (cardPart3) {
+        cardPart3.addEventListener("click", () => loadSection("overview"));
+    }
+    const cardPart4 = document.getElementById("card-part4");
+    if (cardPart4) {
+        cardPart4.addEventListener("click", () => loadSectionP4("overview"));
+    }
+
 
     // Sidebar Toggling
     toggleSidebarBtn.addEventListener("click", () => {
@@ -745,7 +1032,7 @@ document.addEventListener("DOMContentLoaded", () => {
         conceptsNavList.innerHTML = "";
         topicsNavList.innerHTML = "";
         
-        const isUnlocked = sessionStorage.getItem("portal_unlocked") === "true";
+        const isUnlocked = window.isUnlocked;
         
         // Render Dạng câu hỏi (concepts) using the category tree
         categoryTree.forEach(node => {
@@ -816,14 +1103,196 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+
+    if (window.part04Data) {
+        state.part04Data = window.part04Data;
+        
+        state.part04Data.forEach(item => {
+            if (item.examples && item.examples.length > 0) {
+                item.examples.forEach(ex => {
+                    if (ex.questions) {
+                        // It is an example set for topics
+                        ex.questions.forEach(eq => {
+                            eq.question = cleanQuestionText(eq.question);
+                            if (eq.choices) eq.choices = normalizeChoices(eq.choices);
+                        });
+                    } else {
+                        // It is a single example for subsections
+                        ex.question = cleanQuestionText(ex.question);
+                        if (ex.choices) {
+                            ex.choices = normalizeChoices(ex.choices);
+                        }
+                    }
+                });
+            }
+
+            if (item.practice && item.practice.length > 0) {
+                item.practice.forEach(q => {
+                    q.question = cleanQuestionText(q.question);
+                    if (q.choices) {
+                        q.choices = normalizeChoices(q.choices);
+                    }
+                });
+            }
+        });
+
+        initializePart01Sidebar();
+        initializePart04Sidebar();
+        updateRouteProgress();
+    }
+
+    
+    function initializePart01Sidebar() {
+        if (!part1ConceptsNavList || !part1TopicsNavList) return;
+        
+        part1ConceptsNavList.innerHTML = "";
+        part1TopicsNavList.innerHTML = "";
+        
+        const isUnlocked = window.isUnlocked;
+        
+        categoryTreeP1.forEach(node => {
+            if (node.type === "item") {
+                const submenuItem = document.createElement("div");
+                submenuItem.className = "submenu-item";
+                submenuItem.setAttribute("data-id", node.id);
+                
+                let text = node.title.toUpperCase();
+                if (LOCKED_SECTIONS.includes(node.id) && !isUnlocked) {
+                    text += " 🔒";
+                }
+                
+                submenuItem.innerHTML = `<span class="submenu-dot"></span><span class="submenu-text">${text}</span>`;
+                
+                submenuItem.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    if (LOCKED_SECTIONS.includes(node.id) && !isUnlocked) {
+                        showPaywallModal();
+                        return;
+                    }
+                    loadSectionP1(node.id);
+                });
+                
+                part1ConceptsNavList.appendChild(submenuItem);
+            }
+        });
+        
+        // Render Tests for Part 1
+        if (window.part01Data) {
+            window.part01Data.forEach(section => {
+                if (section.type === "test") {
+                    const submenuItem = document.createElement("div");
+                    submenuItem.className = "submenu-item";
+                    submenuItem.setAttribute("data-id", section.id);
+                    
+                    let text = section.title.toUpperCase();
+                    if (LOCKED_SECTIONS.includes(section.id) && !isUnlocked) {
+                        text += " 🔒";
+                    }
+                    
+                    submenuItem.innerHTML = `<span class="submenu-dot"></span><span class="submenu-text">${text}</span>`;
+                    
+                    submenuItem.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        if (LOCKED_SECTIONS.includes(section.id) && !isUnlocked) {
+                            showPaywallModal();
+                            return;
+                        }
+                        loadSectionP1(section.id);
+                    });
+                    
+                    part1TopicsNavList.appendChild(submenuItem);
+                }
+            });
+        }
+    }
+
+    function initializePart04Sidebar() {
+        if (!part4ConceptsNavList || !part4TopicsNavList) return;
+        
+        part4ConceptsNavList.innerHTML = "";
+        part4TopicsNavList.innerHTML = "";
+        
+        const isUnlocked = window.isUnlocked;
+        
+        // Render Dạng câu hỏi (concepts) using the category tree P4
+        categoryTreeP4.forEach(node => {
+            if (node.type === "item") {
+                const submenuItem = document.createElement("div");
+                submenuItem.className = "submenu-item";
+                submenuItem.setAttribute("data-id", node.id);
+                
+                let text = node.title.toUpperCase();
+                if (LOCKED_SECTIONS.includes(node.id) && !isUnlocked) {
+                    text += " 🔒";
+                }
+                submenuItem.textContent = text;
+                
+                submenuItem.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    loadSectionP4(node.id);
+                });
+                part4ConceptsNavList.appendChild(submenuItem);
+            } else if (node.type === "group") {
+                // Render group header
+                const groupHeader = document.createElement("div");
+                groupHeader.className = "sidebar-group-header";
+                groupHeader.textContent = node.title.toUpperCase();
+                part4ConceptsNavList.appendChild(groupHeader);
+                
+                // Render items inside group
+                node.items.forEach(item => {
+                    const submenuItem = document.createElement("div");
+                    submenuItem.className = "submenu-item group-item";
+                    submenuItem.setAttribute("data-id", item.id);
+                    
+                    let text = item.title.toUpperCase();
+                    if (LOCKED_SECTIONS.includes(item.id) && !isUnlocked) {
+                        text += " 🔒";
+                    }
+                    submenuItem.textContent = text;
+                    
+                    submenuItem.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        loadSectionP4(item.id);
+                    });
+                    part4ConceptsNavList.appendChild(submenuItem);
+                });
+            }
+        });
+        
+        // Render Bài Test ETS (topics)
+        state.part04Data.forEach(item => {
+            if (item.type === "test") {
+                const submenuItem = document.createElement("div");
+                submenuItem.className = "submenu-item";
+                submenuItem.setAttribute("data-id", item.id);
+                
+                let text = item.title.toUpperCase();
+                if (LOCKED_SECTIONS.includes(item.id) && !isUnlocked) {
+                    text += " 🔒";
+                }
+                submenuItem.textContent = text;
+                
+                submenuItem.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    loadSectionP4(item.id);
+                });
+                
+                part4TopicsNavList.appendChild(submenuItem);
+            }
+        });
+    }
+
     function loadSection(id) {
-        const isUnlocked = sessionStorage.getItem("portal_unlocked") === "true";
+        const isUnlocked = window.isUnlocked;
         if (LOCKED_SECTIONS.includes(id) && !isUnlocked) {
             const pass = prompt("Phần này đang khóa. Vui lòng nhập mật khẩu để mở khóa:");
             if (pass === "missnguyet2026") {
                 sessionStorage.setItem("portal_unlocked", "true");
                 alert("Mở khóa thành công!");
-                initializePart03Sidebar(); // Refresh sidebar to remove locks
+                initializePart03Sidebar();
+    initializePart01Sidebar();
+    initializePart04Sidebar(); // Refresh sidebar to remove locks
             } else {
                 if (pass !== null) {
                     alert("Mật khẩu không chính xác!");
@@ -2574,11 +3043,2167 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+
+// ================= PART 04 FUNCTIONS =================
+
+    
+    function loadSectionP1(sectionId) {
+        if (!window.part01Data) return;
+        const sectionData = window.part01Data.find(s => s.id === sectionId);
+        if (!sectionData) return;
+
+        state.part01ActiveSection = sectionId;
+        
+        // Update active in submenu
+        document.querySelectorAll(".submenu-item").forEach(item => {
+            if (item.getAttribute("data-id") === sectionId) {
+                item.classList.add("active");
+                let parentSubmenu = item.closest(".part1-collapsible-submenu");
+                if (parentSubmenu) {
+                    parentSubmenu.style.display = "block";
+                    if (part1ExpandIcon) part1ExpandIcon.innerHTML = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>`;
+                }
+            } else {
+                item.classList.remove("active");
+            }
+        });
+
+        // Setup Header
+        part1Panel.innerHTML = `
+            <div class="panel-header">
+                <div class="breadcrumbs">
+                    <span>PART 01: PHOTOGRAPHS</span> &nbsp;/&nbsp; <span>${sectionData.type === 'test' ? 'LUYỆN TẬP ETS 2026' : 'DẠNG CÂU HỎI'}</span>
+                </div>
+                <h3 id="panel-title-p1">${sectionData.title}</h3>
+            </div>
+            <div id="p1-content-area" style="padding: 24px;"></div>
+        `;
+        
+        const contentArea = document.getElementById("p1-content-area");
+
+        if (sectionData.type === "theory" || sectionData.type === "overview") {
+            state.part01SlidesData = sectionData.theory || [];
+            state.part01TotalSlides = state.part01SlidesData.length;
+            state.part01CurrentSlide = 1;
+            renderTheoryP1(contentArea);
+        } else if (sectionData.type === "test") {
+            renderTestP1(sectionData, contentArea);
+        }
+    }
+
+    function renderTheoryP1(container) {
+        if (!state.part01SlidesData || state.part01SlidesData.length === 0) {
+            container.innerHTML = "<p>Nội dung đang được cập nhật...</p>";
+            return;
+        }
+
+        // Generate slide carousel UI
+        container.innerHTML = `
+            <div class="ppt-slide-container">
+                <div class="ppt-header">
+                    LÝ THUYẾT
+                </div>
+                <div class="ppt-content" id="p1-slide-content">
+                    <!-- Slide content rendered here -->
+                </div>
+                <div class="ppt-audio-bar" id="p1-slide-audio-bar">
+                    <div id="p1-slide-audio-container"></div>
+                </div>
+                <div class="ppt-nav">
+                    <button id="p1-slide-prev" class="ppt-nav-btn">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg> LÙI LẠI
+                    </button>
+                    <div style="font-weight: 700; color: #64748b; font-size: 1.05rem; letter-spacing: 0.05em; display: flex; align-items: center;">
+                        SLIDE &nbsp;<select id="p1-slide-select" style="padding: 4px 8px; border-radius: 6px; border: 1px solid #cbd5e1; font-weight: bold; color: #0f172a; font-size: 1rem; cursor: pointer; outline: none; background: white; margin: 0 4px;">
+                            ${state.part01SlidesData.map((_, i) => `<option value="${i+1}" ${state.part01CurrentSlide === i+1 ? 'selected' : ''}>${i+1}</option>`).join('')}
+                        </select>&nbsp; / &nbsp;<span id="p1-slide-total">${state.part01TotalSlides}</span>
+                    </div>
+                    <button id="p1-slide-next" class="ppt-nav-btn" style="background: linear-gradient(135deg, #2563eb, #1e3a8a); border: none; color: white;">
+                        TIẾP TỤC <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                    </button>
+                </div>
+            </div>
+        `;
+        
+        updatePart01SlideView();
+        
+        document.getElementById("p1-slide-prev").addEventListener("click", () => {
+            if (state.part01CurrentSlide > 1) {
+                state.part01CurrentSlide--;
+                updatePart01SlideView();
+            }
+        });
+        
+        document.getElementById("p1-slide-next").addEventListener("click", () => {
+            if (state.part01CurrentSlide < state.part01TotalSlides) {
+                state.part01CurrentSlide++;
+                updatePart01SlideView();
+            }
+        });
+
+        document.getElementById("p1-slide-select").addEventListener("change", (e) => {
+            state.part01CurrentSlide = parseInt(e.target.value);
+            updatePart01SlideView();
+        });
+    }
+    
+    function updatePart01SlideView() {
+        const slide = state.part01SlidesData[state.part01CurrentSlide - 1];
+        if (!slide) return;
+        
+        const contentContainer = document.getElementById("p1-slide-content");
+        const selectEl = document.getElementById("p1-slide-select");
+        if (selectEl) selectEl.value = state.part01CurrentSlide;
+        
+        const prevBtn = document.getElementById("p1-slide-prev");
+        const nextBtn = document.getElementById("p1-slide-next");
+        
+        
+        if (slide.practice) {
+            const p = slide.practice;
+            const imgPath = slide.images && slide.images.length > 0 ? `data/graphics/part01/${slide.images[0]}` : '';
+            
+            let optionsHtml = '';
+            const labels = ['A', 'B', 'C', 'D'];
+            p.options.forEach((opt, i) => {
+                const isCorrect = labels[i] === p.answer;
+                optionsHtml += `
+                    <div class="practice-option" data-correct="${isCorrect}" style="padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;" onclick="selectPracticeOption(this)">
+                        <strong style="margin-right: 8px; font-size: 1.1em;">${labels[i]}.</strong> <span>${opt}</span>
+                    </div>
+                `;
+            });
+            
+            let vocabHtml = '';
+            p.vocab.forEach(v => {
+                vocabHtml += `
+                    <div style="display: flex; gap: 8px; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px dashed #e2e8f0; font-size: 1.15rem;">
+                        <span style="font-weight: 600; color: #0284c7; min-width: 140px; display: inline-block;">${v.en} <span onclick="playTTS(this.dataset.text, event)" data-text="${v.en.replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 4px; opacity: 0.5; font-size: 0.9em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'" title="Đọc từ này">🔊</span></span>
+                        <span style="color: var(--text-main);">- ${v.vi}</span>
+                    </div>
+                `;
+            });
+
+            contentContainer.innerHTML = `
+                <div style="display: flex; flex-direction: row; gap: 40px; flex-wrap: nowrap; align-items: stretch; justify-content: center; width: 100%;">
+                    <div style="flex: 1; max-width: 35%; display: flex; justify-content: center; align-items: flex-start;">
+                        <img src="${imgPath}" alt="Practice Image" style="width: 100%; max-height: 450px; object-fit: contain; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+                    </div>
+                    <div style="flex: 1; min-width: 300px; max-width: 65%; font-size: 1.15rem; line-height: 1.6; color: var(--text-main); display: flex; flex-direction: column;">
+                        <div id="practice-options-container" style="margin-bottom: 24px;">
+                            ${optionsHtml}
+                        </div>
+                        <div style="display: flex; gap: 16px; margin-bottom: 24px;">
+                            <button onclick="checkPracticeAnswer(this)" style="background: #2563eb; color: white; border: none; padding: 12px 32px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(37,99,235,0.2); transition: all 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">KIỂM TRA</button>
+                        </div>
+                        <details style="cursor: pointer; background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 16px;">
+                          <summary style="font-weight: bold; color: #16a34a; outline: none; list-style-type: '👉 '; font-size: 1.15rem;">Hiển thị từ vựng</summary>
+                          <div style="margin-top: 16px;">
+                            ${vocabHtml}
+                          </div>
+                        </details>
+                    </div>
+                </div>
+            `;
+        } else {
+            let hasImage = slide.images && slide.images.length > 0;
+
+        let isMultipleImages = hasImage && slide.images.length > 1;
+        let imgHtml = "";
+        
+        if (hasImage) {
+            let imgFlexDir = isMultipleImages ? "row" : "column";
+            let imgGap = isMultipleImages ? "20px" : "0px";
+            imgHtml = `<div class="slide-images" style="display: flex; flex-direction: ${imgFlexDir}; gap: ${imgGap}; align-items: center; justify-content: center; background: #f8fafc; border-radius: 12px; padding: 20px; border: 1px solid var(--border); box-shadow: inset 0 2px 10px rgba(0,0,0,0.02);">`;
+            slide.images.forEach(img => {
+                let imgMargin = isMultipleImages ? "0" : "0 0 8px 0";
+                imgHtml += `<img src="data/graphics/part01/${img}" alt="Slide Image" style="max-width: 100%; max-height: 300px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); margin: ${imgMargin}; flex: 1; min-width: 0;">`;
+            });
+            imgHtml += `</div>`;
+        }
+
+        let isTitleSlide = false;
+        if (!hasImage && slide.text.length > 0 && slide.text.length <= 4) {
+            const strippedText = slide.text.map(t => t.replace(/<[^>]+>/g, ''));
+            const hasLongText = strippedText.some(t => t.length > 60);
+            const hasBullets = strippedText.some(t => t.includes('•') || t.includes('Directions:'));
+            
+            if (!hasLongText && !hasBullets) {
+                isTitleSlide = true;
+            }
+        }
+        
+        let textHtml = slide.text.map((t, idx) => {
+            if (t.trim().startsWith("http") || t.trim().match(/^[a-zA-Z0-9_\-\.]+$/)) {
+                return '';
+            }
+            if (t.includes('class="slide-images"') || t.includes('style=')) {
+                // If it already has custom styling or is a complex HTML block, don't wrap it with margin
+                return `<div>${t}</div>`;
+            }
+            if (isTitleSlide) {
+                return `<div style="margin-bottom: 24px; text-align: center; font-size: ${idx === 0 ? '2.25rem' : '1.75rem'}; font-weight: 800; line-height: 1.5; text-transform: uppercase;">${t}</div>`;
+            }
+            return `<div style="margin-bottom: 16px;">${t}</div>`;
+        }).join('');
+        
+        if (hasImage) {
+            if (isMultipleImages) {
+                // Images horizontally, text below vertically centered
+                contentContainer.innerHTML = `
+                    <div style="display: flex; flex-direction: column; gap: 24px; width: 100%; align-items: center;">
+                        ${imgHtml}
+                        <div class="slide-text" style="font-size: 1.15rem; line-height: 1.8; color: var(--text-main); display: flex; flex-direction: column; align-items: center; text-align: center;">
+                            ${textHtml}
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Single image: left/right layout
+                contentContainer.innerHTML = `
+                    <div style="display: flex; flex-direction: row; gap: 32px; flex-wrap: wrap; align-items: center;">
+                        <div style="flex: 1.2; min-width: 300px; display: flex; justify-content: center;">
+                            ${imgHtml}
+                        </div>
+                        <div class="slide-text" style="flex: 1; min-width: 300px; font-size: 1.35rem; line-height: 2; color: var(--text-main); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                            ${textHtml}
+                        </div>
+                    </div>
+                `;
+            }
+        } else {
+            let containerStyle = isTitleSlide 
+                ? `display: flex; flex-direction: column; justify-content: center; align-items: center; width: 100%; height: 100%;`
+                : `display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%; height: 100%;`;
+                
+            contentContainer.innerHTML = `
+                <div style="${containerStyle}">
+                    ${textHtml}
+                </div>
+            `;
+        }
+        
+                }
+
+        prevBtn.style.opacity = state.part01CurrentSlide === 1 ? "0.4" : "1";
+        prevBtn.style.cursor = state.part01CurrentSlide === 1 ? "not-allowed" : "pointer";
+        nextBtn.style.opacity = state.part01CurrentSlide === state.part01TotalSlides ? "0.4" : "1";
+        nextBtn.style.cursor = state.part01CurrentSlide === state.part01TotalSlides ? "not-allowed" : "pointer";
+        
+        const audioBar = document.getElementById("p1-slide-audio-bar");
+        const audioContainer = document.getElementById("p1-slide-audio-container");
+        audioContainer.innerHTML = '';
+        if (slide.audio) {
+            audioBar.style.display = "block";
+            createAudioPlayer(slide.audio, audioContainer);
+        } else {
+            audioBar.style.display = "none";
+        }
+    }
+
+    function renderTestP1(testData, container) {
+        if (!testData.practice_sets || testData.practice_sets.length === 0) {
+            container.innerHTML = "<p>Đề thi đang được cập nhật...</p>";
+            return;
+        }
+
+        let html = `<div class="practice-sets-container" style="display: flex; flex-direction: column; gap: 40px;">`;
+        
+        testData.practice_sets.forEach((set, setIndex) => {
+            const q = set.questions[0]; // Part 1 has 1 question per set
+            const qId = `p1_q_${q.id}`;
+            const savedAns = state.answeredQuestions[qId] || null;
+            
+            let choicesHtml = '';
+            ['A', 'B', 'C', 'D'].forEach(opt => {
+                const isSelected = savedAns === opt;
+                const isCorrect = q.answer === opt;
+                
+                let btnClass = "choice-btn";
+                if (savedAns) {
+                    btnClass += " answered";
+                    if (isSelected && !isCorrect) btnClass += " incorrect";
+                    if (isCorrect) btnClass += " correct";
+                }
+                
+                let extraStyle = "";
+                if (savedAns) {
+                    if (isCorrect) {
+                        extraStyle = "background: var(--success-bg); border-color: var(--success);";
+                    } else if (isSelected && !isCorrect) {
+                        extraStyle = "background: var(--danger-bg); border-color: var(--danger);";
+                    }
+                }
+
+                choicesHtml += `
+                    <button class="${btnClass}" data-q="${q.id}" data-opt="${opt}" ${savedAns ? 'disabled' : ''} style="display: flex; align-items: center; padding: 14px 20px; border: 1px solid var(--border); border-radius: 12px; background: var(--bg-card); cursor: pointer; transition: var(--transition); width: 100%; text-align: left; margin-bottom: 16px; ${extraStyle}">
+                        <span class="choice-letter" style="flex-shrink: 0; width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.04); border-radius: 50%; font-weight: 700; margin-right: 16px; font-size: 1.1rem;">${opt}</span>
+                        <span class="choice-text" style="flex-grow: 1; font-weight: 500; font-size: 1.1rem;">${q.choices[opt] || ""}</span>
+                    </button>
+                `;
+            });
+            
+            html += `
+            <div class="ppt-slide-container" style="margin-bottom: 40px; box-shadow: 0 10px 40px rgba(0,0,0,0.08);">
+                <div class="ppt-header" style="background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);">
+                    PRACTICE TEST - QUESTION ${q.id}
+                </div>
+                
+                <div class="ppt-practice-layout" style="padding: 24px; background-color: #f8fafc; height: 100%;">
+                    <!-- Left Column: Image -->
+                    <div class="ppt-practice-left" style="background: white; border-radius: 8px;">
+                        <img src="data/graphics/part01/${set.image}" alt="Question ${q.id}" style="border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
+                    </div>
+                    
+                    <!-- Right Column: Audio & Choices -->
+                    <div class="ppt-practice-right">
+                        <div class="audio-player-wrapper" style="background: white; padding: 16px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 2px 4px rgba(0,0,0,0.02);">
+                            <div style="font-size: 0.85rem; font-weight: 700; color: #64748b; margin-bottom: 8px; text-transform: uppercase; letter-spacing: 0.05em;">Nghe Audio:</div>
+                            <audio controls style="width: 100%; height: 40px; outline: none;">
+                                <source src="media/${set.audio}" type="audio/mpeg">
+                            </audio>
+                        </div>
+                        
+                        <div class="choices-grid" style="display: flex; flex-direction: column; gap: 12px;">
+                            ${choicesHtml}
+                        </div>
+                        
+                        <div id="feedback-${q.id}" class="feedback-area" style="display: ${savedAns ? 'block' : 'none'}; padding: 16px; border-radius: 8px; background: #f0fdfa; border: 1px solid #ccfbf1; font-size: 1.05rem; line-height: 1.6; max-height: 200px; overflow-y: auto;">
+                            ${savedAns ? q.explanation : ''}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            `;
+        });
+        
+        html += `</div>`;
+        container.innerHTML = html;
+        
+        // Attach event listeners for choices
+        const choiceBtns = container.querySelectorAll(".choice-btn");
+        choiceBtns.forEach(btn => {
+            btn.addEventListener("click", function() {
+                if (this.classList.contains("answered")) return;
+                
+                const qId = parseInt(this.getAttribute("data-q"));
+                const selectedOpt = this.getAttribute("data-opt");
+                
+                // Find the question object
+                const set = testData.practice_sets.find(s => s.questions[0].id === qId);
+                const qObj = set.questions[0];
+                
+                const globalQId = `p1_q_${qId}`;
+                state.answeredQuestions[globalQId] = selectedOpt;
+                
+                // Save progress
+                try {
+                    localStorage.setItem("toeic_answered_questions", JSON.stringify(state.answeredQuestions));
+                } catch(e) {}
+                updateRouteProgress();
+                
+                // Update UI for this question block only
+                const qBlock = this.closest(".practice-set-card");
+                const btns = qBlock.querySelectorAll(".choice-btn");
+                btns.forEach(b => {
+                    b.classList.add("answered");
+                    b.disabled = true;
+                    const opt = b.getAttribute("data-opt");
+                    if (opt === qObj.answer) {
+                        b.classList.add("correct");
+                        b.style.background = "var(--success-bg)";
+                        b.style.borderColor = "var(--success)";
+                    }
+                    if (opt === selectedOpt && selectedOpt !== qObj.answer) {
+                        b.classList.add("incorrect");
+                        b.style.background = "var(--danger-bg)";
+                        b.style.borderColor = "var(--danger)";
+                    }
+                });
+                
+                // Show feedback
+                const feedbackEl = document.getElementById(`feedback-${qId}`);
+                if (feedbackEl) {
+                    feedbackEl.innerHTML = qObj.explanation;
+                    feedbackEl.style.display = "block";
+                }
+                
+                if (typeof spawnConfetti !== "undefined" && selectedOpt === qObj.answer) {
+                    spawnConfetti(20, true);
+                    if (typeof playCorrect !== "undefined") playCorrect();
+                } else if (typeof playIncorrect !== "undefined" && selectedOpt !== qObj.answer) {
+                    playIncorrect();
+                }
+            });
+        });
+    }
+
+    function loadSectionP4(id) {
+        const isUnlocked = window.isUnlocked;
+        if (LOCKED_SECTIONS.includes(id) && !isUnlocked) {
+            const pass = prompt("Phần này đang khóa. Vui lòng nhập mật khẩu để mở khóa:");
+            if (pass === "missnguyet2026") {
+                sessionStorage.setItem("portal_unlocked", "true");
+                alert("Mở khóa thành công!");
+                initializePart03Sidebar();
+    initializePart01Sidebar();
+    initializePart04Sidebar(); // Refresh sidebar to remove locks
+            } else {
+                if (pass !== null) {
+                    alert("Mật khẩu không chính xác!");
+                }
+                // Fallback to active section or overview
+                const fallbackId = state.part04ActiveSection && state.part04ActiveSection !== id ? state.part04ActiveSection : "overview";
+                document.querySelectorAll(".submenu-item").forEach(item => {
+                    if (item.getAttribute("data-id") === fallbackId) {
+                        item.classList.add("active");
+                    } else {
+                        item.classList.remove("active");
+                    }
+                });
+                return;
+            }
+        }
+        
+        state.part04ActiveSection = id;
+        
+        if (state.activeView !== "part4") {
+            switchView("part4");
+        }
+        
+        document.querySelectorAll(".submenu-item").forEach(item => {
+            if (item.getAttribute("data-id") === id) {
+                item.classList.add("active");
+            } else {
+                item.classList.remove("active");
+            }
+        });
+        
+        const isGeneral = id === "overview" || id === "tips";
+        const panelSectionsBar = document.getElementById("panel-sections-bar");
+        if (panelSectionsBar) {
+            panelSectionsBar.style.display = isGeneral ? "none" : "flex";
+        }
+        
+        const section = state.part04Data.find(item => item.id === id);
+        if (!section) return;
+        
+        // Override section title using category tree mapping
+        let displayTitle = section.title;
+        let parentText = "Lý thuyết chung";
+        
+        let foundNode = null;
+        categoryTree.forEach(node => {
+            if (node.type === "item" && node.id === id) {
+                foundNode = node;
+                parentText = "Tổng quan";
+            } else if (node.type === "group") {
+                const match = node.items.find(item => item.id === id);
+                if (match) {
+                    foundNode = match;
+                    parentText = node.title;
+                }
+            }
+        });
+        
+        if (foundNode) {
+            displayTitle = foundNode.title;
+        } else if (section.type === "topic" || section.type === "test") {
+            parentText = "Luyện tập ETS 2026";
+            displayTitle = section.title;
+        }
+        
+        breadParentP4.textContent = parentText;
+        breadCurrentP4.textContent = displayTitle;
+        panelTitleP4.textContent = displayTitle;
+        
+        const hasTheory = section.theory && section.theory.length > 0;
+        const theoryTabBtn = document.getElementById("sec-btn-theory-p4");
+        if (theoryTabBtn) {
+            if (hasTheory) {
+                theoryTabBtn.classList.remove("hidden");
+            } else {
+                theoryTabBtn.classList.add("hidden");
+            }
+        }
+
+        const hasVocabulary = section.vocabulary && section.vocabulary.length > 0;
+        const vocabularyTabBtn = document.getElementById("sec-btn-vocabulary");
+        if (vocabularyTabBtn) {
+            if (hasVocabulary) {
+                vocabularyTabBtn.classList.remove("hidden");
+            } else {
+                vocabularyTabBtn.classList.add("hidden");
+            }
+        }
+
+        const hasExamples = section.examples && section.examples.length > 0;
+        const examplesTabBtn = document.getElementById("sec-btn-examples");
+        if (examplesTabBtn) {
+            if (hasExamples) {
+                examplesTabBtn.classList.remove("hidden");
+            } else {
+                examplesTabBtn.classList.add("hidden");
+            }
+        }
+
+        const hasPractice = (section.practice && section.practice.length > 0) || (section.practice_sets && section.practice_sets.length > 0);
+        const practiceTabBtn = document.getElementById("sec-btn-practice");
+        if (practiceTabBtn) {
+            if (hasPractice) {
+                practiceTabBtn.classList.remove("hidden");
+            } else {
+                practiceTabBtn.classList.add("hidden");
+            }
+        }
+
+        // Auto-switch to the first tab that has content
+        let targetTab = "theory";
+        if (section.theory && section.theory.length > 0) {
+            targetTab = "theory";
+        } else if (section.vocabulary && section.vocabulary.length > 0) {
+            targetTab = "vocabulary";
+        } else if (section.examples && section.examples.length > 0) {
+            targetTab = "examples";
+        } else if ((section.practice && section.practice.length > 0) || (section.practice_sets && section.practice_sets.length > 0)) {
+            targetTab = "practice";
+        }
+        state.part04ActiveTab = targetTab;
+        
+        renderPanelTabP4(state.part04ActiveTab);
+    }
+    
+    panelTabBtnsP4.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const sec = btn.getAttribute("data-section");
+            state.part04ActiveTab = sec;
+            renderPanelTabP4(sec);
+        });
+    });
+
+    function renderPanelTabP4(tabName) {
+        stopAudio();
+        
+        panelTabsP4.forEach(tab => {
+            if (tab.id === `sec-${tabName}-p4`) {
+                tab.classList.add("active");
+            } else {
+                tab.classList.remove("active");
+            }
+        });
+        
+        panelTabBtnsP4.forEach(b => {
+            if (b.getAttribute("data-section") === tabName) {
+                b.classList.add("active");
+            } else {
+                b.classList.remove("active");
+            }
+        });
+        
+        const section = state.part04Data.find(item => item.id === state.part04ActiveSection);
+        if (!section) return;
+        
+        if (tabName === "theory") {
+            renderTheoryP4(section);
+        } else if (tabName === "vocabulary") {
+            renderVocabularyP4(section);
+        } else if (tabName === "examples") {
+            renderExamplesP4(section);
+        } else if (tabName === "practice") {
+            renderPracticeP4(section);
+        }
+    }
+
+    /* -------------------------------------------------------------
+       5.5 TRANSLATION HTML BUILDERS
+       ------------------------------------------------------------- */
+    function renderQuestionTextHtml(q, idLabel, textPrefix = "") {
+        let qText = q.question;
+        if (qText && (qText.includes("PRACTICE") || qText.includes("Example") || qText.includes("EXAMPLE"))) {
+            textPrefix = "";
+        }
+        const qViet = q.vietnamese_question || "";
+        
+        let graphicHtml = "";
+        const lowerQText = (qText || "").toLowerCase();
+        const lowerQViet = (qViet || "").toLowerCase();
+        const isVisual = lowerQText.includes("look at the graphic") || 
+                         lowerQText.includes("look at the map") ||
+                         lowerQText.includes("look at the schedule") ||
+                         lowerQText.includes("look at the chart") ||
+                         lowerQText.includes("look at the diagram") ||
+                         lowerQViet.includes("quan sát hình") ||
+                         lowerQViet.includes("nhìn vào hình") ||
+                         lowerQViet.includes("quan sát sơ đồ") ||
+                         lowerQViet.includes("nhìn vào sơ đồ");
+                         
+        if (isVisual) {
+            const CROPPED_GRAPHICS = {
+                327: "data/graphics/Slide327.png",
+                336: "data/graphics/Slide336.png",
+                436: "data/graphics/Slide436.png",
+                441: "data/graphics/Slide441.png",
+                455: "data/graphics/Slide455.png",
+                481: "data/graphics/Slide481.png",
+                490: "data/graphics/Slide490.png",
+                540: "data/graphics/Slide540.png"
+            };
+            let imgSrc = `../TOECI LISTENING - PART 03/Slide${q.slide_index}.png`;
+            if (CROPPED_GRAPHICS[q.slide_index]) {
+                imgSrc = CROPPED_GRAPHICS[q.slide_index];
+            }
+            graphicHtml = `
+                <div class="visual-graphic-container" style="margin: 16px 0; text-align: center; width: 100%;">
+                    <img class="visual-graphic-img" 
+                         src="${imgSrc}" 
+                         onerror="this.onerror=null; this.src='../TOEIC LISTENING - PART 03/Slide${q.slide_index}.png';"
+                         style="max-width: 100%; max-height: 450px; border: 2px solid var(--border); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; margin: 0 auto;" 
+                         alt="Look at the graphic (Slide ${q.slide_index})">
+                </div>
+            `;
+        }
+
+        if (!qViet) {
+            return `
+                <div class="question-text">${textPrefix}${qText}</div>
+                ${graphicHtml}
+            `;
+        }
+        
+        return `
+            <div class="question-text-wrapper" style="cursor: pointer; width: 100%;" onclick="const t = this.querySelector('.q-trans'); t.style.display = t.style.display === 'block' ? 'none' : 'block'; event.stopPropagation();" title="Click vào câu hỏi để xem dịch nghĩa">
+                <div class="question-text" style="margin-bottom: 6px; text-align: left; width: 100%;">
+                    ${textPrefix}${qText}
+                </div>
+                <div class="q-trans" style="display: none;">
+                    ${qViet}
+                </div>
+            </div>
+            ${graphicHtml}
+        `;
+    }
+
+    function renderChoicesHtml(q, isReview = false, userAnswer = null) {
+        let choicesHtml = "";
+        Object.keys(q.choices).forEach(key => {
+            const optText = q.choices[key];
+            const optViet = q.vietnamese_choices ? q.vietnamese_choices[key] : "";
+            
+            let extraClass = "";
+            if (isReview) {
+                extraClass = "checked-done";
+                if (key === q.answer) {
+                    extraClass += " correct";
+                } else if (key === userAnswer) {
+                    extraClass += " incorrect";
+                }
+            }
+            
+            let transDiv = "";
+            if (optViet) {
+                transDiv = `
+                    <div class="c-trans" style="display: none; color: var(--color-purple); font-size: 0.88rem; font-style: italic; margin-top: 6px; text-align: left; width: 100%; border-left: 2px solid var(--color-purple); padding-left: 8px; line-height: 1.4; font-weight: 500;">
+                        ${optViet}
+                    </div>
+                `;
+            }
+            
+            choicesHtml += `
+                <button class="choice-option ${extraClass}" data-key="${key}" data-slide="${q.slide_index}" data-q-slide="${q.slide_index}" style="display: flex; flex-direction: column; align-items: flex-start; padding: 12px 16px; width: 100%; border-radius: 0px !important;">
+                    <div style="display: flex; align-items: center; width: 100%;">
+                        <div class="choice-radio-circle"></div>
+                        <div class="choice-letter" style="margin-right: 12px; flex-shrink: 0;">${key}</div>
+                        <div class="choice-text" style="flex: 1; text-align: left; font-weight: 500; padding-right: 8px;">${optText}</div>
+                    </div>
+                    ${transDiv}
+                </button>
+            `;
+        });
+        return choicesHtml;
+    }
+
+    function renderTranscriptHtml(transcriptList, vietTranscriptList) {
+        let html = "";
+        transcriptList.forEach((line, idx) => {
+            const lineViet = vietTranscriptList && vietTranscriptList[idx] ? vietTranscriptList[idx] : "";
+            let transHtml = "";
+            if (lineViet) {
+                const cleanViet = lineViet.replace(/^[A-Za-z0-9]+[-A-Za-z0-9]*\s*:\s*/, "");
+                const highlightedViet = cleanViet.replace(/(\(\d+\)[^.?!]*(?:[.?!]|$))/g, '<strong style="color: #ff3333; font-style: italic;">$1</strong>');
+                transHtml = `<div class="line-trans-text" style="color: var(--text-muted); font-size: 0.88rem; font-style: italic; margin-top: 4px; border-left: 2px solid var(--border); padding-left: 8px;">${highlightedViet}</div>`;
+            }
+            let formattedLine = line.replace(/(\(\d+\)[^.?!]*(?:[.?!]|$))/g, '<strong style="color: #ff3333; font-style: italic;">$1</strong>');
+            formattedLine = formattedLine.replace(/^([A-Za-z0-9]+[-A-Za-z0-9]*\s*:\s*)/, '<strong style="color: var(--color-blue);">$1</strong>');
+            html += `
+                <div class="transcript-line-wrapper" style="margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px dashed var(--border); text-align: left;">
+                    <p class="transcript-line" style="margin: 0; font-weight: 500; line-height: 1.5;">${formattedLine}</p>
+                    ${transHtml}
+                </div>
+            `;
+        });
+        return html;
+    }
+
+    function renderScriptCardHtml(idLabel, transcriptHtml, explanationHtml) {
+        return `
+            <div class="reveal-script-card hidden" id="reveal-card-${idLabel}">
+                <div class="reveal-header" id="header-reveal-${idLabel}">
+                    <span><strong>📄 TRANSCRIPT & GIẢI THÍCH ĐÁP ÁN</strong></span>
+                    ${icons.chevronDown}
+                </div>
+                <div class="reveal-content" id="reveal-content-${idLabel}" style="padding: 20px; text-align: left;">
+                    ${explanationHtml}
+                    <h4 style="margin: 20px 0 10px 0; font-size: 1rem; font-weight: 800; text-transform: uppercase; color: var(--color-purple); display: flex; align-items: center; gap: 8px; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+                        🎤 TRANSCRIPT BÀI NGHE
+                    </h4>
+                    ${transcriptHtml}
+                </div>
+            </div>
+        `;
+    }
+
+    function hookScriptCardToggler(idLabel) {
+        setTimeout(() => {
+            const revHeader = document.getElementById(`header-reveal-${idLabel}`);
+            const revContent = document.getElementById(`reveal-content-${idLabel}`);
+            if (revHeader && revContent) {
+                revHeader.addEventListener("click", () => {
+                    revContent.classList.toggle("open");
+                    const svg = revHeader.querySelector("svg");
+                    if (svg) {
+                        if (revContent.classList.contains("open")) {
+                            svg.outerHTML = icons.chevronUp;
+                        } else {
+                            svg.outerHTML = icons.chevronDown;
+                        }
+                    }
+                });
+            }
+        }, 50);
+    }
+
+    /* -------------------------------------------------------------
+       6. RENDERING DETAILS (THEORY, VOCABULARY, EXAMPLES, PRACTICE)
+       ------------------------------------------------------------- */
+    
+    // A. THEORY
+    function renderTheoryP4(section) {
+        theoryContentAreaP4.innerHTML = "";
+        
+        if (!section.theory || section.theory.length === 0) {
+            theoryContentAreaP4.innerHTML = "<p style='color: var(--text-muted); font-weight: 700;'>Không có lý thuyết cho phần này.</p>";
+            return;
+        }
+        
+        // Custom interactive landing page for Section Overview (Inspired by Speaking website design elements)
+        if (section.id === "overview") {
+            theoryContentAreaP4.innerHTML = `
+                <div class="dashboard-hero" style="background: linear-gradient(135deg, #1e1b4b 0%, #312e81 60%, #4361ee 100%); color: white; padding: 40px; margin-bottom: 30px; border-left: 5px solid var(--color-cyan); border-radius: 0px !important;">
+                    <span style="display: inline-block; background: rgba(0, 242, 254, 0.15); color: var(--color-cyan); padding: 4px 12px; font-size: 0.75rem; font-weight: 700; margin-bottom: 12px; border: 1px solid rgba(0, 242, 254, 0.3); text-transform: uppercase; letter-spacing: 0.05em;">Part 03: Short Conversations</span>
+                    <h2 style="font-size: 2.2rem; font-weight: 800; color: white; margin-bottom: 10px;">TỔNG QUAN NỘI DUNG PHẦN 03</h2>
+                    <p style="color: rgba(255,255,255,0.8); font-size: 1.05rem; line-height: 1.6; max-width: 700px; margin: 0 0 25px 0;">Học cách nghe hiểu các cuộc đối thoại ngắn, nắm bắt từ khóa và phản xạ chọn đáp án nhanh chóng trong bài nghe.</p>
+                    
+                    <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top: 15px;">
+                        <div style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 20px; display: flex; align-items: center; gap: 12px;">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--color-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <div>
+                                <strong style="font-size: 1.15rem; display: block; color: white; line-height: 1.2;">39 Câu Hỏi</strong>
+                                <span style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Từ câu 32 đến câu 70</span>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 20px; display: flex; align-items: center; gap: 12px;">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--color-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                            <div>
+                                <strong style="font-size: 1.15rem; display: block; color: white; line-height: 1.2;">13 Đoạn Thoại</strong>
+                                <span style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Cuộc trò chuyện ngắn</span>
+                            </div>
+                        </div>
+                        <div style="background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); padding: 12px 20px; display: flex; align-items: center; gap: 12px;">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="var(--color-cyan)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            <div>
+                                <strong style="font-size: 1.15rem; display: block; color: white; line-height: 1.2;">2 - 3 Người</strong>
+                                <span style="font-size: 0.75rem; color: rgba(255,255,255,0.6);">Số lượng người nói</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="font-size: 1.25rem; font-weight: 800; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; color: var(--color-blue); text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border); padding-bottom: 8px;">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="15" y2="17"/></svg> CẤU TRÚC VÀ CÁC QUY TẮC TRỌNG TÂM
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-bottom: 30px;">
+                    <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 25px; transition: border-color 0.2s; border-radius: 0px !important;">
+                        <div style="width: 44px; height: 44px; background: rgba(0, 242, 254, 0.08); color: var(--color-cyan); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 15px; border: 1px solid rgba(0, 242, 254, 0.2);"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                        <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">13 Đoạn Hội Thoại</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Mỗi đoạn hội thoại gồm 03 câu hỏi đi kèm. Nội dung thường xoay quanh các tình huống trong công việc và đời sống hàng ngày như họp hành, mua sắm, dịch vụ...</p>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 25px; transition: border-color 0.2s; border-radius: 0px !important;">
+                        <div style="width: 44px; height: 44px; background: rgba(0, 242, 254, 0.08); color: var(--color-cyan); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 15px; border: 1px solid rgba(0, 242, 254, 0.2);"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a5 5 0 0 0-5 5v3.18a3 3 0 0 0-.58 1.7l1 5A3 3 0 0 0 10.38 18h3.24a3 3 0 0 0 3-2.12l1-5a3 3 0 0 0-.58-1.7V6a5 5 0 0 0-5-5z"/></svg></div>
+                        <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">Chỉ Được Nghe 1 Lần</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Thí sinh không được nghe lại lần thứ hai. Hãy tập trung cao độ ngay khi âm thanh bắt đầu phát và không phân tâm khi bỏ lỡ từ khóa.</p>
+                    </div>
+
+                    <div style="background: var(--bg-card); border: 1px solid var(--border); padding: 25px; transition: border-color 0.2s; border-radius: 0px !important;">
+                        <div style="width: 44px; height: 44px; background: rgba(0, 242, 254, 0.08); color: var(--color-cyan); display: flex; align-items: center; justify-content: center; font-size: 1.25rem; margin-bottom: 15px; border: 1px solid rgba(0, 242, 254, 0.2);"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
+                        <h4 style="font-size: 1.1rem; font-weight: 800; color: var(--text-main); margin-bottom: 8px;">Tận Dụng Thời Gian Chờ</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-muted); line-height: 1.6; margin: 0;">Trong khi băng đọc câu hỏi, hãy tranh thủ đánh dấu đáp án và <strong>đọc trước bộ câu hỏi tiếp theo</strong> để dự đoán nội dung hội thoại sắp nghe.</p>
+                    </div>
+                </div>
+            `;
+            return;
+        }
+        
+        const docContainer = document.createElement("div");
+        docContainer.className = "theory-document";
+        docContainer.style.background = "var(--bg-card)";
+        docContainer.style.border = "1px solid var(--border)";
+        docContainer.style.padding = "35px 40px";
+        docContainer.style.color = "var(--text-main)";
+        docContainer.style.lineHeight = "1.75";
+        docContainer.style.textAlign = "left";
+        
+        let docHtml = "";
+        
+        section.theory.forEach((slide, sIdx) => {
+            const lines = slide.text;
+            if (!lines || lines.length === 0) return;
+            
+            const firstLine = lines[0].trim();
+            const restLines = lines.slice(1);
+            
+            // Clean HTML tags to evaluate textual structure
+            const cleanFirst = firstLine.replace(/<[^>]*>/g, "").trim();
+            
+            // Evaluates if the line acts as a divider or main section header
+            const isMainHeader = cleanFirst.toUpperCase() === cleanFirst || /^\d+\.\s+/.test(cleanFirst) || cleanFirst.includes("CÂU HỎI") || cleanFirst.includes("LƯU Ý");
+            
+            if (isMainHeader) {
+                // If it's a section header, draw a horizontal spacer above it (except for the first one)
+                if (sIdx > 0) {
+                    docHtml += `<hr style="border: none; border-top: 1px solid var(--border); margin: 40px 0 30px 0;">`;
+                }
+                
+                docHtml += `
+                    <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--color-blue); margin: 0 0 24px 0; text-transform: uppercase; border-left: 4px solid var(--color-purple); padding-left: 14px; line-height: 1.4;">
+                        ${firstLine}
+                    </h3>
+                `;
+            } else {
+                docHtml += `
+                    <p style="font-size: 1.08rem; line-height: 1.7; color: var(--text-main); margin: 0 0 16px 0;">
+                        ${firstLine}
+                    </p>
+                `;
+            }
+            
+            restLines.forEach(line => {
+                let cleanLine = line.trim();
+                if (!cleanLine) return;
+                
+                // Match bullets, potentially preceded by leading HTML tags (e.g. <em>, <strong>)
+                const htmlBulletRegex = /^((?:<[^>]+>\s*)*)(•|o|-|\*|◦)\s+/i;
+                
+                const bulletMatch = cleanLine.match(htmlBulletRegex);
+                if (bulletMatch) {
+                    const bulletChar = bulletMatch[2];
+                    const cleanedHtml = cleanLine.replace(htmlBulletRegex, "$1").trim();
+                    const isExample = bulletChar === "o" || bulletChar === "-";
+                    const bulletClass = isExample ? "theory-bullet example-bullet" : "theory-bullet main-bullet";
+                    
+                    docHtml += `
+                        <div class="${bulletClass}" style="margin-bottom: 12px;">
+                            <span>${cleanedHtml}</span>
+                        </div>
+                    `;
+                } else {
+                    const rawText = cleanLine.replace(/<[^>]*>/g, "").trim();
+                    const isSubHeader = ((cleanLine.startsWith("<strong>") && cleanLine.endsWith("</strong>")) || /^\d+(\.\d+)*\./.test(rawText)) && rawText.length < 120;
+                    if (isSubHeader) {
+                        docHtml += `
+                            <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin: 24px 0 12px 0; line-height: 1.4;">
+                                ${cleanLine}
+                            </h4>
+                        `;
+                    } else {
+                        docHtml += `
+                            <p style="font-size: 1.08rem; line-height: 1.7; color: var(--text-main); margin: 0 0 14px 0;">
+                                ${cleanLine}
+                            </p>
+                        `;
+                    }
+                }
+            });
+        });
+        
+        docContainer.innerHTML = docHtml;
+        theoryContentAreaP4.appendChild(docContainer);
+    }
+     
+    // B. VOCABULARY
+    function renderVocabularyP4(section) {
+        vocabularyContentAreaP4.innerHTML = "";
+        
+        if (!section.vocabulary || section.vocabulary.length === 0) {
+            vocabularyContentAreaP4.innerHTML = "<p style='color: var(--text-muted); font-weight: 700;'>Không có từ vựng cho phần này.</p>";
+            return;
+        }
+        
+        section.vocabulary.forEach(slide => {
+            const card = document.createElement("div");
+            card.className = "vocabulary-card";
+            
+            const titleText = slide.text[0] || "Từ Vựng";
+            const subtitleText = slide.text.length > 1 ? slide.text[1] : "";
+            const bullets = slide.text.slice(2);
+            
+            let bulletsHtml = "";
+            bullets.forEach(b => {
+                let cleanB = b.trim();
+                cleanB = cleanB.replace(/^(o|•|-|\*)\s+/, "");
+                bulletsHtml += `
+                    <li class="vocabulary-bullet">
+                        <span>${cleanB}</span>
+                    </li>
+                `;
+            });
+            
+            let subtitleHtml = "";
+            if (subtitleText) {
+                subtitleHtml = `<div class="vocabulary-card-subtitle">${subtitleText}</div>`;
+            }
+            
+            card.innerHTML = `
+                <div class="vocabulary-card-header">
+                    <span class="vocabulary-card-title">${titleText}</span>
+                    <span class="slide-num-tag">Slide ${slide.slide_index}</span>
+                </div>
+                ${subtitleHtml}
+                <ul class="vocabulary-bullet-list">
+                    ${bulletsHtml || `<li class="vocabulary-bullet"><span>${titleText}</span></li>`}
+                </ul>
+            `;
+            
+            vocabularyContentAreaP4.appendChild(card);
+        });
+    }
+    
+    // C. EXAMPLES
+    function renderExamplesP4(section) {
+        examplesContentAreaP4.innerHTML = "";
+        
+        if (!section.examples || section.examples.length === 0) {
+            examplesContentAreaP4.innerHTML = "<p style='color: var(--text-muted); font-weight: 700;'>Không có câu hỏi ví dụ.</p>";
+            return;
+        }
+        
+        if (section.type === "topic" || section.type === "test") {
+            // Render example sets for topics
+            section.examples.forEach((set, setIdx) => {
+                const setWrapper = document.createElement("div");
+                setWrapper.className = "practice-set-card";
+                setWrapper.style.padding = "24px";
+                setWrapper.style.marginBottom = "24px";
+                setWrapper.style.border = "1px solid var(--border)";
+                setWrapper.style.background = "rgba(255, 255, 255, 0.01)";
+                
+                const setHeader = document.createElement("h3");
+                setHeader.style.fontSize = "1.1rem";
+                setHeader.style.marginBottom = "16px";
+                setHeader.style.fontWeight = "800";
+                setHeader.textContent = `VÍ DỤ MINH HỌA: ĐOẠN HỘI THOẠI ${set.set_index}`;
+                setWrapper.appendChild(setHeader);
+                
+                const audioDiv = document.createElement("div");
+                setWrapper.appendChild(audioDiv);
+                createAudioPlayer(set.audio, audioDiv);
+                
+                const qListDiv = document.createElement("div");
+                setWrapper.appendChild(qListDiv);
+                
+                const userSelections = {};
+                const submitBtn = document.createElement("button");
+                submitBtn.className = "btn btn-primary";
+                submitBtn.style.margin = "20px 0";
+                submitBtn.style.padding = "12px 24px";
+                submitBtn.style.fontWeight = "700";
+                submitBtn.style.borderRadius = "0px !important";
+                submitBtn.textContent = "KIỂM TRA";
+                submitBtn.disabled = true;
+
+                set.questions.forEach(q => {
+                    const qCard = document.createElement("div");
+                    qCard.className = "question-block";
+                    qCard.style.padding = "20px";
+                    qCard.style.marginTop = "16px";
+                    
+                    const choicesHtml = renderChoicesHtml(q, false);
+                    const questionTextHtml = renderQuestionTextHtml(q, `exset-q-${q.slide_index}`, `<strong>QUESTION ${q.id}:</strong> `);
+                    
+                    qCard.innerHTML = `
+                        ${questionTextHtml}
+                        <div class="choices-stack" style="margin-top: 12px;">
+                            ${choicesHtml}
+                        </div>
+                    `;
+                    
+                    qListDiv.appendChild(qCard);
+                    
+                    const options = qCard.querySelectorAll(".choice-option");
+                    options.forEach(opt => {
+                        opt.addEventListener("click", () => {
+                            if (opt.classList.contains("checked-done")) {
+                                const t = opt.querySelector(".c-trans");
+                                if (t) t.style.display = t.style.display === "block" ? "none" : "block";
+                                return;
+                            }
+                            
+                            // Toggle translation inline on click
+                            const t = opt.querySelector(".c-trans");
+                            if (t) t.style.display = t.style.display === "block" ? "none" : "block";
+                            
+                            const key = opt.getAttribute("data-key");
+                            userSelections[q.slide_index] = key;
+                            
+                            options.forEach(o => o.classList.remove("selected"));
+                            opt.classList.add("selected");
+                            
+                            let allSelected = true;
+                            set.questions.forEach(qi => {
+                                if (!userSelections[qi.slide_index]) {
+                                    allSelected = false;
+                                }
+                            });
+                            submitBtn.disabled = !allSelected;
+                        });
+                    });
+                });
+                
+                setWrapper.appendChild(submitBtn);
+                
+                // Aggregate explanations
+                let explanationHtml = "";
+                set.questions.forEach(sq => {
+                    if (sq.explanation) {
+                        explanationHtml += `
+                            <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                                <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                                    Giải thích QUESTION ${sq.id}:
+                                </h5>
+                                <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                                    ${sq.explanation}
+                                </div>
+                            </div>
+                        `;
+                    }
+                });
+                
+                const transcriptHtml = renderTranscriptHtml(set.transcript, set.vietnamese_transcript);
+                const scriptCard = document.createElement("div");
+                scriptCard.innerHTML = renderScriptCardHtml(`exset-${set.set_index}`, transcriptHtml, explanationHtml);
+                const innerScriptCard = scriptCard.firstElementChild;
+                innerScriptCard.classList.add("hidden");
+                
+                setWrapper.appendChild(innerScriptCard);
+                hookScriptCardToggler(`exset-${set.set_index}`);
+                
+                submitBtn.addEventListener("click", () => {
+                    let setCorrectCount = 0;
+                    set.questions.forEach(q => {
+                        const key = userSelections[q.slide_index];
+                        const qOptions = qListDiv.querySelectorAll(`.choice-option[data-q-slide="${q.slide_index}"]`);
+                        qOptions.forEach(o => {
+                            const oKey = o.getAttribute("data-key");
+                            o.classList.remove("selected");
+                            o.classList.add("checked-done");
+                            if (oKey === q.answer) {
+                                o.classList.add("correct");
+                            } else if (oKey === key) {
+                                o.classList.add("incorrect");
+                            }
+                        });
+                        if (key === q.answer) {
+                            spawnConfetti(25);
+                            setCorrectCount++;
+                        }
+                    });
+                    if (setCorrectCount >= 2) {
+                        SoundEffects.playCorrect();
+                    } else {
+                        SoundEffects.playWrong();
+                    }
+                    innerScriptCard.classList.remove("hidden");
+                    submitBtn.style.display = "none";
+                });
+                
+                examplesContentAreaP4.appendChild(setWrapper);
+            });
+        } else {
+            // Render single examples for subsections
+            section.examples.forEach((ex, exIdx) => {
+                const wrapper = document.createElement("div");
+                wrapper.className = "question-wrapper-group";
+                wrapper.style.marginBottom = "24px";
+                
+                const audioDiv = document.createElement("div");
+                wrapper.appendChild(audioDiv);
+                createAudioPlayer(ex.audio, audioDiv);
+                
+                const qCard = document.createElement("div");
+                qCard.className = "question-block";
+                qCard.style.padding = "24px";
+                
+                const choicesHtml = renderChoicesHtml(ex, false);
+                const questionTextHtml = renderQuestionTextHtml(ex, `ex-single-${ex.slide_index}`, `<strong>EXAMPLE ${exIdx + 1}:</strong> `);
+                
+                let explanationHtml = "";
+                if (ex.explanation) {
+                    explanationHtml = `
+                        <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                            <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                                GIẢI THÍCH ĐÁP ÁN:
+                            </h5>
+                            <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                                ${ex.explanation}
+                            </div>
+                        </div>
+                    `;
+                }
+                
+                const transcriptHtml = renderTranscriptHtml(ex.transcript, ex.vietnamese_transcript);
+                
+                qCard.innerHTML = `
+                    ${questionTextHtml}
+                    <div class="choices-stack" style="margin-top: 16px;">
+                        ${choicesHtml}
+                    </div>
+                    <div style="margin-top: 16px; text-align: right;">
+                        <button class="btn btn-primary" id="btn-check-ex-${ex.slide_index}" style="padding: 10px 20px; font-weight: 700; border-radius: 0px !important;" disabled>KIỂM TRA</button>
+                    </div>
+                    ${renderScriptCardHtml(`ex-${ex.slide_index}`, transcriptHtml, explanationHtml)}
+                `;
+                
+                wrapper.appendChild(qCard);
+                examplesContentAreaP4.appendChild(wrapper);
+                hookScriptCardToggler(`ex-${ex.slide_index}`);
+                
+                const checkBtn = qCard.querySelector(`#btn-check-ex-${ex.slide_index}`);
+                const options = qCard.querySelectorAll(".choice-option");
+                let selectedKey = null;
+
+                options.forEach(opt => {
+                    opt.addEventListener("click", () => {
+                        if (opt.classList.contains("checked-done")) {
+                            const t = opt.querySelector(".c-trans");
+                            if (t) t.style.display = t.style.display === "block" ? "none" : "block";
+                            return;
+                        }
+                        
+                        // Toggle option translation inline on click
+                        const t = opt.querySelector(".c-trans");
+                        if (t) t.style.display = t.style.display === "block" ? "none" : "block";
+                        
+                        selectedKey = opt.getAttribute("data-key");
+                        options.forEach(o => o.classList.remove("selected"));
+                        opt.classList.add("selected");
+                        checkBtn.disabled = false;
+                    });
+                });
+
+                checkBtn.addEventListener("click", () => {
+                    options.forEach(o => {
+                        const oKey = o.getAttribute("data-key");
+                        o.classList.remove("selected");
+                        o.classList.add("checked-done");
+                        if (oKey === ex.answer) {
+                            o.classList.add("correct");
+                        } else if (oKey === selectedKey) {
+                            o.classList.add("incorrect");
+                        }
+                    });
+                    if (selectedKey === ex.answer) {
+                        spawnConfetti(35);
+                        SoundEffects.playCorrect();
+                    } else {
+                        SoundEffects.playWrong();
+                    }
+                    const scriptCardElement = qCard.querySelector(`#reveal-card-ex-${ex.slide_index}`);
+                    if (scriptCardElement) scriptCardElement.classList.remove("hidden");
+                    checkBtn.style.display = "none";
+                });
+            });
+        }
+    }
+    
+    // D. PRACTICE EXERCISES
+    function renderPracticeP4(section) {
+        practiceContentAreaP4.innerHTML = "";
+        
+        if (section.type === "subsection" || section.type === "overview" || section.type === "tips") {
+            renderPracticeQuestionsP4(section.practice, section);
+        } else if (section.type === "topic" || section.type === "test") {
+            renderPracticeSetsP4(section.practice_sets, section);
+        }
+    }
+    
+    function renderPracticeQuestionsP4(questions, section) {
+        if (!questions || questions.length === 0) {
+            practiceContentAreaP4.innerHTML = "<p style='color: var(--text-muted); font-weight: 700;'>Bài tập đang được cập nhật.</p>";
+            return;
+        }
+
+        // Initialize quiz state if needed
+        if (!state.quiz.questions || state.quiz.sectionId !== section.id) {
+            state.quiz = {
+                sectionId: section.id,
+                questions: questions,
+                currentIdx: 0,
+                score: 0,
+                reviewMode: false,
+                answers: {}
+            };
+        }
+
+        if (state.quiz.reviewMode) {
+            renderPracticeQuestionsReviewP4(questions, section);
+            return;
+        }
+
+        const currentIdx = state.quiz.currentIdx;
+        
+        if (currentIdx >= questions.length) {
+            renderPracticeQuestionsSummaryP4(questions, section);
+            return;
+        }
+
+        const q = questions[currentIdx];
+        practiceContentAreaP4.innerHTML = "";
+
+        // Progress Header
+        const progressHeader = document.createElement("div");
+        progressHeader.className = "quiz-progress-header";
+        progressHeader.style.display = "flex";
+        progressHeader.style.justifyContent = "space-between";
+        progressHeader.style.alignItems = "center";
+        progressHeader.style.marginBottom = "20px";
+        progressHeader.style.padding = "14px 20px";
+        progressHeader.style.background = "rgba(255, 255, 255, 0.015)";
+        progressHeader.style.border = "1px solid var(--border)";
+        
+        const progressText = document.createElement("span");
+        progressText.style.fontWeight = "700";
+        progressText.style.fontSize = "0.9rem";
+        progressText.style.color = "var(--text-main)";
+        progressText.textContent = `CÂU HỎI ${currentIdx + 1} / ${questions.length}`;
+        
+        const scoreText = document.createElement("span");
+        scoreText.className = "score-text-display";
+        scoreText.style.fontWeight = "800";
+        scoreText.style.fontSize = "0.95rem";
+        scoreText.textContent = `ĐÚNG: ${state.quiz.score} / ${questions.length}`;
+        
+        progressHeader.appendChild(progressText);
+        progressHeader.appendChild(scoreText);
+        practiceContentAreaP4.appendChild(progressHeader);
+
+        // Active Question Card
+        const wrapper = document.createElement("div");
+        wrapper.className = "question-wrapper-group";
+        wrapper.style.marginBottom = "24px";
+        
+        const audioDiv = document.createElement("div");
+        wrapper.appendChild(audioDiv);
+        createAudioPlayer(q.audio, audioDiv);
+        
+        const qCard = document.createElement("div");
+        qCard.className = "question-block";
+        qCard.style.padding = "24px";
+        
+        const choicesHtml = renderChoicesHtml(q, false);
+        const questionTextHtml = renderQuestionTextHtml(q, `pr-${q.slide_index}`, `<strong>QUESTION:</strong> `);
+        
+        let explanationHtml = "";
+        if (q.explanation) {
+            explanationHtml = `
+                <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                    <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                        GIẢI THÍCH ĐÁP ÁN:
+                    </h5>
+                    <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                        ${q.explanation}
+                    </div>
+                </div>
+            `;
+        }
+        const transcriptHtml = renderTranscriptHtml(q.transcript, q.vietnamese_transcript);
+        
+        qCard.innerHTML = `
+            ${questionTextHtml}
+            <div class="choices-stack" style="margin-top: 16px;">
+                ${choicesHtml}
+            </div>
+            ${renderScriptCardHtml(`pr-${q.slide_index}`, transcriptHtml, explanationHtml)}
+            <div class="quiz-action-row" style="margin-top: 24px; display: flex; justify-content: space-between; align-items: center;">
+                <button class="btn btn-primary" id="quiz-check-btn" style="padding: 12px 24px; font-weight: 700; border-radius: 0px !important;" disabled>
+                    KIỂM TRA
+                </button>
+                <div style="flex:1;"></div>
+                <button class="btn btn-primary" id="quiz-next-btn" style="display: none; padding: 12px 24px; font-weight: 700; border-radius: 0px !important; align-items: center; gap: 6px;">
+                    CÂU TIẾP THEO <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; vertical-align:middle;"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+        `;
+        
+        wrapper.appendChild(qCard);
+        practiceContentAreaP4.appendChild(wrapper);
+        hookScriptCardToggler(`pr-${q.slide_index}`);
+        
+        const checkBtn = qCard.querySelector("#quiz-check-btn");
+        const nextBtn = qCard.querySelector("#quiz-next-btn");
+        const options = qCard.querySelectorAll(".choice-option");
+        let selectedKey = null;
+        
+        options.forEach(opt => {
+            opt.addEventListener("click", () => {
+                if (opt.classList.contains("checked-done")) {
+                    const t = opt.querySelector(".c-trans");
+                    if (t) t.style.display = t.style.display === "block" ? "none" : "block";
+                    return;
+                }
+                
+                // Toggle option translation inline on click
+                const t = opt.querySelector(".c-trans");
+                if (t) t.style.display = t.style.display === "block" ? "none" : "block";
+                
+                selectedKey = opt.getAttribute("data-key");
+                options.forEach(o => o.classList.remove("selected"));
+                opt.classList.add("selected");
+                checkBtn.disabled = false;
+            });
+        });
+        
+        checkBtn.addEventListener("click", () => {
+            state.quiz.answers[q.slide_index] = selectedKey;
+            
+            options.forEach(o => {
+                const oKey = o.getAttribute("data-key");
+                o.classList.remove("selected");
+                o.classList.add("checked-done");
+                if (oKey === q.answer) {
+                    o.classList.add("correct");
+                } else if (oKey === selectedKey) {
+                    o.classList.add("incorrect");
+                }
+            });
+            
+            markQuestionAnswered(q.slide_index);
+            
+            const isCorrect = selectedKey === q.answer;
+            if (isCorrect) {
+                state.quiz.score++;
+                scoreText.textContent = `ĐÚNG: ${state.quiz.score} / ${questions.length}`;
+                spawnConfetti(35);
+                SoundEffects.playCorrect();
+            } else {
+                SoundEffects.playWrong();
+            }
+            
+            // Submit to Google Forms background
+            const studentName = localStorage.getItem("studentName") || "Ẩn danh";
+            submitToGoogleForm(studentName, `${section.title} - Câu ${currentIdx + 1}`, "Luyện tập (Câu)", isCorrect ? 1 : 0, 1);
+            
+            const scriptCardElement = qCard.querySelector(`#reveal-card-pr-${q.slide_index}`);
+            if (scriptCardElement) scriptCardElement.classList.remove("hidden");
+            
+            checkBtn.style.display = "none";
+            nextBtn.style.display = "flex";
+        });
+        
+        nextBtn.addEventListener("click", () => {
+            state.quiz.currentIdx++;
+            renderPracticeQuestions(questions, section);
+        });
+    }
+
+    function renderPracticeQuestionsSummary(questions, section) {
+        practiceContentAreaP4.innerHTML = "";
+        
+        const score = state.quiz.score;
+        const total = questions.length;
+        
+        let msg = "";
+        if (score === total) {
+            msg = "QUÁ XUẤT SẮC! Bạn đã trả lời đúng toàn bộ câu hỏi. Hãy tiếp tục phát huy phong độ này nhé!";
+            let count = 0;
+            const interval = setInterval(() => {
+                spawnConfetti(45, true); // Gold only
+                count++;
+                if (count > 5) clearInterval(interval);
+            }, 400);
+        } else if (score >= total * 0.7) {
+            msg = "RẤT TỐT! Kỹ năng nghe của bạn khá vững vàng. Hãy xem lại các câu sai để rút kinh nghiệm nhé.";
+            spawnConfetti(50);
+        } else {
+            msg = "CỐ GẮNG LÊN! Bạn cần luyện tập thêm. Hãy dành thời gian xem lại transcript và từ vựng của dạng bài này.";
+        }
+        
+        const summaryCard = document.createElement("div");
+        summaryCard.className = "quiz-summary-card";
+        summaryCard.style.textAlign = "center";
+        summaryCard.style.padding = "48px 40px";
+        summaryCard.style.border = "1px solid var(--border)";
+        summaryCard.style.background = "rgba(255, 255, 255, 0.015)";
+        
+        summaryCard.innerHTML = `
+            <div style="font-size: 3.5rem; color: var(--color-gold); margin-bottom: 20px;">🏆</div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 12px; font-weight: 800; text-transform: uppercase;">KẾT QUẢ BÀI TẬP</h3>
+            <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-blue); margin-bottom: 16px;">
+                ${score} / ${total}
+            </div>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 36px; line-height: 1.7; max-width: 500px; margin-left: auto; margin-right: auto;">${msg}</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-primary" id="btn-quiz-retry" style="padding: 12px 24px; font-weight: 700; border-radius: 0px !important;">LÀM LẠI BÀI TẬP</button>
+                <button class="btn btn-secondary" id="btn-quiz-review" style="padding: 12px 24px; font-weight: 700; border-radius: 0px !important;">XEM LẠI ĐÁP ÁN</button>
+            </div>
+        `;
+        
+        practiceContentAreaP4.appendChild(summaryCard);
+        
+        document.getElementById("btn-quiz-retry").addEventListener("click", () => {
+            state.quiz = {
+                sectionId: section.id,
+                questions: questions,
+                currentIdx: 0,
+                score: 0,
+                reviewMode: false,
+                answers: {}
+            };
+            // Clear progress
+            questions.forEach(q => {
+                delete state.answeredQuestions[q.slide_index];
+            });
+            updateRouteProgress();
+            try {
+                localStorage.setItem("toeic_answered_questions", JSON.stringify(state.answeredQuestions));
+            } catch (e) {}
+            
+            renderPracticeQuestions(questions, section);
+        });
+        
+        document.getElementById("btn-quiz-review").addEventListener("click", () => {
+            state.quiz.reviewMode = true;
+            renderPracticeQuestions(questions, section);
+        });
+    }
+
+    function renderPracticeQuestionsReview(questions, section) {
+        practiceContentAreaP4.innerHTML = "";
+        
+        // Review Header
+        const reviewHeader = document.createElement("div");
+        reviewHeader.className = "quiz-progress-header";
+        reviewHeader.style.display = "flex";
+        reviewHeader.style.justifyContent = "space-between";
+        reviewHeader.style.alignItems = "center";
+        reviewHeader.style.marginBottom = "24px";
+        reviewHeader.style.padding = "14px 20px";
+        reviewHeader.style.background = "rgba(255, 255, 255, 0.015)";
+        reviewHeader.style.border = "1px solid var(--border)";
+        
+        const reviewTitle = document.createElement("span");
+        reviewTitle.style.fontWeight = "700";
+        reviewTitle.style.fontSize = "0.9rem";
+        reviewTitle.textContent = "XEM LẠI ĐÁP ÁN & TRANSCRIPT";
+        
+        const backBtn = document.createElement("button");
+        backBtn.className = "mini-btn";
+        backBtn.style.padding = "6px 12px";
+        backBtn.textContent = "QUAY LẠI TỔNG KẾT";
+        backBtn.style.borderRadius = "0px !important";
+        backBtn.addEventListener("click", () => {
+            state.quiz.currentIdx = questions.length; // triggers summary view
+            renderPracticeQuestions(questions, section);
+        });
+        
+        reviewHeader.appendChild(reviewTitle);
+        reviewHeader.appendChild(backBtn);
+        practiceContentAreaP4.appendChild(reviewHeader);
+
+        // List all questions
+        questions.forEach((q, idx) => {
+            const wrapper = document.createElement("div");
+            wrapper.className = "question-wrapper-group";
+            wrapper.style.marginBottom = "28px";
+            
+            const audioDiv = document.createElement("div");
+            wrapper.appendChild(audioDiv);
+            createAudioPlayer(q.audio, audioDiv);
+            
+            const qCard = document.createElement("div");
+            qCard.className = "question-block";
+            qCard.style.padding = "24px";
+            
+            const userAnswer = state.quiz.answers[q.slide_index];
+            const choicesHtml = renderChoicesHtml(q, true, userAnswer);
+            
+            let badgeText = userAnswer === q.answer ? 
+                `<span style="color: var(--success); margin-left: 10px; font-size: 0.9rem; font-weight: 700;">✔️ ĐÚNG</span>` : 
+                `<span style="color: var(--danger); margin-left: 10px; font-size: 0.85rem; font-weight: 700;">❌ SAI (Chọn ${userAnswer || "Trống"})</span>`;
+            
+            const questionTextHtml = renderQuestionTextHtml(q, `rev-q-${q.slide_index}`, `<strong>QUESTION ${idx + 1}:</strong> `);
+            
+            let explanationHtml = "";
+            if (q.explanation) {
+                explanationHtml = `
+                    <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                        <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                            GIẢI THÍCH ĐÁP ÁN:
+                        </h5>
+                        <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                            ${q.explanation}
+                        </div>
+                    </div>
+                `;
+            }
+            const transcriptHtml = renderTranscriptHtml(q.transcript, q.vietnamese_transcript);
+            
+            qCard.innerHTML = `
+                <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom: 10px; width:100%;">
+                    <div style="flex:1;">${questionTextHtml}</div>
+                    <div>${badgeText}</div>
+                </div>
+                <div class="choices-stack" style="margin-top: 16px;">
+                    ${choicesHtml}
+                </div>
+                ${renderScriptCardHtml(`rev-${q.slide_index}`, transcriptHtml, explanationHtml)}
+            `;
+            
+            wrapper.appendChild(qCard);
+            practiceContentAreaP4.appendChild(wrapper);
+            
+            const revCard = qCard.querySelector(`.reveal-script-card`);
+            if (revCard) revCard.classList.remove("hidden");
+            hookScriptCardToggler(`rev-${q.slide_index}`);
+        });
+    }
+
+    // E. PRACTICE SETS (FOR TOPICS)
+    function renderPracticeSetsP4(sets, section) {
+        if (!sets || sets.length === 0) {
+            practiceContentAreaP4.innerHTML = "<p style='color: var(--text-muted); font-weight: 700;'>Bài tập đang được cập nhật.</p>";
+            return;
+        }
+
+        // Initialize set quiz state if needed
+        if (!state.setQuiz.sets || state.setQuiz.sectionId !== section.id) {
+            state.setQuiz = {
+                sectionId: section.id,
+                sets: sets,
+                currentIdx: 0,
+                completedSets: {}, // set_index -> score
+                reviewMode: false,
+                answers: {}
+            };
+        }
+
+        if (state.setQuiz.reviewMode) {
+            renderPracticeSetsReviewP4(sets, section);
+            return;
+        }
+
+        const currentIdx = state.setQuiz.currentIdx;
+        
+        if (currentIdx >= sets.length) {
+            renderPracticeSetsSummaryP4(sets, section);
+            return;
+        }
+
+        const set = sets[currentIdx];
+        practiceContentAreaP4.innerHTML = "";
+
+        // Progress Header
+        const progressHeader = document.createElement("div");
+        progressHeader.className = "quiz-progress-header";
+        progressHeader.style.display = "flex";
+        progressHeader.style.justifyContent = "space-between";
+        progressHeader.style.alignItems = "center";
+        progressHeader.style.marginBottom = "20px";
+        progressHeader.style.padding = "14px 20px";
+        progressHeader.style.background = "rgba(255, 255, 255, 0.015)";
+        progressHeader.style.border = "1px solid var(--border)";
+        
+        const progressText = document.createElement("span");
+        progressText.style.fontWeight = "700";
+        progressText.style.fontSize = "0.9rem";
+        progressText.textContent = `ĐOẠN HỘI THOẠI ${currentIdx + 1} / ${sets.length}`;
+        
+        const completedCount = Object.keys(state.setQuiz.completedSets).length;
+        const progressScore = document.createElement("span");
+        progressScore.style.fontWeight = "800";
+        progressScore.style.fontSize = "0.95rem";
+        progressScore.style.color = "var(--color-blue)";
+        progressScore.textContent = `HOÀN THÀNH: ${completedCount} / ${sets.length}`;
+        
+        progressHeader.appendChild(progressText);
+        progressHeader.appendChild(progressScore);
+        practiceContentAreaP4.appendChild(progressHeader);
+
+        // Navigator Row
+        const navigatorRow = document.createElement("div");
+        navigatorRow.className = "quiz-navigator-row";
+        navigatorRow.style.display = "flex";
+        navigatorRow.style.flexWrap = "wrap";
+        navigatorRow.style.gap = "8px";
+        navigatorRow.style.marginBottom = "20px";
+        navigatorRow.style.justifyContent = "center";
+        
+        sets.forEach((s, idx) => {
+            const navBtn = document.createElement("button");
+            navBtn.style.padding = "8px 14px";
+            navBtn.style.fontSize = "0.85rem";
+            navBtn.style.fontWeight = "700";
+            navBtn.style.border = "1px solid var(--border)";
+            navBtn.style.cursor = "pointer";
+            navBtn.style.minWidth = "36px";
+            navBtn.style.borderRadius = "0px";
+            navBtn.style.transition = "all 0.2s ease";
+            
+            navBtn.textContent = idx + 1;
+            
+            const isCompleted = state.setQuiz.completedSets[s.set_index] !== undefined;
+            
+            if (idx === currentIdx) {
+                navBtn.style.background = "var(--color-blue)";
+                navBtn.style.color = "white";
+                navBtn.style.borderColor = "var(--color-blue)";
+            } else if (isCompleted) {
+                navBtn.style.background = "rgba(16, 185, 129, 0.15)";
+                navBtn.style.color = "#10b981";
+                navBtn.style.borderColor = "#10b981";
+            } else {
+                navBtn.style.background = "transparent";
+                navBtn.style.color = "var(--text-main)";
+            }
+            
+            navBtn.addEventListener("click", () => {
+                state.setQuiz.currentIdx = idx;
+                renderPracticeSets(sets, section);
+            });
+            
+            navigatorRow.appendChild(navBtn);
+        });
+        
+        practiceContentAreaP4.appendChild(navigatorRow);
+
+        // Set Card Wrapper
+        const setWrapper = document.createElement("div");
+        setWrapper.className = "practice-set-card";
+        setWrapper.style.padding = "24px";
+        setWrapper.style.border = "1px solid var(--border)";
+        setWrapper.style.background = "rgba(255, 255, 255, 0.01)";
+        
+        const setHeader = document.createElement("h3");
+        setHeader.style.fontSize = "1.1rem";
+        setHeader.style.marginBottom = "16px";
+        setHeader.style.fontWeight = "800";
+        setHeader.textContent = `LUYỆN TẬP ĐOẠN HỘI THOẠI ${set.set_index}`;
+        setWrapper.appendChild(setHeader);
+        
+        const audioDiv = document.createElement("div");
+        setWrapper.appendChild(audioDiv);
+        createAudioPlayer(set.audio, audioDiv);
+        
+        const qListDiv = document.createElement("div");
+        setWrapper.appendChild(qListDiv);
+        
+        const userSelections = {};
+        const setAlreadySubmitted = state.setQuiz.completedSets[set.set_index] !== undefined;
+
+        set.questions.forEach(q => {
+            const qCard = document.createElement("div");
+            qCard.className = "question-block";
+            qCard.style.padding = "20px";
+            qCard.style.marginTop = "16px";
+            
+            const savedAns = state.setQuiz.answers[q.slide_index];
+            const choicesHtml = renderChoicesHtml(q, setAlreadySubmitted, savedAns);
+            const questionTextHtml = renderQuestionTextHtml(q, `set-q-${q.slide_index}`, `<strong>QUESTION ${q.id}:</strong> `);
+            
+            qCard.innerHTML = `
+                ${questionTextHtml}
+                <div class="choices-stack" style="margin-top: 12px;">
+                    ${choicesHtml}
+                </div>
+            `;
+            
+            qListDiv.appendChild(qCard);
+            
+            if (!setAlreadySubmitted) {
+                const options = qCard.querySelectorAll(".choice-option");
+                options.forEach(opt => {
+                    opt.addEventListener("click", () => {
+                        // Toggle option translation inline on click
+                        const t = opt.querySelector(".c-trans");
+                        if (t) t.style.display = t.style.display === "block" ? "none" : "block";
+                        
+                        const key = opt.getAttribute("data-key");
+                        userSelections[q.slide_index] = key;
+                        state.setQuiz.answers[q.slide_index] = key;
+                        
+                        options.forEach(o => o.classList.remove("selected"));
+                        opt.classList.add("selected");
+                        
+                        // Enable submit button only if all questions answered
+                        let allSelected = true;
+                        set.questions.forEach(qi => {
+                            if (!userSelections[qi.slide_index]) {
+                                allSelected = false;
+                            }
+                        });
+                        
+                        if (allSelected) {
+                            submitBtn.disabled = false;
+                        }
+                    });
+                });
+            }
+        });
+        
+        const submitRow = document.createElement("div");
+        submitRow.className = "submit-row";
+        submitRow.style.marginTop = "24px";
+        submitRow.style.display = "flex";
+        submitRow.style.justifyContent = "space-between";
+        submitRow.style.alignItems = "center";
+        submitRow.style.gap = "12px";
+        
+        // Left Column: Quay lại button
+        const leftCol = document.createElement("div");
+        leftCol.style.flex = "1";
+        leftCol.style.textAlign = "left";
+        if (currentIdx > 0) {
+            const prevBtn = document.createElement("button");
+            prevBtn.className = "action-btn btn-secondary";
+            prevBtn.style.padding = "12px 20px";
+            prevBtn.style.background = "transparent";
+            prevBtn.style.border = "1px solid var(--border)";
+            prevBtn.style.color = "var(--text-main)";
+            prevBtn.style.cursor = "pointer";
+            prevBtn.style.borderRadius = "0px";
+            prevBtn.innerHTML = `&larr; QUAY LẠI`;
+            prevBtn.addEventListener("click", () => {
+                state.setQuiz.currentIdx--;
+                renderPracticeSets(sets, section);
+            });
+            leftCol.appendChild(prevBtn);
+        }
+        submitRow.appendChild(leftCol);
+        
+        // Center Column: Submit button or result score
+        const centerCol = document.createElement("div");
+        centerCol.style.flex = "2";
+        centerCol.style.display = "flex";
+        centerCol.style.justifyContent = "center";
+        centerCol.style.alignItems = "center";
+        centerCol.style.gap = "16px";
+        
+        const scoreSpan = document.createElement("span");
+        scoreSpan.className = "score-display";
+        scoreSpan.style.fontWeight = "800";
+        scoreSpan.style.fontSize = "1.05rem";
+        scoreSpan.style.color = "var(--color-blue)";
+        
+        const submitBtn = document.createElement("button");
+        submitBtn.className = "action-btn btn-primary";
+        submitBtn.style.padding = "12px 24px";
+        submitBtn.textContent = "NỘP BÀI TRẢ LỜI";
+        submitBtn.disabled = true;
+        submitBtn.style.borderRadius = "0px !important";
+        
+        if (setAlreadySubmitted) {
+            const score = state.setQuiz.completedSets[set.set_index];
+            scoreSpan.textContent = `Kết quả: ${score} / ${set.questions.length} câu đúng`;
+        }
+        
+        centerCol.appendChild(scoreSpan);
+        if (!setAlreadySubmitted) {
+            centerCol.appendChild(submitBtn);
+        }
+        submitRow.appendChild(centerCol);
+        
+        // Right Column: Next / Skip buttons
+        const rightCol = document.createElement("div");
+        rightCol.style.flex = "1";
+        rightCol.style.textAlign = "right";
+        
+        const nextBtn = document.createElement("button");
+        nextBtn.className = "action-btn btn-primary";
+        nextBtn.style.padding = "12px 24px";
+        nextBtn.innerHTML = `ĐOẠN TIẾP THEO &rarr;`;
+        nextBtn.style.borderRadius = "0px !important";
+        nextBtn.style.display = "none";
+        
+        const skipBtn = document.createElement("button");
+        skipBtn.className = "action-btn btn-secondary";
+        skipBtn.style.padding = "12px 20px";
+        skipBtn.style.background = "transparent";
+        skipBtn.style.border = "1px solid var(--border)";
+        skipBtn.style.color = "var(--text-muted)";
+        skipBtn.style.cursor = "pointer";
+        skipBtn.style.borderRadius = "0px";
+        skipBtn.innerHTML = `BỎ QUA &rarr;`;
+        skipBtn.style.display = "none";
+        
+        skipBtn.addEventListener("click", () => {
+            state.setQuiz.currentIdx++;
+            renderPracticeSets(sets, section);
+        });
+        
+        if (currentIdx < sets.length - 1) {
+            rightCol.appendChild(nextBtn);
+            rightCol.appendChild(skipBtn);
+            
+            if (setAlreadySubmitted) {
+                nextBtn.style.display = "flex";
+            } else {
+                skipBtn.style.display = "flex";
+            }
+        }
+        
+        submitRow.appendChild(rightCol);
+        setWrapper.appendChild(submitRow);
+        
+        // Transcript & Explanations Card
+        let explanationHtml = "";
+        set.questions.forEach(sq => {
+            if (sq.explanation) {
+                explanationHtml += `
+                    <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                        <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                            Giải thích QUESTION ${sq.id}:
+                        </h5>
+                        <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                            ${sq.explanation}
+                        </div>
+                    </div>
+                `;
+            }
+        });
+        
+        const transcriptHtml = renderTranscriptHtml(set.transcript, set.vietnamese_transcript);
+        const scriptCard = document.createElement("div");
+        scriptCard.innerHTML = renderScriptCardHtml(`set-${set.set_index}`, transcriptHtml, explanationHtml);
+        const innerScriptCard = scriptCard.firstElementChild;
+        if (!setAlreadySubmitted) {
+            innerScriptCard.classList.add("hidden");
+        }
+        
+        setWrapper.appendChild(innerScriptCard);
+        hookScriptCardToggler(`set-${set.set_index}`);
+        
+        const submitHandler = () => {
+            const numQs = set.questions.length;
+            let correctCount = 0;
+            
+            set.questions.forEach(q => {
+                const userVal = userSelections[q.slide_index];
+                const correctVal = q.answer;
+                
+                const qOptions = qListDiv.querySelectorAll(`.choice-option[data-q-slide="${q.slide_index}"]`);
+                qOptions.forEach(o => {
+                    const oKey = o.getAttribute("data-key");
+                    o.classList.remove("correct", "selected");
+                    o.classList.add("checked-done");
+                    
+                    if (oKey === correctVal) {
+                        o.classList.add("correct");
+                    } else if (oKey === userVal) {
+                        o.classList.add("incorrect");
+                    }
+                });
+                
+                if (userVal === correctVal) {
+                    correctCount++;
+                }
+                
+                markQuestionAnswered(q.slide_index);
+            });
+            
+            state.setQuiz.completedSets[set.set_index] = correctCount;
+            
+            scoreSpan.textContent = `Kết quả: ${correctCount} / ${numQs} câu đúng`;
+            submitBtn.style.display = "none";
+            if (currentIdx < sets.length - 1) {
+                skipBtn.style.display = "none";
+                nextBtn.style.display = "flex";
+            }
+            innerScriptCard.classList.remove("hidden");
+            
+            // Show result modal
+            modalScore.textContent = correctCount;
+            modalTotal.textContent = `/${numQs}`;
+            
+            let msg = "";
+            if (correctCount === numQs) {
+                msg = "Tuyệt vời! Bạn đã xuất sắc trả lời đúng tất cả các câu hỏi. Hãy tiếp tục phát huy nhé!";
+                SoundEffects.playCorrect();
+                let count = 0;
+                const interval = setInterval(() => {
+                    spawnConfetti(40, true);
+                    count++;
+                    if (count > 5) clearInterval(interval);
+                }, 450);
+            } else if (correctCount >= 2) {
+                msg = "Khá tốt! Bạn đã trả lời đúng phần lớn câu hỏi. Hãy xem lại transcript để củng cố câu sai nhé.";
+                SoundEffects.playCorrect();
+                spawnConfetti(50);
+            } else {
+                msg = "Cố gắng lên! Bạn cần luyện tập thêm. Hãy xem lại transcript và từ vựng để cải thiện kỹ năng nghe.";
+                SoundEffects.playWrong();
+            }
+            modalMessage.textContent = msg;
+            
+            // Submit to Google Forms background
+            const studentName = localStorage.getItem("studentName") || "Ẩn danh";
+            submitToGoogleForm(studentName, section.title, `Luyện tập (Đoạn ${set.set_index})`, correctCount, numQs);
+            
+            modalReviewBtn.onclick = () => {
+                resultModal.classList.add("hidden");
+            };
+            
+            modalRetryBtn.onclick = () => {
+                resultModal.classList.add("hidden");
+                scoreSpan.textContent = "";
+                submitBtn.style.display = "flex";
+                submitBtn.disabled = true;
+                nextBtn.style.display = "none";
+                innerScriptCard.classList.add("hidden");
+                
+                delete state.setQuiz.completedSets[set.set_index];
+                
+                set.questions.forEach(q => {
+                    delete userSelections[q.slide_index];
+                    delete state.setQuiz.answers[q.slide_index];
+                    delete state.answeredQuestions[q.slide_index];
+                    
+                    const qOptions = qListDiv.querySelectorAll(`.choice-option[data-q-slide="${q.slide_index}"]`);
+                    qOptions.forEach(o => {
+                        o.classList.remove("checked-done", "correct", "incorrect");
+                        o.disabled = false;
+                    });
+                });
+                
+                updateRouteProgress();
+            };
+            
+            resultModal.classList.remove("hidden");
+        };
+        
+        submitBtn.addEventListener("click", submitHandler);
+        
+        nextBtn.addEventListener("click", () => {
+            state.setQuiz.currentIdx++;
+            renderPracticeSets(sets, section);
+        });
+        
+        practiceContentAreaP4.appendChild(setWrapper);
+    }
+
+    function renderPracticeSetsSummary(sets, section) {
+        practiceContentAreaP4.innerHTML = "";
+        
+        let totalScore = 0;
+        let totalQs = 0;
+        
+        sets.forEach(set => {
+            totalScore += state.setQuiz.completedSets[set.set_index] || 0;
+            totalQs += set.questions.length;
+        });
+        
+        let msg = "";
+        if (totalScore === totalQs) {
+            msg = "THẬT SỰ QUÁ ĐỈNH! Bạn đã hoàn thành xuất sắc toàn bộ các đoạn hội thoại với số điểm tối đa.";
+            let count = 0;
+            const interval = setInterval(() => {
+                spawnConfetti(45, true);
+                count++;
+                if (count > 6) clearInterval(interval);
+            }, 400);
+        } else if (totalScore >= totalQs * 0.7) {
+            msg = "CỰC KỲ TỐT! Kỹ năng nghe hiểu đoạn hội thoại dài của bạn rất ấn tượng. Hãy xem lại các lỗi nhỏ nhé.";
+            spawnConfetti(55);
+        } else {
+            msg = "CỐ GẮNG LÊN! Luyện nghe đoạn hội thoại dài cần kiên trì. Hãy dành thời gian xem kỹ transcript và nghe lại nhiều lần.";
+        }
+        
+        const summaryCard = document.createElement("div");
+        summaryCard.className = "quiz-summary-card";
+        summaryCard.style.textAlign = "center";
+        summaryCard.style.padding = "48px 40px";
+        summaryCard.style.border = "1px solid var(--border)";
+        summaryCard.style.background = "rgba(255, 255, 255, 0.015)";
+        
+        summaryCard.innerHTML = `
+            <div style="font-size: 3.5rem; color: var(--color-gold); margin-bottom: 20px;">🏆</div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 12px; font-weight: 800; text-transform: uppercase;">KẾT QUẢ CHỦ ĐỀ LUYỆN TẬP</h3>
+            <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-blue); margin-bottom: 16px;">
+                ${totalScore} / ${totalQs}
+            </div>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 36px; line-height: 1.7; max-width: 500px; margin-left: auto; margin-right: auto;">${msg}</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-primary" id="btn-set-retry" style="padding: 12px 24px; font-weight: 700; border-radius: 0px !important;">LÀM LẠI TOÀN BỘ</button>
+                <button class="btn btn-secondary" id="btn-set-review" style="padding: 12px 24px; font-weight: 700; border-radius: 0px !important;">XEM LẠI CÁC ĐÁP ÁN</button>
+            </div>
+        `;
+        
+        practiceContentAreaP4.appendChild(summaryCard);
+        
+        document.getElementById("btn-set-retry").addEventListener("click", () => {
+            state.setQuiz = {
+                sectionId: section.id,
+                sets: sets,
+                currentIdx: 0,
+                completedSets: {},
+                reviewMode: false,
+                answers: {}
+            };
+            
+            sets.forEach(set => {
+                set.questions.forEach(q => {
+                    delete state.answeredQuestions[q.slide_index];
+                });
+            });
+            updateRouteProgress();
+            try {
+                localStorage.setItem("toeic_answered_questions", JSON.stringify(state.answeredQuestions));
+            } catch (e) {}
+            
+            renderPracticeSets(sets, section);
+        });
+        
+        document.getElementById("btn-set-review").addEventListener("click", () => {
+            state.setQuiz.reviewMode = true;
+            renderPracticeSets(sets, section);
+        });
+    }
+
+    function renderPracticeSetsReview(sets, section) {
+        practiceContentAreaP4.innerHTML = "";
+        
+        const reviewHeader = document.createElement("div");
+        reviewHeader.className = "quiz-progress-header";
+        reviewHeader.style.display = "flex";
+        reviewHeader.style.justifyContent = "space-between";
+        reviewHeader.style.alignItems = "center";
+        reviewHeader.style.marginBottom = "24px";
+        reviewHeader.style.padding = "14px 20px";
+        reviewHeader.style.background = "rgba(255, 255, 255, 0.015)";
+        reviewHeader.style.border = "1px solid var(--border)";
+        
+        const reviewTitle = document.createElement("span");
+        reviewTitle.style.fontWeight = "700";
+        reviewTitle.style.fontSize = "0.9rem";
+        reviewTitle.textContent = "XEM LẠI CÁC ĐOẠN HỘI THOẠI & TRANSCRIPTS";
+        
+        const backBtn = document.createElement("button");
+        backBtn.className = "mini-btn";
+        backBtn.style.padding = "6px 12px";
+        backBtn.textContent = "QUAY LẠI TỔNG KẾT";
+        backBtn.style.borderRadius = "0px !important";
+        backBtn.addEventListener("click", () => {
+            state.setQuiz.currentIdx = sets.length; // triggers summary
+            renderPracticeSets(sets, section);
+        });
+        
+        reviewHeader.appendChild(reviewTitle);
+        reviewHeader.appendChild(backBtn);
+        practiceContentAreaP4.appendChild(reviewHeader);
+
+        sets.forEach(set => {
+            const setWrapper = document.createElement("div");
+            setWrapper.className = "practice-set-card";
+            setWrapper.style.padding = "24px";
+            setWrapper.style.marginBottom = "28px";
+            setWrapper.style.border = "1px solid var(--border)";
+            setWrapper.style.background = "rgba(255, 255, 255, 0.01)";
+            
+            const setHeader = document.createElement("h3");
+            setHeader.style.fontSize = "1.15rem";
+            setHeader.style.marginBottom = "16px";
+            setHeader.style.fontWeight = "800";
+            setHeader.textContent = `ĐOẠN HỘI THOẠI ${set.set_index}`;
+            setWrapper.appendChild(setHeader);
+            
+            const audioDiv = document.createElement("div");
+            setWrapper.appendChild(audioDiv);
+            createAudioPlayer(set.audio, audioDiv);
+            
+            const qListDiv = document.createElement("div");
+            setWrapper.appendChild(qListDiv);
+            
+            set.questions.forEach(q => {
+                const qCard = document.createElement("div");
+                qCard.className = "question-block";
+                qCard.style.padding = "20px";
+                qCard.style.marginTop = "16px";
+                
+                const savedAns = state.setQuiz.answers[q.slide_index];
+                const choicesHtml = renderChoicesHtml(q, true, savedAns);
+                
+                let badgeText = savedAns === q.answer ? 
+                    `<span style="color: var(--success); margin-left: 10px; font-size: 0.85rem; font-weight: 700;">✔️ ĐÚNG</span>` : 
+                    `<span style="color: var(--danger); margin-left: 10px; font-size: 0.85rem; font-weight: 700;">❌ SAI (Chọn ${savedAns || "Trống"})</span>`;
+                
+                const questionTextHtml = renderQuestionTextHtml(q, `rev-set-q-${q.slide_index}`, `<strong>QUESTION ${q.id}:</strong> `);
+                
+                qCard.innerHTML = `
+                    <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom: 10px; width:100%;">
+                        <div style="flex:1;">${questionTextHtml}</div>
+                        <div>${badgeText}</div>
+                    </div>
+                    <div class="choices-stack" style="margin-top: 12px;">
+                        ${choicesHtml}
+                    </div>
+                `;
+                qListDiv.appendChild(qCard);
+            });
+            
+            let explanationHtml = "";
+            set.questions.forEach(sq => {
+                if (sq.explanation) {
+                    explanationHtml += `
+                        <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                            <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                                Giải thích QUESTION ${sq.id}:
+                            </h5>
+                            <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                                ${sq.explanation}
+                            </div>
+                        </div>
+                    `;
+                }
+            });
+            
+            const transcriptHtml = renderTranscriptHtml(set.transcript, set.vietnamese_transcript);
+            const scriptCard = document.createElement("div");
+            scriptCard.innerHTML = renderScriptCardHtml(`revset-${set.set_index}`, transcriptHtml, explanationHtml);
+            const innerScriptCard = scriptCard.firstElementChild;
+            innerScriptCard.classList.remove("hidden");
+            
+            setWrapper.appendChild(innerScriptCard);
+            hookScriptCardToggler(`revset-${set.set_index}`);
+            
+            practiceContentAreaP4.appendChild(setWrapper);
+        });
+    }
+
     /* -------------------------------------------------------------
        7. LIGHT / DARK THEME TOGGLE
        ------------------------------------------------------------- */
     const savedTheme = localStorage.getItem("theme") || "dark";
     
+
     function setTheme(theme) {
         if (theme === "light") {
             document.body.classList.remove("dark-mode");
