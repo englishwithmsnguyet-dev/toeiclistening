@@ -342,7 +342,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { type: "item", id: "overview", title: "Tổng quan Phần 01" },
         { type: "item", id: "dang_01", title: "Dạng 1: Tranh 1 người" },
         { type: "item", id: "dang_02", title: "Dạng 2: Tranh nhiều người" },
-        { type: "item", id: "dang_03", title: "Dạng 3: Tranh sự vật" }
+        { type: "item", id: "dang_03", title: "Dạng 3: Tranh mô tả vật" }
     ];
 
     const categoryTreeP4 = [

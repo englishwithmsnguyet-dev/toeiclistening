@@ -1710,14 +1710,14 @@ window.part01Data = [
   },
   {
     "id": "dang_03",
-    "title": "DẠNG 03: TRANH MIÊU TẢ VẬT",
+    "title": "DẠNG 03: TRANH MÔ TẢ VẬT",
     "type": "theory",
     "theory": [
       {
         "slide_index": 1,
         "text": [
           "<span style=\"color: #FF0000;\"><strong>TRANH </strong></span>",
-          "<span style=\"color: #FF0000;\"><strong>MIÊU TẢ VẬT</strong></span>"
+          "<span style=\"color: #FF0000;\"><strong>MÔ TẢ VẬT</strong></span>"
         ],
         "images": [],
         "audio": null
