@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         if (submitBtn) {
             submitBtn.addEventListener('click', () => {
-                if (passInput && passInput.value === "2026") {
+                if (passInput && passInput.value === "missnguyet2026") {
                     window.isUnlocked = true;
                     sessionStorage.setItem("portal_unlocked", "true");
                     window.closePasswordModal();
