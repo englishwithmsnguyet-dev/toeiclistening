@@ -1245,7 +1245,8 @@ window.part01Data = [
       {
         "slide_index": 1,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>TRANH CÓ NHIỀU NGƯỜI</strong></span>"
+          "<span style=\"color: #FF0000;\"><strong>TRANH TẢ NGƯỜI</strong></span>",
+          "<span style=\"color: #00B0F0;\"><strong>DẠNG 02: CÓ NHIỀU NGƯỜI TRONG HÌNH</strong></span>"
         ],
         "images": ["dang_02_intro.jpg"],
         "audio": null
