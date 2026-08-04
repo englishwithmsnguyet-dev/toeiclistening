@@ -201,6 +201,78 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    // --- LOCK & PASSWORD LOGIC ---
+    window.isUnlocked = sessionStorage.getItem("portal_unlocked") === "true";
+    window.pendingUnlockCallback = null;
+
+    window.showPaywallModal = function(callback) {
+        if (window.isUnlocked) {
+            if (callback) callback();
+            return;
+        }
+        window.pendingUnlockCallback = callback;
+        const modal = document.getElementById('password-modal');
+        if(modal) {
+            modal.classList.remove('hidden');
+            modal.style.opacity = '1';
+            modal.style.pointerEvents = 'auto';
+            document.getElementById('passwordInput').value = '';
+            document.getElementById('passwordError').style.display = 'none';
+            setTimeout(() => {
+                const input = document.getElementById('passwordInput');
+                if(input) input.focus();
+            }, 50);
+        }
+    };
+
+    window.closePasswordModal = function() {
+        const modal = document.getElementById('password-modal');
+        if(modal) {
+            modal.style.opacity = '0';
+            modal.style.pointerEvents = 'none';
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
+    };
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const submitBtn = document.getElementById('submitPasswordBtn');
+        const cancelBtn = document.getElementById('cancelPasswordBtn');
+        const passInput = document.getElementById('passwordInput');
+        
+        if (submitBtn) {
+            submitBtn.addEventListener('click', () => {
+                if (passInput && passInput.value === "2026") {
+                    window.isUnlocked = true;
+                    sessionStorage.setItem("portal_unlocked", "true");
+                    window.closePasswordModal();
+                    if (window.pendingUnlockCallback) window.pendingUnlockCallback();
+                    
+                    // Refresh sidebars to remove lock icons
+                    if (typeof initializePart01Sidebar === 'function') initializePart01Sidebar();
+                    if (typeof initializePart03Sidebar === 'function') initializePart03Sidebar();
+                    if (typeof initializePart04Sidebar === 'function') initializePart04Sidebar();
+                    
+                    document.querySelectorAll('.dashboard-card').forEach(card => card.classList.remove('locked'));
+                } else {
+                    const err = document.getElementById('passwordError');
+                    if(err) err.style.display = 'block';
+                }
+            });
+        }
+        
+        if (cancelBtn) {
+            cancelBtn.addEventListener('click', window.closePasswordModal);
+        }
+        
+        if (passInput) {
+            passInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') submitBtn.click();
+            });
+        }
+    });
+    // --- END LOCK LOGIC ---
+
+
     // Inline SVG Icon Constants (Safe offline fallbacks to replace FontAwesome)
     const icons = {
         play: `<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" style="display:inline-block; vertical-align:middle;"><path d="M8 5v14l11-7z"/></svg>`,
