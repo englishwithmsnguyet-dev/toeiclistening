@@ -1247,7 +1247,7 @@ window.part01Data = [
         "text": [
           "<span style=\"color: #FF0000;\"><strong>TRANH CÓ NHIỀU NGƯỜI</strong></span>"
         ],
-        "images": [],
+        "images": ["dang_02_intro.jpg"],
         "audio": null
       },
       {
