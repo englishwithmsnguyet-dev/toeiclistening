@@ -2,29 +2,45 @@
 
 window.playTTS = function(text, event) {
     if (event) event.stopPropagation(); // prevent triggering row click
-    if (!('speechSynthesis' in window)) {
-        alert("Trình duyệt của bạn không hỗ trợ tính năng đọc từ!");
-        return;
+    
+    // Remove phonetic symbols or html tags if any are left
+    text = text.replace(/<[^>]+>/g, '').replace(/\/[^\/]+\//g, '').trim();
+
+    try {
+        const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(text)}`;
+        const audio = new Audio(url);
+        
+        if (window.currentTTSAudio) {
+            window.currentTTSAudio.pause();
+            window.currentTTSAudio.currentTime = 0;
+        }
+        window.currentTTSAudio = audio;
+        
+        audio.play().catch(e => {
+            console.warn("HTML5 Audio playback failed, falling back to speechSynthesis:", e);
+            fallbackTTS(text);
+        });
+    } catch (e) {
+        fallbackTTS(text);
     }
-    
-    // Stop any currently playing audio
+};
+
+function fallbackTTS(text) {
+    if (!('speechSynthesis' in window)) return;
     window.speechSynthesis.cancel();
-    
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
     
-    // Try to find a good voice
     const voices = window.speechSynthesis.getVoices();
     let bestVoice = voices.find(v => v.lang === 'en-US' && v.name.includes('Google'));
     if (!bestVoice) bestVoice = voices.find(v => v.lang.startsWith('en-'));
     if (bestVoice) utterance.voice = bestVoice;
     
-    // Adjust rate and pitch for clarity
     utterance.rate = 0.9;
     utterance.pitch = 1.0;
     
     window.speechSynthesis.speak(utterance);
-};
+}
 
 window.selectPracticeOption = function(el) {
     if (el.parentElement.hasAttribute('data-checked')) return;
