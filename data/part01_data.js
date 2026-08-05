@@ -1718,10 +1718,10 @@ window.part01Data = [
       {
         "slide_index": 1,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>TRANH </strong></span>",
-          "<span style=\"color: #FF0000;\"><strong>MÔ TẢ VẬT</strong></span>"
+          "<span style=\"color: #FF0000;\"><strong>TRANH MÔ TẢ VẬT</strong></span>",
+          "<span style=\"color: #00B0F0;\"><strong>DẠNG 03: TRANH MÔ TẢ VẬT</strong></span>"
         ],
-        "images": [],
+        "images": ["dang_03_intro.png"],
         "audio": null
       },
       {
