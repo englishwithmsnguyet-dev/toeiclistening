@@ -1830,7 +1830,9 @@ window.part01Data = [
           "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>between</strong> <span onclick=\"playTTS('between', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>Ở GIỮA</strong></span>"
         ],
-        "images": [],
+        "images": [
+          "slide_11_between.png"
+        ],
         "audio": null
       },
       {
