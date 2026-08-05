@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     const LOCKED_SECTIONS = [
         "topic_01", "topic_02", "topic_03", "topic_04", "topic_05", "topic_06",
-        "dang_02", "dang_03", "test_01", "test_02", "test_03", "test_04", "test_05"
+        "dang_02", "test_01", "test_02", "test_03", "test_04", "test_05"
     ];
 
     // App State
