@@ -1737,8 +1737,7 @@ window.part01Data = [
       {
         "slide_index": 3,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>on</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on</strong> <span onclick=\"playTTS('on', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>BÊN TRÊN</strong></span>"
         ],
         "images": [
@@ -1749,8 +1748,7 @@ window.part01Data = [
       {
         "slide_index": 4,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>in/inside</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>in/inside</strong> <span onclick=\"playTTS('in/inside', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>BÊN TRONG</strong></span>"
         ],
         "images": [
@@ -1761,8 +1759,7 @@ window.part01Data = [
       {
         "slide_index": 5,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>out/outside</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>out/outside</strong> <span onclick=\"playTTS('out/outside', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>BÊN NGOÀI</strong></span>"
         ],
         "images": [
@@ -1773,8 +1770,7 @@ window.part01Data = [
       {
         "slide_index": 6,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>in front of</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>in front of</strong> <span onclick=\"playTTS('in front of', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>PHÍA TRƯỚC</strong></span>"
         ],
         "images": [
@@ -1785,8 +1781,7 @@ window.part01Data = [
       {
         "slide_index": 7,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>behind</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>behind</strong> <span onclick=\"playTTS('behind', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<strong>in back of</strong>",
           "<span style=\"color: #0070C0;\"><strong>PHÍA</strong></span><strong> </strong><span style=\"color: #0070C0;\"><strong>SAU</strong></span>"
         ],
@@ -1798,8 +1793,7 @@ window.part01Data = [
       {
         "slide_index": 8,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>near</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>near</strong> <span onclick=\"playTTS('near', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<strong>close to</strong>",
           "<span style=\"color: #0070C0;\"><strong>GẦN</strong></span>"
         ],
@@ -1811,8 +1805,7 @@ window.part01Data = [
       {
         "slide_index": 9,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>next to</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>next to</strong> <span onclick=\"playTTS('next to', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>KẾ BÊN, SÁT BÊN</strong></span>"
         ],
         "images": [
@@ -1823,8 +1816,7 @@ window.part01Data = [
       {
         "slide_index": 10,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>around</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>around</strong> <span onclick=\"playTTS('around', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>XUNG QUANH</strong></span>"
         ],
         "images": [
@@ -1835,8 +1827,7 @@ window.part01Data = [
       {
         "slide_index": 11,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>between</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>between</strong> <span onclick=\"playTTS('between', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>Ở GIỮA</strong></span>"
         ],
         "images": [],
@@ -1845,8 +1836,7 @@ window.part01Data = [
       {
         "slide_index": 12,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>among</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>among</strong> <span onclick=\"playTTS('among', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>Ở GIỮA</strong></span>"
         ],
         "images": [
@@ -1857,8 +1847,7 @@ window.part01Data = [
       {
         "slide_index": 13,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>under</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>under</strong> <span onclick=\"playTTS('under', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>Ở PHÍA DƯỚI</strong></span>"
         ],
         "images": [
@@ -1869,8 +1858,7 @@ window.part01Data = [
       {
         "slide_index": 14,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>above</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>above</strong> <span onclick=\"playTTS('above', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>Ở PHÍA TRÊN</strong></span>"
         ],
         "images": [
@@ -1881,8 +1869,7 @@ window.part01Data = [
       {
         "slide_index": 15,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>into</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>into</strong> <span onclick=\"playTTS('into', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>VÀO TRONG</strong></span>"
         ],
         "images": [
@@ -1893,8 +1880,7 @@ window.part01Data = [
       {
         "slide_index": 16,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC GIỚI TỪ THƯỜNG GẶP</strong></span>",
-          "<strong>out of</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>out of</strong> <span onclick=\"playTTS('out of', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>RA KHỎI</strong></span>"
         ],
         "images": [
@@ -1913,9 +1899,8 @@ window.part01Data = [
       {
         "slide_index": 18,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>on the floor</strong>",
-          "<strong>on the ground</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on the floor</strong> <span onclick=\"playTTS('on the floor', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on the ground</strong> <span onclick=\"playTTS('on the ground', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRÊN SÀN NHÀ</strong></span>"
         ],
         "images": [
@@ -1926,8 +1911,7 @@ window.part01Data = [
       {
         "slide_index": 19,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>on a/the table</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on a/the table</strong> <span onclick=\"playTTS('on a/the table', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRÊN BÀN</strong></span>"
         ],
         "images": [
@@ -1938,8 +1922,7 @@ window.part01Data = [
       {
         "slide_index": 20,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>on a/the desk</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on a/the desk</strong> <span onclick=\"playTTS('on a/the desk', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRÊN BÀN LÀM VIỆC</strong></span>"
         ],
         "images": [
@@ -1950,8 +1933,7 @@ window.part01Data = [
       {
         "slide_index": 21,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>on a counter</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on a counter</strong> <span onclick=\"playTTS('on a counter', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRÊN QUẦY</strong></span>"
         ],
         "images": [
@@ -1962,9 +1944,8 @@ window.part01Data = [
       {
         "slide_index": 22,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>on shelves</strong>",
-          "<strong>on a shelf</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on shelves</strong> <span onclick=\"playTTS('on shelves', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on a shelf</strong> <span onclick=\"playTTS('on a shelf', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRÊN KỆ</strong></span>"
         ],
         "images": [
@@ -1975,9 +1956,8 @@ window.part01Data = [
       {
         "slide_index": 23,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>in a row</strong>",
-          "<strong>in a line</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>in a row</strong> <span onclick=\"playTTS('in a row', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>in a line</strong> <span onclick=\"playTTS('in a line', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRONG MỘT HÀNG</strong></span>"
         ],
         "images": [
@@ -1988,8 +1968,7 @@ window.part01Data = [
       {
         "slide_index": 24,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>on the wall</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on the wall</strong> <span onclick=\"playTTS('on the wall', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>Ở TRÊN TƯỜNG</strong></span>"
         ],
         "images": [
@@ -2000,8 +1979,7 @@ window.part01Data = [
       {
         "slide_index": 25,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>in a display case</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>in a display case</strong> <span onclick=\"playTTS('in a display case', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>Ở TRONG TỦ TRƯNG BÀY</strong></span>"
         ],
         "images": [
@@ -2012,9 +1990,8 @@ window.part01Data = [
       {
         "slide_index": 26,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>on a rack</strong>",
-          "<strong>on racks</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on a rack</strong> <span onclick=\"playTTS('on a rack', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>on racks</strong> <span onclick=\"playTTS('on racks', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRÊN GIÁ TREO</strong></span>"
         ],
         "images": [
@@ -2025,8 +2002,7 @@ window.part01Data = [
       {
         "slide_index": 27,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>in a drawer</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>in a drawer</strong> <span onclick=\"playTTS('in a drawer', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRONG NGĂN KÉO</strong></span>"
         ],
         "images": [
@@ -2037,8 +2013,7 @@ window.part01Data = [
       {
         "slide_index": 28,
         "text": [
-          "<span style=\"color: #FF0000;\"><strong>CÁC CỤM TỪ VỊ TRÍ THƯỜNG GẶP</strong></span>",
-          "<strong>in a cabinet</strong>",
+          "<div style=\"display: flex; align-items: center; justify-content: center; gap: 12px; font-size: 1.2em;\"><strong>in a cabinet</strong> <span onclick=\"playTTS('in a cabinet', event)\" style=\"cursor: pointer; opacity: 0.7; font-size: 1.2rem; transition: opacity 0.2s;\" onmouseover=\"this.style.opacity='1'\" onmouseout=\"this.style.opacity='0.7'\" title=\"Đọc từ này\">🔊</span></div>",
           "<span style=\"color: #0070C0;\"><strong>TRONG TỦ NHIỀU NGĂN</strong></span>"
         ],
         "images": [
