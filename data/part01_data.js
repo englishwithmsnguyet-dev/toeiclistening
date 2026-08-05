@@ -1721,7 +1721,9 @@ window.part01Data = [
           "<span style=\"color: #FF0000;\"><strong>TRANH MÔ TẢ VẬT</strong></span>",
           "<span style=\"color: #00B0F0;\"><strong>DẠNG 03: TRANH MÔ TẢ VẬT</strong></span>"
         ],
-        "images": ["dang_03_intro.png"],
+        "images": [
+          "dang_03_intro.png"
+        ],
         "audio": null
       },
       {
@@ -2055,12 +2057,9 @@ window.part01Data = [
       {
         "slide_index": 30,
         "text": [
-          "<span style=\"color: #00B050;\"><strong>CẤU TRÚC 1</strong></span>",
-          "<strong>[VẬT 1] </strong><strong>+</strong><strong> </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+</strong><strong> </strong><strong>giới từ chỉ vị trí </strong><strong>+</strong><strong> </strong><strong>[VẬT 2].</strong>",
-          "<strong>VÍ DỤ:</strong>",
-          "• <strong>A chair </strong><span style=\"color: #FF2F92;\"><strong>is</strong></span><strong> </strong><strong>next to </strong><strong>a table</strong>. ",
-          "• <strong>A box </strong><span style=\"color: #FF2F92;\"><strong>is</strong></span><strong> </strong><strong>under</strong><strong> </strong><strong>a desk</strong>.",
-          "→ Cấu trúc này được dùng để <strong>xác định vị trí của một vật so với một vật khác</strong>, khi trong tranh <strong>cả hai vật đều nhìn thấy rõ</strong>, và <strong>không có hành động nào đang diễn ra</strong>."
+          "<div style=\"background: #f0fdf4; border-left: 4px solid #00B050; padding: 16px; margin-bottom: 20px; border-radius: 4px;\">\n  <div style=\"color: #00B050; font-weight: bold; font-size: 1.2rem; margin-bottom: 8px;\">CẤU TRÚC 1</div>\n  <div style=\"font-size: 1.4rem; color: #333;\"><strong>[VẬT 1] </strong><strong>+</strong><strong> </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+</strong><strong> </strong><strong>giới từ chỉ vị trí </strong><strong>+</strong><strong> </strong><strong>[VẬT 2].</strong></div>\n</div>",
+          "<div style=\"background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 20px;\">\n  <div style=\"font-weight: bold; color: #475569; margin-bottom: 12px; font-size: 1.1rem;\">VÍ DỤ:</div>\n  <div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>A chair </strong><span style=\"color: #FF2F92;\"><strong>is</strong></span><strong> </strong><strong>next to </strong><strong>a table</strong>. </div><div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>A box </strong><span style=\"color: #FF2F92;\"><strong>is</strong></span><strong> </strong><strong>under</strong><strong> </strong><strong>a desk</strong>.</div>\n</div>",
+          "<div style=\"background: #fffbeb; padding: 16px; border-radius: 8px; color: #b45309; font-size: 1.1rem;\">\n  <span style=\"font-weight: bold;\">💡 Lưu ý:</span><br>→ Cấu trúc này được dùng để <strong>xác định vị trí của một vật so với một vật khác</strong>, khi trong tranh <strong>cả hai vật đều nhìn thấy rõ</strong>, và <strong>không có hành động nào đang diễn ra</strong>.\n</div>"
         ],
         "images": [],
         "audio": null
@@ -2068,12 +2067,9 @@ window.part01Data = [
       {
         "slide_index": 31,
         "text": [
-          "<span style=\"color: #00B050;\"><strong>CẤU TRÚC 2</strong></span>",
-          "<strong>[VẬT] </strong><strong>+</strong><strong> </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+</strong><strong> </strong><strong>cụm giới từ chỉ vị trí.</strong>",
-          "<strong> </strong><strong>VÍ DỤ:</strong>",
-          "• <strong>The pictures </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><strong>on the wall</strong>. ",
-          "• <strong>Clothes </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><strong>on a rack</strong>.",
-          "→ Cấu trúc này được dùng khi <strong>chỉ cần xác định vị trí của một vật</strong>, <strong>không cần nêu vật mốc cụ thể trong câu</strong>, vì <strong>bối cảnh trong tranh đã đủ rõ</strong>."
+          "<div style=\"background: #f0fdf4; border-left: 4px solid #00B050; padding: 16px; margin-bottom: 20px; border-radius: 4px;\">\n  <div style=\"color: #00B050; font-weight: bold; font-size: 1.2rem; margin-bottom: 8px;\">CẤU TRÚC 2</div>\n  <div style=\"font-size: 1.4rem; color: #333;\"><strong>[VẬT] </strong><strong>+</strong><strong> </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+</strong><strong> </strong><strong>cụm giới từ chỉ vị trí.</strong></div>\n</div>",
+          "<div style=\"background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 20px;\">\n  <div style=\"font-weight: bold; color: #475569; margin-bottom: 12px; font-size: 1.1rem;\">VÍ DỤ:</div>\n  <div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>The pictures </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><strong>on the wall</strong>. </div><div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>Clothes </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><strong>on a rack</strong>.</div>\n</div>",
+          "<div style=\"background: #fffbeb; padding: 16px; border-radius: 8px; color: #b45309; font-size: 1.1rem;\">\n  <span style=\"font-weight: bold;\">💡 Lưu ý:</span><br>→ Cấu trúc này được dùng khi <strong>chỉ cần xác định vị trí của một vật</strong>, <strong>không cần nêu vật mốc cụ thể trong câu</strong>, vì <strong>bối cảnh trong tranh đã đủ rõ</strong>.\n</div>"
         ],
         "images": [],
         "audio": null
@@ -2081,12 +2077,9 @@ window.part01Data = [
       {
         "slide_index": 32,
         "text": [
-          "<span style=\"color: #00B050;\"><strong>CẤU TRÚC 3</strong></span>",
-          "<strong>There </strong><strong>+</strong><strong> </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+</strong><strong> [VẬT] </strong><strong>+ </strong><strong>cụm giới từ chỉ vị trí.</strong>",
-          "<strong> </strong><strong>VÍ DỤ:</strong>",
-          "• <strong>There </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><strong>some boxes </strong><strong>on the floor</strong>. ",
-          "• <strong>There </strong><span style=\"color: #FF2F92;\"><strong>is</strong></span><strong> </strong><strong>a sign </strong><strong>on the wall</strong>.",
-          "→ Cấu trúc này được dùng khi <strong>mục tiêu chính là khẳng định sự tồn tại của vật trong tranh</strong>, <strong>không nhấn mạnh bản thân vật</strong>, mà nhấn mạnh <strong>có / không có vật ở vị trí đó</strong>."
+          "<div style=\"background: #f0fdf4; border-left: 4px solid #00B050; padding: 16px; margin-bottom: 20px; border-radius: 4px;\">\n  <div style=\"color: #00B050; font-weight: bold; font-size: 1.2rem; margin-bottom: 8px;\">CẤU TRÚC 3</div>\n  <div style=\"font-size: 1.4rem; color: #333;\"><strong>There </strong><strong>+</strong><strong> </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+</strong><strong> [VẬT] </strong><strong>+ </strong><strong>cụm giới từ chỉ vị trí.</strong></div>\n</div>",
+          "<div style=\"background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 20px;\">\n  <div style=\"font-weight: bold; color: #475569; margin-bottom: 12px; font-size: 1.1rem;\">VÍ DỤ:</div>\n  <div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>There </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><strong>some boxes </strong><strong>on the floor</strong>. </div><div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>There </strong><span style=\"color: #FF2F92;\"><strong>is</strong></span><strong> </strong><strong>a sign </strong><strong>on the wall</strong>.</div>\n</div>",
+          "<div style=\"background: #fffbeb; padding: 16px; border-radius: 8px; color: #b45309; font-size: 1.1rem;\">\n  <span style=\"font-weight: bold;\">💡 Lưu ý:</span><br>→ Cấu trúc này được dùng khi <strong>mục tiêu chính là khẳng định sự tồn tại của vật trong tranh</strong>, <strong>không nhấn mạnh bản thân vật</strong>, mà nhấn mạnh <strong>có / không có vật ở vị trí đó</strong>.\n</div>"
         ],
         "images": [],
         "audio": null
@@ -2094,14 +2087,9 @@ window.part01Data = [
       {
         "slide_index": 33,
         "text": [
-          "<span style=\"color: #00B050;\"><strong>CẤU TRÚC 4</strong></span>",
-          "<strong>[VẬT] </strong><strong>+</strong><strong> </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+ </strong><span style=\"color: #FF0000;\"><strong>V</strong></span><span style=\"color: #FF0000;\"><strong>3</strong></span><span style=\"color: #FF0000;\"><strong>ed</strong></span><span style=\"color: #FF0000;\"><strong>/being V</strong></span><span style=\"color: #FF0000;\"><strong>3</strong></span><span style=\"color: #FF0000;\"><strong>ed</strong></span><span style=\"color: #FF0000;\"><strong> </strong></span><strong>+ </strong><strong>cụm giới từ chỉ vị trí.</strong>",
-          "<strong> </strong><strong>VÍ DỤ:</strong>",
-          "• <strong>Some books </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><span style=\"color: #FF0000;\"><strong>stacked</strong></span><strong> </strong><strong>on a table</strong>. ",
-          "• <strong>Some books </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><span style=\"color: #FF0000;\"><strong>being stacked </strong></span><strong>on the table</strong>.",
-          "→ Cấu trúc này dùng để mô tả <strong>trạng thái hoặc quá trình tác động lên vật</strong>, khi <strong>vật là đối tượng bị tác động</strong>, không phải chủ thể hành động. ",
-          "<span style=\"color: #00B0F0;\"><strong>V</strong></span><span style=\"color: #00B0F0;\"><strong>3</strong></span><span style=\"color: #00B0F0;\"><strong>ed</strong></span><span style=\"color: #00B0F0;\"><strong> </strong></span><span style=\"color: #00B0F0;\">→ Nhấn mạnh </span><span style=\"color: #00B0F0;\"><strong>kết quả / trạng thái đã hoàn tất </strong></span><span style=\"color: #00B0F0;\">→ </span><strong>KHÔNG  CÓ NGƯỜI</strong>",
-          "<span style=\"color: #00B0F0;\"><strong>being V</strong></span><span style=\"color: #00B0F0;\"><strong>3</strong></span><span style=\"color: #00B0F0;\"><strong>ed</strong></span><span style=\"color: #00B0F0;\"><strong> </strong></span><span style=\"color: #00B0F0;\">→ Nhấn mạnh </span><span style=\"color: #00B0F0;\"><strong>hành động đang diễn ra ngay lúc đó </strong></span><span style=\"color: #00B0F0;\">→ </span><strong>CÓ NGƯỜI</strong>"
+          "<div style=\"background: #f0fdf4; border-left: 4px solid #00B050; padding: 16px; margin-bottom: 20px; border-radius: 4px;\">\n  <div style=\"color: #00B050; font-weight: bold; font-size: 1.2rem; margin-bottom: 8px;\">CẤU TRÚC 4</div>\n  <div style=\"font-size: 1.4rem; color: #333;\"><strong>[VẬT] </strong><strong>+</strong><strong> </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+ </strong><span style=\"color: #FF0000;\"><strong>V</strong></span><span style=\"color: #FF0000;\"><strong>3</strong></span><span style=\"color: #FF0000;\"><strong>ed</strong></span><span style=\"color: #FF0000;\"><strong>/being V</strong></span><span style=\"color: #FF0000;\"><strong>3</strong></span><span style=\"color: #FF0000;\"><strong>ed</strong></span><span style=\"color: #FF0000;\"><strong> </strong></span><strong>+ </strong><strong>cụm giới từ chỉ vị trí.</strong></div>\n</div>",
+          "<div style=\"background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 20px;\">\n  <div style=\"font-weight: bold; color: #475569; margin-bottom: 12px; font-size: 1.1rem;\">VÍ DỤ:</div>\n  <div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>Some books </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><span style=\"color: #FF0000;\"><strong>stacked</strong></span><strong> </strong><strong>on a table</strong>. </div><div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>Some books </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><span style=\"color: #FF0000;\"><strong>being stacked </strong></span><strong>on the table</strong>.</div>\n</div>",
+          "<div style=\"background: #fffbeb; padding: 16px; border-radius: 8px; color: #b45309; font-size: 1.1rem;\">\n  <span style=\"font-weight: bold;\">💡 Lưu ý:</span><br>→ Cấu trúc này dùng để mô tả <strong>trạng thái hoặc quá trình tác động lên vật</strong>, khi <strong>vật là đối tượng bị tác động</strong>, không phải chủ thể hành động. <br><span style=\"color: #00B0F0;\"><strong>V</strong></span><span style=\"color: #00B0F0;\"><strong>3</strong></span><span style=\"color: #00B0F0;\"><strong>ed</strong></span><span style=\"color: #00B0F0;\"><strong> </strong></span><span style=\"color: #00B0F0;\">→ Nhấn mạnh </span><span style=\"color: #00B0F0;\"><strong>kết quả / trạng thái đã hoàn tất </strong></span><span style=\"color: #00B0F0;\">→ </span><strong>KHÔNG  CÓ NGƯỜI</strong><br><span style=\"color: #00B0F0;\"><strong>being V</strong></span><span style=\"color: #00B0F0;\"><strong>3</strong></span><span style=\"color: #00B0F0;\"><strong>ed</strong></span><span style=\"color: #00B0F0;\"><strong> </strong></span><span style=\"color: #00B0F0;\">→ Nhấn mạnh </span><span style=\"color: #00B0F0;\"><strong>hành động đang diễn ra ngay lúc đó </strong></span><span style=\"color: #00B0F0;\">→ </span><strong>CÓ NGƯỜI</strong>\n</div>"
         ],
         "images": [],
         "audio": null
@@ -2109,12 +2097,9 @@ window.part01Data = [
       {
         "slide_index": 34,
         "text": [
-          "<span style=\"color: #00B050;\"><strong>CẤU TRÚC 5</strong></span>",
-          "<strong>[VẬT] </strong><strong>+ </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+ </strong><span style=\"color: #00B0F0;\"><strong>tính từ</strong></span><strong>.</strong>",
-          "<strong> </strong><strong>VÍ DỤ:</strong>",
-          "• <strong>Some seats </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><span style=\"color: #00B0F0;\"><strong>empty</strong></span>. ",
-          "• <strong>The door </strong><span style=\"color: #FF2F92;\"><strong>is</strong></span><strong> </strong><span style=\"color: #00B0F0;\"><strong>closed</strong></span>.",
-          "→ Cấu trúc này dùng để mô tả <strong>trạng thái hiện tại của vật</strong>, khi <strong>không có hành động xảy ra</strong> và <strong>không quan tâm ai tác động đến vật</strong>. Tính từ hay xuất hiện là <strong>closed, open, empty, full, crowded, occupied</strong>, …"
+          "<div style=\"background: #f0fdf4; border-left: 4px solid #00B050; padding: 16px; margin-bottom: 20px; border-radius: 4px;\">\n  <div style=\"color: #00B050; font-weight: bold; font-size: 1.2rem; margin-bottom: 8px;\">CẤU TRÚC 5</div>\n  <div style=\"font-size: 1.4rem; color: #333;\"><strong>[VẬT] </strong><strong>+ </strong><span style=\"color: #FF2F92;\"><strong>is/are </strong></span><strong>+ </strong><span style=\"color: #00B0F0;\"><strong>tính từ</strong></span><strong>.</strong></div>\n</div>",
+          "<div style=\"background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 20px;\">\n  <div style=\"font-weight: bold; color: #475569; margin-bottom: 12px; font-size: 1.1rem;\">VÍ DỤ:</div>\n  <div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>Some seats </strong><span style=\"color: #FF2F92;\"><strong>are</strong></span><strong> </strong><span style=\"color: #00B0F0;\"><strong>empty</strong></span>. </div><div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>The door </strong><span style=\"color: #FF2F92;\"><strong>is</strong></span><strong> </strong><span style=\"color: #00B0F0;\"><strong>closed</strong></span>.</div>\n</div>",
+          "<div style=\"background: #fffbeb; padding: 16px; border-radius: 8px; color: #b45309; font-size: 1.1rem;\">\n  <span style=\"font-weight: bold;\">💡 Lưu ý:</span><br>→ Cấu trúc này dùng để mô tả <strong>trạng thái hiện tại của vật</strong>, khi <strong>không có hành động xảy ra</strong> và <strong>không quan tâm ai tác động đến vật</strong>. Tính từ hay xuất hiện là <strong>closed, open, empty, full, crowded, occupied</strong>, …\n</div>"
         ],
         "images": [],
         "audio": null
@@ -2122,12 +2107,9 @@ window.part01Data = [
       {
         "slide_index": 35,
         "text": [
-          "<span style=\"color: #00B050;\"><strong>CẤU TRÚC 6</strong></span>",
-          "<strong>[VẬT] </strong><strong>+ </strong><span style=\"color: #FF2F92;\"><strong>have/has </strong></span><strong>+ </strong><span style=\"color: #FF2F92;\"><strong>been V</strong></span><span style=\"color: #FF2F92;\"><strong>3</strong></span><span style=\"color: #FF2F92;\"><strong>ed </strong></span><strong>+ </strong><strong>cụm giới từ chỉ vị trí.</strong>",
-          "<strong> </strong><strong>VÍ DỤ:</strong>",
-          "• <strong>The books </strong><span style=\"color: #FF2F92;\"><strong>have been arraged </strong></span><strong>on the shelf</strong>. ",
-          "• <strong>The bag </strong><span style=\"color: #FF2F92;\"><strong>has been placed</strong></span><strong> </strong><strong>on the table</strong>.",
-          "→ Cấu trúc này dùng để nhấn mạnh <strong>kết quả của một hành động đã hoàn tất trước đó</strong>. <span style=\"color: #C00000;\">→ Chỉ chọn cấu trúc này khi </span><span style=\"color: #C00000;\"><strong>KHÔNG</strong></span><span style=\"color: #C00000;\"> có đáp án nào khác mô tả đúng vật trong tranh.</span>"
+          "<div style=\"background: #f0fdf4; border-left: 4px solid #00B050; padding: 16px; margin-bottom: 20px; border-radius: 4px;\">\n  <div style=\"color: #00B050; font-weight: bold; font-size: 1.2rem; margin-bottom: 8px;\">CẤU TRÚC 6</div>\n  <div style=\"font-size: 1.4rem; color: #333;\"><strong>[VẬT] </strong><strong>+ </strong><span style=\"color: #FF2F92;\"><strong>have/has </strong></span><strong>+ </strong><span style=\"color: #FF2F92;\"><strong>been V</strong></span><span style=\"color: #FF2F92;\"><strong>3</strong></span><span style=\"color: #FF2F92;\"><strong>ed </strong></span><strong>+ </strong><strong>cụm giới từ chỉ vị trí.</strong></div>\n</div>",
+          "<div style=\"background: #f8fafc; padding: 16px; border-radius: 8px; margin-bottom: 20px;\">\n  <div style=\"font-weight: bold; color: #475569; margin-bottom: 12px; font-size: 1.1rem;\">VÍ DỤ:</div>\n  <div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>The books </strong><span style=\"color: #FF2F92;\"><strong>have been arraged </strong></span><strong>on the shelf</strong>. </div><div style=\"margin-bottom: 8px; padding-left: 12px; border-left: 2px solid #cbd5e1; font-size: 1.2rem;\">• <strong>The bag </strong><span style=\"color: #FF2F92;\"><strong>has been placed</strong></span><strong> </strong><strong>on the table</strong>.</div>\n</div>",
+          "<div style=\"background: #fffbeb; padding: 16px; border-radius: 8px; color: #b45309; font-size: 1.1rem;\">\n  <span style=\"font-weight: bold;\">💡 Lưu ý:</span><br>→ Cấu trúc này dùng để nhấn mạnh <strong>kết quả của một hành động đã hoàn tất trước đó</strong>. <span style=\"color: #C00000;\">→ Chỉ chọn cấu trúc này khi </span><span style=\"color: #C00000;\"><strong>KHÔNG</strong></span><span style=\"color: #C00000;\"> có đáp án nào khác mô tả đúng vật trong tranh.</span>\n</div>"
         ],
         "images": [],
         "audio": null
@@ -2135,149 +2117,204 @@ window.part01Data = [
       {
         "slide_index": 36,
         "text": [
-          "<strong>BÀI TẬP </strong>",
-          "<strong>ÁP DỤNG</strong>"
+          "<span style=\"color: #FF0000;\"><strong>BÀI TẬP </strong></span>",
+          "<span style=\"color: #FF0000;\"><strong>ÁP DỤNG</strong></span>"
         ],
         "images": [],
         "audio": null
       },
       {
         "slide_index": 37,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) The cars </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">being transported </span><span style=\"color: #0070C0;\">in a truck.</span>",
-          "<span style=\"color: #0070C0;\">(B) The cars </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">being fixed</span><span style=\"color: #0070C0;\">.</span>",
-          "<span style=\"color: #0070C0;\">(C) There </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">many people</span><span style=\"color: #00B050;\"> </span><span style=\"color: #0070C0;\">in the cars.</span>",
-          "<span style=\"color: #0070C0;\">(D) There </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">cars</span><span style=\"color: #00B050;\"> </span><span style=\"color: #0070C0;\">on the top level of the truck.</span>"
-        ],
+        "text": [],
         "images": [
           "slide_185_img_3.png"
         ],
-        "audio": "media37.mp3"
+        "audio": "media37.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">The cars </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">being transported </span><span style=\"color: #0070C0;\">in a truck.</span>",
+            "<span style=\"color: #0070C0;\">The cars </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">being fixed</span><span style=\"color: #0070C0;\">.</span>",
+            "<span style=\"color: #0070C0;\">There </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">many people</span><span style=\"color: #00B050;\"> </span><span style=\"color: #0070C0;\">in the cars.</span>",
+            "<span style=\"color: #0070C0;\">There </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">cars</span><span style=\"color: #00B050;\"> </span><span style=\"color: #0070C0;\">on the top level of the truck.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 38,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) A beverage </span><span style=\"color: #FF0000;\">is being poured </span><span style=\"color: #0070C0;\">into a glass. </span>",
-          "<span style=\"color: #0070C0;\">(B) Some flowers </span><span style=\"color: #FF0000;\">are being arranged </span><span style=\"color: #0070C0;\">in a vase. </span>",
-          "<span style=\"color: #0070C0;\">(C) A woman </span><span style=\"color: #FF0000;\">is folding </span><span style=\"color: #0070C0;\">a napkin.</span>",
-          "<span style=\"color: #0070C0;\">(D) A woman </span><span style=\"color: #FF0000;\">is wiping off </span><span style=\"color: #0070C0;\">a table.</span>"
-        ],
+        "text": [],
         "images": [
           "slide_186_img_3.png"
         ],
-        "audio": "media37.mp3"
+        "audio": "media37.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">A beverage </span><span style=\"color: #FF0000;\">is being poured </span><span style=\"color: #0070C0;\">into a glass. </span>",
+            "<span style=\"color: #0070C0;\">Some flowers </span><span style=\"color: #FF0000;\">are being arranged </span><span style=\"color: #0070C0;\">in a vase. </span>",
+            "<span style=\"color: #0070C0;\">A woman </span><span style=\"color: #FF0000;\">is folding </span><span style=\"color: #0070C0;\">a napkin.</span>",
+            "<span style=\"color: #0070C0;\">A woman </span><span style=\"color: #FF0000;\">is wiping off </span><span style=\"color: #0070C0;\">a table.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 39,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) </span><span style=\"color: #0070C0;\">Some customers </span><span style=\"color: #FF0000;\">are leaving </span><span style=\"color: #0070C0;\">a shop.</span>",
-          "<span style=\"color: #0070C0;\">(B) </span><span style=\"color: #0070C0;\">A seating area </span><span style=\"color: #FF0000;\">is decorated </span><span style=\"color: #0070C0;\">with plants.</span>",
-          "<span style=\"color: #0070C0;\">(C) </span><span style=\"color: #0070C0;\">A worker </span><span style=\"color: #FF0000;\">is fixing </span><span style=\"color: #0070C0;\">some light fixtures.</span>",
-          "<span style=\"color: #0070C0;\">(D) </span><span style=\"color: #0070C0;\">A bench </span><span style=\"color: #FF0000;\">is being moved </span><span style=\"color: #0070C0;\">into a corner.</span>"
-        ],
+        "text": [],
         "images": [
           "slide_187_img_3.png"
         ],
-        "audio": "media38.mp3"
+        "audio": "media38.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\"></span><span style=\"color: #0070C0;\">Some customers </span><span style=\"color: #FF0000;\">are leaving </span><span style=\"color: #0070C0;\">a shop.</span>",
+            "<span style=\"color: #0070C0;\"></span><span style=\"color: #0070C0;\">A seating area </span><span style=\"color: #FF0000;\">is decorated </span><span style=\"color: #0070C0;\">with plants.</span>",
+            "<span style=\"color: #0070C0;\"></span><span style=\"color: #0070C0;\">A worker </span><span style=\"color: #FF0000;\">is fixing </span><span style=\"color: #0070C0;\">some light fixtures.</span>",
+            "<span style=\"color: #0070C0;\"></span><span style=\"color: #0070C0;\">A bench </span><span style=\"color: #FF0000;\">is being moved </span><span style=\"color: #0070C0;\">into a corner.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 40,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) The plane </span><span style=\"color: #FF0000;\">is docked </span><span style=\"color: #0070C0;\">at the airport.</span>",
-          "<span style=\"color: #0070C0;\">(B) There is luggage </span><span style=\"color: #FF0000;\">being put onto </span><span style=\"color: #0070C0;\">the plane.</span>",
-          "<span style=\"color: #0070C0;\">(C) There are many people </span><span style=\"color: #FF0000;\">boarding</span><span style=\"color: #0070C0;\"> the plane.</span>",
-          "<span style=\"color: #0070C0;\">(D) There are maintenance workers </span><span style=\"color: #FF0000;\">fixing</span><span style=\"color: #0070C0;\"> the plane.</span>"
-        ],
+        "text": [],
         "images": [
           "slide_188_img_3.png"
         ],
-        "audio": "media38.mp3"
+        "audio": "media38.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">The plane </span><span style=\"color: #FF0000;\">is docked </span><span style=\"color: #0070C0;\">at the airport.</span>",
+            "<span style=\"color: #0070C0;\">There is luggage </span><span style=\"color: #FF0000;\">being put onto </span><span style=\"color: #0070C0;\">the plane.</span>",
+            "<span style=\"color: #0070C0;\">There are many people </span><span style=\"color: #FF0000;\">boarding</span><span style=\"color: #0070C0;\"> the plane.</span>",
+            "<span style=\"color: #0070C0;\">There are maintenance workers </span><span style=\"color: #FF0000;\">fixing</span><span style=\"color: #0070C0;\"> the plane.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 41,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are cleaners </span><span style=\"color: #0070C0;\">in the lecture hall.</span>",
-          "<span style=\"color: #0070C0;\">(B) The lecture hall </span><span style=\"color: #FF0000;\">is occupied</span><span style=\"color: #0070C0;\">.</span>",
-          "<span style=\"color: #0070C0;\">(C) There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are many people </span><span style=\"color: #0070C0;\">in the lecture hall.</span>",
-          "<span style=\"color: #0070C0;\">(D) The lecture hall </span><span style=\"color: #FF0000;\">is unoccupied</span><span style=\"color: #0070C0;\">. </span>"
-        ],
+        "text": [],
         "images": [
           "slide_189_img_2.png"
         ],
-        "audio": "media39.mp3"
+        "audio": "media39.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are cleaners </span><span style=\"color: #0070C0;\">in the lecture hall.</span>",
+            "<span style=\"color: #0070C0;\">The lecture hall </span><span style=\"color: #FF0000;\">is occupied</span><span style=\"color: #0070C0;\">.</span>",
+            "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are many people </span><span style=\"color: #0070C0;\">in the lecture hall.</span>",
+            "<span style=\"color: #0070C0;\">The lecture hall </span><span style=\"color: #FF0000;\">is unoccupied</span><span style=\"color: #0070C0;\">. </span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 42,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) She </span><span style=\"color: #FF0000;\">is wearing </span><span style=\"color: #0070C0;\">long pants.</span>",
-          "<span style=\"color: #0070C0;\">(B) She </span><span style=\"color: #FF0000;\">is paying </span><span style=\"color: #0070C0;\">the bill.</span>",
-          "<span style=\"color: #0070C0;\">(C) Her reflection </span><span style=\"color: #FF0000;\">is in </span><span style=\"color: #0070C0;\">the mirror.</span>",
-          "<span style=\"color: #0070C0;\">(D) She </span><span style=\"color: #FF0000;\">is looking at </span><span style=\"color: #0070C0;\">her reflection. </span>"
-        ],
+        "text": [],
         "images": [
           "slide_190_img_3.png"
         ],
-        "audio": "media39.mp3"
+        "audio": "media39.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">She </span><span style=\"color: #FF0000;\">is wearing </span><span style=\"color: #0070C0;\">long pants.</span>",
+            "<span style=\"color: #0070C0;\">She </span><span style=\"color: #FF0000;\">is paying </span><span style=\"color: #0070C0;\">the bill.</span>",
+            "<span style=\"color: #0070C0;\">Her reflection </span><span style=\"color: #FF0000;\">is in </span><span style=\"color: #0070C0;\">the mirror.</span>",
+            "<span style=\"color: #0070C0;\">She </span><span style=\"color: #FF0000;\">is looking at </span><span style=\"color: #0070C0;\">her reflection. </span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 43,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) The frames </span><span style=\"color: #FF0000;\">are being hung </span><span style=\"color: #0070C0;\">on</span><span style=\"color: #FF0000;\"> </span><span style=\"color: #0070C0;\">the wall.</span>",
-          "<span style=\"color: #0070C0;\">(B) The men </span><span style=\"color: #FF0000;\">are talking to </span><span style=\"color: #0070C0;\">each other on the phone.</span>",
-          "<span style=\"color: #0070C0;\">(C) Documents </span><span style=\"color: #FF0000;\">have been spread out </span><span style=\"color: #0070C0;\">on the desk. </span>",
-          "<span style=\"color: #0070C0;\">(D) One man </span><span style=\"color: #FF0000;\">is pointing </span><span style=\"color: #FF0000;\">at </span><span style=\"color: #0070C0;\">something on the board. </span>"
-        ],
+        "text": [],
         "images": [
           "slide_191_img_2.png"
         ],
-        "audio": "media40.mp3"
+        "audio": "media40.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">The frames </span><span style=\"color: #FF0000;\">are being hung </span><span style=\"color: #0070C0;\">on</span><span style=\"color: #FF0000;\"> </span><span style=\"color: #0070C0;\">the wall.</span>",
+            "<span style=\"color: #0070C0;\">The men </span><span style=\"color: #FF0000;\">are talking to </span><span style=\"color: #0070C0;\">each other on the phone.</span>",
+            "<span style=\"color: #0070C0;\">Documents </span><span style=\"color: #FF0000;\">have been spread out </span><span style=\"color: #0070C0;\">on the desk. </span>",
+            "<span style=\"color: #0070C0;\">One man </span><span style=\"color: #FF0000;\">is pointing </span><span style=\"color: #FF0000;\">at </span><span style=\"color: #0070C0;\">something on the board. </span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 44,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) A bag </span><span style=\"color: #FF0000;\">has been placed </span><span style=\"color: #0070C0;\">on the floor.</span>",
-          "<span style=\"color: #0070C0;\">(B) The woman </span><span style=\"color: #FF0000;\">is putting</span><span style=\"color: #0070C0;\"> a note on the bulletin board.</span>",
-          "<span style=\"color: #0070C0;\">(C) A newspaper </span><span style=\"color: #FF0000;\">has been spread out </span><span style=\"color: #0070C0;\">on the carpet.</span>",
-          "<span style=\"color: #0070C0;\">(D) The woman </span><span style=\"color: #FF0000;\">is arranging </span><span style=\"color: #0070C0;\">pillows on a sofa.</span>"
-        ],
+        "text": [],
         "images": [
           "slide_192_img_3.png"
         ],
-        "audio": "media40.mp3"
+        "audio": "media40.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">A bag </span><span style=\"color: #FF0000;\">has been placed </span><span style=\"color: #0070C0;\">on the floor.</span>",
+            "<span style=\"color: #0070C0;\">The woman </span><span style=\"color: #FF0000;\">is putting</span><span style=\"color: #0070C0;\"> a note on the bulletin board.</span>",
+            "<span style=\"color: #0070C0;\">A newspaper </span><span style=\"color: #FF0000;\">has been spread out </span><span style=\"color: #0070C0;\">on the carpet.</span>",
+            "<span style=\"color: #0070C0;\">The woman </span><span style=\"color: #FF0000;\">is arranging </span><span style=\"color: #0070C0;\">pillows on a sofa.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 45,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are papers piled </span><span style=\"color: #0070C0;\">on a chair.</span>",
-          "<span style=\"color: #0070C0;\">(B) There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are cabinets above </span><span style=\"color: #0070C0;\">a computer monitor.</span>",
-          "<span style=\"color: #0070C0;\">(C) The man </span><span style=\"color: #FF0000;\">is opening </span><span style=\"color: #0070C0;\">a window.</span>",
-          "<span style=\"color: #0070C0;\">(D) The man </span><span style=\"color: #FF0000;\">is reaching for </span><span style=\"color: #0070C0;\">a telephone.</span>"
-        ],
+        "text": [],
         "images": [
           "slide_193_img_3.png"
         ],
-        "audio": "media41.mp3"
+        "audio": "media41.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are papers piled </span><span style=\"color: #0070C0;\">on a chair.</span>",
+            "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are cabinets above </span><span style=\"color: #0070C0;\">a computer monitor.</span>",
+            "<span style=\"color: #0070C0;\">The man </span><span style=\"color: #FF0000;\">is opening </span><span style=\"color: #0070C0;\">a window.</span>",
+            "<span style=\"color: #0070C0;\">The man </span><span style=\"color: #FF0000;\">is reaching for </span><span style=\"color: #0070C0;\">a telephone.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 46,
-        "text": [
-          "<span style=\"color: #0070C0;\">(A) There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are some tables and chairs </span><span style=\"color: #0070C0;\">outdoors.</span>",
-          "<span style=\"color: #0070C0;\">(B) There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are some people sitting </span><span style=\"color: #0070C0;\">at the tables.</span>",
-          "<span style=\"color: #0070C0;\">(C) There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are plastic umbrellas </span><span style=\"color: #0070C0;\">on the tables.</span>",
-          "<span style=\"color: #0070C0;\">(D) There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are many flowers </span><span style=\"color: #0070C0;\">in the garden.</span>"
-        ],
+        "text": [],
         "images": [
           "slide_194_img_3.png"
         ],
-        "audio": "media41.mp3"
+        "audio": "media41.mp3",
+        "practice": {
+          "options": [
+            "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are some tables and chairs </span><span style=\"color: #0070C0;\">outdoors.</span>",
+            "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are some people sitting </span><span style=\"color: #0070C0;\">at the tables.</span>",
+            "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are plastic umbrellas </span><span style=\"color: #0070C0;\">on the tables.</span>",
+            "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are many flowers </span><span style=\"color: #0070C0;\">in the garden.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 47,
-        "text": [
-          "<span style=\"color: #FF0000;\"><strong>PRACTICE</strong></span>"
-        ],
+        "text": [],
         "images": [],
-        "audio": null
+        "audio": null,
+        "practice": {
+          "options": [
+            "<span style=\"color: #FF0000;\"><strong>PRACTICE</strong></span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 48,
@@ -2285,19 +2322,29 @@ window.part01Data = [
         "images": [
           "slide_196_img_2.png"
         ],
-        "audio": "media42.mp3"
+        "audio": "media42.mp3",
+        "practice": {
+          "options": [],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 49,
-        "text": [
-          "Enter",
-          "<span style=\"color: #0070C0;\">(A) A kayak </span><span style=\"color: #FF0000;\">is being paddled </span><span style=\"color: #00B050;\">down a river</span><span style=\"color: #0070C0;\">. </span>",
-          "<span style=\"color: #0070C0;\">(B) A pile of bricks </span><span style=\"color: #FF0000;\">has been left </span><span style=\"color: #00B050;\">on a walkway</span><span style=\"color: #0070C0;\">. </span>",
-          "<span style=\"color: #0070C0;\">(C) Some roofs </span><span style=\"color: #FF0000;\">are being repaired</span><span style=\"color: #0070C0;\">. </span>",
-          "<span style=\"color: #0070C0;\">(D) Some chairs </span><span style=\"color: #FF0000;\">have been placed</span><span style=\"color: #00B050;\"> along a canal</span><span style=\"color: #0070C0;\">.</span>"
-        ],
+        "text": [],
         "images": [],
-        "audio": "media42.mp3"
+        "audio": "media42.mp3",
+        "practice": {
+          "options": [
+            "Enter",
+            "<span style=\"color: #0070C0;\">A kayak </span><span style=\"color: #FF0000;\">is being paddled </span><span style=\"color: #00B050;\">down a river</span><span style=\"color: #0070C0;\">. </span>",
+            "<span style=\"color: #0070C0;\">A pile of bricks </span><span style=\"color: #FF0000;\">has been left </span><span style=\"color: #00B050;\">on a walkway</span><span style=\"color: #0070C0;\">. </span>",
+            "<span style=\"color: #0070C0;\">Some roofs </span><span style=\"color: #FF0000;\">are being repaired</span><span style=\"color: #0070C0;\">. </span>",
+            "<span style=\"color: #0070C0;\">Some chairs </span><span style=\"color: #FF0000;\">have been placed</span><span style=\"color: #00B050;\"> along a canal</span><span style=\"color: #0070C0;\">.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 50,
@@ -2305,19 +2352,29 @@ window.part01Data = [
         "images": [
           "slide_198_img_3.jpg"
         ],
-        "audio": "media42.mp3"
+        "audio": "media42.mp3",
+        "practice": {
+          "options": [],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 51,
-        "text": [
-          "Enter",
-          "<span style=\"color: #0070C0;\">(A) Cars </span><span style=\"color: #FF0000;\">are lined up </span><span style=\"color: #00B050;\">at a </span><span style=\"color: #00B050;\">toll booth</span><span style=\"color: #0070C0;\">. </span>",
-          "<span style=\"color: #0070C0;\">(B) Some road signs </span><span style=\"color: #FF0000;\">are hanging </span><span style=\"color: #00B050;\">from the ceiling</span><span style=\"color: #0070C0;\">. </span>",
-          "<span style=\"color: #0070C0;\">(C) A tunnel </span><span style=\"color: #FF0000;\">has been closed </span><span style=\"color: #00B050;\">for construction</span><span style=\"color: #0070C0;\">. </span>",
-          "<span style=\"color: #0070C0;\">(D) Some people </span><span style=\"color: #FF0000;\">are standing </span><span style=\"color: #00B050;\">on the side of a street</span><span style=\"color: #0070C0;\">.</span>"
-        ],
+        "text": [],
         "images": [],
-        "audio": "media42.mp3"
+        "audio": "media42.mp3",
+        "practice": {
+          "options": [
+            "Enter",
+            "<span style=\"color: #0070C0;\">Cars </span><span style=\"color: #FF0000;\">are lined up </span><span style=\"color: #00B050;\">at a </span><span style=\"color: #00B050;\">toll booth</span><span style=\"color: #0070C0;\">. </span>",
+            "<span style=\"color: #0070C0;\">Some road signs </span><span style=\"color: #FF0000;\">are hanging </span><span style=\"color: #00B050;\">from the ceiling</span><span style=\"color: #0070C0;\">. </span>",
+            "<span style=\"color: #0070C0;\">A tunnel </span><span style=\"color: #FF0000;\">has been closed </span><span style=\"color: #00B050;\">for construction</span><span style=\"color: #0070C0;\">. </span>",
+            "<span style=\"color: #0070C0;\">Some people </span><span style=\"color: #FF0000;\">are standing </span><span style=\"color: #00B050;\">on the side of a street</span><span style=\"color: #0070C0;\">.</span>"
+          ],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 52,
@@ -2325,7 +2382,12 @@ window.part01Data = [
         "images": [
           "slide_200_img_3.png"
         ],
-        "audio": "media42.mp3"
+        "audio": "media42.mp3",
+        "practice": {
+          "options": [],
+          "answer": "",
+          "vocab": []
+        }
       },
       {
         "slide_index": 53,
