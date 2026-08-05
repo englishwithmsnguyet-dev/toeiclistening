@@ -3260,8 +3260,8 @@ document.addEventListener("DOMContentLoaded", () => {
             p.options.forEach((opt, i) => {
                 const isCorrect = labels[i] === p.answer;
                 optionsHtml += `
-                    <div class="practice-option" data-correct="${isCorrect}" style="padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;" onclick="selectPracticeOption(this)">
-                        <strong style="margin-right: 8px; font-size: 1.1em;">${labels[i]}.</strong> <span>${opt}</span>
+                    <div class="practice-option" data-correct="${isCorrect}" style="display: flex; align-items: flex-start; gap: 8px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;" onclick="selectPracticeOption(this)">
+                        <strong style="font-size: 1.1em; flex-shrink: 0; min-width: 24px;">${labels[i]}.</strong> <span style="flex: 1;">${opt}</span>
                     </div>
                 `;
             });
@@ -3276,7 +3276,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
             });
 
+            const hideRedWordCSS = `
+                <style>
+                    #practice-options-container:not([data-checked="true"]) .practice-option span[style*="color: #FF0000"] {
+                        color: transparent !important;
+                        border-bottom: 1px solid #94a3b8;
+                    }
+                </style>
+            `;
+
             contentContainer.innerHTML = `
+                ${hideRedWordCSS}
                 <div style="display: flex; flex-direction: row; gap: 40px; flex-wrap: nowrap; align-items: stretch; justify-content: center; width: 100%;">
                     <div style="flex: 1; max-width: 35%; display: flex; justify-content: center; align-items: flex-start;">
                         <img src="${imgPath}" alt="Practice Image" style="width: 100%; max-height: 450px; object-fit: contain; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
