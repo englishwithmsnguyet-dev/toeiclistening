@@ -2410,7 +2410,9 @@ window.part01Data = [
                                 "en": "wiping off",
                                 "ipa": "/ˈwaɪpɪŋ ɒf/",
                                 "pos": "v",
-                                "vi": "lau"
+                                "vi": "lau",
+                                "base": "wipe off",
+                                "gerund": "wiping off"
                             },
                             {
                                 "en": "bench",
@@ -2422,7 +2424,9 @@ window.part01Data = [
                                 "en": "throwing away",
                                 "ipa": "/ˈθrəʊɪŋ əˈweɪ/",
                                 "pos": "v",
-                                "vi": "ném đi"
+                                "vi": "ném đi",
+                                "base": "throw away",
+                                "gerund": "throwing away"
                             },
                             {
                                 "en": "plate",
@@ -2462,7 +2466,9 @@ window.part01Data = [
                                 "en": "brushing",
                                 "ipa": "/ˈbrʌʃɪŋ/",
                                 "pos": "v",
-                                "vi": "phủi"
+                                "vi": "phủi",
+                                "base": "brush",
+                                "gerund": "brushing"
                             },
                             {
                                 "en": "snow",
@@ -2480,13 +2486,17 @@ window.part01Data = [
                                 "en": "standing",
                                 "ipa": "/ˈstændɪŋ/",
                                 "pos": "v",
-                                "vi": "đứng"
+                                "vi": "đứng",
+                                "base": "stand",
+                                "gerund": "standing"
                             },
                             {
                                 "en": "shoveling",
                                 "ipa": "/ˈʃʌvəlɪŋ/",
                                 "pos": "v",
-                                "vi": "xúc"
+                                "vi": "xúc",
+                                "base": "shovel",
+                                "gerund": "shoveling"
                             },
                             {
                                 "en": "walkway",
@@ -2498,7 +2508,9 @@ window.part01Data = [
                                 "en": "running",
                                 "ipa": "/ˈrʌnɪŋ/",
                                 "pos": "v",
-                                "vi": "chạy"
+                                "vi": "chạy",
+                                "base": "run",
+                                "gerund": "running"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) The man is brushing snow off the roof of a car.<br><i>(A) Người đàn ông đang phủi tuyết khỏi nóc ô tô.</i><br>(B) The man is standing in the snow beside a car.<br><i>(B) Người đàn ông đang đứng trong tuyết bên cạnh một chiếc ô tô.</i><br>(C) The man is shoveling snow from a walkway.<br><i>(C) Người đàn ông đang xúc tuyết trên lối đi.</i><br>(D) The man is running through the snow.<br><i>(D) Người đàn ông đang chạy qua tuyết.</i><br>",
@@ -2532,7 +2544,9 @@ window.part01Data = [
                                 "en": "hanging",
                                 "ipa": "/ˈhæŋɪŋ/",
                                 "pos": "v",
-                                "vi": "treo"
+                                "vi": "treo",
+                                "base": "hang",
+                                "gerund": "hanging"
                             },
                             {
                                 "en": "gallery",
@@ -2550,7 +2564,9 @@ window.part01Data = [
                                 "en": "rearranging",
                                 "ipa": "/ˌriːəˈreɪndʒɪŋ/",
                                 "pos": "v",
-                                "vi": "sắp xếp lại"
+                                "vi": "sắp xếp lại",
+                                "base": "rearrange",
+                                "gerund": "rearranging"
                             },
                             {
                                 "en": "cushions",
@@ -2562,7 +2578,9 @@ window.part01Data = [
                                 "en": "painting",
                                 "ipa": "/ˈpeɪntɪŋ/",
                                 "pos": "v",
-                                "vi": "vẽ"
+                                "vi": "vẽ",
+                                "base": "paint",
+                                "gerund": "painting"
                             },
                             {
                                 "en": "picture",
@@ -2620,7 +2638,9 @@ window.part01Data = [
                                 "en": "scattered",
                                 "ipa": "/ˈskætərd/",
                                 "pos": "v",
-                                "vi": "nằm rải rác"
+                                "vi": "nằm rải rác",
+                                "base": "scatter",
+                                "gerund": "scattering"
                             },
                             {
                                 "en": "empty racks",
@@ -2632,13 +2652,17 @@ window.part01Data = [
                                 "en": "lined up",
                                 "ipa": "/laɪnd ʌp/",
                                 "pos": "v",
-                                "vi": "xếp hàng"
+                                "vi": "xếp hàng",
+                                "base": "line up",
+                                "gerund": "lining up"
                             },
                             {
                                 "en": "displayed",
                                 "ipa": "/dɪˈspleɪd/",
                                 "pos": "v",
-                                "vi": "trưng bày"
+                                "vi": "trưng bày",
+                                "base": "display",
+                                "gerund": "displaying"
                             },
                             {
                                 "en": "tent",
@@ -2684,7 +2708,9 @@ window.part01Data = [
                                 "en": "suspended",
                                 "ipa": "/səˈspendɪd/",
                                 "pos": "v",
-                                "vi": "treo"
+                                "vi": "treo",
+                                "base": "suspend",
+                                "gerund": "suspending"
                             },
                             {
                                 "en": "ceiling",
@@ -2696,7 +2722,9 @@ window.part01Data = [
                                 "en": "stacked",
                                 "ipa": "/stækt/",
                                 "pos": "v",
-                                "vi": "xếp"
+                                "vi": "xếp",
+                                "base": "stack",
+                                "gerund": "stacking"
                             },
                             {
                                 "en": "entryway",
@@ -2708,7 +2736,9 @@ window.part01Data = [
                                 "en": "set up",
                                 "ipa": "/set ʌp/",
                                 "pos": "v",
-                                "vi": "sắp xếp"
+                                "vi": "sắp xếp",
+                                "base": "set up",
+                                "gerund": "setting up"
                             },
                             {
                                 "en": "rug",
@@ -2720,7 +2750,9 @@ window.part01Data = [
                                 "en": "rolled up",
                                 "ipa": "/rəʊld ʌp/",
                                 "pos": "v",
-                                "vi": "cuộn lên"
+                                "vi": "cuộn lên",
+                                "base": "roll up",
+                                "gerund": "rolling up"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Potted plants have been suspended from a ceiling.<br><i>(A) Những chậu cây được treo trên trần nhà.</i><br>(B) Chairs have been stacked in front of an entryway.<br><i>(B) Ghế đã được xếp trước lối vào.</i><br>(C) A computer station has been set up on a desk.<br><i>(C) Một chiếc máy tính đã được sắp xếp trên bàn.</i><br>(D) A rug has been rolled up against a wall.<br><i>(D) Một tấm thảm đã được cuộn lên tường.</i><br>",
@@ -2754,7 +2786,9 @@ window.part01Data = [
                                 "en": "sweeping",
                                 "ipa": "/ˈswiːpɪŋ/",
                                 "pos": "v",
-                                "vi": "quét"
+                                "vi": "quét",
+                                "base": "sweep",
+                                "gerund": "sweeping"
                             },
                             {
                                 "en": "patio",
@@ -2766,7 +2800,9 @@ window.part01Data = [
                                 "en": "replacing",
                                 "ipa": "/rɪˈpleɪsɪŋ/",
                                 "pos": "v",
-                                "vi": "thay thế"
+                                "vi": "thay thế",
+                                "base": "replace",
+                                "gerund": "replacing"
                             },
                             {
                                 "en": "flooring",
@@ -2778,7 +2814,9 @@ window.part01Data = [
                                 "en": "taken off",
                                 "ipa": "/ˈteɪkən ɒf/",
                                 "pos": "v",
-                                "vi": "tháo ra"
+                                "vi": "tháo ra",
+                                "base": "take off",
+                                "gerund": "taking off"
                             },
                             {
                                 "en": "frame",
@@ -2831,7 +2869,9 @@ window.part01Data = [
                                 "en": "inserting",
                                 "ipa": "/ɪnˈsɜːtɪŋ/",
                                 "pos": "v",
-                                "vi": "cắm"
+                                "vi": "cắm",
+                                "base": "insert",
+                                "gerund": "inserting"
                             },
                             {
                                 "en": "outlet",
@@ -2843,7 +2883,9 @@ window.part01Data = [
                                 "en": "pressing",
                                 "ipa": "/ˈpresɪŋ/",
                                 "pos": "v",
-                                "vi": "nhấn"
+                                "vi": "nhấn",
+                                "base": "press",
+                                "gerund": "pressing"
                             },
                             {
                                 "en": "button",
@@ -2855,7 +2897,9 @@ window.part01Data = [
                                 "en": "gripping",
                                 "ipa": "/ˈɡrɪpɪŋ/",
                                 "pos": "v",
-                                "vi": "nắm chặt"
+                                "vi": "nắm chặt",
+                                "base": "grip",
+                                "gerund": "gripping"
                             },
                             {
                                 "en": "drawer",
@@ -2867,7 +2911,9 @@ window.part01Data = [
                                 "en": "tacking",
                                 "ipa": "/ˈtækɪŋ/",
                                 "pos": "v",
-                                "vi": "dán"
+                                "vi": "dán",
+                                "base": "tack",
+                                "gerund": "tacking"
                             },
                             {
                                 "en": "notice",
@@ -2913,7 +2959,9 @@ window.part01Data = [
                                 "en": "replaced",
                                 "ipa": "/rɪˈpleɪst/",
                                 "pos": "v",
-                                "vi": "thay thế"
+                                "vi": "thay thế",
+                                "base": "replace",
+                                "gerund": "replacing"
                             },
                             {
                                 "en": "pillow",
@@ -2925,13 +2973,17 @@ window.part01Data = [
                                 "en": "arranged",
                                 "ipa": "/əˈreɪndʒd/",
                                 "pos": "v",
-                                "vi": "đặt"
+                                "vi": "đặt",
+                                "base": "arrange",
+                                "gerund": "arranging"
                             },
                             {
                                 "en": "cleared off",
                                 "ipa": "/klɪəd ɒf/",
                                 "pos": "v",
-                                "vi": "dọn sạch"
+                                "vi": "dọn sạch",
+                                "base": "clear off",
+                                "gerund": "clearing off"
                             },
                             {
                                 "en": "wooden boards",
@@ -2943,7 +2995,9 @@ window.part01Data = [
                                 "en": "painted",
                                 "ipa": "/ˈpeɪntɪd/",
                                 "pos": "v",
-                                "vi": "sơn"
+                                "vi": "sơn",
+                                "base": "paint",
+                                "gerund": "painting"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some window shutters are being replaced.<br><i>(A) Một số cửa chớp đang được thay thế.</i><br>(B) A pillow is being arranged on a seat.<br><i>(B) Một chiếc gối đang được đặt trên ghế.</i><br>(C) An outdoor table is being cleared off.<br><i>(C) Một chiếc bàn ngoài trời đang được dọn sạch.</i><br>(D) Some wooden boards are being painted.<br><i>(D) Một số tấm gỗ đang được sơn.</i><br>",
@@ -2983,7 +3037,9 @@ window.part01Data = [
                                 "en": "discarded",
                                 "ipa": "/dɪsˈkɑːdɪd/",
                                 "pos": "v",
-                                "vi": "bỏ đi"
+                                "vi": "bỏ đi",
+                                "base": "discard",
+                                "gerund": "discarding"
                             },
                             {
                                 "en": "bin",
@@ -2995,7 +3051,9 @@ window.part01Data = [
                                 "en": "emptied",
                                 "ipa": "/ˈemptid/",
                                 "pos": "v",
-                                "vi": "đổ"
+                                "vi": "đổ",
+                                "base": "empty",
+                                "gerund": "emptying"
                             },
                             {
                                 "en": "sink",
@@ -3047,7 +3105,9 @@ window.part01Data = [
                                 "en": "chopping",
                                 "ipa": "/ˈtʃɒpɪŋ/",
                                 "pos": "v",
-                                "vi": "chặt"
+                                "vi": "chặt",
+                                "base": "chop",
+                                "gerund": "chopping"
                             },
                             {
                                 "en": "wood",
@@ -3059,7 +3119,9 @@ window.part01Data = [
                                 "en": "scattered",
                                 "ipa": "/ˈskætəd/",
                                 "pos": "v",
-                                "vi": "rải rác"
+                                "vi": "rải rác",
+                                "base": "scatter",
+                                "gerund": "scattering"
                             },
                             {
                                 "en": "grass",
@@ -3071,13 +3133,17 @@ window.part01Data = [
                                 "en": "closing",
                                 "ipa": "/ˈkləʊzɪŋ/",
                                 "pos": "v",
-                                "vi": "đóng"
+                                "vi": "đóng",
+                                "base": "close",
+                                "gerund": "closing"
                             },
                             {
                                 "en": "piled",
                                 "ipa": "/paɪld/",
                                 "pos": "v",
-                                "vi": "chất"
+                                "vi": "chất",
+                                "base": "pile",
+                                "gerund": "piling"
                             },
                             {
                                 "en": "fence",
@@ -3117,7 +3183,9 @@ window.part01Data = [
                                 "en": "standing in line",
                                 "ipa": "/ˈstændɪŋ ɪn laɪn/",
                                 "pos": "v",
-                                "vi": "xếp hàng"
+                                "vi": "xếp hàng",
+                                "base": "stand in line",
+                                "gerund": "standing in line"
                             },
                             {
                                 "en": "lobby",
@@ -3129,7 +3197,9 @@ window.part01Data = [
                                 "en": "loaded",
                                 "ipa": "/ˈləʊdɪd/",
                                 "pos": "v",
-                                "vi": "chất vào"
+                                "vi": "chất vào",
+                                "base": "load",
+                                "gerund": "loading"
                             },
                             {
                                 "en": "shopping bags",
@@ -3147,13 +3217,17 @@ window.part01Data = [
                                 "en": "set up",
                                 "ipa": "/set ʌp/",
                                 "pos": "v",
-                                "vi": "dựng"
+                                "vi": "dựng",
+                                "base": "set up",
+                                "gerund": "setting up"
                             },
                             {
                                 "en": "putting up",
                                 "ipa": "/ˈpʊtɪŋ ʌp/",
                                 "pos": "v",
-                                "vi": "dựng"
+                                "vi": "dựng",
+                                "base": "put up",
+                                "gerund": "putting up"
                             },
                             {
                                 "en": "canopy",
@@ -3199,7 +3273,9 @@ window.part01Data = [
                                 "en": "stacked",
                                 "ipa": "/stækt/",
                                 "pos": "v",
-                                "vi": "xếp"
+                                "vi": "xếp",
+                                "base": "stack",
+                                "gerund": "stacking"
                             },
                             {
                                 "en": "escalator",
@@ -3217,7 +3293,9 @@ window.part01Data = [
                                 "en": "lifted",
                                 "ipa": "/ˈlɪftɪd/",
                                 "pos": "v",
-                                "vi": "nâng lên"
+                                "vi": "nâng lên",
+                                "base": "lift",
+                                "gerund": "lifting"
                             },
                             {
                                 "en": "shuttle bus",
@@ -3229,7 +3307,9 @@ window.part01Data = [
                                 "en": "displayed",
                                 "ipa": "/dɪˈspleɪd/",
                                 "pos": "v",
-                                "vi": "trưng bày"
+                                "vi": "trưng bày",
+                                "base": "display",
+                                "gerund": "displaying"
                             },
                             {
                                 "en": "luggage rack",
@@ -3276,7 +3356,9 @@ window.part01Data = [
                                 "en": "cleaning",
                                 "ipa": "/ˈkliːnɪŋ/",
                                 "pos": "v",
-                                "vi": "lau chùi"
+                                "vi": "lau chùi",
+                                "base": "clean",
+                                "gerund": "cleaning"
                             },
                             {
                                 "en": "oven",
@@ -3288,7 +3370,9 @@ window.part01Data = [
                                 "en": "moving",
                                 "ipa": "/ˈmuːvɪŋ/",
                                 "pos": "v",
-                                "vi": "di chuyển"
+                                "vi": "di chuyển",
+                                "base": "move",
+                                "gerund": "moving"
                             },
                             {
                                 "en": "pot",
@@ -3300,7 +3384,9 @@ window.part01Data = [
                                 "en": "opening",
                                 "ipa": "/ˈəʊpənɪŋ/",
                                 "pos": "v",
-                                "vi": "mở"
+                                "vi": "mở",
+                                "base": "open",
+                                "gerund": "opening"
                             },
                             {
                                 "en": "cabinet",
@@ -3312,7 +3398,9 @@ window.part01Data = [
                                 "en": "holding",
                                 "ipa": "/ˈhəʊldɪŋ/",
                                 "pos": "v",
-                                "vi": "cầm"
+                                "vi": "cầm",
+                                "base": "hold",
+                                "gerund": "holding"
                             },
                             {
                                 "en": "towel",
@@ -3352,7 +3440,9 @@ window.part01Data = [
                                 "en": "putting",
                                 "ipa": "/ˈpʊtɪŋ/",
                                 "pos": "v",
-                                "vi": "bỏ"
+                                "vi": "bỏ",
+                                "base": "put",
+                                "gerund": "putting"
                             },
                             {
                                 "en": "trash",
@@ -3364,7 +3454,9 @@ window.part01Data = [
                                 "en": "taking off",
                                 "ipa": "/ˈteɪkɪŋ ɒf/",
                                 "pos": "v",
-                                "vi": "cởi"
+                                "vi": "cởi",
+                                "base": "take off",
+                                "gerund": "taking off"
                             },
                             {
                                 "en": "jackets",
@@ -3376,7 +3468,9 @@ window.part01Data = [
                                 "en": "facing",
                                 "ipa": "/ˈfeɪsɪŋ/",
                                 "pos": "v",
-                                "vi": "đối mặt"
+                                "vi": "đối mặt",
+                                "base": "face",
+                                "gerund": "facing"
                             },
                             {
                                 "en": "shelving unit",
@@ -3388,7 +3482,9 @@ window.part01Data = [
                                 "en": "painting",
                                 "ipa": "/ˈpeɪntɪŋ/",
                                 "pos": "v",
-                                "vi": "sơn"
+                                "vi": "sơn",
+                                "base": "paint",
+                                "gerund": "painting"
                             },
                             {
                                 "en": "room",
@@ -3428,7 +3524,9 @@ window.part01Data = [
                                 "en": "removing",
                                 "ipa": "/rɪˈmuːvɪŋ/",
                                 "pos": "v",
-                                "vi": "cởi"
+                                "vi": "cởi",
+                                "base": "remove",
+                                "gerund": "removing"
                             },
                             {
                                 "en": "hat",
@@ -3440,13 +3538,17 @@ window.part01Data = [
                                 "en": "extends",
                                 "ipa": "/ɪkˈstendz/",
                                 "pos": "v",
-                                "vi": "kéo dài"
+                                "vi": "kéo dài",
+                                "base": "extend",
+                                "gerund": "extending"
                             },
                             {
                                 "en": "installing",
                                 "ipa": "/ɪnˈstɔːlɪŋ/",
                                 "pos": "v",
-                                "vi": "lắp đặt"
+                                "vi": "lắp đặt",
+                                "base": "install",
+                                "gerund": "installing"
                             },
                             {
                                 "en": "sign",
@@ -3458,7 +3560,9 @@ window.part01Data = [
                                 "en": "gathered",
                                 "ipa": "/ˈɡæðəd/",
                                 "pos": "v",
-                                "vi": "tập hợp"
+                                "vi": "tập hợp",
+                                "base": "gather",
+                                "gerund": "gathering"
                             },
                             {
                                 "en": "circle",
@@ -3504,7 +3608,9 @@ window.part01Data = [
                                 "en": "left",
                                 "ipa": "/left/",
                                 "pos": "v",
-                                "vi": "để"
+                                "vi": "để",
+                                "base": "leave",
+                                "gerund": "leaving"
                             },
                             {
                                 "en": "tool sets",
@@ -3516,13 +3622,17 @@ window.part01Data = [
                                 "en": "laid out",
                                 "ipa": "/leɪd aʊt/",
                                 "pos": "v",
-                                "vi": "chuẩn bị sẵn"
+                                "vi": "chuẩn bị sẵn",
+                                "base": "lay out",
+                                "gerund": "laying out"
                             },
                             {
                                 "en": "spilled",
                                 "ipa": "/spɪld/",
                                 "pos": "v",
-                                "vi": "đổ"
+                                "vi": "đổ",
+                                "base": "spill",
+                                "gerund": "spilling"
                             },
                             {
                                 "en": "table leg",
@@ -3534,7 +3644,9 @@ window.part01Data = [
                                 "en": "repaired",
                                 "ipa": "/rɪˈpeəd/",
                                 "pos": "v",
-                                "vi": "sửa chữa"
+                                "vi": "sửa chữa",
+                                "base": "repair",
+                                "gerund": "repairing"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some tools have been left on a chair.<br><i>(A) Một số dụng cụ đã được để trên ghế.</i><br>(B) Some tool sets have been laid out.<br><i>(B) Một số bộ công cụ đã được chuẩn bị sẵn.</i><br>(C) A cup of coffee has spilled.<br><i>(C) Một tách cà phê đã đổ.</i><br>(D) A table leg is being repaired.<br><i>(D) Một chân bàn đang được sửa chữa.</i><br>",
@@ -3574,7 +3686,9 @@ window.part01Data = [
                                 "en": "removed",
                                 "ipa": "/rɪˈmuːvd/",
                                 "pos": "v",
-                                "vi": "dỡ bỏ"
+                                "vi": "dỡ bỏ",
+                                "base": "remove",
+                                "gerund": "removing"
                             },
                             {
                                 "en": "roof",
@@ -3592,7 +3706,9 @@ window.part01Data = [
                                 "en": "carrying",
                                 "ipa": "/ˈkæriɪŋ/",
                                 "pos": "v",
-                                "vi": "mang"
+                                "vi": "mang",
+                                "base": "carry",
+                                "gerund": "carrying"
                             },
                             {
                                 "en": "ladder",
@@ -3604,7 +3720,9 @@ window.part01Data = [
                                 "en": "holding",
                                 "ipa": "/ˈhəʊldɪŋ/",
                                 "pos": "v",
-                                "vi": "cầm"
+                                "vi": "cầm",
+                                "base": "hold",
+                                "gerund": "holding"
                             },
                             {
                                 "en": "sheets of metal",
@@ -3644,7 +3762,9 @@ window.part01Data = [
                                 "en": "leaned",
                                 "ipa": "/liːnd/",
                                 "pos": "v",
-                                "vi": "tựa"
+                                "vi": "tựa",
+                                "base": "lean",
+                                "gerund": "leaning"
                             },
                             {
                                 "en": "tree",
@@ -3662,7 +3782,9 @@ window.part01Data = [
                                 "en": "discarded",
                                 "ipa": "/dɪsˈkɑːdɪd/",
                                 "pos": "v",
-                                "vi": "vứt bỏ"
+                                "vi": "vứt bỏ",
+                                "base": "discard",
+                                "gerund": "discarding"
                             },
                             {
                                 "en": "benches",
@@ -3674,7 +3796,9 @@ window.part01Data = [
                                 "en": "arranged",
                                 "ipa": "/əˈreɪndʒd/",
                                 "pos": "v",
-                                "vi": "sắp xếp"
+                                "vi": "sắp xếp",
+                                "base": "arrange",
+                                "gerund": "arranging"
                             },
                             {
                                 "en": "structure",
@@ -3686,7 +3810,9 @@ window.part01Data = [
                                 "en": "built",
                                 "ipa": "/bɪlt/",
                                 "pos": "v",
-                                "vi": "xây dựng"
+                                "vi": "xây dựng",
+                                "base": "build",
+                                "gerund": "building"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) A ladder has been leaned against a tree.<br><i>(A) Một cái thang được tựa vào một cái cây.</i><br>(B) There are piles of tree branches discarded in a field.<br><i>(B) Có những đống cành cây bị vứt bỏ trên cánh đồng.</i><br>(C) Wooden benches have been arranged in a circle.<br><i>(C) Những chiếc ghế dài bằng gỗ đã được sắp xếp thành hình tròn.</i><br>(D) A wooden structure has been built near some trees.<br><i>(D) Một cấu trúc bằng gỗ đã được xây dựng gần một số cây cối.</i><br>",
@@ -3727,7 +3853,9 @@ window.part01Data = [
                                 "en": "cleaning",
                                 "ipa": "/ˈkliːnɪŋ/",
                                 "pos": "v",
-                                "vi": "lau"
+                                "vi": "lau",
+                                "base": "clean",
+                                "gerund": "cleaning"
                             },
                             {
                                 "en": "floor",
@@ -3739,7 +3867,9 @@ window.part01Data = [
                                 "en": "setting",
                                 "ipa": "/ˈsetɪŋ/",
                                 "pos": "v",
-                                "vi": "đặt"
+                                "vi": "đặt",
+                                "base": "set",
+                                "gerund": "setting"
                             },
                             {
                                 "en": "shelf",
@@ -3751,7 +3881,9 @@ window.part01Data = [
                                 "en": "pouring",
                                 "ipa": "/ˈpɔːrɪŋ/",
                                 "pos": "v",
-                                "vi": "đổ"
+                                "vi": "đổ",
+                                "base": "pour",
+                                "gerund": "pouring"
                             },
                             {
                                 "en": "liquid",
@@ -3763,7 +3895,9 @@ window.part01Data = [
                                 "en": "ironing",
                                 "ipa": "/ˈaɪənɪŋ/",
                                 "pos": "v",
-                                "vi": "ủi"
+                                "vi": "ủi",
+                                "base": "iron",
+                                "gerund": "ironing"
                             },
                             {
                                 "en": "shirt",
@@ -3803,7 +3937,9 @@ window.part01Data = [
                                 "en": "glancing",
                                 "ipa": "/ˈɡlɑːnsɪŋ/",
                                 "pos": "v",
-                                "vi": "nhìn"
+                                "vi": "nhìn",
+                                "base": "glance",
+                                "gerund": "glancing"
                             },
                             {
                                 "en": "monitor",
@@ -3815,7 +3951,9 @@ window.part01Data = [
                                 "en": "putting",
                                 "ipa": "/ˈpʊtɪŋ/",
                                 "pos": "v",
-                                "vi": "đặt"
+                                "vi": "đặt",
+                                "base": "put",
+                                "gerund": "putting"
                             },
                             {
                                 "en": "jar",
@@ -3827,7 +3965,9 @@ window.part01Data = [
                                 "en": "wiping off",
                                 "ipa": "/ˈwaɪpɪŋ ɒf/",
                                 "pos": "v",
-                                "vi": "lau"
+                                "vi": "lau",
+                                "base": "wipe off",
+                                "gerund": "wiping off"
                             },
                             {
                                 "en": "desk",
@@ -3839,7 +3979,9 @@ window.part01Data = [
                                 "en": "examining",
                                 "ipa": "/ɪɡˈzæmɪnɪŋ/",
                                 "pos": "v",
-                                "vi": "kiểm tra"
+                                "vi": "kiểm tra",
+                                "base": "examine",
+                                "gerund": "examining"
                             },
                             {
                                 "en": "document",
@@ -3891,7 +4033,9 @@ window.part01Data = [
                                 "en": "float",
                                 "ipa": "/floʊt/",
                                 "pos": "v",
-                                "vi": "trôi nổi"
+                                "vi": "trôi nổi",
+                                "base": "float",
+                                "gerund": "floating"
                             },
                             {
                                 "en": "bridge",
@@ -3909,7 +4053,9 @@ window.part01Data = [
                                 "en": "row",
                                 "ipa": "/roʊ/",
                                 "pos": "v",
-                                "vi": "chèo"
+                                "vi": "chèo",
+                                "base": "row",
+                                "gerund": "rowing"
                             },
                             {
                                 "en": "lighthouse",
@@ -3955,7 +4101,9 @@ window.part01Data = [
                                 "en": "burn",
                                 "ipa": "/bɜːrn/",
                                 "pos": "v",
-                                "vi": "cháy"
+                                "vi": "cháy",
+                                "base": "burn",
+                                "gerund": "burning"
                             },
                             {
                                 "en": "fireplace",
@@ -3985,7 +4133,9 @@ window.part01Data = [
                                 "en": "pack",
                                 "ipa": "/pæk/",
                                 "pos": "v",
-                                "vi": "đóng gói"
+                                "vi": "đóng gói",
+                                "base": "pack",
+                                "gerund": "packing"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) There's a fire burning in a fireplace.<br><i>(A) Có một ngọn lửa đang cháy trong lò sưởi.</i><br>(B) There's a guitar beside a fireplace.<br><i>(B) Có một cây đàn guitar bên cạnh lò sưởi.</i><br>(C) Some cables have been left on the ground in a pile.<br><i>(C) Một số dây cáp đã bị vứt thành đống trên mặt đất.</i><br>(D) A television is being packed into a box.<br><i>(D) Một chiếc tivi đang được đóng gói vào một.</i><br>",
@@ -4031,7 +4181,9 @@ window.part01Data = [
                                 "en": "move",
                                 "ipa": "/muːv/",
                                 "pos": "v",
-                                "vi": "di chuyển"
+                                "vi": "di chuyển",
+                                "base": "move",
+                                "gerund": "moving"
                             },
                             {
                                 "en": "picnic table",
@@ -4049,7 +4201,9 @@ window.part01Data = [
                                 "en": "fall over",
                                 "ipa": "/fɔːl ˈoʊvər/",
                                 "pos": "v",
-                                "vi": "ngã"
+                                "vi": "ngã",
+                                "base": "fall over",
+                                "gerund": "falling over"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Some people are riding bicycles through a field.<br><i>(A) Một số người đang đạp xe qua cánh đồng.</i><br>(B) Some people are moving a picnic table.<br><i>(B) Một số người đang di chuyển bàn ăn ngoài trời.</i><br>(C) There are some mountains in the distance.<br><i>(C) Có một số ngọn núi ở phía xa.</i><br>(D) A bicycle has fallen over on the ground.<br><i>(D) Một chiếc xe đạp bị ngã trên mặt đất.</i><br>",
@@ -4089,7 +4243,9 @@ window.part01Data = [
                                 "en": "push",
                                 "ipa": "/pʊʃ/",
                                 "pos": "v",
-                                "vi": "đẩy"
+                                "vi": "đẩy",
+                                "base": "push",
+                                "gerund": "pushing"
                             },
                             {
                                 "en": "wall",
@@ -4107,7 +4263,9 @@ window.part01Data = [
                                 "en": "hang",
                                 "ipa": "/hæŋ/",
                                 "pos": "v",
-                                "vi": "treo"
+                                "vi": "treo",
+                                "base": "hang",
+                                "gerund": "hanging"
                             },
                             {
                                 "en": "ceiling",
@@ -4125,13 +4283,17 @@ window.part01Data = [
                                 "en": "stack",
                                 "ipa": "/stæk/",
                                 "pos": "v",
-                                "vi": "xếp chồng"
+                                "vi": "xếp chồng",
+                                "base": "stack",
+                                "gerund": "stacking"
                             },
                             {
                                 "en": "arrange",
                                 "ipa": "/əˈreɪndʒ/",
                                 "pos": "v",
-                                "vi": "cắm"
+                                "vi": "cắm",
+                                "base": "arrange",
+                                "gerund": "arranging"
                             },
                             {
                                 "en": "vase",
@@ -4178,7 +4340,9 @@ window.part01Data = [
                                 "en": "carry",
                                 "ipa": "/ˈkæri/",
                                 "pos": "v",
-                                "vi": "mang"
+                                "vi": "mang",
+                                "base": "carry",
+                                "gerund": "carrying"
                             },
                             {
                                 "en": "plant",
@@ -4190,7 +4354,9 @@ window.part01Data = [
                                 "en": "read",
                                 "ipa": "/riːd/",
                                 "pos": "v",
-                                "vi": "đọc"
+                                "vi": "đọc",
+                                "base": "read",
+                                "gerund": "reading"
                             },
                             {
                                 "en": "sign",
@@ -4202,7 +4368,9 @@ window.part01Data = [
                                 "en": "push",
                                 "ipa": "/pʊʃ/",
                                 "pos": "v",
-                                "vi": "đẩy"
+                                "vi": "đẩy",
+                                "base": "push",
+                                "gerund": "pushing"
                             },
                             {
                                 "en": "cart",
@@ -4214,7 +4382,9 @@ window.part01Data = [
                                 "en": "write",
                                 "ipa": "/raɪt/",
                                 "pos": "v",
-                                "vi": "viết"
+                                "vi": "viết",
+                                "base": "write",
+                                "gerund": "writing"
                             },
                             {
                                 "en": "note",
@@ -4254,7 +4424,9 @@ window.part01Data = [
                                 "en": "pull",
                                 "ipa": "/pʊl/",
                                 "pos": "v",
-                                "vi": "kéo"
+                                "vi": "kéo",
+                                "base": "pull",
+                                "gerund": "pulling"
                             },
                             {
                                 "en": "suitcase",
@@ -4266,7 +4438,9 @@ window.part01Data = [
                                 "en": "relax",
                                 "ipa": "/rɪˈlæks/",
                                 "pos": "v",
-                                "vi": "thư giãn"
+                                "vi": "thư giãn",
+                                "base": "relax",
+                                "gerund": "relaxing"
                             },
                             {
                                 "en": "bench",
@@ -4290,7 +4464,9 @@ window.part01Data = [
                                 "en": "purchase",
                                 "ipa": "/ˈpɜːrtʃəs/",
                                 "pos": "v",
-                                "vi": "mua"
+                                "vi": "mua",
+                                "base": "purchase",
+                                "gerund": "purchasing"
                             },
                             {
                                 "en": "ticket",
@@ -4330,7 +4506,9 @@ window.part01Data = [
                                 "en": "look into",
                                 "ipa": "/lʊk ˈɪntuː/",
                                 "pos": "v",
-                                "vi": "nhìn vào"
+                                "vi": "nhìn vào",
+                                "base": "look into",
+                                "gerund": "looking into"
                             },
                             {
                                 "en": "backpack",
@@ -4342,7 +4520,9 @@ window.part01Data = [
                                 "en": "tie",
                                 "ipa": "/taɪ/",
                                 "pos": "v",
-                                "vi": "buộc"
+                                "vi": "buộc",
+                                "base": "tie",
+                                "gerund": "tying"
                             },
                             {
                                 "en": "lace",
@@ -4360,7 +4540,9 @@ window.part01Data = [
                                 "en": "hike",
                                 "ipa": "/haɪk/",
                                 "pos": "v",
-                                "vi": "đi bộ"
+                                "vi": "đi bộ",
+                                "base": "hike",
+                                "gerund": "hiking"
                             },
                             {
                                 "en": "path",
@@ -4406,7 +4588,9 @@ window.part01Data = [
                                 "en": "hold",
                                 "ipa": "/hoʊld/",
                                 "pos": "v",
-                                "vi": "cầm"
+                                "vi": "cầm",
+                                "base": "hold",
+                                "gerund": "holding"
                             },
                             {
                                 "en": "handle",
@@ -4418,7 +4602,9 @@ window.part01Data = [
                                 "en": "plug",
                                 "ipa": "/plʌɡ/",
                                 "pos": "v",
-                                "vi": "cắm"
+                                "vi": "cắm",
+                                "base": "plug",
+                                "gerund": "plugging"
                             },
                             {
                                 "en": "cord",
@@ -4442,7 +4628,9 @@ window.part01Data = [
                                 "en": "kneel down",
                                 "ipa": "/niːl daʊn/",
                                 "pos": "v",
-                                "vi": "quỳ xuống"
+                                "vi": "quỳ xuống",
+                                "base": "kneel down",
+                                "gerund": "kneeling down"
                             },
                             {
                                 "en": "tile floor",
@@ -4488,7 +4676,9 @@ window.part01Data = [
                                 "en": "arrange",
                                 "ipa": "/əˈreɪndʒ/",
                                 "pos": "v",
-                                "vi": "sắp xếp"
+                                "vi": "sắp xếp",
+                                "base": "arrange",
+                                "gerund": "arranging"
                             },
                             {
                                 "en": "umbrella",
@@ -4500,7 +4690,9 @@ window.part01Data = [
                                 "en": "take down",
                                 "ipa": "/teɪk daʊn/",
                                 "pos": "v",
-                                "vi": "gỡ xuống"
+                                "vi": "gỡ xuống",
+                                "base": "take down",
+                                "gerund": "taking down"
                             },
                             {
                                 "en": "bush",
@@ -4512,13 +4704,17 @@ window.part01Data = [
                                 "en": "trim",
                                 "ipa": "/trɪm/",
                                 "pos": "v",
-                                "vi": "cắt tỉa"
+                                "vi": "cắt tỉa",
+                                "base": "trim",
+                                "gerund": "trimming"
                             },
                             {
                                 "en": "fold",
                                 "ipa": "/foʊld/",
                                 "pos": "v",
-                                "vi": "gấp"
+                                "vi": "gấp",
+                                "base": "fold",
+                                "gerund": "folding"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Seats have been arranged under some umbrellas.<br><i>(A) Chỗ ngồi đã được sắp xếp dưới một vài chiếc ô.</i><br>(B) Some street signs are being taken down.<br><i>(B) Một số biển báo đường phố đang được gỡ xuống.</i><br>(C) Some bushes are being trimmed.<br><i>(C) Một số bụi cây đang được cắt tỉa.</i><br>(D) Some chairs are being folded and stacked.<br><i>(D) Một số ghế đang được gấp lại và xếp chồng lên nhau.</i><br>",
@@ -4558,13 +4754,17 @@ window.part01Data = [
                                 "en": "lay",
                                 "ipa": "/leɪ/",
                                 "pos": "v",
-                                "vi": "đặt"
+                                "vi": "đặt",
+                                "base": "lay",
+                                "gerund": "laying"
                             },
                             {
                                 "en": "pile up",
                                 "ipa": "/paɪl ʌp/",
                                 "pos": "v",
-                                "vi": "chất chồng"
+                                "vi": "chất chồng",
+                                "base": "pile up",
+                                "gerund": "piling up"
                             },
                             {
                                 "en": "light fixture",
@@ -4576,7 +4776,9 @@ window.part01Data = [
                                 "en": "suspend",
                                 "ipa": "/səˈspend/",
                                 "pos": "v",
-                                "vi": "treo"
+                                "vi": "treo",
+                                "base": "suspend",
+                                "gerund": "suspending"
                             },
                             {
                                 "en": "rug",
@@ -4588,7 +4790,9 @@ window.part01Data = [
                                 "en": "roll up",
                                 "ipa": "/roʊl ʌp/",
                                 "pos": "v",
-                                "vi": "cuộn lên"
+                                "vi": "cuộn lên",
+                                "base": "roll up",
+                                "gerund": "rolling up"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some cushions have been laid on the floor.<br><i>(A) Một số chiếc đệm đã được đặt trên sàn.</i><br>(B) Books have been piled up by a glass door.<br><i>(B) Sách được chất chồng cạnh cửa kính.</i><br>(C) A light fixture is suspended from the ceiling.<br><i>(C) Một đèn chiếu sáng được treo trên trần nhà.</i><br>(D) A rug has been rolled up against a wall.<br><i>(D) Một tấm thảm đã được cuộn lên tường.</i><br>",
@@ -4629,7 +4833,9 @@ window.part01Data = [
                                 "en": "shovel",
                                 "ipa": "/ˈʃʌvl/",
                                 "pos": "v",
-                                "vi": "xúc"
+                                "vi": "xúc",
+                                "base": "shovel",
+                                "gerund": "shoveling"
                             },
                             {
                                 "en": "snow",
@@ -4653,7 +4859,9 @@ window.part01Data = [
                                 "en": "remove",
                                 "ipa": "/rɪˈmuːv/",
                                 "pos": "v",
-                                "vi": "tháo"
+                                "vi": "tháo",
+                                "base": "remove",
+                                "gerund": "removing"
                             },
                             {
                                 "en": "cap",
@@ -4692,7 +4900,9 @@ window.part01Data = [
                                 "en": "carry",
                                 "ipa": "/ˈkæri/",
                                 "pos": "v",
-                                "vi": "bưng"
+                                "vi": "bưng",
+                                "base": "carry",
+                                "gerund": "carrying"
                             },
                             {
                                 "en": "tray",
@@ -4704,7 +4914,9 @@ window.part01Data = [
                                 "en": "push",
                                 "ipa": "/pʊʃ/",
                                 "pos": "v",
-                                "vi": "đẩy"
+                                "vi": "đẩy",
+                                "base": "push",
+                                "gerund": "pushing"
                             },
                             {
                                 "en": "trolley",
@@ -4716,7 +4928,9 @@ window.part01Data = [
                                 "en": "leave",
                                 "ipa": "/liːv/",
                                 "pos": "v",
-                                "vi": "rời khỏi"
+                                "vi": "rời khỏi",
+                                "base": "leave",
+                                "gerund": "leaving"
                             },
                             {
                                 "en": "restaurant",
@@ -4762,7 +4976,9 @@ window.part01Data = [
                                 "en": "hold",
                                 "ipa": "/hoʊld/",
                                 "pos": "v",
-                                "vi": "cầm"
+                                "vi": "cầm",
+                                "base": "hold",
+                                "gerund": "holding"
                             },
                             {
                                 "en": "bucket",
@@ -4774,7 +4990,9 @@ window.part01Data = [
                                 "en": "replace",
                                 "ipa": "/rɪˈpleɪs/",
                                 "pos": "v",
-                                "vi": "thay"
+                                "vi": "thay",
+                                "base": "replace",
+                                "gerund": "replacing"
                             },
                             {
                                 "en": "tire",
@@ -4786,13 +5004,17 @@ window.part01Data = [
                                 "en": "water",
                                 "ipa": "/ˈwɔːtər/",
                                 "pos": "v",
-                                "vi": "tưới"
+                                "vi": "tưới",
+                                "base": "water",
+                                "gerund": "watering"
                             },
                             {
                                 "en": "scrub",
                                 "ipa": "/skrʌb/",
                                 "pos": "v",
-                                "vi": "cọ rửa"
+                                "vi": "cọ rửa",
+                                "base": "scrub",
+                                "gerund": "scrubbing"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) The man is holding a bucket of water.<br><i>(A) Người đàn ông đang cầm một xô nước.</i><br>(B) The man is replacing a tire.<br><i>(B) Người đàn ông đang thay lốp xe.</i><br>(C) The man is watering a tree.<br><i>(C) Người đàn ông đang tưới cây.</i><br>(D) The man is scrubbing the front of a car.<br><i>(D) Người đàn ông đang cọ rửa phần đầu xe.</i><br>",
@@ -4832,7 +5054,9 @@ window.part01Data = [
                                 "en": "install",
                                 "ipa": "/ɪnˈstɔːl/",
                                 "pos": "v",
-                                "vi": "lắp đặt"
+                                "vi": "lắp đặt",
+                                "base": "install",
+                                "gerund": "installing"
                             },
                             {
                                 "en": "roof",
@@ -4850,7 +5074,9 @@ window.part01Data = [
                                 "en": "place",
                                 "ipa": "/pleɪs/",
                                 "pos": "v",
-                                "vi": "đặt"
+                                "vi": "đặt",
+                                "base": "place",
+                                "gerund": "placing"
                             },
                             {
                                 "en": "fountain",
@@ -4890,13 +5116,17 @@ window.part01Data = [
                                 "en": "gather",
                                 "ipa": "/ˈɡæðər/",
                                 "pos": "v",
-                                "vi": "tập trung"
+                                "vi": "tập trung",
+                                "base": "gather",
+                                "gerund": "gathering"
                             },
                             {
                                 "en": "block",
                                 "ipa": "/blɑːk/",
                                 "pos": "v",
-                                "vi": "chặn"
+                                "vi": "chặn",
+                                "base": "block",
+                                "gerund": "blocking"
                             },
                             {
                                 "en": "entrance",
@@ -4966,7 +5196,9 @@ window.part01Data = [
                                 "en": "pile",
                                 "ipa": "/paɪl/",
                                 "pos": "v",
-                                "vi": "chất thành đống"
+                                "vi": "chất thành đống",
+                                "base": "pile",
+                                "gerund": "piling"
                             },
                             {
                                 "en": "brick",
@@ -5012,13 +5244,17 @@ window.part01Data = [
                                 "en": "dig",
                                 "ipa": "/dɪɡ/",
                                 "pos": "v",
-                                "vi": "đào"
+                                "vi": "đào",
+                                "base": "dig",
+                                "gerund": "digging"
                             },
                             {
                                 "en": "stack",
                                 "ipa": "/stæk/",
                                 "pos": "v",
-                                "vi": "xếp"
+                                "vi": "xếp",
+                                "base": "stack",
+                                "gerund": "stacking"
                             },
                             {
                                 "en": "pallet",
@@ -5030,13 +5266,17 @@ window.part01Data = [
                                 "en": "empty",
                                 "ipa": "/ˈempti/",
                                 "pos": "v",
-                                "vi": "đổ (ra)"
+                                "vi": "đổ (ra)",
+                                "base": "empty",
+                                "gerund": "emptying"
                             },
                             {
                                 "en": "examine",
                                 "ipa": "/ɪɡˈzæmɪn/",
                                 "pos": "v",
-                                "vi": "kiểm tra"
+                                "vi": "kiểm tra",
+                                "base": "examine",
+                                "gerund": "examining"
                             }
                         ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) He's digging in a garden.<br><i>(A) Anh ấy đang đào đất trong vườn.</i><br>(B) He's stacking wooden pallets.<br><i>(B) Anh ấy đang xếp các tấm pallet gỗ.</i><br>(C) He's emptying soil from a pot.<br><i>(C) Anh ấy đang đổ đất ra khỏi chậu.</i><br>(D) He's examining some plants.<br><i>(D) Anh ấy đang kiểm tra một số loại cây.</i><br>",
@@ -5082,7 +5322,9 @@ window.part01Data = [
                                 "en": "hang",
                                 "ipa": "/hæŋ/",
                                 "pos": "v",
-                                "vi": "treo"
+                                "vi": "treo",
+                                "base": "hang",
+                                "gerund": "hanging"
                             },
                             {
                                 "en": "hook",
@@ -5094,7 +5336,9 @@ window.part01Data = [
                                 "en": "restock",
                                 "ipa": "/ˌriːˈstɑːk/",
                                 "pos": "v",
-                                "vi": "bổ sung"
+                                "vi": "bổ sung",
+                                "base": "restock",
+                                "gerund": "restocking"
                             },
                             {
                                 "en": "shelf",
@@ -5163,7 +5407,9 @@ window.part01Data = [
                                 "en": "decorate",
                                 "ipa": "/ˈdekəreɪt/",
                                 "pos": "v",
-                                "vi": "trang trí"
+                                "vi": "trang trí",
+                                "base": "decorate",
+                                "gerund": "decorating"
                             },
                             {
                                 "en": "banner",
@@ -5175,13 +5421,17 @@ window.part01Data = [
                                 "en": "post",
                                 "ipa": "/poʊst/",
                                 "pos": "v",
-                                "vi": "dán"
+                                "vi": "dán",
+                                "base": "post",
+                                "gerund": "posting"
                             },
                             {
                                 "en": "set up",
                                 "ipa": "/set ʌp/",
                                 "pos": "v",
-                                "vi": "mở"
+                                "vi": "mở",
+                                "base": "set up",
+                                "gerund": "setting up"
                             },
                             {
                                 "en": "tour group",
@@ -5221,7 +5471,9 @@ window.part01Data = [
                                 "en": "wait",
                                 "ipa": "/weɪt/",
                                 "pos": "v",
-                                "vi": "chờ đợi"
+                                "vi": "chờ đợi",
+                                "base": "wait",
+                                "gerund": "waiting"
                             },
                             {
                                 "en": "bus stop",
@@ -5233,7 +5485,9 @@ window.part01Data = [
                                 "en": "place",
                                 "ipa": "/pleɪs/",
                                 "pos": "v",
-                                "vi": "đặt, để"
+                                "vi": "đặt, để",
+                                "base": "place",
+                                "gerund": "placing"
                             },
                             {
                                 "en": "bike rack",
@@ -5245,7 +5499,9 @@ window.part01Data = [
                                 "en": "park",
                                 "ipa": "/pɑːrk/",
                                 "pos": "v",
-                                "vi": "đỗ xe"
+                                "vi": "đỗ xe",
+                                "base": "park",
+                                "gerund": "parking"
                             },
                             {
                                 "en": "sidewalk",
@@ -5257,7 +5513,9 @@ window.part01Data = [
                                 "en": "gather",
                                 "ipa": "/ˈɡæðər/",
                                 "pos": "v",
-                                "vi": "tập trung"
+                                "vi": "tập trung",
+                                "base": "gather",
+                                "gerund": "gathering"
                             },
                             {
                                 "en": "city square",
@@ -5297,7 +5555,9 @@ window.part01Data = [
                                 "en": "block",
                                 "ipa": "/blɒk/",
                                 "pos": "v",
-                                "vi": "che"
+                                "vi": "che",
+                                "base": "block",
+                                "gerund": "blocking"
                             },
                             {
                                 "en": "curtain",
@@ -5339,7 +5599,9 @@ window.part01Data = [
                                 "en": "store",
                                 "ipa": "/stɔːr/",
                                 "pos": "v",
-                                "vi": "cất"
+                                "vi": "cất",
+                                "base": "store",
+                                "gerund": "storing"
                             },
                             {
                                 "en": "closet",
@@ -5381,7 +5643,9 @@ window.part01Data = [
                                 "en": "take off",
                                 "ipa": "/teɪk ɒf/",
                                 "pos": "v",
-                                "vi": "tháo, cởi"
+                                "vi": "tháo, cởi",
+                                "base": "take off",
+                                "gerund": "taking off"
                             },
                             {
                                 "en": "badge",
@@ -5393,7 +5657,9 @@ window.part01Data = [
                                 "en": "lean over",
                                 "ipa": "/liːn ˈəʊvər/",
                                 "pos": "v",
-                                "vi": "cúi người xuống"
+                                "vi": "cúi người xuống",
+                                "base": "lean over",
+                                "gerund": "leaning over"
                             },
                             {
                                 "en": "desk",
@@ -5405,7 +5671,9 @@ window.part01Data = [
                                 "en": "lock",
                                 "ipa": "/lɒk/",
                                 "pos": "v",
-                                "vi": "khóa"
+                                "vi": "khóa",
+                                "base": "lock",
+                                "gerund": "locking"
                             },
                             {
                                 "en": "door",
@@ -5417,7 +5685,9 @@ window.part01Data = [
                                 "en": "lift",
                                 "ipa": "/lɪft/",
                                 "pos": "v",
-                                "vi": "nâng"
+                                "vi": "nâng",
+                                "base": "lift",
+                                "gerund": "lifting"
                             },
                             {
                                 "en": "bin",
@@ -5457,7 +5727,9 @@ window.part01Data = [
                                 "en": "repair",
                                 "ipa": "/rɪˈpeər/",
                                 "pos": "v",
-                                "vi": "sửa chữa"
+                                "vi": "sửa chữa",
+                                "base": "repair",
+                                "gerund": "repairing"
                             },
                             {
                                 "en": "railing",
@@ -5469,7 +5741,9 @@ window.part01Data = [
                                 "en": "climb",
                                 "ipa": "/klaɪm/",
                                 "pos": "v",
-                                "vi": "leo"
+                                "vi": "leo",
+                                "base": "climb",
+                                "gerund": "climbing"
                             },
                             {
                                 "en": "stairs",
@@ -5481,7 +5755,9 @@ window.part01Data = [
                                 "en": "carry",
                                 "ipa": "/ˈkæri/",
                                 "pos": "v",
-                                "vi": "mang, vác"
+                                "vi": "mang, vác",
+                                "base": "carry",
+                                "gerund": "carrying"
                             },
                             {
                                 "en": "ladder",
@@ -5493,7 +5769,9 @@ window.part01Data = [
                                 "en": "look up",
                                 "ipa": "/lʊk ʌp/",
                                 "pos": "v",
-                                "vi": "nhìn lên"
+                                "vi": "nhìn lên",
+                                "base": "look up",
+                                "gerund": "looking up"
                             },
                             {
                                 "en": "roof",
@@ -5550,7 +5828,9 @@ window.part01Data = [
                                 "en": "open",
                                 "ipa": "/ˈəʊpən/",
                                 "pos": "v",
-                                "vi": "mở"
+                                "vi": "mở",
+                                "base": "open",
+                                "gerund": "opening"
                             },
                             {
                                 "en": "display case",
@@ -5562,7 +5842,9 @@ window.part01Data = [
                                 "en": "tie",
                                 "ipa": "/taɪ/",
                                 "pos": "v",
-                                "vi": "thắt"
+                                "vi": "thắt",
+                                "base": "tie",
+                                "gerund": "tying"
                             },
                             {
                                 "en": "necktie",
@@ -5580,7 +5862,9 @@ window.part01Data = [
                                 "en": "greet",
                                 "ipa": "/ɡriːt/",
                                 "pos": "v",
-                                "vi": "chào đón"
+                                "vi": "chào đón",
+                                "base": "greet",
+                                "gerund": "greeting"
                             },
                             {
                                 "en": "customer",
@@ -5620,7 +5904,9 @@ window.part01Data = [
                                 "en": "pile",
                                 "ipa": "/paɪl/",
                                 "pos": "v",
-                                "vi": "chất đống"
+                                "vi": "chất đống",
+                                "base": "pile",
+                                "gerund": "piling"
                             },
                             {
                                 "en": "wheelbarrow",
@@ -5632,7 +5918,9 @@ window.part01Data = [
                                 "en": "suspend",
                                 "ipa": "/səˈspend/",
                                 "pos": "v",
-                                "vi": "treo"
+                                "vi": "treo",
+                                "base": "suspend",
+                                "gerund": "suspending"
                             },
                             {
                                 "en": "telephone wire",
@@ -5644,7 +5932,9 @@ window.part01Data = [
                                 "en": "occupy",
                                 "ipa": "/ˈɒkjupaɪ/",
                                 "pos": "v",
-                                "vi": "chiếm chỗ"
+                                "vi": "chiếm chỗ",
+                                "base": "occupy",
+                                "gerund": "occupying"
                             },
                             {
                                 "en": "bench",
@@ -5656,7 +5946,9 @@ window.part01Data = [
                                 "en": "shade",
                                 "ipa": "/ʃeɪd/",
                                 "pos": "v",
-                                "vi": "che bóng"
+                                "vi": "che bóng",
+                                "base": "shade",
+                                "gerund": "shading"
                             },
                             {
                                 "en": "picnic table",
@@ -5720,7 +6012,9 @@ window.part01Data = [
                                 "en": "stand",
                                 "ipa": "/stænd/",
                                 "pos": "v",
-                                "vi": "đứng"
+                                "vi": "đứng",
+                                "base": "stand",
+                                "gerund": "standing"
                             },
                             {
                                 "en": "rug",
@@ -5732,7 +6026,9 @@ window.part01Data = [
                                 "en": "turn",
                                 "ipa": "/tɜːn/",
                                 "pos": "v",
-                                "vi": "xoay"
+                                "vi": "xoay",
+                                "base": "turn",
+                                "gerund": "turning"
                             },
                             {
                                 "en": "doorknob",
@@ -5744,7 +6040,9 @@ window.part01Data = [
                                 "en": "climb",
                                 "ipa": "/klaɪm/",
                                 "pos": "v",
-                                "vi": "leo lên"
+                                "vi": "leo lên",
+                                "base": "climb",
+                                "gerund": "climbing"
                             },
                             {
                                 "en": "ladder",
@@ -5756,7 +6054,9 @@ window.part01Data = [
                                 "en": "paint",
                                 "ipa": "/peɪnt/",
                                 "pos": "v",
-                                "vi": "sơn"
+                                "vi": "sơn",
+                                "base": "paint",
+                                "gerund": "painting"
                             },
                             {
                                 "en": "wall",
@@ -5796,7 +6096,9 @@ window.part01Data = [
                                 "en": "hang",
                                 "ipa": "/hæŋ/",
                                 "pos": "v",
-                                "vi": "treo"
+                                "vi": "treo",
+                                "base": "hang",
+                                "gerund": "hanging"
                             },
                             {
                                 "en": "clothing rack",
@@ -5808,7 +6110,9 @@ window.part01Data = [
                                 "en": "attach",
                                 "ipa": "/əˈtætʃ/",
                                 "pos": "v",
-                                "vi": "gắn"
+                                "vi": "gắn",
+                                "base": "attach",
+                                "gerund": "attaching"
                             },
                             {
                                 "en": "column",
@@ -5820,7 +6124,9 @@ window.part01Data = [
                                 "en": "set",
                                 "ipa": "/set/",
                                 "pos": "v",
-                                "vi": "đặt"
+                                "vi": "đặt",
+                                "base": "set",
+                                "gerund": "setting"
                             },
                             {
                                 "en": "floor",
@@ -5889,7 +6195,9 @@ window.part01Data = [
                                 "en": "wash",
                                 "ipa": "/wɒʃ/",
                                 "pos": "v",
-                                "vi": "lau rừa"
+                                "vi": "lau rừa",
+                                "base": "wash",
+                                "gerund": "washing"
                             },
                             {
                                 "en": "window",
@@ -5901,7 +6209,9 @@ window.part01Data = [
                                 "en": "carry",
                                 "ipa": "/ˈkæri/",
                                 "pos": "v",
-                                "vi": "mang"
+                                "vi": "mang",
+                                "base": "carry",
+                                "gerund": "carrying"
                             },
                             {
                                 "en": "package",
@@ -5913,7 +6223,9 @@ window.part01Data = [
                                 "en": "line up",
                                 "ipa": "/laɪn ʌp/",
                                 "pos": "v",
-                                "vi": "xếp hàng"
+                                "vi": "xếp hàng",
+                                "base": "line up",
+                                "gerund": "lining up"
                             },
                             {
                                 "en": "shopping cart",
@@ -5925,7 +6237,9 @@ window.part01Data = [
                                 "en": "fall",
                                 "ipa": "/fɔːl/",
                                 "pos": "v",
-                                "vi": "rơi"
+                                "vi": "rơi",
+                                "base": "fall",
+                                "gerund": "falling"
                             },
                             {
                                 "en": "ground",
@@ -5965,7 +6279,9 @@ window.part01Data = [
                                 "en": "clear away",
                                 "ipa": "/klɪər əˈweɪ/",
                                 "pos": "v",
-                                "vi": "dọn sạch"
+                                "vi": "dọn sạch",
+                                "base": "clear away",
+                                "gerund": "clearing away"
                             },
                             {
                                 "en": "snow",
@@ -5977,7 +6293,9 @@ window.part01Data = [
                                 "en": "arrange",
                                 "ipa": "/əˈreɪndʒ/",
                                 "pos": "v",
-                                "vi": "sắp xếp"
+                                "vi": "sắp xếp",
+                                "base": "arrange",
+                                "gerund": "arranging"
                             },
                             {
                                 "en": "brick",
@@ -5989,7 +6307,9 @@ window.part01Data = [
                                 "en": "trim",
                                 "ipa": "/trɪm/",
                                 "pos": "v",
-                                "vi": "cắt tỉa"
+                                "vi": "cắt tỉa",
+                                "base": "trim",
+                                "gerund": "trimming"
                             },
                             {
                                 "en": "branch",
@@ -6001,7 +6321,9 @@ window.part01Data = [
                                 "en": "lean against",
                                 "ipa": "/liːn əˈɡenst/",
                                 "pos": "v",
-                                "vi": "tựa vào"
+                                "vi": "tựa vào",
+                                "base": "lean against",
+                                "gerund": "leaning against"
                             },
                             {
                                 "en": "shovel",
@@ -6065,7 +6387,9 @@ window.part01Data = [
                                 "en": "reach",
                                 "ipa": "/riːtʃ/",
                                 "pos": "v",
-                                "vi": "với tay"
+                                "vi": "với tay",
+                                "base": "reach",
+                                "gerund": "reaching"
                             },
                             {
                                 "en": "shelf",
@@ -6077,7 +6401,9 @@ window.part01Data = [
                                 "en": "adjust",
                                 "ipa": "/əˈdʒʌst/",
                                 "pos": "v",
-                                "vi": "điều chỉnh"
+                                "vi": "điều chỉnh",
+                                "base": "adjust",
+                                "gerund": "adjusting"
                             },
                             {
                                 "en": "glasses",
@@ -6089,7 +6415,9 @@ window.part01Data = [
                                 "en": "pay for",
                                 "ipa": "/peɪ fɔːr/",
                                 "pos": "v",
-                                "vi": "trả tiền cho"
+                                "vi": "trả tiền cho",
+                                "base": "pay for",
+                                "gerund": "paying for"
                             },
                             {
                                 "en": "item",
@@ -6101,7 +6429,9 @@ window.part01Data = [
                                 "en": "try on",
                                 "ipa": "/traɪ ɒn/",
                                 "pos": "v",
-                                "vi": "thử"
+                                "vi": "thử",
+                                "base": "try on",
+                                "gerund": "trying on"
                             },
                             {
                                 "en": "glove",
@@ -6141,7 +6471,9 @@ window.part01Data = [
                                 "en": "open",
                                 "ipa": "/ˈəʊpən/",
                                 "pos": "v",
-                                "vi": "mở"
+                                "vi": "mở",
+                                "base": "open",
+                                "gerund": "opening"
                             },
                             {
                                 "en": "umbrella",
@@ -6153,7 +6485,9 @@ window.part01Data = [
                                 "en": "stand",
                                 "ipa": "/stænd/",
                                 "pos": "v",
-                                "vi": "đứng"
+                                "vi": "đứng",
+                                "base": "stand",
+                                "gerund": "standing"
                             },
                             {
                                 "en": "patio",
@@ -6165,7 +6499,9 @@ window.part01Data = [
                                 "en": "take out",
                                 "ipa": "/teɪk aʊt/",
                                 "pos": "v",
-                                "vi": "lấy ra"
+                                "vi": "lấy ra",
+                                "base": "take out",
+                                "gerund": "taking out"
                             },
                             {
                                 "en": "tool",
@@ -6177,7 +6513,9 @@ window.part01Data = [
                                 "en": "pick up",
                                 "ipa": "/pɪk ʌp/",
                                 "pos": "v",
-                                "vi": "nhặt lên"
+                                "vi": "nhặt lên",
+                                "base": "pick up",
+                                "gerund": "picking up"
                             },
                             {
                                 "en": "cushion",
@@ -6234,7 +6572,9 @@ window.part01Data = [
                                 "en": "install",
                                 "ipa": "/ɪnˈstɔːl/",
                                 "pos": "v",
-                                "vi": "lắp đặt"
+                                "vi": "lắp đặt",
+                                "base": "install",
+                                "gerund": "installing"
                             },
                             {
                                 "en": "floor tile",
@@ -6246,7 +6586,9 @@ window.part01Data = [
                                 "en": "place",
                                 "ipa": "/pleɪs/",
                                 "pos": "v",
-                                "vi": "đặt"
+                                "vi": "đặt",
+                                "base": "place",
+                                "gerund": "placing"
                             },
                             {
                                 "en": "dinner plate",
@@ -6258,7 +6600,9 @@ window.part01Data = [
                                 "en": "display",
                                 "ipa": "/dɪˈspleɪ/",
                                 "pos": "v",
-                                "vi": "bày, trưng bày"
+                                "vi": "bày, trưng bày",
+                                "base": "display",
+                                "gerund": "displaying"
                             },
                             {
                                 "en": "food",
@@ -6270,7 +6614,9 @@ window.part01Data = [
                                 "en": "stack",
                                 "ipa": "/stæk/",
                                 "pos": "v",
-                                "vi": "xếp"
+                                "vi": "xếp",
+                                "base": "stack",
+                                "gerund": "stacking"
                             },
                             {
                                 "en": "chair",
@@ -6308,7 +6654,9 @@ window.part01Data = [
                                 "en": "change",
                                 "ipa": "/tʃeɪndʒ/",
                                 "pos": "v",
-                                "vi": "thay"
+                                "vi": "thay",
+                                "base": "change",
+                                "gerund": "changing"
                             },
                             {
                                 "en": "light bulb",
@@ -6320,7 +6668,9 @@ window.part01Data = [
                                 "en": "hand",
                                 "ipa": "/hænd/",
                                 "pos": "v",
-                                "vi": "đưa"
+                                "vi": "đưa",
+                                "base": "hand",
+                                "gerund": "handing"
                             },
                             {
                                 "en": "box",
@@ -6332,7 +6682,9 @@ window.part01Data = [
                                 "en": "crouch down",
                                 "ipa": "/kraʊtʃ daʊn/",
                                 "pos": "v",
-                                "vi": "ngồi xổm"
+                                "vi": "ngồi xổm",
+                                "base": "crouch down",
+                                "gerund": "crouching down"
                             },
                             {
                                 "en": "counter",
@@ -6344,7 +6696,9 @@ window.part01Data = [
                                 "en": "clean",
                                 "ipa": "/kliːn/",
                                 "pos": "v",
-                                "vi": "lau"
+                                "vi": "lau",
+                                "base": "clean",
+                                "gerund": "cleaning"
                             },
                             {
                                 "en": "window",
