@@ -2708,9 +2708,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 .p1-ex-transcript-choice.highlight-correct .lbl { color: #4ade80; }
             </style>
             
-            <div class="p2-hero" style="background: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%), linear-gradient(145deg, #0f172a 0%, #020617 100%); margin-bottom: 30px;">
-                <h2 class="p2-hero-title" style="text-align: center;">LUYỆN TẬP TƯƠNG TÁC</h2>
-                <p class="p2-hero-subtitle" style="text-align: center;">Bấm nút PLAY để nghe Audio. Sau đó chọn đáp án A, B, C hoặc D. Hệ thống sẽ chấm điểm và hiển thị nội dung chi tiết.</p>
+            <div class="p2-hero" style="background: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%), linear-gradient(145deg, #0f172a 0%, #020617 100%); margin-bottom: 30px; border-radius: 16px; padding: 24px;">
+                <h2 class="p2-hero-title" style="text-align: center; color: #f8fafc; font-weight: 800; font-size: 1.5rem; margin-bottom: 8px;">LUYỆN TẬP TƯƠNG TÁC</h2>
+                <p class="p2-hero-subtitle" style="text-align: center; color: #94a3b8;">Bấm nút PLAY để nghe Audio. Sau đó chọn đáp án A, B, C hoặc D. Hệ thống sẽ chấm điểm và hiển thị nội dung chi tiết.</p>
             </div>
         `;
         
@@ -3065,9 +3065,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 .p2-ex-transcript-choice.highlight-correct .lbl { color: #4ade80; }
             </style>
             
-            <div class="p2-hero" style="background: radial-gradient(circle at 0% 0%, rgba(168, 85, 247, 0.15) 0%, transparent 50%), linear-gradient(145deg, #0f172a 0%, #020617 100%);">
-                <h2 class="p2-hero-title">VÍ DỤ THỰC HÀNH</h2>
-                <p class="p2-hero-subtitle">Mô phỏng 100% format bài thi thật: Bấm nghe audio, chọn đáp án A, B hoặc C. Sau khi chọn xong, hệ thống sẽ đối chiếu và hiện bản dịch chi tiết.</p>
+            <div class="p2-hero" style="background: radial-gradient(circle at 0% 0%, rgba(168, 85, 247, 0.15) 0%, transparent 50%), linear-gradient(145deg, #0f172a 0%, #020617 100%); border-radius: 16px; padding: 24px;">
+                <h2 class="p2-hero-title" style="color: #f8fafc; font-weight: 800; font-size: 1.5rem; margin-bottom: 8px;">VÍ DỤ THỰC HÀNH</h2>
+                <p class="p2-hero-subtitle" style="color: #94a3b8;">Mô phỏng 100% format bài thi thật: Bấm nghe audio, chọn đáp án A, B hoặc C. Sau khi chọn xong, hệ thống sẽ đối chiếu và hiện bản dịch chi tiết.</p>
             </div>
         `;
         
@@ -3500,9 +3500,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 .p1-ex-transcript-choice.highlight-correct .lbl { color: #4ade80; }
             </style>
             
-            <div class="p2-hero" style="background: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%), linear-gradient(145deg, #0f172a 0%, #020617 100%); margin-bottom: 30px; padding: 24px; border-radius: 16px;">
-                <h2 class="p2-hero-title" style="text-align: center; font-weight: 800; font-size: 1.5rem; margin-bottom: 8px;">LUYỆN TẬP TƯƠNG TÁC: ${testData.title}</h2>
-                <p class="p2-hero-subtitle" style="text-align: center; color: var(--text-muted);">Bấm PLAY để nghe Audio. Chọn đáp án A, B, C, D để hiện nội dung chi tiết.</p>
+            <div class="p2-hero" style="background: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%), linear-gradient(145deg, #0f172a 0%, #020617 100%); margin-bottom: 30px; padding: 24px; border-radius: 16px; color: #f8fafc;">
+                <h2 class="p2-hero-title" style="text-align: center; font-weight: 800; font-size: 1.5rem; margin-bottom: 8px; color: #f8fafc;">LUYỆN TẬP TƯƠNG TÁC: ${testData.title}</h2>
+                <p class="p2-hero-subtitle" style="text-align: center; color: #94a3b8;">Bấm PLAY để nghe Audio. Chọn đáp án A, B, C, D để hiện nội dung chi tiết.</p>
             </div>
             <div class="practice-sets-container" style="display: flex; flex-direction: column; gap: 20px;">
         `;
