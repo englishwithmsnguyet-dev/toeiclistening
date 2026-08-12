@@ -4231,7 +4231,7 @@ window.part01Data = [
                             "C": "Some cushions have been stacked on the floor.",
                             "D": "Some flowers have been arranged in a vase."
                         },
-                        "answer": "A",
+                        "answer": "D",
                         "vocabulary": [
                             {
                                 "en": "couch",
@@ -4302,7 +4302,7 @@ window.part01Data = [
                                 "vi": "bình hoa"
                             }
                         ],
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some couches have been pushed against a wall.<br><i>(A) Một số ghế dài đã được đẩy vào tường.</i><br>(B) Some lights have been hung from the ceiling.<br><i>(B) Một số đèn được treo trên trần nhà.</i><br>(C) Some cushions have been stacked on the floor.<br><i>(C) Một số đệm đã được xếp chồng lên nhau trên sàn.</i><br>(D) Some flowers have been arranged in a vase.<br><i>(D) Một số bông hoa đã được cắm trong bình.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) Some couches have been pushed against a wall.<br><i>(A) Một số ghế dài đã được đẩy vào tường.</i><br>(B) Some lights have been hung from the ceiling.<br><i>(B) Một số đèn được treo trên trần nhà.</i><br>(C) Some cushions have been stacked on the floor.<br><i>(C) Một số đệm đã được xếp chồng lên nhau trên sàn.</i><br>(D) Some flowers have been arranged in a vase.<br><i>(D) Một số bông hoa đã được cắm trong bình.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số ghế dài đã được đẩy vào tường.",
                             "B": "Một số đèn được treo trên trần nhà.",
