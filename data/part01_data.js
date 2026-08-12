@@ -2393,6 +2393,44 @@ window.part01Data = [
                             "D": "She's throwing away a plate."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "picnic area",
+                                "ipa": "/ˈpɪknɪk ˈeəriə/",
+                                "pos": "n",
+                                "vi": "khu picnic"
+                            },
+                            {
+                                "en": "food truck",
+                                "ipa": "/fuːd trʌk/",
+                                "pos": "n",
+                                "vi": "xe bán đồ ăn"
+                            },
+                            {
+                                "en": "wiping off",
+                                "ipa": "/ˈwaɪpɪŋ ɒf/",
+                                "pos": "v",
+                                "vi": "lau"
+                            },
+                            {
+                                "en": "bench",
+                                "ipa": "/bentʃ/",
+                                "pos": "n",
+                                "vi": "ghế dài"
+                            },
+                            {
+                                "en": "throwing away",
+                                "ipa": "/ˈθrəʊɪŋ əˈweɪ/",
+                                "pos": "v",
+                                "vi": "ném đi"
+                            },
+                            {
+                                "en": "plate",
+                                "ipa": "/pleɪt/",
+                                "pos": "n",
+                                "vi": "đĩa"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) She’s eating in a picnic area.<br><i>(A) Cô ấy đang ăn tại khu picnic.</i><br>(B) She's waiting in line at a food truck.<br><i>(B) Cô ấy đang xếp hàng chờ ở xe bán đồ ăn.</i><br>(C) She's wiping off a bench.<br><i>(C) Cô ấy đang lau một chiếc ghế dài.</i><br>(D) She's throwing away a plate.<br><i>(D) Cô ấy đang ném đi một cái đĩa.</i><br>",
                         "vietnamese_choices": {
                             "A": "Cô ấy đang ăn tại khu picnic.",
@@ -2419,6 +2457,50 @@ window.part01Data = [
                             "D": "The man is running through the snow."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "brushing",
+                                "ipa": "/ˈbrʌʃɪŋ/",
+                                "pos": "v",
+                                "vi": "phủi"
+                            },
+                            {
+                                "en": "snow",
+                                "ipa": "/snəʊ/",
+                                "pos": "n",
+                                "vi": "tuyết"
+                            },
+                            {
+                                "en": "roof",
+                                "ipa": "/ruːf/",
+                                "pos": "n",
+                                "vi": "nóc"
+                            },
+                            {
+                                "en": "standing",
+                                "ipa": "/ˈstændɪŋ/",
+                                "pos": "v",
+                                "vi": "đứng"
+                            },
+                            {
+                                "en": "shoveling",
+                                "ipa": "/ˈʃʌvəlɪŋ/",
+                                "pos": "v",
+                                "vi": "xúc"
+                            },
+                            {
+                                "en": "walkway",
+                                "ipa": "/ˈwɔːkweɪ/",
+                                "pos": "n",
+                                "vi": "lối đi"
+                            },
+                            {
+                                "en": "running",
+                                "ipa": "/ˈrʌnɪŋ/",
+                                "pos": "v",
+                                "vi": "chạy"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) The man is brushing snow off the roof of a car.<br><i>(A) Người đàn ông đang phủi tuyết khỏi nóc ô tô.</i><br>(B) The man is standing in the snow beside a car.<br><i>(B) Người đàn ông đang đứng trong tuyết bên cạnh một chiếc ô tô.</i><br>(C) The man is shoveling snow from a walkway.<br><i>(C) Người đàn ông đang xúc tuyết trên lối đi.</i><br>(D) The man is running through the snow.<br><i>(D) Người đàn ông đang chạy qua tuyết.</i><br>",
                         "vietnamese_choices": {
                             "A": "Người đàn ông đang phủi tuyết khỏi nóc ô tô.",
@@ -2445,6 +2527,50 @@ window.part01Data = [
                             "D": "One of the men is painting a picture."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "hanging",
+                                "ipa": "/ˈhæŋɪŋ/",
+                                "pos": "v",
+                                "vi": "treo"
+                            },
+                            {
+                                "en": "gallery",
+                                "ipa": "/ˈɡæləri/",
+                                "pos": "n",
+                                "vi": "phòng trưng bày"
+                            },
+                            {
+                                "en": "conversation",
+                                "ipa": "/ˌkɒnvəˈseɪʃn/",
+                                "pos": "n",
+                                "vi": "trò chuyện"
+                            },
+                            {
+                                "en": "rearranging",
+                                "ipa": "/ˌriːəˈreɪndʒɪŋ/",
+                                "pos": "v",
+                                "vi": "sắp xếp lại"
+                            },
+                            {
+                                "en": "cushions",
+                                "ipa": "/ˈkʊʃnz/",
+                                "pos": "n",
+                                "vi": "đệm"
+                            },
+                            {
+                                "en": "painting",
+                                "ipa": "/ˈpeɪntɪŋ/",
+                                "pos": "v",
+                                "vi": "vẽ"
+                            },
+                            {
+                                "en": "picture",
+                                "ipa": "/ˈpɪktʃə(r)/",
+                                "pos": "n",
+                                "vi": "bức tranh"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some workers are hanging art in a gallery.<br><i>(A) Một số công nhân đang treo tác phẩm nghệ thuật trong phòng trưng bày.</i><br>(B) Two of the people are having a conversation.<br><i>(B) Hai người đang trò chuyện.</i><br>(C) One of the men is rearranging cushions on a sofa.<br><i>(C) Một người đàn ông đang sắp xếp lại những chiếc đệm trên ghế sofa.</i><br>(D) One of the men is painting a picture.<br><i>(D) Một người đàn ông đang vẽ một bức tranh.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số công nhân đang treo tác phẩm nghệ thuật trong phòng trưng bày.",
@@ -2471,6 +2597,56 @@ window.part01Data = [
                             "D": "Clothing is being displayed under a tent."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "vehicles",
+                                "ipa": "/ˈviːəklz/",
+                                "pos": "n",
+                                "vi": "phương tiện"
+                            },
+                            {
+                                "en": "parking garage",
+                                "ipa": "/ˈpɑːkɪŋ ˈɡærɑːʒ/",
+                                "pos": "n",
+                                "vi": "bãi đỗ xe"
+                            },
+                            {
+                                "en": "clothes hangers",
+                                "ipa": "/kləʊðz ˈhæŋərz/",
+                                "pos": "n",
+                                "vi": "móc treo quần áo"
+                            },
+                            {
+                                "en": "scattered",
+                                "ipa": "/ˈskætərd/",
+                                "pos": "v",
+                                "vi": "nằm rải rác"
+                            },
+                            {
+                                "en": "empty racks",
+                                "ipa": "/ˈempti ræks/",
+                                "pos": "n",
+                                "vi": "giá đỡ trống"
+                            },
+                            {
+                                "en": "lined up",
+                                "ipa": "/laɪnd ʌp/",
+                                "pos": "v",
+                                "vi": "xếp hàng"
+                            },
+                            {
+                                "en": "displayed",
+                                "ipa": "/dɪˈspleɪd/",
+                                "pos": "v",
+                                "vi": "trưng bày"
+                            },
+                            {
+                                "en": "tent",
+                                "ipa": "/tent/",
+                                "pos": "n",
+                                "vi": "lều"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) Vehicles are entering a parking garage.<br><i>(A) Các phương tiện đang đi vào bãi đỗ xe.</i><br>(B) Clothes hangers are scattered on the ground.<br><i>(B) Những chiếc móc treo quần áo nằm rải rác trên mặt đất.</i><br>(C) Empty racks are lined up next to a building.<br><i>(C) Các giá đỡ trống được xếp cạnh một tòa nhà.</i><br>(D) Clothing is being displayed under a tent.<br><i>(D) Quần áo đang được trưng bày dưới lều.</i><br>",
                         "vietnamese_choices": {
                             "A": "Các phương tiện đang đi vào bãi đỗ xe.",
@@ -2497,6 +2673,56 @@ window.part01Data = [
                             "D": "A rug has been rolled up against a wall."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "potted plants",
+                                "ipa": "/ˈpɒtɪd plɑːnts/",
+                                "pos": "n",
+                                "vi": "chậu cây"
+                            },
+                            {
+                                "en": "suspended",
+                                "ipa": "/səˈspendɪd/",
+                                "pos": "v",
+                                "vi": "treo"
+                            },
+                            {
+                                "en": "ceiling",
+                                "ipa": "/ˈsiːlɪŋ/",
+                                "pos": "n",
+                                "vi": "trần nhà"
+                            },
+                            {
+                                "en": "stacked",
+                                "ipa": "/stækt/",
+                                "pos": "v",
+                                "vi": "xếp"
+                            },
+                            {
+                                "en": "entryway",
+                                "ipa": "/ˈentriweɪ/",
+                                "pos": "n",
+                                "vi": "lối vào"
+                            },
+                            {
+                                "en": "set up",
+                                "ipa": "/set ʌp/",
+                                "pos": "v",
+                                "vi": "sắp xếp"
+                            },
+                            {
+                                "en": "rug",
+                                "ipa": "/rʌɡ/",
+                                "pos": "n",
+                                "vi": "tấm thảm"
+                            },
+                            {
+                                "en": "rolled up",
+                                "ipa": "/rəʊld ʌp/",
+                                "pos": "v",
+                                "vi": "cuộn lên"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Potted plants have been suspended from a ceiling.<br><i>(A) Những chậu cây được treo trên trần nhà.</i><br>(B) Chairs have been stacked in front of an entryway.<br><i>(B) Ghế đã được xếp trước lối vào.</i><br>(C) A computer station has been set up on a desk.<br><i>(C) Một chiếc máy tính đã được sắp xếp trên bàn.</i><br>(D) A rug has been rolled up against a wall.<br><i>(D) Một tấm thảm đã được cuộn lên tường.</i><br>",
                         "vietnamese_choices": {
                             "A": "Những chậu cây được treo trên trần nhà.",
@@ -2523,6 +2749,50 @@ window.part01Data = [
                             "D": "A light fixture has been left on the ground."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "sweeping",
+                                "ipa": "/ˈswiːpɪŋ/",
+                                "pos": "v",
+                                "vi": "quét"
+                            },
+                            {
+                                "en": "patio",
+                                "ipa": "/ˈpætiəʊ/",
+                                "pos": "n",
+                                "vi": "sân"
+                            },
+                            {
+                                "en": "replacing",
+                                "ipa": "/rɪˈpleɪsɪŋ/",
+                                "pos": "v",
+                                "vi": "thay thế"
+                            },
+                            {
+                                "en": "flooring",
+                                "ipa": "/ˈflɔːrɪŋ/",
+                                "pos": "n",
+                                "vi": "lót sàn"
+                            },
+                            {
+                                "en": "taken off",
+                                "ipa": "/ˈteɪkən ɒf/",
+                                "pos": "v",
+                                "vi": "tháo ra"
+                            },
+                            {
+                                "en": "frame",
+                                "ipa": "/freɪm/",
+                                "pos": "n",
+                                "vi": "khung"
+                            },
+                            {
+                                "en": "light fixture",
+                                "ipa": "/laɪt ˈfɪkstʃə(r)/",
+                                "pos": "n",
+                                "vi": "đèn chiếu sáng"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) One of the men is sweeping a patio.<br><i>(A) Một người đàn ông đang quét sân.</i><br>(B) One of the men is replacing some flooring.<br><i>(B) Một người đàn ông đang thay thế lót sàn nhà.</i><br>(C) A door has been taken off its frame.<br><i>(C) Một cánh cửa đã bị tháo ra khỏi khung.</i><br>(D) A light fixture has been left on the ground.<br><i>(D) Một chiếc đèn chiếu sáng đã bị bỏ lại trên mặt đất.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một người đàn ông đang quét sân.",
@@ -2556,6 +2826,56 @@ window.part01Data = [
                             "D": "She's tacking a notice onto the wall."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "inserting",
+                                "ipa": "/ɪnˈsɜːtɪŋ/",
+                                "pos": "v",
+                                "vi": "cắm"
+                            },
+                            {
+                                "en": "outlet",
+                                "ipa": "/ˈaʊtlet/",
+                                "pos": "n",
+                                "vi": "ổ cắm"
+                            },
+                            {
+                                "en": "pressing",
+                                "ipa": "/ˈpresɪŋ/",
+                                "pos": "v",
+                                "vi": "nhấn"
+                            },
+                            {
+                                "en": "button",
+                                "ipa": "/ˈbʌtn/",
+                                "pos": "n",
+                                "vi": "nút"
+                            },
+                            {
+                                "en": "gripping",
+                                "ipa": "/ˈɡrɪpɪŋ/",
+                                "pos": "v",
+                                "vi": "nắm chặt"
+                            },
+                            {
+                                "en": "drawer",
+                                "ipa": "/drɔː(r)/",
+                                "pos": "n",
+                                "vi": "ngăn kéo"
+                            },
+                            {
+                                "en": "tacking",
+                                "ipa": "/ˈtækɪŋ/",
+                                "pos": "v",
+                                "vi": "dán"
+                            },
+                            {
+                                "en": "notice",
+                                "ipa": "/ˈnəʊtɪs/",
+                                "pos": "n",
+                                "vi": "thông báo"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) She's inserting a cord into an outlet.<br><i>(A) Cô ấy đang cắm dây vào ổ cắm.</i><br>(B) She's pressing a button on a machine.<br><i>(B) Cô ấy đang nhấn nút trên máy.</i><br>(C) She's gripping the handle of a drawer.<br><i>(C) Cô ấy đang nắm chặt tay cầm ngăn kéo.</i><br>(D) She's tacking a notice onto the wall.<br><i>(D) Cô ấy đang dán một tờ thông báo lên tường.</i><br>",
                         "vietnamese_choices": {
                             "A": "Cô ấy đang cắm dây vào ổ cắm.",
@@ -2582,6 +2902,50 @@ window.part01Data = [
                             "D": "Some wooden boards are being painted."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "window shutters",
+                                "ipa": "/ˈwɪndəʊ ˈʃʌtəz/",
+                                "pos": "n",
+                                "vi": "cửa chớp"
+                            },
+                            {
+                                "en": "replaced",
+                                "ipa": "/rɪˈpleɪst/",
+                                "pos": "v",
+                                "vi": "thay thế"
+                            },
+                            {
+                                "en": "pillow",
+                                "ipa": "/ˈpɪləʊ/",
+                                "pos": "n",
+                                "vi": "gối"
+                            },
+                            {
+                                "en": "arranged",
+                                "ipa": "/əˈreɪndʒd/",
+                                "pos": "v",
+                                "vi": "đặt"
+                            },
+                            {
+                                "en": "cleared off",
+                                "ipa": "/klɪəd ɒf/",
+                                "pos": "v",
+                                "vi": "dọn sạch"
+                            },
+                            {
+                                "en": "wooden boards",
+                                "ipa": "/ˈwʊdn bɔːdz/",
+                                "pos": "n",
+                                "vi": "tấm gỗ"
+                            },
+                            {
+                                "en": "painted",
+                                "ipa": "/ˈpeɪntɪd/",
+                                "pos": "v",
+                                "vi": "sơn"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some window shutters are being replaced.<br><i>(A) Một số cửa chớp đang được thay thế.</i><br>(B) A pillow is being arranged on a seat.<br><i>(B) Một chiếc gối đang được đặt trên ghế.</i><br>(C) An outdoor table is being cleared off.<br><i>(C) Một chiếc bàn ngoài trời đang được dọn sạch.</i><br>(D) Some wooden boards are being painted.<br><i>(D) Một số tấm gỗ đang được sơn.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số cửa chớp đang được thay thế.",
@@ -2608,6 +2972,50 @@ window.part01Data = [
                             "D": "Some drawers have been left open."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "utensils",
+                                "ipa": "/juːˈtenslz/",
+                                "pos": "n",
+                                "vi": "đồ dùng"
+                            },
+                            {
+                                "en": "discarded",
+                                "ipa": "/dɪsˈkɑːdɪd/",
+                                "pos": "v",
+                                "vi": "bỏ đi"
+                            },
+                            {
+                                "en": "bin",
+                                "ipa": "/bɪn/",
+                                "pos": "n",
+                                "vi": "thùng"
+                            },
+                            {
+                                "en": "emptied",
+                                "ipa": "/ˈemptid/",
+                                "pos": "v",
+                                "vi": "đổ"
+                            },
+                            {
+                                "en": "sink",
+                                "ipa": "/sɪŋk/",
+                                "pos": "n",
+                                "vi": "bồn rửa"
+                            },
+                            {
+                                "en": "rolling chair",
+                                "ipa": "/ˈrəʊlɪŋ tʃeə(r)/",
+                                "pos": "n",
+                                "vi": "ghế lăn"
+                            },
+                            {
+                                "en": "drawers",
+                                "ipa": "/drɔːz/",
+                                "pos": "n",
+                                "vi": "ngăn kéo"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Some utensils have been discarded in a bin.<br><i>(A) Một số đồ dùng đã bị bỏ vào thùng.</i><br>(B) Some bottles are being emptied into a sink.<br><i>(B) Một số chai đang được đổ vào bồn rửa.</i><br>(C) A rolling chair has been placed next to a counter.<br><i>(C) Một chiếc ghế lăn đã được đặt cạnh quầy.</i><br>(D) Some drawers have been left open.<br><i>(D) Một số ngăn kéo đã bị mở.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số đồ dùng đã bị bỏ vào thùng.",
@@ -2634,6 +3042,50 @@ window.part01Data = [
                             "D": "Wood is piled near a fence."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "chopping",
+                                "ipa": "/ˈtʃɒpɪŋ/",
+                                "pos": "v",
+                                "vi": "chặt"
+                            },
+                            {
+                                "en": "wood",
+                                "ipa": "/wʊd/",
+                                "pos": "n",
+                                "vi": "gỗ"
+                            },
+                            {
+                                "en": "scattered",
+                                "ipa": "/ˈskætəd/",
+                                "pos": "v",
+                                "vi": "rải rác"
+                            },
+                            {
+                                "en": "grass",
+                                "ipa": "/ɡrɑːs/",
+                                "pos": "n",
+                                "vi": "bãi cỏ"
+                            },
+                            {
+                                "en": "closing",
+                                "ipa": "/ˈkləʊzɪŋ/",
+                                "pos": "v",
+                                "vi": "đóng"
+                            },
+                            {
+                                "en": "piled",
+                                "ipa": "/paɪld/",
+                                "pos": "v",
+                                "vi": "chất"
+                            },
+                            {
+                                "en": "fence",
+                                "ipa": "/fens/",
+                                "pos": "n",
+                                "vi": "hàng rào"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) A man is chopping some wood into pieces.<br><i>(A) Một người đàn ông đang chặt gỗ thành từng mảnh.</i><br>(B) Leaves are scattered across the grass.<br><i>(B) Lá nằm rải rác trên bãi cỏ.</i><br>(C) A man is closing a window.<br><i>(C) Một người đàn ông đang đóng cửa sổ.</i><br>(D) Wood is piled near a fence.<br><i>(D) Gỗ được chất gần hàng rào.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một người đàn ông đang chặt gỗ thành từng mảnh.",
@@ -2660,6 +3112,56 @@ window.part01Data = [
                             "D": "A worker is putting up a canopy."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "standing in line",
+                                "ipa": "/ˈstændɪŋ ɪn laɪn/",
+                                "pos": "v",
+                                "vi": "xếp hàng"
+                            },
+                            {
+                                "en": "lobby",
+                                "ipa": "/ˈlɒbi/",
+                                "pos": "n",
+                                "vi": "sảnh"
+                            },
+                            {
+                                "en": "loaded",
+                                "ipa": "/ˈləʊdɪd/",
+                                "pos": "v",
+                                "vi": "chất vào"
+                            },
+                            {
+                                "en": "shopping bags",
+                                "ipa": "/ˈʃɒpɪŋ bæɡz/",
+                                "pos": "n",
+                                "vi": "túi mua sắm"
+                            },
+                            {
+                                "en": "tents",
+                                "ipa": "/tents/",
+                                "pos": "n",
+                                "vi": "lều"
+                            },
+                            {
+                                "en": "set up",
+                                "ipa": "/set ʌp/",
+                                "pos": "v",
+                                "vi": "dựng"
+                            },
+                            {
+                                "en": "putting up",
+                                "ipa": "/ˈpʊtɪŋ ʌp/",
+                                "pos": "v",
+                                "vi": "dựng"
+                            },
+                            {
+                                "en": "canopy",
+                                "ipa": "/ˈkænəpi/",
+                                "pos": "n",
+                                "vi": "mái che"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) People are standing in line in a lobby.<br><i>(A) Mọi người đang xếp hàng ở sảnh.</i><br>(B) Items are being loaded into shopping bags.<br><i>(B) Các mặt hàng đang được chất vào túi mua sắm.</i><br>(C) Tents have been set up in a parking area.<br><i>(C) Lều đã được dựng ở khu vực đỗ xe.</i><br>(D) A worker is putting up a canopy.<br><i>(D) Một công nhân đang dựng mái che.</i><br>",
                         "vietnamese_choices": {
                             "A": "Mọi người đang xếp hàng ở sảnh.",
@@ -2686,6 +3188,56 @@ window.part01Data = [
                             "D": "A luggage rack has two levels."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "luggage",
+                                "ipa": "/ˈlʌɡɪdʒ/",
+                                "pos": "n",
+                                "vi": "hành lý"
+                            },
+                            {
+                                "en": "stacked",
+                                "ipa": "/stækt/",
+                                "pos": "v",
+                                "vi": "xếp"
+                            },
+                            {
+                                "en": "escalator",
+                                "ipa": "/ˈeskəleɪtə(r)/",
+                                "pos": "n",
+                                "vi": "thang cuốn"
+                            },
+                            {
+                                "en": "suitcase",
+                                "ipa": "/ˈsuːtkeɪs/",
+                                "pos": "n",
+                                "vi": "vali"
+                            },
+                            {
+                                "en": "lifted",
+                                "ipa": "/ˈlɪftɪd/",
+                                "pos": "v",
+                                "vi": "nâng lên"
+                            },
+                            {
+                                "en": "shuttle bus",
+                                "ipa": "/ˈʃʌtl bʌs/",
+                                "pos": "n",
+                                "vi": "xe buýt đưa đón"
+                            },
+                            {
+                                "en": "displayed",
+                                "ipa": "/dɪˈspleɪd/",
+                                "pos": "v",
+                                "vi": "trưng bày"
+                            },
+                            {
+                                "en": "luggage rack",
+                                "ipa": "/ˈlʌɡɪdʒ ræk/",
+                                "pos": "n",
+                                "vi": "giá để hành lý"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) Some luggage is stacked next to an escalator.<br><i>(A) Một số hành lý được xếp cạnh thang cuốn.</i><br>(B) A suitcase is being lifted onto a shuttle bus.<br><i>(B) Một chiếc vali đang được nâng lên một chiếc xe buýt đưa đón.</i><br>(C) Some suitcases are displayed in a shop window.<br><i>(C) Một số vali được trưng bày trong cửa sổ cửa hàng.</i><br>(D) A luggage rack has two levels.<br><i>(D) Giá để hành lý có hai tầng.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số hành lý được xếp cạnh thang cuốn.",
@@ -2719,6 +3271,56 @@ window.part01Data = [
                             "D": "She's holding a towel."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "cleaning",
+                                "ipa": "/ˈkliːnɪŋ/",
+                                "pos": "v",
+                                "vi": "lau chùi"
+                            },
+                            {
+                                "en": "oven",
+                                "ipa": "/ˈʌvn/",
+                                "pos": "n",
+                                "vi": "lò nướng"
+                            },
+                            {
+                                "en": "moving",
+                                "ipa": "/ˈmuːvɪŋ/",
+                                "pos": "v",
+                                "vi": "di chuyển"
+                            },
+                            {
+                                "en": "pot",
+                                "ipa": "/pɒt/",
+                                "pos": "n",
+                                "vi": "chậu"
+                            },
+                            {
+                                "en": "opening",
+                                "ipa": "/ˈəʊpənɪŋ/",
+                                "pos": "v",
+                                "vi": "mở"
+                            },
+                            {
+                                "en": "cabinet",
+                                "ipa": "/ˈkæbɪnət/",
+                                "pos": "n",
+                                "vi": "tủ"
+                            },
+                            {
+                                "en": "holding",
+                                "ipa": "/ˈhəʊldɪŋ/",
+                                "pos": "v",
+                                "vi": "cầm"
+                            },
+                            {
+                                "en": "towel",
+                                "ipa": "/ˈtaʊəl/",
+                                "pos": "n",
+                                "vi": "khăn tắm"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) She's cleaning an oven.<br><i>(A) Cô ấy đang lau chùi lò nướng.</i><br>(B) She's moving a pot.<br><i>(B) Cô ấy đang di chuyển một cái chậu.</i><br>(C) She's opening a cabinet.<br><i>(C) Cô ấy đang mở tủ.</i><br>(D) She's holding a towel.<br><i>(D) Cô ấy đang cầm một chiếc khăn tắm.</i><br>",
                         "vietnamese_choices": {
                             "A": "Cô ấy đang lau chùi lò nướng.",
@@ -2745,6 +3347,56 @@ window.part01Data = [
                             "D": "They're painting a room."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "putting",
+                                "ipa": "/ˈpʊtɪŋ/",
+                                "pos": "v",
+                                "vi": "bỏ"
+                            },
+                            {
+                                "en": "trash",
+                                "ipa": "/træʃ/",
+                                "pos": "n",
+                                "vi": "rác"
+                            },
+                            {
+                                "en": "taking off",
+                                "ipa": "/ˈteɪkɪŋ ɒf/",
+                                "pos": "v",
+                                "vi": "cởi"
+                            },
+                            {
+                                "en": "jackets",
+                                "ipa": "/ˈdʒækɪts/",
+                                "pos": "n",
+                                "vi": "áo khoác"
+                            },
+                            {
+                                "en": "facing",
+                                "ipa": "/ˈfeɪsɪŋ/",
+                                "pos": "v",
+                                "vi": "đối mặt"
+                            },
+                            {
+                                "en": "shelving unit",
+                                "ipa": "/ˈʃelvɪŋ ˈjuːnɪt/",
+                                "pos": "n",
+                                "vi": "kệ"
+                            },
+                            {
+                                "en": "painting",
+                                "ipa": "/ˈpeɪntɪŋ/",
+                                "pos": "v",
+                                "vi": "sơn"
+                            },
+                            {
+                                "en": "room",
+                                "ipa": "/ruːm/",
+                                "pos": "n",
+                                "vi": "căn phòng"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) They're putting trash in a bag.<br><i>(A) Họ đang bỏ rác vào túi.</i><br>(B) They're taking off their jackets.<br><i>(B) Họ đang cởi áo khoác.</i><br>(C) They're facing a shelving unit.<br><i>(C) Họ đang đối mặt với một chiếc kệ.</i><br>(D) They're painting a room.<br><i>(D) Họ đang sơn một căn phòng.</i><br>",
                         "vietnamese_choices": {
                             "A": "Họ đang bỏ rác vào túi.",
@@ -2771,6 +3423,50 @@ window.part01Data = [
                             "D": "Musicians have gathered in a circle."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "removing",
+                                "ipa": "/rɪˈmuːvɪŋ/",
+                                "pos": "v",
+                                "vi": "cởi"
+                            },
+                            {
+                                "en": "hat",
+                                "ipa": "/hæt/",
+                                "pos": "n",
+                                "vi": "mũ"
+                            },
+                            {
+                                "en": "extends",
+                                "ipa": "/ɪkˈstendz/",
+                                "pos": "v",
+                                "vi": "kéo dài"
+                            },
+                            {
+                                "en": "installing",
+                                "ipa": "/ɪnˈstɔːlɪŋ/",
+                                "pos": "v",
+                                "vi": "lắp đặt"
+                            },
+                            {
+                                "en": "sign",
+                                "ipa": "/saɪn/",
+                                "pos": "n",
+                                "vi": "bảng hiệu"
+                            },
+                            {
+                                "en": "gathered",
+                                "ipa": "/ˈɡæðəd/",
+                                "pos": "v",
+                                "vi": "tập hợp"
+                            },
+                            {
+                                "en": "circle",
+                                "ipa": "/ˈsɜːkl/",
+                                "pos": "n",
+                                "vi": "vòng tròn"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) One of the men is removing his hat.<br><i>(A) Một người đàn ông đang cởi mũ của mình.</i><br>(B) A line of customers extends out a door.<br><i>(B) Một hàng khách hàng kéo dài ra cửa.</i><br>(C) Some workers are installing a sign.<br><i>(C) Một số công nhân đang lắp đặt một bảng hiệu.</i><br>(D) Musicians have gathered in a circle.<br><i>(D) Các nhạc sĩ đã tập hợp thành một vòng tròn.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một người đàn ông đang cởi mũ của mình.",
@@ -2797,6 +3493,50 @@ window.part01Data = [
                             "D": "A table leg is being repaired."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "tools",
+                                "ipa": "/tuːlz/",
+                                "pos": "n",
+                                "vi": "dụng cụ"
+                            },
+                            {
+                                "en": "left",
+                                "ipa": "/left/",
+                                "pos": "v",
+                                "vi": "để"
+                            },
+                            {
+                                "en": "tool sets",
+                                "ipa": "/tuːl sets/",
+                                "pos": "n",
+                                "vi": "bộ công cụ"
+                            },
+                            {
+                                "en": "laid out",
+                                "ipa": "/leɪd aʊt/",
+                                "pos": "v",
+                                "vi": "chuẩn bị sẵn"
+                            },
+                            {
+                                "en": "spilled",
+                                "ipa": "/spɪld/",
+                                "pos": "v",
+                                "vi": "đổ"
+                            },
+                            {
+                                "en": "table leg",
+                                "ipa": "/ˈteɪbl leɡ/",
+                                "pos": "n",
+                                "vi": "chân bàn"
+                            },
+                            {
+                                "en": "repaired",
+                                "ipa": "/rɪˈpeəd/",
+                                "pos": "v",
+                                "vi": "sửa chữa"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some tools have been left on a chair.<br><i>(A) Một số dụng cụ đã được để trên ghế.</i><br>(B) Some tool sets have been laid out.<br><i>(B) Một số bộ công cụ đã được chuẩn bị sẵn.</i><br>(C) A cup of coffee has spilled.<br><i>(C) Một tách cà phê đã đổ.</i><br>(D) A table leg is being repaired.<br><i>(D) Một chân bàn đang được sửa chữa.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số dụng cụ đã được để trên ghế.",
@@ -2823,6 +3563,56 @@ window.part01Data = [
                             "D": "Some workers are holding sheets of metal."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "railing",
+                                "ipa": "/ˈreɪlɪŋ/",
+                                "pos": "n",
+                                "vi": "lan can"
+                            },
+                            {
+                                "en": "removed",
+                                "ipa": "/rɪˈmuːvd/",
+                                "pos": "v",
+                                "vi": "dỡ bỏ"
+                            },
+                            {
+                                "en": "roof",
+                                "ipa": "/ruːf/",
+                                "pos": "n",
+                                "vi": "mái nhà"
+                            },
+                            {
+                                "en": "construction",
+                                "ipa": "/kənˈstrʌkʃn/",
+                                "pos": "n",
+                                "vi": "xây dựng"
+                            },
+                            {
+                                "en": "carrying",
+                                "ipa": "/ˈkæriɪŋ/",
+                                "pos": "v",
+                                "vi": "mang"
+                            },
+                            {
+                                "en": "ladder",
+                                "ipa": "/ˈlædə(r)/",
+                                "pos": "n",
+                                "vi": "cái thang"
+                            },
+                            {
+                                "en": "holding",
+                                "ipa": "/ˈhəʊldɪŋ/",
+                                "pos": "v",
+                                "vi": "cầm"
+                            },
+                            {
+                                "en": "sheets of metal",
+                                "ipa": "/ʃiːts əv ˈmetl/",
+                                "pos": "n",
+                                "vi": "tấm kim loại"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) A railing is being removed.<br><i>(A) Một lan can đang được dỡ bỏ.</i><br>(B) A roof is under construction.<br><i>(B) Một mái nhà đang được xây dựng.</i><br>(C) Some workers are carrying a ladder.<br><i>(C) Một số công nhân đang mang theo cái thang.</i><br>(D) Some workers are holding sheets of metal.<br><i>(D) Một số công nhân đang cầm những tấm kim loại.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một lan can đang được dỡ bỏ.",
@@ -2849,6 +3639,56 @@ window.part01Data = [
                             "D": "A wooden structure has been built near some trees."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "leaned",
+                                "ipa": "/liːnd/",
+                                "pos": "v",
+                                "vi": "tựa"
+                            },
+                            {
+                                "en": "tree",
+                                "ipa": "/triː/",
+                                "pos": "n",
+                                "vi": "cây"
+                            },
+                            {
+                                "en": "branches",
+                                "ipa": "/ˈbrɑːntʃɪz/",
+                                "pos": "n",
+                                "vi": "cành cây"
+                            },
+                            {
+                                "en": "discarded",
+                                "ipa": "/dɪsˈkɑːdɪd/",
+                                "pos": "v",
+                                "vi": "vứt bỏ"
+                            },
+                            {
+                                "en": "benches",
+                                "ipa": "/ˈbentʃɪz/",
+                                "pos": "n",
+                                "vi": "ghế dài"
+                            },
+                            {
+                                "en": "arranged",
+                                "ipa": "/əˈreɪndʒd/",
+                                "pos": "v",
+                                "vi": "sắp xếp"
+                            },
+                            {
+                                "en": "structure",
+                                "ipa": "/ˈstrʌktʃə(r)/",
+                                "pos": "n",
+                                "vi": "cấu trúc"
+                            },
+                            {
+                                "en": "built",
+                                "ipa": "/bɪlt/",
+                                "pos": "v",
+                                "vi": "xây dựng"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) A ladder has been leaned against a tree.<br><i>(A) Một cái thang được tựa vào một cái cây.</i><br>(B) There are piles of tree branches discarded in a field.<br><i>(B) Có những đống cành cây bị vứt bỏ trên cánh đồng.</i><br>(C) Wooden benches have been arranged in a circle.<br><i>(C) Những chiếc ghế dài bằng gỗ đã được sắp xếp thành hình tròn.</i><br>(D) A wooden structure has been built near some trees.<br><i>(D) Một cấu trúc bằng gỗ đã được xây dựng gần một số cây cối.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một cái thang được tựa vào một cái cây.",
@@ -2882,6 +3722,56 @@ window.part01Data = [
                             "D": "He's ironing a shirt."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "cleaning",
+                                "ipa": "/ˈkliːnɪŋ/",
+                                "pos": "v",
+                                "vi": "lau"
+                            },
+                            {
+                                "en": "floor",
+                                "ipa": "/flɔː(r)/",
+                                "pos": "n",
+                                "vi": "sàn nhà"
+                            },
+                            {
+                                "en": "setting",
+                                "ipa": "/ˈsetɪŋ/",
+                                "pos": "v",
+                                "vi": "đặt"
+                            },
+                            {
+                                "en": "shelf",
+                                "ipa": "/ʃelf/",
+                                "pos": "n",
+                                "vi": "kệ"
+                            },
+                            {
+                                "en": "pouring",
+                                "ipa": "/ˈpɔːrɪŋ/",
+                                "pos": "v",
+                                "vi": "đổ"
+                            },
+                            {
+                                "en": "liquid",
+                                "ipa": "/ˈlɪkwɪd/",
+                                "pos": "n",
+                                "vi": "chất lỏng"
+                            },
+                            {
+                                "en": "ironing",
+                                "ipa": "/ˈaɪənɪŋ/",
+                                "pos": "v",
+                                "vi": "ủi"
+                            },
+                            {
+                                "en": "shirt",
+                                "ipa": "/ʃɜːt/",
+                                "pos": "n",
+                                "vi": "áo sơ mi"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) He's cleaning the floor.<br><i>(A) Anh ấy đang lau sàn nhà.</i><br>(B) He's setting a plant on a shelf.<br><i>(B) Anh ấy đang đặt một cái cây lên kệ.</i><br>(C) He's pouring some liquid into a cup.<br><i>(C) Anh ấy đang đổ một ít chất lỏng vào cốc.</i><br>(D) He's ironing a shirt.<br><i>(D) Anh ấy đang ủi một chiếc áo sơ mi.</i><br>",
                         "vietnamese_choices": {
                             "A": "Anh ấy đang lau sàn nhà.",
@@ -2908,6 +3798,56 @@ window.part01Data = [
                             "D": "They're examining a document."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "glancing",
+                                "ipa": "/ˈɡlɑːnsɪŋ/",
+                                "pos": "v",
+                                "vi": "nhìn"
+                            },
+                            {
+                                "en": "monitor",
+                                "ipa": "/ˈmɒnɪtə(r)/",
+                                "pos": "n",
+                                "vi": "màn hình"
+                            },
+                            {
+                                "en": "putting",
+                                "ipa": "/ˈpʊtɪŋ/",
+                                "pos": "v",
+                                "vi": "đặt"
+                            },
+                            {
+                                "en": "jar",
+                                "ipa": "/dʒɑː(r)/",
+                                "pos": "n",
+                                "vi": "lọ"
+                            },
+                            {
+                                "en": "wiping off",
+                                "ipa": "/ˈwaɪpɪŋ ɒf/",
+                                "pos": "v",
+                                "vi": "lau"
+                            },
+                            {
+                                "en": "desk",
+                                "ipa": "/desk/",
+                                "pos": "n",
+                                "vi": "bàn"
+                            },
+                            {
+                                "en": "examining",
+                                "ipa": "/ɪɡˈzæmɪnɪŋ/",
+                                "pos": "v",
+                                "vi": "kiểm tra"
+                            },
+                            {
+                                "en": "document",
+                                "ipa": "/ˈdɒkjumənt/",
+                                "pos": "n",
+                                "vi": "tài liệu"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) They're glancing at a monitor.<br><i>(A) Họ đang nhìn vào màn hình.</i><br>(B) They're putting pens in a jar.<br><i>(B) Họ đang đặt bút vào lọ.</i><br>(C) They're wiping off a desk.<br><i>(C) Họ đang lau bàn.</i><br>(D) They're examining a document.<br><i>(D) Họ đang kiểm tra một tài liệu.</i><br>",
                         "vietnamese_choices": {
                             "A": "Họ đang nhìn vào màn hình.",
@@ -2934,6 +3874,50 @@ window.part01Data = [
                             "D": "Some people are rowing a boat past a lighthouse."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "ride",
+                                "ipa": "/raɪd/",
+                                "pos": "n",
+                                "vi": "chuyến đi"
+                            },
+                            {
+                                "en": "boat",
+                                "ipa": "/boʊt/",
+                                "pos": "n",
+                                "vi": "thuyền"
+                            },
+                            {
+                                "en": "float",
+                                "ipa": "/floʊt/",
+                                "pos": "v",
+                                "vi": "trôi nổi"
+                            },
+                            {
+                                "en": "bridge",
+                                "ipa": "/brɪdʒ/",
+                                "pos": "n",
+                                "vi": "cây cầu"
+                            },
+                            {
+                                "en": "cargo",
+                                "ipa": "/ˈkɑːrɡoʊ/",
+                                "pos": "n",
+                                "vi": "hàng hóa"
+                            },
+                            {
+                                "en": "row",
+                                "ipa": "/roʊ/",
+                                "pos": "v",
+                                "vi": "chèo"
+                            },
+                            {
+                                "en": "lighthouse",
+                                "ipa": "/ˈlaɪthaʊs/",
+                                "pos": "n",
+                                "vi": "ngọn hải đăng"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some people are taking a ride on a boat.<br><i>(A) Một số người đang đi trên thuyền.</i><br>(B) A boat is floating under a bridge.<br><i>(B) Một chiếc thuyền đang trôi dưới cầu.</i><br>(C) A boat is being loaded with cargo.<br><i>(C) Một chiếc thuyền đang chở hàng hóa.</i><br>(D) Some people are rowing a boat past a lighthouse.<br><i>(D) Một số người đang chèo thuyền qua ngọn hải đăng.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số người đang đi trên thuyền.",
@@ -2960,6 +3944,50 @@ window.part01Data = [
                             "D": "A television is being packed into a box."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "fire",
+                                "ipa": "/ˈfaɪər/",
+                                "pos": "n",
+                                "vi": "ngọn lửa"
+                            },
+                            {
+                                "en": "burn",
+                                "ipa": "/bɜːrn/",
+                                "pos": "v",
+                                "vi": "cháy"
+                            },
+                            {
+                                "en": "fireplace",
+                                "ipa": "/ˈfaɪərpleɪs/",
+                                "pos": "n",
+                                "vi": "lò sưởi"
+                            },
+                            {
+                                "en": "guitar",
+                                "ipa": "/ɡɪˈtɑːr/",
+                                "pos": "n",
+                                "vi": "đàn guitar"
+                            },
+                            {
+                                "en": "cable",
+                                "ipa": "/ˈkeɪbl/",
+                                "pos": "n",
+                                "vi": "dây cáp"
+                            },
+                            {
+                                "en": "pile",
+                                "ipa": "/paɪl/",
+                                "pos": "n",
+                                "vi": "đống"
+                            },
+                            {
+                                "en": "pack",
+                                "ipa": "/pæk/",
+                                "pos": "v",
+                                "vi": "đóng gói"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) There's a fire burning in a fireplace.<br><i>(A) Có một ngọn lửa đang cháy trong lò sưởi.</i><br>(B) There's a guitar beside a fireplace.<br><i>(B) Có một cây đàn guitar bên cạnh lò sưởi.</i><br>(C) Some cables have been left on the ground in a pile.<br><i>(C) Một số dây cáp đã bị vứt thành đống trên mặt đất.</i><br>(D) A television is being packed into a box.<br><i>(D) Một chiếc tivi đang được đóng gói vào một.</i><br>",
                         "vietnamese_choices": {
                             "A": "Có một ngọn lửa đang cháy trong lò sưởi.",
@@ -2986,6 +4014,44 @@ window.part01Data = [
                             "D": "A bicycle has fallen over on the ground."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "bicycle",
+                                "ipa": "/ˈbaɪsɪkl/",
+                                "pos": "n",
+                                "vi": "xe đạp"
+                            },
+                            {
+                                "en": "field",
+                                "ipa": "/fiːld/",
+                                "pos": "n",
+                                "vi": "cánh đồng"
+                            },
+                            {
+                                "en": "move",
+                                "ipa": "/muːv/",
+                                "pos": "v",
+                                "vi": "di chuyển"
+                            },
+                            {
+                                "en": "picnic table",
+                                "ipa": "/ˈpɪknɪk ˈteɪbl/",
+                                "pos": "n",
+                                "vi": "bàn ăn ngoài trời"
+                            },
+                            {
+                                "en": "mountain",
+                                "ipa": "/ˈmaʊntn/",
+                                "pos": "n",
+                                "vi": "ngọn núi"
+                            },
+                            {
+                                "en": "fall over",
+                                "ipa": "/fɔːl ˈoʊvər/",
+                                "pos": "v",
+                                "vi": "ngã"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Some people are riding bicycles through a field.<br><i>(A) Một số người đang đạp xe qua cánh đồng.</i><br>(B) Some people are moving a picnic table.<br><i>(B) Một số người đang di chuyển bàn ăn ngoài trời.</i><br>(C) There are some mountains in the distance.<br><i>(C) Có một số ngọn núi ở phía xa.</i><br>(D) A bicycle has fallen over on the ground.<br><i>(D) Một chiếc xe đạp bị ngã trên mặt đất.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số người đang đạp xe qua cánh đồng.",
@@ -3012,6 +4078,68 @@ window.part01Data = [
                             "D": "Some flowers have been arranged in a vase."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "couch",
+                                "ipa": "/kaʊtʃ/",
+                                "pos": "n",
+                                "vi": "ghế dài"
+                            },
+                            {
+                                "en": "push",
+                                "ipa": "/pʊʃ/",
+                                "pos": "v",
+                                "vi": "đẩy"
+                            },
+                            {
+                                "en": "wall",
+                                "ipa": "/wɔːl/",
+                                "pos": "n",
+                                "vi": "bức tường"
+                            },
+                            {
+                                "en": "light",
+                                "ipa": "/laɪt/",
+                                "pos": "n",
+                                "vi": "đèn"
+                            },
+                            {
+                                "en": "hang",
+                                "ipa": "/hæŋ/",
+                                "pos": "v",
+                                "vi": "treo"
+                            },
+                            {
+                                "en": "ceiling",
+                                "ipa": "/ˈsiːlɪŋ/",
+                                "pos": "n",
+                                "vi": "trần nhà"
+                            },
+                            {
+                                "en": "cushion",
+                                "ipa": "/ˈkʊʃn/",
+                                "pos": "n",
+                                "vi": "đệm"
+                            },
+                            {
+                                "en": "stack",
+                                "ipa": "/stæk/",
+                                "pos": "v",
+                                "vi": "xếp chồng"
+                            },
+                            {
+                                "en": "arrange",
+                                "ipa": "/əˈreɪndʒ/",
+                                "pos": "v",
+                                "vi": "cắm"
+                            },
+                            {
+                                "en": "vase",
+                                "ipa": "/veɪs/",
+                                "pos": "n",
+                                "vi": "bình hoa"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some couches have been pushed against a wall.<br><i>(A) Một số ghế dài đã được đẩy vào tường.</i><br>(B) Some lights have been hung from the ceiling.<br><i>(B) Một số đèn được treo trên trần nhà.</i><br>(C) Some cushions have been stacked on the floor.<br><i>(C) Một số đệm đã được xếp chồng lên nhau trên sàn.</i><br>(D) Some flowers have been arranged in a vase.<br><i>(D) Một số bông hoa đã được cắm trong bình.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số ghế dài đã được đẩy vào tường.",
@@ -3045,6 +4173,56 @@ window.part01Data = [
                             "D": "The worker is writing some notes."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "carry",
+                                "ipa": "/ˈkæri/",
+                                "pos": "v",
+                                "vi": "mang"
+                            },
+                            {
+                                "en": "plant",
+                                "ipa": "/plænt/",
+                                "pos": "n",
+                                "vi": "cây"
+                            },
+                            {
+                                "en": "read",
+                                "ipa": "/riːd/",
+                                "pos": "v",
+                                "vi": "đọc"
+                            },
+                            {
+                                "en": "sign",
+                                "ipa": "/saɪn/",
+                                "pos": "n",
+                                "vi": "tấm biển"
+                            },
+                            {
+                                "en": "push",
+                                "ipa": "/pʊʃ/",
+                                "pos": "v",
+                                "vi": "đẩy"
+                            },
+                            {
+                                "en": "cart",
+                                "ipa": "/kɑːrt/",
+                                "pos": "n",
+                                "vi": "xe đẩy"
+                            },
+                            {
+                                "en": "write",
+                                "ipa": "/raɪt/",
+                                "pos": "v",
+                                "vi": "viết"
+                            },
+                            {
+                                "en": "note",
+                                "ipa": "/noʊt/",
+                                "pos": "n",
+                                "vi": "ghi chú"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) The worker is carrying some plants.<br><i>(A) Người công nhân đang mang một số cây.</i><br>(B) The worker is reading a sign.<br><i>(B) Người công nhân đang đọc một tấm biển.</i><br>(C) The worker is pushing a cart.<br><i>(C) Người công nhân đang đẩy xe đẩy.</i><br>(D) The worker is writing some notes.<br><i>(D) Người công nhân đang viết một số ghi chú.</i><br>",
                         "vietnamese_choices": {
                             "A": "Người công nhân đang mang một số cây.",
@@ -3071,6 +4249,56 @@ window.part01Data = [
                             "D": "Some of the people are waiting in line to purchase a ticket."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "pull",
+                                "ipa": "/pʊl/",
+                                "pos": "v",
+                                "vi": "kéo"
+                            },
+                            {
+                                "en": "suitcase",
+                                "ipa": "/ˈsuːtkeɪs/",
+                                "pos": "n",
+                                "vi": "vali"
+                            },
+                            {
+                                "en": "relax",
+                                "ipa": "/rɪˈlæks/",
+                                "pos": "v",
+                                "vi": "thư giãn"
+                            },
+                            {
+                                "en": "bench",
+                                "ipa": "/bentʃ/",
+                                "pos": "n",
+                                "vi": "ghế dài"
+                            },
+                            {
+                                "en": "luggage",
+                                "ipa": "/ˈlʌɡɪdʒ/",
+                                "pos": "n",
+                                "vi": "hành lý"
+                            },
+                            {
+                                "en": "rack",
+                                "ipa": "/ræk/",
+                                "pos": "n",
+                                "vi": "giá (để đồ)"
+                            },
+                            {
+                                "en": "purchase",
+                                "ipa": "/ˈpɜːrtʃəs/",
+                                "pos": "v",
+                                "vi": "mua"
+                            },
+                            {
+                                "en": "ticket",
+                                "ipa": "/ˈtɪkɪt/",
+                                "pos": "n",
+                                "vi": "vé"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some of the people are pulling suitcases.<br><i>(A) Một số người đang kéo vali.</i><br>(B) Some of the people are relaxing on benches.<br><i>(B) Một số người đang thư giãn trên ghế dài.</i><br>(C) Some of the people are putting luggage onto a rack.<br><i>(C) Một số người đang đặt hành lý lên giá.</i><br>(D) Some of the people are waiting in line to purchase a ticket.<br><i>(D) Một số người đang xếp hàng chờ mua vé.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số người đang kéo vali.",
@@ -3097,6 +4325,56 @@ window.part01Data = [
                             "D": "She's walking out of a tunnel."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "look into",
+                                "ipa": "/lʊk ˈɪntuː/",
+                                "pos": "v",
+                                "vi": "nhìn vào"
+                            },
+                            {
+                                "en": "backpack",
+                                "ipa": "/ˈbækpæk/",
+                                "pos": "n",
+                                "vi": "ba lô"
+                            },
+                            {
+                                "en": "tie",
+                                "ipa": "/taɪ/",
+                                "pos": "v",
+                                "vi": "buộc"
+                            },
+                            {
+                                "en": "lace",
+                                "ipa": "/leɪs/",
+                                "pos": "n",
+                                "vi": "dây"
+                            },
+                            {
+                                "en": "boot",
+                                "ipa": "/buːt/",
+                                "pos": "n",
+                                "vi": "bốt"
+                            },
+                            {
+                                "en": "hike",
+                                "ipa": "/haɪk/",
+                                "pos": "v",
+                                "vi": "đi bộ"
+                            },
+                            {
+                                "en": "path",
+                                "ipa": "/pæθ/",
+                                "pos": "n",
+                                "vi": "con đường"
+                            },
+                            {
+                                "en": "tunnel",
+                                "ipa": "/ˈtʌnl/",
+                                "pos": "n",
+                                "vi": "đường hầm"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) She's looking into her backpack.<br><i>(A) Cô ấy đang nhìn vào ba lô của mình.</i><br>(B) She's tying the laces of her boots.<br><i>(B) Cô ấy đang buộc dây bốt của mình.</i><br>(C) She's hiking on an outdoor path.<br><i>(C) Cô ấy đang đi bộ trên con đường ngoài trời.</i><br>(D) She's walking out of a tunnel.<br><i>(D) Cô ấy đang bước ra khỏi đường hầm.</i><br>",
                         "vietnamese_choices": {
                             "A": "Cô ấy đang nhìn vào ba lô của mình.",
@@ -3123,6 +4401,56 @@ window.part01Data = [
                             "D": "He's kneeling down on a tile floor."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "hold",
+                                "ipa": "/hoʊld/",
+                                "pos": "v",
+                                "vi": "cầm"
+                            },
+                            {
+                                "en": "handle",
+                                "ipa": "/ˈhændl/",
+                                "pos": "n",
+                                "vi": "tay cầm"
+                            },
+                            {
+                                "en": "plug",
+                                "ipa": "/plʌɡ/",
+                                "pos": "v",
+                                "vi": "cắm"
+                            },
+                            {
+                                "en": "cord",
+                                "ipa": "/kɔːrd/",
+                                "pos": "n",
+                                "vi": "dây điện"
+                            },
+                            {
+                                "en": "outlet",
+                                "ipa": "/ˈaʊtlet/",
+                                "pos": "n",
+                                "vi": "ổ cắm"
+                            },
+                            {
+                                "en": "cupboard",
+                                "ipa": "/ˈkʌbərd/",
+                                "pos": "n",
+                                "vi": "tủ"
+                            },
+                            {
+                                "en": "kneel down",
+                                "ipa": "/niːl daʊn/",
+                                "pos": "v",
+                                "vi": "quỳ xuống"
+                            },
+                            {
+                                "en": "tile floor",
+                                "ipa": "/taɪl flɔːr/",
+                                "pos": "n",
+                                "vi": "sàn gạch"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) He's holding the handle of a shopping cart.<br><i>(A) Anh ấy đang cầm tay cầm của một chiếc xe đẩy hàng.</i><br>(B) He's plugging a cord into a wall outlet.<br><i>(B) Anh ấy đang cắm dây vào ổ cắm trên tường.</i><br>(C) He's looking into a kitchen cupboard.<br><i>(C) Anh ấy đang nhìn vào tủ bếp.</i><br>(D) He's kneeling down on a tile floor.<br><i>(D) Anh ấy đang quỳ trên sàn gạch.</i><br>",
                         "vietnamese_choices": {
                             "A": "Anh ấy đang cầm tay cầm của một chiếc xe đẩy hàng.",
@@ -3149,6 +4477,50 @@ window.part01Data = [
                             "D": "Some chairs are being folded and stacked."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "seat",
+                                "ipa": "/siːt/",
+                                "pos": "n",
+                                "vi": "chỗ ngồi"
+                            },
+                            {
+                                "en": "arrange",
+                                "ipa": "/əˈreɪndʒ/",
+                                "pos": "v",
+                                "vi": "sắp xếp"
+                            },
+                            {
+                                "en": "umbrella",
+                                "ipa": "/ʌmˈbrelə/",
+                                "pos": "n",
+                                "vi": "ô"
+                            },
+                            {
+                                "en": "take down",
+                                "ipa": "/teɪk daʊn/",
+                                "pos": "v",
+                                "vi": "gỡ xuống"
+                            },
+                            {
+                                "en": "bush",
+                                "ipa": "/bʊʃ/",
+                                "pos": "n",
+                                "vi": "bụi cây"
+                            },
+                            {
+                                "en": "trim",
+                                "ipa": "/trɪm/",
+                                "pos": "v",
+                                "vi": "cắt tỉa"
+                            },
+                            {
+                                "en": "fold",
+                                "ipa": "/foʊld/",
+                                "pos": "v",
+                                "vi": "gấp"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Seats have been arranged under some umbrellas.<br><i>(A) Chỗ ngồi đã được sắp xếp dưới một vài chiếc ô.</i><br>(B) Some street signs are being taken down.<br><i>(B) Một số biển báo đường phố đang được gỡ xuống.</i><br>(C) Some bushes are being trimmed.<br><i>(C) Một số bụi cây đang được cắt tỉa.</i><br>(D) Some chairs are being folded and stacked.<br><i>(D) Một số ghế đang được gấp lại và xếp chồng lên nhau.</i><br>",
                         "vietnamese_choices": {
                             "A": "Chỗ ngồi đã được sắp xếp dưới một vài chiếc ô.",
@@ -3175,6 +4547,50 @@ window.part01Data = [
                             "D": "A rug has been rolled up against a wall."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "cushion",
+                                "ipa": "/ˈkʊʃn/",
+                                "pos": "n",
+                                "vi": "chiếc đệm"
+                            },
+                            {
+                                "en": "lay",
+                                "ipa": "/leɪ/",
+                                "pos": "v",
+                                "vi": "đặt"
+                            },
+                            {
+                                "en": "pile up",
+                                "ipa": "/paɪl ʌp/",
+                                "pos": "v",
+                                "vi": "chất chồng"
+                            },
+                            {
+                                "en": "light fixture",
+                                "ipa": "/laɪt ˈfɪkstʃər/",
+                                "pos": "n",
+                                "vi": "đèn chiếu sáng"
+                            },
+                            {
+                                "en": "suspend",
+                                "ipa": "/səˈspend/",
+                                "pos": "v",
+                                "vi": "treo"
+                            },
+                            {
+                                "en": "rug",
+                                "ipa": "/rʌɡ/",
+                                "pos": "n",
+                                "vi": "tấm thảm"
+                            },
+                            {
+                                "en": "roll up",
+                                "ipa": "/roʊl ʌp/",
+                                "pos": "v",
+                                "vi": "cuộn lên"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some cushions have been laid on the floor.<br><i>(A) Một số chiếc đệm đã được đặt trên sàn.</i><br>(B) Books have been piled up by a glass door.<br><i>(B) Sách được chất chồng cạnh cửa kính.</i><br>(C) A light fixture is suspended from the ceiling.<br><i>(C) Một đèn chiếu sáng được treo trên trần nhà.</i><br>(D) A rug has been rolled up against a wall.<br><i>(D) Một tấm thảm đã được cuộn lên tường.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số chiếc đệm đã được đặt trên sàn.",
@@ -3208,6 +4624,44 @@ window.part01Data = [
                             "D": "She's drinking from a water bottle."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "shovel",
+                                "ipa": "/ˈʃʌvl/",
+                                "pos": "v",
+                                "vi": "xúc"
+                            },
+                            {
+                                "en": "snow",
+                                "ipa": "/snoʊ/",
+                                "pos": "n",
+                                "vi": "tuyết"
+                            },
+                            {
+                                "en": "walkway",
+                                "ipa": "/ˈwɔːkweɪ/",
+                                "pos": "n",
+                                "vi": "lối đi"
+                            },
+                            {
+                                "en": "walking stick",
+                                "ipa": "/ˈwɔːkɪŋ stɪk/",
+                                "pos": "n",
+                                "vi": "gậy chống"
+                            },
+                            {
+                                "en": "remove",
+                                "ipa": "/rɪˈmuːv/",
+                                "pos": "v",
+                                "vi": "tháo"
+                            },
+                            {
+                                "en": "cap",
+                                "ipa": "/kæp/",
+                                "pos": "n",
+                                "vi": "mũ"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) She's shoveling snow from a walkway.<br>(B) She's using walking sticks.<br><i>(B) Cô ấy đang sử dụng gậy chống.</i><br>(C) She's removing her cap.<br><i>(C) Cô ấy đang tháo mũ ra.</i><br>(D) She's drinking from a water bottle.<br><i>(D) Cô ấy đang uống nước từ chai nước.</i><br>",
                         "vietnamese_choices": {
                             "B": "Cô ấy đang sử dụng gậy chống.",
@@ -3233,6 +4687,50 @@ window.part01Data = [
                             "D": "Some diners are looking out a window."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "carry",
+                                "ipa": "/ˈkæri/",
+                                "pos": "v",
+                                "vi": "bưng"
+                            },
+                            {
+                                "en": "tray",
+                                "ipa": "/treɪ/",
+                                "pos": "n",
+                                "vi": "khay"
+                            },
+                            {
+                                "en": "push",
+                                "ipa": "/pʊʃ/",
+                                "pos": "v",
+                                "vi": "đẩy"
+                            },
+                            {
+                                "en": "trolley",
+                                "ipa": "/ˈtrɑːli/",
+                                "pos": "n",
+                                "vi": "xe đẩy"
+                            },
+                            {
+                                "en": "leave",
+                                "ipa": "/liːv/",
+                                "pos": "v",
+                                "vi": "rời khỏi"
+                            },
+                            {
+                                "en": "restaurant",
+                                "ipa": "/ˈrestrɑːnt/",
+                                "pos": "n",
+                                "vi": "nhà hàng"
+                            },
+                            {
+                                "en": "diner",
+                                "ipa": "/ˈdaɪnər/",
+                                "pos": "n",
+                                "vi": "thực khách"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) A woman is carrying a tray.<br><i>(A) Một người phụ nữ đang bưng một cái khay.</i><br>(B) A woman is pushing a food trolley.<br><i>(B) Một người phụ nữ đang đẩy xe đẩy thức ăn.</i><br>(C) Some people are leaving a restaurant.<br><i>(C) Một số người đang rời khỏi nhà hàng.</i><br>(D) Some diners are looking out a window.<br><i>(D) Một số thực khách đang nhìn ra cửa sổ.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một người phụ nữ đang bưng một cái khay.",
@@ -3259,6 +4757,44 @@ window.part01Data = [
                             "D": "The man is scrubbing the front of a car."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "hold",
+                                "ipa": "/hoʊld/",
+                                "pos": "v",
+                                "vi": "cầm"
+                            },
+                            {
+                                "en": "bucket",
+                                "ipa": "/ˈbʌkɪt/",
+                                "pos": "n",
+                                "vi": "xô"
+                            },
+                            {
+                                "en": "replace",
+                                "ipa": "/rɪˈpleɪs/",
+                                "pos": "v",
+                                "vi": "thay"
+                            },
+                            {
+                                "en": "tire",
+                                "ipa": "/ˈtaɪər/",
+                                "pos": "n",
+                                "vi": "lốp xe"
+                            },
+                            {
+                                "en": "water",
+                                "ipa": "/ˈwɔːtər/",
+                                "pos": "v",
+                                "vi": "tưới"
+                            },
+                            {
+                                "en": "scrub",
+                                "ipa": "/skrʌb/",
+                                "pos": "v",
+                                "vi": "cọ rửa"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) The man is holding a bucket of water.<br><i>(A) Người đàn ông đang cầm một xô nước.</i><br>(B) The man is replacing a tire.<br><i>(B) Người đàn ông đang thay lốp xe.</i><br>(C) The man is watering a tree.<br><i>(C) Người đàn ông đang tưới cây.</i><br>(D) The man is scrubbing the front of a car.<br><i>(D) Người đàn ông đang cọ rửa phần đầu xe.</i><br>",
                         "vietnamese_choices": {
                             "A": "Người đàn ông đang cầm một xô nước.",
@@ -3285,6 +4821,44 @@ window.part01Data = [
                             "D": "Some chairs have been arranged around a fountain."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "tile",
+                                "ipa": "/taɪl/",
+                                "pos": "n",
+                                "vi": "viên ngói"
+                            },
+                            {
+                                "en": "install",
+                                "ipa": "/ɪnˈstɔːl/",
+                                "pos": "v",
+                                "vi": "lắp đặt"
+                            },
+                            {
+                                "en": "roof",
+                                "ipa": "/ruːf/",
+                                "pos": "n",
+                                "vi": "mái nhà"
+                            },
+                            {
+                                "en": "unoccupied",
+                                "ipa": "/ʌnˈɑːkjupaɪd/",
+                                "pos": "adj",
+                                "vi": "không có người"
+                            },
+                            {
+                                "en": "place",
+                                "ipa": "/pleɪs/",
+                                "pos": "v",
+                                "vi": "đặt"
+                            },
+                            {
+                                "en": "fountain",
+                                "ipa": "/ˈfaʊntn/",
+                                "pos": "n",
+                                "vi": "đài phun nước"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some tiles are being installed on a roof.<br><i>(A) Một số viên ngói đang được lắp đặt trên mái nhà.</i><br>(B) An outdoor dining area is unoccupied.<br><i>(B) Khu vực ăn uống ngoài trời không có người sử dụng.</i><br>(C) Flowers have been placed on tables.<br><i>(C) Hoa đã được đặt trên bàn.</i><br>(D) Some chairs have been arranged around a fountain.<br><i>(D) Một số ghế đã được bố trí xung quanh đài phun nước.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số viên ngói đang được lắp đặt trên mái nhà.",
@@ -3311,6 +4885,38 @@ window.part01Data = [
                             "D": "A woman is walking across a pedestrian bridge."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "gather",
+                                "ipa": "/ˈɡæðər/",
+                                "pos": "v",
+                                "vi": "tập trung"
+                            },
+                            {
+                                "en": "block",
+                                "ipa": "/blɑːk/",
+                                "pos": "v",
+                                "vi": "chặn"
+                            },
+                            {
+                                "en": "entrance",
+                                "ipa": "/ˈentrəns/",
+                                "pos": "n",
+                                "vi": "lối vào"
+                            },
+                            {
+                                "en": "stairway",
+                                "ipa": "/ˈsterweɪ/",
+                                "pos": "n",
+                                "vi": "cầu thang"
+                            },
+                            {
+                                "en": "pedestrian bridge",
+                                "ipa": "/pəˈdestriən brɪdʒ/",
+                                "pos": "n",
+                                "vi": "cầu dành cho người đi bộ"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Some people are gathered on top of a building.<br><i>(A) Một số người đang tập trung trên nóc một tòa nhà.</i><br>(B) Some trees are blocking the entrance to a stairway.<br><i>(B) Một số cây đang chặn lối vào cầu thang.</i><br>(C) A woman is taking some stairs to a lower level.<br><i>(C) Một người phụ nữ đang đi cầu thang xuống tầng thấp hơn.</i><br>(D) A woman is walking across a pedestrian bridge.<br><i>(D) Một người phụ nữ đang đi qua cầu dành cho người đi bộ.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số người đang tập trung trên nóc một tòa nhà.",
@@ -3337,6 +4943,38 @@ window.part01Data = [
                             "D": "Một số cửa sổ đang được cài đặt."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "wooden",
+                                "ipa": "/ˈwʊdn/",
+                                "pos": "adj",
+                                "vi": "bằng gỗ"
+                            },
+                            {
+                                "en": "planter box",
+                                "ipa": "/ˈplæntər bɑːks/",
+                                "pos": "n",
+                                "vi": "hộp trồng cây"
+                            },
+                            {
+                                "en": "log",
+                                "ipa": "/lɔːɡ/",
+                                "pos": "n",
+                                "vi": "khúc gỗ"
+                            },
+                            {
+                                "en": "pile",
+                                "ipa": "/paɪl/",
+                                "pos": "v",
+                                "vi": "chất thành đống"
+                            },
+                            {
+                                "en": "brick",
+                                "ipa": "/brɪk/",
+                                "pos": "n",
+                                "vi": "gạch"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some wooden planter boxes have been set next to each other.<br><i>(A) Một số hộp trồng cây bằng gỗ đã được đặt cạnh nhau.</i><br>(B) Some wood logs have been piled in a corner.<br><i>(B) Một số khúc gỗ đã được chất thành đống ở một góc.</i><br>(C) The outside walls of a house are made of bricks. ( D) Some windows are being installed.<br><i>(C) Các bức tường bên ngoài của một ngôi nhà được làm bằng gạch.</i><br>(D) Một số cửa sổ đang được cài đặt.<br>",
                         "vietnamese_choices": {
                             "A": "Một số hộp trồng cây bằng gỗ đã được đặt cạnh nhau.",
@@ -3369,6 +5007,38 @@ window.part01Data = [
                             "D": "He's examining some plants."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "dig",
+                                "ipa": "/dɪɡ/",
+                                "pos": "v",
+                                "vi": "đào"
+                            },
+                            {
+                                "en": "stack",
+                                "ipa": "/stæk/",
+                                "pos": "v",
+                                "vi": "xếp"
+                            },
+                            {
+                                "en": "pallet",
+                                "ipa": "/ˈpælət/",
+                                "pos": "n",
+                                "vi": "tấm pallet"
+                            },
+                            {
+                                "en": "empty",
+                                "ipa": "/ˈempti/",
+                                "pos": "v",
+                                "vi": "đổ (ra)"
+                            },
+                            {
+                                "en": "examine",
+                                "ipa": "/ɪɡˈzæmɪn/",
+                                "pos": "v",
+                                "vi": "kiểm tra"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) He's digging in a garden.<br><i>(A) Anh ấy đang đào đất trong vườn.</i><br>(B) He's stacking wooden pallets.<br><i>(B) Anh ấy đang xếp các tấm pallet gỗ.</i><br>(C) He's emptying soil from a pot.<br><i>(C) Anh ấy đang đổ đất ra khỏi chậu.</i><br>(D) He's examining some plants.<br><i>(D) Anh ấy đang kiểm tra một số loại cây.</i><br>",
                         "vietnamese_choices": {
                             "A": "Anh ấy đang đào đất trong vườn.",
@@ -3395,6 +5065,50 @@ window.part01Data = [
                             "D": "The women are purchasing some groceries."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "cart",
+                                "ipa": "/kɑːrt/",
+                                "pos": "n",
+                                "vi": "xe đẩy"
+                            },
+                            {
+                                "en": "exit",
+                                "ipa": "/ˈeɡzɪt/",
+                                "pos": "n",
+                                "vi": "lối ra"
+                            },
+                            {
+                                "en": "hang",
+                                "ipa": "/hæŋ/",
+                                "pos": "v",
+                                "vi": "treo"
+                            },
+                            {
+                                "en": "hook",
+                                "ipa": "/hʊk/",
+                                "pos": "n",
+                                "vi": "móc"
+                            },
+                            {
+                                "en": "restock",
+                                "ipa": "/ˌriːˈstɑːk/",
+                                "pos": "v",
+                                "vi": "bổ sung"
+                            },
+                            {
+                                "en": "shelf",
+                                "ipa": "/ʃelf/",
+                                "pos": "n",
+                                "vi": "kệ"
+                            },
+                            {
+                                "en": "grocery",
+                                "ipa": "/ˈɡroʊsəri/",
+                                "pos": "n",
+                                "vi": "hàng tạp hóa"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) One of the women is pushing a cart towards an exit.<br><i>(A) Người đàn ông đang đặt tay lên quầy.</i><br>(B) One of the women is hanging a coat on a hook.<br><i>(B) Người đàn ông đang gấp áo khoác của mình.</i><br>(C) The women are restocking some store shelves.<br><i>(C) Một cánh cửa tủ đã bị mở.</i><br>(D) The women are purchasing some groceries.<br><i>(D) Một số chiếc ghế đẩu đang được lau sạch.</i><br>",
                         "vietnamese_choices": {
                             "A": "Người đàn ông đang đặt tay lên quầy.",
@@ -3416,6 +5130,7 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {},
                         "answer": "A",
+                        "vocabulary": [],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
                         "vietnamese_choices": {}
                     }
@@ -3437,6 +5152,44 @@ window.part01Data = [
                             "D": "A tour group is standing outside a building."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "balcony",
+                                "ipa": "/ˈbælkəni/",
+                                "pos": "n",
+                                "vi": "ban công"
+                            },
+                            {
+                                "en": "decorate",
+                                "ipa": "/ˈdekəreɪt/",
+                                "pos": "v",
+                                "vi": "trang trí"
+                            },
+                            {
+                                "en": "banner",
+                                "ipa": "/ˈbænər/",
+                                "pos": "n",
+                                "vi": "biểu ngữ"
+                            },
+                            {
+                                "en": "post",
+                                "ipa": "/poʊst/",
+                                "pos": "v",
+                                "vi": "dán"
+                            },
+                            {
+                                "en": "set up",
+                                "ipa": "/set ʌp/",
+                                "pos": "v",
+                                "vi": "mở"
+                            },
+                            {
+                                "en": "tour group",
+                                "ipa": "/tʊr ɡruːp/",
+                                "pos": "n",
+                                "vi": "nhóm du lịch"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some balconies are decorated with banners.<br><i>(A) Một số ban công được trang trí bằng biểu ngữ.</i><br>(B) Some signs have been posted in front of a building.<br><i>(B) Một số biển hiệu đã được dán ở phía trước một tòa nhà.</i><br>(C) A café has been set up on a street corner.<br><i>(C) Một quán cà phê đã được mở ở góc phố.</i><br>(D) A tour group is standing outside a building.<br><i>(D) Một nhóm du lịch đang đứng bên ngoài một tòa nhà.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số ban công được trang trí bằng biểu ngữ.",
@@ -3463,6 +5216,56 @@ window.part01Data = [
                             "D": "Some people are gathered in a city square."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "wait",
+                                "ipa": "/weɪt/",
+                                "pos": "v",
+                                "vi": "chờ đợi"
+                            },
+                            {
+                                "en": "bus stop",
+                                "ipa": "/ˈbʌs stɒp/",
+                                "pos": "n",
+                                "vi": "trạm xe buýt"
+                            },
+                            {
+                                "en": "place",
+                                "ipa": "/pleɪs/",
+                                "pos": "v",
+                                "vi": "đặt, để"
+                            },
+                            {
+                                "en": "bike rack",
+                                "ipa": "/ˈbaɪk ræk/",
+                                "pos": "n",
+                                "vi": "giá để xe đạp"
+                            },
+                            {
+                                "en": "park",
+                                "ipa": "/pɑːrk/",
+                                "pos": "v",
+                                "vi": "đỗ xe"
+                            },
+                            {
+                                "en": "sidewalk",
+                                "ipa": "/ˈsaɪdwɔːk/",
+                                "pos": "n",
+                                "vi": "vỉa hè"
+                            },
+                            {
+                                "en": "gather",
+                                "ipa": "/ˈɡæðər/",
+                                "pos": "v",
+                                "vi": "tập trung"
+                            },
+                            {
+                                "en": "city square",
+                                "ipa": "/ˈsɪti skwɛər/",
+                                "pos": "n",
+                                "vi": "quảng trường thành phố"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Some people are waiting at a bus stop.<br><i>(A) The sun is being blocked by some curtains.</i><br>(B) Bike racks have been placed near a lawn.<br><i>(B) There's a large carpet underneath a piano.</i><br>(C) Some cars are parked along a sidewalk.<br><i>(C) There are some windows by a seating area.</i><br>(D) Some people are gathered in a city square.<br><i>(D) Some furniture is being stored in a closet.</i><br>",
                         "vietnamese_choices": {
                             "A": "The sun is being blocked by some curtains.",
@@ -3489,6 +5292,62 @@ window.part01Data = [
                             "D": "Một số đồ đạc đang được cất trong tủ."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "block",
+                                "ipa": "/blɒk/",
+                                "pos": "v",
+                                "vi": "che"
+                            },
+                            {
+                                "en": "curtain",
+                                "ipa": "/ˈkɜːtn/",
+                                "pos": "n",
+                                "vi": "rèm"
+                            },
+                            {
+                                "en": "carpet",
+                                "ipa": "/ˈkɑːrpɪt/",
+                                "pos": "n",
+                                "vi": "tấm thảm"
+                            },
+                            {
+                                "en": "piano",
+                                "ipa": "/piˈænəʊ/",
+                                "pos": "n",
+                                "vi": "đàn piano"
+                            },
+                            {
+                                "en": "window",
+                                "ipa": "/ˈwɪndəʊ/",
+                                "pos": "n",
+                                "vi": "cửa sổ"
+                            },
+                            {
+                                "en": "seating area",
+                                "ipa": "/ˈsiːtɪŋ ˈeəriə/",
+                                "pos": "n",
+                                "vi": "khu vực tiếp khách"
+                            },
+                            {
+                                "en": "furniture",
+                                "ipa": "/ˈfɜːnɪtʃər/",
+                                "pos": "n",
+                                "vi": "đồ đạc"
+                            },
+                            {
+                                "en": "store",
+                                "ipa": "/stɔːr/",
+                                "pos": "v",
+                                "vi": "cất"
+                            },
+                            {
+                                "en": "closet",
+                                "ipa": "/ˈklɒzɪt/",
+                                "pos": "n",
+                                "vi": "tủ"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Mặt trời đang bị che bởi một số tấm rèm.<br>(B) Có một tấm thảm lớn bên dưới cây đàn piano.<br>(C) Có một số cửa sổ cạnh khu vực tiếp khách.<br>(D) Một số đồ đạc đang được cất trong tủ.<br>",
                         "vietnamese_choices": {}
                     }
@@ -3517,6 +5376,56 @@ window.part01Data = [
                             "D": "She's lifting a bin."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "take off",
+                                "ipa": "/teɪk ɒf/",
+                                "pos": "v",
+                                "vi": "tháo, cởi"
+                            },
+                            {
+                                "en": "badge",
+                                "ipa": "/bædʒ/",
+                                "pos": "n",
+                                "vi": "huy hiệu"
+                            },
+                            {
+                                "en": "lean over",
+                                "ipa": "/liːn ˈəʊvər/",
+                                "pos": "v",
+                                "vi": "cúi người xuống"
+                            },
+                            {
+                                "en": "desk",
+                                "ipa": "/desk/",
+                                "pos": "n",
+                                "vi": "bàn làm việc"
+                            },
+                            {
+                                "en": "lock",
+                                "ipa": "/lɒk/",
+                                "pos": "v",
+                                "vi": "khóa"
+                            },
+                            {
+                                "en": "door",
+                                "ipa": "/dɔːr/",
+                                "pos": "n",
+                                "vi": "cửa"
+                            },
+                            {
+                                "en": "lift",
+                                "ipa": "/lɪft/",
+                                "pos": "v",
+                                "vi": "nâng"
+                            },
+                            {
+                                "en": "bin",
+                                "ipa": "/bɪn/",
+                                "pos": "n",
+                                "vi": "thùng"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) She's taking off her badge.<br><i>(A) Cô ấy đang tháo huy hiệu (thẻ tên) của mình.</i><br>(B) She's leaning over a desk.<br><i>(B) Cô ấy đang cúi người xuống bàn.</i><br>(C) She's locking a door.<br><i>(C) Cô ấy đang khóa cửa.</i><br>(D) She's lifting a bin.<br><i>(D) Cô ấy đang nâng một cái thùng.</i><br>",
                         "vietnamese_choices": {
                             "A": "Cô ấy đang tháo huy hiệu (thẻ tên) của mình.",
@@ -3543,6 +5452,56 @@ window.part01Data = [
                             "D": "A man is looking up at a roof."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "repair",
+                                "ipa": "/rɪˈpeər/",
+                                "pos": "v",
+                                "vi": "sửa chữa"
+                            },
+                            {
+                                "en": "railing",
+                                "ipa": "/ˈreɪlɪŋ/",
+                                "pos": "n",
+                                "vi": "lan can"
+                            },
+                            {
+                                "en": "climb",
+                                "ipa": "/klaɪm/",
+                                "pos": "v",
+                                "vi": "leo"
+                            },
+                            {
+                                "en": "stairs",
+                                "ipa": "/steərz/",
+                                "pos": "n",
+                                "vi": "cầu thang"
+                            },
+                            {
+                                "en": "carry",
+                                "ipa": "/ˈkæri/",
+                                "pos": "v",
+                                "vi": "mang, vác"
+                            },
+                            {
+                                "en": "ladder",
+                                "ipa": "/ˈlædər/",
+                                "pos": "n",
+                                "vi": "thang"
+                            },
+                            {
+                                "en": "look up",
+                                "ipa": "/lʊk ʌp/",
+                                "pos": "v",
+                                "vi": "nhìn lên"
+                            },
+                            {
+                                "en": "roof",
+                                "ipa": "/ruːf/",
+                                "pos": "n",
+                                "vi": "mái nhà"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) A man is repairing a railing.<br><i>(A) Một người đang bơi trong hồ.</i><br>(B) A man is climbing some stairs.<br><i>(B) Một tấm biển được dán trên một tòa nhà.</i><br>(C) A man is carrying a ladder.<br><i>(C) Một con chim đang đậu trên cột.</i><br>(D) A man is looking up at a roof.<br><i>(D) Một người đang chèo thuyền.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một người đang bơi trong hồ.",
@@ -3564,6 +5523,7 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {},
                         "answer": "D",
+                        "vocabulary": [],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>",
                         "vietnamese_choices": {}
                     }
@@ -3585,6 +5545,50 @@ window.part01Data = [
                             "D": "The workers are greeting some customers."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "open",
+                                "ipa": "/ˈəʊpən/",
+                                "pos": "v",
+                                "vi": "mở"
+                            },
+                            {
+                                "en": "display case",
+                                "ipa": "/dɪˈspleɪ keɪs/",
+                                "pos": "n",
+                                "vi": "tủ trưng bày"
+                            },
+                            {
+                                "en": "tie",
+                                "ipa": "/taɪ/",
+                                "pos": "v",
+                                "vi": "thắt"
+                            },
+                            {
+                                "en": "necktie",
+                                "ipa": "/ˈnektɑɪ/",
+                                "pos": "n",
+                                "vi": "cà vạt"
+                            },
+                            {
+                                "en": "counter",
+                                "ipa": "/ˈkaʊntər/",
+                                "pos": "n",
+                                "vi": "quầy"
+                            },
+                            {
+                                "en": "greet",
+                                "ipa": "/ɡriːt/",
+                                "pos": "v",
+                                "vi": "chào đón"
+                            },
+                            {
+                                "en": "customer",
+                                "ipa": "/ˈkʌstəmər/",
+                                "pos": "n",
+                                "vi": "khách hàng"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) One of the workers is opening a display case.<br><i>(A) Một trong những công nhân đang mở tủ trưng bày.</i><br>(B) One of the workers is tying a necktie.<br><i>(B) Một trong những công nhân đang thắt cà vạt.</i><br>(C) The workers are behind a counter.<br><i>(C) Các công nhân đang ở phía sau quầy tính tiền.</i><br>(D) The workers are greeting some customers.<br><i>(D) Các công nhân đang chào đón một số khách hàng.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một trong những công nhân đang mở tủ trưng bày.",
@@ -3611,6 +5615,56 @@ window.part01Data = [
                             "D": "Some trees are shading a picnic table."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "pile",
+                                "ipa": "/paɪl/",
+                                "pos": "v",
+                                "vi": "chất đống"
+                            },
+                            {
+                                "en": "wheelbarrow",
+                                "ipa": "/ˈwiːlbærəʊ/",
+                                "pos": "n",
+                                "vi": "xe cút kít"
+                            },
+                            {
+                                "en": "suspend",
+                                "ipa": "/səˈspend/",
+                                "pos": "v",
+                                "vi": "treo"
+                            },
+                            {
+                                "en": "telephone wire",
+                                "ipa": "/ˈtelɪfəʊn waɪər/",
+                                "pos": "n",
+                                "vi": "dây điện thoại"
+                            },
+                            {
+                                "en": "occupy",
+                                "ipa": "/ˈɒkjupaɪ/",
+                                "pos": "v",
+                                "vi": "chiếm chỗ"
+                            },
+                            {
+                                "en": "bench",
+                                "ipa": "/bentʃ/",
+                                "pos": "n",
+                                "vi": "ghế dài"
+                            },
+                            {
+                                "en": "shade",
+                                "ipa": "/ʃeɪd/",
+                                "pos": "v",
+                                "vi": "che bóng"
+                            },
+                            {
+                                "en": "picnic table",
+                                "ipa": "/ˈpɪknɪk ˈteɪb(ə)l/",
+                                "pos": "n",
+                                "vi": "bàn dã ngoại"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some rocks are piled in a wheelbarrow.<br><i>(A) Một số giấy tờ đã được ghim vào bảng thông báo.</i><br>(B) Some telephone wires are suspended over a road.<br><i>(B) Một chiếc đồng hồ đã được đặt trên bàn cạnh giường ngủ.</i><br>(C) Some benches are occupied.<br><i>(C) Một bức tranh được tựa vào một chiếc ghế.</i><br>(D) Some trees are shading a picnic table.<br><i>(D) Một số thiết bị y tế đã được đặt trên kệ.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số giấy tờ đã được ghim vào bảng thông báo.",
@@ -3632,6 +5686,7 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {},
                         "answer": "A",
+                        "vocabulary": [],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
                         "vietnamese_choices": {}
                     }
@@ -3660,6 +5715,56 @@ window.part01Data = [
                             "D": "He's painting a wall. 1."
                         },
                         "answer": "C",
+                        "vocabulary": [
+                            {
+                                "en": "stand",
+                                "ipa": "/stænd/",
+                                "pos": "v",
+                                "vi": "đứng"
+                            },
+                            {
+                                "en": "rug",
+                                "ipa": "/rʌɡ/",
+                                "pos": "n",
+                                "vi": "tấm thảm"
+                            },
+                            {
+                                "en": "turn",
+                                "ipa": "/tɜːn/",
+                                "pos": "v",
+                                "vi": "xoay"
+                            },
+                            {
+                                "en": "doorknob",
+                                "ipa": "/ˈdɔːrnɒb/",
+                                "pos": "n",
+                                "vi": "tay nắm cửa"
+                            },
+                            {
+                                "en": "climb",
+                                "ipa": "/klaɪm/",
+                                "pos": "v",
+                                "vi": "leo lên"
+                            },
+                            {
+                                "en": "ladder",
+                                "ipa": "/ˈlædər/",
+                                "pos": "n",
+                                "vi": "cái thang"
+                            },
+                            {
+                                "en": "paint",
+                                "ipa": "/peɪnt/",
+                                "pos": "v",
+                                "vi": "sơn"
+                            },
+                            {
+                                "en": "wall",
+                                "ipa": "/wɔːl/",
+                                "pos": "n",
+                                "vi": "bức tường"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) He's standing on a rug.<br><i>(A) Anh ấy đang đứng trên một tấm thảm.</i><br>(B) He's turning a doorknob.<br><i>(B) Anh ấy đang xoay tay nắm cửa.</i><br>(C) He's climbing a ladder.<br><i>(C) Anh ấy đang leo lên một cái thang.</i><br>(D) He's painting a wall. 1.<br><i>(D) Anh ấy đang sơn một bức tường.</i><br>",
                         "vietnamese_choices": {
                             "A": "Anh ấy đang đứng trên một tấm thảm.",
@@ -3686,6 +5791,56 @@ window.part01Data = [
                             "D": "Some merchandise is on display in a store."
                         },
                         "answer": "D",
+                        "vocabulary": [
+                            {
+                                "en": "hang",
+                                "ipa": "/hæŋ/",
+                                "pos": "v",
+                                "vi": "treo"
+                            },
+                            {
+                                "en": "clothing rack",
+                                "ipa": "/ˈkləʊðɪŋ ræk/",
+                                "pos": "n",
+                                "vi": "giá treo quần áo"
+                            },
+                            {
+                                "en": "attach",
+                                "ipa": "/əˈtætʃ/",
+                                "pos": "v",
+                                "vi": "gắn"
+                            },
+                            {
+                                "en": "column",
+                                "ipa": "/ˈkɒləm/",
+                                "pos": "n",
+                                "vi": "cột"
+                            },
+                            {
+                                "en": "set",
+                                "ipa": "/set/",
+                                "pos": "v",
+                                "vi": "đặt"
+                            },
+                            {
+                                "en": "floor",
+                                "ipa": "/flɔːr/",
+                                "pos": "n",
+                                "vi": "sàn nhà"
+                            },
+                            {
+                                "en": "display",
+                                "ipa": "/dɪˈspleɪ/",
+                                "pos": "n",
+                                "vi": "trưng bày"
+                            },
+                            {
+                                "en": "merchandise",
+                                "ipa": "/ˈmɜːtʃəndaɪs/",
+                                "pos": "n",
+                                "vi": "hàng hóa"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) Some shirts have been hung on a clothing rack.<br><i>(A) Người phụ nữ đang đặt một số giấy tờ vào một tập hồ sơ.</i><br>(B) A light fixture is attached to a column.<br><i>(B) Người phụ nữ đang gõ bàn phím.</i><br>(C) Some boxes of clothing have been set on the floor.<br><i>(C) Người phụ nữ đang ngồi trước máy tính.</i><br>(D) Some merchandise is on display in a store.<br><i>(D) Người phụ nữ đang cầm một chiếc cốc.</i><br>",
                         "vietnamese_choices": {
                             "A": "Người phụ nữ đang đặt một số giấy tờ vào một tập hồ sơ.",
@@ -3707,6 +5862,7 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {},
                         "answer": "C",
+                        "vocabulary": [],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>",
                         "vietnamese_choices": {}
                     }
@@ -3728,6 +5884,56 @@ window.part01Data = [
                             "D": "Some products have fallen on the ground."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "wash",
+                                "ipa": "/wɒʃ/",
+                                "pos": "v",
+                                "vi": "lau rừa"
+                            },
+                            {
+                                "en": "window",
+                                "ipa": "/ˈwɪndəʊ/",
+                                "pos": "n",
+                                "vi": "cửa sổ"
+                            },
+                            {
+                                "en": "carry",
+                                "ipa": "/ˈkæri/",
+                                "pos": "v",
+                                "vi": "mang"
+                            },
+                            {
+                                "en": "package",
+                                "ipa": "/ˈpækɪdʒ/",
+                                "pos": "n",
+                                "vi": "gói hàng"
+                            },
+                            {
+                                "en": "line up",
+                                "ipa": "/laɪn ʌp/",
+                                "pos": "v",
+                                "vi": "xếp hàng"
+                            },
+                            {
+                                "en": "shopping cart",
+                                "ipa": "/ˈʃɒpɪŋ kɑːrt/",
+                                "pos": "n",
+                                "vi": "xe đẩy hàng"
+                            },
+                            {
+                                "en": "fall",
+                                "ipa": "/fɔːl/",
+                                "pos": "v",
+                                "vi": "rơi"
+                            },
+                            {
+                                "en": "ground",
+                                "ipa": "/ɡraʊnd/",
+                                "pos": "n",
+                                "vi": "mặt đất"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some employees are washing some windows.<br><i>(A) Một số nhân viên đang lau cửa sổ.</i><br>(B) A shopper is carrying a package.<br><i>(B) Một người mua hàng đang mang một gói hàng.</i><br>(C) Some shopping carts have been lined up in a row.<br><i>(C) Một số xe đẩy hàng đã được xếp thành một hàng.</i><br>(D) Some products have fallen on the ground.<br><i>(D) Một số sản phẩm đã rơi xuống đất.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số nhân viên đang lau cửa sổ.",
@@ -3754,6 +5960,56 @@ window.part01Data = [
                             "D": "A shovel is leaning against a flowerpot."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "clear away",
+                                "ipa": "/klɪər əˈweɪ/",
+                                "pos": "v",
+                                "vi": "dọn sạch"
+                            },
+                            {
+                                "en": "snow",
+                                "ipa": "/snəʊ/",
+                                "pos": "n",
+                                "vi": "tuyết"
+                            },
+                            {
+                                "en": "arrange",
+                                "ipa": "/əˈreɪndʒ/",
+                                "pos": "v",
+                                "vi": "sắp xếp"
+                            },
+                            {
+                                "en": "brick",
+                                "ipa": "/brɪk/",
+                                "pos": "n",
+                                "vi": "viên gạch"
+                            },
+                            {
+                                "en": "trim",
+                                "ipa": "/trɪm/",
+                                "pos": "v",
+                                "vi": "cắt tỉa"
+                            },
+                            {
+                                "en": "branch",
+                                "ipa": "/brɑːntʃ/",
+                                "pos": "n",
+                                "vi": "cành cây"
+                            },
+                            {
+                                "en": "lean against",
+                                "ipa": "/liːn əˈɡenst/",
+                                "pos": "v",
+                                "vi": "tựa vào"
+                            },
+                            {
+                                "en": "shovel",
+                                "ipa": "/ˈʃʌv(ə)l/",
+                                "pos": "n",
+                                "vi": "cái xẻng"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Snow is being cleared away.<br><i>(A) Một chậu cây treo phía trên cửa sổ.</i><br>(B) Bricks are being arranged on a walkway.<br><i>(B) There is a lamppost in front of a building.</i><br>(C) Tree branches are being trimmed.<br><i>(C) Một số ghế đã được sắp xếp thành một hàng.</i><br>(D) A shovel is leaning against a flowerpot.<br><i>(D) Một số viên gạch đã được chất trên sân.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một chậu cây treo phía trên cửa sổ.",
@@ -3775,6 +6031,7 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {},
                         "answer": "A",
+                        "vocabulary": [],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
                         "vietnamese_choices": {}
                     }
@@ -3803,6 +6060,56 @@ window.part01Data = [
                             "D": "The man is trying on gloves."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "reach",
+                                "ipa": "/riːtʃ/",
+                                "pos": "v",
+                                "vi": "với tay"
+                            },
+                            {
+                                "en": "shelf",
+                                "ipa": "/ʃelf/",
+                                "pos": "n",
+                                "vi": "kệ"
+                            },
+                            {
+                                "en": "adjust",
+                                "ipa": "/əˈdʒʌst/",
+                                "pos": "v",
+                                "vi": "điều chỉnh"
+                            },
+                            {
+                                "en": "glasses",
+                                "ipa": "/ˈɡlɑːsɪz/",
+                                "pos": "n",
+                                "vi": "mắt kính"
+                            },
+                            {
+                                "en": "pay for",
+                                "ipa": "/peɪ fɔːr/",
+                                "pos": "v",
+                                "vi": "trả tiền cho"
+                            },
+                            {
+                                "en": "item",
+                                "ipa": "/ˈaɪtəm/",
+                                "pos": "n",
+                                "vi": "món hàng"
+                            },
+                            {
+                                "en": "try on",
+                                "ipa": "/traɪ ɒn/",
+                                "pos": "v",
+                                "vi": "thử"
+                            },
+                            {
+                                "en": "glove",
+                                "ipa": "/ɡlʌv/",
+                                "pos": "n",
+                                "vi": "găng tay"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) The man is reaching above a shelf.<br><i>(A) Người đàn ông đang với tay lên trên một cái kệ.</i><br>(B) The man is adjusting his glasses.<br><i>(B) Người đàn ông đang chỉnh lại kính của mình.</i><br>(C) The man is paying for an item.<br><i>(C) Người đàn ông đang trả tiền cho một món hàng.</i><br>(D) The man is trying on gloves.<br><i>(D) Người đàn ông đang thử găng tay.</i><br>",
                         "vietnamese_choices": {
                             "A": "Người đàn ông đang với tay lên trên một cái kệ.",
@@ -3829,6 +6136,56 @@ window.part01Data = [
                             "D": "She is picking up some cushions off the ground."
                         },
                         "answer": "B",
+                        "vocabulary": [
+                            {
+                                "en": "open",
+                                "ipa": "/ˈəʊpən/",
+                                "pos": "v",
+                                "vi": "mở"
+                            },
+                            {
+                                "en": "umbrella",
+                                "ipa": "/ʌmˈbrelə/",
+                                "pos": "n",
+                                "vi": "cái ô"
+                            },
+                            {
+                                "en": "stand",
+                                "ipa": "/stænd/",
+                                "pos": "v",
+                                "vi": "đứng"
+                            },
+                            {
+                                "en": "patio",
+                                "ipa": "/ˈpætiəʊ/",
+                                "pos": "n",
+                                "vi": "sân hiên"
+                            },
+                            {
+                                "en": "take out",
+                                "ipa": "/teɪk aʊt/",
+                                "pos": "v",
+                                "vi": "lấy ra"
+                            },
+                            {
+                                "en": "tool",
+                                "ipa": "/tuːl/",
+                                "pos": "n",
+                                "vi": "công cụ"
+                            },
+                            {
+                                "en": "pick up",
+                                "ipa": "/pɪk ʌp/",
+                                "pos": "v",
+                                "vi": "nhặt lên"
+                            },
+                            {
+                                "en": "cushion",
+                                "ipa": "/ˈkʊʃ(ə)n/",
+                                "pos": "n",
+                                "vi": "cái nệm"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) She is opening an umbrella over a dining area.<br><i>(A) Họ đang cào vài chiếc lá.</i><br>(B) She is standing on the patio near the house.<br><i>(B) Cô ấy đang xúc đất vào một cái túi.</i><br>(C) She is taking a tool out of a storage cupboard.<br><i>(C) Họ đang làm việc trong vườn.</i><br>(D) She is picking up some cushions off the ground.<br><i>(D) Họ đang tưới hoa.</i><br>",
                         "vietnamese_choices": {
                             "A": "Họ đang cào vài chiếc lá.",
@@ -3850,6 +6207,7 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {},
                         "answer": "C",
+                        "vocabulary": [],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>",
                         "vietnamese_choices": {}
                     }
@@ -3871,6 +6229,56 @@ window.part01Data = [
                             "B": "Một số ghế được xếp sát tường."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "install",
+                                "ipa": "/ɪnˈstɔːl/",
+                                "pos": "v",
+                                "vi": "lắp đặt"
+                            },
+                            {
+                                "en": "floor tile",
+                                "ipa": "/flɔːr taɪl/",
+                                "pos": "n",
+                                "vi": "gạch lát sàn"
+                            },
+                            {
+                                "en": "place",
+                                "ipa": "/pleɪs/",
+                                "pos": "v",
+                                "vi": "đặt"
+                            },
+                            {
+                                "en": "dinner plate",
+                                "ipa": "/ˈdɪnər pleɪt/",
+                                "pos": "n",
+                                "vi": "đĩa ăn tối"
+                            },
+                            {
+                                "en": "display",
+                                "ipa": "/dɪˈspleɪ/",
+                                "pos": "v",
+                                "vi": "bày, trưng bày"
+                            },
+                            {
+                                "en": "food",
+                                "ipa": "/fuːd/",
+                                "pos": "n",
+                                "vi": "thức ăn"
+                            },
+                            {
+                                "en": "stack",
+                                "ipa": "/stæk/",
+                                "pos": "v",
+                                "vi": "xếp"
+                            },
+                            {
+                                "en": "chair",
+                                "ipa": "/tʃeər/",
+                                "pos": "n",
+                                "vi": "ghế"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Một số thức ăn đã được bày trên đĩa.<br>(B) Một số ghế được xếp sát tường.<br>(C) Some floor tiles are being installed.<br><i>(C) Một số gạch lát sàn đang được lắp đặt.</i><br>(D) Some dinner plates have been placed in a sink.<br><i>(D) Một số đĩa ăn tối đã được đặt vào bồn rửa.</i><br>",
                         "vietnamese_choices": {
                             "C": "Một số gạch lát sàn đang được lắp đặt.",
@@ -3895,6 +6303,56 @@ window.part01Data = [
                             "D": "A worker is cleaning a window."
                         },
                         "answer": "A",
+                        "vocabulary": [
+                            {
+                                "en": "change",
+                                "ipa": "/tʃeɪndʒ/",
+                                "pos": "v",
+                                "vi": "thay"
+                            },
+                            {
+                                "en": "light bulb",
+                                "ipa": "/laɪt bʌlb/",
+                                "pos": "n",
+                                "vi": "bóng đèn"
+                            },
+                            {
+                                "en": "hand",
+                                "ipa": "/hænd/",
+                                "pos": "v",
+                                "vi": "đưa"
+                            },
+                            {
+                                "en": "box",
+                                "ipa": "/bɒks/",
+                                "pos": "n",
+                                "vi": "hộp"
+                            },
+                            {
+                                "en": "crouch down",
+                                "ipa": "/kraʊtʃ daʊn/",
+                                "pos": "v",
+                                "vi": "ngồi xổm"
+                            },
+                            {
+                                "en": "counter",
+                                "ipa": "/ˈkaʊntər/",
+                                "pos": "n",
+                                "vi": "quầy"
+                            },
+                            {
+                                "en": "clean",
+                                "ipa": "/kliːn/",
+                                "pos": "v",
+                                "vi": "lau"
+                            },
+                            {
+                                "en": "window",
+                                "ipa": "/ˈwɪndəʊ/",
+                                "pos": "n",
+                                "vi": "cửa sổ"
+                            }
+                        ],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) A worker is changing a light bulb.<br><i>(A) Một số chậu cây ở hai bên lối vào.</i><br>(B) A worker is handing a box to a customer.<br><i>(B) Mái hiên che mát khu vực đỗ xe.</i><br>(C) A worker is crouching down behind the counter.<br><i>(C) Một số biển báo đã được dán gần một tòa nhà gạch.</i><br>(D) A worker is cleaning a window.<br><i>(D) Một số đồ nội thất đang mở cửa.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số chậu cây ở hai bên lối vào.",
@@ -3916,6 +6374,7 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {},
                         "answer": "A",
+                        "vocabulary": [],
                         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
                         "vietnamese_choices": {}
                     }
