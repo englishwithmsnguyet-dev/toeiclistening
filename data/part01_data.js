@@ -2523,12 +2523,12 @@ window.part01Data = [
                             "D": "A light fixture has been left on the ground."
                         },
                         "answer": "C",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) One of the men is sweeping a patio.<br><i>(A) Tắt điện thoại di động.</i><br>(B) One of the men is replacing some flooring.<br><i>(B) Thưởng thức đồ uống giải khát.</i><br>(C) A door has been taken off its frame.<br><i>(C) Mua một số hạt giống.</i><br>(D) A light fixture has been left on the ground.<br><i>(D) Đăng ký danh sách gửi thư.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) One of the men is sweeping a patio.<br><i>(A) Một người đàn ông đang quét sân.</i><br>(B) One of the men is replacing some flooring.<br><i>(B) Một người đàn ông đang thay thế lót sàn nhà.</i><br>(C) A door has been taken off its frame.<br><i>(C) Một cánh cửa đã bị tháo ra khỏi khung.</i><br>(D) A light fixture has been left on the ground.<br><i>(D) Một chiếc đèn chiếu sáng đã bị bỏ lại trên mặt đất.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Tắt điện thoại di động.",
-                            "B": "Thưởng thức đồ uống giải khát.",
-                            "C": "Mua một số hạt giống.",
-                            "D": "Đăng ký danh sách gửi thư."
+                            "A": "Một người đàn ông đang quét sân.",
+                            "B": "Một người đàn ông đang thay thế lót sàn nhà.",
+                            "C": "Một cánh cửa đã bị tháo ra khỏi khung.",
+                            "D": "Một chiếc đèn chiếu sáng đã bị bỏ lại trên mặt đất."
                         }
                     }
                 ]
@@ -2686,12 +2686,12 @@ window.part01Data = [
                             "D": "A luggage rack has two levels."
                         },
                         "answer": "D",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) Some luggage is stacked next to an escalator.<br><i>(A) Tải xuống một số thiết kế.</i><br>(B) A suitcase is being lifted onto a shuttle bus.<br><i>(B) Nhìn vào một mô hình.</i><br>(C) Some suitcases are displayed in a shop window.<br><i>(C) Đi tham quan địa điểm.</i><br>(D) A luggage rack has two levels.<br><i>(D) Xem webcam.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) Some luggage is stacked next to an escalator.<br><i>(A) Một số hành lý được xếp cạnh thang cuốn.</i><br>(B) A suitcase is being lifted onto a shuttle bus.<br><i>(B) Một chiếc vali đang được nâng lên một chiếc xe buýt đưa đón.</i><br>(C) Some suitcases are displayed in a shop window.<br><i>(C) Một số vali được trưng bày trong cửa sổ cửa hàng.</i><br>(D) A luggage rack has two levels.<br><i>(D) Giá để hành lý có hai tầng.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Tải xuống một số thiết kế.",
-                            "B": "Nhìn vào một mô hình.",
-                            "C": "Đi tham quan địa điểm.",
-                            "D": "Xem webcam."
+                            "A": "Một số hành lý được xếp cạnh thang cuốn.",
+                            "B": "Một chiếc vali đang được nâng lên một chiếc xe buýt đưa đón.",
+                            "C": "Một số vali được trưng bày trong cửa sổ cửa hàng.",
+                            "D": "Giá để hành lý có hai tầng."
                         }
                     }
                 ]
@@ -2849,12 +2849,12 @@ window.part01Data = [
                             "D": "A wooden structure has been built near some trees."
                         },
                         "answer": "D",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) A ladder has been leaned against a tree.<br><i>(A) Trong sảnh.</i><br>(B) There are piles of tree branches discarded in a field.<br><i>(B) Trong khán phòng.</i><br>(C) Wooden benches have been arranged in a circle.<br><i>(C) Trong một cửa hàng quà tặng.</i><br>(D) A wooden structure has been built near some trees.<br><i>(D) Trong khu vực ăn uống.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) A ladder has been leaned against a tree.<br><i>(A) Một cái thang được tựa vào một cái cây.</i><br>(B) There are piles of tree branches discarded in a field.<br><i>(B) Có những đống cành cây bị vứt bỏ trên cánh đồng.</i><br>(C) Wooden benches have been arranged in a circle.<br><i>(C) Những chiếc ghế dài bằng gỗ đã được sắp xếp thành hình tròn.</i><br>(D) A wooden structure has been built near some trees.<br><i>(D) Một cấu trúc bằng gỗ đã được xây dựng gần một số cây cối.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Trong sảnh.",
-                            "B": "Trong khán phòng.",
-                            "C": "Trong một cửa hàng quà tặng.",
-                            "D": "Trong khu vực ăn uống."
+                            "A": "Một cái thang được tựa vào một cái cây.",
+                            "B": "Có những đống cành cây bị vứt bỏ trên cánh đồng.",
+                            "C": "Những chiếc ghế dài bằng gỗ đã được sắp xếp thành hình tròn.",
+                            "D": "Một cấu trúc bằng gỗ đã được xây dựng gần một số cây cối."
                         }
                     }
                 ]
@@ -3005,14 +3005,19 @@ window.part01Data = [
                         "id": 6,
                         "slide_index": 24,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {},
+                        "choices": {
+                            "A": "Some couches have been pushed against a wall.",
+                            "B": "Some lights have been hung from the ceiling.",
+                            "C": "Some cushions have been stacked on the floor.",
+                            "D": "Some flowers have been arranged in a vase."
+                        },
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some couches have been pushed against a wall.<br><i>(A) Một số ghế dài đã được đẩy vào tường.</i><br>(B) Some lights have been hung from the ceiling.<br><i>(B) Một số đèn được treo trên trần nhà.</i><br>(C) Some cushions have been stacked on the floor.<br><i>(C) Một số đệm đã được xếp chồng lên nhau trên sàn.</i><br>(D) Some flowers have been arranged in a vase.<br><i>(D) Một số bông hoa đã được cắm trong bình.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Tầng 4.",
-                            "B": "Tầng 3.",
-                            "C": "Tầng 2.",
-                            "D": "Tầng 1."
+                            "A": "Một số ghế dài đã được đẩy vào tường.",
+                            "B": "Một số đèn được treo trên trần nhà.",
+                            "C": "Một số đệm đã được xếp chồng lên nhau trên sàn.",
+                            "D": "Một số bông hoa đã được cắm trong bình."
                         }
                     }
                 ]
@@ -3170,12 +3175,12 @@ window.part01Data = [
                             "D": "A rug has been rolled up against a wall."
                         },
                         "answer": "B",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some cushions have been laid on the floor.<br><i>(A) Đọc một bài tập.</i><br>(B) Books have been piled up by a glass door.<br><i>(B) Xem video.</i><br>(C) A light fixture is suspended from the ceiling.<br><i>(C) Nghỉ giải lao uống cà phê.</i><br>(D) A rug has been rolled up against a wall.<br><i>(D) Nghe một diễn giả khách mời.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some cushions have been laid on the floor.<br><i>(A) Một số chiếc đệm đã được đặt trên sàn.</i><br>(B) Books have been piled up by a glass door.<br><i>(B) Sách được chất chồng cạnh cửa kính.</i><br>(C) A light fixture is suspended from the ceiling.<br><i>(C) Một đèn chiếu sáng được treo trên trần nhà.</i><br>(D) A rug has been rolled up against a wall.<br><i>(D) Một tấm thảm đã được cuộn lên tường.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Đọc một bài tập.",
-                            "B": "Xem video.",
-                            "C": "Nghỉ giải lao uống cà phê.",
-                            "D": "Nghe một diễn giả khách mời."
+                            "A": "Một số chiếc đệm đã được đặt trên sàn.",
+                            "B": "Sách được chất chồng cạnh cửa kính.",
+                            "C": "Một đèn chiếu sáng được treo trên trần nhà.",
+                            "D": "Một tấm thảm đã được cuộn lên tường."
                         }
                     }
                 ]
@@ -3325,14 +3330,18 @@ window.part01Data = [
                         "id": 6,
                         "slide_index": 36,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {},
+                        "choices": {
+                            "A": "Some wooden planter boxes have been set next to each other.",
+                            "B": "Some wood logs have been piled in a corner.",
+                            "C": "The outside walls of a house are made of bricks. ( D) Some windows are being installed.",
+                            "D": "Một số cửa sổ đang được cài đặt."
+                        },
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some wooden planter boxes have been set next to each other.<br><i>(A) Một số hộp trồng cây bằng gỗ đã được đặt cạnh nhau.</i><br>(B) Some wood logs have been piled in a corner.<br><i>(B) Một số khúc gỗ đã được chất thành đống ở một góc.</i><br>(C) The outside walls of a house are made of bricks. ( D) Some windows are being installed.<br><i>(C) Các bức tường bên ngoài của một ngôi nhà được làm bằng gạch.</i><br>(D) Một số cửa sổ đang được cài đặt.<br>",
                         "vietnamese_choices": {
-                            "A": "Hoàn lại tiền.",
-                            "B": "Một món quà lưu niệm.",
-                            "C": "Một bản đồ in.",
-                            "D": "Phiếu ăn."
+                            "A": "Một số hộp trồng cây bằng gỗ đã được đặt cạnh nhau.",
+                            "B": "Một số khúc gỗ đã được chất thành đống ở một góc.",
+                            "C": "Các bức tường bên ngoài của một ngôi nhà được làm bằng gạch."
                         }
                     }
                 ]
@@ -3405,14 +3414,10 @@ window.part01Data = [
                         "id": 3,
                         "slide_index": 39,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {
-                            "A": "The man is resting his arm on a",
-                            "B": "The man is folding his coat.",
-                            "C": "A cabinet door has been left open.",
-                            "D": "Some stools are being wiped down."
-                        },
+                        "choices": {},
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) The man is resting his arm on a<br>(B) The man is folding his coat.<br>(C) A cabinet door has been left open.<br>(D) Some stools are being wiped down.<br><br><b>Dịch nghĩa:</b><br>(A) Người đàn ông đang đặt tay lên quầy.<br>(B) Người đàn ông đang gấp áo khoác của<br>(C) Một cánh cửa tủ đã bị mở.<br>(D) Một số chiếc ghế đẩu đang được lau sạch."
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
+                        "vietnamese_choices": {}
                     }
                 ]
             },
@@ -3478,13 +3483,13 @@ window.part01Data = [
                         "slide_index": 42,
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {
-                            "A": "Một báo cáo tài chính.",
-                            "B": "Dự báo thời tiết.",
-                            "C": "Một cuộc phỏng vấn với một quan chức chính phủ.",
-                            "D": "Một buổi biểu diễn nhạc trục tiếp."
+                            "A": "Mặt trời đang bị che bởi một số tấm rèm.",
+                            "B": "Có một tấm thảm lớn bên dưới cây đàn piano.",
+                            "C": "Có một số cửa sổ cạnh khu vực tiếp khách.",
+                            "D": "Một số đồ đạc đang được cất trong tủ."
                         },
                         "answer": "C",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Một báo cáo tài chính.<br>(B) Dự báo thời tiết.<br>(C) Một cuộc phỏng vấn với một quan chức chính phủ.<br>(D) Một buổi biểu diễn nhạc trục tiếp.<br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Mặt trời đang bị che bởi một số tấm rèm.<br>(B) Có một tấm thảm lớn bên dưới cây đàn piano.<br>(C) Có một số cửa sổ cạnh khu vực tiếp khách.<br>(D) Một số đồ đạc đang được cất trong tủ.<br>",
                         "vietnamese_choices": {}
                     }
                 ]
@@ -3557,14 +3562,10 @@ window.part01Data = [
                         "id": 3,
                         "slide_index": 45,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {
-                            "A": "A person is swimming in a lake.",
-                            "B": "A sign is posted on a building.",
-                            "C": "A bird is resting on a pole.",
-                            "D": "D) A person is rowing a boat."
-                        },
+                        "choices": {},
                         "answer": "D",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>(A) A person is swimming in a lake.<br>(B) A sign is posted on a building.<br>(C) A bird is resting on a pole.<br>D) A person is rowing a boat.<br><br><b>Dịch nghĩa:</b><br>(A) Một người đang bơi trong hồ.<br>(B) Một tấm biển được dán trên một tòa nhà.<br>(C) Một con chim đang đậu trên cột.<br>(D) Một người đang chèo thuyền."
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong><br><br><b>Transcript:</b><br>",
+                        "vietnamese_choices": {}
                     }
                 ]
             },
@@ -3610,12 +3611,12 @@ window.part01Data = [
                             "D": "Some trees are shading a picnic table."
                         },
                         "answer": "B",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some rocks are piled in a wheelbarrow.<br><i>(A) Lực lượng lao động từ xa.</i><br>(B) Some telephone wires are suspended over a road.<br><i>(B) Hợp tác nhóm.</i><br>(C) Some benches are occupied.<br><i>(C) Công cụ đổi mới.</i><br>(D) Some trees are shading a picnic table.<br><i>(D) Giải quyết vấn đề.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong><br><br><b>Transcript:</b><br>(A) Some rocks are piled in a wheelbarrow.<br><i>(A) Một số giấy tờ đã được ghim vào bảng thông báo.</i><br>(B) Some telephone wires are suspended over a road.<br><i>(B) Một chiếc đồng hồ đã được đặt trên bàn cạnh giường ngủ.</i><br>(C) Some benches are occupied.<br><i>(C) Một bức tranh được tựa vào một chiếc ghế.</i><br>(D) Some trees are shading a picnic table.<br><i>(D) Một số thiết bị y tế đã được đặt trên kệ.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Lực lượng lao động từ xa.",
-                            "B": "Hợp tác nhóm.",
-                            "C": "Công cụ đổi mới.",
-                            "D": "Giải quyết vấn đề."
+                            "A": "Một số giấy tờ đã được ghim vào bảng thông báo.",
+                            "B": "Một chiếc đồng hồ đã được đặt trên bàn cạnh giường ngủ.",
+                            "C": "Một bức tranh được tựa vào một chiếc ghế.",
+                            "D": "Một số thiết bị y tế đã được đặt trên kệ."
                         }
                     }
                 ]
@@ -3629,14 +3630,10 @@ window.part01Data = [
                         "id": 6,
                         "slide_index": 48,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {
-                            "A": "Some papers have been pinned to a",
-                            "B": "A clock has been set on a bedside table.",
-                            "C": "A painting has been propped against a",
-                            "D": ""
-                        },
+                        "choices": {},
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some papers have been pinned to a<br>(B) A clock has been set on a bedside table.<br>(C) A painting has been propped against a<br><br><b>Dịch nghĩa:</b><br>(A) Một số giấy tờ đã được ghim vào bảng<br>(B) Một chiếc đồng hồ đã được đặt trên bàn<br>(C) Một bức tranh được tựa vào một chiếc ghế.<br>(D) Some medical equipment has been<br>(D) Một số thiết bị y tế đã được đặt trên kệ."
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
+                        "vietnamese_choices": {}
                     }
                 ]
             }
@@ -3657,14 +3654,19 @@ window.part01Data = [
                         "slide_index": 49,
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {
+                            "A": "He's standing on a rug.",
+                            "B": "He's turning a doorknob.",
+                            "C": "He's climbing a ladder.",
+                            "D": "He's painting a wall. 1."
+                        },
+                        "answer": "C",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) He's standing on a rug.<br><i>(A) Anh ấy đang đứng trên một tấm thảm.</i><br>(B) He's turning a doorknob.<br><i>(B) Anh ấy đang xoay tay nắm cửa.</i><br>(C) He's climbing a ladder.<br><i>(C) Anh ấy đang leo lên một cái thang.</i><br>(D) He's painting a wall. 1.<br><i>(D) Anh ấy đang sơn một bức tường.</i><br>",
+                        "vietnamese_choices": {
                             "A": "Anh ấy đang đứng trên một tấm thảm.",
                             "B": "Anh ấy đang xoay tay nắm cửa.",
                             "C": "Anh ấy đang leo lên một cái thang.",
                             "D": "Anh ấy đang sơn một bức tường."
-                        },
-                        "answer": "C",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) Anh ấy đang đứng trên một tấm thảm.<br>(B) Anh ấy đang xoay tay nắm cửa.<br>(C) Anh ấy đang leo lên một cái thang.<br>(D) Anh ấy đang sơn một bức tường.<br>",
-                        "vietnamese_choices": {}
+                        }
                     }
                 ]
             },
@@ -3703,14 +3705,10 @@ window.part01Data = [
                         "id": 3,
                         "slide_index": 51,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {
-                            "A": "The woman is putting some papers into",
-                            "B": "The woman is typing on a keyboard.",
-                            "C": "The woman is seated in front of a",
-                            "D": "The woman is holding a cup."
-                        },
+                        "choices": {},
                         "answer": "C",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) The woman is putting some papers into<br>(B) The woman is typing on a keyboard.<br>(C) The woman is seated in front of a<br>(D) The woman is holding a cup.<br><br><b>Dịch nghĩa:</b><br>(A) Người phụ nữ đang đặt một số giấy tờ vào<br>(B) Người phụ nữ đang gõ bàn phím.<br>(C) Người phụ nữ đang ngồi trước máy tính.<br>(D) Người phụ nữ đang cầm một chiếc cốc."
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>",
+                        "vietnamese_choices": {}
                     }
                 ]
             },
@@ -3756,12 +3754,12 @@ window.part01Data = [
                             "D": "A shovel is leaning against a flowerpot."
                         },
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Snow is being cleared away.<br><i>(A) Một người gây quỹ.</i><br>(B) Bricks are being arranged on a walkway.<br><i>(B) Một lễ hội.</i><br>(C) Tree branches are being trimmed.<br><i>(C) Một cuộc bầu cử.</i><br>(D) A shovel is leaning against a flowerpot.<br><i>(D) Một cuộc tranh luận.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Snow is being cleared away.<br><i>(A) Một chậu cây treo phía trên cửa sổ.</i><br>(B) Bricks are being arranged on a walkway.<br><i>(B) There is a lamppost in front of a building.</i><br>(C) Tree branches are being trimmed.<br><i>(C) Một số ghế đã được sắp xếp thành một hàng.</i><br>(D) A shovel is leaning against a flowerpot.<br><i>(D) Một số viên gạch đã được chất trên sân.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Một người gây quỹ.",
-                            "B": "Một lễ hội.",
-                            "C": "Một cuộc bầu cử.",
-                            "D": "Một cuộc tranh luận."
+                            "A": "Một chậu cây treo phía trên cửa sổ.",
+                            "B": "There is a lamppost in front of a building.",
+                            "C": "Một số ghế đã được sắp xếp thành một hàng.",
+                            "D": "Một số viên gạch đã được chất trên sân."
                         }
                     }
                 ]
@@ -3775,14 +3773,10 @@ window.part01Data = [
                         "id": 6,
                         "slide_index": 54,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {
-                            "A": "A potted plant is hanging above a",
-                            "B": "",
-                            "C": "",
-                            "D": ""
-                        },
+                        "choices": {},
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) A potted plant is hanging above a<br><br><b>Dịch nghĩa:</b><br>(A) Một chậu cây treo phía trên cửa sổ.<br>(B) Có một cột đèn ở phía trước một tòa nhà.<br>(B) There is a lamppost in front of a<br>(C) Some chairs have been arranged in a<br>(D) Some bricks have been piled on a patio.<br>(C) Một số ghế đã được sắp xếp thành một<br>(D) Một số viên gạch đã được chất trên sân."
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
+                        "vietnamese_choices": {}
                     }
                 ]
             }
@@ -3854,14 +3848,10 @@ window.part01Data = [
                         "id": 3,
                         "slide_index": 57,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {
-                            "A": "They're raking some leaves.",
-                            "B": "She is shoveling soil into a bag.",
-                            "C": "They are working in a garden.",
-                            "D": "They are watering some flowers."
-                        },
+                        "choices": {},
                         "answer": "C",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>(A) They're raking some leaves.<br>(B) She is shoveling soil into a bag.<br>(C)They are working in a garden.<br>(D) They are watering some flowers.<br><br><b>Dịch nghĩa:</b><br>(A) Họ đang cào vài chiếc lá.<br>(B) Cô ấy đang xúc đất vào một cái túi.<br>(C) Họ đang làm việc trong vườn.<br>(D) Họ đang tưới hoa."
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong><br><br><b>Transcript:</b><br>",
+                        "vietnamese_choices": {}
                     }
                 ]
             },
@@ -3876,13 +3866,13 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {
                             "C": "Some floor tiles are being installed.",
-                            "D": "Some dinner plates have been placed in a sink."
+                            "D": "Some dinner plates have been placed in a sink.",
+                            "A": "Một số thức ăn đã được bày trên đĩa.",
+                            "B": "Một số ghế được xếp sát tường."
                         },
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(C) Some floor tiles are being installed.<br><i>(C) Một số gạch lát sàn đang được lắp đặt.</i><br>(D) Some dinner plates have been placed in a sink.<br><i>(D) Một số đĩa ăn tối đã được đặt vào bồn rửa.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Một số thức ăn đã được bày trên đĩa.<br>(B) Một số ghế được xếp sát tường.<br>(C) Some floor tiles are being installed.<br><i>(C) Một số gạch lát sàn đang được lắp đặt.</i><br>(D) Some dinner plates have been placed in a sink.<br><i>(D) Một số đĩa ăn tối đã được đặt vào bồn rửa.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Một số thức ăn đã được bày trên đĩa.",
-                            "B": "Một số ghế được xếp sát tường.",
                             "C": "Một số gạch lát sàn đang được lắp đặt.",
                             "D": "Một số đĩa ăn tối đã được đặt vào bồn rửa."
                         }
@@ -3905,12 +3895,12 @@ window.part01Data = [
                             "D": "A worker is cleaning a window."
                         },
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) A worker is changing a light bulb.<br><i>(A) Thứ năm.</i><br>(B) A worker is handing a box to a customer.<br><i>(B) Thứ sáu.</i><br>(C) A worker is crouching down behind the counter.<br><i>(C) Thứ Bảy.</i><br>(D) A worker is cleaning a window.<br><i>(D) Sunday.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) A worker is changing a light bulb.<br><i>(A) Một số chậu cây ở hai bên lối vào.</i><br>(B) A worker is handing a box to a customer.<br><i>(B) Mái hiên che mát khu vực đỗ xe.</i><br>(C) A worker is crouching down behind the counter.<br><i>(C) Một số biển báo đã được dán gần một tòa nhà gạch.</i><br>(D) A worker is cleaning a window.<br><i>(D) Một số đồ nội thất đang mở cửa.</i><br>",
                         "vietnamese_choices": {
-                            "A": "Thứ năm.",
-                            "B": "Thứ sáu.",
-                            "C": "Thứ Bảy.",
-                            "D": "Sunday."
+                            "A": "Một số chậu cây ở hai bên lối vào.",
+                            "B": "Mái hiên che mát khu vực đỗ xe.",
+                            "C": "Một số biển báo đã được dán gần một tòa nhà gạch.",
+                            "D": "Một số đồ nội thất đang mở cửa."
                         }
                     }
                 ]
@@ -3924,14 +3914,10 @@ window.part01Data = [
                         "id": 6,
                         "slide_index": 60,
                         "question": "Look at the picture and choose the statement that best describes it.",
-                        "choices": {
-                            "A": "",
-                            "B": "",
-                            "C": "",
-                            "D": ""
-                        },
+                        "choices": {},
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br><br><br><b>Dịch nghĩa:</b><br>(A) Some potted plants are on both sides<br>(A) Một số chậu cây ở hai bên lối vào."
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>",
+                        "vietnamese_choices": {}
                     }
                 ]
             }
