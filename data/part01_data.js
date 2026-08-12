@@ -2388,12 +2388,12 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {
                             "A": "She’s eating in a picnic area.",
-                            "B": "She's waiting in line at a food truck,.",
+                            "B": "She's waiting in line at a food truck.",
                             "C": "She's wiping off a bench.",
                             "D": "She's throwing away a plate."
                         },
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) She’s eating in a picnic area.<br><i>(A) Cô ấy đang ăn tại khu picnic.</i><br>(B) She's waiting in line at a food truck,.<br><i>(B) Cô ấy đang xếp hàng chờ ở xe bán đồ ăn.</i><br>(C) She's wiping off a bench.<br><i>(C) Cô ấy đang lau một chiếc ghế dài.</i><br>(D) She's throwing away a plate.<br><i>(D) Cô ấy đang ném đi một cái đĩa.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) She’s eating in a picnic area.<br><i>(A) Cô ấy đang ăn tại khu picnic.</i><br>(B) She's waiting in line at a food truck.<br><i>(B) Cô ấy đang xếp hàng chờ ở xe bán đồ ăn.</i><br>(C) She's wiping off a bench.<br><i>(C) Cô ấy đang lau một chiếc ghế dài.</i><br>(D) She's throwing away a plate.<br><i>(D) Cô ấy đang ném đi một cái đĩa.</i><br>",
                         "vietnamese_choices": {
                             "A": "Cô ấy đang ăn tại khu picnic.",
                             "B": "Cô ấy đang xếp hàng chờ ở xe bán đồ ăn.",
@@ -3066,15 +3066,15 @@ window.part01Data = [
                         "question": "Look at the picture and choose the statement that best describes it.",
                         "choices": {
                             "A": "Some of the people are pulling suitcases.",
-                            "B": "Some of the people are relaxing on benches,.",
+                            "B": "Some of the people are relaxing on benches.",
                             "C": "Some of the people are putting luggage onto a rack.",
                             "D": "Some of the people are waiting in line to purchase a ticket."
                         },
                         "answer": "A",
-                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some of the people are pulling suitcases.<br><i>(A) Một số người đang kéo vali.</i><br>(B) Some of the people are relaxing on benches,.<br><i>(B) Một số người đang thư giãn trên ghế dài,.</i><br>(C) Some of the people are putting luggage onto a rack.<br><i>(C) Một số người đang đặt hành lý lên giá.</i><br>(D) Some of the people are waiting in line to purchase a ticket.<br><i>(D) Một số người đang xếp hàng chờ mua vé.</i><br>",
+                        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><br><b>Transcript:</b><br>(A) Some of the people are pulling suitcases.<br><i>(A) Một số người đang kéo vali.</i><br>(B) Some of the people are relaxing on benches.<br><i>(B) Một số người đang thư giãn trên ghế dài.</i><br>(C) Some of the people are putting luggage onto a rack.<br><i>(C) Một số người đang đặt hành lý lên giá.</i><br>(D) Some of the people are waiting in line to purchase a ticket.<br><i>(D) Một số người đang xếp hàng chờ mua vé.</i><br>",
                         "vietnamese_choices": {
                             "A": "Một số người đang kéo vali.",
-                            "B": "Một số người đang thư giãn trên ghế dài,.",
+                            "B": "Một số người đang thư giãn trên ghế dài.",
                             "C": "Một số người đang đặt hành lý lên giá.",
                             "D": "Một số người đang xếp hàng chờ mua vé."
                         }
