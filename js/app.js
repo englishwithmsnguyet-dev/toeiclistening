@@ -3427,16 +3427,16 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (!window.checkP1TestAnswer) {
-            window.checkP1TestAnswer = function(qId, selectedKey, correctKey) {
-                const card = document.getElementById(`p1-test-card-${qId}`);
+            window.checkP1TestAnswer = function(globalQId, selectedKey, correctKey) {
+                const card = document.getElementById(`p1-test-card-${globalQId}`);
                 if (!card) return;
                 
                 const btns = card.querySelectorAll('.p1-interactive-btn');
                 btns.forEach(btn => {
                     btn.style.pointerEvents = 'none';
-                    if (btn.id === `btn-${qId}-${correctKey}`) {
+                    if (btn.id === `btn-${globalQId}-${correctKey}`) {
                         btn.classList.add('correct');
-                    } else if (btn.id === `btn-${qId}-${selectedKey}` && selectedKey !== correctKey) {
+                    } else if (btn.id === `btn-${globalQId}-${selectedKey}` && selectedKey !== correctKey) {
                         btn.classList.add('incorrect');
                     }
                 });
@@ -3447,11 +3447,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     transcript.style.animation = 'fadeIn 0.5s ease forwards';
                 }
                 
-                const correctChoice = document.getElementById(`transcript-choice-${qId}-${correctKey}`);
+                const correctChoice = document.getElementById(`transcript-choice-${globalQId}-${correctKey}`);
                 if (correctChoice) correctChoice.classList.add('highlight-correct');
                 
                 // Save progress
-                const globalQId = `p1_q_${qId}`;
                 state.answeredQuestions[globalQId] = selectedKey;
                 try {
                     localStorage.setItem("toeic_answered_questions", JSON.stringify(state.answeredQuestions));
@@ -3513,8 +3512,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!q) return;
             
             const qId = q.id;
+            const globalQId = `p1_${testData.id}_q_${qId}`;
             const correctAns = q.answer || 'A';
-            const savedAns = state.answeredQuestions[`p1_q_${qId}`] || null;
+            const savedAns = state.answeredQuestions[globalQId] || null;
             
             // Image path: since set.image is already "part01/ets2025/...", we prepend "media/"
             const imageHtml = set.image ? `
@@ -3525,7 +3525,7 @@ document.addEventListener("DOMContentLoaded", () => {
             
             const audioHtml = set.audio ? `
                 <div class="p1-audio-player">
-                    <audio id="audio-${qId}" src="media/${set.audio}" controls style="width: 100%; max-width: 400px; border-radius: 50px; outline: none;"></audio>
+                    <audio id="audio-${globalQId}" src="media/${set.audio}" controls style="width: 100%; max-width: 400px; border-radius: 50px; outline: none;"></audio>
                 </div>
             ` : `<div class="p1-audio-player"><p style="color:#ef4444;">[Thiếu Audio]</p></div>`;
             
@@ -3546,8 +3546,8 @@ document.addEventListener("DOMContentLoaded", () => {
                     const pointerEvents = savedAns ? "pointer-events: none;" : "";
                     
                     interactiveButtons += `
-                        <button class="${btnClass}" id="btn-${qId}-${key}" style="${pointerEvents}"
-                                onclick="window.checkP1TestAnswer('${qId}', '${key}', '${correctAns}')">
+                        <button class="${btnClass}" id="btn-${globalQId}-${key}" style="${pointerEvents}"
+                                onclick="window.checkP1TestAnswer('${globalQId}', '${key}', '${correctAns}')">
                             ${key}
                         </button>
                     `;
@@ -3557,7 +3557,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     const vietHtml = vietText ? `<br><span style="font-style: italic; color: var(--color-purple); font-size: 0.95rem;">${vietText}</span>` : "";
                     
                     transcriptChoicesHtml += `
-                        <div class="p1-ex-transcript-choice ${highlightClass}" id="transcript-choice-${qId}-${key}">
+                        <div class="p1-ex-transcript-choice ${highlightClass}" id="transcript-choice-${globalQId}-${key}">
                             <span class="lbl">(${key})</span> <span class="txt">${choiceText}${vietHtml}</span>
                         </div>
                     `;
@@ -3567,13 +3567,13 @@ document.addEventListener("DOMContentLoaded", () => {
             transcriptChoicesHtml += '</div>';
             
             html += `
-                <div class="p1-ex-card" id="p1-test-card-${qId}">
+                <div class="p1-ex-card" id="p1-test-card-${globalQId}">
                     <h3 style="align-self: flex-start; margin-bottom: 20px; font-weight: 800; color: var(--text-main);">QUESTION ${qId}</h3>
                     ${imageHtml}
                     ${audioHtml}
                     ${interactiveButtons}
                     
-                    <div class="p1-ex-transcript" id="transcript-${qId}" style="display: ${savedAns ? 'block' : 'none'};">
+                    <div class="p1-ex-transcript" id="transcript-${globalQId}" style="display: ${savedAns ? 'block' : 'none'};">
                         ${transcriptChoicesHtml}
                     </div>
                 </div>
