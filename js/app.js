@@ -7,7 +7,7 @@ window.playTTS = function(text, event) {
     text = text.replace(/<[^>]+>/g, '').replace(/\/[^\/]+\//g, '').trim();
 
     try {
-        const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en&client=tw-ob&q=${encodeURIComponent(text)}`;
+        const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en-US&client=tw-ob&q=${encodeURIComponent(text)}`;
         const audio = new Audio(url);
         
         if (window.currentTTSAudio) {
@@ -2765,11 +2765,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (q.vocabulary && q.vocabulary.length > 0) {
                 let vocabItems = q.vocabulary.map(v => `
                     <div style="margin-bottom: 8px; font-size: 1.05rem;">
-                        <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} (${v.gerund})` : v.en}</span> 
+                        <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} ➔ ${v.gerund}` : v.en}</span> 
                         <span style="color: #64748b; font-size: 0.9em; font-family: monospace;">${v.ipa}</span>
                         <span style="color: #a855f7; font-size: 0.9em; font-style: italic;">(${v.pos})</span>: 
                         <span style="color: var(--text-main);">${v.vi}</span>
-                        <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.base || v.en).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
+                        <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? v.base + ', ' + v.gerund : (v.base || v.en)).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
                     </div>
                 `).join('');
                 vocabHtml = `
@@ -3139,11 +3139,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (q.vocabulary && q.vocabulary.length > 0) {
                 let vocabItems = q.vocabulary.map(v => `
                     <div style="margin-bottom: 8px; font-size: 1.05rem;">
-                        <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} (${v.gerund})` : v.en}</span> 
+                        <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} ➔ ${v.gerund}` : v.en}</span> 
                         <span style="color: #64748b; font-size: 0.9em; font-family: monospace;">${v.ipa}</span>
                         <span style="color: #a855f7; font-size: 0.9em; font-style: italic;">(${v.pos})</span>: 
                         <span style="color: var(--text-main);">${v.vi}</span>
-                        <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.base || v.en).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
+                        <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? v.base + ', ' + v.gerund : (v.base || v.en)).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
                     </div>
                 `).join('');
                 vocabHtml = `
@@ -3615,11 +3615,11 @@ document.addEventListener("DOMContentLoaded", () => {
             if (q.vocabulary && q.vocabulary.length > 0) {
                 let vocabItems = q.vocabulary.map(v => `
                     <div style="margin-bottom: 8px; font-size: 1.05rem;">
-                        <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} (${v.gerund})` : v.en}</span> 
+                        <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} ➔ ${v.gerund}` : v.en}</span> 
                         <span style="color: #64748b; font-size: 0.9em; font-family: monospace;">${v.ipa}</span>
                         <span style="color: #a855f7; font-size: 0.9em; font-style: italic;">(${v.pos})</span>: 
                         <span style="color: var(--text-main);">${v.vi}</span>
-                        <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.base || v.en).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
+                        <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? v.base + ', ' + v.gerund : (v.base || v.en)).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
                     </div>
                 `).join('');
                 vocabHtml = `
