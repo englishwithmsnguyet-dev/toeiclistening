@@ -2699,7 +2699,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .p1-ex-transcript-choices { display: flex; flex-direction: column; gap: 10px; }
                 .p1-ex-transcript-choice {
                     display: flex; gap: 15px; font-size: 1.1rem; color: var(--text-muted); padding: 12px 18px;
-                    border-radius: 12px; background: rgba(0,0,0,0.15); transition: all 0.3s ease; border: 1px solid transparent;
+                    border-radius: 12px; background: var(--border); transition: all 0.3s ease; border: 1px solid transparent;
                 }
                 .p1-ex-transcript-choice .lbl { font-weight: 900; color: #94a3b8; min-width: 25px; }
                 .p1-ex-transcript-choice.highlight-correct {
@@ -3491,7 +3491,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 .p1-ex-transcript-choices { display: flex; flex-direction: column; gap: 10px; }
                 .p1-ex-transcript-choice {
                     display: flex; gap: 15px; font-size: 1.1rem; color: var(--text-muted); padding: 12px 18px;
-                    border-radius: 12px; background: rgba(0,0,0,0.15); transition: all 0.3s ease; border: 1px solid transparent;
+                    border-radius: 12px; background: var(--border); transition: all 0.3s ease; border: 1px solid transparent;
                 }
                 .p1-ex-transcript-choice .lbl { font-weight: 900; color: #94a3b8; min-width: 25px; }
                 .p1-ex-transcript-choice.highlight-correct {
