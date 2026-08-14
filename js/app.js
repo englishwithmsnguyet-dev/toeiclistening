@@ -6,41 +6,32 @@ window.playTTS = function(text, event) {
     // Remove phonetic symbols or html tags if any are left
     text = text.replace(/<[^>]+>/g, '').replace(/\/[^\/]+\//g, '').trim();
 
-    try {
-        const url = `https://translate.google.com/translate_tts?ie=UTF-8&tl=en-US&client=tw-ob&q=${encodeURIComponent(text)}`;
-        const audio = new Audio(url);
-        
-        if (window.currentTTSAudio) {
-            window.currentTTSAudio.pause();
-            window.currentTTSAudio.currentTime = 0;
-        }
-        window.currentTTSAudio = audio;
-        
-        audio.play().catch(e => {
-            console.warn("HTML5 Audio playback failed, falling back to speechSynthesis:", e);
-            fallbackTTS(text);
-        });
-    } catch (e) {
-        fallbackTTS(text);
+    if (!('speechSynthesis' in window)) {
+        alert("Trình duyệt của bạn không hỗ trợ tính năng đọc từ vựng.");
+        return;
     }
-};
-
-function fallbackTTS(text) {
-    if (!('speechSynthesis' in window)) return;
+    
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.lang = 'en-US';
     
-    const voices = window.speechSynthesis.getVoices();
-    let bestVoice = voices.find(v => v.lang === 'en-US' && v.name.includes('Google'));
-    if (!bestVoice) bestVoice = voices.find(v => v.lang.startsWith('en-'));
-    if (bestVoice) utterance.voice = bestVoice;
-    
-    utterance.rate = 0.9;
-    utterance.pitch = 1.0;
-    
-    window.speechSynthesis.speak(utterance);
-}
+    const setVoiceAndPlay = () => {
+        const voices = window.speechSynthesis.getVoices();
+        let bestVoice = voices.find(v => v.lang === 'en-US' && (v.name.includes('Google') || v.name.includes('Samantha') || v.name.includes('Microsoft')));
+        if (!bestVoice) bestVoice = voices.find(v => v.lang.startsWith('en-'));
+        if (bestVoice) utterance.voice = bestVoice;
+        
+        utterance.rate = 0.9;
+        utterance.pitch = 1.0;
+        window.speechSynthesis.speak(utterance);
+    };
+
+    if (window.speechSynthesis.getVoices().length === 0) {
+        window.speechSynthesis.onvoiceschanged = setVoiceAndPlay;
+    } else {
+        setVoiceAndPlay();
+    }
+};
 
 window.selectPracticeOption = function(el) {
     if (el.parentElement.hasAttribute('data-checked')) return;
