@@ -2998,6 +2998,39 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         });
         
+        if (section.vocabulary && section.vocabulary.length > 0) {
+            let vocabItems = section.vocabulary.map(v => {
+                let txt = v.en;
+                if (v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund) txt = `${v.base} ➔ ${v.gerund}`;
+                let ttsTxt = v.en;
+                if (v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund) ttsTxt = `${v.base}, ${v.gerund}`;
+                
+                return `
+                <div style="margin-bottom: 12px; font-size: 1.15rem; line-height: 1.6; padding-bottom: 8px; border-bottom: 1px dashed rgba(255,255,255,0.05);">
+                    <span style="font-weight: 800; color: #0ea5e9;">${txt}</span> 
+                    <span style="color: #94a3b8; font-size: 0.95em; font-family: monospace;">${v.ipa}</span>
+                    <span style="color: #a855f7; font-size: 0.95em; font-style: italic;">(${v.pos || 'n'})</span>: 
+                    <span style="color: var(--text-main); font-weight: 500;">${v.vi}</span>
+                    <span onclick="playTTS(this.dataset.text, event)" data-text="${ttsTxt.replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 10px; font-size: 1.2rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" title="Đọc từ này">🔊</span>
+                </div>
+                `;
+            }).join('');
+            
+            html += `
+                <div class="p2-theory-card" style="border-color: rgba(16, 185, 129, 0.3);">
+                    <div class="p2-theory-title" style="color: #10b981; font-size: 1.5rem;">
+                        <div class="icon" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(52, 211, 153, 0.2)); color: #10b981; border-color: rgba(16, 185, 129, 0.3);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                        </div>
+                        TỪ VỰNG TRỌNG TÂM
+                    </div>
+                    <div class="p2-theory-content" style="background: rgba(0,0,0,0.2); padding: 25px; border-radius: 16px;">
+                        ${vocabItems}
+                    </div>
+                </div>
+            `;
+        }
+        
         theoryContentAreaP2.innerHTML = html;
     }
 
@@ -3125,28 +3158,6 @@ document.addEventListener("DOMContentLoaded", () => {
             interactiveButtons += '</div>';
             transcriptChoicesHtml += '</div>';
 
-            let vocabHtml = '';
-            if (q.vocabulary && q.vocabulary.length > 0) {
-                let vocabItems = q.vocabulary.map(v => `
-                    <div style="margin-bottom: 8px; font-size: 1.05rem;">
-                        <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} ➔ ${v.gerund}` : v.en}</span> 
-                        <span style="color: #64748b; font-size: 0.9em; font-family: monospace;">${v.ipa}</span>
-                        <span style="color: #a855f7; font-size: 0.9em; font-style: italic;">(${v.pos})</span>: 
-                        <span style="color: var(--text-main);">${v.vi}</span>
-                        <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? v.base + ', ' + v.gerund : (v.base || v.en)).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
-                    </div>
-                `).join('');
-                vocabHtml = `
-                    <div class="p1-vocab-box" style="margin-top: 20px; padding: 18px 20px; border-radius: 12px; background: var(--bg-sidebar); border: 1px solid var(--border); box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);">
-                        <h4 style="font-weight: 800; font-size: 1.1rem; color: #10b981; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-transform: uppercase;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-                            Từ vựng hữu ích
-                        </h4>
-                        ${vocabItems}
-                    </div>
-                `;
-            }
-            
             html += `
                 <div class="p2-ex-card" id="${exId}">
                     ${audioHtml}
@@ -3154,7 +3165,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     <div class="p2-ex-transcript" id="transcript-${exId}" style="display: none;">
                         <div class="p2-ex-question-text">
-                            ${ex.question.replace(/^EXAMPLE \d+:\s*/i, '')}
+                            ${(ex.question || '').replace(/^EXAMPLE \d+:\s*/i, '')}
                         </div>
                         ${transcriptChoicesHtml}
                     </div>
