@@ -2896,56 +2896,61 @@ document.addEventListener("DOMContentLoaded", () => {
         let html = `
             <style>
                 .p2-hero {
-                    background: radial-gradient(circle at 100% 100%, rgba(99, 102, 241, 0.15) 0%, transparent 50%), linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
-                    color: white; padding: 45px 50px; border-radius: 24px; position: relative; overflow: hidden;
-                    box-shadow: 0 10px 40px rgba(0,0,0,0.3); margin-bottom: 40px; border: 1px solid rgba(255, 255, 255, 0.05);
+                    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+                    color: #0f172a; padding: 40px 45px; border-radius: 20px; position: relative; overflow: hidden;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 35px; border: 1px solid #bae6fd;
                 }
-                .p2-hero::after {
-                    content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-                    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+') repeat;
-                    opacity: 0.3; pointer-events: none;
-                }
-                .p2-hero-title { font-size: 2.6rem; font-weight: 900; margin-bottom: 15px; color: #f8fafc; letter-spacing: -0.02em; }
-                .p2-hero-subtitle { font-size: 1.15rem; color: #94a3b8; line-height: 1.7; max-width: 650px; font-weight: 400; }
+                .p2-hero-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; color: #0284c7; letter-spacing: -0.02em; }
+                .p2-hero-subtitle { font-size: 1.1rem; color: #475569; line-height: 1.6; max-width: 650px; }
                 
                 .p2-theory-card {
-                    background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08); padding: 35px; border-radius: 24px;
-                    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); position: relative; overflow: hidden;
-                    box-shadow: 0 4px 20px rgba(0,0,0,0.1); margin-bottom: 30px;
-                    backdrop-filter: blur(10px);
+                    background: #ffffff; border: 1px solid #e2e8f0; padding: 30px; border-radius: 16px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.03); margin-bottom: 25px;
                 }
-                .p2-theory-card::before {
-                    content: ''; position: absolute; top: 0; left: 0; width: 6px; height: 100%;
-                    background: linear-gradient(180deg, #6366f1, #a855f7); opacity: 0; transition: opacity 0.3s ease;
-                }
-                .p2-theory-card:hover {
-                    transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,0.2); border-color: rgba(99, 102, 241, 0.4);
-                }
-                .p2-theory-card:hover::before { opacity: 1; }
                 .p2-theory-title {
-                    font-size: 1.4rem; font-weight: 800; color: var(--text-main); margin-bottom: 25px; display: flex; align-items: center; gap: 16px;
+                    font-size: 1.3rem; font-weight: 700; color: #334155; margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
                 }
                 .p2-theory-title .icon {
-                    width: 48px; height: 48px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.2)); color: #818cf8;
-                    border-radius: 14px; display: flex; align-items: center; justify-content: center;
-                    border: 1px solid rgba(99, 102, 241, 0.3);
+                    width: 40px; height: 40px; background: #f1f5f9; color: #64748b;
+                    border-radius: 10px; display: flex; align-items: center; justify-content: center;
                 }
-                .p2-theory-content {
-                    display: flex; flex-direction: column; gap: 15px; padding: 0; margin: 0;
-                }
-                .p2-text-line {
-                    font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; margin: 0; padding-left: 5px;
-                }
+                .p2-theory-content { display: flex; flex-direction: column; gap: 12px; }
+                .p2-text-line { font-size: 1.1rem; color: #475569; line-height: 1.7; margin: 0; }
                 .p2-text-highlight {
-                    color: var(--text-main); font-weight: 600; background: rgba(99, 102, 241, 0.08);
-                    padding: 18px 24px; border-radius: 16px; border: 1px solid rgba(99, 102, 241, 0.2);
-                    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05); margin-top: 5px; margin-bottom: 5px;
-                    font-size: 1.1rem; line-height: 1.8;
+                    color: #0369a1; font-weight: 600; background: #f0f9ff;
+                    padding: 15px 20px; border-radius: 12px; border-left: 4px solid #0284c7;
+                    font-size: 1.1rem; line-height: 1.7;
                 }
-                .p2-theory-content img {
-                    max-width: 100%; border-radius: 12px; margin: 10px 0;
-                    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+                
+                .p2-ex-card {
+                    background: #ffffff; border: 2px solid #e2e8f0; padding: 30px; border-radius: 16px;
+                    margin-bottom: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.04);
                 }
+                .p2-ex-header { font-size: 1.2rem; font-weight: 700; color: #f59e0b; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+                .p2-audio-player { text-align: center; margin-bottom: 25px; }
+                .p2-play-btn {
+                    background: #0284c7; color: white; border: none; padding: 12px 25px; border-radius: 50px; font-size: 1.05rem; font-weight: 600;
+                    cursor: pointer; display: inline-flex; align-items: center; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3); transition: all 0.2s;
+                }
+                .p2-play-btn:hover { background: #0369a1; transform: translateY(-2px); }
+                
+                .p2-interactive-buttons { display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; }
+                .p2-interactive-btn {
+                    background: #f8fafc; border: 2px solid #cbd5e1; color: #475569; width: 60px; height: 60px; border-radius: 50%;
+                    font-size: 1.2rem; font-weight: 700; cursor: pointer; transition: all 0.2s;
+                }
+                .p2-interactive-btn:hover { background: #f1f5f9; border-color: #94a3b8; color: #0f172a; }
+                .p2-interactive-btn.correct { background: #22c55e; border-color: #16a34a; color: white; }
+                .p2-interactive-btn.incorrect { background: #ef4444; border-color: #dc2626; color: white; }
+                
+                .p2-ex-transcript { margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1; display: none; }
+                .p2-ex-question-text { font-size: 1.15rem; font-weight: 700; color: #1e293b; margin-bottom: 15px; }
+                .p2-ex-transcript-choice { padding: 10px 15px; border-radius: 8px; margin-bottom: 8px; color: #475569; font-size: 1.05rem; }
+                .p2-ex-transcript-choice.highlight-correct { background: #dcfce7; color: #166534; font-weight: 600; }
+                
+                .p2-vocab-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 25px; border-radius: 16px; margin-bottom: 30px; }
+                .p2-vocab-item { padding: 12px 0; border-bottom: 1px dashed #cbd5e1; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 1.1rem; }
+                .p2-vocab-item:last-child { border-bottom: none; }
             </style>
             
             <div class="p2-hero">
@@ -2954,48 +2959,108 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
         
-        if (!section.theory || section.theory.length === 0) {
-            html += "<p style='color: var(--text-muted); padding: 20px;'>Nội dung đang được cập nhật...</p>";
+        let combined = [];
+        if (section.theory) section.theory.forEach(t => combined.push({...t, itemType: 'theory'}));
+        if (section.examples) section.examples.forEach(e => combined.push({...e, itemType: 'example'}));
+        
+        // Sort by slide_index to interleave examples and theory exactly as in PPTX
+        combined.sort((a, b) => (a.slide_index || 0) - (b.slide_index || 0));
+        
+        if (combined.length === 0) {
+            html += "<p style='color: #64748b; padding: 20px;'>Nội dung đang được cập nhật...</p>";
             theoryContentAreaP2.innerHTML = html;
             return;
         }
         
-        section.theory.forEach(t => {
-            if (!t.text || t.text.length === 0) return;
-            
-            let titleHtml = '';
-            let contentLines = t.text;
-            
-            // Only use the first line as a title if it's text, not an image
-            if (!t.text[0].trim().toLowerCase().startsWith('<img')) {
-                titleHtml = `
-                    <div class="p2-theory-title">
-                        <div class="icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
-                        ${t.text[0]}
+        // Ensure checkP2ExampleAnswer exists
+        if (!window.checkP2ExampleAnswer) {
+            window.checkP2ExampleAnswer = function(exId, selectedKey, correctKey) {
+                const card = document.getElementById(exId);
+                if (!card) return;
+                card.querySelectorAll('.p2-interactive-btn').forEach(btn => {
+                    btn.style.pointerEvents = 'none';
+                    if (btn.id === `btn-${exId}-${correctKey}`) btn.classList.add('correct');
+                    else if (btn.id === `btn-${exId}-${selectedKey}` && selectedKey !== correctKey) btn.classList.add('incorrect');
+                });
+                const transcript = card.querySelector('.p2-ex-transcript');
+                if (transcript) transcript.style.display = 'block';
+                const correctChoice = document.getElementById(`transcript-choice-${exId}-${correctKey}`);
+                if (correctChoice) correctChoice.classList.add('highlight-correct');
+            };
+        }
+        
+        let exCounter = 1;
+        
+        combined.forEach(item => {
+            if (item.itemType === 'theory') {
+                if (!item.text || item.text.length === 0) return;
+                
+                let titleHtml = '';
+                let contentLines = item.text;
+                if (!item.text[0].trim().toLowerCase().startsWith('<img')) {
+                    titleHtml = `
+                        <div class="p2-theory-title">
+                            <div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+                            ${item.text[0]}
+                        </div>
+                    `;
+                    contentLines = item.text.slice(1);
+                }
+                
+                let listHtml = '';
+                contentLines.forEach(line => {
+                    if (line.startsWith('👉') || line.toLowerCase().includes('ví dụ')) {
+                        listHtml += `<div class="p2-text-highlight">${line.replace('👉', '').trim()}</div>`;
+                    } else if (line.trim().toLowerCase().startsWith('<img')) {
+                        listHtml += line;
+                    } else {
+                        listHtml += `<p class="p2-text-line">${line}</p>`;
+                    }
+                });
+                
+                html += `
+                    <div class="p2-theory-card">
+                        ${titleHtml}
+                        <div class="p2-theory-content">${listHtml}</div>
                     </div>
                 `;
-                contentLines = t.text.slice(1);
-            }
-            
-            let listHtml = '';
-            contentLines.forEach(line => {
-                if (line.startsWith('👉') || line.toLowerCase().includes('ví dụ') || line.toLowerCase().includes('ví dụ:')) {
-                    listHtml += `<div class="p2-text-highlight">${line.replace('👉', '').trim()}</div>`;
-                } else if (line.trim().toLowerCase().startsWith('<img')) {
-                    listHtml += line; // render image block directly
-                } else {
-                    listHtml += `<p class="p2-text-line">${line}</p>`;
-                }
-            });
-            
-            html += `
-                <div class="p2-theory-card">
-                    ${titleHtml}
-                    <div class="p2-theory-content">
-                        ${listHtml}
+            } else if (item.itemType === 'example') {
+                const exId = `p2-ex-${section.id}-${exCounter}`;
+                const correctAns = item.answer || 'B';
+                
+                const audioHtml = item.audio ? `
+                    <div class="p2-audio-player">
+                        <audio id="audio-${exId}" src="${item.audio}"></audio>
+                        <button class="p2-play-btn" onclick="document.getElementById('audio-${exId}').play()">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right: 8px;"><path d="M8 5v14l11-7z"/></svg> 
+                            Nghe Ví Dụ ${exCounter}
+                        </button>
                     </div>
-                </div>
-            `;
+                ` : ``;
+                
+                let interactiveButtons = '<div class="p2-interactive-buttons">';
+                let transcriptChoicesHtml = '';
+                if (item.choices) {
+                    Object.keys(item.choices).forEach(key => {
+                        interactiveButtons += `<button class="p2-interactive-btn" id="btn-${exId}-${key}" onclick="window.checkP2ExampleAnswer('${exId}', '${key}', '${correctAns}')">${key}</button>`;
+                        transcriptChoicesHtml += `<div class="p2-ex-transcript-choice" id="transcript-choice-${exId}-${key}"><strong>(${key})</strong> ${item.choices[key]}</div>`;
+                    });
+                }
+                interactiveButtons += '</div>';
+                
+                html += `
+                    <div class="p2-ex-card" id="${exId}">
+                        <div class="p2-ex-header">VÍ DỤ THỰC HÀNH ${exCounter}</div>
+                        ${audioHtml}
+                        ${interactiveButtons}
+                        <div class="p2-ex-transcript" id="transcript-${exId}">
+                            <div class="p2-ex-question-text">${(item.question || '').replace(/^EXAMPLE \d+:\s*/i, '')}</div>
+                            ${transcriptChoicesHtml}
+                        </div>
+                    </div>
+                `;
+                exCounter++;
+            }
         });
         
         if (section.vocabulary && section.vocabulary.length > 0) {
@@ -3006,27 +3071,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund) ttsTxt = `${v.base}, ${v.gerund}`;
                 
                 return `
-                <div style="margin-bottom: 12px; font-size: 1.15rem; line-height: 1.6; padding-bottom: 8px; border-bottom: 1px dashed rgba(255,255,255,0.05);">
-                    <span style="font-weight: 800; color: #0ea5e9;">${txt}</span> 
-                    <span style="color: #94a3b8; font-size: 0.95em; font-family: monospace;">${v.ipa}</span>
-                    <span style="color: #a855f7; font-size: 0.95em; font-style: italic;">(${v.pos || 'n'})</span>: 
-                    <span style="color: var(--text-main); font-weight: 500;">${v.vi}</span>
-                    <span onclick="playTTS(this.dataset.text, event)" data-text="${ttsTxt.replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 10px; font-size: 1.2rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); transition: transform 0.2s;" onmouseover="this.style.transform='scale(1.2)'" onmouseout="this.style.transform='scale(1)'" title="Đọc từ này">🔊</span>
+                <div class="p2-vocab-item">
+                    <span style="font-weight: 700; color: #0284c7;">${txt}</span> 
+                    <span style="color: #64748b; font-family: monospace;">${v.ipa}</span>
+                    <span style="color: #8b5cf6; font-style: italic;">(${v.pos || 'n'})</span>: 
+                    <span style="color: #334155; font-weight: 500;">${v.vi}</span>
+                    <span onclick="playTTS(this.dataset.text, event)" data-text="${ttsTxt.replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: auto; font-size: 1.3rem;" title="Đọc từ này">🔊</span>
                 </div>
                 `;
             }).join('');
             
             html += `
-                <div class="p2-theory-card" style="border-color: rgba(16, 185, 129, 0.3);">
-                    <div class="p2-theory-title" style="color: #10b981; font-size: 1.5rem;">
-                        <div class="icon" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2), rgba(52, 211, 153, 0.2)); color: #10b981; border-color: rgba(16, 185, 129, 0.3);">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-                        </div>
-                        TỪ VỰNG TRỌNG TÂM
-                    </div>
-                    <div class="p2-theory-content" style="background: rgba(0,0,0,0.2); padding: 25px; border-radius: 16px;">
-                        ${vocabItems}
-                    </div>
+                <div class="p2-vocab-box">
+                    <h3 style="color: #059669; font-size: 1.4rem; font-weight: 800; margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                        TỔNG HỢP TỪ VỰNG TRỌNG TÂM
+                    </h3>
+                    ${vocabItems}
                 </div>
             `;
         }
@@ -3035,145 +3096,11 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function renderExamplesP2(section) {
-        if (!examplesContentAreaP2) return;
-        
-        if (!window.checkP2ExampleAnswer) {
-            window.checkP2ExampleAnswer = function(exId, selectedKey, correctKey) {
-                const card = document.getElementById(exId);
-                if (!card) return;
-                
-                const btns = card.querySelectorAll('.p2-interactive-btn');
-                btns.forEach(btn => {
-                    btn.style.pointerEvents = 'none';
-                    if (btn.id === `btn-${exId}-${correctKey}`) {
-                        btn.classList.add('correct');
-                    } else if (btn.id === `btn-${exId}-${selectedKey}` && selectedKey !== correctKey) {
-                        btn.classList.add('incorrect');
-                    }
-                });
-                
-                const transcript = card.querySelector('.p2-ex-transcript');
-                if (transcript) {
-                    transcript.style.display = 'block';
-                    transcript.style.animation = 'fadeIn 0.5s ease forwards';
-                }
-                
-                const correctChoice = document.getElementById(`transcript-choice-${exId}-${correctKey}`);
-                if (correctChoice) correctChoice.classList.add('highlight-correct');
-            };
+        // Examples are now interleaved in renderTheoryP2. 
+        // This function can be left empty or removed, but we keep it empty to not break other logic.
+        if (examplesContentAreaP2) {
+            examplesContentAreaP2.innerHTML = "<p style='color: #64748b; padding: 20px; text-align: center;'>Các ví dụ đã được tích hợp trực tiếp vào phần Lý thuyết ở trên để bạn dễ theo dõi.</p>";
         }
-        
-        let html = `
-            <style>
-                @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-                .p2-ex-card {
-                    background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08); padding: 40px; border-radius: 24px;
-                    margin-bottom: 40px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: all 0.4s ease;
-                    backdrop-filter: blur(10px);
-                }
-                .p2-ex-card:hover { border-color: rgba(99, 102, 241, 0.4); box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
-                
-                .p2-audio-player { text-align: center; margin-bottom: 30px; }
-                .p2-play-btn {
-                    background: linear-gradient(135deg, #6366f1, #a855f7); color: white; border: none;
-                    padding: 14px 30px; border-radius: 50px; font-size: 1.15rem; font-weight: 700; letter-spacing: 0.5px;
-                    cursor: pointer; display: inline-flex; align-items: center; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
-                    transition: all 0.3s ease;
-                }
-                .p2-play-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6); }
-                
-                .p2-interactive-buttons { display: flex; justify-content: center; gap: 25px; margin-bottom: 20px; }
-                .p2-interactive-btn {
-                    background: rgba(255,255,255,0.03); border: 2px solid rgba(255,255,255,0.15); color: var(--text-main);
-                    width: 75px; height: 75px; border-radius: 50%; font-size: 1.4rem; font-weight: 800;
-                    cursor: pointer; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-                    display: flex; align-items: center; justify-content: center; outline: none;
-                }
-                .p2-interactive-btn:hover { background: rgba(99, 102, 241, 0.1); border-color: #6366f1; transform: scale(1.1); color: #818cf8; }
-                .p2-interactive-btn.correct { background: #16a34a; border-color: #15803d; color: white; transform: scale(1.1); box-shadow: 0 0 20px rgba(22, 163, 74, 0.5); }
-                .p2-interactive-btn.incorrect { background: #dc2626; border-color: #b91c1c; color: white; transform: scale(0.95); opacity: 0.8; }
-                
-                .p2-ex-transcript {
-                    margin-top: 35px; padding-top: 25px; border-top: 1px dashed rgba(255,255,255,0.15);
-                }
-                .p2-ex-question-text {
-                    font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 20px; line-height: 1.6;
-                }
-                .p2-ex-transcript-choices { display: flex; flex-direction: column; gap: 12px; }
-                .p2-ex-transcript-choice {
-                    display: flex; gap: 15px; font-size: 1.15rem; color: var(--text-muted); padding: 14px 20px;
-                    border-radius: 12px; background: rgba(0,0,0,0.15); transition: all 0.3s ease; border: 1px solid transparent;
-                }
-                .p2-ex-transcript-choice .lbl { font-weight: 900; color: #94a3b8; }
-                .p2-ex-transcript-choice.highlight-correct {
-                    background: rgba(34, 197, 94, 0.1); color: #4ade80; border-color: rgba(34, 197, 94, 0.3);
-                }
-                .p2-ex-transcript-choice.highlight-correct .lbl { color: #4ade80; }
-            </style>
-            
-            <div class="p2-hero" style="background: radial-gradient(circle at 0% 0%, rgba(168, 85, 247, 0.15) 0%, transparent 50%), linear-gradient(145deg, #0f172a 0%, #020617 100%); border-radius: 16px; padding: 24px;">
-                <h2 class="p2-hero-title" style="color: #f8fafc; font-weight: 800; font-size: 1.5rem; margin-bottom: 8px;">VÍ DỤ THỰC HÀNH</h2>
-                <p class="p2-hero-subtitle" style="color: #94a3b8;">Mô phỏng 100% format bài thi thật: Bấm nghe audio, chọn đáp án A, B hoặc C. Sau khi chọn xong, hệ thống sẽ đối chiếu và hiện bản dịch chi tiết.</p>
-            </div>
-        `;
-        
-        if (!section.examples || section.examples.length === 0) {
-            html += "<p style='color: var(--text-muted); padding: 20px;'>Không có ví dụ nào cho phần này.</p>";
-            examplesContentAreaP2.innerHTML = html;
-            return;
-        }
-        
-        section.examples.forEach((ex, index) => {
-            const exId = `p2-ex-${section.id}-${index}`;
-            const correctAns = ex.answer || 'B';
-            
-            const audioHtml = ex.audio ? `
-                <div class="p2-audio-player">
-                    <audio id="audio-${exId}" src="${ex.audio}"></audio>
-                    <button class="p2-play-btn" onclick="document.getElementById('audio-${exId}').play()">
-                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" style="margin-right: 8px;"><path d="M8 5v14l11-7z"/></svg> 
-                        Nghe Audio Ví Dụ ${index + 1}
-                    </button>
-                </div>
-            ` : `<div class="p2-audio-player"><p style="color:#ef4444;">[Thiếu Audio]</p></div>`;
-            
-            let interactiveButtons = '<div class="p2-interactive-buttons">';
-            let transcriptChoicesHtml = '<div class="p2-ex-transcript-choices">';
-            
-            if (ex.choices) {
-                Object.keys(ex.choices).forEach(key => {
-                    interactiveButtons += `
-                        <button class="p2-interactive-btn" id="btn-${exId}-${key}" 
-                                onclick="window.checkP2ExampleAnswer('${exId}', '${key}', '${correctAns}')">
-                            ${key}
-                        </button>
-                    `;
-                    transcriptChoicesHtml += `
-                        <div class="p2-ex-transcript-choice" id="transcript-choice-${exId}-${key}">
-                            <span class="lbl">(${key})</span> <span class="txt">${ex.choices[key]}</span>
-                        </div>
-                    `;
-                });
-            }
-            interactiveButtons += '</div>';
-            transcriptChoicesHtml += '</div>';
-
-            html += `
-                <div class="p2-ex-card" id="${exId}">
-                    ${audioHtml}
-                    ${interactiveButtons}
-                    
-                    <div class="p2-ex-transcript" id="transcript-${exId}" style="display: none;">
-                        <div class="p2-ex-question-text">
-                            ${(ex.question || '').replace(/^EXAMPLE \d+:\s*/i, '')}
-                        </div>
-                        ${transcriptChoicesHtml}
-                    </div>
-                </div>
-            `;
-        });
-        
-        examplesContentAreaP2.innerHTML = html;
     }
 
     if (secBtnTheoryP2) {
