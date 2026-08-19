@@ -28,7 +28,39 @@ window.part02Data = [
         ]
       }
     ],
-    "examples": []
+    "examples": [],
+    "items": [
+      {
+        "type": "theory",
+        "slide_index": 0,
+        "text": [
+          "<span style=\"color: #dc2626; font-weight: 700\">TỔNG QUAN PHẦN 02 TRONG ĐỀ THI TOEIC</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Tổng số câu hỏi:</span> <span style=\"color: #dc2626; font-weight: 700\">25 câu</span> (Từ câu số 07 đến câu số 31).",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Hình thức nghe:</span> Ở phần 02, file nghe sẽ đọc <strong>01 câu hỏi/phát biểu</strong> và <strong>03 phương án trả lời (A, B, C)</strong>. Thí sinh sẽ nghe và chọn phương án trả lời phù hợp nhất.",
+          "👉 <span style=\"color: #dc2626; font-weight: 700\">Đặc điểm đề thi:</span> Đề thi chỉ có số thứ tự câu hỏi, <strong>hoàn toàn không có nội dung câu hỏi và đáp án</strong> (như hình minh họa bên dưới). Thí sinh nghe và tô đáp án đúng trong phiếu trả lời.",
+          "<img src=\"media/part02_exam_format.png\" style=\"max-width: 100%; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); margin: 16px 0; border: 1px solid #e2e8f0;\">",
+          "👉 <span style=\"color: #7c3aed; font-weight: 700\">Bắt đầu phần thi:</span> Đầu tiên file nghe sẽ nói phần hướng dẫn (<em>Directions</em>), sau đó mới vô câu hỏi đầu tiên. Lúc đó, thí sinh sẽ nghe câu hiệu lệnh: <span style=\"color: #dc2626; font-weight: 700; background: #fef2f2; padding: 4px 10px; border-radius: 6px; border: 1px solid #fecaca;\">\"Now, let us begin with question number 07.\"</span>"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 6,
+        "text": [
+          "<span style=\"color: #dc2626; font-weight: 700\">CÁC DẠNG CÂU HỎI TRONG PHẦN 2 (PART 02 CONTENT)</span>",
+          "Phần 2 của bài thi TOEIC Listening bao gồm <span style=\"color: #0284c7; font-weight: 700\">5 dạng câu hỏi & phát biểu chính</span> sau:",
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1. INFORMATION QUESTIONS (WH – QUESTIONS)</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Câu hỏi lấy thông tin:</span> Bắt đầu bằng các từ để hỏi <em>Who, What, Where, When, Why, How</em>.",
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2. YES/NO QUESTIONS</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Câu hỏi Yes/No:</span> Bắt đầu bằng Trợ động từ hoặc Động từ to-be (<em>Do you, Are you, Did he, Have you,...</em>).",
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">3. CHOICE QUESTIONS</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Câu hỏi lựa chọn:</span> Chứa liên từ <strong>\"or\"</strong> đưa ra các lựa chọn (<em>A or B</em>).",
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">4. SUGGESTIONS & INVITATIONS</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Câu đề nghị & Lời mời:</span> Các mẫu câu rủ rê, đề xuất hoặc mời (<em>Why don't we, How about, Would you like to...</em>).",
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">5. STATEMENTS</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Câu phát biểu / Trần thuật:</span> Câu đưa ra nhận định hoặc thông tin (không phải câu hỏi nhưng cần phản hồi phù hợp)."
+        ]
+      }
+    ]
   },
   {
     "id": "info_who",
