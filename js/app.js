@@ -3022,11 +3022,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 .p2-ex-choice-row.highlight-correct { background: #dcfce7; color: #166534; font-weight: 700; border-color: #86efac; }
             </style>
-            
-            <div class="p2-hero">
-                <h2 class="p2-hero-title">${section.title.replace(/^[0-9IV]+\.\s*/, '')}</h2>
-                <p class="p2-hero-subtitle">Nắm vững kiến thức, các dạng câu hỏi và mẹo nhận biết đáp án để chinh phục Phần 2 TOEIC Listening dễ dàng hơn.</p>
-            </div>
         `;
         
         // Ensure checkP2ExampleAnswer exists
