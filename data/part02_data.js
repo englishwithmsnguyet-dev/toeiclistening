@@ -531,7 +531,7 @@ window.part02Data = [
           "👉 <span style=\"color: #0284c7; font-weight: 700;\">I am not sure / Isn’t it allocated to….?</span>: <em>Tôi không chắc chắn / Chẳng phải nó được phân công cho...?</em>",
           "👉 <span style=\"color: #0284c7; font-weight: 700;\">I can’t remember / I don’t recall / …</span>: <em>Tôi không thể nhớ ra / Tôi không nhớ...</em>",
           "👉 <span style=\"color: #0284c7; font-weight: 700;\">Let me find out / Let me check out / Let me ask...</span>: <em>Để tôi tìm hiểu / Để tôi kiểm tra lại / Để tôi đi hỏi...</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">S + haven’t / hasn’t been decided / chosen / assigned / confirmed / announced / finalized / selected yet...</span>: <em>...vẫn chưa được quyết định / chọn / phân công / xác nhận / công bố / hoàn tất lựa chọn...</em>"
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">It hasn’t been decided / chosen / assigned / confirmed / announced / finalized / selected yet...</span>: <em>Nó / Điều đó vẫn chưa được quyết định / chọn / phân công / xác nhận / công bố / chốt...</em>"
         ]
       },
       {
