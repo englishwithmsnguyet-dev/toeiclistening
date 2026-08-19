@@ -2897,60 +2897,95 @@ document.addEventListener("DOMContentLoaded", () => {
             <style>
                 .p2-hero {
                     background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
-                    color: #0f172a; padding: 40px 45px; border-radius: 20px; position: relative; overflow: hidden;
-                    box-shadow: 0 4px 15px rgba(0,0,0,0.05); margin-bottom: 35px; border: 1px solid #bae6fd;
+                    color: #0f172a; padding: 35px 40px; border-radius: 20px; position: relative; overflow: hidden;
+                    box-shadow: 0 4px 15px rgba(0,0,0,0.04); margin-bottom: 30px; border: 1px solid #bae6fd;
                 }
-                .p2-hero-title { font-size: 2.2rem; font-weight: 800; margin-bottom: 12px; color: #0284c7; letter-spacing: -0.02em; }
-                .p2-hero-subtitle { font-size: 1.1rem; color: #475569; line-height: 1.6; max-width: 650px; }
+                .p2-hero-title { font-size: 2rem; font-weight: 800; margin-bottom: 10px; color: #0284c7; letter-spacing: -0.02em; }
+                .p2-hero-subtitle { font-size: 1.05rem; color: #475569; line-height: 1.6; max-width: 700px; }
                 
                 .p2-theory-card {
-                    background: #ffffff; border: 1px solid #e2e8f0; padding: 30px; border-radius: 16px;
-                    box-shadow: 0 4px 12px rgba(0,0,0,0.03); margin-bottom: 25px;
+                    background: #ffffff; border: 1px solid #e2e8f0; padding: 28px 32px; border-radius: 16px;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.03); margin-bottom: 24px;
                 }
                 .p2-theory-title {
-                    font-size: 1.3rem; font-weight: 700; color: #334155; margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
+                    font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-bottom: 18px; display: flex; align-items: center; gap: 12px;
                 }
                 .p2-theory-title .icon {
-                    width: 40px; height: 40px; background: #f1f5f9; color: #64748b;
+                    width: 36px; height: 36px; background: #f0fdf4; color: #16a34a;
                     border-radius: 10px; display: flex; align-items: center; justify-content: center;
+                    border: 1px solid #dcfce7;
                 }
-                .p2-theory-content { display: flex; flex-direction: column; gap: 12px; }
-                .p2-text-line { font-size: 1.1rem; color: #475569; line-height: 1.7; margin: 0; }
+                .p2-theory-content { display: flex; flex-direction: column; gap: 10px; }
+                .p2-text-line { font-size: 1.08rem; color: #334155; line-height: 1.7; margin: 0; }
                 .p2-text-highlight {
                     color: #0369a1; font-weight: 600; background: #f0f9ff;
-                    padding: 15px 20px; border-radius: 12px; border-left: 4px solid #0284c7;
-                    font-size: 1.1rem; line-height: 1.7;
+                    padding: 14px 18px; border-radius: 12px; border-left: 4px solid #0284c7;
+                    font-size: 1.08rem; line-height: 1.7; margin: 4px 0;
                 }
                 
+                /* IN-LINE VOCABULARY BOX */
+                .p2-vocab-box {
+                    background: #ffffff; border: 1.5px solid #bbf7d0; padding: 24px 28px; border-radius: 16px;
+                    margin-bottom: 24px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.05);
+                }
+                .p2-vocab-box-header {
+                    font-size: 1.15rem; font-weight: 800; color: #059669; margin-bottom: 16px;
+                    display: flex; align-items: center; gap: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+                }
+                .p2-vocab-list { display: flex; flex-direction: column; gap: 8px; }
+                .p2-vocab-item {
+                    padding: 10px 14px; border-radius: 10px; background: #f8fafc; border: 1px solid #f1f5f9;
+                    display: flex; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 1.05rem;
+                    transition: all 0.2s ease;
+                }
+                .p2-vocab-item:hover { background: #f0fdf4; border-color: #bbf7d0; }
+                .p2-vocab-en { font-weight: 700; color: #0284c7; min-width: 140px; }
+                .p2-vocab-ipa { color: #64748b; font-family: monospace; font-size: 0.95rem; }
+                .p2-vocab-pos { color: #8b5cf6; font-style: italic; font-size: 0.95rem; }
+                .p2-vocab-vi { color: #1e293b; font-weight: 500; }
+                .p2-vocab-tts {
+                    cursor: pointer; margin-left: auto; font-size: 1.2rem; opacity: 0.7; transition: transform 0.15s, opacity 0.15s;
+                    user-select: none; padding: 2px 6px; border-radius: 6px;
+                }
+                .p2-vocab-tts:hover { opacity: 1; transform: scale(1.2); }
+                
+                /* IN-LINE EXAMPLE CARD */
                 .p2-ex-card {
-                    background: #ffffff; border: 2px solid #e2e8f0; padding: 30px; border-radius: 16px;
-                    margin-bottom: 25px; box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+                    background: #ffffff; border: 2px solid #e0e7ff; padding: 28px 32px; border-radius: 16px;
+                    margin-bottom: 24px; box-shadow: 0 4px 14px rgba(99, 102, 241, 0.06);
                 }
-                .p2-ex-header { font-size: 1.2rem; font-weight: 700; color: #f59e0b; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
-                .p2-audio-player { text-align: center; margin-bottom: 25px; }
+                .p2-ex-badge {
+                    display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px;
+                    background: #eef2ff; color: #4f46e5; border-radius: 20px; font-size: 0.85rem; font-weight: 800;
+                    margin-bottom: 16px; border: 1px solid #c7d2fe;
+                }
+                .p2-audio-player { text-align: center; margin: 15px 0 22px 0; }
                 .p2-play-btn {
-                    background: #0284c7; color: white; border: none; padding: 12px 25px; border-radius: 50px; font-size: 1.05rem; font-weight: 600;
-                    cursor: pointer; display: inline-flex; align-items: center; box-shadow: 0 4px 10px rgba(2, 132, 199, 0.3); transition: all 0.2s;
+                    background: linear-gradient(135deg, #0284c7, #0369a1); color: white; border: none;
+                    padding: 12px 28px; border-radius: 50px; font-size: 1.05rem; font-weight: 700;
+                    cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+                    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25); transition: all 0.2s ease;
                 }
-                .p2-play-btn:hover { background: #0369a1; transform: translateY(-2px); }
+                .p2-play-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(2, 132, 199, 0.35); }
                 
-                .p2-interactive-buttons { display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; }
+                .p2-interactive-buttons { display: flex; justify-content: center; gap: 16px; margin-bottom: 18px; }
                 .p2-interactive-btn {
-                    background: #f8fafc; border: 2px solid #cbd5e1; color: #475569; width: 60px; height: 60px; border-radius: 50%;
-                    font-size: 1.2rem; font-weight: 700; cursor: pointer; transition: all 0.2s;
+                    background: #f8fafc; border: 2px solid #cbd5e1; color: #334155; width: 56px; height: 56px; border-radius: 50%;
+                    font-size: 1.25rem; font-weight: 800; cursor: pointer; transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                    display: flex; align-items: center; justify-content: center;
                 }
-                .p2-interactive-btn:hover { background: #f1f5f9; border-color: #94a3b8; color: #0f172a; }
-                .p2-interactive-btn.correct { background: #22c55e; border-color: #16a34a; color: white; }
-                .p2-interactive-btn.incorrect { background: #ef4444; border-color: #dc2626; color: white; }
+                .p2-interactive-btn:hover { background: #e0f2fe; border-color: #0284c7; color: #0284c7; transform: scale(1.08); }
+                .p2-interactive-btn.correct { background: #16a34a; border-color: #15803d; color: white; transform: scale(1.1); box-shadow: 0 0 14px rgba(22, 163, 74, 0.4); }
+                .p2-interactive-btn.incorrect { background: #dc2626; border-color: #b91c1c; color: white; transform: scale(0.95); opacity: 0.85; }
                 
-                .p2-ex-transcript { margin-top: 25px; padding-top: 20px; border-top: 1px dashed #cbd5e1; display: none; }
-                .p2-ex-question-text { font-size: 1.15rem; font-weight: 700; color: #1e293b; margin-bottom: 15px; }
-                .p2-ex-transcript-choice { padding: 10px 15px; border-radius: 8px; margin-bottom: 8px; color: #475569; font-size: 1.05rem; }
-                .p2-ex-transcript-choice.highlight-correct { background: #dcfce7; color: #166534; font-weight: 600; }
-                
-                .p2-vocab-box { background: #f8fafc; border: 1px solid #e2e8f0; padding: 25px; border-radius: 16px; margin-bottom: 30px; }
-                .p2-vocab-item { padding: 12px 0; border-bottom: 1px dashed #cbd5e1; display: flex; align-items: center; flex-wrap: wrap; gap: 10px; font-size: 1.1rem; }
-                .p2-vocab-item:last-child { border-bottom: none; }
+                .p2-ex-transcript { margin-top: 20px; padding-top: 18px; border-top: 1px dashed #cbd5e1; display: none; }
+                .p2-ex-q-text { font-size: 1.12rem; font-weight: 700; color: #0f172a; margin-bottom: 14px; line-height: 1.6; }
+                .p2-ex-choices { display: flex; flex-direction: column; gap: 8px; }
+                .p2-ex-choice-row {
+                    padding: 10px 16px; border-radius: 10px; background: #f8fafc; color: #475569; font-size: 1.05rem;
+                    border: 1px solid #f1f5f9; transition: all 0.2s ease;
+                }
+                .p2-ex-choice-row.highlight-correct { background: #dcfce7; color: #166534; font-weight: 700; border-color: #86efac; }
             </style>
             
             <div class="p2-hero">
@@ -2958,19 +2993,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 <p class="p2-hero-subtitle">Nắm vững kiến thức, các dạng câu hỏi và mẹo nhận biết đáp án để chinh phục Phần 2 TOEIC Listening dễ dàng hơn.</p>
             </div>
         `;
-        
-        let combined = [];
-        if (section.theory) section.theory.forEach(t => combined.push({...t, itemType: 'theory'}));
-        if (section.examples) section.examples.forEach(e => combined.push({...e, itemType: 'example'}));
-        
-        // Sort by slide_index to interleave examples and theory exactly as in PPTX
-        combined.sort((a, b) => (a.slide_index || 0) - (b.slide_index || 0));
-        
-        if (combined.length === 0) {
-            html += "<p style='color: #64748b; padding: 20px;'>Nội dung đang được cập nhật...</p>";
-            theoryContentAreaP2.innerHTML = html;
-            return;
-        }
         
         // Ensure checkP2ExampleAnswer exists
         if (!window.checkP2ExampleAnswer) {
@@ -2984,112 +3006,120 @@ document.addEventListener("DOMContentLoaded", () => {
                 });
                 const transcript = card.querySelector('.p2-ex-transcript');
                 if (transcript) transcript.style.display = 'block';
-                const correctChoice = document.getElementById(`transcript-choice-${exId}-${correctKey}`);
+                const correctChoice = document.getElementById(`choice-${exId}-${correctKey}`);
                 if (correctChoice) correctChoice.classList.add('highlight-correct');
             };
         }
         
-        let exCounter = 1;
-        
-        combined.forEach(item => {
-            if (item.itemType === 'theory') {
-                if (!item.text || item.text.length === 0) return;
-                
-                let titleHtml = '';
-                let contentLines = item.text;
-                if (!item.text[0].trim().toLowerCase().startsWith('<img')) {
-                    titleHtml = `
-                        <div class="p2-theory-title">
-                            <div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
-                            ${item.text[0]}
+        // Render sequential items if available (New format for Information Questions)
+        if (section.items && section.items.length > 0) {
+            let exCounter = 1;
+            
+            section.items.forEach(item => {
+                if (item.type === 'theory') {
+                    if (!item.text || item.text.length === 0) return;
+                    
+                    let titleHtml = '';
+                    let contentLines = item.text;
+                    if (!item.text[0].trim().toLowerCase().startsWith('<img')) {
+                        titleHtml = `
+                            <div class="p2-theory-title">
+                                <div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
+                                ${item.text[0]}
+                            </div>
+                        `;
+                        contentLines = item.text.slice(1);
+                    }
+                    
+                    let listHtml = '';
+                    contentLines.forEach(line => {
+                        if (line.startsWith('👉') || line.toLowerCase().includes('ví dụ')) {
+                            listHtml += `<div class="p2-text-highlight">${line.replace('👉', '').trim()}</div>`;
+                        } else if (line.trim().toLowerCase().startsWith('<img')) {
+                            listHtml += line;
+                        } else {
+                            listHtml += `<p class="p2-text-line">${line}</p>`;
+                        }
+                    });
+                    
+                    html += `
+                        <div class="p2-theory-card">
+                            ${titleHtml}
+                            <div class="p2-theory-content">${listHtml}</div>
                         </div>
                     `;
-                    contentLines = item.text.slice(1);
-                }
-                
-                let listHtml = '';
-                contentLines.forEach(line => {
-                    if (line.startsWith('👉') || line.toLowerCase().includes('ví dụ')) {
-                        listHtml += `<div class="p2-text-highlight">${line.replace('👉', '').trim()}</div>`;
-                    } else if (line.trim().toLowerCase().startsWith('<img')) {
-                        listHtml += line;
-                    } else {
-                        listHtml += `<p class="p2-text-line">${line}</p>`;
-                    }
-                });
-                
-                html += `
-                    <div class="p2-theory-card">
-                        ${titleHtml}
-                        <div class="p2-theory-content">${listHtml}</div>
-                    </div>
-                `;
-            } else if (item.itemType === 'example') {
-                const exId = `p2-ex-${section.id}-${exCounter}`;
-                const correctAns = item.answer || 'B';
-                
-                const audioHtml = item.audio ? `
-                    <div class="p2-audio-player">
-                        <audio id="audio-${exId}" src="${item.audio}"></audio>
-                        <button class="p2-play-btn" onclick="document.getElementById('audio-${exId}').play()">
-                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" style="margin-right: 8px;"><path d="M8 5v14l11-7z"/></svg> 
-                            Nghe Ví Dụ ${exCounter}
-                        </button>
-                    </div>
-                ` : ``;
-                
-                let interactiveButtons = '<div class="p2-interactive-buttons">';
-                let transcriptChoicesHtml = '';
-                if (item.choices) {
-                    Object.keys(item.choices).forEach(key => {
-                        interactiveButtons += `<button class="p2-interactive-btn" id="btn-${exId}-${key}" onclick="window.checkP2ExampleAnswer('${exId}', '${key}', '${correctAns}')">${key}</button>`;
-                        transcriptChoicesHtml += `<div class="p2-ex-transcript-choice" id="transcript-choice-${exId}-${key}"><strong>(${key})</strong> ${item.choices[key]}</div>`;
-                    });
-                }
-                interactiveButtons += '</div>';
-                
-                html += `
-                    <div class="p2-ex-card" id="${exId}">
-                        <div class="p2-ex-header">VÍ DỤ THỰC HÀNH ${exCounter}</div>
-                        ${audioHtml}
-                        ${interactiveButtons}
-                        <div class="p2-ex-transcript" id="transcript-${exId}">
-                            <div class="p2-ex-question-text">${(item.question || '').replace(/^EXAMPLE \d+:\s*/i, '')}</div>
-                            ${transcriptChoicesHtml}
+                } else if (item.type === 'vocab_group') {
+                    let wordsHtml = item.words.map(w => `
+                        <div class="p2-vocab-item">
+                            <span class="p2-vocab-en">${w.en}</span>
+                            <span class="p2-vocab-ipa">${w.ipa}</span>
+                            <span class="p2-vocab-vi">: ${w.vi}</span>
+                            <span class="p2-vocab-tts" onclick="playTTS(this.dataset.text, event)" data-text="${w.en.replace(/"/g, '&quot;')}" title="Nghe phát âm">🔊</span>
                         </div>
-                    </div>
-                `;
-                exCounter++;
-            }
-        });
-        
-        if (section.vocabulary && section.vocabulary.length > 0) {
-            let vocabItems = section.vocabulary.map(v => {
-                let txt = v.en;
-                if (v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund) txt = `${v.base} ➔ ${v.gerund}`;
-                let ttsTxt = v.en;
-                if (v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund) ttsTxt = `${v.base}, ${v.gerund}`;
-                
-                return `
-                <div class="p2-vocab-item">
-                    <span style="font-weight: 700; color: #0284c7;">${txt}</span> 
-                    <span style="color: #64748b; font-family: monospace;">${v.ipa}</span>
-                    <span style="color: #8b5cf6; font-style: italic;">(${v.pos || 'n'})</span>: 
-                    <span style="color: #334155; font-weight: 500;">${v.vi}</span>
-                    <span onclick="playTTS(this.dataset.text, event)" data-text="${ttsTxt.replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: auto; font-size: 1.3rem;" title="Đọc từ này">🔊</span>
-                </div>
-                `;
-            }).join('');
-            
-            html += `
-                <div class="p2-vocab-box">
-                    <h3 style="color: #059669; font-size: 1.4rem; font-weight: 800; margin-bottom: 15px; display: flex; align-items: center; gap: 8px;">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-                        TỔNG HỢP TỪ VỰNG TRỌNG TÂM
-                    </h3>
-                    ${vocabItems}
-                </div>
-            `;
+                    `).join('');
+                    
+                    html += `
+                        <div class="p2-vocab-box">
+                            <div class="p2-vocab-box-header">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                                TỪ VỰNG TRỌNG TÂM (${item.words.length} TỪ)
+                            </div>
+                            <div class="p2-vocab-list">
+                                ${wordsHtml}
+                            </div>
+                        </div>
+                    `;
+                } else if (item.type === 'example') {
+                    const exId = `p2-ex-${section.id}-${exCounter}`;
+                    const correctAns = item.answer || 'B';
+                    
+                    const audioHtml = item.audio ? `
+                        <div class="p2-audio-player">
+                            <audio id="audio-${exId}" src="${item.audio}" preload="none"></audio>
+                            <button class="p2-play-btn" onclick="const a=document.getElementById('audio-${exId}'); if(a.paused){a.play(); this.innerHTML='<svg width=\\'18\\' height=\\'18\\' viewBox=\\'0 0 24 24\\' fill=\\'currentColor\\'><path d=\\'M6 19h4V5H6v14zm8-14v14h4V5h-4z\\'/></svg> Tạm dừng';}else{a.pause(); this.innerHTML='<svg width=\\'18\\' height=\\'18\\' viewBox=\\'0 0 24 24\\' fill=\\'currentColor\\'><path d=\\'M8 5v14l11-7z\\'/></svg> Nghe audio ví dụ ${exCounter}';}">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg> 
+                                Nghe audio ví dụ ${exCounter}
+                            </button>
+                        </div>
+                    ` : ``;
+                    
+                    let interactiveButtons = '<div class="p2-interactive-buttons">';
+                    let choicesHtml = '<div class="p2-ex-choices">';
+                    if (item.choices) {
+                        ['A', 'B', 'C'].forEach(key => {
+                            if (item.choices[key]) {
+                                interactiveButtons += `<button class="p2-interactive-btn" id="btn-${exId}-${key}" onclick="window.checkP2ExampleAnswer('${exId}', '${key}', '${correctAns}')">${key}</button>`;
+                                choicesHtml += `<div class="p2-ex-choice-row" id="choice-${exId}-${key}"><strong>(${key})</strong> ${item.choices[key]}</div>`;
+                            }
+                        });
+                    }
+                    interactiveButtons += '</div>';
+                    choicesHtml += '</div>';
+                    
+                    html += `
+                        <div class="p2-ex-card" id="${exId}">
+                            <div class="p2-ex-badge">VÍ DỤ THỰC HÀNH ${exCounter}</div>
+                            ${audioHtml}
+                            ${interactiveButtons}
+                            <div class="p2-ex-transcript" id="transcript-${exId}">
+                                <div class="p2-ex-q-text"><strong>Câu hỏi:</strong> ${(item.question || '').replace(/^EXAMPLE \d+:\s*/i, '')}</div>
+                                ${choicesHtml}
+                            </div>
+                        </div>
+                    `;
+                    exCounter++;
+                }
+            });
+        } else if (section.theory && section.theory.length > 0) {
+            // Fallback for other sections
+            section.theory.forEach(t => {
+                if (!t.text || t.text.length === 0) return;
+                let titleHtml = `<div class="p2-theory-title"><div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>${t.text[0]}</div>`;
+                let listHtml = t.text.slice(1).map(line => `<p class="p2-text-line">${line}</p>`).join('');
+                html += `<div class="p2-theory-card">${titleHtml}<div class="p2-theory-content">${listHtml}</div></div>`;
+            });
+        } else {
+            html += "<p style='color: #64748b; padding: 20px;'>Nội dung đang được cập nhật...</p>";
         }
         
         theoryContentAreaP2.innerHTML = html;

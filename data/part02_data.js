@@ -34,487 +34,562 @@ window.part02Data = [
     "id": "info_who",
     "title": "1. Who/Whom/Whose",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 7,
         "text": [
-          "<strong><span style='color: #FF0000;'>INFORMATION QUESTIONS </span></strong>",
-          "<strong><span style='color: #0070C0;'>(WH – QUESTIONS</span></strong><strong><span style='color: #0070C0;'>)</span></strong>"
+          "INFORMATION QUESTIONS",
+          "(WH – QUESTIONS)"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 8,
         "text": [
-          "<strong><span style='color: #FF0000;'>1. Questions with WHO/WHOM/WHOSE</span></strong>",
-          "Dạng câu hỏi này được dùng để hỏi về <strong><i><span style='color: #0070C0;'>người</span></i></strong>, <strong><i><span style='color: #0070C0;'>nhóm người</span></i></strong>, <strong><i><span style='color: #0070C0;'>một tổ chức</span></i></strong>, <strong><i><span style='color: #0070C0;'>phòng ban</span></i></strong> hoặc <strong><i><span style='color: #0070C0;'>một chức vụ </span></i></strong>nào đó.",
-          "<strong><i><span style='color: #7030A0;'>1.1. Câu trả lời là tên riêng chỉ người</span></i></strong>",
-          "Một số tên riêng chỉ người thường gặp: <strong><i><span style='color: #0070C0;'>John</span></i></strong>, <strong><i><span style='color: #0070C0;'>Jane</span></i></strong>, <strong><i><span style='color: #0070C0;'>Jack</span></i></strong>, <strong><i><span style='color: #0070C0;'>Julie</span></i></strong>, <strong><i><span style='color: #0070C0;'>Johnson</span></i></strong>, <strong><i><span style='color: #0070C0;'>Simpson</span></i></strong>, <strong><i><span style='color: #0070C0;'>Sandra</span></i></strong>, <strong><i><span style='color: #0070C0;'>Sandy</span></i></strong>, <strong><i><span style='color: #0070C0;'>Brenda</span></i></strong>, <strong><i><span style='color: #0070C0;'>Lynn</span></i></strong>, <strong><i><span style='color: #0070C0;'>Larry</span></i></strong>, <strong><i><span style='color: #0070C0;'>William</span></i></strong>,..."
+          "1. Questions with WHO/WHOM/WHOSE",
+          "Dạng câu hỏi này được dùng để hỏi về người, nhóm người, một tổ chức, phòng ban hoặc một chức vụ nào đó.",
+          "1.1. Câu trả lời là tên riêng chỉ người",
+          "Một số tên riêng chỉ người thường gặp: John, Jane, Jack, Julie, Johnson, Simpson, Sandra, Sandy, Brenda, Lynn, Larry, William,..."
         ]
       },
       {
-        "slide_index": 11,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>1.2. Câu trả lời là tên của một chức vụ</span></i></strong>",
-          "Trong đáp án trả lời thường chứ một từ hoặc cụm từ mang nghĩa là <strong><i><span style='color: #0070C0;'>một</span></i></strong> <strong><i><span style='color: #0070C0;'>chức</span></i></strong> <strong><i><span style='color: #0070C0;'>vụ/vị trí làm việc </span></i></strong>trong công ty, cơ quan, hay một tổ chức."
-        ]
-      },
-      {
-        "slide_index": 12,
-        "text": [
-          "<strong><span style='color: #FF0000;'>MỘT SỐ TỪ VỰNG </span></strong>",
-          "<strong><span style='color: #FF0000;'>VỀ CHỨC VỤ PHỔ BIẾN </span></strong>"
-        ]
-      },
-      {
-        "slide_index": 30,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>1.3. Câu trả lời là tên của phòng ban</span></i></strong>",
-          "Trong đáp án trả lời thường chứa một cụm từ mang nghĩa là <strong><i><span style='color: #0070C0;'>một</span></i></strong> <strong><i><span style='color: #0070C0;'>phòng</span></i></strong><strong><i><span style='color: #0070C0;'> ban</span></i></strong> của một cơ quan, công ty hay tổ chức."
-        ]
-      },
-      {
-        "slide_index": 40,
-        "text": [
-          "<strong><span style='color: #7030A0;'>KHÁCH HÀNG</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 45,
-        "text": [
-          "<strong><span style='color: #FF0000;'>R & D Department </span></strong>"
-        ]
-      },
-      {
-        "slide_index": 48,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>1.4. Câu trả lời là đại từ bất định, đại từ nhân xưng, đại từ s</span></i></strong><strong><i><span style='color: #7030A0;'>ở</span></i></strong><strong><i><span style='color: #7030A0;'> hữu</span></i></strong>",
-          "Trong đáp án trả lời thường chứa một <i><span style='color: #0070C0;'>đại</span></i> <i><span style='color: #0070C0;'>từ</span></i> <i><span style='color: #0070C0;'>bất</span></i> <i><span style='color: #0070C0;'>định</span></i>, <i><span style='color: #0070C0;'>một</span></i> <i><span style='color: #0070C0;'>đại</span></i> <i><span style='color: #0070C0;'>từ</span></i> <i><span style='color: #0070C0;'>nhân</span></i> <i><span style='color: #0070C0;'>xưng</span></i> hoặc <i><span style='color: #0070C0;'>một</span></i> <i><span style='color: #0070C0;'>đại</span></i> <i><span style='color: #0070C0;'>từ</span></i> <i><span style='color: #0070C0;'>sở</span></i> <i><span style='color: #0070C0;'>hữu</span></i>."
-        ]
-      },
-      {
-        "slide_index": 49,
-        "text": [
-          "<strong><span style='color: #FF0000;'>INDEFINITE PRONOUNS </span></strong>",
-          "<strong><span style='color: #00B0F0;'>(ĐẠI TỪ BẤT ĐỊNH)</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 58,
-        "text": [
-          "<strong><span style='color: #FF0000;'>PERSONAL PRONOUNS </span></strong><strong><span style='color: #00B0F0;'>(ĐẠI TỪ NHÂN XƯNG)</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 59,
-        "text": [
-          "<strong><span style='color: #FF0000;'>SUBJECT (CHỦ TỪ)</span></strong>",
-          "<strong><span style='color: #FF0000;'>OBJECT (TÚC TỪ)</span></strong>",
-          "<strong><span style='color: #7030A0;'>I</span></strong>",
-          "<strong><span style='color: #7030A0;'>ME</span></strong>",
-          "<strong><span style='color: #7030A0;'>YOU</span></strong>",
-          "<strong><span style='color: #7030A0;'>YOU</span></strong>",
-          "<strong><span style='color: #7030A0;'>WE</span></strong>",
-          "<strong><span style='color: #7030A0;'>US</span></strong>",
-          "<strong><span style='color: #7030A0;'>THEY</span></strong>",
-          "<strong><span style='color: #7030A0;'>THEM</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 60,
-        "text": [
-          "<strong><span style='color: #FF0000;'>SUBJECT (CHỦ TỪ)</span></strong>",
-          "<strong><span style='color: #FF0000;'>OBJECT (TÚC TỪ)</span></strong>",
-          "<strong><span style='color: #7030A0;'>HE</span></strong>",
-          "<strong><span style='color: #7030A0;'>HIM</span></strong>",
-          "<strong><span style='color: #7030A0;'>SHE</span></strong>",
-          "<strong><span style='color: #7030A0;'>HER</span></strong>",
-          "<strong><span style='color: #7030A0;'>IT</span></strong>",
-          "<strong><span style='color: #7030A0;'>IT</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 61,
-        "text": [
-          "<strong><span style='color: #FF0000;'>OTHER PRONOUNS </span></strong>",
-          "<strong><span style='color: #00B0F0;'>(ĐẠI TỪ KHÁC)</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 62,
-        "text": [
-          "<strong><span style='color: #FF0000;'>TÍNH TỪ SỞ HỮU</span></strong>",
-          "<strong><span style='color: #FF0000;'>ĐẠI TỪ SỞ HỮU</span></strong>",
-          "<strong><span style='color: #7030A0;'>MY</span></strong>",
-          "<strong><span style='color: #7030A0;'>MINE</span></strong>",
-          "<strong><span style='color: #7030A0;'>YOUR</span></strong>",
-          "<strong><span style='color: #7030A0;'>YOURS</span></strong>",
-          "<strong><span style='color: #7030A0;'>OUR</span></strong>",
-          "<strong><span style='color: #7030A0;'>OURS</span></strong>",
-          "<strong><span style='color: #7030A0;'>THEIR</span></strong>",
-          "<strong><span style='color: #7030A0;'>THEIRS</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 63,
-        "text": [
-          "<strong><span style='color: #FF0000;'>TÍNH TỪ SỞ HỮU</span></strong>",
-          "<strong><span style='color: #FF0000;'>ĐẠI TỪ SỞ HỮU</span></strong>",
-          "<strong><span style='color: #7030A0;'>HIS</span></strong>",
-          "<strong><span style='color: #7030A0;'>HIS</span></strong>",
-          "<strong><span style='color: #7030A0;'>HER</span></strong>",
-          "<strong><span style='color: #7030A0;'>HERS</span></strong>",
-          "<strong><span style='color: #7030A0;'>IT</span></strong>",
-          "<strong><span style='color: #7030A0;'>ITS</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 66,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>1.5. Câu trả lời gián tiếp</span></i></strong>",
-          "Đôi khi trong nhiều trường hợp câu trả lời diễn đạt ý nghĩa không biết rõ, không chắc chắn, ví dụ như:",
-          "<i><span style='color: #0070C0;'>I don’t know/ I don’t really know/ I have no idea/ I don’t have a clue/ ...</span></i>",
-          "<i><span style='color: #0070C0;'>I am not sure/ Isn’t it allocated to….?/...</span></i>"
-        ]
-      },
-      {
-        "slide_index": 67,
-        "text": [
-          "<i><span style='color: #0070C0;'>I can’t remember / I don’t recall / …</span></i>",
-          "<i><span style='color: #0070C0;'>Let me find out/ Let me check out/ Let me ask...</span></i>",
-          "<i><span style='color: #0070C0;'>S + haven’t/ hasn’t been decided/ chosen/ assigned/ confirmed/ announced/ finalized/ selected yet... </span></i>"
-        ]
-      }
-    ],
-    "examples": [
-      {
-        "question": "Who ’s managing the production line?",
+        "type": "example",
+        "slide_index": 9,
+        "question": "Who’s managing the production line?",
         "choices": {
           "A": "In about two weeks.",
           "B": "It’s Lisa’s shift.",
           "C": "From the warehouse."
         },
-        "audio": "part02_examples/slide9_media1.mp3",
-        "slide_index": 9
+        "answer": "B",
+        "audio": "media/part02_examples/slide9_media1.mp3"
       },
       {
-        "question": "Who  do I need to inform about the clients arriving on Friday?",
+        "type": "example",
+        "slide_index": 10,
+        "question": "Who do I need to inform about the clients arriving on Friday?",
         "choices": {
           "A": "No, it hasn’t arrived yet.",
           "B": "Tim, at the front desk.",
           "C": "All the way from New York."
         },
-        "audio": "part02_examples/slide10_media2.mp3",
-        "slide_index": 10
+        "answer": "B",
+        "audio": "media/part02_examples/slide10_media2.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 11,
+        "text": [
+          "1.2. Câu trả lời là tên của một chức vụ",
+          "Trong đáp án trả lời thường chứ một từ hoặc cụm từ mang nghĩa là một chức vụ/vị trí làm việc trong công ty, cơ quan, hay một tổ chức."
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 12,
+        "text": [
+          "MỘT SỐ TỪ VỰNG",
+          "VỀ CHỨC VỤ PHỔ BIẾN"
+        ]
+      },
+      {
+        "type": "vocab_group",
+        "slide_index": 13,
+        "words": [
+          {
+            "type": "vocab",
+            "slide_index": 13,
+            "en": "secretary",
+            "ipa": "/ˈsekrətri//ˈsekrəteri/",
+            "vi": "THƯ KÝ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 14,
+            "en": "president",
+            "ipa": "/ˈprezɪdənt/",
+            "vi": "CHỦ TỊCH"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 15,
+            "en": "chairman",
+            "ipa": "/ˈtʃeəmən/",
+            "vi": "CHỦ TỊCH"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 16,
+            "en": "vice president",
+            "ipa": "/ˌvaɪs ˈprezɪdənt/",
+            "vi": "PHÓ CHỦ TỊCH"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 17,
+            "en": "manager",
+            "ipa": "/ˈmænɪdʒər/",
+            "vi": "QUẢN LÝ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 18,
+            "en": "supervisor",
+            "ipa": "/ˈsuːpərvaɪzər/",
+            "vi": "GIÁM SÁT VIÊN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 19,
+            "en": "assistant",
+            "ipa": "/əˈsɪstənt/",
+            "vi": "TRỢ LÝ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 20,
+            "en": "receptionist",
+            "ipa": "/rɪˈsepʃənɪst/",
+            "vi": "LỄ TÂN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 21,
+            "en": "technician",
+            "ipa": "/tekˈnɪʃn/",
+            "vi": "KỸ THUẬT VIÊN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 22,
+            "en": "architect",
+            "ipa": "/ˈɑːrkɪtekt/",
+            "vi": "KIẾN TRÚC SƯ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 23,
+            "en": "representative",
+            "ipa": "/ˌreprɪˈzentətɪv/",
+            "vi": "NGƯỜI ĐẠI DIỆN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 24,
+            "en": "director",
+            "ipa": "/dəˈrektər/ /daɪˈrektər/",
+            "vi": "GIÁM ĐỐC"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 25,
+            "en": "accountant",
+            "ipa": "/əˈkaʊntənt/",
+            "vi": "NHÂN VIÊN KẾ TOÁN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 26,
+            "en": "CEO (chief executive officer)",
+            "ipa": "/ˌsiː iː ˈəʊ/",
+            "vi": "GIÁM ĐỐC ĐIỀU HÀNH"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 27,
+            "en": "CFO (Chief Financial Officer)",
+            "ipa": "/ˌsiː ef ˈəʊ/",
+            "vi": "GIÁM ĐỐC TÀI CHÍNH"
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 28,
         "question": "Who did you speak to about renting the apartment?",
         "choices": {
           "A": "I think it was the property manager.",
           "B": "On the first of every month.",
           "C": "There’s a part missing."
         },
-        "audio": "part02_examples/slide28_media3.mp3",
-        "slide_index": 28
+        "answer": "A",
+        "audio": "media/part02_examples/slide28_media3.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 29,
         "question": "Who came up with the idea for the new commercial?",
         "choices": {
           "A": "Just a few.",
           "B": "One of our marketing assistants.",
           "C": "Probably next month."
         },
-        "audio": "part02_examples/slide29_media4.mp3",
-        "slide_index": 29
+        "answer": "B",
+        "audio": "media/part02_examples/slide29_media4.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 30,
+        "text": [
+          "1.3. Câu trả lời là tên của phòng ban",
+          "Trong đáp án trả lời thường chứa một cụm từ mang nghĩa là một phòng ban của một cơ quan, công ty hay tổ chức."
+        ]
+      },
+      {
+        "type": "vocab_group",
+        "slide_index": 31,
+        "words": [
+          {
+            "type": "vocab",
+            "slide_index": 31,
+            "en": "Personnel",
+            "ipa": "/ˌpɜːrsəˈnel/",
+            "vi": "BỘ PHẬN NHÂN SỰ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 32,
+            "en": "Human Resources Department",
+            "ipa": "/ˈhjuːmən  rɪˈsɔːrsɪz dɪˈpɑːrtmənt/",
+            "vi": "BỘ PHẬN NHÂN SỰ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 33,
+            "en": "Accounting Office",
+            "ipa": "/əˈkaʊntɪŋ ˈɒfɪs/",
+            "vi": "VĂN PHÒNG KẾ TOÁN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 34,
+            "en": "Accounting Department",
+            "ipa": "/əˈkaʊntɪŋ dɪˈpɑːrtmənt /",
+            "vi": "PHÒNG KẾ TOÁN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 35,
+            "en": "Sales Department",
+            "ipa": "/ˈseɪlz dɪˈpɑːrtmənt /",
+            "vi": "PHÒNG KINH DOANH"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 36,
+            "en": "Maintenance Department",
+            "ipa": "/ˈmeɪntənəns dɪˈpɑːrtmənt /",
+            "vi": "PHÒNG BẢO TRÌ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 37,
+            "en": "Technology Department",
+            "ipa": "/tekˈnɑːlədʒi dɪˈpɑːrtmənt /",
+            "vi": "BỘ PHẬN KỸ THUẬT"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 38,
+            "en": "Shipping Department",
+            "ipa": "/ˈʃɪpɪŋ dɪˈpɑːrtmənt /",
+            "vi": "BỘ PHẬN VẬN CHUYỂN HÀNG HOÁ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 39,
+            "en": "Marketing Department",
+            "ipa": "/ˈmɑːkɪtɪŋ dɪˈpɑːrtmənt /",
+            "vi": "BỘ PHẬN MARKETING"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 40,
+            "en": "Customer Service Department",
+            "ipa": "/ˌkʌstəmər ˈsɜːrvɪs dɪˈpɑːrtmənt /",
+            "vi": "BỘ PHẬN CHĂM SÓC KHÁCH HÀNG"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 41,
+            "en": "Advertising Department",
+            "ipa": "/ˈædvərtaɪzɪŋ dɪˈpɑːrtmənt /",
+            "vi": "BỘ PHẬN QUẢNG CÁO"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 42,
+            "en": "Payroll Department",
+            "ipa": "/ˈpeɪrəʊl dɪˈpɑːrtmənt /",
+            "vi": "BAN TIỀN LƯƠNG"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 43,
+            "en": "Training Department",
+            "ipa": "/ˈtreɪnɪŋ dɪˈpɑːrtmənt /",
+            "vi": "PHÒNG ĐÀO TẠO"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 44,
+            "en": "Administration Department",
+            "ipa": "/ədˌmɪnɪˈstreɪʃn dɪˈpɑːrtmənt /",
+            "vi": "PHÒNG HÀNH CHÍNH"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 45,
+            "en": "R & D Department (Research and Development Department)",
+            "ipa": "/ˌɑːr ən ˈdiː dɪˈpɑːrtmənt /",
+            "vi": "PHÒNG NGHIÊN CỨU & PHÁT TRIỂN"
+          }
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 46,
         "question": "Who should I call about the broken window?",
         "choices": {
           "A": "The maintenance department.",
           "B": "Try not to leave it open.",
           "C": "Around nine o’clock."
         },
-        "audio": "part02_examples/slide46_media5.mp3",
-        "slide_index": 46
+        "answer": "A",
+        "audio": "media/part02_examples/slide46_media5.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 47,
         "question": "Who authorized that purchase?",
         "choices": {
           "A": "Within an hour or so.",
           "B": "Yes, about the budget.",
           "C": "Someone in the accounting department."
         },
-        "audio": "part02_examples/slide47_media6.mp3",
-        "slide_index": 47
+        "answer": "C",
+        "audio": "media/part02_examples/slide47_media6.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 48,
+        "text": [
+          "1.4. Câu trả lời là đại từ bất định, đại từ nhân xưng, đại từ sở hữu",
+          "Trong đáp án trả lời thường chứa một đại từ bất định, một đại từ nhân xưng hoặc một đại từ sở hữu."
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 49,
+        "text": [
+          "INDEFINITE PRONOUNS",
+          "(ĐẠI TỪ BẤT ĐỊNH)"
+        ]
+      },
+      {
+        "type": "vocab_group",
+        "slide_index": 50,
+        "words": [
+          {
+            "type": "vocab",
+            "slide_index": 50,
+            "en": "everyone - everybody",
+            "ipa": "/ˈevriwʌn/ - /ˈevribʌdi/",
+            "vi": "MỌI NGƯỜI"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 51,
+            "en": "someone - somebody",
+            "ipa": "/ˈsʌmwʌn/ - /ˈsʌmbədi/",
+            "vi": "MỘT AI ĐÓ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 52,
+            "en": "anyone – anybody",
+            "ipa": "/ˈeniwʌn/ - /ˈenibʌdi/",
+            "vi": "BẤT CỨ AI"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 53,
+            "en": "no one - nobody",
+            "ipa": "/ˈnəʊ wʌn/ - /ˈnəʊbədi/",
+            "vi": "KHÔNG AI"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 54,
+            "en": "everything",
+            "ipa": "/ˈevriθɪŋ/",
+            "vi": "MỌI THỨ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 55,
+            "en": "something",
+            "ipa": "/ˈsʌmθɪŋ/",
+            "vi": "MỘT THỨ/ĐIỀU GÌ ĐÓ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 56,
+            "en": "anything",
+            "ipa": "/ˈeniθɪŋ/",
+            "vi": "BẤT CỨ THỨ GÌ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 57,
+            "en": "nothing",
+            "ipa": "/ˈnʌθɪŋ/",
+            "vi": "không thứ gì/ điều gì"
+          }
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 58,
+        "text": [
+          "PERSONAL PRONOUNS (ĐẠI TỪ NHÂN XƯNG)"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 59,
+        "text": [
+          "SUBJECT (CHỦ TỪ)",
+          "OBJECT (TÚC TỪ)",
+          "I",
+          "ME",
+          "YOU",
+          "YOU",
+          "WE",
+          "US",
+          "THEY",
+          "THEM"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 60,
+        "text": [
+          "SUBJECT (CHỦ TỪ)",
+          "OBJECT (TÚC TỪ)",
+          "HE",
+          "HIM",
+          "SHE",
+          "HER",
+          "IT",
+          "IT"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 61,
+        "text": [
+          "OTHER PRONOUNS",
+          "(ĐẠI TỪ KHÁC)"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 62,
+        "text": [
+          "TÍNH TỪ SỞ HỮU",
+          "ĐẠI TỪ SỞ HỮU",
+          "MY",
+          "MINE",
+          "YOUR",
+          "YOURS",
+          "OUR",
+          "OURS",
+          "THEIR",
+          "THEIRS"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 63,
+        "text": [
+          "TÍNH TỪ SỞ HỮU",
+          "ĐẠI TỪ SỞ HỮU",
+          "HIS",
+          "HIS",
+          "HER",
+          "HERS",
+          "IT",
+          "ITS"
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 64,
         "question": "Who’s the new public relations manager?",
         "choices": {
           "A": "On the third floor.",
           "B": "A pool of five applicants.",
           "C": "Someone from the London branch."
         },
-        "audio": "part02_examples/slide64_media7.mp3",
-        "slide_index": 64
+        "answer": "C",
+        "audio": "media/part02_examples/slide64_media7.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 65,
         "question": "Who ordered the side salad?",
         "choices": {
           "A": "A fork and knife.",
           "B": "By credit card.",
           "C": "That was me."
         },
-        "audio": "part02_examples/slide65_media8.mp3",
-        "slide_index": 65
+        "answer": "C",
+        "audio": "media/part02_examples/slide65_media8.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 66,
+        "text": [
+          "1.5. Câu trả lời gián tiếp",
+          "Đôi khi trong nhiều trường hợp câu trả lời diễn đạt ý nghĩa không biết rõ, không chắc chắn, ví dụ như:",
+          "I don’t know/ I don’t really know/ I have no idea/ I don’t have a clue/ ...",
+          "I am not sure/ Isn’t it allocated to….?/..."
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 67,
+        "text": [
+          "I can’t remember / I don’t recall / …",
+          "Let me find out/ Let me check out/ Let me ask...",
+          "S + haven’t/ hasn’t been decided/ chosen/ assigned/ confirmed/ announced/ finalized/ selected yet..."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 68,
         "question": "Who won the Employee of the Month award?",
         "choices": {
           "A": "My dinner was delicious, thanks.",
           "B": "Just a few minutes after three o’clock.",
           "C": "It still hasn’t been announced."
         },
-        "audio": "part02_examples/slide68_media9.mp3",
-        "slide_index": 68
+        "answer": "C",
+        "audio": "media/part02_examples/slide68_media9.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 69,
         "question": "Who had lunch delivered to the office today?",
         "choices": {
           "A": "Ms. Adam will.",
           "B": "I don’t know since I just arrived.",
           "C": "In the meeting room."
         },
-        "audio": "part02_examples/slide69_media10.mp3",
-        "slide_index": 69
-      }
-    ],
-    "vocabulary": [
-      {
-        "en": "secretary",
-        "ipa": "/ˈsekrətri//ˈsekrəteri/",
-        "pos": "",
-        "vi": "THƯ KÝ"
-      },
-      {
-        "en": "president",
-        "ipa": "/ˈprezɪdənt/",
-        "pos": "",
-        "vi": "CHỦ TỊCH"
-      },
-      {
-        "en": "chairman",
-        "ipa": "/ˈtʃeəmən/",
-        "pos": "",
-        "vi": "CHỦ TỊCH"
-      },
-      {
-        "en": "vice president",
-        "ipa": "/ˌvaɪs ˈprezɪdənt/",
-        "pos": "",
-        "vi": "PHÓ CHỦ TỊCH"
-      },
-      {
-        "en": "manager",
-        "ipa": "/ˈmænɪdʒər/",
-        "pos": "",
-        "vi": "QUẢN LÝ"
-      },
-      {
-        "en": "supervisor",
-        "ipa": "/ˈsuːpərvaɪzər/",
-        "pos": "",
-        "vi": "GIÁM SÁT VIÊN"
-      },
-      {
-        "en": "assistant",
-        "ipa": "/əˈsɪstənt/",
-        "pos": "",
-        "vi": "TRỢ LÝ"
-      },
-      {
-        "en": "receptionist",
-        "ipa": "/rɪˈsepʃənɪst/",
-        "pos": "",
-        "vi": "LỄ TÂN"
-      },
-      {
-        "en": "technician",
-        "ipa": "/tekˈnɪʃn/",
-        "pos": "",
-        "vi": "KỸ THUẬT VIÊN"
-      },
-      {
-        "en": "architect",
-        "ipa": "/ˈɑːrkɪtekt/",
-        "pos": "",
-        "vi": "KIẾN TRÚC SƯ"
-      },
-      {
-        "en": "representative",
-        "ipa": "/ˌreprɪˈzentətɪv/",
-        "pos": "",
-        "vi": "NGƯỜI ĐẠI DIỆN"
-      },
-      {
-        "en": "director",
-        "ipa": "/dəˈrektər/ /daɪˈrektər/",
-        "pos": "",
-        "vi": "GIÁM ĐỐC"
-      },
-      {
-        "en": "accountant",
-        "ipa": "/əˈkaʊntənt/",
-        "pos": "",
-        "vi": "NHÂN VIÊN KẾ TOÁN"
-      },
-      {
-        "en": "CEO (chief executive officer)",
-        "ipa": "/ˌsiː iː ˈəʊ/",
-        "pos": "",
-        "vi": "GIÁM ĐỐC ĐIỀU HÀNH"
-      },
-      {
-        "en": "CFO (Chief Financial Officer)",
-        "ipa": "/ˌsiː ef ˈəʊ/",
-        "pos": "",
-        "vi": "GIÁM ĐỐC TÀI CHÍNH"
-      },
-      {
-        "en": "Personnel",
-        "ipa": "/ˌpɜːrsəˈnel/",
-        "pos": "",
-        "vi": "BỘ PHẬN NHÂN SỰ"
-      },
-      {
-        "en": "Human Resources Department",
-        "ipa": "/ˈhjuːmən  rɪˈsɔːrsɪz dɪˈpɑːrtmənt/",
-        "pos": "",
-        "vi": "BỘ PHẬN NHÂN SỰ"
-      },
-      {
-        "en": "Accounting Office",
-        "ipa": "/əˈkaʊntɪŋ ˈɒfɪs/",
-        "pos": "",
-        "vi": "VĂN PHÒNG KẾ TOÁN"
-      },
-      {
-        "en": "Accounting Department",
-        "ipa": "/əˈkaʊntɪŋ dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "PHÒNG KẾ TOÁN"
-      },
-      {
-        "en": "Sales Department",
-        "ipa": "/ˈseɪlz dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "PHÒNG KINH DOANH"
-      },
-      {
-        "en": "Maintenance Department",
-        "ipa": "/ˈmeɪntənəns dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "PHÒNG BẢO TRÌ"
-      },
-      {
-        "en": "Technology Department",
-        "ipa": "/tekˈnɑːlədʒi dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "BỘ PHẬN KỸ THUẬT"
-      },
-      {
-        "en": "Shipping Department",
-        "ipa": "/ˈʃɪpɪŋ dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "BỘ PHẬN VẬN CHUYỂN HÀNG HOÁ"
-      },
-      {
-        "en": "Marketing Department",
-        "ipa": "/ˈmɑːkɪtɪŋ dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "BỘ PHẬN MARKETING"
-      },
-      {
-        "en": "Customer Service Department",
-        "ipa": "/ˌkʌstəmər ˈsɜːrvɪs dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "BỘ PHẬN CHĂM SÓC"
-      },
-      {
-        "en": "Advertising Department",
-        "ipa": "/ˈædvərtaɪzɪŋ dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "BỘ PHẬN QUẢNG CÁO"
-      },
-      {
-        "en": "Payroll Department",
-        "ipa": "/ˈpeɪrəʊl dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "BAN TIỀN LƯƠNG"
-      },
-      {
-        "en": "Training Department",
-        "ipa": "/ˈtreɪnɪŋ dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "PHÒNG ĐÀO TẠO"
-      },
-      {
-        "en": "Administration Department",
-        "ipa": "/ədˌmɪnɪˈstreɪʃn dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "PHÒNG HÀNH CHÍNH"
-      },
-      {
-        "en": "(Research and Development Department)",
-        "ipa": "/ˌɑːr ən ˈdiː dɪˈpɑːrtmənt /",
-        "pos": "",
-        "vi": "PHÒNG NGHIÊN CỨU & PHÁT TRIỂN"
-      },
-      {
-        "en": "everyone - everybody",
-        "ipa": "/ˈevriwʌn/ - /ˈevribʌdi/",
-        "pos": "",
-        "vi": "MỌI NGƯỜI"
-      },
-      {
-        "en": "someone - somebody",
-        "ipa": "/ˈsʌmwʌn/ - /ˈsʌmbədi/",
-        "pos": "",
-        "vi": "MỘT AI ĐÓ"
-      },
-      {
-        "en": "anyone – anybody",
-        "ipa": "/ˈeniwʌn/ - /ˈenibʌdi/",
-        "pos": "",
-        "vi": "BẤT CỨ AI"
-      },
-      {
-        "en": "no one - nobody",
-        "ipa": "/ˈnəʊ wʌn/ - /ˈnəʊbədi/",
-        "pos": "",
-        "vi": "KHÔNG AI"
-      },
-      {
-        "en": "everything",
-        "ipa": "/ˈevriθɪŋ/",
-        "pos": "",
-        "vi": "MỌI THỨ"
-      },
-      {
-        "en": "something",
-        "ipa": "/ˈsʌmθɪŋ/",
-        "pos": "",
-        "vi": "MỘT THỨ/ĐIỀU GÌ ĐÓ"
-      },
-      {
-        "en": "anything",
-        "ipa": "/ˈeniθɪŋ/",
-        "pos": "",
-        "vi": "BẤT CỨ THỨ GÌ"
-      },
-      {
-        "en": "nothing",
-        "ipa": "/ˈnʌθɪŋ/",
-        "pos": "",
-        "vi": "không thứ gì/ điều gì"
+        "answer": "B",
+        "audio": "media/part02_examples/slide69_media10.mp3"
       }
     ]
   },
@@ -522,332 +597,391 @@ window.part02Data = [
     "id": "info_where",
     "title": "2. Where",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 70,
         "text": [
-          "<strong><span style='color: #FF0000;'>2. Questions with Where</span></strong>",
-          "Đây là câu hỏi về nơi chốn và thường được trả lời bằng <strong><i><span style='color: #00B0F0;'>cụm giới từ chỉ nơi chốn</span></i></strong> hoặc <strong><i><span style='color: #00B0F0;'>tên địa danh</span></i></strong>. Tuy nhiên, các giới từ đôi khi được bỏ qua. Bên cạnh đó, đáp án có thể là <strong><i><span style='color: #00B0F0;'>một địa điểm </span></i></strong>hoặc <strong><i><span style='color: #00B0F0;'>một cụm từ không trực tiếp chỉ nơi chốn</span></i></strong>."
+          "2. Questions with Where",
+          "Đây là câu hỏi về nơi chốn và thường được trả lời bằng cụm giới từ chỉ nơi chốn hoặc tên địa danh. Tuy nhiên, các giới từ đôi khi được bỏ qua. Bên cạnh đó, đáp án có thể là một địa điểm hoặc một cụm từ không trực tiếp chỉ nơi chốn."
         ]
       },
       {
+        "type": "vocab_group",
+        "slide_index": 71,
+        "words": [
+          {
+            "type": "vocab",
+            "slide_index": 71,
+            "en": "across the street",
+            "ipa": "/əˈkrɒs ðə striːt/",
+            "vi": "BÊN KIA ĐƯỜNG"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 72,
+            "en": "around the corner",
+            "ipa": "/əˈraʊnd ðə ˈkɔːrnər/",
+            "vi": "NGAY GÓC ĐƯỜNG"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 73,
+            "en": "at the front counter",
+            "ipa": "/æt ðə frʌnt ˈkaʊntər/",
+            "vi": "TẠI QUẦY"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 74,
+            "en": "at the service desk",
+            "ipa": "/æt ðə ˈsɜːvɪs desk/",
+            "vi": "TẠI BÀN DỊCH VỤ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 75,
+            "en": "by the door",
+            "ipa": "/baɪ ðə dɔːr/",
+            "vi": "CẠNH CỬA"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 76,
+            "en": "from the main office",
+            "ipa": "/frəm ðə meɪn ˈɒfɪs/",
+            "vi": "TỪ VĂN PHÒNG CHÍNH"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 77,
+            "en": "in front of the lobby",
+            "ipa": "/ɪn frʌnt əv ðə ˈlɒbi/",
+            "vi": "TRƯỚC SẢNH"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 78,
+            "en": "in the conference room",
+            "ipa": "/ɪn ðə ˈkɒnfərəns ruːm/",
+            "vi": "Ở PHÒNG HỘI NGHỊ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 79,
+            "en": "in the file cabinet",
+            "ipa": "/ɪn ðə faɪl ˈkæbɪnət/",
+            "vi": "TRONG TỦ HỒ SƠ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 80,
+            "en": "near the park",
+            "ipa": "/nɪə(r) ðə pɑːk/",
+            "vi": "GẦN CÔNG VIÊN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 81,
+            "en": "next to the hotel",
+            "ipa": "/nekst tuː ðə həʊˈtel/",
+            "vi": "CẠNH KHÁCH SẠN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 82,
+            "en": "on one’s desk",
+            "ipa": "/ɒn wʌnz desk/",
+            "vi": "TRÊN BÀN CỦA AI ĐÓ"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 83,
+            "en": "on the ground floor",
+            "ipa": "/ɒn ðə ɡraʊnd flɔːr/",
+            "vi": "Ở TẦNG TRỆT"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 84,
+            "en": "on the first floor",
+            "ipa": "/ɒn ðə fɜːst flɔːr/",
+            "vi": "Ở TẦNG MỘT"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 85,
+            "en": "opposite the park",
+            "ipa": "/ˈɒpəzɪt ðə pɑːk /",
+            "vi": "ĐỐI DIỆN CÔNG VIÊN"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 86,
+            "en": "over there",
+            "ipa": "/ˈəʊvə(r) ðeə(r)/",
+            "vi": "ĐẰNG KIA"
+          },
+          {
+            "type": "vocab",
+            "slide_index": 87,
+            "en": "to the post office",
+            "ipa": "/tuː ðə pəʊst ˈɒfɪs/",
+            "vi": "TỚI BƯU ĐIỆN"
+          }
+        ]
+      },
+      {
+        "type": "theory",
         "slide_index": 88,
         "text": [
-          "<strong><i><span style='color: #7030A0;'>2.1. Câu trả lời là cụm giới từ chỉ nơi chốn</span></i></strong>",
-          "+ giới từ <strong><span style='color: #00B0F0;'>at</span></strong>: tại một địa điểm cụ thể",
-          "Ex: <strong><i><span style='color: #00B0F0;'>at the hotel</span></i></strong>, <strong><i><span style='color: #00B0F0;'>at the next corner</span></i></strong>, <strong><i><span style='color: #00B0F0;'>at the front desk</span></i></strong>, <strong><i><span style='color: #00B0F0;'>at the bus stop</span></i></strong>, …"
+          "2.1. Câu trả lời là cụm giới từ chỉ nơi chốn",
+          "+ giới từ at: tại một địa điểm cụ thể",
+          "Ex: at the hotel, at the next corner, at the front desk, at the bus stop, …"
         ]
       },
       {
-        "slide_index": 91,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>2.2. Câu trả lời là cụm giới từ chỉ nơi chốn</span></i></strong>",
-          "+ giới từ <strong><span style='color: #FF0000;'>on</span></strong>: ở trên, bên trên",
-          "Ex: <strong><i><span style='color: #0070C0;'>on my desk</span></i></strong>, <strong><i><span style='color: #0070C0;'>on the third floor</span></i></strong>, <strong><i><span style='color: #0070C0;'>on Nguyen Ngoc Trai street</span></i></strong>, …"
-        ]
-      },
-      {
-        "slide_index": 94,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>2.3. Câu trả lời là cụm giới từ chỉ nơi chốn</span></i></strong>",
-          "+ giới từ <strong><span style='color: #FF0000;'>in</span></strong>: ở trong, bên trong",
-          "Ex: <strong><i><span style='color: #0070C0;'>in the office</span></i></strong>, <strong><i><span style='color: #0070C0;'>in the cabinet</span></i></strong>, <strong><i><span style='color: #0070C0;'>in a file drawer</span></i></strong>, <strong><i><span style='color: #0070C0;'>in a case</span></i></strong>,…"
-        ]
-      },
-      {
-        "slide_index": 97,
-        "text": [
-          "+ Ngoài ra còn một số giới từ chỉ nơi chốn khác như: <strong><i><span style='color: #00B0F0;'>above</span></i></strong> (ở bên trên), <strong><i><span style='color: #00B0F0;'>below</span></i></strong> (ở bên dưới), <strong><i><span style='color: #00B0F0;'>under</span></i></strong> (dưới), <strong><i><span style='color: #00B0F0;'>behind</span></i></strong> (sau), <strong><i><span style='color: #00B0F0;'>in front of </span></i></strong>(trước), <strong><i><span style='color: #00B0F0;'>between</span></i></strong> (giữa 2 người hoặc vật), <strong><i><span style='color: #00B0F0;'>among</span></i></strong> (giữ nhiều người hoặc vật), <strong><i><span style='color: #00B0F0;'>next to </span></i></strong>(kế bên), <strong><i><span style='color: #00B0F0;'>by</span></i></strong> (bên cạnh), <strong><i><span style='color: #00B0F0;'>near</span></i></strong> (gần), <strong><i><span style='color: #00B0F0;'>around/round </span></i></strong>(xung quanh), <strong><i><span style='color: #00B0F0;'>opposite/ across from </span></i></strong>(đối diện), …"
-        ]
-      },
-      {
-        "slide_index": 100,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>- Trường hợp đặc biệt: </span></i></strong>",
-          "+ Đáp án là tên 1 địa danh:",
-          "<i><span style='color: #0070C0;'> </span></i><i><span style='color: #0070C0;'>Sử</span></i> <i><span style='color: #0070C0;'>dụng</span></i> <i><span style='color: #0070C0;'>giới</span></i> <i><span style='color: #0070C0;'>từ</span></i> <strong><i><span style='color: #FF0000;'>i</span></i></strong><strong><i><span style='color: #FF0000;'>n</span></i></strong> <i><span style='color: #0070C0;'>+ </span></i><strong><i><span style='color: #FF0000;'>tên địa danh</span></i></strong><i><span style='color: #0070C0;'>.</span></i>"
-        ]
-      },
-      {
-        "slide_index": 103,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>- Trường hợp đặc biệt: </span></i></strong>",
-          "<i>+ </i><i><span style='color: #0070C0;'>Sử dụng giới từ </span></i><strong><i><span style='color: #FF0000;'>to</span></i></strong> <i>+ </i><strong><i><span style='color: #FF0000;'>nơi chốn</span></i></strong><i><span style='color: #0070C0;'>.</span></i>",
-          "<i>+</i> <i><span style='color: #0070C0;'>Sử</span></i> <i><span style='color: #0070C0;'>dụng</span></i> <strong><i><span style='color: #FF0000;'>go to</span></i></strong> <i>+ </i><strong><i><span style='color: #FF0000;'>nơi chốn</span></i></strong><i>.</i>"
-        ]
-      },
-      {
-        "slide_index": 106,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>2.4. Câu trả lời không thể hiện một nơi chốn cụ thể:</span></i></strong>",
-          "Trong một số trường hợp, câu trả lời cho câu hỏi về <strong>địa điểm</strong> không trực tiếp nêu ra một nơi chốn cụ thể. Thay vào đó, người nói có thể <strong>nhắc đến một người khác chịu trách nhiệm</strong>, <strong>đưa ra một đề xuất hoặc gợi ý</strong>, hoặc <strong>đặt lại một câu hỏi để làm rõ thông tin</strong>. Ngoài ra, câu trả lời cũng có thể được diễn đạt <strong>gián tiếp</strong>, thể hiện sự không chắc chắn hoặc cần kiểm tra lại thông tin, chẳng hạn như: <strong><i><span style='color: #00B0F0;'>I don’t know</span></i></strong>, <strong><i><span style='color: #00B0F0;'>It hasn’t been decided yet</span></i></strong>, <strong><i><span style='color: #00B0F0;'>Let me check</span></i></strong>, <strong><i><span style='color: #00B0F0;'>Let me find out</span></i></strong>, …"
-        ]
-      }
-    ],
-    "examples": [
-      {
+        "type": "example",
+        "slide_index": 89,
         "question": "Where did you work previously?",
         "choices": {
           "A": "From eight thirty to five.",
           "B": "At a law firm in Toronto.",
           "C": "No, I’m going afterward."
         },
-        "audio": "part02_examples/slide89_media11.mp3",
-        "slide_index": 89
+        "answer": "B",
+        "audio": "media/part02_examples/slide89_media11.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 90,
         "question": "Where can I buy tickets for the next exhibit tour?",
         "choices": {
           "A": "At the first window.",
           "B": "Last Thursday.",
           "C": "No, it’s too much."
         },
-        "audio": "part02_examples/slide90_media12.mp3",
-        "slide_index": 90
+        "answer": "A",
+        "audio": "media/part02_examples/slide90_media12.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 91,
+        "text": [
+          "2.2. Câu trả lời là cụm giới từ chỉ nơi chốn",
+          "+ giới từ on: ở trên, bên trên",
+          "Ex: on my desk, on the third floor, on Nguyen Ngoc Trai street, …"
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 92,
         "question": "Where’s the closest dry cleaner?",
         "choices": {
           "A": "Yes, it closed at six.",
           "B": "There’s one on Eleventh Street.",
           "C": "They’re definitely cleaner now."
         },
-        "audio": "part02_examples/slide92_media13.mp3",
-        "slide_index": 92
+        "answer": "B",
+        "audio": "media/part02_examples/slide92_media13.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 93,
         "question": "Where did you put those budget estimates?",
         "choices": {
           "A": "They’re on my desk.",
           "B": "Yes, I did.",
           "C": "He’s at his attorney’s office."
         },
-        "audio": "part02_examples/slide93_media14.mp3",
-        "slide_index": 93
+        "answer": "A",
+        "audio": "media/part02_examples/slide93_media14.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 94,
+        "text": [
+          "2.3. Câu trả lời là cụm giới từ chỉ nơi chốn",
+          "+ giới từ in: ở trong, bên trong",
+          "Ex: in the office, in the cabinet, in a file drawer, in a case,…"
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 95,
         "question": "Where can we display these new product samples?",
         "choices": {
           "A": "A variety of colors.",
           "B": "From a new supplier.",
           "C": "In the glass case by the register."
         },
-        "audio": "part02_examples/slide95_media15.mp3",
-        "slide_index": 95
+        "answer": "C",
+        "audio": "media/part02_examples/slide95_media15.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 96,
         "question": "Where’s the instruction manual for the video conferencing software?",
         "choices": {
           "A": "In the file cabinet.",
           "B": "On Saturday.",
           "C": "The marketing conference."
         },
-        "audio": "part02_examples/slide96_media16.mp3",
-        "slide_index": 96
+        "answer": "A",
+        "audio": "media/part02_examples/slide96_media16.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 97,
+        "text": [
+          "+ Ngoài ra còn một số giới từ chỉ nơi chốn khác như: above (ở bên trên), below (ở bên dưới), under (dưới), behind (sau), in front of (trước), between (giữa 2 người hoặc vật), among (giữ nhiều người hoặc vật), next to (kế bên), by (bên cạnh), near (gần), around/round (xung quanh), opposite/ across from (đối diện), …"
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 98,
         "question": "Where can I find a building directory?",
         "choices": {
           "A": "In two weeks.",
           "B": "No, thank you.",
           "C": "Near the front entrance."
         },
-        "audio": "part02_examples/slide98_media17.mp3",
-        "slide_index": 98
+        "answer": "C",
+        "audio": "media/part02_examples/slide98_media17.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 99,
         "question": "Where’s the train station?",
         "choices": {
           "A": "I always listen to that radio station.",
           "B": "An informative training session.",
           "C": "Right next to the university."
         },
-        "audio": "part02_examples/slide99_media18.mp3",
-        "slide_index": 99
+        "answer": "C",
+        "audio": "media/part02_examples/slide99_media18.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 100,
+        "text": [
+          "- Trường hợp đặc biệt:",
+          "+ Đáp án là tên 1 địa danh:",
+          " Sử dụng giới từ in + tên địa danh."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 101,
         "question": "Where are the new printers being made?",
         "choices": {
-          "A": "Mr.  Cuz  printed them already.",
+          "A": "Mr. Cuz printed them already.",
           "B": "In Toronto.",
           "C": "Eight hundred dollars."
         },
-        "audio": "part02_examples/slide101_media19.mp3",
-        "slide_index": 101
+        "answer": "B",
+        "audio": "media/part02_examples/slide101_media19.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 102,
         "question": "Where is the picnic being held this year?",
         "choices": {
           "A": "I’ve made a list of supplies.",
           "B": "Try this gear.",
           "C": "In Madison Park."
         },
-        "audio": "part02_examples/slide102_media20.mp3",
-        "slide_index": 102
+        "answer": "C",
+        "audio": "media/part02_examples/slide102_media20.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 103,
+        "text": [
+          "- Trường hợp đặc biệt:",
+          "+ Sử dụng giới từ to + nơi chốn.",
+          "+ Sử dụng go to + nơi chốn."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 104,
         "question": "Where should I send the updated sales report?",
         "choices": {
           "A": "By seven o’clock.",
           "B": "To the Milwaukee Office.",
           "C": "The sales are up to 10 percent."
         },
-        "audio": "part02_examples/slide104_media21.mp3",
-        "slide_index": 104
+        "answer": "B",
+        "audio": "media/part02_examples/slide104_media21.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 105,
         "question": "Where is this shipment of supplies going?",
         "choices": {
           "A": "Not until five o’clock.",
           "B": "It’s going to Texas.",
           "C": "We met on the ship."
         },
-        "audio": "part02_examples/slide105_media22.mp3",
-        "slide_index": 105
+        "answer": "B",
+        "audio": "media/part02_examples/slide105_media22.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 106,
+        "text": [
+          "2.4. Câu trả lời không thể hiện một nơi chốn cụ thể:",
+          "Trong một số trường hợp, câu trả lời cho câu hỏi về địa điểm không trực tiếp nêu ra một nơi chốn cụ thể. Thay vào đó, người nói có thể nhắc đến một người khác chịu trách nhiệm, đưa ra một đề xuất hoặc gợi ý, hoặc đặt lại một câu hỏi để làm rõ thông tin. Ngoài ra, câu trả lời cũng có thể được diễn đạt gián tiếp, thể hiện sự không chắc chắn hoặc cần kiểm tra lại thông tin, chẳng hạn như: I don’t know, It hasn’t been decided yet, Let me check, Let me find out, …"
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 107,
         "question": "Where will the company retreat be next year?",
         "choices": {
           "A": "Every year.",
           "B": "It hasn’t been decided yet.",
           "C": "Yes, I’ve been there."
         },
-        "audio": "part02_examples/slide107_media23.mp3",
-        "slide_index": 107
+        "answer": "B",
+        "audio": "media/part02_examples/slide107_media23.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 108,
         "question": "Where can I exchange my euros for the local currency?",
         "choices": {
           "A": "It’s currently for sale.",
-          "B": "Try the  Amirez  Bank.",
+          "B": "Try the Amirez Bank.",
           "C": "During business hours."
         },
-        "audio": "part02_examples/slide108_media24.mp3",
-        "slide_index": 108
+        "answer": "B",
+        "audio": "media/part02_examples/slide108_media24.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 109,
         "question": "Where will the interns be seated?",
         "choices": {
           "A": "I’ll ask Martha.",
           "B": "A long internship.",
           "C": "Maybe tomorrow."
         },
-        "audio": "part02_examples/slide109_media25.mp3",
-        "slide_index": 109
+        "answer": "A",
+        "audio": "media/part02_examples/slide109_media25.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 110,
         "question": "Where should I park the delivery truck?",
         "choices": {
           "A": "Do you know where the loading dock is?",
           "B": "I’d love to go to the park.",
           "C": "Yes, we do deliver on Sundays."
         },
-        "audio": "part02_examples/slide110_media26.mp3",
-        "slide_index": 110
-      }
-    ],
-    "vocabulary": [
-      {
-        "en": "across the street",
-        "ipa": "/əˈkrɒs ðə striːt/",
-        "pos": "",
-        "vi": "BÊN KIA ĐƯỜNG"
-      },
-      {
-        "en": "around the corner",
-        "ipa": "/əˈraʊnd ðə ˈkɔːrnər/",
-        "pos": "",
-        "vi": "NGAY GÓC ĐƯỜNG"
-      },
-      {
-        "en": "at the front counter",
-        "ipa": "/æt ðə frʌnt ˈkaʊntər/",
-        "pos": "",
-        "vi": "TẠI QUẦY"
-      },
-      {
-        "en": "at the service desk",
-        "ipa": "/æt ðə ˈsɜːvɪs desk/",
-        "pos": "",
-        "vi": "TẠI BÀN DỊCH VỤ"
-      },
-      {
-        "en": "by the door",
-        "ipa": "/baɪ ðə dɔːr/",
-        "pos": "",
-        "vi": "CẠNH CỬA"
-      },
-      {
-        "en": "from the main office",
-        "ipa": "/frəm ðə meɪn ˈɒfɪs/",
-        "pos": "",
-        "vi": "TỪ VĂN PHÒNG CHÍNH"
-      },
-      {
-        "en": "in front of the lobby",
-        "ipa": "/ɪn frʌnt əv ðə ˈlɒbi/",
-        "pos": "",
-        "vi": "TRƯỚC SẢNH"
-      },
-      {
-        "en": "in the conference room",
-        "ipa": "/ɪn ðə ˈkɒnfərəns ruːm/",
-        "pos": "",
-        "vi": "Ở PHÒNG HỘI NGHỊ"
-      },
-      {
-        "en": "in the file cabinet",
-        "ipa": "/ɪn ðə faɪl ˈkæbɪnət/",
-        "pos": "",
-        "vi": "TRONG TỦ HỒ SƠ"
-      },
-      {
-        "en": "near the park",
-        "ipa": "/nɪə(r) ðə pɑːk/",
-        "pos": "",
-        "vi": "GẦN CÔNG VIÊN"
-      },
-      {
-        "en": "next to the hotel",
-        "ipa": "/nekst tuː ðə həʊˈtel/",
-        "pos": "",
-        "vi": "CẠNH KHÁCH SẠN"
-      },
-      {
-        "en": "on one’s desk",
-        "ipa": "/ɒn wʌnz desk/",
-        "pos": "",
-        "vi": "TRÊN BÀN CỦA AI ĐÓ"
-      },
-      {
-        "en": "on the ground floor",
-        "ipa": "/ɒn ðə ɡraʊnd flɔːr/",
-        "pos": "",
-        "vi": "Ở TẦNG TRỆT"
-      },
-      {
-        "en": "on the first floor",
-        "ipa": "/ɒn ðə fɜːst flɔːr/",
-        "pos": "",
-        "vi": "Ở TẦNG MỘT"
-      },
-      {
-        "en": "opposite the park",
-        "ipa": "/ˈɒpəzɪt ðə pɑːk /",
-        "pos": "",
-        "vi": "ĐỐI DIỆN CÔNG VIÊN"
-      },
-      {
-        "en": "over there",
-        "ipa": "/ˈəʊvə(r) ðeə(r)/",
-        "pos": "",
-        "vi": "ĐẰNG KIA"
-      },
-      {
-        "en": "to the post office",
-        "ipa": "/tuː ðə pəʊst ˈɒfɪs/",
-        "pos": "",
-        "vi": "TỚI BƯU ĐIỆN"
+        "answer": "A",
+        "audio": "media/part02_examples/slide110_media26.mp3"
       }
     ]
   },
@@ -855,428 +989,593 @@ window.part02Data = [
     "id": "info_when",
     "title": "3. When",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 111,
         "text": [
-          "<strong><span style='color: #FF0000;'>3. Questions with When</span></strong>",
-          "Câu hỏi bắt đầu bằng <strong><span style='color: #0070C0;'>When</span></strong> (hoặc <strong><span style='color: #0070C0;'>What time</span></strong>) được dùng để hỏi về thời gian, ví dụ như thời gian về một <strong><i><span style='color: #0070C0;'>cuộc họp</span></i></strong>, <strong><i><span style='color: #0070C0;'>cuộc hẹn</span></i></strong>, <strong><i><span style='color: #0070C0;'>lịch làm việc</span></i></strong>, <strong><i><span style='color: #0070C0;'>chuyến đi công tác</span></i></strong>, hay <strong><i><span style='color: #0070C0;'>hạn chót </span></i></strong>của một nhiệm vụ nào đó, ..."
+          "3. Questions with When",
+          "Câu hỏi bắt đầu bằng When (hoặc What time) được dùng để hỏi về thời gian, ví dụ như thời gian về một cuộc họp, cuộc hẹn, lịch làm việc, chuyến đi công tác, hay hạn chót của một nhiệm vụ nào đó, ..."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 112,
         "text": [
-          "<strong><i><span style='color: #7030A0;'>3.1. Câu trả lời là cụm từ chỉ thời gian</span></i></strong>",
-          "Đáp án thường chứa các cụm từ chỉ thời gian bắt đầu bằng những giới từ như <strong><i><span style='color: #FF0000;'>in</span></i></strong>, <strong><i><span style='color: #FF0000;'>on</span></i></strong>, <strong><i><span style='color: #FF0000;'>at</span></i></strong>, <strong><i><span style='color: #FF0000;'>by</span></i></strong>, <strong><i><span style='color: #FF0000;'>before</span></i></strong>, <strong><i><span style='color: #FF0000;'>after</span></i></strong>, <strong><i><span style='color: #FF0000;'>between …</span></i></strong> <strong><i><span style='color: #FF0000;'>and</span></i></strong><strong><i><span style='color: #FF0000;'> …</span></i></strong>, …",
-          "Ex: <strong><i><span style='color: #0070C0;'>in two hours</span></i></strong>, <strong><i><span style='color: #0070C0;'>on August 2</span></i></strong><strong><i><span style='color: #0070C0;'>nd</span></i></strong>, <strong><i><span style='color: #0070C0;'>at noon</span></i></strong>, <strong><i><span style='color: #0070C0;'>by Friday</span></i></strong>, <strong><i><span style='color: #0070C0;'>before lunch</span></i></strong>, <strong><i><span style='color: #0070C0;'>after work</span></i></strong>, …"
+          "3.1. Câu trả lời là cụm từ chỉ thời gian",
+          "Đáp án thường chứa các cụm từ chỉ thời gian bắt đầu bằng những giới từ như in, on, at, by, before, after, between … and …, …",
+          "Ex: in two hours, on August 2nd, at noon, by Friday, before lunch, after work, …"
         ]
       },
       {
-        "slide_index": 115,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>3.2. Câu trả lời là mệnh đề trạng ngữ chỉ thời gian</span></i></strong>",
-          "Mệnh đề trạng ngữ chỉ thời gian thường bắt đầu bằng các liên từ chỉ thời gian như <strong><span style='color: #0070C0;'>when</span></strong> (khi mà), <strong><span style='color: #0070C0;'>after</span></strong> (sau khi), <strong><span style='color: #0070C0;'>before</span></strong> (trước khi), <strong><span style='color: #0070C0;'>as soon as </span></strong>(ngay khi), <strong><span style='color: #0070C0;'>til/until </span></strong>(cho đến khi), ..."
-        ]
-      },
-      {
-        "slide_index": 118,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>3.3. Câu trả lời gián tiếp</span></i></strong>",
-          "Khi người được hỏi không biết câu trả lời, không thể cung cấp thông tin cho người hỏi (<strong><i><span style='color: #0070C0;'>I haven’t heard anything about that</span></i></strong>, <strong><i><span style='color: #0070C0;'>I don’t remember</span></i></strong>, <strong><i><span style='color: #0070C0;'>I don’t know</span></i></strong>, <strong><i><span style='color: #0070C0;'>I didn’t even know</span></i></strong>, <strong><i><span style='color: #00B0F0;'>Nobody told me</span></i></strong>, …) hoặc sự việc chưa xảy ra (<strong><i><span style='color: #0070C0;'>We haven’t decided yet</span></i></strong>). Ngoài ra, người nói có thể đưa ra gợi ý cho người hỏi (<strong><i><span style='color: #0070C0;'>How about…?</span></i></strong>) và một vài <strong>trường hợp ngoại lệ khác</strong>."
-        ]
-      }
-    ],
-    "examples": [
-      {
+        "type": "example",
+        "slide_index": 113,
         "question": "What time are we meeting with the architect?",
         "choices": {
           "A": "No, but they usually do.",
           "B": "The new sports arena.",
           "C": "Right after lunch."
         },
-        "audio": "part02_examples/slide113_media27.mp3",
-        "slide_index": 113
+        "answer": "C",
+        "audio": "media/part02_examples/slide113_media27.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 114,
         "question": "What time can we check in to the hotel tomorrow?",
         "choices": {
           "A": "At the front desk.",
           "B": "I usually pay with cash.",
           "C": "Any time after two."
         },
-        "audio": "part02_examples/slide114_media28.mp3",
-        "slide_index": 114
+        "answer": "C",
+        "audio": "media/part02_examples/slide114_media28.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 115,
+        "text": [
+          "3.2. Câu trả lời là mệnh đề trạng ngữ chỉ thời gian",
+          "Mệnh đề trạng ngữ chỉ thời gian thường bắt đầu bằng các liên từ chỉ thời gian như when (khi mà), after (sau khi), before (trước khi), as soon as (ngay khi), til/until (cho đến khi), ..."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 116,
         "question": "When did you buy your new phone?",
         "choices": {
           "A": "The store is close to my house.",
           "B": "Last week when it was on sale.",
           "C": "I think it’s the same number."
         },
-        "audio": "part02_examples/slide116_media29.mp3",
-        "slide_index": 116
+        "answer": "B",
+        "audio": "media/part02_examples/slide116_media29.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 117,
         "question": "When is the health inspector coming?",
         "choices": {
           "A": "Anytime this week.",
           "B": "It’s good for your health.",
           "C": "At the back door."
         },
-        "audio": "part02_examples/slide117_media30.mp3",
-        "slide_index": 117
+        "answer": "A",
+        "audio": "media/part02_examples/slide117_media30.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 118,
+        "text": [
+          "3.3. Câu trả lời gián tiếp",
+          "Khi người được hỏi không biết câu trả lời, không thể cung cấp thông tin cho người hỏi (I haven’t heard anything about that, I don’t remember, I don’t know, I didn’t even know, Nobody told me, …) hoặc sự việc chưa xảy ra (We haven’t decided yet). Ngoài ra, người nói có thể đưa ra gợi ý cho người hỏi (How about…?) và một vài trường hợp ngoại lệ khác."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 119,
         "question": "When should we ship this order?",
         "choices": {
           "A": "Shipping is free.",
           "B": "That’s a really short time.",
           "C": "The customer just canceled it."
         },
-        "audio": "part02_examples/slide119_media31.mp3",
-        "slide_index": 119
+        "answer": "C",
+        "audio": "media/part02_examples/slide119_media31.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 120,
         "question": "When does the reception start?",
         "choices": {
           "A": "On Barton Avenue.",
           "B": "I didn’t receive an invitation.",
           "C": "Seventy guests."
         },
-        "audio": "part02_examples/slide120_media32.mp3",
-        "slide_index": 120
+        "answer": "B",
+        "audio": "media/part02_examples/slide120_media32.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 121,
         "question": "When do you want to leave for the concert hall?",
         "choices": {
           "A": "How about an hour from now?",
           "B": "At the Montgomery Theater.",
           "C": "My favorite band is playing."
         },
-        "audio": "part02_examples/slide121_media33.mp3",
-        "slide_index": 121
+        "answer": "A",
+        "audio": "media/part02_examples/slide121_media33.mp3"
       }
-    ],
-    "vocabulary": []
+    ]
   },
   {
     "id": "info_why",
     "title": "4. Why",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 122,
         "text": [
-          "<strong><span style='color: #FF0000;'>4. Questions with Why</span></strong>",
-          "Câu hỏi bắt đầu bằng từ để hỏi “Why” được dùng để hỏi về <strong><i><span style='color: #0070C0;'>lý do</span></i></strong>, <strong><i><span style='color: #0070C0;'>nguyên nhân </span></i></strong>hoặc <strong><i><span style='color: #0070C0;'>mục đích </span></i></strong>của một sự việc nào đó."
+          "4. Questions with Why",
+          "Câu hỏi bắt đầu bằng từ để hỏi “Why” được dùng để hỏi về lý do, nguyên nhân hoặc mục đích của một sự việc nào đó."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 123,
         "text": [
-          "<strong><i><span style='color: #7030A0;'>4.1. Câu trả lời có chứa các cụm chỉ nguyên nhân, lý d</span></i></strong><strong><i><span style='color: #7030A0;'>o</span></i></strong>",
-          "Trong câu hỏi <strong><span style='color: #00B0F0;'>Why</span></strong> dùng để <strong><span style='color: #00B0F0;'>hỏi lý do</span></strong>, các phương án trả lời bắt đầu bằng các từ chỉ nguyên nhân, lý do như <strong><i><span style='color: #0070C0;'>because</span></i></strong>, <strong><i><span style='color: #0070C0;'>because of</span></i></strong>, <strong><i><span style='color: #0070C0;'>due to</span></i></strong>, <strong><i><span style='color: #0070C0;'>owing to</span></i></strong>, <strong><i><span style='color: #0070C0;'>for</span></i></strong>,…"
+          "4.1. Câu trả lời có chứa các cụm chỉ nguyên nhân, lý do",
+          "Trong câu hỏi Why dùng để hỏi lý do, các phương án trả lời bắt đầu bằng các từ chỉ nguyên nhân, lý do như because, because of, due to, owing to, for,…"
         ]
       },
       {
-        "slide_index": 126,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>4.2. Câu trả lời ngụ ý chỉ nguyên nhân, lý do </span></i></strong>",
-          "Với xu hướng ra đề mới nhất, thì một số phương án dù đưa ra lý do nhưng đáp án vẫn <strong><span style='color: #FF0000;'>KHÔNG CHỨA</span></strong> các từ <strong><i><span style='color: #0070C0;'>because</span></i></strong>, <strong><i><span style='color: #0070C0;'>because of</span></i></strong>, <strong><i><span style='color: #0070C0;'>due to</span></i></strong> hay <strong><i><span style='color: #0070C0;'>owing to</span></i></strong>, <strong><i><span style='color: #0070C0;'>for</span></i></strong>,..."
-        ]
-      },
-      {
-        "slide_index": 129,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>4.3. Câu trả lời chỉ mục đích  </span></i></strong>",
-          "Đáp án chỉ mục đích thường chứa <strong><i><span style='color: #0070C0;'>cụm động từ nguyên mẫu có to </span></i></strong><span style='color: #FF0000;'>(to + V</span><span style='color: #FF0000;'>o</span><span style='color: #FF0000;'>)</span>, mang ý nghĩa là <span style='color: #FF0000;'>để làm gì đó</span>."
-        ]
-      },
-      {
-        "slide_index": 132,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>4.4. Câu trả lời gián tiếp   </span></i></strong>",
-          "Câu trả lời đúng thỉnh thoảng sẽ ở dạng gián tiếp khi người được hỏi không biết chính xác câu trả lời. Thường trong đáp án sẽ thể hiện rõ <strong><span style='color: #FF0000;'>không biết</span></strong> hoặc sẽ <strong><span style='color: #FF0000;'>hỏi ngược lại người hỏi</span></strong>."
-        ]
-      }
-    ],
-    "examples": [
-      {
+        "type": "example",
+        "slide_index": 124,
         "question": "Why is there a cake sitting out on the front desk?",
         "choices": {
           "A": "The potted plant on the ground.",
           "B": "I’ll answer the phone.",
           "C": "Because Barb’s party is today."
         },
-        "audio": "part02_examples/slide124_media34.mp3",
-        "slide_index": 124
+        "answer": "C",
+        "audio": "media/part02_examples/slide124_media34.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 125,
         "question": "Why is the traffic so slow today?",
         "choices": {
           "A": "Just a rental car.",
           "B": "Because of road construction.",
           "C": "No, I worked yesterday."
         },
-        "audio": "part02_examples/slide125_media35.mp3",
-        "slide_index": 125
+        "answer": "B",
+        "audio": "media/part02_examples/slide125_media35.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 126,
+        "text": [
+          "4.2. Câu trả lời ngụ ý chỉ nguyên nhân, lý do",
+          "Với xu hướng ra đề mới nhất, thì một số phương án dù đưa ra lý do nhưng đáp án vẫn KHÔNG CHỨA các từ because, because of, due to hay owing to, for,..."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 127,
         "question": "Why did we order the cleaning supplies from a different company?",
         "choices": {
           "A": "Until Tuesday.",
           "B": "Through the catalog.",
           "C": "The prices were much cheaper."
         },
-        "audio": "part02_examples/slide127_media36.mp3",
-        "slide_index": 127
+        "answer": "C",
+        "audio": "media/part02_examples/slide127_media36.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 128,
         "question": "Why did Marie leave early yesterday?",
         "choices": {
           "A": "Can you read it again?",
           "B": "Around 4 p.m.",
           "C": "She had a dentist appointment."
         },
-        "audio": "part02_examples/slide128_media37.mp3",
-        "slide_index": 128
+        "answer": "C",
+        "audio": "media/part02_examples/slide128_media37.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 129,
+        "text": [
+          "4.3. Câu trả lời chỉ mục đích",
+          "Đáp án chỉ mục đích thường chứa cụm động từ nguyên mẫu có to (to + Vo), mang ý nghĩa là để làm gì đó."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 130,
         "question": "Why did your company decide to advertise internationally?",
         "choices": {
           "A": "To expand our customer base.",
           "B": "Yes, that sounds like a great idea.",
           "C": "Which side do you prefer?"
         },
-        "audio": "part02_examples/slide130_media38.mp3",
-        "slide_index": 130
+        "answer": "A",
+        "audio": "media/part02_examples/slide130_media38.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 131,
         "question": "Why are you transferring to the San Francisco branch?",
         "choices": {
           "A": "To be closer to my family.",
           "B": "Probably in February.",
           "C": "Yes, it’s been open for a while."
         },
-        "audio": "part02_examples/slide131_media39.mp3",
-        "slide_index": 131
+        "answer": "A",
+        "audio": "media/part02_examples/slide131_media39.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 132,
+        "text": [
+          "4.4. Câu trả lời gián tiếp",
+          "Câu trả lời đúng thỉnh thoảng sẽ ở dạng gián tiếp khi người được hỏi không biết chính xác câu trả lời. Thường trong đáp án sẽ thể hiện rõ không biết hoặc sẽ hỏi ngược lại người hỏi."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 133,
         "question": "Why is the financial forecast still not finished?",
         "choices": {
           "A": "They’re forecasting rain.",
           "B": "In the finance department.",
           "C": "You didn’t receive it?"
         },
-        "audio": "part02_examples/slide133_media40.mp3",
-        "slide_index": 133
+        "answer": "C",
+        "audio": "media/part02_examples/slide133_media40.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 134,
         "question": "Why are we meeting to discuss the budget?",
         "choices": {
           "A": "Have you seen last quarter’s sales figures?",
           "B": "Next Tuesday, at two o’clock.",
           "C": "I’d like to, but it’s expensive."
         },
-        "audio": "part02_examples/slide134_media41.mp3",
-        "slide_index": 134
+        "answer": "A",
+        "audio": "media/part02_examples/slide134_media41.mp3"
       }
-    ],
-    "vocabulary": []
+    ]
   },
   {
     "id": "info_what",
     "title": "5. What",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 135,
         "text": [
-          "<strong><span style='color: #FF0000;'>5. Questions with What</span></strong>",
-          "Câu hỏi bắt đầu <strong><span style='color: #FF0000;'>What</span></strong> chủ yếu thuờng hỏi về những thông tin chi tiết, những thông tin này có thể liên quan tới <strong><i><span style='color: #0070C0;'>chi phí</span></i></strong>, <strong><i><span style='color: #0070C0;'>thời gian</span></i></strong>, <strong><i><span style='color: #0070C0;'>quan điểm</span></i></strong>, <strong><i><span style='color: #0070C0;'>màu sắc</span></i></strong>, <strong><i><span style='color: #0070C0;'>thời tiết</span></i></strong>, <strong><i><span style='color: #0070C0;'>hành động</span></i></strong>, ... Câu hỏi <strong><span style='color: #FF0000;'>What</span></strong> có nhiều nghĩa khác nhau tùy vào những từ theo sau nó."
+          "5. Questions with What",
+          "Câu hỏi bắt đầu What chủ yếu thuờng hỏi về những thông tin chi tiết, những thông tin này có thể liên quan tới chi phí, thời gian, quan điểm, màu sắc, thời tiết, hành động, ... Câu hỏi What có nhiều nghĩa khác nhau tùy vào những từ theo sau nó."
         ]
       },
       {
+        "type": "theory",
+        "slide_index": 136,
+        "text": [
+          "Examples with “What”",
+          "What time ... ? (Thời gian)",
+          "What size ... ? (Kích cỡ)",
+          "What color ...? (Màu sắc)",
+          "What’s the price of ...? (Giá cả)",
+          "What do you think of/ think about ...? (Ý kiến)",
+          "Note: Câu hỏi What sẽ KHÔNG trả lời bằng “Yes/No”, ngoại trừ câu hỏi What bout ...? (Đề nghị)"
+        ]
+      },
+      {
+        "type": "theory",
         "slide_index": 137,
         "text": [
-          "<strong><i><span style='color: #7030A0;'>5.1. Câu trả lời cho câu hỏi về chi phí    </span></i></strong>",
-          "Các câu hỏi về chi phí thường chứa các từ khóa như: <strong><span style='color: #FF0000;'>price</span></strong>, <strong><span style='color: #FF0000;'>charge</span></strong>, <strong><span style='color: #FF0000;'>fare</span></strong>, <strong><span style='color: #FF0000;'>fee</span></strong>, <strong><span style='color: #FF0000;'>cost</span></strong>, ... Câu trả lời thuờng là một đơn vị tiền tệ cụ thể như: <strong><span style='color: #FF0000;'>dollar</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>euro</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>pound</span></strong><span style='color: #FF0000;'>, ...</span>"
+          "5.1. Câu trả lời cho câu hỏi về chi phí",
+          "Các câu hỏi về chi phí thường chứa các từ khóa như: price, charge, fare, fee, cost, ... Câu trả lời thuờng là một đơn vị tiền tệ cụ thể như: dollar, euro, pound, ..."
         ]
       },
       {
-        "slide_index": 140,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>5.2. Câu trả lời cho câu hỏi về quan điểm     </span></i></strong>",
-          "Câu hỏi <span style='color: #FF0000;'>“</span><strong><span style='color: #FF0000;'>What do you think of/ think about ...?</span></strong><span style='color: #FF0000;'>”</span> thuờng dùng để hỏi về quan điểm, ý kiến của ai đó. Câu trả lời cho câu hỏi này rất đa dạng nên người nghe bắt buộc phải <strong><span style='color: #FF0000;'>hiểu được nội dung</span></strong> của câu trả lời thì mới đưa ra đáp án chính xác được."
-        ]
-      },
-      {
-        "slide_index": 143,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>5.3. Một số dạng câu hỏi khác      </span></i></strong>",
-          "Câu hỏi về thời gian thường là <span style='color: #FF0000;'>“</span><strong><span style='color: #FF0000;'>What time ...?</span></strong><span style='color: #FF0000;'>”</span> và đáp án trả lời sẽ là một mốc thời gian chính xác (<strong><span style='color: #FF0000;'>at 10 a.m</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>at 8 o’clock</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>at 7 p.m</span></strong><span style='color: #FF0000;'>,...</span>) hoặc cũng có thể là những cụm từ chỉ thời gian (<strong><span style='color: #FF0000;'>after the meeting</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>in the moring</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>before lunch</span></strong><span style='color: #FF0000;'>, ...</span>).",
-          "Câu hỏi về màu sắc thuờng là <span style='color: #FF0000;'>“</span><strong><span style='color: #FF0000;'>What color ...?</span></strong><span style='color: #FF0000;'>”</span> và đáp án trả lời sẽ chứa các từ chỉ màu sắc như <strong><span style='color: #FF0000;'>red</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>yellow</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>blue</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>black</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>green</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>brown</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>white</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>gray</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>orange</span></strong><span style='color: #FF0000;'>, ... </span>"
-        ]
-      },
-      {
-        "slide_index": 144,
-        "text": [
-          "Câu hỏi về thời tiết thừờng là “<strong><span style='color: #FF0000;'>What’s the weather ...?</span></strong>” và đáp án trả lời sẽ chứa các tính từ mô tả thời tiết như <strong><span style='color: #FF0000;'>rainy</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>cloudy</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>sunny</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>humid</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>snowy</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>windy</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>stormy</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>hot</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>cool</span></strong><span style='color: #FF0000;'>, </span><strong><span style='color: #FF0000;'>brisk</span></strong><span style='color: #FF0000;'>,…</span>",
-          "Câu hỏi về <strong>cách thức</strong> thường có dạng: “<strong><span style='color: #FF0000;'>What’s the best / fastest / quickest / shortest way to…?</span></strong>” dùng để hỏi <strong>cách tốt nhất để làm một việc</strong>, thường là <strong>di chuyển hoặc liên lạc</strong>. Vì vậy, câu trả lời có thể là <strong>phương tiện giao thông</strong> (<i>bus, taxi, subway, shuttle bus</i>) hoặc <strong>phương thức liên lạc</strong> (<i>phone, email, message</i>, …)."
-        ]
-      },
-      {
-        "slide_index": 145,
-        "text": [
-          "Câu hỏi về <strong>vấn đề</strong> thường có dạng “<strong><span style='color: #FF0000;'>What’s the problem with…?</span></strong>”, “<strong><span style='color: #FF0000;'>What’s wrong with…?</span></strong>”, “<strong><span style='color: #FF0000;'>What’s the matter with…?</span></strong>”, hoặc “<strong><span style='color: #FF0000;'>What happened to…?</span></strong>”. Cấu trúc này dùng để hỏi <strong>sự cố hoặc tình trạng không bình thường</strong> của một người hoặc một vật. Vì vậy, câu trả lời thường <strong>mô tả vấn đề, nguyên nhân hoặc tình trạng đang xảy ra</strong>.",
-          "Câu hỏi về <strong>loại / thể loại</strong> thường có dạng “<strong><span style='color: #FF0000;'>What type of…?</span></strong>”, “<strong><span style='color: #FF0000;'>What kind of…?</span></strong>”, “<strong><span style='color: #FF0000;'>What sort of…?</span></strong>”. Cấu trúc này dùng để hỏi <strong>loại hoặc đặc điểm của một sự vật</strong>. Vì vậy, câu trả lời thường là <strong>tên của một loại hoặc nhóm cụ thể</strong>."
-        ]
-      }
-    ],
-    "examples": [
-      {
+        "type": "example",
+        "slide_index": 138,
         "question": "What’s the price of this item?",
         "choices": {
           "A": "Five euros.",
           "B": "At around eight P.M.",
           "C": "Yes, it does."
         },
-        "audio": "part02_examples/slide138_media42.mp3",
-        "slide_index": 138
+        "answer": "A",
+        "audio": "media/part02_examples/slide138_media42.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 139,
         "question": "What’s the cost estimate for the renovation work?",
         "choices": {
           "A": "About 5000 dollars.",
           "B": "Sure, I’ll send it in.",
           "C": "Yes, some new appliances."
         },
-        "audio": "part02_examples/slide139_media43.mp3",
-        "slide_index": 139
+        "answer": "A",
+        "audio": "media/part02_examples/slide139_media43.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 140,
+        "text": [
+          "5.2. Câu trả lời cho câu hỏi về quan điểm",
+          "Câu hỏi “What do you think of/ think about ...?” thuờng dùng để hỏi về quan điểm, ý kiến của ai đó. Câu trả lời cho câu hỏi này rất đa dạng nên người nghe bắt buộc phải hiểu được nội dung của câu trả lời thì mới đưa ra đáp án chính xác được."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 141,
         "question": "What did you think of the training video?",
         "choices": {
           "A": "No, it wasn’t raining.",
           "B": "I thought it was very helpful.",
           "C": "In the manager’s office."
         },
-        "audio": "part02_examples/slide141_media44.mp3",
-        "slide_index": 141
+        "answer": "B",
+        "audio": "media/part02_examples/slide141_media44.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 142,
         "question": "What did you think of the social media seminar?",
         "choices": {
           "A": "I registered for a different session.",
           "B": "He’s downstairs.",
           "C": "I’ll suggest that."
         },
-        "audio": "part02_examples/slide142_media45.mp3",
-        "slide_index": 142
+        "answer": "A",
+        "audio": "media/part02_examples/slide142_media45.mp3"
       },
       {
-        "question": "How will you get to the hotel from the airport?",
-        "choices": {
-          "A": "We’ll take a taxi.",
-          "B": "About 45 minutes.",
-          "C": "Will that be everything?"
-        },
-        "audio": "part02_examples/slide148_media46.mp3",
-        "slide_index": 148
+        "type": "theory",
+        "slide_index": 143,
+        "text": [
+          "5.3. Một số dạng câu hỏi khác",
+          "Câu hỏi về thời gian thường là “What time ...?” và đáp án trả lời sẽ là một mốc thời gian chính xác (at 10 a.m, at 8 o’clock, at 7 p.m,...) hoặc cũng có thể là những cụm từ chỉ thời gian (after the meeting, in the moring, before lunch, ...).",
+          "Câu hỏi về màu sắc thuờng là “What color ...?” và đáp án trả lời sẽ chứa các từ chỉ màu sắc như red, yellow, blue, black, green, brown, white, gray, orange, ..."
+        ]
       },
       {
-        "question": "How do you usually get to the office?",
-        "choices": {
-          "A": "I ride my bike.",
-          "B": "Nine o’clock in the morning.",
-          "C": "It’s a nice building."
-        },
-        "audio": "part02_examples/slide149_media47.mp3",
-        "slide_index": 149
+        "type": "theory",
+        "slide_index": 144,
+        "text": [
+          "Câu hỏi về thời tiết thừờng là “What’s the weather ...?” và đáp án trả lời sẽ chứa các tính từ mô tả thời tiết như rainy, cloudy, sunny, humid, snowy, windy, stormy, hot, cool, brisk,…",
+          "Câu hỏi về cách thức thường có dạng: “What’s the best / fastest / quickest / shortest way to…?” dùng để hỏi cách tốt nhất để làm một việc, thường là di chuyển hoặc liên lạc. Vì vậy, câu trả lời có thể là phương tiện giao thông (bus, taxi, subway, shuttle bus) hoặc phương thức liên lạc (phone, email, message, …)."
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 145,
+        "text": [
+          "Câu hỏi về vấn đề thường có dạng “What’s the problem with…?”, “What’s wrong with…?”, “What’s the matter with…?”, hoặc “What happened to…?”. Cấu trúc này dùng để hỏi sự cố hoặc tình trạng không bình thường của một người hoặc một vật. Vì vậy, câu trả lời thường mô tả vấn đề, nguyên nhân hoặc tình trạng đang xảy ra.",
+          "Câu hỏi về loại / thể loại thường có dạng “What type of…?”, “What kind of…?”, “What sort of…?”. Cấu trúc này dùng để hỏi loại hoặc đặc điểm của một sự vật. Vì vậy, câu trả lời thường là tên của một loại hoặc nhóm cụ thể."
+        ]
       }
-    ],
-    "vocabulary": []
+    ]
   },
   {
     "id": "info_how",
     "title": "6. How",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 146,
         "text": [
-          "<strong><span style='color: #FF0000;'>6. Questions with How</span></strong>",
-          "Các câu hỏi bắt đầu bằng <strong><span style='color: #FF0000;'>How</span></strong> thường dùng để hỏi về <strong>cách thức hoặc phương tiện thực hiện một việc</strong>. Ngoài ra, <strong><span style='color: #FF0000;'>How</span></strong> còn kết hợp với các từ khác để tạo thành những dạng câu hỏi cụ thể, như <strong><span style='color: #FF0000;'>How much </span></strong><strong>/ </strong><strong><span style='color: #FF0000;'>many</span></strong> (số lượng), <strong><span style='color: #FF0000;'>How far </span></strong>(khoảng cách), <strong><span style='color: #FF0000;'>How long</span></strong> (thời gian), và <strong><span style='color: #FF0000;'>How often</span></strong> (mức độ thường xuyên)."
+          "6. Questions with How",
+          "Các câu hỏi bắt đầu bằng How thường dùng để hỏi về cách thức hoặc phương tiện thực hiện một việc. Ngoài ra, How còn kết hợp với các từ khác để tạo thành những dạng câu hỏi cụ thể, như How much / many (số lượng), How far (khoảng cách), How long (thời gian), và How often (mức độ thường xuyên)."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 147,
         "text": [
-          "<strong><i><span style='color: #7030A0;'>6.1. Câu trả lời về cách thức</span></i></strong>\t<strong><i><span style='color: #7030A0;'>(How)</span></i></strong>",
-          "Câu hỏi về <strong>cách thức</strong> thường hỏi về <strong>phương tiện đi lại hoặc cách để làm một việc</strong>. Với câu hỏi về phương tiện di chuyển, câu hỏi thường chứa các cụm như <strong><i><span style='color: #FF0000;'>get to + địa điểm</span></i></strong><i>, </i><strong><i><span style='color: #FF0000;'>get here</span></i></strong><i>, </i><strong><i><span style='color: #FF0000;'>get there</span></i></strong><i>, </i><strong><i><span style='color: #FF0000;'>go / come / commute to work</span></i></strong>, và câu trả lời thường là <strong><i><span style='color: #00B050;'>drive my car</span></i></strong><i>, </i><strong><i><span style='color: #00B050;'>ride my bike</span></i></strong><i>, </i><strong><i><span style='color: #00B050;'>take a bus / taxi</span></i></strong><i>, </i><strong><i><span style='color: #00B050;'>by train / bus / coach / plane</span></i></strong><i>, </i><strong><i><span style='color: #00B050;'>on foot</span></i></strong><i>, </i><strong><i><span style='color: #00B050;'>get a lift</span></i></strong>, v.v. Ngoài ra, câu hỏi cũng có thể yêu cầu <strong>cách thực hiện một việc</strong>, chẳng hạn như <strong>hướng dẫn sử dụng máy móc / thiết bị hoặc cách hoàn thành một nhiệm vụ</strong>, và câu trả lời thường <strong>mô tả cách thực hiện hoặc các bước cần làm</strong>."
+          "6.1. Câu trả lời về cách thức\t(How)",
+          "Câu hỏi về cách thức thường hỏi về phương tiện đi lại hoặc cách để làm một việc. Với câu hỏi về phương tiện di chuyển, câu hỏi thường chứa các cụm như get to + địa điểm, get here, get there, go / come / commute to work, và câu trả lời thường là drive my car, ride my bike, take a bus / taxi, by train / bus / coach / plane, on foot, get a lift, v.v. Ngoài ra, câu hỏi cũng có thể yêu cầu cách thực hiện một việc, chẳng hạn như hướng dẫn sử dụng máy móc / thiết bị hoặc cách hoàn thành một nhiệm vụ, và câu trả lời thường mô tả cách thực hiện hoặc các bước cần làm."
         ]
       },
       {
-        "slide_index": 152,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>6.2. Câu trả lời khoảng thời gian (How long)</span></i></strong>",
-          "Câu hỏi <strong><span style='color: #FF0000;'>How long </span></strong>thường dùng để hỏi về <strong><span style='color: #FF0000;'>khoảng thời gian</span></strong> (<strong>bao lâu</strong>). Ngoài ra, nó cũng có thể dùng để hỏi về độ dài của một cái gì đó. Đáp án đúng thường bắt đầu bằng <strong><span style='color: #FF0000;'>about</span></strong> (<strong>khoảng</strong>), <strong><span style='color: #FF0000;'>for</span></strong> (<strong>trong bao lâu</strong>), <strong><span style='color: #FF0000;'>approximately</span></strong> (<strong>khoảng chừng</strong>), <strong><span style='color: #FF0000;'>more than </span></strong>(<strong>nhiều hơn</strong>), <strong><span style='color: #FF0000;'>less than </span></strong>(<strong>ít hơn</strong>), ..."
-        ]
-      },
-      {
-        "slide_index": 155,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>6.3. Câu</span></i></strong> <strong><i><span style='color: #7030A0;'>trả</span></i></strong> <strong><i><span style='color: #7030A0;'>lời</span></i></strong> <strong><i><span style='color: #7030A0;'>về</span></i></strong> <strong><i><span style='color: #7030A0;'>số</span></i></strong> <strong><i><span style='color: #7030A0;'>lượng</span></i></strong><strong><i><span style='color: #7030A0;'> (How many)</span></i></strong>",
-          "Câu hỏi <strong><span style='color: #FF0000;'>How many </span></strong>thường hỏi về số lượng. Những đáp án chính xác thường bắt đầu bằng <strong><span style='color: #FF0000;'>at least </span></strong>(<strong>ít nhất</strong>), <strong><span style='color: #FF0000;'>roughly</span></strong> (<strong>khoảng chừng</strong>), <strong><span style='color: #FF0000;'>about</span></strong> (<strong>khoảng</strong>) hoặc cũng có thể là những đáp án thể hiện sự không chắc chắn như <strong><i><span style='color: #00B0F0;'>I can’t say for sure</span></i></strong>, <strong><i><span style='color: #00B0F0;'>I don’t know</span></i></strong>, ..."
-        ]
-      },
-      {
-        "slide_index": 158,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>6.4. </span></i></strong><strong><i><span style='color: #7030A0;'>Câu</span></i></strong> <strong><i><span style='color: #7030A0;'>trả</span></i></strong> <strong><i><span style='color: #7030A0;'>lời</span></i></strong> <strong><i><span style='color: #7030A0;'>về</span></i></strong> <strong><i><span style='color: #7030A0;'>giá</span></i></strong> <strong><i><span style='color: #7030A0;'>cả</span></i></strong><strong><i><span style='color: #7030A0;'> (How much)</span></i></strong>",
-          "Câu hỏi bắt đầu bằng <strong><span style='color: #FF0000;'>How much </span></strong>được dùng để hỏi về <strong><span style='color: #FF0000;'>giá cả của một món đồ hoặc dịch vụ</span></strong>. Những đáp án chính xác thường chứ các đơn vị tiền tệ như <strong><i><span style='color: #00B0F0;'>euro</span></i></strong>, <strong><i><span style='color: #00B0F0;'>dollar</span></i></strong>, <strong><i><span style='color: #00B0F0;'>pound</span></i></strong> hoặc cũng có thể là <strong><i>I don’t know</i></strong>, <strong><i>I’m not sure</i></strong>, …"
-        ]
-      },
-      {
-        "slide_index": 161,
-        "text": [
-          "<strong><i><span style='color: #7030A0;'>6.5. Một</span></i></strong> <strong><i><span style='color: #7030A0;'>số</span></i></strong> <strong><i><span style='color: #7030A0;'>dạng</span></i></strong> <strong><i><span style='color: #7030A0;'>câu</span></i></strong> <strong><i><span style='color: #7030A0;'>hỏi</span></i></strong> <strong><i><span style='color: #7030A0;'>khác</span></i></strong>",
-          "Câu hỏi <strong><span style='color: #FF0000;'>How often </span></strong>hỏi về <strong><span style='color: #FF0000;'>mức độ thường xuyên </span></strong>của hoạt động. Các đáp án trả lời có thể chứa những trạng từ chỉ tần suất như <strong><i><span style='color: #00B0F0;'>once</span></i></strong>, <strong><i><span style='color: #00B0F0;'>twice</span></i></strong>, <strong><i><span style='color: #00B0F0;'>three times</span></i></strong>, ... <strong><span style='color: #00B0F0;'>a week/month/year</span></strong>.",
-          "Câu hỏi <strong><span style='color: #FF0000;'>How far </span></strong>hỏi về <strong><span style='color: #FF0000;'>khoảng cách giữa hai địa điểm</span></strong>. Các đáp án trả lời có thể chứa những đơn vị về khoảng cách như <strong><i><span style='color: #00B0F0;'>mile</span></i></strong>, <strong><i><span style='color: #00B0F0;'>meter</span></i></strong>, <strong><i><span style='color: #00B0F0;'>kilometer</span></i></strong>, ..."
-        ]
-      },
-      {
-        "slide_index": 164,
-        "text": [
-          "<strong><span style='color: #FF0000;'>II. YES/NO QUESTIONS</span></strong>",
-          "<strong><span style='color: #00B0F0;'>(</span></strong><strong><span style='color: #00B0F0;'>CÂU HỎI CÓ HOẶC KHÔNG</span></strong><strong><span style='color: #00B0F0;'>)</span></strong>"
-        ]
-      }
-    ],
-    "examples": [
-      {
+        "type": "example",
+        "slide_index": 148,
         "question": "How will you get to the hotel from the airport?",
         "choices": {
           "A": "We’ll take a taxi.",
           "B": "About 45 minutes.",
           "C": "Will that be everything?"
         },
-        "audio": "part02_examples/slide148_media46.mp3",
-        "slide_index": 148
+        "answer": "A",
+        "audio": "media/part02_examples/slide148_media46.mp3"
       },
       {
+        "type": "example",
+        "slide_index": 149,
         "question": "How do you usually get to the office?",
         "choices": {
           "A": "I ride my bike.",
           "B": "Nine o’clock in the morning.",
           "C": "It’s a nice building."
         },
-        "audio": "part02_examples/slide149_media47.mp3",
-        "slide_index": 149
+        "answer": "A",
+        "audio": "media/part02_examples/slide149_media47.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 150,
+        "question": "How can we improve our bicycle sales?",
+        "choices": {
+          "A": "By advertising more.",
+          "B": "He always wears a helmet.",
+          "C": "They were gone for an hour."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide150_media48.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 151,
+        "question": "How do I sign up for the ten-kilometer race?",
+        "choices": {
+          "A": "Walking or running is OK.",
+          "B": "You fill out a form online.",
+          "C": "Through the park."
+        },
+        "answer": "B",
+        "audio": "media/part02_examples/slide151_media49.mp3"
+      },
+      {
+        "type": "theory",
+        "slide_index": 152,
+        "text": [
+          "6.2. Câu trả lời khoảng thời gian (How long)",
+          "Câu hỏi How long thường dùng để hỏi về khoảng thời gian (bao lâu). Ngoài ra, nó cũng có thể dùng để hỏi về độ dài của một cái gì đó. Đáp án đúng thường bắt đầu bằng about (khoảng), for (trong bao lâu), approximately (khoảng chừng), more than (nhiều hơn), less than (ít hơn), ..."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 153,
+        "question": "How long has your house been listed for sale?",
+        "choices": {
+          "A": "At Ingrid’s house.",
+          "B": "I’m not sure I have time.",
+          "C": "Just over six weeks."
+        },
+        "answer": "C",
+        "audio": "media/part02_examples/slide153_media50.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 154,
+        "question": "How long does the legal team need to review the contracts?",
+        "choices": {
+          "A": "Yes, the view’s beautiful.",
+          "B": "Five hundred dollars.",
+          "C": "A few more days."
+        },
+        "answer": "C",
+        "audio": "media/part02_examples/slide154_media51.mp3"
+      },
+      {
+        "type": "theory",
+        "slide_index": 155,
+        "text": [
+          "6.3. Câu trả lời về số lượng (How many)",
+          "Câu hỏi How many thường hỏi về số lượng. Những đáp án chính xác thường bắt đầu bằng at least (ít nhất), roughly (khoảng chừng), about (khoảng) hoặc cũng có thể là những đáp án thể hiện sự không chắc chắn như I can’t say for sure, I don’t know, ..."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 156,
+        "question": "How many kitchen appliances have been sold this week?",
+        "choices": {
+          "A": "It’s easy to apply.",
+          "B": "Around thirty, I think.",
+          "C": "We sell refrigerators."
+        },
+        "answer": "B",
+        "audio": "media/part02_examples/slide156_media52.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 157,
+        "question": "How many people did you interview?",
+        "choices": {
+          "A": "The company newsletter.",
+          "B": "I’ve prepared some questions.",
+          "C": "Three candidates."
+        },
+        "answer": "C",
+        "audio": "media/part02_examples/slide157_media53.mp3"
+      },
+      {
+        "type": "theory",
+        "slide_index": 158,
+        "text": [
+          "6.4. Câu trả lời về giá cả (How much)",
+          "Câu hỏi bắt đầu bằng How much được dùng để hỏi về giá cả của một món đồ hoặc dịch vụ. Những đáp án chính xác thường chứ các đơn vị tiền tệ như euro, dollar, pound hoặc cũng có thể là I don’t know, I’m not sure, …"
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 159,
+        "question": "How much does this cost to rent this retail space?",
+        "choices": {
+          "A": "By living close to work.",
+          "B": "The desk measures five feet long.",
+          "C": "The fee is two hundred dollars."
+        },
+        "answer": "C",
+        "audio": "media/part02_examples/slide159_media54.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 160,
+        "question": "How much do the tickets cost?",
+        "choices": {
+          "A": "It’s on the coast.",
+          "B": "The concert was great!",
+          "C": "Twenty dollars, I think."
+        },
+        "answer": "C",
+        "audio": "media/part02_examples/slide160_media55.mp3"
+      },
+      {
+        "type": "theory",
+        "slide_index": 161,
+        "text": [
+          "6.5. Một số dạng câu hỏi khác",
+          "Câu hỏi How often hỏi về mức độ thường xuyên của hoạt động. Các đáp án trả lời có thể chứa những trạng từ chỉ tần suất như once, twice, three times, ... a week/month/year.",
+          "Câu hỏi How far hỏi về khoảng cách giữa hai địa điểm. Các đáp án trả lời có thể chứa những đơn vị về khoảng cách như mile, meter, kilometer, ..."
+        ]
+      },
+      {
+        "type": "example",
+        "slide_index": 162,
+        "question": "How often do I have to submit my time sheet?",
+        "choices": {
+          "A": "Five sheets of paper.",
+          "B": "You need to do it once a week.",
+          "C": "No, I don’t usually wear a watch."
+        },
+        "answer": "B",
+        "audio": "media/part02_examples/slide162_media56.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 163,
+        "question": "How far are we from the hotel?",
+        "choices": {
+          "A": "I have three bus passes.",
+          "B": "About a mile, I think.",
+          "C": "Wasn’t it yesterday?"
+        },
+        "answer": "B",
+        "audio": "media/part02_examples/slide163_media57.mp3"
+      },
+      {
+        "type": "theory",
+        "slide_index": 164,
+        "text": [
+          "II. YES/NO QUESTIONS",
+          "(CÂU HỎI CÓ HOẶC KHÔNG)"
+        ]
       }
-    ],
-    "vocabulary": []
+    ]
   },
   {
     "id": "yn_basic",
