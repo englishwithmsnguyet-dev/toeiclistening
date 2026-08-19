@@ -39,18 +39,18 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 7,
         "text": [
-          "INFORMATION QUESTIONS",
-          "(WH – QUESTIONS)"
+          "<span style=\"color: #dc2626; font-weight: 700\">INFORMATION QUESTIONS </span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">(WH – QUESTIONS</span><span style=\"color: #0284c7; font-weight: 700\">)</span>"
         ]
       },
       {
         "type": "theory",
         "slide_index": 8,
         "text": [
-          "1. Questions with WHO/WHOM/WHOSE",
-          "Dạng câu hỏi này được dùng để hỏi về người, nhóm người, một tổ chức, phòng ban hoặc một chức vụ nào đó.",
-          "1.1. Câu trả lời là tên riêng chỉ người",
-          "Một số tên riêng chỉ người thường gặp: John, Jane, Jack, Julie, Johnson, Simpson, Sandra, Sandy, Brenda, Lynn, Larry, William,..."
+          "<span style=\"color: #dc2626; font-weight: 700\">1. Questions with WHO/WHOM/WHOSE</span>",
+          "Dạng câu hỏi này được dùng để hỏi về <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">người</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">nhóm người</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">một tổ chức</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">phòng ban</span> hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">một chức vụ </span>nào đó.",
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1.1. Câu trả lời là tên riêng chỉ người</span>",
+          "Một số tên riêng chỉ người thường gặp: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">John</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Jane</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Jack</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Julie</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Johnson</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Simpson</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Sandra</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Sandy</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Brenda</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Lynn</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Larry</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">William</span>,..."
         ]
       },
       {
@@ -81,16 +81,16 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 11,
         "text": [
-          "1.2. Câu trả lời là tên của một chức vụ",
-          "Trong đáp án trả lời thường chứ một từ hoặc cụm từ mang nghĩa là một chức vụ/vị trí làm việc trong công ty, cơ quan, hay một tổ chức."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1.2. Câu trả lời là tên của một chức vụ</span>",
+          "Trong đáp án trả lời thường chứ một từ hoặc cụm từ mang nghĩa là <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">một</span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">chức</span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">vụ/vị trí làm việc </span>trong công ty, cơ quan, hay một tổ chức."
         ]
       },
       {
         "type": "theory",
         "slide_index": 12,
         "text": [
-          "MỘT SỐ TỪ VỰNG",
-          "VỀ CHỨC VỤ PHỔ BIẾN"
+          "<span style=\"color: #dc2626; font-weight: 700\">MỘT SỐ TỪ VỰNG </span>",
+          "<span style=\"color: #dc2626; font-weight: 700\">VỀ CHỨC VỤ PHỔ BIẾN </span>"
         ]
       },
       {
@@ -232,8 +232,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 30,
         "text": [
-          "1.3. Câu trả lời là tên của phòng ban",
-          "Trong đáp án trả lời thường chứa một cụm từ mang nghĩa là một phòng ban của một cơ quan, công ty hay tổ chức."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1.3. Câu trả lời là tên của phòng ban</span>",
+          "Trong đáp án trả lời thường chứa một cụm từ mang nghĩa là <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">một</span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">phòng</span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\"> ban</span><span style=\"color: #0284c7; font-style: italic\"> </span>của một cơ quan, công ty hay tổ chức."
         ]
       },
       {
@@ -375,16 +375,16 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 48,
         "text": [
-          "1.4. Câu trả lời là đại từ bất định, đại từ nhân xưng, đại từ sở hữu",
-          "Trong đáp án trả lời thường chứa một đại từ bất định, một đại từ nhân xưng hoặc một đại từ sở hữu."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1.4. Câu trả lời là đại từ bất định, đại từ nhân xưng, đại từ s</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">ở</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> hữu</span>",
+          "Trong đáp án trả lời thường chứa một <span style=\"color: #0284c7; font-style: italic\">đại</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">từ</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">bất</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">định</span>, <span style=\"color: #0284c7; font-style: italic\">một</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">đại</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">từ</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">nhân</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">xưng</span><span style=\"color: #0284c7; font-style: italic\"> </span>hoặc <span style=\"color: #0284c7; font-style: italic\">một</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">đại</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">từ</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">sở</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">hữu</span>."
         ]
       },
       {
         "type": "theory",
         "slide_index": 49,
         "text": [
-          "INDEFINITE PRONOUNS",
-          "(ĐẠI TỪ BẤT ĐỊNH)"
+          "<span style=\"color: #dc2626; font-weight: 700\">INDEFINITE PRONOUNS </span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">(ĐẠI TỪ BẤT ĐỊNH)</span>"
         ]
       },
       {
@@ -571,19 +571,19 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 66,
         "text": [
-          "1.5. Câu trả lời gián tiếp",
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1.5. Câu trả lời gián tiếp</span>",
           "Đôi khi trong nhiều trường hợp câu trả lời diễn đạt ý nghĩa không biết rõ, không chắc chắn, ví dụ như:",
-          "I don’t know/ I don’t really know/ I have no idea/ I don’t have a clue/ ...",
-          "I am not sure/ Isn’t it allocated to….?/..."
+          "<span style=\"color: #0284c7; font-style: italic\">I don’t know/ I don’t really know/ I have no idea/ I don’t have a clue/ ...</span>",
+          "<span style=\"color: #0284c7; font-style: italic\">I am not sure/ Isn’t it allocated to….?/...</span>"
         ]
       },
       {
         "type": "theory",
         "slide_index": 67,
         "text": [
-          "I can’t remember / I don’t recall / …",
-          "Let me find out/ Let me check out/ Let me ask...",
-          "S + haven’t/ hasn’t been decided/ chosen/ assigned/ confirmed/ announced/ finalized/ selected yet..."
+          "<span style=\"color: #0284c7; font-style: italic\">I can’t remember / I don’t recall / …</span>",
+          "<span style=\"color: #0284c7; font-style: italic\">Let me find out/ Let me check out/ Let me ask...</span><span style=\"color: #0284c7; font-style: italic\"> </span>",
+          "<span style=\"color: #0284c7; font-style: italic\">S + haven’t/ hasn’t been decided/ chosen/ assigned/ confirmed/ announced/ finalized/ selected yet... </span>"
         ]
       },
       {
@@ -621,8 +621,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 70,
         "text": [
-          "2. Questions with Where",
-          "Đây là câu hỏi về nơi chốn và thường được trả lời bằng cụm giới từ chỉ nơi chốn hoặc tên địa danh. Tuy nhiên, các giới từ đôi khi được bỏ qua. Bên cạnh đó, đáp án có thể là một địa điểm hoặc một cụm từ không trực tiếp chỉ nơi chốn."
+          "<span style=\"color: #dc2626; font-weight: 700\">2. Questions with Where</span>",
+          "Đây là câu hỏi về nơi chốn và thường được trả lời bằng <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">cụm giới từ chỉ nơi chốn</span> hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">tên địa danh</span>. Tuy nhiên, các giới từ đôi khi được bỏ qua. Bên cạnh đó, đáp án có thể là <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">một địa điểm </span>hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">một cụm từ không trực tiếp chỉ nơi chốn</span>."
         ]
       },
       {
@@ -754,9 +754,9 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 88,
         "text": [
-          "2.1. Câu trả lời là cụm giới từ chỉ nơi chốn",
-          "+ giới từ at: tại một địa điểm cụ thể",
-          "Ex: at the hotel, at the next corner, at the front desk, at the bus stop, …"
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.1. Câu trả lời là cụm giới từ chỉ nơi chốn</span>",
+          "+ giới từ <span style=\"color: #0284c7; font-weight: 700\">at</span>: tại một địa điểm cụ thể",
+          "Ex: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">at the hotel</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">at the next corner</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">at the front desk</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">at the bus stop</span>, …"
         ]
       },
       {
@@ -787,9 +787,9 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 91,
         "text": [
-          "2.2. Câu trả lời là cụm giới từ chỉ nơi chốn",
-          "+ giới từ on: ở trên, bên trên",
-          "Ex: on my desk, on the third floor, on Nguyen Ngoc Trai street, …"
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.2. Câu trả lời là cụm giới từ chỉ nơi chốn</span>",
+          "+ giới từ <span style=\"color: #dc2626; font-weight: 700\">on</span>: ở trên, bên trên",
+          "Ex: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on my desk</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on the third floor</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on Nguyen Ngoc Trai street</span>, …"
         ]
       },
       {
@@ -820,9 +820,9 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 94,
         "text": [
-          "2.3. Câu trả lời là cụm giới từ chỉ nơi chốn",
-          "+ giới từ in: ở trong, bên trong",
-          "Ex: in the office, in the cabinet, in a file drawer, in a case,…"
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.3. Câu trả lời là cụm giới từ chỉ nơi chốn</span>",
+          "+ giới từ <span style=\"color: #dc2626; font-weight: 700\">in</span>: ở trong, bên trong",
+          "Ex: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">in the office</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">in the cabinet</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">in a file drawer</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">in a case</span>,…"
         ]
       },
       {
@@ -853,7 +853,7 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 97,
         "text": [
-          "+ Ngoài ra còn một số giới từ chỉ nơi chốn khác như: above (ở bên trên), below (ở bên dưới), under (dưới), behind (sau), in front of (trước), between (giữa 2 người hoặc vật), among (giữ nhiều người hoặc vật), next to (kế bên), by (bên cạnh), near (gần), around/round (xung quanh), opposite/ across from (đối diện), …"
+          "+ Ngoài ra còn một số giới từ chỉ nơi chốn khác như: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">above</span> (ở bên trên), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">below</span> (ở bên dưới), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">under</span> (dưới), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">behind</span> (sau), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">in front of </span>(trước), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">between</span> (giữa 2 người hoặc vật), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">among</span><span style=\"color: #0284c7; font-style: italic\"> </span>(giữ nhiều người hoặc vật), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">next to </span>(kế bên), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">by</span> (bên cạnh), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">near</span> (gần), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">around/round </span>(xung quanh), <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">opposite/ across from </span>(đối diện), …"
         ]
       },
       {
@@ -884,9 +884,9 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 100,
         "text": [
-          "- Trường hợp đặc biệt:",
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">- Trường hợp đặc biệt: </span>",
           "+ Đáp án là tên 1 địa danh:",
-          " Sử dụng giới từ in + tên địa danh."
+          "<span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">Sử</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">dụng</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">giới</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">từ</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">i</span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">n</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">+ </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">tên địa danh</span><span style=\"color: #0284c7; font-style: italic\">.</span>"
         ]
       },
       {
@@ -917,9 +917,9 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 103,
         "text": [
-          "- Trường hợp đặc biệt:",
-          "+ Sử dụng giới từ to + nơi chốn.",
-          "+ Sử dụng go to + nơi chốn."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">- Trường hợp đặc biệt: </span>",
+          "<span style=\"font-style: italic\">+ </span><span style=\"color: #0284c7; font-style: italic\">Sử dụng giới từ </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">to</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"font-style: italic\">+ </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">nơi chốn</span><span style=\"color: #0284c7; font-style: italic\">.</span><span style=\"color: #0284c7; font-style: italic\"> </span>",
+          "<span style=\"font-style: italic\">+</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">Sử</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #0284c7; font-style: italic\">dụng</span><span style=\"color: #0284c7; font-style: italic\"> </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">go to</span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\"> </span><span style=\"font-style: italic\">+ </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">nơi chốn</span><span style=\"font-style: italic\">.</span>"
         ]
       },
       {
@@ -950,8 +950,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 106,
         "text": [
-          "2.4. Câu trả lời không thể hiện một nơi chốn cụ thể:",
-          "Trong một số trường hợp, câu trả lời cho câu hỏi về địa điểm không trực tiếp nêu ra một nơi chốn cụ thể. Thay vào đó, người nói có thể nhắc đến một người khác chịu trách nhiệm, đưa ra một đề xuất hoặc gợi ý, hoặc đặt lại một câu hỏi để làm rõ thông tin. Ngoài ra, câu trả lời cũng có thể được diễn đạt gián tiếp, thể hiện sự không chắc chắn hoặc cần kiểm tra lại thông tin, chẳng hạn như: I don’t know, It hasn’t been decided yet, Let me check, Let me find out, …"
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.4. Câu trả lời không thể hiện một nơi chốn cụ thể:</span>",
+          "Trong một số trường hợp, câu trả lời cho câu hỏi về <span style=\"font-weight: 700\">địa điểm</span> không trực tiếp nêu ra một nơi chốn cụ thể. Thay vào đó, người nói có thể <span style=\"font-weight: 700\">nhắc đến một người khác chịu trách nhiệm</span>, <span style=\"font-weight: 700\">đưa ra một đề xuất hoặc gợi ý</span>, hoặc <span style=\"font-weight: 700\">đặt lại một câu hỏi để làm rõ thông tin</span>. Ngoài ra, câu trả lời cũng có thể được diễn đạt <span style=\"font-weight: 700\">gián tiếp</span>, thể hiện sự không chắc chắn hoặc cần kiểm tra lại thông tin, chẳng hạn như: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">It hasn’t been decided yet</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Let me check</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Let me find out</span>, …"
         ]
       },
       {
@@ -1013,17 +1013,17 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 111,
         "text": [
-          "3. Questions with When",
-          "Câu hỏi bắt đầu bằng When (hoặc What time) được dùng để hỏi về thời gian, ví dụ như thời gian về một cuộc họp, cuộc hẹn, lịch làm việc, chuyến đi công tác, hay hạn chót của một nhiệm vụ nào đó, ..."
+          "<span style=\"color: #dc2626; font-weight: 700\">3. Questions with When</span>",
+          "Câu hỏi bắt đầu bằng <span style=\"color: #0284c7; font-weight: 700\">When</span> (hoặc <span style=\"color: #0284c7; font-weight: 700\">What time</span>) được dùng để hỏi về thời gian, ví dụ như thời gian về một <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">cuộc họp</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">cuộc hẹn</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">lịch làm việc</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">chuyến đi công tác</span>, hay <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">hạn chót </span>của một nhiệm vụ nào đó, ..."
         ]
       },
       {
         "type": "theory",
         "slide_index": 112,
         "text": [
-          "3.1. Câu trả lời là cụm từ chỉ thời gian",
-          "Đáp án thường chứa các cụm từ chỉ thời gian bắt đầu bằng những giới từ như in, on, at, by, before, after, between … and …, …",
-          "Ex: in two hours, on August 2nd, at noon, by Friday, before lunch, after work, …"
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">3.1. Câu trả lời là cụm từ chỉ thời gian</span>",
+          "Đáp án thường chứa các cụm từ chỉ thời gian bắt đầu bằng những giới từ như <span style=\"color: #dc2626; font-weight: 700; font-style: italic\">in</span>, <span style=\"color: #dc2626; font-weight: 700; font-style: italic\">on</span>, <span style=\"color: #dc2626; font-weight: 700; font-style: italic\">at</span>, <span style=\"color: #dc2626; font-weight: 700; font-style: italic\">by</span>, <span style=\"color: #dc2626; font-weight: 700; font-style: italic\">before</span>, <span style=\"color: #dc2626; font-weight: 700; font-style: italic\">after</span>, <span style=\"color: #dc2626; font-weight: 700; font-style: italic\">between …</span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\"> </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">and</span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\"> …</span>, …",
+          "Ex: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">in two hours</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on August 2</span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">nd</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">at noon</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">by Friday</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">before lunch</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">after work</span>, …"
         ]
       },
       {
@@ -1054,8 +1054,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 115,
         "text": [
-          "3.2. Câu trả lời là mệnh đề trạng ngữ chỉ thời gian",
-          "Mệnh đề trạng ngữ chỉ thời gian thường bắt đầu bằng các liên từ chỉ thời gian như when (khi mà), after (sau khi), before (trước khi), as soon as (ngay khi), til/until (cho đến khi), ..."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">3.2. Câu trả lời là mệnh đề trạng ngữ chỉ thời gian</span>",
+          "Mệnh đề trạng ngữ chỉ thời gian thường bắt đầu bằng các liên từ chỉ thời gian như <span style=\"color: #0284c7; font-weight: 700\">when</span> (khi mà), <span style=\"color: #0284c7; font-weight: 700\">after</span><span style=\"color: #0284c7\"> </span>(sau khi), <span style=\"color: #0284c7; font-weight: 700\">before</span> (trước khi), <span style=\"color: #0284c7; font-weight: 700\">as soon as </span>(ngay khi), <span style=\"color: #0284c7; font-weight: 700\">til/until </span>(cho đến khi), ..."
         ]
       },
       {
@@ -1086,8 +1086,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 118,
         "text": [
-          "3.3. Câu trả lời gián tiếp",
-          "Khi người được hỏi không biết câu trả lời, không thể cung cấp thông tin cho người hỏi (I haven’t heard anything about that, I don’t remember, I don’t know, I didn’t even know, Nobody told me, …) hoặc sự việc chưa xảy ra (We haven’t decided yet). Ngoài ra, người nói có thể đưa ra gợi ý cho người hỏi (How about…?) và một vài trường hợp ngoại lệ khác."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">3.3. Câu trả lời gián tiếp</span>",
+          "Khi người được hỏi không biết câu trả lời, không thể cung cấp thông tin cho người hỏi (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I haven’t heard anything about that</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t remember</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I didn’t even know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Nobody told me</span>, …) hoặc sự việc chưa xảy ra (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">We haven’t decided yet</span>). Ngoài ra, người nói có thể đưa ra gợi ý cho người hỏi (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">How about…?</span>) và một vài <span style=\"font-weight: 700\">trường hợp ngoại lệ khác</span>."
         ]
       },
       {
@@ -1137,16 +1137,16 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 122,
         "text": [
-          "4. Questions with Why",
-          "Câu hỏi bắt đầu bằng từ để hỏi “Why” được dùng để hỏi về lý do, nguyên nhân hoặc mục đích của một sự việc nào đó."
+          "<span style=\"color: #dc2626; font-weight: 700\">4. Questions with Why</span>",
+          "Câu hỏi bắt đầu bằng từ để hỏi “Why” được dùng để hỏi về <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">lý do</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">nguyên nhân </span>hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">mục đích </span>của một sự việc nào đó."
         ]
       },
       {
         "type": "theory",
         "slide_index": 123,
         "text": [
-          "4.1. Câu trả lời có chứa các cụm chỉ nguyên nhân, lý do",
-          "Trong câu hỏi Why dùng để hỏi lý do, các phương án trả lời bắt đầu bằng các từ chỉ nguyên nhân, lý do như because, because of, due to, owing to, for,…"
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">4.1. Câu trả lời có chứa các cụm chỉ nguyên nhân, lý d</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">o</span>",
+          "Trong câu hỏi <span style=\"color: #0284c7; font-weight: 700\">Why</span> dùng để <span style=\"color: #0284c7; font-weight: 700\">hỏi lý do</span>, các phương án trả lời bắt đầu bằng các từ chỉ nguyên nhân, lý do như <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">because</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">because of</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">due to</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">owing to</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">for</span>,…"
         ]
       },
       {
@@ -1177,8 +1177,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 126,
         "text": [
-          "4.2. Câu trả lời ngụ ý chỉ nguyên nhân, lý do",
-          "Với xu hướng ra đề mới nhất, thì một số phương án dù đưa ra lý do nhưng đáp án vẫn KHÔNG CHỨA các từ because, because of, due to hay owing to, for,..."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">4.2. Câu trả lời ngụ ý chỉ nguyên nhân, lý do </span>",
+          "Với xu hướng ra đề mới nhất, thì một số phương án dù đưa ra lý do nhưng đáp án vẫn<span style=\"font-weight: 700\"> </span><span style=\"color: #dc2626; font-weight: 700\">KHÔNG CHỨA</span> các từ <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">because</span>,<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">because of</span>,<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">due to</span><span style=\"color: #0284c7\"> </span>hay<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">owing to</span>,<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">for</span>,..."
         ]
       },
       {
@@ -1209,8 +1209,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 129,
         "text": [
-          "4.3. Câu trả lời chỉ mục đích",
-          "Đáp án chỉ mục đích thường chứa cụm động từ nguyên mẫu có to (to + Vo), mang ý nghĩa là để làm gì đó."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">4.3. Câu trả lời chỉ mục đích  </span>",
+          "Đáp án chỉ mục đích thường chứa <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">cụm động từ nguyên mẫu có to </span><span style=\"color: #dc2626\">(to + V</span><span style=\"color: #dc2626\">o</span><span style=\"color: #dc2626\">)</span>, mang ý nghĩa là <span style=\"color: #dc2626\">để làm gì đó</span>."
         ]
       },
       {
@@ -1241,8 +1241,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 132,
         "text": [
-          "4.4. Câu trả lời gián tiếp",
-          "Câu trả lời đúng thỉnh thoảng sẽ ở dạng gián tiếp khi người được hỏi không biết chính xác câu trả lời. Thường trong đáp án sẽ thể hiện rõ không biết hoặc sẽ hỏi ngược lại người hỏi."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">4.4. Câu trả lời gián tiếp   </span>",
+          "Câu trả lời đúng thỉnh thoảng sẽ ở dạng gián tiếp khi người được hỏi không biết chính xác câu trả lời. Thường trong đáp án sẽ thể hiện rõ <span style=\"color: #dc2626; font-weight: 700\">không biết</span><span style=\"font-weight: 700\"> </span>hoặc sẽ <span style=\"color: #dc2626; font-weight: 700\">hỏi ngược lại người hỏi</span>."
         ]
       },
       {
@@ -1280,29 +1280,29 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 135,
         "text": [
-          "5. Questions with What",
-          "Câu hỏi bắt đầu What chủ yếu thuờng hỏi về những thông tin chi tiết, những thông tin này có thể liên quan tới chi phí, thời gian, quan điểm, màu sắc, thời tiết, hành động, ... Câu hỏi What có nhiều nghĩa khác nhau tùy vào những từ theo sau nó."
+          "<span style=\"color: #dc2626; font-weight: 700\">5. Questions with What</span>",
+          "Câu hỏi bắt đầu <span style=\"color: #dc2626; font-weight: 700\">What</span> chủ yếu thuờng hỏi về những thông tin chi tiết, những thông tin này có thể liên quan tới <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">chi phí</span>,<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">thời gian</span>,<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">quan điểm</span>,<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">màu sắc</span>,<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">thời tiết</span>,<span style=\"color: #0284c7\"> </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">hành động</span>, ... Câu hỏi <span style=\"color: #dc2626; font-weight: 700\">What</span> có nhiều nghĩa khác nhau tùy vào những từ theo sau nó."
         ]
       },
       {
         "type": "theory",
         "slide_index": 136,
         "text": [
-          "Examples with “What”",
-          "What time ... ? (Thời gian)",
-          "What size ... ? (Kích cỡ)",
-          "What color ...? (Màu sắc)",
-          "What’s the price of ...? (Giá cả)",
-          "What do you think of/ think about ...? (Ý kiến)",
-          "Note: Câu hỏi What sẽ KHÔNG trả lời bằng “Yes/No”, ngoại trừ câu hỏi What bout ...? (Đề nghị)"
+          "<span style=\"color: #7c3aed; font-weight: 700\">Examples with “What”</span>",
+          "<span style=\"font-weight: 700\">What time ... ? </span><span style=\"color: #dc2626\">(Thời gian)</span>",
+          "<span style=\"font-weight: 700\">What size ... ? </span><span style=\"color: #dc2626\">(Kích cỡ)</span>",
+          "<span style=\"font-weight: 700\">What color ...? </span><span style=\"color: #dc2626\">(Màu sắc)</span>",
+          "<span style=\"font-weight: 700\">What’s the price of ...? </span><span style=\"color: #dc2626\">(Giá cả)</span>",
+          "<span style=\"font-weight: 700\">What do you think of/ think about ...? </span><span style=\"color: #dc2626\">(Ý kiến)</span>",
+          "<span style=\"color: #7c3aed; font-weight: 700\">Note: </span>Câu hỏi <span style=\"color: #dc2626; font-weight: 700\">What</span> sẽ <span style=\"font-weight: 700\">KHÔNG</span> trả lời bằng <span style=\"color: #dc2626\">“</span><span style=\"color: #dc2626; font-weight: 700\">Yes</span><span style=\"color: #dc2626\">/</span><span style=\"color: #dc2626; font-weight: 700\">No</span><span style=\"color: #dc2626\">”</span>, ngoại trừ câu hỏi <span style=\"color: #dc2626; font-weight: 700\">What bout ...?</span><span style=\"font-weight: 700\"> </span>(Đề nghị)"
         ]
       },
       {
         "type": "theory",
         "slide_index": 137,
         "text": [
-          "5.1. Câu trả lời cho câu hỏi về chi phí",
-          "Các câu hỏi về chi phí thường chứa các từ khóa như: price, charge, fare, fee, cost, ... Câu trả lời thuờng là một đơn vị tiền tệ cụ thể như: dollar, euro, pound, ..."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">5.1. Câu trả lời cho câu hỏi về chi phí    </span>",
+          "Các câu hỏi về chi phí thường chứa các từ khóa như: <span style=\"color: #dc2626; font-weight: 700\">price</span>,<span style=\"color: #dc2626\"> </span><span style=\"color: #dc2626; font-weight: 700\">charge</span>,<span style=\"color: #dc2626\"> </span><span style=\"color: #dc2626; font-weight: 700\">fare</span>,<span style=\"color: #dc2626\"> </span><span style=\"color: #dc2626; font-weight: 700\">fee</span>,<span style=\"color: #dc2626\"> </span><span style=\"color: #dc2626; font-weight: 700\">cost</span>, ... Câu trả lời thuờng là một đơn vị tiền tệ cụ thể như: <span style=\"color: #dc2626; font-weight: 700\">dollar</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">euro</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">pound</span><span style=\"color: #dc2626\">, ...</span>"
         ]
       },
       {
@@ -1333,8 +1333,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 140,
         "text": [
-          "5.2. Câu trả lời cho câu hỏi về quan điểm",
-          "Câu hỏi “What do you think of/ think about ...?” thuờng dùng để hỏi về quan điểm, ý kiến của ai đó. Câu trả lời cho câu hỏi này rất đa dạng nên người nghe bắt buộc phải hiểu được nội dung của câu trả lời thì mới đưa ra đáp án chính xác được."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">5.2. Câu trả lời cho câu hỏi về quan điểm     </span>",
+          "Câu hỏi <span style=\"color: #dc2626\">“</span><span style=\"color: #dc2626; font-weight: 700\">What do you think of/ think about ...?</span><span style=\"color: #dc2626\">”</span> thuờng dùng để hỏi về quan điểm, ý kiến của ai đó. Câu trả lời cho câu hỏi này rất đa dạng nên người nghe bắt buộc phải <span style=\"color: #dc2626; font-weight: 700\">hiểu được nội dung</span><span style=\"font-weight: 700\"> </span>của câu trả lời thì mới đưa ra đáp án chính xác được."
         ]
       },
       {
@@ -1365,25 +1365,25 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 143,
         "text": [
-          "5.3. Một số dạng câu hỏi khác",
-          "Câu hỏi về thời gian thường là “What time ...?” và đáp án trả lời sẽ là một mốc thời gian chính xác (at 10 a.m, at 8 o’clock, at 7 p.m,...) hoặc cũng có thể là những cụm từ chỉ thời gian (after the meeting, in the moring, before lunch, ...).",
-          "Câu hỏi về màu sắc thuờng là “What color ...?” và đáp án trả lời sẽ chứa các từ chỉ màu sắc như red, yellow, blue, black, green, brown, white, gray, orange, ..."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">5.3. Một số dạng câu hỏi khác      </span>",
+          "Câu hỏi về thời gian thường là <span style=\"color: #dc2626\">“</span><span style=\"color: #dc2626; font-weight: 700\">What time ...?</span><span style=\"color: #dc2626\">”</span> và đáp án trả lời sẽ là một mốc thời gian chính xác (<span style=\"color: #dc2626; font-weight: 700\">at 10 a.m</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">at 8 o’clock</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">at 7 p.m</span><span style=\"color: #dc2626\">,...</span>) hoặc cũng có thể là những cụm từ chỉ thời gian (<span style=\"color: #dc2626; font-weight: 700\">after the meeting</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">in the moring</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">before lunch</span><span style=\"color: #dc2626\">, ...</span>).",
+          "Câu hỏi về màu sắc thuờng là <span style=\"color: #dc2626\">“</span><span style=\"color: #dc2626; font-weight: 700\">What color ...?</span><span style=\"color: #dc2626\">”</span> và đáp án trả lời sẽ chứa các từ chỉ màu sắc như <span style=\"color: #dc2626; font-weight: 700\">red</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">yellow</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">blue</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">black</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">green</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">brown</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">white</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">gray</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">orange</span><span style=\"color: #dc2626\">, ... </span>"
         ]
       },
       {
         "type": "theory",
         "slide_index": 144,
         "text": [
-          "Câu hỏi về thời tiết thừờng là “What’s the weather ...?” và đáp án trả lời sẽ chứa các tính từ mô tả thời tiết như rainy, cloudy, sunny, humid, snowy, windy, stormy, hot, cool, brisk,…",
-          "Câu hỏi về cách thức thường có dạng: “What’s the best / fastest / quickest / shortest way to…?” dùng để hỏi cách tốt nhất để làm một việc, thường là di chuyển hoặc liên lạc. Vì vậy, câu trả lời có thể là phương tiện giao thông (bus, taxi, subway, shuttle bus) hoặc phương thức liên lạc (phone, email, message, …)."
+          "Câu hỏi về thời tiết thừờng là “<span style=\"color: #dc2626; font-weight: 700\">What’s the weather ...?</span>” và đáp án trả lời sẽ chứa các tính từ mô tả thời tiết như <span style=\"color: #dc2626; font-weight: 700\">rainy</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">cloudy</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">sunny</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">humid</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">snowy</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">windy</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">stormy</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">hot</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">cool</span><span style=\"color: #dc2626\">, </span><span style=\"color: #dc2626; font-weight: 700\">brisk</span><span style=\"color: #dc2626\">,…</span>",
+          "Câu hỏi về <span style=\"font-weight: 700\">cách thức</span> thường có dạng: “<span style=\"color: #dc2626; font-weight: 700\">What’s the best / fastest / quickest / shortest way to…?</span>” dùng để hỏi <span style=\"font-weight: 700\">cách tốt nhất để làm một việc</span>, thường là <span style=\"font-weight: 700\">di chuyển hoặc liên lạc</span>. Vì vậy, câu trả lời có thể là <span style=\"font-weight: 700\">phương tiện giao thông</span> (<span style=\"font-style: italic\">bus, taxi, subway, shuttle bus</span>) hoặc <span style=\"font-weight: 700\">phương thức liên lạc</span> (<span style=\"font-style: italic\">phone, email, message</span>, …)."
         ]
       },
       {
         "type": "theory",
         "slide_index": 145,
         "text": [
-          "Câu hỏi về vấn đề thường có dạng “What’s the problem with…?”, “What’s wrong with…?”, “What’s the matter with…?”, hoặc “What happened to…?”. Cấu trúc này dùng để hỏi sự cố hoặc tình trạng không bình thường của một người hoặc một vật. Vì vậy, câu trả lời thường mô tả vấn đề, nguyên nhân hoặc tình trạng đang xảy ra.",
-          "Câu hỏi về loại / thể loại thường có dạng “What type of…?”, “What kind of…?”, “What sort of…?”. Cấu trúc này dùng để hỏi loại hoặc đặc điểm của một sự vật. Vì vậy, câu trả lời thường là tên của một loại hoặc nhóm cụ thể."
+          "Câu hỏi về <span style=\"font-weight: 700\">vấn đề</span> thường có dạng “<span style=\"color: #dc2626; font-weight: 700\">What’s the problem with…?</span>”, “<span style=\"color: #dc2626; font-weight: 700\">What’s wrong with…?</span>”, “<span style=\"color: #dc2626; font-weight: 700\">What’s the matter with…?</span>”, hoặc “<span style=\"color: #dc2626; font-weight: 700\">What happened to…?</span>”. Cấu trúc này dùng để hỏi <span style=\"font-weight: 700\">sự cố hoặc tình trạng không bình thường</span> của một người hoặc một vật. Vì vậy, câu trả lời thường <span style=\"font-weight: 700\">mô tả vấn đề, nguyên nhân hoặc tình trạng đang xảy ra</span>.",
+          "Câu hỏi về <span style=\"font-weight: 700\">loại / thể loại</span> thường có dạng “<span style=\"color: #dc2626; font-weight: 700\">What type of…?</span>”, “<span style=\"color: #dc2626; font-weight: 700\">What kind of…?</span>”, “<span style=\"color: #dc2626; font-weight: 700\">What sort of…?</span>”. Cấu trúc này dùng để hỏi <span style=\"font-weight: 700\">loại hoặc đặc điểm của một sự vật</span>. Vì vậy, câu trả lời thường là <span style=\"font-weight: 700\">tên của một loại hoặc nhóm cụ thể</span>."
         ]
       }
     ]
@@ -1397,16 +1397,16 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 146,
         "text": [
-          "6. Questions with How",
-          "Các câu hỏi bắt đầu bằng How thường dùng để hỏi về cách thức hoặc phương tiện thực hiện một việc. Ngoài ra, How còn kết hợp với các từ khác để tạo thành những dạng câu hỏi cụ thể, như How much / many (số lượng), How far (khoảng cách), How long (thời gian), và How often (mức độ thường xuyên)."
+          "<span style=\"color: #dc2626; font-weight: 700\">6. Questions with How</span>",
+          "Các câu hỏi bắt đầu bằng <span style=\"color: #dc2626; font-weight: 700\">How</span> thường dùng để hỏi về <span style=\"font-weight: 700\">cách thức hoặc phương tiện thực hiện một việc</span>. Ngoài ra, <span style=\"color: #dc2626; font-weight: 700\">How</span> còn kết hợp với các từ khác để tạo thành những dạng câu hỏi cụ thể, như <span style=\"color: #dc2626; font-weight: 700\">How much </span><span style=\"font-weight: 700\">/ </span><span style=\"color: #dc2626; font-weight: 700\">many</span> (số lượng), <span style=\"color: #dc2626; font-weight: 700\">How far </span>(khoảng cách), <span style=\"color: #dc2626; font-weight: 700\">How long</span><span style=\"color: #dc2626\"> </span>(thời gian), và <span style=\"color: #dc2626; font-weight: 700\">How often</span><span style=\"color: #dc2626\"> </span>(mức độ thường xuyên)."
         ]
       },
       {
         "type": "theory",
         "slide_index": 147,
         "text": [
-          "6.1. Câu trả lời về cách thức\t(How)",
-          "Câu hỏi về cách thức thường hỏi về phương tiện đi lại hoặc cách để làm một việc. Với câu hỏi về phương tiện di chuyển, câu hỏi thường chứa các cụm như get to + địa điểm, get here, get there, go / come / commute to work, và câu trả lời thường là drive my car, ride my bike, take a bus / taxi, by train / bus / coach / plane, on foot, get a lift, v.v. Ngoài ra, câu hỏi cũng có thể yêu cầu cách thực hiện một việc, chẳng hạn như hướng dẫn sử dụng máy móc / thiết bị hoặc cách hoàn thành một nhiệm vụ, và câu trả lời thường mô tả cách thực hiện hoặc các bước cần làm."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">6.1. Câu trả lời về cách thức</span><span style=\"color: #7c3aed; font-style: italic\">\t</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">(How)</span>",
+          "Câu hỏi về <span style=\"font-weight: 700\">cách thức</span> thường hỏi về <span style=\"font-weight: 700\">phương tiện đi lại hoặc cách để làm một việc</span>. Với câu hỏi về phương tiện di chuyển, câu hỏi thường chứa các cụm như <span style=\"color: #dc2626; font-weight: 700; font-style: italic\">get to + địa điểm</span><span style=\"font-style: italic\">, </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">get here</span><span style=\"font-style: italic\">, </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">get there</span><span style=\"font-style: italic\">, </span><span style=\"color: #dc2626; font-weight: 700; font-style: italic\">go / come / commute to work</span>, và câu trả lời thường là <span style=\"color: #00B050; font-weight: 700; font-style: italic\">drive my car</span><span style=\"font-style: italic\">, </span><span style=\"color: #00B050; font-weight: 700; font-style: italic\">ride my bike</span><span style=\"font-style: italic\">, </span><span style=\"color: #00B050; font-weight: 700; font-style: italic\">take a bus / taxi</span><span style=\"font-style: italic\">, </span><span style=\"color: #00B050; font-weight: 700; font-style: italic\">by train / bus / coach / plane</span><span style=\"font-style: italic\">, </span><span style=\"color: #00B050; font-weight: 700; font-style: italic\">on foot</span><span style=\"font-style: italic\">, </span><span style=\"color: #00B050; font-weight: 700; font-style: italic\">get a lift</span>, v.v. Ngoài ra, câu hỏi cũng có thể yêu cầu <span style=\"font-weight: 700\">cách thực hiện một việc</span>, chẳng hạn như <span style=\"font-weight: 700\">hướng dẫn sử dụng máy móc / thiết bị hoặc cách hoàn thành một nhiệm vụ</span>, và câu trả lời thường <span style=\"font-weight: 700\">mô tả cách thực hiện hoặc các bước cần làm</span>."
         ]
       },
       {
@@ -1461,8 +1461,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 152,
         "text": [
-          "6.2. Câu trả lời khoảng thời gian (How long)",
-          "Câu hỏi How long thường dùng để hỏi về khoảng thời gian (bao lâu). Ngoài ra, nó cũng có thể dùng để hỏi về độ dài của một cái gì đó. Đáp án đúng thường bắt đầu bằng about (khoảng), for (trong bao lâu), approximately (khoảng chừng), more than (nhiều hơn), less than (ít hơn), ..."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">6.2. Câu trả lời khoảng thời gian (How long)</span>",
+          "Câu hỏi <span style=\"color: #dc2626; font-weight: 700\">How long </span>thường dùng để hỏi về <span style=\"color: #dc2626; font-weight: 700\">khoảng thời gian</span><span style=\"font-weight: 700\"> </span>(<span style=\"font-weight: 700\">bao lâu</span>). Ngoài ra, nó cũng có thể dùng để hỏi về độ dài của một cái gì đó. Đáp án đúng thường bắt đầu bằng <span style=\"color: #dc2626; font-weight: 700\">about</span> (<span style=\"font-weight: 700\">khoảng</span>), <span style=\"color: #dc2626; font-weight: 700\">for</span> (<span style=\"font-weight: 700\">trong bao lâu</span>), <span style=\"color: #dc2626; font-weight: 700\">approximately</span> (<span style=\"font-weight: 700\">khoảng chừng</span>), <span style=\"color: #dc2626; font-weight: 700\">more than </span>(<span style=\"font-weight: 700\">nhiều hơn</span>), <span style=\"color: #dc2626; font-weight: 700\">less than </span>(<span style=\"font-weight: 700\">ít hơn</span>), ..."
         ]
       },
       {
@@ -1493,8 +1493,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 155,
         "text": [
-          "6.3. Câu trả lời về số lượng (How many)",
-          "Câu hỏi How many thường hỏi về số lượng. Những đáp án chính xác thường bắt đầu bằng at least (ít nhất), roughly (khoảng chừng), about (khoảng) hoặc cũng có thể là những đáp án thể hiện sự không chắc chắn như I can’t say for sure, I don’t know, ..."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">6.3. Câu</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">trả</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">lời</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">về</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">số</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">lượng</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> (How many)</span>",
+          "Câu hỏi <span style=\"color: #dc2626; font-weight: 700\">How many </span>thường hỏi về số lượng. Những đáp án chính xác thường bắt đầu bằng <span style=\"color: #dc2626; font-weight: 700\">at least </span>(<span style=\"font-weight: 700\">ít nhất</span>), <span style=\"color: #dc2626; font-weight: 700\">roughly</span> (<span style=\"font-weight: 700\">khoảng chừng</span>), <span style=\"color: #dc2626; font-weight: 700\">about</span> (<span style=\"font-weight: 700\">khoảng</span>) hoặc cũng có thể là những đáp án thể hiện sự không chắc chắn như <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I can’t say for sure</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know</span>, ..."
         ]
       },
       {
@@ -1525,8 +1525,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 158,
         "text": [
-          "6.4. Câu trả lời về giá cả (How much)",
-          "Câu hỏi bắt đầu bằng How much được dùng để hỏi về giá cả của một món đồ hoặc dịch vụ. Những đáp án chính xác thường chứ các đơn vị tiền tệ như euro, dollar, pound hoặc cũng có thể là I don’t know, I’m not sure, …"
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">6.4. </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">Câu</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">trả</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">lời</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">về</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">giá</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">cả</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> (How much)</span>",
+          "Câu hỏi bắt đầu bằng <span style=\"color: #dc2626; font-weight: 700\">How much </span>được dùng để hỏi về <span style=\"color: #dc2626; font-weight: 700\">giá cả của một món đồ hoặc dịch vụ</span>. Những đáp án chính xác thường chứ các đơn vị tiền tệ như <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">euro</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">dollar</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">pound</span><span style=\"color: #dc2626\"> </span>hoặc cũng có thể là <span style=\"font-weight: 700; font-style: italic\">I don’t know</span>, <span style=\"font-weight: 700; font-style: italic\">I’m not sure</span>, …"
         ]
       },
       {
@@ -1557,9 +1557,9 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 161,
         "text": [
-          "6.5. Một số dạng câu hỏi khác",
-          "Câu hỏi How often hỏi về mức độ thường xuyên của hoạt động. Các đáp án trả lời có thể chứa những trạng từ chỉ tần suất như once, twice, three times, ... a week/month/year.",
-          "Câu hỏi How far hỏi về khoảng cách giữa hai địa điểm. Các đáp án trả lời có thể chứa những đơn vị về khoảng cách như mile, meter, kilometer, ..."
+          "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">6.5. Một</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">số</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">dạng</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">câu</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">hỏi</span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\"> </span><span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">khác</span>",
+          "Câu hỏi <span style=\"color: #dc2626; font-weight: 700\">How often </span>hỏi về <span style=\"color: #dc2626; font-weight: 700\">mức độ thường xuyên </span>của hoạt động. Các đáp án trả lời có thể chứa những trạng từ chỉ tần suất như <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">once</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">twice</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">three times</span>, ... <span style=\"color: #0284c7; font-weight: 700\">a week/month/year</span>.",
+          "Câu hỏi <span style=\"color: #dc2626; font-weight: 700\">How far </span>hỏi về <span style=\"color: #dc2626; font-weight: 700\">khoảng cách giữa hai địa điểm</span>. Các đáp án trả lời có thể chứa những đơn vị về khoảng cách như <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">mile</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">meter</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">kilometer</span>, ..."
         ]
       },
       {
@@ -1590,8 +1590,8 @@ window.part02Data = [
         "type": "theory",
         "slide_index": 164,
         "text": [
-          "II. YES/NO QUESTIONS",
-          "(CÂU HỎI CÓ HOẶC KHÔNG)"
+          "<span style=\"color: #dc2626; font-weight: 700\">II. YES/NO QUESTIONS</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">(</span><span style=\"color: #0284c7; font-weight: 700\">CÂU HỎI CÓ HOẶC KHÔNG</span><span style=\"color: #0284c7; font-weight: 700\">)</span>"
         ]
       }
     ]

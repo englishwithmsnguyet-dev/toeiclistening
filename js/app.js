@@ -2908,19 +2908,25 @@ document.addEventListener("DOMContentLoaded", () => {
                     box-shadow: 0 2px 8px rgba(0,0,0,0.03); margin-bottom: 24px;
                 }
                 .p2-theory-title {
-                    font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-bottom: 18px; display: flex; align-items: center; gap: 12px;
+                    font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
                 }
                 .p2-theory-title .icon {
-                    width: 36px; height: 36px; background: #f0fdf4; color: #16a34a;
+                    width: 38px; height: 38px; background: #eff6ff; color: #2563eb;
                     border-radius: 10px; display: flex; align-items: center; justify-content: center;
-                    border: 1px solid #dcfce7;
+                    border: 1px solid #dbeafe;
                 }
                 .p2-theory-content { display: flex; flex-direction: column; gap: 10px; }
-                .p2-text-line { font-size: 1.08rem; color: #334155; line-height: 1.7; margin: 0; }
+                .p2-text-line { font-size: 1.12rem; color: #334155; line-height: 1.8; margin: 4px 0; }
+                .p2-subheading-line {
+                    font-size: 1.18rem; font-weight: 800; color: #6d28d9;
+                    background: #f5f3ff; border-left: 4px solid #7c3aed;
+                    padding: 10px 16px; border-radius: 8px; margin: 16px 0 8px 0;
+                    box-shadow: 0 1px 4px rgba(124, 58, 237, 0.06);
+                }
                 .p2-text-highlight {
                     color: #0369a1; font-weight: 600; background: #f0f9ff;
                     padding: 14px 18px; border-radius: 12px; border-left: 4px solid #0284c7;
-                    font-size: 1.08rem; line-height: 1.7; margin: 4px 0;
+                    font-size: 1.1rem; line-height: 1.8; margin: 8px 0;
                 }
                 
                 /* IN-LINE VOCABULARY BOX */
@@ -3059,10 +3065,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     let listHtml = '';
                     contentLines.forEach(line => {
-                        if (line.startsWith('👉') || line.toLowerCase().includes('ví dụ')) {
+                        const rawText = line.replace(/<[^>]+>/g, '').trim();
+                        if (line.startsWith('👉') || rawText.toLowerCase().includes('ví dụ') || rawText.toLowerCase().includes('ví dụ:')) {
                             listHtml += `<div class="p2-text-highlight">${line.replace('👉', '').trim()}</div>`;
                         } else if (line.trim().toLowerCase().startsWith('<img')) {
                             listHtml += line;
+                        } else if (/^\d+\.\d+/.test(rawText) || line.includes('#7c3aed') || line.includes('#7030A0')) {
+                            listHtml += `<div class="p2-subheading-line">${line}</div>`;
                         } else {
                             listHtml += `<p class="p2-text-line">${line}</p>`;
                         }
