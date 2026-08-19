@@ -2908,12 +2908,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     box-shadow: 0 2px 8px rgba(0,0,0,0.03); margin-bottom: 24px;
                 }
                 .p2-theory-title {
-                    font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 20px; display: flex; align-items: center; gap: 12px;
+                    font-size: 1.3rem; font-weight: 800; color: #0f172a; margin-bottom: 20px; display: flex; align-items: flex-start; gap: 14px;
                 }
                 .p2-theory-title .icon {
-                    width: 38px; height: 38px; background: #eff6ff; color: #2563eb;
+                    width: 38px; height: 38px; min-width: 38px; flex-shrink: 0; background: #eff6ff; color: #2563eb;
                     border-radius: 10px; display: flex; align-items: center; justify-content: center;
-                    border: 1px solid #dbeafe;
+                    border: 1px solid #dbeafe; margin-top: 2px;
+                }
+                .p2-theory-title .p2-title-text {
+                    flex: 1; font-size: 1.25rem; font-weight: 800; color: #0f172a; line-height: 1.5;
                 }
                 .p2-theory-content { display: flex; flex-direction: column; gap: 10px; }
                 .p2-text-line { font-size: 1.12rem; color: #334155; line-height: 1.8; margin: 4px 0; }
@@ -3053,11 +3056,22 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     let titleHtml = '';
                     let contentLines = item.text;
-                    if (!item.text[0].trim().toLowerCase().startsWith('<img')) {
+                    
+                    const firstLine = (item.text[0] || '').trim();
+                    const rawFirstLine = firstLine.replace(/<[^>]+>/g, '').trim();
+                    const isMainTitle = (/^\d+(\.\d+)?\./.test(rawFirstLine) || /^[A-Z\s]{4,}/.test(rawFirstLine) || firstLine.includes('#dc2626') || firstLine.includes('#7c3aed'))
+                                        && !rawFirstLine.startsWith('+')
+                                        && !rawFirstLine.startsWith('-')
+                                        && !rawFirstLine.startsWith('👉')
+                                        && !rawFirstLine.toLowerCase().startsWith('ex:')
+                                        && !rawFirstLine.toLowerCase().startsWith('ví dụ')
+                                        && !rawFirstLine.toLowerCase().startsWith('<img');
+                    
+                    if (isMainTitle) {
                         titleHtml = `
                             <div class="p2-theory-title">
                                 <div class="icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg></div>
-                                ${item.text[0]}
+                                <div class="p2-title-text">${firstLine}</div>
                             </div>
                         `;
                         contentLines = item.text.slice(1);
