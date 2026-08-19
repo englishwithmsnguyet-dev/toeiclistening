@@ -450,78 +450,97 @@ window.part02Data = [
         ]
       },
       {
-        "type": "theory",
+        "type": "table",
         "slide_index": 58,
-        "text": [
-          "PERSONAL PRONOUNS (ĐẠI TỪ NHÂN XƯNG)"
+        "title": "BẢNG ĐẠI TỪ NHÂN XƯNG (PERSONAL PRONOUNS)",
+        "headers": [
+          "Chủ từ (Subject)",
+          "Tân ngữ / Túc từ (Object)",
+          "Nghĩa tiếng Việt"
+        ],
+        "rows": [
+          {
+            "col1": "I",
+            "col2": "Me",
+            "vi": "Tôi"
+          },
+          {
+            "col1": "You",
+            "col2": "You",
+            "vi": "Bạn / Các bạn"
+          },
+          {
+            "col1": "We",
+            "col2": "Us",
+            "vi": "Chúng tôi / Chúng ta"
+          },
+          {
+            "col1": "They",
+            "col2": "Them",
+            "vi": "Họ / Chúng nó"
+          },
+          {
+            "col1": "He",
+            "col2": "Him",
+            "vi": "Anh ấy / Ông ấy"
+          },
+          {
+            "col1": "She",
+            "col2": "Her",
+            "vi": "Cô ấy / Bà ấy"
+          },
+          {
+            "col1": "It",
+            "col2": "It",
+            "vi": "Nó"
+          }
         ]
       },
       {
-        "type": "theory",
-        "slide_index": 59,
-        "text": [
-          "SUBJECT (CHỦ TỪ)",
-          "OBJECT (TÚC TỪ)",
-          "I",
-          "ME",
-          "YOU",
-          "YOU",
-          "WE",
-          "US",
-          "THEY",
-          "THEM"
-        ]
-      },
-      {
-        "type": "theory",
-        "slide_index": 60,
-        "text": [
-          "SUBJECT (CHỦ TỪ)",
-          "OBJECT (TÚC TỪ)",
-          "HE",
-          "HIM",
-          "SHE",
-          "HER",
-          "IT",
-          "IT"
-        ]
-      },
-      {
-        "type": "theory",
+        "type": "table",
         "slide_index": 61,
-        "text": [
-          "OTHER PRONOUNS",
-          "(ĐẠI TỪ KHÁC)"
-        ]
-      },
-      {
-        "type": "theory",
-        "slide_index": 62,
-        "text": [
-          "TÍNH TỪ SỞ HỮU",
-          "ĐẠI TỪ SỞ HỮU",
-          "MY",
-          "MINE",
-          "YOUR",
-          "YOURS",
-          "OUR",
-          "OURS",
-          "THEIR",
-          "THEIRS"
-        ]
-      },
-      {
-        "type": "theory",
-        "slide_index": 63,
-        "text": [
-          "TÍNH TỪ SỞ HỮU",
-          "ĐẠI TỪ SỞ HỮU",
-          "HIS",
-          "HIS",
-          "HER",
-          "HERS",
-          "IT",
-          "ITS"
+        "title": "BẢNG TÍNH TỪ & ĐẠI TỪ SỞ HỮU (POSSESSIVE PRONOUNS & ADJECTIVES)",
+        "headers": [
+          "Tính từ sở hữu (Possessive Adj)",
+          "Đại từ sở hữu (Possessive Pronoun)",
+          "Nghĩa tiếng Việt"
+        ],
+        "rows": [
+          {
+            "col1": "My",
+            "col2": "Mine",
+            "vi": "Của tôi"
+          },
+          {
+            "col1": "Your",
+            "col2": "Yours",
+            "vi": "Của bạn / Của các bạn"
+          },
+          {
+            "col1": "Our",
+            "col2": "Ours",
+            "vi": "Của chúng tôi / Của chúng ta"
+          },
+          {
+            "col1": "Their",
+            "col2": "Theirs",
+            "vi": "Của họ / Của chúng nó"
+          },
+          {
+            "col1": "His",
+            "col2": "His",
+            "vi": "Của anh ấy / Của ông ấy"
+          },
+          {
+            "col1": "Her",
+            "col2": "Hers",
+            "vi": "Của cô ấy / Của bà ấy"
+          },
+          {
+            "col1": "Its",
+            "col2": "Its",
+            "vi": "Của nó"
+          }
         ]
       },
       {

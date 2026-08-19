@@ -2949,6 +2949,32 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 .p2-vocab-tts:hover { opacity: 1; transform: scale(1.2); }
                 
+                /* IN-LINE PRONOUNS / CUSTOM TABLE CARD */
+                .p2-table-card {
+                    background: #ffffff; border: 1.5px solid #c7d2fe; padding: 24px 28px; border-radius: 16px;
+                    margin-bottom: 24px; box-shadow: 0 4px 14px rgba(99, 102, 241, 0.05); overflow-x: auto;
+                }
+                .p2-table-header {
+                    font-size: 1.15rem; font-weight: 800; color: #4338ca; margin-bottom: 16px;
+                    display: flex; align-items: center; gap: 10px; text-transform: uppercase; letter-spacing: 0.5px;
+                }
+                .p2-custom-table {
+                    width: 100%; border-collapse: separate; border-spacing: 0; border-radius: 12px; overflow: hidden;
+                    border: 1px solid #e2e8f0; font-size: 1.05rem;
+                }
+                .p2-custom-table th {
+                    background: #f1f5f9; color: #334155; font-weight: 700; padding: 12px 18px;
+                    text-align: left; border-bottom: 2px solid #cbd5e1;
+                }
+                .p2-custom-table td {
+                    padding: 12px 18px; border-bottom: 1px solid #f1f5f9; color: #334155; vertical-align: middle;
+                }
+                .p2-custom-table tr:last-child td { border-bottom: none; }
+                .p2-custom-table tr:hover td { background: #f8fafc; }
+                .p2-table-word {
+                    font-weight: 700; color: #0284c7; display: inline-flex; align-items: center; gap: 6px;
+                }
+                
                 /* IN-LINE EXAMPLE CARD */
                 .p2-ex-card {
                     background: #ffffff; border: 2px solid #e0e7ff; padding: 28px 32px; border-radius: 16px;
@@ -3046,6 +3072,41 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="p2-theory-card">
                             ${titleHtml}
                             <div class="p2-theory-content">${listHtml}</div>
+                        </div>
+                    `;
+                } else if (item.type === 'table') {
+                    let rowsHtml = item.rows.map(r => `
+                        <tr>
+                            <td>
+                                <span class="p2-table-word">${r.col1}</span>
+                                <span class="p2-vocab-tts" onclick="playTTS(this.dataset.text, event)" data-text="${r.col1.replace(/"/g, '&quot;')}" title="Nghe đọc">🔊</span>
+                            </td>
+                            <td>
+                                <span class="p2-table-word">${r.col2}</span>
+                                <span class="p2-vocab-tts" onclick="playTTS(this.dataset.text, event)" data-text="${r.col2.replace(/"/g, '&quot;')}" title="Nghe đọc">🔊</span>
+                            </td>
+                            <td style="color: #334155; font-weight: 500;">${r.vi}</td>
+                        </tr>
+                    `).join('');
+                    
+                    html += `
+                        <div class="p2-table-card">
+                            <div class="p2-table-header">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM3 9h18M3 15h18M9 3v18M15 3v18"/></svg>
+                                ${item.title}
+                            </div>
+                            <table class="p2-custom-table">
+                                <thead>
+                                    <tr>
+                                        <th>${item.headers[0]}</th>
+                                        <th>${item.headers[1]}</th>
+                                        <th>${item.headers[2]}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${rowsHtml}
+                                </tbody>
+                            </table>
                         </div>
                     `;
                 } else if (item.type === 'vocab_group') {
