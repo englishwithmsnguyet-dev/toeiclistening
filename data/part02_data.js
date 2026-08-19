@@ -737,7 +737,7 @@ window.part02Data = [
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.2. Câu trả lời là cụm giới từ chỉ nơi chốn</span>",
           "+ giới từ <span style=\"color: #dc2626; font-weight: 700\">on</span>: ở trên, bên trên",
-          "Ex: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on my desk</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on the third floor</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on Nguyen Ngoc Trai street</span>, …"
+          "Ex: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on my desk</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on the third floor</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on Main Street</span>, …"
         ]
       },
       {
