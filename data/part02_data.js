@@ -418,34 +418,6 @@ window.part02Data = [
             "en": "no one - nobody",
             "ipa": "/ˈnəʊ wʌn/ - /ˈnəʊbədi/",
             "vi": "KHÔNG AI"
-          },
-          {
-            "type": "vocab",
-            "slide_index": 54,
-            "en": "everything",
-            "ipa": "/ˈevriθɪŋ/",
-            "vi": "MỌI THỨ"
-          },
-          {
-            "type": "vocab",
-            "slide_index": 55,
-            "en": "something",
-            "ipa": "/ˈsʌmθɪŋ/",
-            "vi": "MỘT THỨ/ĐIỀU GÌ ĐÓ"
-          },
-          {
-            "type": "vocab",
-            "slide_index": 56,
-            "en": "anything",
-            "ipa": "/ˈeniθɪŋ/",
-            "vi": "BẤT CỨ THỨ GÌ"
-          },
-          {
-            "type": "vocab",
-            "slide_index": 57,
-            "en": "nothing",
-            "ipa": "/ˈnʌθɪŋ/",
-            "vi": "không thứ gì/ điều gì"
           }
         ]
       },
