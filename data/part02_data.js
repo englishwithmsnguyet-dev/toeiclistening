@@ -527,11 +527,11 @@ window.part02Data = [
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1.5. Câu trả lời gián tiếp</span>",
           "Đôi khi trong nhiều trường hợp câu trả lời diễn đạt ý nghĩa không biết rõ, không chắc chắn, ví dụ như:",
-          "<span style=\"color: #0284c7; font-style: italic\">I don’t know/ I don’t really know/ I have no idea/ I don’t have a clue/...</span>",
-          "<span style=\"color: #0284c7; font-style: italic\">I am not sure/ Isn’t it allocated to….?/...</span>",
-          "<span style=\"color: #0284c7; font-style: italic\">I can’t remember / I don’t recall / …</span>",
-          "<span style=\"color: #0284c7; font-style: italic\">Let me find out/ Let me check out/ Let me ask... </span>",
-          "<span style=\"color: #0284c7; font-style: italic\">S + haven’t/ hasn’t been decided/ chosen/ assigned/ confirmed/ announced/ finalized/ selected yet... </span>"
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I don’t know / I don’t really know / I have no idea / I don’t have a clue</span>: <em>Tôi không biết / Tôi không có manh mối nào / Tôi không rõ...</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I am not sure / Isn’t it allocated to….?</span>: <em>Tôi không chắc chắn / Chẳng phải nó được phân công cho...?</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I can’t remember / I don’t recall / …</span>: <em>Tôi không thể nhớ ra / Tôi không nhớ...</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">Let me find out / Let me check out / Let me ask...</span>: <em>Để tôi tìm hiểu / Để tôi kiểm tra lại / Để tôi đi hỏi...</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">S + haven’t / hasn’t been decided / chosen / assigned / confirmed / announced / finalized / selected yet...</span>: <em>...vẫn chưa được quyết định / chọn / phân công / xác nhận / công bố / hoàn tất lựa chọn...</em>"
         ]
       },
       {
@@ -899,7 +899,11 @@ window.part02Data = [
         "slide_index": 106,
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.4. Câu trả lời không thể hiện một nơi chốn cụ thể:</span>",
-          "Trong một số trường hợp, câu trả lời cho câu hỏi về <span style=\"font-weight: 700\">địa điểm</span> không trực tiếp nêu ra một nơi chốn cụ thể. Thay vào đó, người nói có thể <span style=\"font-weight: 700\">nhắc đến một người khác chịu trách nhiệm</span>, <span style=\"font-weight: 700\">đưa ra một đề xuất hoặc gợi ý</span>, hoặc <span style=\"font-weight: 700\">đặt lại một câu hỏi để làm rõ thông tin</span>. Ngoài ra, câu trả lời cũng có thể được diễn đạt <span style=\"font-weight: 700\">gián tiếp</span>, thể hiện sự không chắc chắn hoặc cần kiểm tra lại thông tin, chẳng hạn như: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">It hasn’t been decided yet</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Let me check</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Let me find out</span>, …"
+          "Trong một số trường hợp, câu trả lời cho câu hỏi về <span style=\"font-weight: 700\">địa điểm</span> không trực tiếp nêu ra một nơi chốn cụ thể. Thay vào đó, người nói có thể <span style=\"font-weight: 700\">nhắc đến một người khác chịu trách nhiệm</span>, <span style=\"font-weight: 700\">đưa ra một đề xuất hoặc gợi ý</span>, hoặc <span style=\"font-weight: 700\">đặt lại một câu hỏi để làm rõ thông tin</span>.",
+          "Ngoài ra, câu trả lời cũng có thể được diễn đạt <span style=\"font-weight: 700\">gián tiếp</span>, thể hiện sự không chắc chắn hoặc cần kiểm tra lại thông tin, chẳng hạn như:",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I don’t know</span> (<em>Tôi không biết</em>)",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">It hasn’t been decided yet</span> (<em>Nó vẫn chưa được quyết định</em>)",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">Let me check / Let me find out</span> (<em>Để tôi kiểm tra / Để tôi tìm hiểu</em>)"
         ]
       },
       {
@@ -1029,7 +1033,12 @@ window.part02Data = [
         "slide_index": 118,
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">3.3. Câu trả lời gián tiếp</span>",
-          "Khi người được hỏi không biết câu trả lời, không thể cung cấp thông tin cho người hỏi (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I haven’t heard anything about that</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t remember</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I didn’t even know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Nobody told me</span>, …) hoặc sự việc chưa xảy ra (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">We haven’t decided yet</span>). Ngoài ra, người nói có thể đưa ra gợi ý cho người hỏi (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">How about…?</span>) và một vài <span style=\"font-weight: 700\">trường hợp ngoại lệ khác</span>."
+          "Khi người được hỏi không biết câu trả lời hoặc không thể cung cấp thông tin ngay cho người hỏi:",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I haven’t heard anything about that</span>: <em>Tôi chưa nghe thấy thông tin gì về việc đó</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I don’t remember / I don’t know / I didn’t even know</span>: <em>Tôi không nhớ / Tôi không biết / Tôi thậm chí còn không biết</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">Nobody told me</span>: <em>Không có ai nói với tôi cả</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">We haven’t decided yet</span>: <em>Chúng tôi vẫn chưa đưa ra quyết định</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700;\">How about…?</span>: <em>Thế còn... thì sao? (gợi ý thời gian khác)</em>"
         ]
       },
       {
