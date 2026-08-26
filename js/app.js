@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
     const LOCKED_SECTIONS = [
-        "yn_basic", "yn_embedded", "yn_negative", "yn_tag", "info_how", "info_what", "info_when", "info_why", "choice_questions", "statements", "suggestions_invitations", "ets_test_01", "ets_test_02", "ets_test_03", "ets_test_04", "ets_test_05",
+        "yn_basic", "yn_embedded", "yn_negative", "yn_tag", "choice_questions", "statements", "suggestions_invitations", "ets_test_01", "ets_test_02", "ets_test_03", "ets_test_04", "ets_test_05",
         "dang_01_identity", "dang_01_location", "dang_01_topic", "dang_02_problem", "dang_02_what_according", "dang_02_what_do_next", "dang_02_what_imply", "dang_02_what_request", "dang_02_what_say", "dang_02_what_suggest", "dang_02_why", "dang_visual_questions",
         "topic_01", "topic_02", "topic_03", "topic_04", "topic_05", "topic_06"
     ];
