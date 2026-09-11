@@ -559,11 +559,11 @@ window.part02Data = [
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1.5. Câu trả lời gián tiếp</span>",
           "Đôi khi trong nhiều trường hợp câu trả lời diễn đạt ý nghĩa không biết rõ, không chắc chắn, ví dụ như:",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I don’t know / I don’t really know / I have no idea / I don’t have a clue</span>: <em>Tôi không biết / Tôi không có manh mối nào / Tôi không rõ...</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I am not sure / Isn’t it allocated to….?</span>: <em>Tôi không chắc chắn / Chẳng phải nó được phân công cho...?</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I can’t remember / I don’t recall / …</span>: <em>Tôi không thể nhớ ra / Tôi không nhớ...</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">Let me find out / Let me check out / Let me ask...</span>: <em>Để tôi tìm hiểu / Để tôi kiểm tra lại / Để tôi đi hỏi...</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">It hasn’t been decided / chosen / assigned / confirmed / announced / finalized / selected yet...</span>: <em>Nó / Điều đó vẫn chưa được quyết định / chọn / phân công / xác nhận / công bố / chốt...</em>"
+          "<span style=\"color: #0284c7; font-style: italic\">I don’t know/ I don’t really know/ I have no idea/ I don’t have a clue/...</span>",
+          "<span style=\"color: #0284c7; font-style: italic\">I am not sure/ Isn’t it allocated to….?/...</span>",
+          "<span style=\"color: #0284c7; font-style: italic\">I can’t remember / I don’t recall / …</span>",
+          "<span style=\"color: #0284c7; font-style: italic\">Let me find out/ Let me check out/ Let me ask... </span>",
+          "<span style=\"color: #0284c7; font-style: italic\">S + haven’t/ hasn’t been decided/ chosen/ assigned/ confirmed/ announced/ finalized/ selected yet... </span>"
         ]
       },
       {
@@ -769,7 +769,7 @@ window.part02Data = [
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.2. Câu trả lời là cụm giới từ chỉ nơi chốn</span>",
           "+ giới từ <span style=\"color: #dc2626; font-weight: 700\">on</span>: ở trên, bên trên",
-          "Ex: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on my desk</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on the third floor</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on Main Street</span>, …"
+          "Ex: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on my desk</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on the third floor</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">on Nguyen Ngoc Trai street</span>, …"
         ]
       },
       {
@@ -931,11 +931,7 @@ window.part02Data = [
         "slide_index": 106,
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.4. Câu trả lời không thể hiện một nơi chốn cụ thể:</span>",
-          "Trong một số trường hợp, câu trả lời cho câu hỏi về <span style=\"font-weight: 700\">địa điểm</span> không trực tiếp nêu ra một nơi chốn cụ thể. Thay vào đó, người nói có thể <span style=\"font-weight: 700\">nhắc đến một người khác chịu trách nhiệm</span>, <span style=\"font-weight: 700\">đưa ra một đề xuất hoặc gợi ý</span>, hoặc <span style=\"font-weight: 700\">đặt lại một câu hỏi để làm rõ thông tin</span>.",
-          "Ngoài ra, câu trả lời cũng có thể được diễn đạt <span style=\"font-weight: 700\">gián tiếp</span>, thể hiện sự không chắc chắn hoặc cần kiểm tra lại thông tin, chẳng hạn như:",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I don’t know</span> (<em>Tôi không biết</em>)",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">It hasn’t been decided yet</span> (<em>Nó vẫn chưa được quyết định</em>)",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">Let me check / Let me find out</span> (<em>Để tôi kiểm tra / Để tôi tìm hiểu</em>)"
+          "Trong một số trường hợp, câu trả lời cho câu hỏi về <span style=\"font-weight: 700\">địa điểm</span> không trực tiếp nêu ra một nơi chốn cụ thể. Thay vào đó, người nói có thể <span style=\"font-weight: 700\">nhắc đến một người khác chịu trách nhiệm</span>, <span style=\"font-weight: 700\">đưa ra một đề xuất hoặc gợi ý</span>, hoặc <span style=\"font-weight: 700\">đặt lại một câu hỏi để làm rõ thông tin</span>. Ngoài ra, câu trả lời cũng có thể được diễn đạt <span style=\"font-weight: 700\">gián tiếp</span>, thể hiện sự không chắc chắn hoặc cần kiểm tra lại thông tin, chẳng hạn như: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">It hasn’t been decided yet</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Let me check</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Let me find out</span>, …"
         ]
       },
       {
@@ -1065,12 +1061,7 @@ window.part02Data = [
         "slide_index": 118,
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">3.3. Câu trả lời gián tiếp</span>",
-          "Khi người được hỏi không biết câu trả lời hoặc không thể cung cấp thông tin ngay cho người hỏi:",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I haven’t heard anything about that</span>: <em>Tôi chưa nghe thấy thông tin gì về việc đó</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">I don’t remember / I don’t know / I didn’t even know</span>: <em>Tôi không nhớ / Tôi không biết / Tôi thậm chí còn không biết</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">Nobody told me</span>: <em>Không có ai nói với tôi cả</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">We haven’t decided yet</span>: <em>Chúng tôi vẫn chưa đưa ra quyết định</em>",
-          "👉 <span style=\"color: #0284c7; font-weight: 700;\">How about…?</span>: <em>Thế còn... thì sao? (gợi ý thời gian khác)</em>"
+          "Khi người được hỏi không biết câu trả lời, không thể cung cấp thông tin cho người hỏi (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I haven’t heard anything about that</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t remember</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I didn’t even know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Nobody told me</span>, …) hoặc sự việc chưa xảy ra (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">We haven’t decided yet</span>). Ngoài ra, người nói có thể đưa ra gợi ý cho người hỏi (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">How about…?</span>) và một vài <span style=\"font-weight: 700\">trường hợp ngoại lệ khác</span>."
         ]
       },
       {
@@ -1539,262 +1530,259 @@ window.part02Data = [
     "id": "yn_basic",
     "title": "1. Basic Yes/No",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 165,
         "text": [
-          "<strong><span style='color: #FF0000;'>1. Basic Yes/ No Questions</span></strong>",
-          "<strong><span style='color: #00B0F0;'>1.1. Dạng câu hỏi</span></strong>",
-          "<strong>Câu hỏi Yes/No cơ bản </strong>là dạng câu hỏi yêu cầu câu trả lời Yes hoặc No. Những câu hỏi này thường bắt đầu bằng:",
-          "<strong><i>Động từ “to be”: </i></strong><strong><i>am</i></strong><i> / </i><strong><i>is</i></strong><i> / </i><strong><i>are</i></strong><i> / </i><strong><i>was</i></strong><i> / </i><strong><i>were</i></strong>",
-          "<strong><i>Trợ động từ: </i></strong><strong><i>do</i></strong><i> / </i><strong><i>does</i></strong><i> / </i><strong><i>did</i></strong><i> / </i><strong><i>have</i></strong><i> / </i><strong><i>has</i></strong><i> / </i><strong><i>had</i></strong>",
-          "<strong><i>Động từ khiếm khuyết:</i></strong> <strong><i>can</i></strong><i> / </i><strong><i>could</i></strong><i> / </i><strong><i>will</i></strong><i> / </i><strong><i>would</i></strong><i> / </i><strong><i>may</i></strong><i> / </i><strong><i>might</i></strong><i> / </i><strong><i>should</i></strong><i>, ...</i>"
+          "<span style=\"color: #dc2626; font-weight: 700\">1. Basic Yes/No Questions</span>",
+          "<span style=\"color: #7c3aed; font-weight: 700\">1.1. Dạng câu hỏi</span>",
+          "<span style=\"font-weight: 700\">Câu hỏi Yes/No cơ bản</span> là dạng câu hỏi yêu cầu câu trả lời Yes hoặc No. Những câu hỏi này thường bắt đầu bằng:",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Động từ “to be”:</span> <em>am / is / are / was / were</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Trợ động từ:</span> <em>do / does / did / have / has / had</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Động từ khiếm khuyết (Modal verbs):</span> <em>can / could / will / would / may / might / should...</em>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 166,
         "text": [
-          "<strong><span style='color: #00B0F0;'>1.2. Cách trả lời</span></strong>",
-          "<strong>a) Câu trả lời trực tiếp</strong>",
-          "<strong><i>Dùng Yes / No + trợ động từ phù hợp: </i></strong><strong><i>Yes, I am.  </i></strong><i>/ </i><strong><i>No, I don’t. </i></strong><i>/ </i><strong><i>Yes, she has</i></strong><i>. </i>",
-          "<strong><i>Ngoài ra, có thể đi kèm thông tin bổ sung: </i></strong><strong><i>Yes, I already sent it.</i></strong><i>  / </i><strong><i>No, I haven’t finished it yet. </i></strong>",
-          "<strong>👉 Tuy nhiên, dạng này xuất hiện rất ít trong đề TOEIC thực tế.</strong>"
+          "<span style=\"color: #7c3aed; font-weight: 700\">1.2. Cách trả lời</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">a) Câu trả lời trực tiếp</span>",
+          "Dùng <span style=\"font-weight: 700\">Yes / No + trợ động từ phù hợp:</span> <em>Yes, I am. / No, I don’t. / Yes, she has.</em>",
+          "Ngoài ra, có thể đi kèm thông tin bổ sung: <em>Yes, I already sent it. / No, I haven’t finished it yet.</em>",
+          "👉 <span style=\"color: #dc2626; font-weight: 700\">Lưu ý trong bài thi:</span> Dạng trả lời trực tiếp này xuất hiện <strong>rất ít</strong> trong đề TOEIC thực tế."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 167,
         "text": [
-          "<strong><span style='color: #00B0F0;'>1.2. Cách trả lời</span></strong>",
-          "<strong><span style='color: #9BBB59;'>b</span></strong><strong><span style='color: #9BBB59;'>) Câu trả lời gián tiếp</span></strong>",
-          "Người nói <strong>không dùng Yes/No</strong>, mà trả lời bằng thông tin liên quan. Người nghe cần suy ra ý nghĩa.",
-          "<strong>Cung cấp thông tin thực tế</strong>",
-          "<strong>It’s on your desk. </strong>(→ Yes)",
-          "<strong>I haven’t done it yet. </strong>(→ No)"
+          "<span style=\"color: #7c3aed; font-weight: 700\">1.2. Cách trả lời</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">b) Câu trả lời gián tiếp (Chiếm đa số)</span>",
+          "Người nói <span style=\"color: #dc2626; font-weight: 700\">không dùng Yes/No</span>, mà trả lời bằng thông tin liên quan. Người nghe cần suy ra ý nghĩa:",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">1. Cung cấp thông tin thực tế:</span> <em>It’s on your desk. (→ Yes) | I haven’t done it yet. (→ No)</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">2. Đưa ra lý do / giải thích:</span> <em>I have a meeting then. | Because someone took the last one.</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">3. Đồng ý / từ chối gián tiếp:</span> <em>Sure. / Of course. / Certainly. / Definitely. | I’m afraid not. / Not really. / I don’t think so.</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">4. Đề xuất / thay thế:</span> <em>You can borrow mine. | You can ask Sarah.</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">5. Không chắc chắn / trì hoãn:</span> <em>I’m not sure. | Let me check.</em>"
         ]
       },
       {
-        "slide_index": 168,
-        "text": [
-          "<strong><span style='color: #9BBB59;'>b</span></strong><strong><span style='color: #9BBB59;'>) Câu trả lời gián tiếp</span></strong>",
-          "<strong>Đưa ra lý do / giải thích</strong>",
-          "<strong>I have a meeting then. </strong>",
-          "<strong>Because someone took the last one.  </strong>",
-          "<strong>Đồng ý / từ chối gián tiếp</strong>",
-          "<strong>Sure. / Of course. / Certainly. / Definitely. </strong>",
-          "<strong>I’m afraid not. / Not really. / I don’t think so.</strong>"
-        ]
-      },
-      {
-        "slide_index": 169,
-        "text": [
-          "<strong><span style='color: #9BBB59;'>b</span></strong><strong><span style='color: #9BBB59;'>) Câu trả lời gián tiếp</span></strong>",
-          "<strong>d. Đề xuất / thay thế</strong>",
-          "<strong>You can borrow mine. </strong>",
-          "<strong>You can ask Sarah.</strong>",
-          "<strong>e. Không chắc chắn / trì hoãn</strong>",
-          "<strong>I’m not sure. </strong>",
-          "<strong>Let me check. </strong>"
-        ]
-      }
-    ],
-    "examples": [
-      {
+        "type": "example",
         "slide_index": 170,
-        "question": "EXAMPLE 58: Are you interested in a freelance translation job?",
+        "question": "Are you interested in a freelance translation job?",
         "choices": {
           "A": "An interest-free loan.",
           "B": "Please don’t touch the walls.",
           "C": "No, I’m too busy these days."
         },
-        "audio": "media/part02_ex_s170.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide170_media58.mp3"
       },
       {
+        "type": "example",
         "slide_index": 171,
-        "question": "EXAMPLE 59: Did Lisa pick up the invitations from the printers?",
+        "question": "Did Lisa pick up the invitations from the printers?",
         "choices": {
           "A": "On letterhead stationery, please.",
           "B": "No, she hasn’t gotten to it yet.",
           "C": "The annual fund-raising banquet."
         },
-        "audio": "media/part02_ex_s171.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide171_media59.mp3"
       },
       {
+        "type": "example",
         "slide_index": 172,
-        "question": "EXAMPLE 60: Has Ms. Medrano been to the doctor’s office yet?",
+        "question": "Has Ms. Medrano been to the doctor’s office yet?",
         "choices": {
           "A": "No, her appointment isn’t until noon.",
           "B": "Thanks, I’m feeling much better.",
           "C": "I’ll probably wait in the lobby."
         },
-        "audio": "media/part02_ex_s172.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide172_media60.mp3"
       },
       {
+        "type": "example",
         "slide_index": 173,
-        "question": "EXAMPLE 61: Are you training the new employees?",
+        "question": "Are you training the new employees?",
         "choices": {
           "A": "A one-way ticket.",
           "B": "Not this time.",
           "C": "All right, thanks."
         },
-        "audio": "media/part02_ex_s173.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide173_media61.mp3"
       },
       {
+        "type": "example",
         "slide_index": 174,
-        "question": "EXAMPLE 62: Does the apartment building have a parking area?",
+        "question": "Does the apartment building have a parking area?",
         "choices": {
           "A": "There’s a public garage close by.",
           "B": "Many trees and flowers are in bloom now.",
           "C": "A two-bedroom apartment."
         },
-        "audio": "media/part02_ex_s174.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide174_media62.mp3"
       },
       {
+        "type": "example",
         "slide_index": 175,
-        "question": "EXAMPLE 63: Has the new software been installed on your computer yet?",
+        "question": "Has the new software been installed on your computer yet?",
         "choices": {
           "A": "He’s from the Information Technology department.",
           "B": "I just got back from vacation today.",
           "C": "Several hundred dollars."
         },
-        "audio": "media/part02_ex_s175.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide175_media63.mp3"
       },
       {
+        "type": "example",
         "slide_index": 176,
-        "question": "EXAMPLE 64: Do you mind filling out our customer satisfaction survey?",
+        "question": "Do you mind filling out our customer satisfaction survey?",
         "choices": {
           "A": "I filled the tank in the car yesterday.",
           "B": "Sure, I can do that.",
           "C": "The stairs are around the corner."
         },
-        "audio": "media/part02_ex_s176.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide176_media64.mp3"
       },
       {
+        "type": "example",
         "slide_index": 177,
-        "question": "EXAMPLE 65: Do you know who requested technical support?",
+        "question": "Do you know who requested technical support?",
         "choices": {
           "A": "Sorry, I just got into the office.",
           "B": "The sports team is doing well.",
           "C": "Two years of technical school."
         },
-        "audio": "media/part02_ex_s177.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide177_media65.mp3"
       },
       {
+        "type": "example",
         "slide_index": 178,
-        "question": "EXAMPLE 66: Do you think it’ll rain tomorrow?",
+        "question": "Do you think it’ll rain tomorrow?",
         "choices": {
           "A": "Yes, probably.",
           "B": "Let me show you how.",
           "C": "No, he can’t."
         },
-        "audio": "media/part02_ex_s178.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide178_media66.mp3"
       },
       {
+        "type": "example",
         "slide_index": 179,
-        "question": "EXAMPLE 67: Will you be at the holiday party next week?",
+        "question": "Will you be at the holiday party next week?",
         "choices": {
           "A": "Yes, I’ll be there.",
           "B": "That part was difficult.",
           "C": "Right, just last week."
         },
-        "audio": "media/part02_ex_s179.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide179_media67.mp3"
       },
       {
+        "type": "example",
         "slide_index": 180,
-        "question": "EXAMPLE 68: Would you like a refill of your soft drink?",
+        "question": "Would you like a refill of your soft drink?",
         "choices": {
           "A": "No, thanks, just the bill.",
           "B": "I’ll call the pharmacy.",
           "C": "I just had dinner with her."
         },
-        "audio": "media/part02_ex_s180.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide180_media68.mp3"
       },
       {
+        "type": "example",
         "slide_index": 181,
-        "question": "EXAMPLE 69: Can you stop by my office later?",
+        "question": "Can you stop by my office later?",
         "choices": {
           "A": "No, last week.",
           "B": "Yes, I’ll come by after lunch.",
           "C": "I started here last year."
         },
-        "audio": "media/part02_ex_s181.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide181_media69.mp3"
       },
       {
+        "type": "example",
         "slide_index": 182,
-        "question": "EXAMPLE 70: Could you revise this budget?",
+        "question": "Could you revise this budget?",
         "choices": {
           "A": "A reservation, please.",
           "B": "Ming, James, and Ana.",
           "C": "I may have time tomorrow."
         },
-        "audio": "media/part02_ex_s182.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide182_media70.mp3"
       },
       {
+        "type": "example",
         "slide_index": 183,
-        "question": "EXAMPLE 71: Can you call our Singapore office to confirm the client's address?",
+        "question": "Can you call our Singapore office to confirm the client's address?",
         "choices": {
           "A": "A short flight.",
           "B": "I'm late for a meeting.",
           "C": "Right, the cafeteria upstairs."
         },
-        "audio": "media/part02_ex_s183.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide183_media71.mp3"
       },
       {
+        "type": "example",
         "slide_index": 184,
-        "question": "EXAMPLE 72: Can you call the Research Department to get a project update?",
+        "question": "Can you call the Research Department to get a project update?",
         "choices": {
           "A": "I'm meeting with them at two.",
           "B": "It's an old model.",
           "C": "Three months ago."
         },
-        "audio": "media/part02_ex_s184.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide184_media72.mp3"
       },
       {
+        "type": "example",
         "slide_index": 185,
-        "question": "EXAMPLE 73: Can you make sure we have a sign-up sheet available?",
+        "question": "Can you make sure we have a sign-up sheet available?",
         "choices": {
           "A": "I just turned up the heat.",
           "B": "Sign here, please.",
           "C": "Sure, no problem."
         },
-        "audio": "media/part02_ex_s185.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide185_media73.mp3"
       },
       {
+        "type": "example",
         "slide_index": 186,
-        "question": "EXAMPLE 74: Would you like to sign up for the company retreat?",
+        "question": "Would you like to sign up for the company retreat?",
         "choices": {
           "A": "Sure, I’ll write my name down.",
           "B": "Twenty people, maximum.",
           "C": "Can I replace the sign?"
         },
-        "audio": "media/part02_ex_s186.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide186_media74.mp3"
       },
       {
+        "type": "example",
         "slide_index": 187,
-        "question": "EXAMPLE 75: Can you help me log on to my computer?",
+        "question": "Can you help me log on to my computer?",
         "choices": {
           "A": "Sorry, you’ll need to call Technical Support.",
           "B": "A passport with both letters and numbers.",
           "C": "That’s a useful software program."
         },
-        "audio": "media/part02_ex_s187.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide187_media75.mp3"
       }
     ]
   },
@@ -1802,126 +1790,128 @@ window.part02Data = [
     "id": "yn_negative",
     "title": "2. Negative Questions",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 188,
         "text": [
-          "<strong><span style='color: #FF0000;'>2. Negative Questions</span></strong>",
-          "<strong><span style='color: #00B0F0;'>2.1. Dạng câu hỏi</span></strong>",
-          "Câu hỏi Yes/No dạng phủ định là dạng câu hỏi mà <strong><span style='color: #FF8AD8;'>trợ động từ</span></strong>, <strong><span style='color: #FF8AD8;'>động từ tobe</span></strong>, hoặc <strong><span style='color: #FF8AD8;'>động từ khiếm khuyết </span></strong>được chia ở dạng phủ định (not/n’t). Những câu hỏi này thường được dùng khi người nói kỳ vọng một câu trả lời nhất định hoặc muốn xác nhận lại thông tin."
+          "<span style=\"color: #dc2626; font-weight: 700\">2. Negative Questions (Câu hỏi phủ định)</span>",
+          "<span style=\"color: #7c3aed; font-weight: 700\">2.1. Dạng câu hỏi</span>",
+          "Câu hỏi Yes/No dạng phủ định là câu hỏi mà <span style=\"color: #0284c7; font-weight: 700\">trợ động từ, động từ to be, hoặc động từ khiếm khuyết</span> được chia ở dạng phủ định (<em>not / n’t</em>). Dùng khi người nói kỳ vọng một câu trả lời nhất định hoặc muốn xác nhận lại thông tin.",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Động từ “to be”:</span> <em>isn’t / aren’t / wasn’t / weren’t</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Trợ động từ:</span> <em>don’t / doesn’t / didn’t / haven’t / hasn’t / hadn’t</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Động từ khiếm khuyết:</span> <em>can’t / couldn’t / won’t / wouldn’t / shouldn’t / mustn’t, …</em>",
+          "<span style=\"color: #7c3aed; font-weight: 700\">2.2. Cách trả lời</span>",
+          "👉 <span style=\"color: #dc2626; font-weight: 700\">Quy tắc vàng:</span> Trả lời tương tự Basic Yes/No Questions, nhưng <strong>dựa vào sự thật thực tế</strong> (<em>Yes = đúng thực tế, No = không đúng thực tế</em>), <strong>hoàn toàn không bị ảnh hưởng bởi từ “not”</strong> trong câu hỏi."
         ]
       },
       {
-        "slide_index": 189,
-        "text": [
-          "<strong><span style='color: #00B0F0;'>2.1. Dạng câu hỏi</span></strong>",
-          "<strong><i>Động từ “to be”: </i></strong><strong><i>isn’t </i></strong><i>/</i><strong><i> aren’t </i></strong><i>/</i><strong><i> wasn’t </i></strong><i>/</i><strong><i> weren’t</i></strong>",
-          "<strong><i>Trợ động từ: </i></strong><strong><i>don’t </i></strong><i>/</i><strong><i> doesn’t </i></strong><i>/ </i><strong><i>didn’t </i></strong><i>/</i><strong><i> haven’t </i></strong><i>/</i><strong><i> hasn’t </i></strong><i>/ </i><strong><i>hadn’t</i></strong>",
-          "<strong><i>Động từ khiếm khuyết:</i></strong> <strong><i>can’t </i></strong><i>/</i><strong><i> couldn’t </i></strong><i>/</i><strong><i> won’t </i></strong><i>/ </i><strong><i>wouldn’t </i></strong><i>/</i><strong><i> shouldn’t </i></strong><i>/</i><strong><i> mustn’t </i></strong><i>/, …</i>",
-          "<strong><span style='color: #00B0F0;'>2.2. Cách trả lời</span></strong>",
-          "Trả lời tương tự <strong>Basic Yes/No Questions</strong>, nhưng dựa vào sự thật (<strong>Yes = đúng, No = không đúng</strong>), không dựa vào “<strong>not</strong>” trong câu hỏi."
-        ]
-      }
-    ],
-    "examples": [
-      {
+        "type": "example",
         "slide_index": 190,
-        "question": "EXAMPLE 76: Wasn't this assignment due last week?",
+        "question": "Wasn't this assignment due last week?",
         "choices": {
           "A": "It's taking longer than we thought.",
           "B": "Sign at the bottom of the page.",
           "C": "No, you don't need permission."
         },
-        "audio": "media/part02_ex_s190.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide190_media76.mp3"
       },
       {
+        "type": "example",
         "slide_index": 191,
-        "question": "EXAMPLE 77: Isn't Mr. Akbari leading the accounting seminar?",
+        "question": "Isn't Mr. Akbari leading the accounting seminar?",
         "choices": {
           "A": "Let's close the account.",
           "B": "The electric bill was paid.",
           "C": "No, I think it's Ms. Garcia."
         },
-        "audio": "media/part02_ex_s191.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide191_media77.mp3"
       },
       {
+        "type": "example",
         "slide_index": 192,
-        "question": "EXAMPLE 78: Wasn't Mr. Keller supposed to come to this business dinner?",
+        "question": "Wasn't Mr. Keller supposed to come to this business dinner?",
         "choices": {
           "A": "Recruiting strategies.",
           "B": "Yes, he'll be here in ten minutes.",
           "C": "Would you prefer chicken?"
         },
-        "audio": "media/part02_ex_s192.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide192_media78.mp3"
       },
       {
+        "type": "example",
         "slide_index": 193,
-        "question": "EXAMPLE 79: Don’t we still need to change the newspaper layout?",
+        "question": "Don’t we still need to change the newspaper layout?",
         "choices": {
           "A": "Down the hall on your right.",
           "B": "No, it’s already been changed.",
           "C": "A new computer program."
         },
-        "audio": "media/part02_ex_s193.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide193_media79.mp3"
       },
       {
+        "type": "example",
         "slide_index": 194,
-        "question": "EXAMPLE 80: Won't Ellen be organizing the conference this year?",
+        "question": "Won't Ellen be organizing the conference this year?",
         "choices": {
           "A": "A well-organized event.",
           "B": "We decided what to bring.",
           "C": "No, she’s taking a year off."
         },
-        "audio": "media/part02_ex_s194.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide194_media80.mp3"
       },
       {
+        "type": "example",
         "slide_index": 195,
-        "question": "EXAMPLE 81: Weren't you planning to see a concert tonight?",
+        "question": "Weren't you planning to see a concert tonight?",
         "choices": {
           "A": "The tickets are sold out.",
           "B": "I'll finish it right now.",
           "C": "A very famous painter."
         },
-        "audio": "media/part02_ex_s195.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide195_media81.mp3"
       },
       {
+        "type": "example",
         "slide_index": 196,
-        "question": "EXAMPLE 82: Don't we have enough supplies to finish painting the house?",
+        "question": "Don't we have enough supplies to finish painting the house?",
         "choices": {
           "A": "I prefer to live by the train station.",
           "B": "Mary is checking the inventory now.",
           "C": "It pays twenty dollars an hour."
         },
-        "audio": "media/part02_ex_s196.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide196_media82.mp3"
       },
       {
+        "type": "example",
         "slide_index": 197,
-        "question": "EXAMPLE 83: Aren’t we getting a digital sound system?",
+        "question": "Aren’t we getting a digital sound system?",
         "choices": {
           "A": "She was recently promoted to manager.",
           "B": "You know how long the approval process takes.",
           "C": "Because the store closes early tonight."
         },
-        "audio": "media/part02_ex_s197.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide197_media83.mp3"
       },
       {
+        "type": "example",
         "slide_index": 198,
-        "question": "EXAMPLE 84: Hasn’t Alan seen the doctor yet?",
+        "question": "Hasn’t Alan seen the doctor yet?",
         "choices": {
           "A": "It’s in the medical building.",
           "B": "He hasn’t had any time.",
           "C": "No, we didn’t see it."
         },
-        "audio": "media/part02_ex_s198.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide198_media84.mp3"
       }
     ]
   },
@@ -1929,302 +1919,229 @@ window.part02Data = [
     "id": "yn_tag",
     "title": "3. Tag Questions",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 199,
         "text": [
-          "<strong><span style='color: #FF0000;'>3. Tag Questions</span></strong>",
-          "Câu hỏi đuôi là <strong>một câu hỏi ngắn ở cuối câu trần thuật</strong>, dùng để <strong><span style='color: #7030A0;'>xác nhận thông tin hoặc tìm sự đồng tình</span></strong>.",
-          "👉 <strong>Nguyên tắc cốt lõi:</strong>",
-          "<strong>Phần đuôi luôn trái dấu với mệnh đề chính (affirmative ↔ negative)</strong>"
+          "<span style=\"color: #dc2626; font-weight: 700\">3. Tag Questions (Câu hỏi đuôi)</span>",
+          "Câu hỏi đuôi là <span style=\"font-weight: 700\">một câu hỏi ngắn ở cuối câu trần thuật</span>, dùng để <span style=\"color: #7c3aed; font-weight: 700\">xác nhận thông tin hoặc tìm sự đồng tình</span>.",
+          "👉 <span style=\"color: #dc2626; font-weight: 700\">Nguyên tắc cốt lõi:</span> Phần đuôi <strong>luôn trái dấu</strong> với mệnh đề chính (<em>Affirmative ↔ Negative</em>)."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 200,
         "text": [
-          "<strong><span style='color: #7030A0;'>3.1 Các dạng câu hỏi điển hình</span></strong>",
-          "<strong><span style='color: #00B050;'>a) Câu khẳng định → đuôi phủ định</span></strong>",
-          "<strong>S + V (+), [trợ động từ +] not + đại từ?</strong>",
-          "<strong><span style='color: #FF0000;'> → Câu chính khẳng định – câu hỏi đuôi phủ định</span></strong>",
-          "<strong>Trợ động từ (auxiliary) bao gồm:</strong>",
-          "<strong>TOBE:</strong> <span style='color: #0070C0;'>am / is / are / was / were </span>",
-          "<strong>DO: </strong><span style='color: #0070C0;'>do / does /did </span>",
-          "<strong>HAVE: </strong><span style='color: #0070C0;'>have / has /had </span>",
-          "<strong>MODAL:</strong> <span style='color: #0070C0;'>can / could / will / would / should / must / may / might </span>"
+          "<span style=\"color: #7c3aed; font-weight: 700\">3.1 Các dạng câu hỏi điển hình</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">a) Câu khẳng định → đuôi phủ định</span>",
+          "👉 <span style=\"color: #dc2626; font-weight: 700; background: #fef2f2; padding: 4px 8px; border-radius: 6px; border: 1px solid #fecaca;\">Công thức: S + V (+), [trợ động từ +] not + đại từ?</span>",
+          "Trợ động từ (auxiliary) bao gồm: <em>TOBE (am/is/are/was/were) | DO (do/does/did) | HAVE (have/has/had) | MODAL (can/could/will/would/should/must...)</em>",
+          "👉 <strong>1. Động từ “to be”:</strong> <em>You’re a student, <span style=\"color: #dc2626; font-weight: 700\">aren’t you</span>? | It’s warm today, <span style=\"color: #dc2626; font-weight: 700\">isn’t it</span>? | Jack’s happy, <span style=\"color: #dc2626; font-weight: 700\">isn’t he</span>?</em>",
+          "👉 <strong>2. Động từ thường:</strong> <em>You like English, <span style=\"color: #dc2626; font-weight: 700\">don’t you</span>? | She went to Korea, <span style=\"color: #dc2626; font-weight: 700\">didn’t she</span>?</em>",
+          "👉 <strong>3. Hiện tại hoàn thành:</strong> <em>You have got the schedule, <span style=\"color: #dc2626; font-weight: 700\">haven’t you</span>? | Nancy has studied English, <span style=\"color: #dc2626; font-weight: 700\">hasn’t she</span>?</em>",
+          "👉 <strong>4. Động từ khiếm khuyết:</strong> <em>We must be patient, <span style=\"color: #dc2626; font-weight: 700\">mustn’t we</span>? | They will go, <span style=\"color: #dc2626; font-weight: 700\">won’t they</span>?</em>",
+          "👉 <strong>5. Trường hợp đặc biệt:</strong> <em>I am late, <span style=\"color: #dc2626; font-weight: 700\">aren’t I</span>? | Let’s go home, <span style=\"color: #dc2626; font-weight: 700\">shall we</span>?</em>"
         ]
       },
       {
-        "slide_index": 201,
-        "text": [
-          "<strong>1. Động từ “to be”</strong>",
-          "<strong><i><span style='color: #0070C0;'>You’re</span></i></strong><i> a student, </i><strong><i><span style='color: #FF0000;'>aren’t you</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>It’s</span></i></strong><i> warm today, </i><strong><i><span style='color: #FF0000;'>isn’t it</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>Jack’s</span></i></strong><i> happy, </i><strong><i><span style='color: #FF0000;'>isn’t he</span></i></strong><i>? </i>",
-          "<strong>2. Động từ thường</strong>",
-          "<strong><i><span style='color: #0070C0;'>You like </span></i></strong><i>English, </i><strong><i><span style='color: #FF0000;'>don’t you</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>She went </span></i></strong><i>to Korea, </i><strong><i><span style='color: #FF0000;'>didn’t she</span></i></strong><i>? </i>"
-        ]
-      },
-      {
-        "slide_index": 202,
-        "text": [
-          "<strong>3. Hiện tại hoàn thành</strong>",
-          "<strong><i><span style='color: #0070C0;'>You have </span></i></strong><i>got the schedule, </i><strong><i><span style='color: #FF0000;'>haven’t you</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>Nancy has </span></i></strong><i>studied English, </i><strong><i><span style='color: #FF0000;'>hasn’t she</span></i></strong><i>? </i>",
-          "<strong>4. Động từ khiếm khuyết</strong>",
-          "<strong><i><span style='color: #0070C0;'>We must </span></i></strong><i>be patient, </i><strong><i><span style='color: #FF0000;'>mustn’t we</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>They will </span></i></strong><i>go, </i><strong><i><span style='color: #FF0000;'>won’t they</span></i></strong><i>? </i>",
-          "<strong>5. Trường hợp đặc biệt</strong>",
-          "<strong><i><span style='color: #0070C0;'>I am </span></i></strong><i>late, </i><strong><i><span style='color: #FF0000;'>aren’t I</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>Let’s</span></i></strong><i> go home, </i><strong><i><span style='color: #FF0000;'>shall we</span></i></strong><i>?</i>"
-        ]
-      },
-      {
+        "type": "theory",
         "slide_index": 203,
         "text": [
-          "<strong><span style='color: #00B050;'>b) Câu phủ định → đuôi khẳng định</span></strong>",
-          "<strong>S + V (-), [trợ động từ +] + đại từ?</strong>",
-          "<strong><span style='color: #FF0000;'>→ Câu chính phủ định – câu hỏi đuôi khẳng định</span></strong>",
-          "<strong>Trợ động từ (auxiliary) bao gồm:</strong>",
-          "<strong>TOBE:</strong> <span style='color: #0070C0;'>am / is / are / was / were </span>",
-          "<strong>DO: </strong><span style='color: #0070C0;'>do / does /did </span>",
-          "<strong>HAVE: </strong><span style='color: #0070C0;'>have / has /had </span>",
-          "<strong>MODAL:</strong> <span style='color: #0070C0;'>can / could / will / would / should / must / may / might </span>"
+          "<span style=\"color: #7c3aed; font-weight: 700\">3.1 Các dạng câu hỏi điển hình</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">b) Câu phủ định → đuôi khẳng định</span>",
+          "👉 <span style=\"color: #dc2626; font-weight: 700; background: #fef2f2; padding: 4px 8px; border-radius: 6px; border: 1px solid #fecaca;\">Công thức: S + V (-), [trợ động từ] + đại từ?</span>",
+          "👉 <strong>1. Động từ “to be”:</strong> <em>She wasn’t at home, <span style=\"color: #dc2626; font-weight: 700\">was she</span>? | Tom isn’t lazy, <span style=\"color: #dc2626; font-weight: 700\">is he</span>? | They aren’t friends, <span style=\"color: #dc2626; font-weight: 700\">are they</span>?</em>",
+          "👉 <strong>2. Động từ thường:</strong> <em>They didn’t do homework, <span style=\"color: #dc2626; font-weight: 700\">did they</span>? | He doesn’t like dogs, <span style=\"color: #dc2626; font-weight: 700\">does he</span>?</em>",
+          "👉 <strong>3. Hiện tại hoàn thành:</strong> <em>You haven’t met him, <span style=\"color: #dc2626; font-weight: 700\">have you</span>? | Betsy hasn’t gone to the supermarket, <span style=\"color: #dc2626; font-weight: 700\">has she</span>?</em>",
+          "👉 <strong>4. Động từ khiếm khuyết:</strong> <em>She won’t go to school tomorrow, <span style=\"color: #dc2626; font-weight: 700\">will she</span>? | We can’t finish the report on time, <span style=\"color: #dc2626; font-weight: 700\">can we</span>? | She should ask the professor, <span style=\"color: #dc2626; font-weight: 700\">shouldn’t she</span>?</em>"
         ]
       },
       {
-        "slide_index": 204,
-        "text": [
-          "<strong>1. Động từ “to be”</strong>",
-          "<strong><i><span style='color: #0070C0;'>She wasn’t </span></i></strong><i>at home, </i><strong><i><span style='color: #FF0000;'>was she</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>Tom isn’t </span></i></strong><i>lazy, </i><strong><i><span style='color: #FF0000;'>is he</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>They aren’t </span></i></strong><i>friends, </i><strong><i><span style='color: #FF0000;'>are they</span></i></strong><i>? </i>",
-          "<strong>2. Động từ thường</strong>",
-          "<strong><i><span style='color: #0070C0;'>They didn’t </span></i></strong><i>do homework, </i><strong><i><span style='color: #FFC000;'>did they</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>He doesn’t </span></i></strong><i>like dogs, does he, </i><strong><i><span style='color: #FF0000;'>does he</span></i></strong><i>? </i>"
-        ]
-      },
-      {
-        "slide_index": 205,
-        "text": [
-          "<strong>3. Hiện tại hoàn thành</strong>",
-          "<strong><i><span style='color: #0070C0;'>You haven’t </span></i></strong><i>met him, </i><strong><i><span style='color: #FF0000;'>have you</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>Betsy hasn’t </span></i></strong><i>gone to the supermarket, </i><strong><i><span style='color: #FF0000;'>has she</span></i></strong><i>? </i>",
-          "<strong>4. Động từ khiếm khuyết</strong>",
-          "<strong><i><span style='color: #0070C0;'>She won’t </span></i></strong><i>go to school tomorrow, </i><strong><i><span style='color: #FF0000;'>will she</span></i></strong><i>?</i>",
-          "<strong><i><span style='color: #0070C0;'>We can’t </span></i></strong><i>finish the report on time, </i><strong><i><span style='color: #FF0000;'>can we</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>She should </span></i></strong><i>ask the professor, </i><strong><i><span style='color: #FF0000;'>shouldn’t she</span></i></strong><i>?</i>"
-        ]
-      },
-      {
+        "type": "theory",
         "slide_index": 206,
         "text": [
-          "<strong><span style='color: #00B050;'>c</span></strong><strong><span style='color: #00B050;'>) Câu phủ định ngầm → đuôi khẳng định</span></strong>",
-          "Một số câu <strong>không có “not” </strong>nhưng <strong>vẫn mang nghĩa phủ định</strong>.→ Khi đó, câu hỏi đuôi dùng dạng khẳng định (+)",
-          "<strong><span style='color: #FF8AD8;'>no + noun </span></strong>→ no students, no money, no children, …",
-          "<strong><span style='color: #FF8AD8;'>đại từ bất định phủ định </span></strong>→ no one, nobody, nothing",
-          "<strong><span style='color: #FF8AD8;'>trạng từ phủ định </span></strong>→ never, rarely, seldom, hardly, barely, scarcely, …"
+          "<span style=\"color: #7c3aed; font-weight: 700\">3.1 Các dạng câu hỏi điển hình</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">c) Câu phủ định ngầm → đuôi khẳng định</span>",
+          "Một số câu <span style=\"font-weight: 700\">không có “not”</span> nhưng <span style=\"color: #dc2626; font-weight: 700\">vẫn mang nghĩa phủ định</span> → Khi đó, câu hỏi đuôi dùng <strong>dạng khẳng định (+)</strong>:",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">no + noun:</span> <em>no students, no money, no children...</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Đại từ bất định phủ định:</span> <em>no one, nobody, nothing</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Trạng từ phủ định:</span> <em>never, rarely, seldom, hardly, barely, scarcely...</em>",
+          "👉 <strong>Ví dụ minh họa:</strong>",
+          "<em>No students were absent, <span style=\"color: #dc2626; font-weight: 700\">were they</span>?</em>",
+          "<em>No one seems to understand the new policy, <span style=\"color: #dc2626; font-weight: 700\">do they</span>?</em>",
+          "<em>Nobody has finished the assignment yet, <span style=\"color: #dc2626; font-weight: 700\">have they</span>?</em>",
+          "<em>Nothing has been decided so far, <span style=\"color: #dc2626; font-weight: 700\">has it</span>?</em>",
+          "<em>He never replies to emails on time, <span style=\"color: #dc2626; font-weight: 700\">does he</span>?</em>",
+          "<em>She hardly ever participates in group discussions, <span style=\"color: #dc2626; font-weight: 700\">does she</span>?</em>",
+          "<em>They rarely use this software anymore, <span style=\"color: #dc2626; font-weight: 700\">do they</span>?</em>"
         ]
       },
       {
-        "slide_index": 207,
-        "text": [
-          "<strong>VÍ DỤ:</strong>",
-          "<strong><i><span style='color: #0070C0;'>No students </span></i></strong><i>were absent, </i><strong><i><span style='color: #FF0000;'>were they</span></i></strong><i>?</i>",
-          "<strong><i><span style='color: #0070C0;'>No one </span></i></strong><i>seems to understand the new policy, </i><strong><i><span style='color: #FF0000;'>do they</span></i></strong><i>?</i>",
-          "<strong><i><span style='color: #0070C0;'>Nobody </span></i></strong><i>has finished the assignment yet, </i><strong><i><span style='color: #FF0000;'>have they</span></i></strong><i>? </i>",
-          "<strong><i><span style='color: #0070C0;'>Nothing </span></i></strong><i>has been decided so far, </i><strong><i><span style='color: #FF0000;'>has it</span></i></strong><i>? </i>",
-          "<i>He </i><strong><i><span style='color: #0070C0;'>never</span></i></strong><i> replies to emails on time, </i><strong><i><span style='color: #FF0000;'>does he</span></i></strong><i>?</i>",
-          "<i>She </i><strong><i><span style='color: #0070C0;'>hardly ever </span></i></strong><i>participates in group discussions, </i><strong><i><span style='color: #FF0000;'>does she</span></i></strong><i>?</i>",
-          "<i>They </i><strong><i><span style='color: #0070C0;'>rarely</span></i></strong><i> use this software anymore, </i><strong><i><span style='color: #FF0000;'>do they</span></i></strong><i>?</i>"
-        ]
-      },
-      {
+        "type": "theory",
         "slide_index": 208,
         "text": [
-          "<strong><span style='color: #00B050;'>d) Câu hỏi đuôi rút gọn</span></strong>",
-          "Trong tiếng Anh giao tiếp, người nói có thể dùng các từ như:<strong><span style='color: #FF0000;'>right</span></strong><strong>?, </strong><strong><span style='color: #FF0000;'>ok</span></strong><strong>?</strong> để thay cho câu hỏi đuôi đầy đủ.",
-          "👉 Dùng để <strong>xác nhận thông tin một cách tự nhiên, thân mật</strong>",
-          "<strong>VÍ DỤ:</strong>",
-          "<i>This is your first visit, </i><strong><i><span style='color: #FF0000;'>right</span></i></strong><i>? </i>",
-          "<i>We’re meeting at 3 p.m., </i><strong><i><span style='color: #FF0000;'>ok</span></i></strong><i>? </i>"
+          "<span style=\"color: #7c3aed; font-weight: 700\">3.1 Các dạng câu hỏi điển hình</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">d) Câu hỏi đuôi rút gọn (Giao tiếp thân mật)</span>",
+          "Trong tiếng Anh giao tiếp, người nói có thể dùng các từ như: <span style=\"color: #dc2626; font-weight: 700\">right?</span>, <span style=\"color: #dc2626; font-weight: 700\">ok?</span> để thay cho câu hỏi đuôi đầy đủ.",
+          "👉 Dùng để <strong>xác nhận thông tin một cách tự nhiên, thân mật</strong>.",
+          "👉 <strong>Ví dụ:</strong> <em>This is your first visit, <span style=\"color: #dc2626; font-weight: 700\">right</span>? | We’re meeting at 3 p.m., <span style=\"color: #dc2626; font-weight: 700\">ok</span>?</em>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 209,
         "text": [
-          "<strong><span style='color: #00B050;'>LƯU Ý CHUNG</span></strong>",
-          "<strong>Đại từ bất định chỉ người </strong>[someone, somebody, everyone, everybody, anyone, no one, nobody] → dùng chủ từ <strong><span style='color: #FF0000;'>they</span></strong>",
-          "<strong>Đại từ bất định chỉ vật </strong>[something, anything, everything, nothing] → dùng chủ từ <strong><span style='color: #FF0000;'>it</span></strong>",
-          "<strong>This / That </strong>→ đổi thành chủ từ <strong><span style='color: #FF0000;'>it</span></strong>",
-          "<strong>These / Those</strong> → đổi thành <strong><span style='color: #FF0000;'>they</span></strong>"
+          "<span style=\"color: #7c3aed; font-weight: 700\">LƯU Ý CHUNG VỀ CHỦ TỪ TRONG CÂU HỎI ĐUÔI</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Đại từ bất định chỉ người:</span> [someone, somebody, everyone, everybody, anyone, no one, nobody] → dùng chủ từ <span style=\"color: #dc2626; font-weight: 700\">they</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Đại từ bất định chỉ vật:</span> [something, anything, everything, nothing] → dùng chủ từ <span style=\"color: #dc2626; font-weight: 700\">it</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">This / That:</span> → đổi thành chủ từ <span style=\"color: #dc2626; font-weight: 700\">it</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">These / Those:</span> → đổi thành chủ từ <span style=\"color: #dc2626; font-weight: 700\">they</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 210,
         "text": [
-          "<strong><span style='color: #7030A0;'>3.2. Các dạng câu trả lời điển hình</span></strong>",
-          "<strong><span style='color: #00B050;'>a) Trả lời trực tiếp – ít gặp</span></strong>",
-          "Dùng <strong>Yes / No + trợ động từ</strong>",
-          "<i>Yes, it is. </i>",
-          "<i>No, they aren’t. </i>",
-          "<i>Yes, I have. </i>",
-          "<strong>👉 </strong><strong>Có thể kèm thông tin bổ sung:</strong>",
-          "<i>Yes, I already sent it. </i>",
-          "<i>No, I haven’t finished it yet.</i>"
+          "<span style=\"color: #7c3aed; font-weight: 700\">3.2. Các dạng câu trả lời điển hình</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">a) Trả lời trực tiếp – ít gặp</span>",
+          "Dùng <span style=\"font-weight: 700\">Yes / No + trợ động từ:</span> <em>Yes, it is. / No, they aren’t. / Yes, I have.</em>",
+          "👉 Có thể kèm thông tin bổ sung: <em>Yes, I already sent it. / No, I haven’t finished it yet.</em>"
         ]
       },
       {
-        "slide_index": 216,
-        "text": [
-          "<strong><span style='color: #7030A0;'>3.2. Các dạng câu trả lời điển hình</span></strong>",
-          "<strong><span style='color: #00B050;'>b) Trả lời gián tiếp – chủ đạo</span></strong>",
-          "<strong>1. Cung cấp thông tin thực tế</strong>",
-          "<i>It’s on your desk. (→ Yes) </i>",
-          "<i>I haven’t done it yet. (→ No) </i>",
-          "<strong>2. Đưa ra lý do / giải thích</strong>",
-          "<i>I have a meeting then. (→ No) </i>",
-          "<i>Because the system is down.</i>"
-        ]
-      },
-      {
-        "slide_index": 217,
-        "text": [
-          "<strong>3. Đồng ý / xác nhận</strong>",
-          "<i>Sure. </i>",
-          "<i>Of course. </i>",
-          "<i>That’s right. </i>",
-          "<i>Right. </i>",
-          "<strong>4. Từ chối / phủ định</strong>",
-          "<i>I’m afraid not. </i>",
-          "<i>Not really. </i>",
-          "<i>I don’t think so.</i>"
-        ]
-      },
-      {
-        "slide_index": 218,
-        "text": [
-          "<strong>5. Đề xuất / thay thế</strong>",
-          "<i>You can borrow mine. </i>",
-          "<i>Let’s reschedule it. </i>",
-          "<strong>6. Không chắc chắn / trì hoãn</strong>",
-          "<i>I’m not sure. </i>",
-          "<i>Let me check. </i>",
-          "<i>Let me ask Jimmy.</i>",
-          "<i>I’ll get back to you.</i>"
-        ]
-      }
-    ],
-    "examples": [
-      {
+        "type": "example",
         "slide_index": 211,
-        "question": "EXAMPLE 85: Your airline has an overnight flight to Delhi, doesn't it?",
+        "question": "Your airline has an overnight flight to Delhi, doesn't it?",
         "choices": {
           "A": "The nearest train station.",
           "B": "Yes, it departs at eight P.M.",
           "C": "Usually at a hotel downtown."
         },
-        "audio": "media/part02_ex_s211.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide211_media85.mp3"
       },
       {
+        "type": "example",
         "slide_index": 212,
-        "question": "EXAMPLE 86: You can't get us an earlier flight, can you?",
+        "question": "You can't get us an earlier flight, can you?",
         "choices": {
           "A": "It's a wonderful city.",
           "B": "I usually pack light.",
           "C": "No, they're all fully booked."
         },
-        "audio": "media/part02_ex_s212.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide212_media86.mp3"
       },
       {
+        "type": "example",
         "slide_index": 213,
-        "question": "EXAMPLE 87: The storage closet is locked, isn't it?",
+        "question": "The storage closet is locked, isn't it?",
         "choices": {
           "A": "Yes, but I'll give you the key.",
           "B": "There should be more in there.",
           "C": "Please close it."
         },
-        "audio": "media/part02_ex_s213.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide213_media87.mp3"
       },
       {
+        "type": "example",
         "slide_index": 214,
-        "question": "EXAMPLE 88: You already booked your flight, didn't  you?",
+        "question": "You already booked your flight, didn't you?",
         "choices": {
           "A": "No, I'll do it tonight.",
           "B": "I read that.",
           "C": "Just a suitcase."
         },
-        "audio": "media/part02_ex_s214.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide214_media88.mp3"
       },
       {
+        "type": "example",
         "slide_index": 215,
-        "question": "EXAMPLE 89: This is your first visit to this location, right?",
+        "question": "This is your first visit to this location, right?",
         "choices": {
           "A": "Check the parking area.",
           "B": "No, I've been here before.",
           "C": "We won first prize!"
         },
-        "audio": "media/part02_ex_s215.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide215_media89.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 216,
+        "text": [
+          "<span style=\"color: #7c3aed; font-weight: 700\">3.2. Các dạng câu trả lời điển hình</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">b) Trả lời gián tiếp – chủ đạo (Chiếm đa số)</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">1. Cung cấp thông tin thực tế:</span> <em>It’s on your desk. (→ Yes) | I haven’t done it yet. (→ No)</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">2. Đưa ra lý do / giải thích:</span> <em>I have a meeting then. (→ No) | Because the system is down.</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">3. Đồng ý / xác nhận:</span> <em>Sure. / Of course. / That’s right. / Right.</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">4. Từ chối / phủ định:</span> <em>I’m afraid not. / Not really. / I don’t think so.</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">5. Đề xuất / thay thế:</span> <em>You can borrow mine. | Let’s reschedule it.</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">6. Không chắc chắn / trì hoãn:</span> <em>I’m not sure. | Let me check. | Let me ask Jimmy. | I’ll get back to you.</em>"
+        ]
+      },
+      {
+        "type": "example",
         "slide_index": 219,
-        "question": "EXAMPLE 90: Ms. Balani has the copies of the annual report, doesn't she?",
+        "question": "Ms. Balani has the copies of the annual report, doesn't she?",
         "choices": {
           "A": "A yearly salary increase.",
           "B": "Let's look on her desk.",
           "C": "It was a good offer."
         },
-        "audio": "media/part02_ex_s219.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide219_media90.mp3"
       },
       {
+        "type": "example",
         "slide_index": 220,
-        "question": "EXAMPLE 91: We can leave our bags at the reception desk, can't we?",
+        "question": "We can leave our bags at the reception desk, can't we?",
         "choices": {
           "A": "It ends at ten o'clock.",
           "B": "Of course we can.",
           "C": "There are plenty of rooms."
         },
-        "audio": "media/part02_ex_s220.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide220_media91.mp3"
       },
       {
+        "type": "example",
         "slide_index": 221,
-        "question": "EXAMPLE 92: The actors in this play are talented, aren’t they?",
+        "question": "The actors in this play are talented, aren’t they?",
         "choices": {
           "A": "Tickets for front-row seats.",
           "B": "Some are even quite famous.",
           "C": "The tractor needs repair."
         },
-        "audio": "media/part02_ex_s221.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide221_media92.mp3"
       },
       {
+        "type": "example",
         "slide_index": 222,
-        "question": "EXAMPLE 93: That was a short movie, wasn't it?",
+        "question": "That was a short movie, wasn't it?",
         "choices": {
           "A": "The theater on Glenn Road.",
           "B": "You're right - it was only an hour!",
           "C": "I must have misplaced it."
         },
-        "audio": "media/part02_ex_s222.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide222_media93.mp3"
       },
       {
+        "type": "example",
         "slide_index": 223,
-        "question": "EXAMPLE 94: The order can still be changed, right?",
+        "question": "The order can still be changed, right?",
         "choices": {
           "A": "That process is very complicated.",
           "B": "I still remember that day, too.",
           "C": "Yes, he does."
         },
-        "audio": "media/part02_ex_s223.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide223_media94.mp3"
       }
     ]
   },
@@ -2232,44 +2149,97 @@ window.part02Data = [
     "id": "yn_embedded",
     "title": "4. Embedded Questions",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 224,
         "text": [
-          "<strong><span style='color: #FF0000;'>4. Embedded Questions</span></strong>",
-          "Câu hỏi gián tiếp là câu hỏi <strong>chứa một câu hỏi khác bên trong</strong>, thường dùng để hỏi <strong>lịch sự hơn</strong>.",
-          "<strong>Dấu hiệu nhận biết</strong>",
-          "Thường bắt đầu bằng các cụm: <strong>Do you know…</strong> <span style='color: #FF0000;'>/</span> <strong>Do you think…</strong>  <span style='color: #FF0000;'>/</span><strong>Are you sure…</strong>  <span style='color: #FF0000;'>/ </span><strong>Have you heard…</strong>  <span style='color: #FF0000;'>/</span> <strong>Can/Could you tell me…</strong>",
-          "→ Sau đó là <strong>từ để hỏi (Wh- words):</strong> <strong>when, where, who, what, why, how,…</strong>"
+          "<span style=\"color: #dc2626; font-weight: 700\">4. Embedded Questions (Câu hỏi gián tiếp)</span>",
+          "Câu hỏi gián tiếp là câu hỏi <span style=\"font-weight: 700\">chứa một câu hỏi khác bên trong</span>, thường dùng để hỏi <span style=\"color: #7c3aed; font-weight: 700\">lịch sự và trang trọng hơn</span>.",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Dấu hiệu nhận biết:</span> Thường bắt đầu bằng các cụm: <em>Do you know… / Do you think… / Are you sure… / Have you heard… / Can/Could you tell me…</em> sau đó là <strong>từ để hỏi (Wh- words):</strong> <em>when, where, who, what, why, how...</em>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 225,
         "text": [
-          "<strong>Cấu trúc: </strong><strong><span style='color: #FF0000;'>Main clause + Wh-word + S + V?</span></strong>",
-          "<strong>👉 </strong><strong>Mệnh đề thứ hai:</strong>",
-          "<strong><span style='color: #00B0F0;'>Không đảo trợ động từ</span></strong>",
-          "<strong><span style='color: #00B0F0;'>Động từ chia theo chủ ngữ</span></strong>",
-          "<strong>Ví dụ</strong>",
-          "Do you know <strong>where the bank is</strong>?",
-          "Can you tell me <strong>what time the next flight leaves</strong>?"
+          "<span style=\"color: #7c3aed; font-weight: 700\">Cấu trúc ngữ pháp</span>",
+          "👉 <span style=\"color: #dc2626; font-weight: 700; background: #fef2f2; padding: 4px 8px; border-radius: 6px; border: 1px solid #fecaca;\">Công thức: Main clause + Wh-word + S + V?</span>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Mệnh đề thứ hai:</span> <strong>Không đảo trợ động từ</strong> và <strong>động từ chia theo chủ ngữ (S)</strong>.",
+          "👉 <strong>Ví dụ:</strong> <em>Do you know <span style=\"color: #0284c7; font-weight: 700\">where the bank is</span>? | Can you tell me <span style=\"color: #0284c7; font-weight: 700\">what time the next flight leaves</span>?</em>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 226,
         "text": [
-          "<strong>Cách trả lời trong TOEIC</strong>",
-          "👉 Thường <strong>không trả lời Yes/No</strong>, mà:",
-          "<span style='color: #00B0F0;'>Trả lời </span><strong><span style='color: #00B0F0;'>trực tiếp thông tin</span></strong>",
-          "<span style='color: #00B0F0;'>Hoặc </span><strong><span style='color: #00B0F0;'>không chắc chắn / kiểm tra lại</span></strong>",
-          "<strong>Ví dụ:</strong>",
-          "<i>It’s on Main Street. </i>",
-          "<i>I’m not sure. </i>",
-          "<i>Let me check.</i>"
+          "<span style=\"color: #7c3aed; font-weight: 700\">Cách trả lời trong TOEIC</span>",
+          "👉 Thường <span style=\"color: #dc2626; font-weight: 700\">không trả lời Yes/No</span>, mà:",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Trả lời trực tiếp thông tin:</span> <em>It’s on Main Street.</em>",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Không chắc chắn / kiểm tra lại:</span> <em>I’m not sure. / Let me check.</em>"
         ]
+      },
+      {
+        "type": "example",
+        "slide_index": 227,
+        "question": "Could you show me where the pharmacy is?",
+        "choices": {
+          "A": "Actually, it closed at six o’clock.",
+          "B": "To refill my prescription.",
+          "C": "Mr. Sato owns the farm."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide227_media95.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 228,
+        "question": "Do you know why the bank is closed?",
+        "choices": {
+          "A": "I think it's a national holiday.",
+          "B": "I'd like to open an account.",
+          "C": "No, I don't know anybody here."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide228_media96.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 229,
+        "question": "Can you tell me where the customer service desk is?",
+        "choices": {
+          "A": "Take the elevator to the top floor.",
+          "B": "Yes, the service contract includes all repairs.",
+          "C": "Sorry, but that is our store policy."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide229_media97.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 230,
+        "question": "Do you know when the company will be relocated to a new location?",
+        "choices": {
+          "A": "No, I don't know the manager.",
+          "B": "I believe the date is set for next month.",
+          "C": "We'll be transferring to the Paris branch."
+        },
+        "answer": "B",
+        "audio": "media/part02_examples/slide230_media98.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 231,
+        "question": "Do you think the board will reach the final decision soon?",
+        "choices": {
+          "A": "Yes, the next stop is the final destination.",
+          "B": "We haven't met each other yet.",
+          "C": "That's what everyone thinks."
+        },
+        "answer": "C",
+        "audio": "media/part02_examples/slide231_media99.mp3"
       }
-    ],
-    "examples": []
+    ]
   },
   {
     "id": "choice_questions",
