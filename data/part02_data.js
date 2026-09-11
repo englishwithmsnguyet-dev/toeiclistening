@@ -1778,7 +1778,7 @@ window.part02Data = [
         "question": "Can you help me log on to my computer?",
         "choices": {
           "A": "Sorry, you’ll need to call Technical Support.",
-          "B": "A passport with both letters and numbers.",
+          "B": "A password with both letters and numbers.",
           "C": "That’s a useful software program."
         },
         "answer": "A",
