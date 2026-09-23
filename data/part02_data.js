@@ -2245,273 +2245,208 @@ window.part02Data = [
     "id": "choice_questions",
     "title": "3. CHOICE QUESTIONS",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 232,
         "text": [
-          "<strong><span style='color: #FF0000;'>III. CHOICE QUESTIONS</span></strong>",
-          "<strong><span style='color: #00B0F0;'>(CÂU HỎI LỰA CHỌN) </span></strong>"
+          "<span style=\"color: #dc2626; font-weight: 700\">3. CHOICE QUESTIONS (CÂU HỎI LỰA CHỌN)</span>",
+          "Câu hỏi lựa chọn là dạng câu hỏi đưa ra hai hoặc nhiều lựa chọn được nối với nhau bằng liên từ <span style=\"color: #dc2626; font-weight: 700\">“or”</span>.",
+          "👉 <span style=\"color: #0284c7; font-weight: 700\">Các hướng trả lời:</span> Chọn 1 phương án, chọn cả hai, không chọn phương án nào, đưa ra lựa chọn thay thế, hoặc trả lời gián tiếp."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 233,
         "text": [
-          "<strong><span style='color: #FF0000;'>1. Dạng câu hỏi </span></strong>",
-          "Câu hỏi lựa chọn (<strong>Choice Questions</strong>) là dạng câu hỏi đưa ra hai hoặc nhiều lựa chọn được nối với nhau bằng liên từ “<strong>or</strong>”. Người nghe cần <strong><i>chọn một trong các phương án được đề cập hoặc đưa ra một phản hồi phù hợp liên quan đến các lựa chọn đó</i></strong>. Câu trả lời có thể: <strong><i>chọn một phương án</i></strong>, <strong><i>chọn cả hai</i></strong>, <strong><i>không chọn phương án nào</i></strong>, <strong><i>đưa ra một lựa chọn khác</i></strong>, hoặc <strong><i>trả lời gián tiếp</i></strong>."
+          "<span style=\"color: #dc2626; font-weight: 700\">1. Dạng câu hỏi </span>",
+          "Câu hỏi lựa chọn (<span style=\"font-weight: 700\">Choice Questions</span>) là dạng câu hỏi đưa ra hai hoặc nhiều lựa chọn được nối với nhau bằng liên từ “<span style=\"font-weight: 700\">or</span>”. Người nghe cần <span style=\"font-weight: 700; font-style: italic\">chọn một trong các phương án được đề cập hoặc đưa ra một phản hồi phù hợp liên quan đến các lựa chọn đó</span>. Câu trả lời có thể: <span style=\"font-weight: 700; font-style: italic\">chọn một phương án</span>, <span style=\"font-weight: 700; font-style: italic\">chọn cả hai</span>, <span style=\"font-weight: 700; font-style: italic\">không chọn phương án nào</span>, <span style=\"font-weight: 700; font-style: italic\">đưa ra một lựa chọn khác</span>, hoặc <span style=\"font-weight: 700; font-style: italic\">trả lời gián tiếp</span>."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 234,
         "text": [
-          "<strong>1.1 Would you like (to) … or … ?</strong>",
+          "<span style=\"font-weight: 700\">1.1 Would you like (to) … or …?</span>",
           "Dùng để hỏi về sở thích hoặc lời mời.",
-          "<strong>Ex:</strong>\t\t<i>Would you like tea or coffee? </i>",
-          "<strong>1.2. Would you prefer (to) … or … ?</strong>",
+          "<span style=\"font-weight: 700\">Ex:</span><span style=\"font-style: italic\">Would you like tea or coffee? </span>",
+          "<span style=\"font-weight: 700\">1.2. Would you prefer (to) … or …?</span>",
           "Dùng để hỏi sự ưu tiên.",
-          "<strong>Ex:</strong>\t\t<i>Would you prefer to travel by train or by plane?</i>"
+          "<span style=\"font-weight: 700\">Ex:</span><span style=\"font-style: italic\">Would you prefer to travel by train or by plane?</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 235,
         "text": [
-          "<strong>1.3. Would you rather … or … ?</strong>",
+          "<span style=\"font-weight: 700\">1.3. Would you rather … or …?</span>",
           "Dùng để hỏi lựa chọn mang tính cá nhân.",
-          "<strong>Ex:\t</strong><i>Would you rather work from home or at the office? </i>",
-          "<strong>1.4. Which would you like, … or … ?</strong>",
+          "<span style=\"font-weight: 700\">Ex:</span><span style=\"font-style: italic\">Would you rather work from home or at the office? </span>",
+          "<span style=\"font-weight: 700\">1.4. Which would you like, … or …?</span>",
           "Dùng khi yêu cầu chọn cụ thể giữa các lựa chọn.",
-          "<strong>Ex:\t</strong><i>Which would you like, ice cream or cake for dessert? </i>"
+          "<span style=\"font-weight: 700\">Ex:</span><span style=\"font-style: italic\">Which would you like, ice cream or cake for dessert? </span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 236,
         "text": [
-          "<strong>1.5. Trợ động từ + S + V … or … ?</strong>",
-          "<strong>Ex:\t</strong><i>Will you pay by cash or credit card? </i>",
-          "<strong>1.6. Động từ “to be” + S + … or … ?</strong>",
-          "<strong>Ex:\t</strong>Is the meeting today or tomorrow?",
-          "<strong><span style='color: #FF0000;'>LƯU Ý: </span></strong><strong><i>Câu hỏi lựa chọn cũng có thể chứa hai mệnh đề hoàn chỉnh nối với nhau bằng “</i></strong><strong><i><span style='color: #00B0F0;'>or</span></i></strong><strong><i>”.</i></strong>",
-          "<strong>Ex: </strong>Will you take the bus, or will you drive yourself?"
+          "<span style=\"font-weight: 700\">1.5. Trợ động từ + S + V … or …?</span>",
+          "<span style=\"font-weight: 700\">Ex:</span><span style=\"font-style: italic\">Will you pay by cash or credit card? </span>",
+          "<span style=\"font-weight: 700\">1.6. Động từ “to be” + S + … or …?</span>",
+          "<span style=\"font-weight: 700\">Ex:</span>Is the meeting today or tomorrow?",
+          "<span style=\"color: #dc2626; font-weight: 700\">LƯU Ý: </span><span style=\"font-weight: 700; font-style: italic\">Câu hỏi lựa chọn cũng có thể chứa hai mệnh đề hoàn chỉnh nối với nhau bằng “</span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">or</span><span style=\"font-weight: 700; font-style: italic\">”.</span>",
+          "<span style=\"font-weight: 700\">Ex: </span>Will you take the bus, or will you drive yourself?"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 237,
         "text": [
-          "<strong><span style='color: #FF0000;'>2. Dạng câu trả lời</span></strong>",
-          "<strong><i>2.1 Câu trả lời chọn một trong hai</i></strong>",
-          "<strong><i><span style='color: #00B0F0;'>a) Câu trả lời lặp lại lựa chọn trong câu hỏi</span></i></strong>",
+          "<span style=\"color: #dc2626; font-weight: 700\">2. Dạng câu trả lời</span>",
+          "<span style=\"font-weight: 700; font-style: italic\">2.1 Câu trả lời chọn một trong hai</span>",
+          "<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">a) Câu trả lời lặp lại lựa chọn trong câu hỏi</span>",
           "Trong một số trường hợp, đáp án sẽ lặp lại trực tiếp một trong các lựa chọn được đưa ra trong câu hỏi.",
           "👉 Người nghe chỉ cần xác định đáp án chứa lựa chọn phù hợp đã xuất hiện trong câu hỏi."
         ]
       },
       {
-        "slide_index": 240,
-        "text": [
-          "<strong><i><span style='color: #00B0F0;'>b) Câu trả lời sử dụng paraphrasing</span></i></strong>",
-          "Ở dạng này, đáp án vẫn thể hiện việc chọn một trong các phương án được đưa ra trong câu hỏi. Tuy nhiên, đáp án sẽ không lặp lại nguyên văn lựa chọn trong câu hỏi mà sử dụng: <strong><i><span style='color: #00B0F0;'>từ đồng nghĩa</span></i></strong>, <strong><i><span style='color: #00B0F0;'>cụm từ tương đương nghĩa</span></i></strong>, hoặc <strong><i><span style='color: #00B0F0;'>cách diễn đạt khác có cùng ý nghĩa</span></i></strong>. Người nghe cần <strong>nhận ra mối liên hệ về nghĩa </strong>thay vì chỉ nghe từ giống hệt trong câu hỏi."
-        ]
-      },
-      {
-        "slide_index": 243,
-        "text": [
-          "<strong><i>2.2. Câu trả lời “cái nào cũng được”</i></strong>",
-          "Ở dạng này, người nói không chọn cụ thể phương án nào mà thể hiện rằng lựa chọn nào cũng được. Đáp án thường chứa: <strong><i><span style='color: #00B0F0;'>either</span></i></strong>, <strong><i><span style='color: #00B0F0;'>either one</span></i></strong>, hoặc các cụm như: <strong><i>It depends on you</i></strong>. / <strong><i>It’s up to you</i></strong>. / <strong><i>Whatever</i></strong>. / <strong><i>It doesn’t matter to me</i></strong>. / <strong><i>Either way is fine with me</i></strong>.",
-          "<strong>👉 Dạng này có xuất hiện nhưng không phổ biến.</strong>"
-        ]
-      },
-      {
-        "slide_index": 244,
-        "text": [
-          "<strong><i>2.3. Câu trả lời không chọn phương án nào / đưa ra lựa chọn khác</i></strong>",
-          "Ở dạng này, người nói không chọn bất kỳ phương án nào được đưa ra trong câu hỏi, mà: <strong><i><span style='color: #00B0F0;'>từ chối cả hai lựa chọn </span></i></strong>hoặc <strong><i><span style='color: #00B0F0;'>đưa ra một lựa chọn khác</span></i></strong>. Đáp án có thể chứa: <strong><i>neither</i></strong>, <strong><i>neither one </i></strong>hoặc <strong><i>diễn đạt gián tiếp</i></strong>."
-        ]
-      },
-      {
-        "slide_index": 247,
-        "text": [
-          "<strong><i>2.4 Câu trả lời chọn cả hai</i></strong>",
-          "Ở dạng này, người nói đồng ý với cả hai lựa chọn được đưa ra trong câu hỏi. Đáp án thường chứa: <strong><i><span style='color: #00B0F0;'>both</span></i></strong>, <strong><i><span style='color: #00B0F0;'>both of them</span></i></strong>, hoặc <strong>các cách diễn đạt mang nghĩa “cả hai đều được”</strong>.",
-          "<strong>👉 Dạng này xuất hiện khá ít.</strong>"
-        ]
-      },
-      {
-        "slide_index": 248,
-        "text": [
-          "<strong><i>2.5. Câu trả lời gián tiếp</i></strong>",
-          "Ở dạng này, người nói thường <strong>không đưa ra lựa chọn trực tiếp</strong>. Thay vào đó, đáp án có thể: <strong><i><span style='color: #00B0F0;'>thể hiện sự không biết hoặc chưa chắc chắn</span></i></strong>, <strong><i><span style='color: #00B0F0;'>trì hoãn câu trả lời</span></i></strong>, <strong><i><span style='color: #00B0F0;'>đặt câu hỏi ngược lại</span></i></strong>, hoặc <strong><i><span style='color: #00B0F0;'>đưa ra ý kiến để người nghe tự suy ra lựa chọn</span></i></strong>. Các cách trả lời phổ biến: <strong>I don’t know</strong>. / <strong>I’m not sure</strong>. / <strong>It hasn’t been decided yet</strong>. / <strong>Let me check</strong>.  / <strong>Let me ask</strong>. / <strong>Let me find out</strong>."
-        ]
-      },
-      {
-        "slide_index": 251,
-        "text": [
-          "<strong><span style='color: #FF0000;'>IV. SUGGESTIONS, REQUESTS AND INVITATIONS </span></strong>"
-        ]
-      },
-      {
-        "slide_index": 252,
-        "text": [
-          "<strong>1. Dạng câu hỏi</strong>",
-          "Đây là nhóm câu dùng để:",
-          "<i>đưa ra gợi ý hoặc đề xuất </i>",
-          "<i>yêu cầu hoặc nhờ vả </i>",
-          "<i>mời hoặc rủ ai đó tham gia một hoạt động </i>",
-          "<i>đề nghị giúp đỡ hoặc cung cấp dịch vụ </i>",
-          "<strong>Trong TOEIC Part 2, các dạng câu này thường xuất hiện trong các tình huống giao tiếp hằng ngày hoặc nơi làm việc</strong><strong>.</strong>"
-        ]
-      },
-      {
-        "slide_index": 253,
-        "text": [
-          "<strong>Các cấu trúc thường gặp</strong>",
-          "<strong><span style='color: #00B0F0;'>1. Let’s + V₀</span></strong>",
-          "Dùng để đề nghị cùng làm một việc.",
-          "<strong>Ex:</strong>",
-          "<i>Let’s try the new Italian restaurant down the street. </i>",
-          "<i>Let’s leave early to avoid traffic. </i>"
-        ]
-      }
-    ],
-    "examples": [
-      {
-        "slide_index": 227,
-        "question": "EXAMPLE 95: Could you show me where the pharmacy is?",
-        "choices": {
-          "A": "Actually, it closed at six o’clock.",
-          "B": "To refill my prescription.",
-          "C": "Mr. Sato owns the farm."
-        },
-        "audio": "media/part02_ex_s227.mp3",
-        "answer": "A"
-      },
-      {
-        "slide_index": 228,
-        "question": "EXAMPLE 96: Do you know why the bank is closed?",
-        "choices": {
-          "A": "I think it's a national holiday.",
-          "B": "I'd like to open an account.",
-          "C": "No, I don't know anybody here."
-        },
-        "audio": "media/part02_ex_s228.mp3",
-        "answer": "A"
-      },
-      {
-        "slide_index": 229,
-        "question": "EXAMPLE 97: Can you tell me where the customer service desk is? \t(A) Take the elevator to the top floor.",
-        "choices": {
-          "B": "Yes, the service contract includes all repairs.",
-          "C": "Sorry, but that is our store policy."
-        },
-        "audio": "media/part02_ex_s229.mp3",
-        "answer": null
-      },
-      {
-        "slide_index": 230,
-        "question": "EXAMPLE 98: Do you know when the company will be relocated to a new location?",
-        "choices": {
-          "A": "No, I don't know the manager.",
-          "B": "I believe the date is set for next month.",
-          "C": "We'll be transferring to the Paris branch."
-        },
-        "audio": "media/part02_ex_s230.mp3",
-        "answer": "B"
-      },
-      {
-        "slide_index": 231,
-        "question": "EXAMPLE 99: Do you think the board will reach the final decision soon?",
-        "choices": {
-          "A": "Yes, the next stop is the final destination.",
-          "B": "We haven't met each other yet.",
-          "C": "That's what everyone thinks."
-        },
-        "audio": "media/part02_ex_s231.mp3",
-        "answer": "C"
-      },
-      {
+        "type": "example",
         "slide_index": 238,
-        "question": "EXAMPLE 100: Would you like your receipt now, or shall I put it in the bag?",
+        "question": "Would you like your receipt now, or shall I put it in the bag?",
         "choices": {
           "A": "Just put it in my bag, thanks.",
           "B": "About twenty-five euros.",
           "C": "That's a great looking sweater."
         },
-        "audio": "media/part02_ex_s238.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide238_media100.mp3"
       },
       {
+        "type": "example",
         "slide_index": 239,
-        "question": "EXAMPLE 101: Should I present the sales figures at today's meeting or tomorrow's?",
+        "question": "Should I present the sales figures at today's meeting or tomorrow's?",
         "choices": {
           "A": "Tomorrow's has been canceled.",
           "B": "Only a slight increase.",
           "C": "Are all purchases final?"
         },
-        "audio": "media/part02_ex_s239.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide239_media101.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 240,
+        "text": [
+          "<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">b) Câu trả lời sử dụng paraphrasing</span>",
+          "Ở dạng này, đáp án vẫn thể hiện việc chọn một trong các phương án được đưa ra trong câu hỏi. Tuy nhiên, đáp án sẽ không lặp lại nguyên văn lựa chọn trong câu hỏi mà sử dụng: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">từ đồng nghĩa</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">cụm từ tương đương nghĩa</span>, hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">cách diễn đạt khác có cùng ý nghĩa</span>. Người nghe cần <span style=\"font-weight: 700\">nhận ra mối liên hệ về nghĩa </span>thay vì chỉ nghe từ giống hệt trong câu hỏi."
+        ]
+      },
+      {
+        "type": "example",
         "slide_index": 241,
-        "question": "EXAMPLE 102: Can we begin production this week, or should we revise the timeline?",
+        "question": "Can we begin production this week, or should we revise the timeline?",
         "choices": {
           "A": "Improving efficiency.",
           "B": "I've seen that performance.",
           "C": "You can start this Thursday."
         },
-        "audio": "media/part02_ex_s241.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide241_media102.mp3"
       },
       {
+        "type": "example",
         "slide_index": 242,
-        "question": "EXAMPLE 103: Have you finished the budget report, or are you still working on it?",
+        "question": "Have you finished the budget report, or are you still working on it?",
         "choices": {
           "A": "I'm almost done.",
           "B": "No, it's plastic.",
           "C": "Yes, I've eaten there."
         },
-        "audio": "media/part02_ex_s242.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide242_media103.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 243,
+        "text": [
+          "<span style=\"font-weight: 700; font-style: italic\">2.2. Câu trả lời “cái nào cũng được”</span>",
+          "Ở dạng này, người nói không chọn cụ thể phương án nào mà thể hiện rằng lựa chọn nào cũng được. Đáp án thường chứa: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">either</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">either one</span>, hoặc các cụm như: <span style=\"font-weight: 700; font-style: italic\">It depends on you</span>. / <span style=\"font-weight: 700; font-style: italic\">It’s up to you</span>. / <span style=\"font-weight: 700; font-style: italic\">Whatever</span>. / <span style=\"font-weight: 700; font-style: italic\">It doesn’t matter to me</span>. / <span style=\"font-weight: 700; font-style: italic\">Either way is fine with me</span>.",
+          "<span style=\"font-weight: 700\">👉 Dạng này có xuất hiện nhưng không phổ biến.</span>"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 244,
+        "text": [
+          "<span style=\"font-weight: 700; font-style: italic\">2.3. Câu trả lời không chọn phương án nào / đưa ra lựa chọn khác</span>",
+          "Ở dạng này, người nói không chọn bất kỳ phương án nào được đưa ra trong câu hỏi, mà: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">từ chối cả hai lựa chọn </span>hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đưa ra một lựa chọn khác</span>. Đáp án có thể chứa: <span style=\"font-weight: 700; font-style: italic\">neither</span>, <span style=\"font-weight: 700; font-style: italic\">neither one </span>hoặc <span style=\"font-weight: 700; font-style: italic\">diễn đạt gián tiếp</span>."
+        ]
+      },
+      {
+        "type": "example",
         "slide_index": 245,
-        "question": "EXAMPLE 104: Do we have to submit our budget report on Friday, or is Monday OK?",
+        "question": "Do we have to submit our budget report on Friday, or is Monday OK?",
         "choices": {
           "A": "It was pretty expensive.",
           "B": "He was here a few days ago.",
           "C": "Maria was firm about the deadline."
         },
-        "audio": "media/part02_ex_s245.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide245_media104.mp3"
       },
       {
+        "type": "example",
         "slide_index": 246,
-        "question": "EXAMPLE 105: Will your rent increase next year, or will it stay the same?",
+        "question": "Will your rent increase next year, or will it stay the same?",
         "choices": {
           "A": "The lease agreement.",
           "B": "I'm getting a new apartment.",
           "C": "I lent it to him a while ago."
         },
-        "audio": "media/part02_ex_s246.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide246_media105.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 247,
+        "text": [
+          "<span style=\"font-weight: 700; font-style: italic\">2.4 Câu trả lời chọn cả hai</span>",
+          "Ở dạng này, người nói đồng ý với cả hai lựa chọn được đưa ra trong câu hỏi. Đáp án thường chứa: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">both</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">both of them</span>, hoặc <span style=\"font-weight: 700\">các cách diễn đạt mang nghĩa “cả hai đều được”</span>.",
+          "<span style=\"font-weight: 700\">👉 Dạng này xuất hiện khá ít.</span>"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 248,
+        "text": [
+          "<span style=\"font-weight: 700; font-style: italic\">2.5. Câu trả lời gián tiếp</span>",
+          "Ở dạng này, người nói thường <span style=\"font-weight: 700\">không đưa ra lựa chọn trực tiếp</span>. Thay vào đó, đáp án có thể: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">thể hiện sự không biết hoặc chưa chắc chắn</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">trì hoãn câu trả lời</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đặt câu hỏi ngược lại</span>, hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đưa ra ý kiến để người nghe tự suy ra lựa chọn</span>. Các cách trả lời phổ biến: <span style=\"font-weight: 700\">I don’t know</span>. / <span style=\"font-weight: 700\">I’m not sure</span>. / <span style=\"font-weight: 700\">It hasn’t been decided yet</span>. / <span style=\"font-weight: 700\">Let me check</span>. / <span style=\"font-weight: 700\">Let me ask</span>. / <span style=\"font-weight: 700\">Let me find out</span>."
+        ]
+      },
+      {
+        "type": "example",
         "slide_index": 249,
-        "question": "EXAMPLE 106: Would you like indoor or outdoor seating?",
+        "question": "Would you like indoor or outdoor seating?",
         "choices": {
           "A": "It's a very comfortable chair.",
           "B": "Isn't it supposed to rain?",
           "C": "The doors are opening."
         },
-        "audio": "media/part02_ex_s249.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide249_media106.mp3"
       },
       {
+        "type": "example",
         "slide_index": 250,
-        "question": "EXAMPLE 107: Do you want to walk in the park or at the indoor track?",
+        "question": "Do you want to walk in the park or at the indoor track?",
         "choices": {
           "A": "It's a bit hot today.",
           "B": "I'll keep track of it.",
           "C": "My favorite pair of shoes."
         },
-        "audio": "media/part02_ex_s250.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide250_media107.mp3"
       }
     ]
   },
@@ -2519,290 +2454,432 @@ window.part02Data = [
     "id": "suggestions_invitations",
     "title": "4. SUGGESTIONS & INVITATIONS",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
+        "slide_index": 251,
+        "text": [
+          "<span style=\"color: #dc2626; font-weight: 700\">4. SUGGESTIONS & INVITATIONS (CÂU ĐỀ NGHỊ & LỜI MỜI)</span>",
+          "Đây là nhóm câu dùng để: <span style=\"color: #0284c7; font-weight: 700\">đưa ra gợi ý</span>, <span style=\"color: #0284c7; font-weight: 700\">yêu cầu sự giúp đỡ</span>, hoặc <span style=\"color: #0284c7; font-weight: 700\">mời ai đó tham gia một hoạt động</span>."
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 252,
+        "text": [
+          "<span style=\"font-weight: 700\">1. Dạng câu hỏi</span>",
+          "Đây là nhóm câu dùng để:",
+          "<span style=\"font-style: italic\">đưa ra gợi ý hoặc đề xuất </span>",
+          "<span style=\"font-style: italic\">yêu cầu hoặc nhờ vả </span>",
+          "<span style=\"font-style: italic\">mời hoặc rủ ai đó tham gia một hoạt động </span>",
+          "<span style=\"font-style: italic\">đề nghị giúp đỡ hoặc cung cấp dịch vụ </span>",
+          "<span style=\"font-weight: 700\">Trong TOEIC Part 2, các dạng câu này thường xuất hiện trong các tình huống giao tiếp hằng ngày hoặc nơi làm việc.</span>"
+        ]
+      },
+      {
+        "type": "theory",
+        "slide_index": 253,
+        "text": [
+          "<span style=\"font-weight: 700\">Các cấu trúc thường gặp</span>",
+          "<span style=\"color: #0284c7; font-weight: 700\">1. Let’s + V₀</span>",
+          "Dùng để đề nghị cùng làm một việc.",
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Let’s try the new Italian restaurant down the street. </span>",
+          "<span style=\"font-style: italic\">Let’s leave early to avoid traffic. </span>"
+        ]
+      },
+      {
+        "type": "theory",
         "slide_index": 254,
         "text": [
-          "<strong><span style='color: #00B0F0;'>2. What about / How about + V-ing / noun?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">2. What about / How about + V-ing / noun?</span>",
           "Dùng để đưa ra gợi ý hoặc đề xuất.",
-          "<strong>Ex:</strong>",
-          "<i>How about going to the disco with me? </i>",
-          "<i>What about meeting after lunch? </i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">How about going to the disco with me? </span>",
+          "<span style=\"font-style: italic\">What about meeting after lunch? </span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 255,
         "text": [
-          "<strong><span style='color: #00B0F0;'>3. Why don’t + S + V₀?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">3. Why don’t + S + V₀?</span>",
           "Dùng để đề nghị hoặc đưa ra lời khuyên.",
-          "<strong>Ex:</strong>",
-          "<i>Why don’t we place an order now?</i>",
-          "<i>Why don’t you ask the manager directly?</i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Why don’t we place an order now?</span>",
+          "<span style=\"font-style: italic\">Why don’t you ask the manager directly?</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 256,
         "text": [
-          "<strong><span style='color: #00B0F0;'>4. Do you want to + V₀ ?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">4. Do you want to + V₀?</span>",
           "Dùng để rủ ai làm gì hoặc đề nghị cùng thực hiện một hoạt động.",
-          "<strong>Ex:</strong>",
-          "<i>Do you want to have lunch together? </i>",
-          "<i>Do you want to watch a movie tonight? </i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Do you want to have lunch together? </span>",
+          "<span style=\"font-style: italic\">Do you want to watch a movie tonight? </span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 257,
         "text": [
-          "<strong><span style='color: #00B0F0;'>5. Would you like to + V₀?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">5. Would you like to + V₀?</span>",
           "Dùng để đưa ra lời mời hoặc đề nghị lịch sự hơn.",
-          "<strong>Ex:</strong>",
-          "<i>Would you like to join us for dinner?</i>",
-          "<i>Would you like to attend the conference next week?</i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Would you like to join us for dinner?</span>",
+          "<span style=\"font-style: italic\">Would you like to attend the conference next week?</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 258,
         "text": [
-          "<strong><span style='color: #00B0F0;'>6. Would you like me to + V₀?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">6. Would you like me to + V₀?</span>",
           "Dùng để đề nghị giúp đỡ ai đó.",
-          "<strong>Ex:</strong>",
-          "<i>Would you like to join us for dinner?</i>",
-          "<i>Would you like to attend the conference next week?</i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Would you like to join us for dinner?</span>",
+          "<span style=\"font-style: italic\">Would you like to attend the conference next week?</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 259,
         "text": [
-          "<strong><span style='color: #00B0F0;'>7. Can / Could I + V₀ … (please)?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">7. Can / Could I + V₀ … (please)?</span>",
           "Dùng để xin phép hoặc đề nghị được làm việc gì.",
-          "<strong>Ex:</strong>",
-          "<i>Could I leave early today?</i>",
-          "<i>Can I borrow your pen, please?</i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Could I leave early today?</span>",
+          "<span style=\"font-style: italic\">Can I borrow your pen, please?</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 260,
         "text": [
-          "<strong><span style='color: #00B0F0;'>8. Would / Could / Can / Will + you + V₀ … ?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">8. Would / Could / Can / Will + you + V₀ …?</span>",
           "Dùng để yêu cầu hoặc nhờ ai làm việc gì.",
-          "<strong>Ex:</strong>",
-          "<i>Could you send me the report? </i>",
-          "<i>Will you open the window?</i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Could you send me the report? </span>",
+          "<span style=\"font-style: italic\">Will you open the window?</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 261,
         "text": [
-          "<strong><span style='color: #00B0F0;'>9. Would / Do you mind + V-ing … ?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">9. Would / Do you mind + V-ing …?</span>",
           "Dùng để yêu cầu một cách lịch sự.",
-          "<strong>Ex:</strong>",
-          "<i>Would you mind closing the door? </i>",
-          "<i>Do you mind helping me with this file? </i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Would you mind closing the door? </span>",
+          "<span style=\"font-style: italic\">Do you mind helping me with this file? </span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 262,
         "text": [
-          "<strong><span style='color: #00B0F0;'>10. Would you be interested in + V-ing … ?</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">10. Would you be interested in + V-ing …?</span>",
           "Dùng để hỏi sự quan tâm hoặc gợi ý tham gia hoạt động.",
-          "<strong>Ex:</strong>",
-          "<i>Would you be interested in joining our marketing team? </i>",
-          "<i>Would you be interested in attending the workshop? </i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Would you be interested in joining our marketing team? </span>",
+          "<span style=\"font-style: italic\">Would you be interested in attending the workshop? </span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 263,
         "text": [
-          "<strong><span style='color: #00B0F0;'>11. Let me + V₀</span></strong>",
+          "<span style=\"color: #0284c7; font-weight: 700\">11. Let me + V₀</span>",
           "Dùng để đề nghị giúp đỡ chủ động thực hiện một hành động.",
-          "<strong>Ex:</strong>",
-          "<i>Let me help you with those boxes.</i>",
-          "<i>Let me carry that suitcase for you.</i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">Let me help you with those boxes.</span>",
+          "<span style=\"font-style: italic\">Let me carry that suitcase for you.</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 264,
         "text": [
-          "<strong>2. Các câu trả lời thường gặp</strong>",
-          "<strong><i>a) Chấp nhận / đồng ý / tán thành</i></strong>",
-          "Câu trả lời thể hiện sự đồng ý hoặc chấp nhận lời đề nghị, yêu cầu hoặc lời mời. Đáp án thường chứa: <strong><span style='color: #00B0F0;'>Sure</span></strong>, <strong><span style='color: #00B0F0;'>Okay</span></strong>, <strong><span style='color: #00B0F0;'>Of course</span></strong>, <strong><span style='color: #00B0F0;'>Certainly</span></strong>, <strong><span style='color: #00B0F0;'>Sounds good</span></strong>, <strong><span style='color: #00B0F0;'>That’s a good idea</span></strong>, <strong><span style='color: #00B0F0;'>No problem</span></strong>, <strong><span style='color: #00B0F0;'>I’d be happy to</span></strong>.",
-          "<strong>Ngoài ra, người nói cũng có thể trả lời gián tiếp nhưng vẫn mang nghĩa đồng ý.</strong>"
+          "<span style=\"font-weight: 700\">2. Các câu trả lời thường gặp</span>",
+          "<span style=\"font-weight: 700; font-style: italic\">a) Chấp nhận / đồng ý / tán thành</span>",
+          "Câu trả lời thể hiện sự đồng ý hoặc chấp nhận lời đề nghị, yêu cầu hoặc lời mời. Đáp án thường chứa: <span style=\"color: #0284c7; font-weight: 700\">Sure</span>, <span style=\"color: #0284c7; font-weight: 700\">Okay</span>, <span style=\"color: #0284c7; font-weight: 700\">Of course</span>, <span style=\"color: #0284c7; font-weight: 700\">Certainly</span>, <span style=\"color: #0284c7; font-weight: 700\">Sounds good</span>, <span style=\"color: #0284c7; font-weight: 700\">That’s a good idea</span>, <span style=\"color: #0284c7; font-weight: 700\">No problem</span>, <span style=\"color: #0284c7; font-weight: 700\">I’d be happy to</span>.",
+          "<span style=\"font-weight: 700\">Ngoài ra, người nói cũng có thể trả lời gián tiếp nhưng vẫn mang nghĩa đồng ý.</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 265,
         "text": [
-          "<strong><i>b) Từ chối / khước từ</i></strong>",
-          "Câu trả lời thể hiện sự từ chối hoặc không đồng ý với lời đề nghị, yêu cầu hoặc lời mời. Đáp án thường chứa: <strong><span style='color: #00B0F0;'>No</span></strong>; <strong><span style='color: #00B0F0;'>No, thanks</span></strong>; <strong><span style='color: #00B0F0;'>Sorry</span></strong>; <strong><span style='color: #00B0F0;'>Unfortunately</span></strong>; <strong><span style='color: #00B0F0;'>I’m afraid I can’t</span></strong>; <strong><span style='color: #00B0F0;'>Maybe another time</span></strong>.",
+          "<span style=\"font-weight: 700; font-style: italic\">b) Từ chối / khước từ</span>",
+          "Câu trả lời thể hiện sự từ chối hoặc không đồng ý với lời đề nghị, yêu cầu hoặc lời mời. Đáp án thường chứa: <span style=\"color: #0284c7; font-weight: 700\">No</span>; <span style=\"color: #0284c7; font-weight: 700\">No, thanks</span>; <span style=\"color: #0284c7; font-weight: 700\">Sorry</span>; <span style=\"color: #0284c7; font-weight: 700\">Unfortunately</span>; <span style=\"color: #0284c7; font-weight: 700\">I’m afraid I can’t</span>; <span style=\"color: #0284c7; font-weight: 700\">Maybe another time</span>.",
           "Ngoài ra, người nói cũng có thể trả lời gián tiếp nhưng vẫn mang nghĩa từ chối."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 266,
         "text": [
-          "<strong><i>c) Trả lời gián tiếp</i></strong>",
+          "<span style=\"font-weight: 700; font-style: italic\">c) Trả lời gián tiếp</span>",
           "Trong TOEIC Part 2, người nói đôi khi không trả lời trực tiếp mà: đưa ra lý do, trì hoãn câu trả lời, hỏi ngược lại, hoặc đưa ra ý kiến khác.",
           "Ví dụ",
-          "<i>Would you like to join us for lunch? </i><strong><i>→ I have a meeting at noon. </i></strong>",
-          "<i>Could you send me the schedule today? </i><strong><i>→ When do you need it? </i></strong>",
-          "<i>Why don’t we take a taxi? </i><strong><i>→ Is the subway faster?</i></strong>"
+          "<span style=\"font-style: italic\">Would you like to join us for lunch? </span><span style=\"font-weight: 700; font-style: italic\">→ I have a meeting at noon. </span>",
+          "<span style=\"font-style: italic\">Could you send me the schedule today? </span><span style=\"font-weight: 700; font-style: italic\">→ When do you need it? </span>",
+          "<span style=\"font-style: italic\">Why don’t we take a taxi? </span><span style=\"font-weight: 700; font-style: italic\">→ Is the subway faster?</span>"
         ]
-      }
-    ],
-    "examples": [
+      },
       {
+        "type": "example",
         "slide_index": 267,
-        "question": "EXAMPLE 108: Why don't we start marketing to a younger audience?",
+        "question": "Why don't we start marketing to a younger audience?",
         "choices": {
           "A": "That's a really good idea.",
           "B": "The film starts at nine.",
           "C": "Fifteen should be enough."
         },
-        "audio": "media/part02_ex_s267.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide267_media108.mp3"
       },
       {
+        "type": "example",
         "slide_index": 268,
-        "question": "EXAMPLE 109: Would you like to include breakfast in your room reservation?",
+        "question": "Would you like to include breakfast in your room reservation?",
         "choices": {
           "A": "Sure, that'll be fine.",
           "B": "Check-in is at three o'clock.",
           "C": "A view of the ocean, if possible."
         },
-        "audio": "media/part02_ex_s268.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide268_media109.mp3"
       },
       {
+        "type": "example",
         "slide_index": 269,
-        "question": "EXAMPLE 110: Why don't we submit the supply request?",
+        "question": "Why don't we submit the supply request?",
         "choices": {
           "A": "OK, I’ll print it out.",
           "B": "Yesterday morning.",
           "C": "Yes, we do."
         },
-        "audio": "media/part02_ex_s269.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide269_media110.mp3"
       },
       {
+        "type": "example",
         "slide_index": 270,
-        "question": "EXAMPLE 111: Let's discuss the building designs this morning.",
+        "question": "Let's discuss the building designs this morning.",
         "choices": {
           "A": "We can do it this afternoon instead.",
           "B": "The sign on the wall.",
           "C": "Does he work in that building, too?"
         },
-        "audio": "media/part02_ex_s270.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide270_media111.mp3"
       },
       {
+        "type": "example",
         "slide_index": 271,
-        "question": "EXAMPLE 112: Let me help you fix the scanner.",
+        "question": "Let me help you fix the scanner.",
         "choices": {
           "A": "Thanks, but I'm almost finished.",
           "B": "He's a new hire.",
           "C": "About twenty documents."
         },
-        "audio": "media/part02_ex_s271.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide271_media112.mp3"
       },
       {
+        "type": "example",
         "slide_index": 272,
-        "question": "EXAMPLE 113: Let's take our clients to the theater.",
+        "question": "Let's take our clients to the theater.",
         "choices": {
           "A": "How about a restaurant instead?",
           "B": "Downstairs on the left.",
           "C": "I brought my own."
         },
-        "audio": "media/part02_ex_s272.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide272_media113.mp3"
       },
       {
+        "type": "example",
         "slide_index": 273,
-        "question": "EXAMPLE 114: Why don't you check the prices at a different paint store?",
+        "question": "Why don't you check the prices at a different paint store?",
         "choices": {
           "A": "Is there one that you suggest?",
           "B": "Check-in is at eleven o'clock.",
           "C": "No, she's a photographer."
         },
-        "audio": "media/part02_ex_s273.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide273_media114.mp3"
       },
       {
+        "type": "example",
         "slide_index": 274,
-        "question": "EXAMPLE 115: Could I come to your office today to sign the rental contract?",
+        "question": "Could I come to your office today to sign the rental contract?",
         "choices": {
           "A": "A one-bedroom apartment.",
           "B": "I'll be here until five o'clock.",
           "C": "Two thousand dollars a month."
         },
-        "audio": "media/part02_ex_s274.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide274_media115.mp3"
       },
       {
+        "type": "example",
         "slide_index": 275,
-        "question": "EXAMPLE 116: Can you handle this client's complaint?",
+        "question": "Can you handle this client's complaint?",
         "choices": {
           "A": "Yes, of course.",
           "B": "The accounts manager.",
           "C": "No, I didn't."
         },
-        "audio": "media/part02_ex_s275.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide275_media116.mp3"
       },
       {
+        "type": "example",
         "slide_index": 276,
-        "question": "EXAMPLE 117: Could you pick Mr. Peterson up from the airport?",
+        "question": "Could you pick Mr. Peterson up from the airport?",
         "choices": {
           "A": "I haven't picked one.",
           "B": "A long flight.",
           "C": "Sure, at what time?"
         },
-        "audio": "media/part02_ex_s276.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide276_media117.mp3"
       },
       {
+        "type": "example",
         "slide_index": 277,
-        "question": "EXAMPLE 118: Do you mind filling out our customer - satisfaction survey?",
+        "question": "Do you mind filling out our customer - satisfaction survey?",
         "choices": {
           "A": "I filled the tank in the car yesterday.",
           "B": "Sure, I can do that.",
           "C": "The stairs are around the corner."
         },
-        "audio": "media/part02_ex_s277.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide277_media118.mp3"
       },
       {
+        "type": "example",
         "slide_index": 278,
-        "question": "EXAMPLE 119: Could you remind me to call the cleaning service tomorrow?",
+        "question": "Could you remind me to call the cleaning service tomorrow?",
         "choices": {
           "A": "Next to the front office.",
           "B": "Sorry, I'll be on vacation.",
           "C": "A broken window."
         },
-        "audio": "media/part02_ex_s278.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide278_media119.mp3"
       },
       {
+        "type": "example",
         "slide_index": 279,
-        "question": "EXAMPLE 120: Would you care to join us for dinner?",
+        "question": "Would you care to join us for dinner?",
         "choices": {
           "A": "She was late for work.",
           "B": "Please be careful.",
           "C": "Sorry, I have other plans."
         },
-        "audio": "media/part02_ex_s279.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide279_media120.mp3"
       },
       {
+        "type": "example",
         "slide_index": 280,
-        "question": "EXAMPLE 121: Would you mind setting up the product displays?",
+        "question": "Would you mind setting up the product displays?",
         "choices": {
           "A": "A new tablet computer.",
           "B": "The office next door is warm.",
           "C": "Actually, I'm on my break."
         },
-        "audio": "media/part02_ex_s280.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide280_media121.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 281,
+        "question": "Can I start the video conference now?",
+        "choices": {
+          "A": "No, let's wait a few minutes.",
+          "B": "It was very popular.",
+          "C": "That candidate won."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide281_media122.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 282,
+        "question": "Could you work my shift on Monday night?",
+        "choices": {
+          "A": "Did you ask the manager first?",
+          "B": "It's working fine now.",
+          "C": "Last week, I think."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide282_media123.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 283,
+        "question": "Would you mind if I kept the door open?",
+        "choices": {
+          "A": "Isn't the hallway too noisy?",
+          "B": "In the second drawer.",
+          "C": "Yes, you can use it."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide283_media124.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 284,
+        "question": "Would you like to make an appointment with the nutritionist?",
+        "choices": {
+          "A": "A client luncheon.",
+          "B": "I'm scheduled for the fourteenth.",
+          "C": "The fruit is on the table."
+        },
+        "answer": "B",
+        "audio": "media/part02_examples/slide284_media125.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 285,
+        "question": "Would you like to try a free bread sample?",
+        "choices": {
+          "A": "Thanks, it looks delicious.",
+          "B": "I'm sorry to hear that.",
+          "C": "I’ll check on the delivery status."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide285_media126.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 286,
+        "question": "Would you be interested in joining our tour of the art museum?",
+        "choices": {
+          "A": "A famous painting.",
+          "B": "Sure, that sounds exciting.",
+          "C": "Fifty years old."
+        },
+        "answer": "B",
+        "audio": "media/part02_examples/slide286_media127.mp3"
+      },
+      {
+        "type": "example",
+        "slide_index": 287,
+        "question": "Let's talk about how the business trip went.",
+        "choices": {
+          "A": "We have a client meeting right now.",
+          "B": "The travel agency.",
+          "C": "I saw it last week."
+        },
+        "answer": "A",
+        "audio": "media/part02_examples/slide287_media128.mp3"
       }
     ]
   },
@@ -2810,382 +2887,173 @@ window.part02Data = [
     "id": "statements",
     "title": "5. STATEMENTS",
     "type": "dang",
-    "theory": [
+    "items": [
       {
+        "type": "theory",
         "slide_index": 288,
         "text": [
-          "<strong><span style='color: #FF0000;'>V. STATEMENTS</span></strong>"
+          "<span style=\"color: #dc2626; font-weight: 700\">5. STATEMENTS (CÂU TRẦN THUẬT / PHÁT BIỂU)</span>",
+          "Câu trần thuật là câu dùng để: <span style=\"color: #0284c7; font-weight: 700\">truyền đạt thông tin</span>, <span style=\"color: #0284c7; font-weight: 700\">đưa ra nhận xét</span>, <span style=\"color: #0284c7; font-weight: 700\">trình bày ý kiến</span> hoặc <span style=\"color: #0284c7; font-weight: 700\">thông báo một sự việc</span>."
         ]
       },
       {
+        "type": "theory",
         "slide_index": 289,
         "text": [
-          "<strong>1. Định nghĩa câu trần thuật (Statements)</strong>",
-          "Câu trần thuật là loại câu dùng để: <strong><i><span style='color: #00B0F0;'>truyền đạt thông tin</span></i></strong>, <strong><i><span style='color: #00B0F0;'>đưa ra nhận xét</span></i></strong>, <strong><i><span style='color: #00B0F0;'>trình bày ý kiến</span></i></strong>, hoặc <strong><i><span style='color: #00B0F0;'>thông báo một sự việc nào đó</span></i></strong>. Đây là dạng câu xuất hiện rất phổ biến trong <strong>TOEIC LISTENING PART 2</strong>. Các cách mở đầu thường gặp: <strong>It seems like … </strong>/ <strong>It looks like … </strong>/ <strong>I think … </strong>/ <strong>I thought … </strong>/ <strong>I heard … </strong>/ <strong>I was just told that … </strong>"
+          "<span style=\"font-weight: 700\">1. Định nghĩa câu trần thuật (Statements)</span>",
+          "Câu trần thuật là loại câu dùng để: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">truyền đạt thông tin</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đưa ra nhận xét</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">trình bày ý kiến</span>, hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">thông báo một sự việc nào đó</span>. Đây là dạng câu xuất hiện rất phổ biến trong <span style=\"font-weight: 700\">TOEIC LISTENING PART 2</span>. Các cách mở đầu thường gặp: <span style=\"font-weight: 700\">It seems like … </span>/ <span style=\"font-weight: 700\">It looks like … </span>/ <span style=\"font-weight: 700\">I think … </span>/ <span style=\"font-weight: 700\">I thought … </span>/ <span style=\"font-weight: 700\">I heard … </span>/ <span style=\"font-weight: 700\">I was just told that … </span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 290,
         "text": [
-          "<strong>2. Các dạng câu trần thuật</strong>",
-          "<strong>a) Câu khẳng định</strong>",
+          "<span style=\"font-weight: 700\">2. Các dạng câu trần thuật</span>",
+          "<span style=\"font-weight: 700\">a) Câu khẳng định</span>",
           "Dùng để trình bày hoặc xác nhận một thông tin.",
-          "<strong>Ex:</strong>",
-          "<i>I heard the meeting was canceled. </i>",
-          "<i>It looks like sales increased this month. </i>"
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">I heard the meeting was canceled. </span>",
+          "<span style=\"font-style: italic\">It looks like sales increased this month. </span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 291,
         "text": [
-          "<strong>b) Câu phủ định</strong>",
-          "Trong TOEIC, ý phủ định có thể được thể hiện bằng: <strong><i><span style='color: #00B0F0;'>not</span></i></strong>, <strong><i><span style='color: #00B0F0;'>no</span></i></strong>, hoặc các từ mang nghĩa phủ định như <strong><i><span style='color: #00B0F0;'>never</span></i></strong>, <strong><i><span style='color: #00B0F0;'>hardly</span></i></strong>, <strong><i><span style='color: #00B0F0;'>rarely</span></i></strong>, <strong><i><span style='color: #00B0F0;'>scarcely</span></i></strong>, <strong><i><span style='color: #00B0F0;'>barely</span></i></strong>, <strong><i><span style='color: #00B0F0;'>seldom</span></i></strong>, …",
-          "<strong>Ex:</strong>",
-          "<i>It seems like the copier isn’t working properly.</i>",
-          "<i>I have no idea what he is referring to.</i>",
-          "<i>I can hardly keep my eyes open.</i>"
+          "<span style=\"font-weight: 700\">b) Câu phủ định</span>",
+          "Trong TOEIC, ý phủ định có thể được thể hiện bằng: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">not</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">no</span>, hoặc các từ mang nghĩa phủ định như <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">never</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">hardly</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">rarely</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">scarcely</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">barely</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">seldom</span>, …",
+          "<span style=\"font-weight: 700\">Ex:</span>",
+          "<span style=\"font-style: italic\">It seems like the copier isn’t working properly.</span>",
+          "<span style=\"font-style: italic\">I have no idea what he is referring to.</span>",
+          "<span style=\"font-style: italic\">I can hardly keep my eyes open.</span>"
         ]
       },
       {
+        "type": "theory",
         "slide_index": 292,
         "text": [
-          "<strong>3. Các cách trả lời thường gặp</strong>",
-          "<strong><i>a) Thể hiện sự đồng tình hoặc phản đối</i></strong>",
-          "Câu trả lời có thể thể hiện sự <strong><span style='color: #00B0F0;'>đồng tình </span></strong>/ <strong><span style='color: #00B0F0;'>đồng ý</span></strong> / <strong><span style='color: #00B0F0;'>xác nhận </span></strong>hoặc <strong>phản đối </strong>/ <strong>không đồng ý </strong>/ <strong>phủ nhận </strong>đối với thông tin mà người nói đưa ra. Đáp án thường chứa các từ như: <strong><span style='color: #00B0F0;'>Yes</span></strong>, <strong><span style='color: #00B0F0;'>Yeah</span></strong>, <strong><span style='color: #00B0F0;'>Right</span></strong>, <strong><span style='color: #00B0F0;'>Exactly</span></strong> hoặc <strong>No</strong>, <strong>Not really</strong>, <strong>I don’t think so</strong>."
+          "<span style=\"font-weight: 700\">3. Các cách trả lời thường gặp</span>",
+          "<span style=\"font-weight: 700; font-style: italic\">a) Thể hiện sự đồng tình hoặc phản đối</span>",
+          "Câu trả lời có thể thể hiện sự <span style=\"color: #0284c7; font-weight: 700\">đồng tình </span>/ <span style=\"color: #0284c7; font-weight: 700\">đồng ý</span> / <span style=\"color: #0284c7; font-weight: 700\">xác nhận </span>hoặc <span style=\"font-weight: 700\">phản đối </span>/ <span style=\"font-weight: 700\">không đồng ý </span>/ <span style=\"font-weight: 700\">phủ nhận </span>đối với thông tin mà người nói đưa ra. Đáp án thường chứa các từ như: <span style=\"color: #0284c7; font-weight: 700\">Yes</span>, <span style=\"color: #0284c7; font-weight: 700\">Yeah</span>, <span style=\"color: #0284c7; font-weight: 700\">Right</span>, <span style=\"color: #0284c7; font-weight: 700\">Exactly</span> hoặc <span style=\"font-weight: 700\">No</span>, <span style=\"font-weight: 700\">Not really</span>, <span style=\"font-weight: 700\">I don’t think so</span>."
         ]
       },
       {
-        "slide_index": 295,
-        "text": [
-          "<strong><i>b) Giải thích - Thêm thông tin - Đưa ra giải pháp </i></strong>",
-          "Đáp án có thể <strong><i><span style='color: #00B0F0;'>giải thích một tình huống</span></i></strong>, <strong><i><span style='color: #00B0F0;'>cung cấp thêm thông tin</span></i></strong>, hoặc <strong><i><span style='color: #00B0F0;'>đưa ra giải pháp cho vấn đề được đề cập</span></i></strong>.",
-          "<strong><i>c) Đáp lại bằng một câu hỏi</i></strong>",
-          "Đáp án có thể là <strong>một câu hỏi ngược lại </strong><strong><i><span style='color: #00B0F0;'>nhằm xác nhận thông tin</span></i></strong>, <strong><i><span style='color: #00B0F0;'>hỏi thêm chi tiết</span></i></strong>, hoặc <strong><i><span style='color: #00B0F0;'>làm rõ vấn đề được đề cập</span></i></strong>."
-        ]
-      },
-      {
-        "slide_index": 303,
-        "text": [
-          "<strong><span style='color: #FF0000;'>MINI TESTS</span></strong>"
-        ]
-      },
-      {
-        "slide_index": 304,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 07: </span></strong>",
-          "<strong><i>Why was this afternoon's meeting canceled?</i></strong>",
-          "(A) Room 206, I think.",
-          "﻿\t(B) Because the manager is out of the office.",
-          "﻿\t(C) Let's review the itinerary for our trip."
-        ]
-      },
-      {
-        "slide_index": 305,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 08: </span></strong>",
-          "<strong><i>You use the company fitness center, don’t you?</i></strong>",
-          "(A) Yes, every now and then.",
-          "﻿\t(B) Please center the text on the page.",
-          "﻿\t(C) I think it fits you well."
-        ]
-      },
-      {
-        "slide_index": 306,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 09: </span></strong>",
-          "<strong><i>Do you have the images from the graphics department?</i></strong>",
-          "(A) OK, that won't be a problem.",
-          "(B) A high-definition camera.",
-          "(C) No, they're not ready yet."
-        ]
-      },
-      {
-        "slide_index": 307,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 10: </span></strong>",
-          "<strong><i>Do you have the images from the graphics department?</i></strong>",
-          "(A) OK, that won't be a problem.",
-          "(B) A high-definition camera.",
-          "(C) No, they're not ready yet."
-        ]
-      },
-      {
-        "slide_index": 308,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 11: </span></strong>",
-          "<strong><i>Would you like to sign up for the company retreat?</i></strong>",
-          "(A) Sure, I’ll write my name down.",
-          "(B) ﻿Twenty people, maximum.",
-          "﻿\t(C) Can I replace the sign?"
-        ]
-      },
-      {
-        "slide_index": 309,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 12: </span></strong>",
-          "<strong><i>How often do I have to submit my time sheet?</i></strong>",
-          "(A) Five sheets of paper.",
-          "(B) You need to do it once a week.",
-          "(C) No, I don't usually wear a watch."
-        ]
-      },
-      {
-        "slide_index": 310,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 13: </span></strong>",
-          "<strong><i>I can buy a monthly gym membership, right?</i></strong>",
-          "(A) ﻿A very popular exercise routine.",
-          "﻿\t(B) The exercise room is on your right.",
-          "﻿\t(C) Yes, at the front desk."
-        ]
-      },
-      {
-        "slide_index": 311,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 14: </span></strong>",
-          "<strong><i>Have you put price tags on all the clearance items?</i></strong>",
-          "(A) Yes, everything's been labeled.",
-          "(B) ﻿It is a little cloudy.",
-          "(C) ﻿Where is your name tag?"
-        ]
-      },
-      {
-        "slide_index": 312,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 15: </span></strong>",
-          "<strong><i>Don't we still need to change the newspaper layout?</i></strong>",
-          "(A) Down the hall on your right.",
-          "(B) ﻿No, it's already been changed.",
-          "(C) A new computer program."
-        ]
-      },
-      {
-        "slide_index": 313,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 16: </span></strong>",
-          "<strong><i>What's the total cost of the repair work?</i></strong>",
-          "(A) It's free because of the warranty.",
-          "(B) I have some boxes you can use.",
-          "(C) In a couple of hours."
-        ]
-      },
-      {
-        "slide_index": 314,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 17: </span></strong>",
-          "<strong><i>Where can I get a new filing cabinet?</i></strong>",
-          "(A) ﻿All of the cabins have been rented.",
-          "﻿\t(B) I'll put the tiles in the corner.",
-          "﻿\t(C) All furniture requests must be approved first."
-        ]
-      },
-      {
-        "slide_index": 315,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 18: </span></strong>",
-          "<strong><i>How do I reset my password?</i></strong>",
-          "(A) By the end of the month.",
-          "(B) You should call the help desk.",
-          "(C) Thanks for setting the table."
-        ]
-      },
-      {
-        "slide_index": 316,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 19: </span></strong>",
-          "<strong><i>Could you check to see if that monitor is plugged in?</i></strong>",
-          "(A) I didn't send them yet.",
-          "﻿\t(B) A longer power cord.",
-          "﻿\t(C) Do you want me to check them all?"
-        ]
-      },
-      {
-        "slide_index": 317,
-        "text": [
-          "<strong><span style='color: #7030A0;'>NUMBER 20: </span></strong>",
-          "<strong><i>Is the new inventory process more efficient?</i></strong>",
-          "(A) It only took me an hour.",
-          "﻿\t(B) Yes, she's new here.",
-          "(C) I'II have the fish."
-        ]
-      }
-    ],
-    "examples": [
-      {
-        "slide_index": 281,
-        "question": "EXAMPLE 122: Can I start the video conference now?",
-        "choices": {
-          "A": "No, let's wait a few minutes.",
-          "B": "It was very popular.",
-          "C": "That candidate won."
-        },
-        "audio": "media/part02_ex_s281.mp3",
-        "answer": "A"
-      },
-      {
-        "slide_index": 282,
-        "question": "EXAMPLE 123: Could you work my shift on Monday night?",
-        "choices": {
-          "A": "Did you ask the manager first?",
-          "B": "It's working fine now.",
-          "C": "Last week, I think."
-        },
-        "audio": "media/part02_ex_s282.mp3",
-        "answer": "A"
-      },
-      {
-        "slide_index": 283,
-        "question": "EXAMPLE 124: Would you mind if I kept the door open?",
-        "choices": {
-          "A": "Isn't the hallway too noisy?",
-          "B": "In the second drawer.",
-          "C": "Yes, you can use it."
-        },
-        "audio": "media/part02_ex_s283.mp3",
-        "answer": "A"
-      },
-      {
-        "slide_index": 284,
-        "question": "EXAMPLE 125: Would you like to make an appointment with the nutritionist?",
-        "choices": {
-          "A": "A client luncheon.",
-          "B": "I'm scheduled for the fourteenth.",
-          "C": "The fruit is on the table."
-        },
-        "audio": "media/part02_ex_s284.mp3",
-        "answer": "B"
-      },
-      {
-        "slide_index": 285,
-        "question": "EXAMPLE 126: Would you like to try a free bread sample?",
-        "choices": {
-          "A": "Thanks, it looks delicious.",
-          "B": "I'm sorry to hear that.",
-          "C": "I’ll check on the delivery status."
-        },
-        "audio": "media/part02_ex_s285.mp3",
-        "answer": "A"
-      },
-      {
-        "slide_index": 286,
-        "question": "EXAMPLE 127: Would you be interested in joining our tour of the art museum?",
-        "choices": {
-          "A": "A famous painting.",
-          "B": "Sure, that sounds exciting.",
-          "C": "Fifty years old."
-        },
-        "audio": "media/part02_ex_s286.mp3",
-        "answer": "B"
-      },
-      {
-        "slide_index": 287,
-        "question": "EXAMPLE 128: Let's talk about how the business trip went.",
-        "choices": {
-          "A": "We have a client meeting right now.",
-          "B": "The travel agency.",
-          "C": "I saw it last week."
-        },
-        "audio": "media/part02_ex_s287.mp3",
-        "answer": "A"
-      },
-      {
+        "type": "example",
         "slide_index": 293,
-        "question": "EXAMPLE 129: There's a special exhibition at the art gallery.",
+        "question": "There's a special exhibition at the art gallery.",
         "choices": {
           "A": "Yes, I read an article about it.",
           "B": "She has a high salary.",
           "C": "At the next stoplight."
         },
-        "audio": "media/part02_ex_s293.mp3",
-        "answer": "A"
+        "answer": "A",
+        "audio": "media/part02_examples/slide293_media129.mp3"
       },
       {
+        "type": "example",
         "slide_index": 294,
-        "question": "EXAMPLE 130: We should really buy a new coffee maker.",
+        "question": "We should really buy a new coffee maker.",
         "choices": {
           "A": "Cream and sugar, please.",
           "B": "That's a good idea.",
           "C": "No, put it on my desk."
         },
-        "audio": "media/part02_ex_s294.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide294_media130.mp3"
       },
       {
+        "type": "theory",
+        "slide_index": 295,
+        "text": [
+          "<span style=\"font-weight: 700; font-style: italic\">b) Giải thích - Thêm thông tin - Đưa ra giải pháp </span>",
+          "Đáp án có thể <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">giải thích một tình huống</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">cung cấp thêm thông tin</span>, hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đưa ra giải pháp cho vấn đề được đề cập</span>.",
+          "<span style=\"font-weight: 700; font-style: italic\">c) Đáp lại bằng một câu hỏi</span>",
+          "Đáp án có thể là <span style=\"font-weight: 700\">một câu hỏi ngược lại </span><span style=\"color: #0284c7; font-weight: 700; font-style: italic\">nhằm xác nhận thông tin</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">hỏi thêm chi tiết</span>, hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">làm rõ vấn đề được đề cập</span>."
+        ]
+      },
+      {
+        "type": "example",
         "slide_index": 296,
-        "question": "EXAMPLE 131: We're trying to cut our delivery times.",
+        "question": "We're trying to cut our delivery times.",
         "choices": {
           "A": "The cords are too long.",
           "B": "Our customers will appreciate that.",
           "C": "The boxes in the closet."
         },
-        "audio": "media/part02_ex_s296.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide296_media131.mp3"
       },
       {
+        "type": "example",
         "slide_index": 297,
-        "question": "EXAMPLE 132: The quality-control team is inspecting the factory soon.",
+        "question": "The quality-control team is inspecting the factory soon.",
         "choices": {
           "A": "Some spare parts.",
           "B": "Thanks, it went well.",
           "C": "Everything is ready."
         },
-        "audio": "media/part02_ex_s297.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide297_media132.mp3"
       },
       {
+        "type": "example",
         "slide_index": 298,
-        "question": "EXAMPLE 133: I heard Fatima is presenting her proposal today.",
+        "question": "I heard Fatima is presenting her proposal today.",
         "choices": {
           "A": "Sure, I will.",
           "B": "We bought them each a present.",
           "C": "Oh, I thought that was tomorrow."
         },
-        "audio": "media/part02_ex_s298.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide298_media133.mp3"
       },
       {
+        "type": "example",
         "slide_index": 299,
-        "question": "EXAMPLE 134: That position's been open a long time.",
+        "question": "That position's been open a long time.",
         "choices": {
           "A": "Yes, the door is closed.",
           "B": "They won't be participating.",
           "C": "I hope they hire someone soon."
         },
-        "audio": "media/part02_ex_s299.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide299_media134.mp3"
       },
       {
+        "type": "example",
         "slide_index": 300,
-        "question": "EXAMPLE 135: I'm about to order lunch now if you're hungry.",
+        "question": "I'm about to order lunch now if you're hungry.",
         "choices": {
           "A": "Next to the telephone.",
           "B": "Bus number five.",
           "C": "Can I see the menu?"
         },
-        "audio": "media/part02_ex_s300.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide300_media135.mp3"
       },
       {
+        "type": "example",
         "slide_index": 301,
-        "question": "EXAMPLE 136: I have a complaint about yesterday's catering service.",
+        "question": "I have a complaint about yesterday's catering service.",
         "choices": {
           "A": "Appetizers and desserts",
           "B": "I'm sorry-what went wrong?",
           "C": "On the next flight."
         },
-        "audio": "media/part02_ex_s301.mp3",
-        "answer": "B"
+        "answer": "B",
+        "audio": "media/part02_examples/slide301_media136.mp3"
       },
       {
+        "type": "example",
         "slide_index": 302,
-        "question": "EXAMPLE 137: I'm surprised we haven't received the product design yet.",
+        "question": "I'm surprised we haven't received the product design yet.",
         "choices": {
           "A": "You can use my stapler.",
           "B": "The name on the cover sheet.",
           "C": "Didn't you get the memo?"
         },
-        "audio": "media/part02_ex_s302.mp3",
-        "answer": "C"
+        "answer": "C",
+        "audio": "media/part02_examples/slide302_media137.mp3"
       }
     ]
   }
