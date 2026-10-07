@@ -44,7 +44,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vật liệu, tài liệu"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-07.mp3"
       },
       {
         "id": 8,
@@ -81,7 +82,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "địa phương"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-08.mp3"
       },
       {
         "id": 9,
@@ -124,7 +126,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "người thuê nhà"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-09.mp3"
       },
       {
         "id": 10,
@@ -161,7 +164,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "ngày giao hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-10.mp3"
       },
       {
         "id": 11,
@@ -204,7 +208,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "chỗ rò rỉ, rò rỉ"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-11.mp3"
       },
       {
         "id": 12,
@@ -241,7 +246,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "thông báo"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-12.mp3"
       },
       {
         "id": 13,
@@ -278,7 +284,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "no, đầy"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-13.mp3"
       },
       {
         "id": 14,
@@ -315,7 +322,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "nhà ga"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-14.mp3"
       },
       {
         "id": 15,
@@ -352,7 +360,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "dự báo thời tiết"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-15.mp3"
       },
       {
         "id": 16,
@@ -383,7 +392,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "thích hơn"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-16.mp3"
       },
       {
         "id": 17,
@@ -420,7 +430,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "xuất sắc, tuyệt vời"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-17.mp3"
       },
       {
         "id": 18,
@@ -451,7 +462,8 @@ window.part02PracticeData = [
             "pos": "phr.v",
             "vi": "hóa ra, diễn ra"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-18.mp3"
       },
       {
         "id": 19,
@@ -488,7 +500,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "đôi ủng, giày bốt"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-19.mp3"
       },
       {
         "id": 20,
@@ -519,7 +532,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "khách hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-20.mp3"
       },
       {
         "id": 21,
@@ -556,7 +570,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "vỗ tay tán thưởng"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-21.mp3"
       },
       {
         "id": 22,
@@ -593,7 +608,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hội nghị"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-22.mp3"
       },
       {
         "id": 23,
@@ -630,7 +646,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "ứng viên"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-23.mp3"
       },
       {
         "id": 24,
@@ -667,7 +684,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "nhà thầu"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-24.mp3"
       },
       {
         "id": 25,
@@ -698,7 +716,8 @@ window.part02PracticeData = [
             "pos": "v, n",
             "vi": "chuyển công tác, điều chuyển"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-25.mp3"
       },
       {
         "id": 26,
@@ -735,7 +754,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "biên lai, hóa đơn"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-26.mp3"
       },
       {
         "id": 27,
@@ -772,7 +792,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "lịch trình, lên lịch"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-27.mp3"
       },
       {
         "id": 28,
@@ -809,7 +830,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "đề xuất, phương án"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-28.mp3"
       },
       {
         "id": 29,
@@ -846,7 +868,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "đến nơi"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-29.mp3"
       },
       {
         "id": 30,
@@ -883,7 +906,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "tùy chọn, sự lựa chọn"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-30.mp3"
       },
       {
         "id": 31,
@@ -920,7 +944,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "sự khởi hành"
           }
-        ]
+        ],
+        "audio": "media/E26-T01-31.mp3"
       }
     ]
   },
@@ -960,7 +985,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-07.mp3"
       },
       {
         "id": 8,
@@ -985,7 +1011,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "ngân sách"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-08.mp3"
       },
       {
         "id": 9,
@@ -1016,7 +1043,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-09.mp3"
       },
       {
         "id": 10,
@@ -1053,7 +1081,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hội thảo"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-10.mp3"
       },
       {
         "id": 11,
@@ -1084,7 +1113,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-11.mp3"
       },
       {
         "id": 12,
@@ -1109,7 +1139,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-12.mp3"
       },
       {
         "id": 13,
@@ -1134,7 +1165,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "thay vào đó"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-13.mp3"
       },
       {
         "id": 14,
@@ -1165,7 +1197,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "quán ăn tự phục vụ"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-14.mp3"
       },
       {
         "id": 15,
@@ -1196,7 +1229,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-15.mp3"
       },
       {
         "id": 16,
@@ -1227,7 +1261,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-16.mp3"
       },
       {
         "id": 17,
@@ -1252,7 +1287,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "lịch trình, sắp xếp"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-17.mp3"
       },
       {
         "id": 18,
@@ -1283,7 +1319,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-18.mp3"
       },
       {
         "id": 19,
@@ -1308,7 +1345,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "thuê, tuyển dụng"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-19.mp3"
       },
       {
         "id": 20,
@@ -1333,7 +1371,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vật tư, đồ dùng"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-20.mp3"
       },
       {
         "id": 21,
@@ -1358,7 +1397,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-21.mp3"
       },
       {
         "id": 22,
@@ -1389,7 +1429,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-22.mp3"
       },
       {
         "id": 23,
@@ -1420,7 +1461,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-23.mp3"
       },
       {
         "id": 24,
@@ -1445,7 +1487,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bài thuyết trình"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-24.mp3"
       },
       {
         "id": 25,
@@ -1476,7 +1519,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "phòng ban"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-25.mp3"
       },
       {
         "id": 26,
@@ -1501,7 +1545,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "giao hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-26.mp3"
       },
       {
         "id": 27,
@@ -1532,7 +1577,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "lô hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-27.mp3"
       },
       {
         "id": 28,
@@ -1557,7 +1603,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "có sẵn, rảnh rỗi"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-28.mp3"
       },
       {
         "id": 29,
@@ -1588,7 +1635,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-29.mp3"
       },
       {
         "id": 30,
@@ -1619,7 +1667,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-30.mp3"
       },
       {
         "id": 31,
@@ -1650,7 +1699,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T02-31.mp3"
       }
     ]
   },
@@ -1690,7 +1740,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-07.mp3"
       },
       {
         "id": 8,
@@ -1721,7 +1772,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-08.mp3"
       },
       {
         "id": 9,
@@ -1752,7 +1804,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-09.mp3"
       },
       {
         "id": 10,
@@ -1783,7 +1836,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-10.mp3"
       },
       {
         "id": 11,
@@ -1814,7 +1868,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-11.mp3"
       },
       {
         "id": 12,
@@ -1839,7 +1894,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-12.mp3"
       },
       {
         "id": 13,
@@ -1870,7 +1926,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-13.mp3"
       },
       {
         "id": 14,
@@ -1901,7 +1958,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-14.mp3"
       },
       {
         "id": 15,
@@ -1926,7 +1984,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vé"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-15.mp3"
       },
       {
         "id": 16,
@@ -1957,7 +2016,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-16.mp3"
       },
       {
         "id": 17,
@@ -1988,7 +2048,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-17.mp3"
       },
       {
         "id": 18,
@@ -2013,7 +2074,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "thiết bị"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-18.mp3"
       },
       {
         "id": 19,
@@ -2044,7 +2106,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-19.mp3"
       },
       {
         "id": 20,
@@ -2069,7 +2132,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bảo trì"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-20.mp3"
       },
       {
         "id": 21,
@@ -2100,7 +2164,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bài thuyết trình"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-21.mp3"
       },
       {
         "id": 22,
@@ -2131,7 +2196,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "đào tạo, huấn luyện"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-22.mp3"
       },
       {
         "id": 23,
@@ -2162,7 +2228,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "sự thanh tra, kiểm tra"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-23.mp3"
       },
       {
         "id": 24,
@@ -2193,7 +2260,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-24.mp3"
       },
       {
         "id": 25,
@@ -2224,7 +2292,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "chiết khấu, giảm giá"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-25.mp3"
       },
       {
         "id": 26,
@@ -2255,7 +2324,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-26.mp3"
       },
       {
         "id": 27,
@@ -2286,7 +2356,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vé"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-27.mp3"
       },
       {
         "id": 28,
@@ -2317,7 +2388,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-28.mp3"
       },
       {
         "id": 29,
@@ -2348,7 +2420,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-29.mp3"
       },
       {
         "id": 30,
@@ -2379,7 +2452,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-30.mp3"
       },
       {
         "id": 31,
@@ -2416,7 +2490,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "khách hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T03-31.mp3"
       }
     ]
   },
@@ -2456,7 +2531,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-07.mp3"
       },
       {
         "id": 8,
@@ -2481,7 +2557,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "nhà cung ứng"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-08.mp3"
       },
       {
         "id": 9,
@@ -2506,7 +2583,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "sự đặt chỗ"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-09.mp3"
       },
       {
         "id": 10,
@@ -2537,7 +2615,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-10.mp3"
       },
       {
         "id": 11,
@@ -2568,7 +2647,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-11.mp3"
       },
       {
         "id": 12,
@@ -2593,7 +2673,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "đào tạo, huấn luyện"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-12.mp3"
       },
       {
         "id": 13,
@@ -2624,7 +2705,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-13.mp3"
       },
       {
         "id": 14,
@@ -2649,7 +2731,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "chiết khấu, giảm giá"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-14.mp3"
       },
       {
         "id": 15,
@@ -2674,7 +2757,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "lịch trình, sắp xếp"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-15.mp3"
       },
       {
         "id": 16,
@@ -2699,7 +2783,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "buổi lễ"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-16.mp3"
       },
       {
         "id": 17,
@@ -2730,7 +2815,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-17.mp3"
       },
       {
         "id": 18,
@@ -2761,7 +2847,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-18.mp3"
       },
       {
         "id": 19,
@@ -2786,7 +2873,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "có sẵn, rảnh rỗi"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-19.mp3"
       },
       {
         "id": 20,
@@ -2817,7 +2905,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "người quản lý"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-20.mp3"
       },
       {
         "id": 21,
@@ -2842,7 +2931,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "biên lai"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-21.mp3"
       },
       {
         "id": 22,
@@ -2873,7 +2963,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-22.mp3"
       },
       {
         "id": 23,
@@ -2898,7 +2989,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "tham dự"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-23.mp3"
       },
       {
         "id": 24,
@@ -2929,7 +3021,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "có sẵn, rảnh rỗi"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-24.mp3"
       },
       {
         "id": 25,
@@ -2960,7 +3053,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-25.mp3"
       },
       {
         "id": 26,
@@ -2985,7 +3079,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "thuê, tuyển dụng"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-26.mp3"
       },
       {
         "id": 27,
@@ -3010,7 +3105,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hợp đồng"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-27.mp3"
       },
       {
         "id": 28,
@@ -3035,7 +3131,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "khách hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-28.mp3"
       },
       {
         "id": 29,
@@ -3066,7 +3163,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "kiện hàng, gói"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-29.mp3"
       },
       {
         "id": 30,
@@ -3097,7 +3195,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-30.mp3"
       },
       {
         "id": 31,
@@ -3128,7 +3227,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vé"
           }
-        ]
+        ],
+        "audio": "media/E26-T04-31.mp3"
       }
     ]
   },
@@ -3168,7 +3268,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "phòng ban"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-07.mp3"
       },
       {
         "id": 8,
@@ -3199,7 +3300,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-08.mp3"
       },
       {
         "id": 9,
@@ -3230,7 +3332,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-09.mp3"
       },
       {
         "id": 10,
@@ -3261,7 +3364,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-10.mp3"
       },
       {
         "id": 11,
@@ -3292,7 +3396,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-11.mp3"
       },
       {
         "id": 12,
@@ -3317,7 +3422,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "người quản lý"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-12.mp3"
       },
       {
         "id": 13,
@@ -3342,7 +3448,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "kho hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-13.mp3"
       },
       {
         "id": 14,
@@ -3373,7 +3480,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-14.mp3"
       },
       {
         "id": 15,
@@ -3404,7 +3512,8 @@ window.part02PracticeData = [
             "pos": "v, n",
             "vi": "đi lại (đi làm)"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-15.mp3"
       },
       {
         "id": 16,
@@ -3435,7 +3544,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-16.mp3"
       },
       {
         "id": 17,
@@ -3460,7 +3570,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "báo cáo"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-17.mp3"
       },
       {
         "id": 18,
@@ -3485,7 +3596,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vé"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-18.mp3"
       },
       {
         "id": 19,
@@ -3510,7 +3622,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "lô hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-19.mp3"
       },
       {
         "id": 20,
@@ -3541,7 +3654,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-20.mp3"
       },
       {
         "id": 21,
@@ -3566,7 +3680,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "phòng ban"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-21.mp3"
       },
       {
         "id": 22,
@@ -3591,7 +3706,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "đào tạo, huấn luyện"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-22.mp3"
       },
       {
         "id": 23,
@@ -3622,7 +3738,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-23.mp3"
       },
       {
         "id": 24,
@@ -3647,7 +3764,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "giám đốc"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-24.mp3"
       },
       {
         "id": 25,
@@ -3678,7 +3796,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "phòng ban"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-25.mp3"
       },
       {
         "id": 26,
@@ -3703,7 +3822,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "báo cáo"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-26.mp3"
       },
       {
         "id": 27,
@@ -3728,7 +3848,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "bản dự toán, ước tính"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-27.mp3"
       },
       {
         "id": 28,
@@ -3759,7 +3880,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-28.mp3"
       },
       {
         "id": 29,
@@ -3784,7 +3906,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "nhà cung ứng"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-29.mp3"
       },
       {
         "id": 30,
@@ -3809,7 +3932,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "phòng ban"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-30.mp3"
       },
       {
         "id": 31,
@@ -3840,7 +3964,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bài thuyết trình"
           }
-        ]
+        ],
+        "audio": "media/E26-T05-31.mp3"
       }
     ]
   },
@@ -3880,7 +4005,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-07.mp3"
       },
       {
         "id": 8,
@@ -3911,7 +4037,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-08.mp3"
       },
       {
         "id": 9,
@@ -3942,7 +4069,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-09.mp3"
       },
       {
         "id": 10,
@@ -3967,7 +4095,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hội nghị"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-10.mp3"
       },
       {
         "id": 11,
@@ -3992,7 +4121,8 @@ window.part02PracticeData = [
             "pos": "v, n",
             "vi": "sửa chữa"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-11.mp3"
       },
       {
         "id": 12,
@@ -4017,7 +4147,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bản đề xuất"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-12.mp3"
       },
       {
         "id": 13,
@@ -4048,7 +4179,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-13.mp3"
       },
       {
         "id": 14,
@@ -4079,7 +4211,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-14.mp3"
       },
       {
         "id": 15,
@@ -4110,7 +4243,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-15.mp3"
       },
       {
         "id": 16,
@@ -4141,7 +4275,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-16.mp3"
       },
       {
         "id": 17,
@@ -4166,7 +4301,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vật tư, đồ dùng"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-17.mp3"
       },
       {
         "id": 18,
@@ -4191,7 +4327,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-18.mp3"
       },
       {
         "id": 19,
@@ -4222,7 +4359,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-19.mp3"
       },
       {
         "id": 20,
@@ -4253,7 +4391,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "người quản lý"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-20.mp3"
       },
       {
         "id": 21,
@@ -4278,7 +4417,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "chuyến bay"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-21.mp3"
       },
       {
         "id": 22,
@@ -4315,7 +4455,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "gần đây"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-22.mp3"
       },
       {
         "id": 23,
@@ -4340,7 +4481,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bảo trì"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-23.mp3"
       },
       {
         "id": 24,
@@ -4371,7 +4513,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-24.mp3"
       },
       {
         "id": 25,
@@ -4402,7 +4545,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-25.mp3"
       },
       {
         "id": 26,
@@ -4433,7 +4577,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-26.mp3"
       },
       {
         "id": 27,
@@ -4458,7 +4603,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "nhân viên, đội ngũ"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-27.mp3"
       },
       {
         "id": 28,
@@ -4489,7 +4635,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-28.mp3"
       },
       {
         "id": 29,
@@ -4514,7 +4661,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-29.mp3"
       },
       {
         "id": 30,
@@ -4539,7 +4687,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "báo cáo"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-30.mp3"
       },
       {
         "id": 31,
@@ -4570,7 +4719,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "giám đốc"
           }
-        ]
+        ],
+        "audio": "media/E26-T06-31.mp3"
       }
     ]
   },
@@ -4604,7 +4754,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "chuyến bay"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-07.mp3"
       },
       {
         "id": 8,
@@ -4641,7 +4792,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "đắt đỏ"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-08.mp3"
       },
       {
         "id": 9,
@@ -4672,7 +4824,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-09.mp3"
       },
       {
         "id": 10,
@@ -4703,7 +4856,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-10.mp3"
       },
       {
         "id": 11,
@@ -4734,7 +4888,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-11.mp3"
       },
       {
         "id": 12,
@@ -4765,7 +4920,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-12.mp3"
       },
       {
         "id": 13,
@@ -4796,7 +4952,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-13.mp3"
       },
       {
         "id": 14,
@@ -4827,7 +4984,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-14.mp3"
       },
       {
         "id": 15,
@@ -4858,7 +5016,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "thường niên, hàng năm"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-15.mp3"
       },
       {
         "id": 16,
@@ -4883,7 +5042,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "lô hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-16.mp3"
       },
       {
         "id": 17,
@@ -4914,7 +5074,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-17.mp3"
       },
       {
         "id": 18,
@@ -4939,7 +5100,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "đào tạo, huấn luyện"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-18.mp3"
       },
       {
         "id": 19,
@@ -4970,7 +5132,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-19.mp3"
       },
       {
         "id": 20,
@@ -5001,7 +5164,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-20.mp3"
       },
       {
         "id": 21,
@@ -5026,7 +5190,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "giám đốc"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-21.mp3"
       },
       {
         "id": 22,
@@ -5057,7 +5222,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-22.mp3"
       },
       {
         "id": 23,
@@ -5082,7 +5248,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "báo cáo"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-23.mp3"
       },
       {
         "id": 24,
@@ -5113,7 +5280,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-24.mp3"
       },
       {
         "id": 25,
@@ -5144,7 +5312,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-25.mp3"
       },
       {
         "id": 26,
@@ -5175,7 +5344,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-26.mp3"
       },
       {
         "id": 27,
@@ -5206,7 +5376,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "khảo sát"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-27.mp3"
       },
       {
         "id": 28,
@@ -5237,7 +5408,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-28.mp3"
       },
       {
         "id": 29,
@@ -5262,7 +5434,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bài thuyết trình"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-29.mp3"
       },
       {
         "id": 30,
@@ -5293,7 +5466,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-30.mp3"
       },
       {
         "id": 31,
@@ -5330,7 +5504,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "thiết bị"
           }
-        ]
+        ],
+        "audio": "media/E26-T07-31.mp3"
       }
     ]
   },
@@ -5370,7 +5545,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-07.mp3"
       },
       {
         "id": 8,
@@ -5395,7 +5571,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "cuộc hẹn"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-08.mp3"
       },
       {
         "id": 9,
@@ -5420,7 +5597,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-09.mp3"
       },
       {
         "id": 10,
@@ -5445,7 +5623,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hội nghị"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-10.mp3"
       },
       {
         "id": 11,
@@ -5476,7 +5655,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-11.mp3"
       },
       {
         "id": 12,
@@ -5507,7 +5687,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "sự đặt chỗ"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-12.mp3"
       },
       {
         "id": 13,
@@ -5538,7 +5719,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-13.mp3"
       },
       {
         "id": 14,
@@ -5563,7 +5745,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hội thảo"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-14.mp3"
       },
       {
         "id": 15,
@@ -5594,7 +5777,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-15.mp3"
       },
       {
         "id": 16,
@@ -5631,7 +5815,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "phòng chờ"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-16.mp3"
       },
       {
         "id": 17,
@@ -5656,7 +5841,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "gần đây"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-17.mp3"
       },
       {
         "id": 18,
@@ -5681,7 +5867,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "buổi tập huấn"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-18.mp3"
       },
       {
         "id": 19,
@@ -5706,7 +5893,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "phòng ban"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-19.mp3"
       },
       {
         "id": 20,
@@ -5737,7 +5925,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-20.mp3"
       },
       {
         "id": 21,
@@ -5762,7 +5951,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "khách hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-21.mp3"
       },
       {
         "id": 22,
@@ -5793,7 +5983,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-22.mp3"
       },
       {
         "id": 23,
@@ -5824,7 +6015,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-23.mp3"
       },
       {
         "id": 24,
@@ -5855,7 +6047,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-24.mp3"
       },
       {
         "id": 25,
@@ -5886,7 +6079,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "đắt đỏ"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-25.mp3"
       },
       {
         "id": 26,
@@ -5917,7 +6111,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-26.mp3"
       },
       {
         "id": 27,
@@ -5948,7 +6143,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-27.mp3"
       },
       {
         "id": 28,
@@ -5979,7 +6175,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-28.mp3"
       },
       {
         "id": 29,
@@ -6010,7 +6207,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-29.mp3"
       },
       {
         "id": 30,
@@ -6035,7 +6233,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "thiết bị"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-30.mp3"
       },
       {
         "id": 31,
@@ -6060,7 +6259,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "có sẵn, rảnh rỗi"
           }
-        ]
+        ],
+        "audio": "media/E26-T08-31.mp3"
       }
     ]
   },
@@ -6094,7 +6294,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "trợ lý"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-07.mp3"
       },
       {
         "id": 8,
@@ -6119,7 +6320,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hội thảo"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-08.mp3"
       },
       {
         "id": 9,
@@ -6150,7 +6352,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-09.mp3"
       },
       {
         "id": 10,
@@ -6181,7 +6384,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-10.mp3"
       },
       {
         "id": 11,
@@ -6212,7 +6416,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-11.mp3"
       },
       {
         "id": 12,
@@ -6237,7 +6442,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vé"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-12.mp3"
       },
       {
         "id": 13,
@@ -6262,7 +6468,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-13.mp3"
       },
       {
         "id": 14,
@@ -6293,7 +6500,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-14.mp3"
       },
       {
         "id": 15,
@@ -6324,7 +6532,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-15.mp3"
       },
       {
         "id": 16,
@@ -6355,7 +6564,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-16.mp3"
       },
       {
         "id": 17,
@@ -6386,7 +6596,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-17.mp3"
       },
       {
         "id": 18,
@@ -6417,7 +6628,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-18.mp3"
       },
       {
         "id": 19,
@@ -6448,7 +6660,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-19.mp3"
       },
       {
         "id": 20,
@@ -6473,7 +6686,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "chuyến bay"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-20.mp3"
       },
       {
         "id": 21,
@@ -6504,7 +6718,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-21.mp3"
       },
       {
         "id": 22,
@@ -6535,7 +6750,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-22.mp3"
       },
       {
         "id": 23,
@@ -6560,7 +6776,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "kho hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-23.mp3"
       },
       {
         "id": 24,
@@ -6585,7 +6802,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-24.mp3"
       },
       {
         "id": 25,
@@ -6616,7 +6834,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-25.mp3"
       },
       {
         "id": 26,
@@ -6641,7 +6860,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "đắt đỏ"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-26.mp3"
       },
       {
         "id": 27,
@@ -6672,7 +6892,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "vật tư, đồ dùng"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-27.mp3"
       },
       {
         "id": 28,
@@ -6703,7 +6924,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-28.mp3"
       },
       {
         "id": 29,
@@ -6728,7 +6950,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "khách hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-29.mp3"
       },
       {
         "id": 30,
@@ -6759,7 +6982,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-30.mp3"
       },
       {
         "id": 31,
@@ -6796,7 +7020,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "có sẵn, rảnh rỗi"
           }
-        ]
+        ],
+        "audio": "media/E26-T09-31.mp3"
       }
     ]
   },
@@ -6830,7 +7055,8 @@ window.part02PracticeData = [
             "pos": "v",
             "vi": "giao hàng"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-07.mp3"
       },
       {
         "id": 8,
@@ -6861,7 +7087,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hành lý"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-08.mp3"
       },
       {
         "id": 9,
@@ -6892,7 +7119,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "đào tạo, huấn luyện"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-09.mp3"
       },
       {
         "id": 10,
@@ -6923,7 +7151,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-10.mp3"
       },
       {
         "id": 11,
@@ -6948,7 +7177,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bản đề xuất"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-11.mp3"
       },
       {
         "id": 12,
@@ -6979,7 +7209,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-12.mp3"
       },
       {
         "id": 13,
@@ -7010,7 +7241,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-13.mp3"
       },
       {
         "id": 14,
@@ -7041,7 +7273,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-14.mp3"
       },
       {
         "id": 15,
@@ -7066,7 +7299,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "đắt đỏ"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-15.mp3"
       },
       {
         "id": 16,
@@ -7091,7 +7325,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "giám đốc"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-16.mp3"
       },
       {
         "id": 17,
@@ -7122,7 +7357,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "bài thuyết trình"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-17.mp3"
       },
       {
         "id": 18,
@@ -7147,7 +7383,8 @@ window.part02PracticeData = [
             "pos": "adj",
             "vi": "có sẵn, rảnh rỗi"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-18.mp3"
       },
       {
         "id": 19,
@@ -7178,7 +7415,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "đã... rồi"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-19.mp3"
       },
       {
         "id": 20,
@@ -7209,7 +7447,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-20.mp3"
       },
       {
         "id": 21,
@@ -7240,7 +7479,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-21.mp3"
       },
       {
         "id": 22,
@@ -7265,7 +7505,8 @@ window.part02PracticeData = [
             "pos": "adv",
             "vi": "gần đây"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-22.mp3"
       },
       {
         "id": 23,
@@ -7296,7 +7537,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-23.mp3"
       },
       {
         "id": 24,
@@ -7321,7 +7563,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hợp đồng"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-24.mp3"
       },
       {
         "id": 25,
@@ -7352,7 +7595,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "trụ sở chính"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-25.mp3"
       },
       {
         "id": 26,
@@ -7383,7 +7627,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-26.mp3"
       },
       {
         "id": 27,
@@ -7414,7 +7659,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-27.mp3"
       },
       {
         "id": 28,
@@ -7445,7 +7691,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-28.mp3"
       },
       {
         "id": 29,
@@ -7476,7 +7723,8 @@ window.part02PracticeData = [
             "pos": "n/v",
             "vi": "từ vựng trong câu"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-29.mp3"
       },
       {
         "id": 30,
@@ -7507,7 +7755,8 @@ window.part02PracticeData = [
             "pos": "n, v",
             "vi": "báo cáo"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-30.mp3"
       },
       {
         "id": 31,
@@ -7532,7 +7781,8 @@ window.part02PracticeData = [
             "pos": "n",
             "vi": "hội nghị"
           }
-        ]
+        ],
+        "audio": "media/E26-T10-31.mp3"
       }
     ]
   }

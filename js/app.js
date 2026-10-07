@@ -3429,6 +3429,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
             }
 
+            const qAudioSrc = q.audio || `media/E26-T${testData.id.split('_')[1]}-${qNum < 10 ? '0' + qNum : qNum}.mp3`;
+
             reviewQuestionsHtml += `
                 <div class="p2-review-card ${isCorrect ? 'is-correct' : 'is-wrong'}" id="review-card-q${qNum}">
                     <div class="p2-review-card-header">
@@ -3444,13 +3446,20 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
 
-                    <!-- TRANSCRIPT QUESTION -->
+                    <!-- TRANSCRIPT QUESTION & AUDIO GỐC -->
                     <div class="p2-review-prompt-box">
                         <div class="prompt-en">
                             <span>🔊 <strong>${q.question}</strong></span>
-                            <button class="tts-small-btn" onclick="playTTS('${q.question.replace(/'/g, "\'")}', event)">Phát âm</button>
                         </div>
                         ${q.vietnamese_question ? `<div class="prompt-vi">👉 Dịch: <em>${q.vietnamese_question}</em></div>` : ''}
+
+                        <div class="prompt-audio-bar">
+                            <div class="audio-tag">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+                                <span>AUDIO GỐC CÂU ${qNum}</span>
+                            </div>
+                            <audio controls src="${qAudioSrc}" preload="none" onplay="document.querySelectorAll('audio').forEach(a => { if (a !== this) a.pause(); })"></audio>
+                        </div>
                     </div>
 
                     <!-- TRANSCRIPT CHOICES -->
@@ -3610,16 +3619,40 @@ document.addEventListener("DOMContentLoaded", () => {
                     align-items: center;
                     gap: 10px;
                 }
-                .tts-small-btn {
-                    background: rgba(56, 189, 248, 0.15);
-                    border: 1px solid rgba(56, 189, 248, 0.3);
-                    color: #38bdf8;
-                    font-size: 0.8rem;
-                    padding: 4px 10px;
-                    border-radius: 6px;
-                    cursor: pointer;
+                .prompt-audio-bar {
+                    margin-top: 12px;
+                    padding: 8px 14px;
+                    background: rgba(37, 99, 235, 0.08);
+                    border: 1px solid rgba(59, 130, 246, 0.25);
+                    border-radius: 12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 12px;
+                    flex-wrap: wrap;
                 }
-                .tts-small-btn:hover { background: rgba(56, 189, 248, 0.25); }
+                .prompt-audio-bar .audio-tag {
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                    color: #0284c7;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                }
+                .prompt-audio-bar audio {
+                    height: 36px;
+                    max-width: 380px;
+                    width: 100%;
+                    border-radius: 20px;
+                    outline: none;
+                }
+                body.light-mode .prompt-audio-bar {
+                    background: #f0f7ff;
+                    border: 1px solid #bfdbfe;
+                }
+                body.light-mode .prompt-audio-bar .audio-tag {
+                    color: #0284c7;
+                }
                 .prompt-vi {
                     margin-top: 8px;
                     color: #a855f7;
