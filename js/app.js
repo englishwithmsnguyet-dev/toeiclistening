@@ -383,6 +383,19 @@ document.addEventListener("DOMContentLoaded", () => {
         { type: "item", id: "statements", title: "5. STATEMENTS" }
     ];
 
+    const practiceTestsP2 = [
+        { id: "test_01", title: "TEST 01" },
+        { id: "test_02", title: "TEST 02" },
+        { id: "test_03", title: "TEST 03" },
+        { id: "test_04", title: "TEST 04" },
+        { id: "test_05", title: "TEST 05" },
+        { id: "test_06", title: "TEST 06" },
+        { id: "test_07", title: "TEST 07" },
+        { id: "test_08", title: "TEST 08" },
+        { id: "test_09", title: "TEST 09" },
+        { id: "test_10", title: "TEST 10" }
+    ];
+
     const categoryTreeP4 = [
         {
             type: "item",
@@ -457,6 +470,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const part2SubmenuContainer = document.getElementById("part2SubmenuContainer");
     const part2ExpandIcon = document.getElementById("part2ExpandIcon");
     const part2ConceptsNavList = document.getElementById("part2-concepts-nav-list");
+    const part2PracticeNavList = document.getElementById("part2-practice-nav-list");
+    const secTestP2 = document.getElementById("sec-test-p2");
+    const testContentAreaP2 = document.getElementById("test-content-area-p2");
 
     const panelTitleP2 = document.getElementById("panel-title-p2");
     const breadCurrentP2 = document.getElementById("bread-current-p2");
@@ -2801,6 +2817,30 @@ document.addEventListener("DOMContentLoaded", () => {
         part2ConceptsNavList.innerHTML = "";
         const isUnlocked = window.isUnlocked;
         
+        if (part2PracticeNavList && typeof practiceTestsP2 !== "undefined") {
+            part2PracticeNavList.innerHTML = "";
+            practiceTestsP2.forEach(test => {
+                const item = document.createElement("div");
+                item.className = "submenu-item";
+                item.setAttribute("data-id", test.id);
+                item.setAttribute("data-type", "practice_test");
+                
+                // Show completion indicator if answered
+                const savedAnswers = state.answeredQuestions[`p2_test_${test.id}`] || null;
+                let statusBadge = "";
+                if (savedAnswers) {
+                    statusBadge = " ✅";
+                }
+                item.textContent = `${test.title}${statusBadge}`;
+                
+                item.addEventListener("click", (e) => {
+                    e.stopPropagation();
+                    loadPart02Test(test.id);
+                });
+                part2PracticeNavList.appendChild(item);
+            });
+        }
+
         if (typeof categoryTreeP2 !== "undefined") {
             categoryTreeP2.forEach(node => {
                 if (node.type === "item") {
@@ -2849,6 +2889,854 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+
+    // ================= PART 02 PRACTICE TEST FUNCTIONS =================
+    let p2ExamTimerInterval = null;
+    let p2ExamSecondsElapsed = 0;
+
+    function formatTime(secs) {
+        const m = Math.floor(secs / 60).toString().padStart(2, '0');
+        const s = (secs % 60).toString().padStart(2, '0');
+        return `${m}:${s}`;
+    }
+
+    function loadPart02Test(testId) {
+        state.part02ActiveSection = testId;
+        
+        // Highlight active sidebar item
+        document.querySelectorAll(".submenu-item").forEach(el => {
+            if (el.getAttribute('data-id') === testId) {
+                el.classList.add('active');
+            } else {
+                el.classList.remove('active');
+            }
+        });
+
+        // Set breadcrumbs
+        if (breadCurrentP2) breadCurrentP2.textContent = testId.toUpperCase().replace('_', ' ');
+        const testObj = (window.part02PracticeData || []).find(t => t.id === testId);
+        if (panelTitleP2) panelTitleP2.textContent = testObj ? `LUYỆN TẬP PHẦN 02: ${testObj.title}` : `LUYỆN TẬP PHẦN 02: ${testId.toUpperCase()}`;
+
+        // Hide theory/examples panel and display test panel
+        if (secTheoryP2) secTheoryP2.classList.remove("active");
+        if (secExamplesP2) secExamplesP2.classList.remove("active");
+        if (secVocabularyP2) secVocabularyP2.classList.remove("active");
+        if (secPracticeP2) secPracticeP2.classList.remove("active");
+        if (secTestP2) secTestP2.classList.add("active");
+
+        if (!window.part02PracticeData) {
+            if (testContentAreaP2) testContentAreaP2.innerHTML = "<p style='padding: 30px; text-align: center; color: #ef4444;'>Dữ liệu bài thi đang được tải...</p>";
+            return;
+        }
+
+        const testData = window.part02PracticeData.find(t => t.id === testId);
+        if (!testData) {
+            if (testContentAreaP2) testContentAreaP2.innerHTML = "<p style='padding: 30px; text-align: center; color: #ef4444;'>Không tìm thấy đề thi này.</p>";
+            return;
+        }
+
+        // Check if user already submitted this test
+        const savedResult = state.answeredQuestions[`p2_test_${testId}`];
+        if (savedResult && savedResult.submitted) {
+            renderPart02Review(testData, savedResult.answers);
+        } else {
+            renderPart02ExamSheet(testData);
+        }
+    }
+
+    function renderPart02ExamSheet(testData) {
+        if (!testContentAreaP2) return;
+        
+        // Clear previous timer
+        if (p2ExamTimerInterval) clearInterval(p2ExamTimerInterval);
+        p2ExamSecondsElapsed = 0;
+        
+        // Retrieve temporary in-progress answers if any
+        const tempKey = `p2_temp_answers_${testData.id}`;
+        let tempAnswers = {};
+        try {
+            tempAnswers = JSON.parse(localStorage.getItem(tempKey)) || {};
+        } catch(e) {}
+
+        let questionsRowsHtml = '';
+        testData.questions.forEach(q => {
+            const qNum = q.id;
+            const currentSelected = tempAnswers[qNum] || null;
+            
+            questionsRowsHtml += `
+                <div class="p2-exam-row" id="p2-q-row-${qNum}">
+                    <div class="p2-q-number">
+                        <span class="p2-q-num-badge">${qNum < 10 ? '0' + qNum : qNum}</span>
+                    </div>
+                    <div class="p2-bubble-group">
+                        ${['A', 'B', 'C'].map(choice => `
+                            <button type="button" 
+                                    class="p2-bubble-btn ${currentSelected === choice ? 'selected' : ''}" 
+                                    data-qid="${qNum}" 
+                                    data-choice="${choice}"
+                                    onclick="window.selectP2BubbleAnswer('${testData.id}', ${qNum}, '${choice}')">
+                                ${choice}
+                            </button>
+                        `).join('')}
+                    </div>
+                    <div class="p2-q-status" id="p2-q-status-${qNum}">
+                        ${currentSelected ? '<span class="status-dot answered" title="Đã chọn"></span>' : '<span class="status-dot pending" title="Chưa chọn"></span>'}
+                    </div>
+                </div>
+            `;
+        });
+
+        const html = `
+            <style>
+                .p2-exam-wrapper {
+                    max-width: 900px;
+                    margin: 0 auto;
+                    padding-bottom: 60px;
+                }
+                .p2-exam-hero {
+                    background: radial-gradient(circle at 10% 10%, rgba(59, 130, 246, 0.15), transparent 60%),
+                                linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 20px;
+                    padding: 30px;
+                    margin-bottom: 25px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+                    position: sticky;
+                    top: 15px;
+                    z-index: 50;
+                    backdrop-filter: blur(16px);
+                }
+                .p2-exam-hero-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    flex-wrap: wrap;
+                    gap: 15px;
+                }
+                .p2-exam-title-box h2 {
+                    font-size: 1.5rem;
+                    font-weight: 800;
+                    color: #f8fafc;
+                    letter-spacing: -0.02em;
+                    margin: 0 0 4px 0;
+                }
+                .p2-exam-title-box p {
+                    color: #94a3b8;
+                    font-size: 0.9rem;
+                    margin: 0;
+                }
+                .p2-timer-badge {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    background: rgba(15, 23, 42, 0.8);
+                    border: 1px solid rgba(59, 130, 246, 0.4);
+                    padding: 8px 18px;
+                    border-radius: 50px;
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    color: #38bdf8;
+                    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+                    font-family: monospace;
+                }
+                .p2-audio-wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 12px 18px;
+                    border-radius: 12px;
+                    border: 1px solid rgba(255, 255, 255, 0.05);
+                }
+                .p2-audio-wrapper audio {
+                    width: 100%;
+                    outline: none;
+                }
+                .p2-exam-progress-bar {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 15px;
+                    font-size: 0.85rem;
+                    color: #94a3b8;
+                    font-weight: 600;
+                }
+                .p2-sheet-card {
+                    background: var(--bg-card);
+                    border: 1px solid var(--border);
+                    border-radius: 20px;
+                    padding: 30px 40px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+                }
+                .p2-sheet-instructions {
+                    background: rgba(59, 130, 246, 0.06);
+                    border-left: 4px solid #3b82f6;
+                    padding: 14px 18px;
+                    border-radius: 8px;
+                    margin-bottom: 25px;
+                    font-size: 0.95rem;
+                    line-height: 1.5;
+                    color: var(--text-main);
+                }
+                .p2-exam-grid {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+                }
+                .p2-exam-row {
+                    display: flex;
+                    align-items: center;
+                    padding: 12px 20px;
+                    background: rgba(255, 255, 255, 0.02);
+                    border: 1px solid rgba(255, 255, 255, 0.06);
+                    border-radius: 14px;
+                    transition: all 0.2s ease;
+                }
+                .p2-exam-row:hover {
+                    background: rgba(255, 255, 255, 0.05);
+                    border-color: rgba(99, 102, 241, 0.3);
+                    transform: translateX(4px);
+                }
+                .p2-q-number {
+                    min-width: 90px;
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                }
+                .p2-q-num-badge {
+                    font-weight: 800;
+                    font-size: 1.1rem;
+                    color: var(--text-main);
+                    background: rgba(255, 255, 255, 0.08);
+                    padding: 4px 12px;
+                    border-radius: 8px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                }
+                .p2-bubble-group {
+                    display: flex;
+                    gap: 16px;
+                    flex: 1;
+                    justify-content: center;
+                }
+                .p2-bubble-btn {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 2px solid rgba(255, 255, 255, 0.15);
+                    color: var(--text-main);
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    cursor: pointer;
+                    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .p2-bubble-btn:hover {
+                    border-color: #38bdf8;
+                    color: #38bdf8;
+                    transform: scale(1.1);
+                    background: rgba(56, 189, 248, 0.1);
+                }
+                .p2-bubble-btn.selected {
+                    background: #2563eb;
+                    border-color: #38bdf8;
+                    color: #ffffff;
+                    transform: scale(1.1);
+                    box-shadow: 0 0 15px rgba(37, 99, 235, 0.6);
+                }
+                .p2-q-status {
+                    min-width: 40px;
+                    display: flex;
+                    justify-content: flex-end;
+                }
+                .status-dot {
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
+                .status-dot.answered { background: #10b981; box-shadow: 0 0 8px rgba(16, 185, 129, 0.8); }
+                .status-dot.pending { background: rgba(255, 255, 255, 0.15); }
+                .p2-submit-bar {
+                    margin-top: 35px;
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                }
+                .p2-submit-btn {
+                    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+                    color: white;
+                    border: none;
+                    padding: 16px 45px;
+                    font-size: 1.1rem;
+                    font-weight: 800;
+                    border-radius: 12px;
+                    cursor: pointer;
+                    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.35);
+                    transition: all 0.3s ease;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .p2-submit-btn:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 15px 30px rgba(37, 99, 235, 0.45);
+                    background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+                }
+            </style>
+
+            <div class="p2-exam-wrapper">
+                <!-- STICKY TOP AUDIO & TIMER -->
+                <div class="p2-exam-hero">
+                    <div class="p2-exam-hero-header">
+                        <div class="p2-exam-title-box">
+                            <h2>MÔ PHỎNG THI THẬT: ${testData.title}</h2>
+                            <p>Part 2: Questions 07 - 31 (25 câu hỏi phản xạ)</p>
+                        </div>
+                        <div class="p2-timer-badge" id="p2-timer-display">
+                            ⏱️ 00:00
+                        </div>
+                    </div>
+                    
+                    <div class="p2-audio-wrapper">
+                        <audio id="p2-main-audio" src="${testData.audio}" controls></audio>
+                    </div>
+
+                    <div class="p2-exam-progress-bar">
+                        <span id="p2-answered-counter">Đã chọn: ${Object.keys(tempAnswers).length} / 25 câu</span>
+                        <span>Đề thi ETS TOEIC Listening</span>
+                    </div>
+                </div>
+
+                <!-- BUBBLE SHEET -->
+                <div class="p2-sheet-card">
+                    <div class="p2-sheet-instructions">
+                        <strong>📌 Hướng dẫn làm bài thi:</strong> Đề thi mô phỏng chính xác format thi thật TOEIC Part 2. Câu hỏi và đáp án <strong>hoàn toàn không in trên đề</strong>. Hãy bật Audio để nghe và click chọn phương án <strong>A, B hoặc C</strong> tương ứng. Sau khi hoàn thành, nhấn <strong>NỘP BÀI</strong> để xem toàn bộ Transcript, Dịch chi tiết, Lời giải và Từ vựng hữu ích.
+                    </div>
+
+                    <div class="p2-exam-grid">
+                        ${questionsRowsHtml}
+                    </div>
+
+                    <div class="p2-submit-bar">
+                        <button type="button" class="p2-submit-btn" onclick="window.submitP2Exam('${testData.id}')">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            NỘP BÀI THI
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+
+        testContentAreaP2.innerHTML = html;
+
+        // Start Timer
+        const timerDisplay = document.getElementById("p2-timer-display");
+        p2ExamTimerInterval = setInterval(() => {
+            p2ExamSecondsElapsed++;
+            if (timerDisplay) {
+                timerDisplay.innerHTML = `⏱️ ${formatTime(p2ExamSecondsElapsed)}`;
+            }
+        }, 1000);
+    }
+
+    // Global helper to select bubble answer
+    window.selectP2BubbleAnswer = function(testId, qNum, choice) {
+        const tempKey = `p2_temp_answers_${testId}`;
+        let tempAnswers = {};
+        try {
+            tempAnswers = JSON.parse(localStorage.getItem(tempKey)) || {};
+        } catch(e) {}
+
+        tempAnswers[qNum] = choice;
+        try {
+            localStorage.setItem(tempKey, JSON.stringify(tempAnswers));
+        } catch(e) {}
+
+        // Update UI row
+        const row = document.getElementById(`p2-q-row-${qNum}`);
+        if (row) {
+            row.querySelectorAll('.p2-bubble-btn').forEach(btn => {
+                if (btn.getAttribute('data-choice') === choice) {
+                    btn.classList.add('selected');
+                } else {
+                    btn.classList.remove('selected');
+                }
+            });
+        }
+
+        const statusDot = document.getElementById(`p2-q-status-${qNum}`);
+        if (statusDot) {
+            statusDot.innerHTML = '<span class="status-dot answered" title="Đã chọn"></span>';
+        }
+
+        const counter = document.getElementById("p2-answered-counter");
+        if (counter) {
+            counter.textContent = `Đã chọn: ${Object.keys(tempAnswers).length} / 25 câu`;
+        }
+    };
+
+    // Global submit handler
+    window.submitP2Exam = function(testId) {
+        const testData = (window.part02PracticeData || []).find(t => t.id === testId);
+        if (!testData) return;
+
+        const tempKey = `p2_temp_answers_${testId}`;
+        let tempAnswers = {};
+        try {
+            tempAnswers = JSON.parse(localStorage.getItem(tempKey)) || {};
+        } catch(e) {}
+
+        const answeredCount = Object.keys(tempAnswers).length;
+        if (answeredCount < 25) {
+            const unanswered = 25 - answeredCount;
+            if (!confirm(`Bạn còn ${unanswered} câu chưa làm. Bạn có chắc chắn muốn nộp bài ngay bây giờ?`)) {
+                return;
+            }
+        }
+
+        // Stop timer
+        if (p2ExamTimerInterval) clearInterval(p2ExamTimerInterval);
+
+        // Calculate score
+        let correctCount = 0;
+        testData.questions.forEach(q => {
+            if (tempAnswers[q.id] === q.answer) {
+                correctCount++;
+            }
+        });
+
+        // Save submitted state to state.answeredQuestions
+        const resultRecord = {
+            submitted: true,
+            score: correctCount,
+            total: 25,
+            percentage: Math.round((correctCount / 25) * 100),
+            answers: tempAnswers,
+            timeSpent: p2ExamSecondsElapsed,
+            timestamp: new Date().toISOString()
+        };
+
+        state.answeredQuestions[`p2_test_${testId}`] = resultRecord;
+        try {
+            localStorage.setItem("toeic_answered_questions", JSON.stringify(state.answeredQuestions));
+            localStorage.removeItem(tempKey);
+        } catch(e) {}
+
+        // Launch celebratory confetti if score >= 18
+        if (correctCount >= 18 && window.launchConfetti) {
+            window.launchConfetti();
+        }
+
+        // Refresh sidebar badge
+        initializePart02Sidebar();
+        updateRouteProgress();
+
+        // Render review
+        renderPart02Review(testData, tempAnswers);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    // Global retry handler
+    window.retryP2Test = function(testId) {
+        if (!confirm("Bạn có muốn làm lại bài thi này? Lịch sử điểm số trước đó sẽ được làm mới.")) {
+            return;
+        }
+        delete state.answeredQuestions[`p2_test_${testId}`];
+        try {
+            localStorage.setItem("toeic_answered_questions", JSON.stringify(state.answeredQuestions));
+            localStorage.removeItem(`p2_temp_answers_${testId}`);
+        } catch(e) {}
+        
+        initializePart02Sidebar();
+        updateRouteProgress();
+        loadPart02Test(testId);
+    };
+
+    function renderPart02Review(testData, userAnswers) {
+        if (!testContentAreaP2) return;
+
+        userAnswers = userAnswers || {};
+        let correctCount = 0;
+        testData.questions.forEach(q => {
+            if (userAnswers[q.id] === q.answer) {
+                correctCount++;
+            }
+        });
+
+        const percent = Math.round((correctCount / 25) * 100);
+        let performanceBadge = "Cần cải thiện thêm";
+        let badgeColor = "#ef4444";
+        if (percent >= 80) {
+            performanceBadge = "Xuất sắc! Phản xạ rất tốt";
+            badgeColor = "#10b981";
+        } else if (percent >= 60) {
+            performanceBadge = "Đạt yêu cầu! Tiếp tục phát huy";
+            badgeColor = "#3b82f6";
+        }
+
+        let reviewQuestionsHtml = '';
+        testData.questions.forEach(q => {
+            const qNum = q.id;
+            const userPick = userAnswers[qNum] || "Chưa chọn";
+            const isCorrect = userPick === q.answer;
+            
+            // Build choices transcript
+            let choicesTranscriptHtml = '';
+            ['A', 'B', 'C'].forEach(opt => {
+                const isCorrectOpt = opt === q.answer;
+                const isUserOpt = opt === userPick;
+                let optClass = "p2-review-opt";
+                if (isCorrectOpt) optClass += " correct-opt";
+                else if (isUserOpt && !isCorrect) optClass += " incorrect-opt";
+
+                const enText = q.choices[opt] || "";
+                const viText = (q.vietnamese_choices && q.vietnamese_choices[opt]) ? q.vietnamese_choices[opt] : "";
+
+                choicesTranscriptHtml += `
+                    <div class="${optClass}">
+                        <div class="opt-label">(${opt})</div>
+                        <div class="opt-content">
+                            <div class="opt-en">${enText} ${isCorrectOpt ? '<span class="correct-tag">✓ ĐÁP ÁN ĐÚNG</span>' : ''}</div>
+                            ${viText ? `<div class="opt-vi">${viText}</div>` : ''}
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Build vocabulary box
+            let vocabHtml = '';
+            if (q.vocabulary && q.vocabulary.length > 0) {
+                const vItems = q.vocabulary.map(v => `
+                    <div class="p2-vocab-item">
+                        <span class="v-word">${v.en}</span>
+                        <span class="v-ipa">${v.ipa}</span>
+                        <span class="v-pos">(${v.pos})</span>: 
+                        <span class="v-meaning">${v.vi}</span>
+                        <span class="v-tts" onclick="playTTS(this.dataset.text, event)" data-text="${v.en.replace(/"/g, '&quot;')}" title="Nghe phát âm">🔊</span>
+                    </div>
+                `).join('');
+                vocabHtml = `
+                    <div class="p2-review-vocab-card">
+                        <h5>📚 TỪ VỰNG HỮU ÍCH</h5>
+                        <div class="p2-vocab-list">${vItems}</div>
+                    </div>
+                `;
+            }
+
+            reviewQuestionsHtml += `
+                <div class="p2-review-card ${isCorrect ? 'is-correct' : 'is-wrong'}" id="review-card-q${qNum}">
+                    <div class="p2-review-card-header">
+                        <div class="p2-review-q-num">
+                            <span class="badge-num">CÂU ${qNum < 10 ? '0' + qNum : qNum}</span>
+                            <span class="badge-result ${isCorrect ? 'correct' : 'incorrect'}">
+                                ${isCorrect ? '✓ ĐÚNG' : '✗ SAI'}
+                            </span>
+                        </div>
+                        <div class="p2-review-comparison">
+                            <span>Bạn chọn: <strong class="${isCorrect ? 'text-green' : 'text-red'}">${userPick}</strong></span>
+                            <span>Đáp án đúng: <strong class="text-green">${q.answer}</strong></span>
+                        </div>
+                    </div>
+
+                    <!-- TRANSCRIPT QUESTION -->
+                    <div class="p2-review-prompt-box">
+                        <div class="prompt-en">
+                            <span>🔊 <strong>${q.question}</strong></span>
+                            <button class="tts-small-btn" onclick="playTTS('${q.question.replace(/'/g, "\'")}', event)">Phát âm</button>
+                        </div>
+                        ${q.vietnamese_question ? `<div class="prompt-vi">👉 Dịch: <em>${q.vietnamese_question}</em></div>` : ''}
+                    </div>
+
+                    <!-- TRANSCRIPT CHOICES -->
+                    <div class="p2-review-choices-container">
+                        ${choicesTranscriptHtml}
+                    </div>
+
+                    <!-- EXPLANATION -->
+                    ${q.explanation ? `
+                        <div class="p2-review-explanation-card">
+                            <h5>💡 LỜI GIẢI CHI TIẾT</h5>
+                            ${q.explanation}
+                        </div>
+                    ` : ''}
+
+                    <!-- VOCABULARY -->
+                    ${vocabHtml}
+                </div>
+            `;
+        });
+
+        const html = `
+            <style>
+                .p2-review-wrapper {
+                    max-width: 900px;
+                    margin: 0 auto;
+                    padding-bottom: 60px;
+                }
+                .p2-score-banner {
+                    background: radial-gradient(circle at 10% 10%, rgba(37, 99, 235, 0.2), transparent 70%),
+                                linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 24px;
+                    padding: 35px 40px;
+                    margin-bottom: 30px;
+                    box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+                    text-align: center;
+                }
+                .p2-score-banner h2 {
+                    font-size: 1.8rem;
+                    font-weight: 800;
+                    color: #f8fafc;
+                    margin: 0 0 10px 0;
+                }
+                .p2-score-banner p {
+                    color: #94a3b8;
+                    margin: 0 0 25px 0;
+                    font-size: 1rem;
+                }
+                .p2-score-circle-group {
+                    display: flex;
+                    justify-content: center;
+                    gap: 30px;
+                    margin-bottom: 25px;
+                    flex-wrap: wrap;
+                }
+                .p2-score-stat-box {
+                    background: rgba(255, 255, 255, 0.04);
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    padding: 15px 25px;
+                    border-radius: 16px;
+                    min-width: 140px;
+                }
+                .p2-stat-num {
+                    font-size: 2.2rem;
+                    font-weight: 900;
+                    color: #38bdf8;
+                    line-height: 1.1;
+                }
+                .p2-stat-label {
+                    font-size: 0.85rem;
+                    color: #94a3b8;
+                    text-transform: uppercase;
+                    letter-spacing: 0.05em;
+                    margin-top: 5px;
+                }
+                .p2-banner-actions {
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    margin-top: 20px;
+                }
+                .btn-retry-p2 {
+                    background: rgba(255, 255, 255, 0.1);
+                    color: #f8fafc;
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    padding: 12px 28px;
+                    border-radius: 10px;
+                    font-weight: 700;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    transition: all 0.2s;
+                }
+                .btn-retry-p2:hover {
+                    background: rgba(255, 255, 255, 0.18);
+                    transform: translateY(-2px);
+                }
+                .p2-review-card {
+                    background: var(--bg-card);
+                    border: 1px solid var(--border);
+                    border-radius: 20px;
+                    padding: 28px 32px;
+                    margin-bottom: 25px;
+                    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+                    transition: all 0.3s ease;
+                }
+                .p2-review-card.is-correct { border-left: 6px solid #10b981; }
+                .p2-review-card.is-wrong { border-left: 6px solid #ef4444; }
+                .p2-review-card-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 18px;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                }
+                .p2-review-q-num {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .badge-num {
+                    font-size: 1.1rem;
+                    font-weight: 800;
+                    color: var(--text-main);
+                }
+                .badge-result {
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                    font-size: 0.8rem;
+                    font-weight: 800;
+                }
+                .badge-result.correct { background: rgba(16, 185, 129, 0.15); color: #10b981; }
+                .badge-result.incorrect { background: rgba(239, 68, 68, 0.15); color: #ef4444; }
+                .p2-review-comparison {
+                    display: flex;
+                    gap: 15px;
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                }
+                .text-green { color: #10b981; font-weight: 800; }
+                .text-red { color: #ef4444; font-weight: 800; }
+                .p2-review-prompt-box {
+                    background: rgba(255, 255, 255, 0.03);
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    padding: 16px 20px;
+                    border-radius: 12px;
+                    margin-bottom: 18px;
+                }
+                .prompt-en {
+                    font-size: 1.15rem;
+                    color: var(--text-main);
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .tts-small-btn {
+                    background: rgba(56, 189, 248, 0.15);
+                    border: 1px solid rgba(56, 189, 248, 0.3);
+                    color: #38bdf8;
+                    font-size: 0.8rem;
+                    padding: 4px 10px;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+                .tts-small-btn:hover { background: rgba(56, 189, 248, 0.25); }
+                .prompt-vi {
+                    margin-top: 8px;
+                    color: #a855f7;
+                    font-size: 1rem;
+                }
+                .p2-review-choices-container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    margin-bottom: 20px;
+                }
+                .p2-review-opt {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 15px;
+                    padding: 12px 18px;
+                    border-radius: 12px;
+                    background: rgba(255, 255, 255, 0.02);
+                    border: 1px solid rgba(255, 255, 255, 0.06);
+                }
+                .p2-review-opt.correct-opt {
+                    background: rgba(16, 185, 129, 0.08);
+                    border-color: rgba(16, 185, 129, 0.35);
+                }
+                .p2-review-opt.incorrect-opt {
+                    background: rgba(239, 68, 68, 0.08);
+                    border-color: rgba(239, 68, 68, 0.35);
+                }
+                .opt-label {
+                    font-weight: 800;
+                    color: var(--text-muted);
+                    min-width: 28px;
+                }
+                .correct-opt .opt-label { color: #10b981; }
+                .incorrect-opt .opt-label { color: #ef4444; }
+                .opt-content { flex: 1; }
+                .opt-en {
+                    font-size: 1.05rem;
+                    color: var(--text-main);
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    flex-wrap: wrap;
+                }
+                .correct-tag {
+                    font-size: 0.75rem;
+                    background: #10b981;
+                    color: white;
+                    padding: 2px 8px;
+                    border-radius: 4px;
+                    font-weight: 700;
+                }
+                .opt-vi {
+                    font-size: 0.95rem;
+                    color: var(--text-muted);
+                    font-style: italic;
+                    margin-top: 4px;
+                }
+                .p2-review-explanation-card, .p2-review-vocab-card {
+                    margin-top: 15px;
+                    padding: 16px 20px;
+                    border-radius: 12px;
+                    background: rgba(0, 0, 0, 0.15);
+                    border: 1px solid var(--border);
+                }
+                .p2-review-explanation-card h5, .p2-review-vocab-card h5 {
+                    margin: 0 0 10px 0;
+                    font-size: 0.95rem;
+                    font-weight: 800;
+                    color: #38bdf8;
+                }
+                .p2-review-vocab-card h5 { color: #10b981; }
+                .p2-vocab-item {
+                    font-size: 0.95rem;
+                    margin-bottom: 6px;
+                }
+                .v-word { font-weight: 700; color: #0284c7; }
+                .v-ipa { font-family: monospace; color: #94a3b8; font-size: 0.9em; margin: 0 4px; }
+                .v-pos { color: #a855f7; font-style: italic; }
+                .v-meaning { color: var(--text-main); margin-left: 4px; }
+                .v-tts { cursor: pointer; margin-left: 6px; font-size: 1.05em; opacity: 0.6; }
+                .v-tts:hover { opacity: 1; }
+            </style>
+
+            <div class="p2-review-wrapper">
+                <!-- SCORE SUMMARY BANNER -->
+                <div class="p2-score-banner">
+                    <h2>KẾT QUẢ BÀI THI: ${testData.title}</h2>
+                    <p style="color: ${badgeColor}; font-weight: 700; font-size: 1.1rem;">${performanceBadge}</p>
+                    
+                    <div class="p2-score-circle-group">
+                        <div class="p2-score-stat-box">
+                            <div class="p2-stat-num" style="color: ${badgeColor};">${correctCount} / 25</div>
+                            <div class="p2-stat-label">Số câu đúng</div>
+                        </div>
+                        <div class="p2-score-stat-box">
+                            <div class="p2-stat-num" style="color: #38bdf8;">${percent}%</div>
+                            <div class="p2-stat-label">Tỷ lệ chính xác</div>
+                        </div>
+                    </div>
+
+                    <div class="p2-banner-actions">
+                        <button type="button" class="btn-retry-p2" onclick="window.retryP2Test('${testData.id}')">
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+                            LÀM LẠI ĐỀ THI
+                        </button>
+                    </div>
+                </div>
+
+                <!-- REVIEW QUESTIONS LIST -->
+                <div class="p2-review-questions-list">
+                    ${reviewQuestionsHtml}
+                </div>
+            </div>
+        `;
+
+        testContentAreaP2.innerHTML = html;
+    }
+
     function loadSectionP2(sectionId) {
         if (LOCKED_SECTIONS.includes(sectionId) && !window.isUnlocked) {
             if (window.showPaywallModal) window.showPaywallModal();
@@ -2878,7 +3766,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const section = window.part02Data.find(s => s.id === sectionId);
         if (!section) return;
         
-        // Hide unused buttons
+        // Hide unused buttons & test section
+        if (secTestP2) secTestP2.classList.remove("active");
         if (secBtnTheoryP2) secBtnTheoryP2.classList.remove("hidden");
         if (secBtnExamplesP2) secBtnExamplesP2.classList.remove("hidden");
         if (secBtnVocabularyP2) secBtnVocabularyP2.classList.add("hidden");

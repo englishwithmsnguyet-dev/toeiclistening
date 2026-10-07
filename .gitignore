@@ -1,0 +1,20 @@
+# System files
+.DS_Store
+Thumbs.db
+~$*
+
+# Source PDFs & giant resources
+ETS 2024/
+LISTENING PART 02 PRACTICE/
+*.pptx
+scratch_p4_ppt/
+vendor/
+
+# Temporary python scripts
+*.py
+*.json
+!data/*.json
+!package*.json
+git_log_part01.txt
+part2_raw_text.txt
+temp_data.js
