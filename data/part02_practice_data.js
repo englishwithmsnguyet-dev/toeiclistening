@@ -24,7 +24,7 @@ window.part02PracticeData = [
           "B": "Khoảng mười năm",
           "C": "Tôi nghĩ là văn phòng công ty"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"About ten years old\" (<em>Kho ả ng mư ờ i năm</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"About ten years old\" (<em>Khoảng mười năm</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "building",
@@ -61,7 +61,7 @@ window.part02PracticeData = [
           "B": "Hầu hết chỉ là các nhạc sĩ địa phương.",
           "C": "Chắc chắn rồi, tôi sẽ đến."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Sure, I’ll be there\" (<em>Ch ắ c ch ắ n r ồ i, tôi s ẽ đ ế n .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Sure, I’ll be there\" (<em>Chắc chắn rồi, tôi sẽ đến.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "performance",
@@ -98,7 +98,7 @@ window.part02PracticeData = [
           "B": "Nộp bài tập của bạn ở đây.",
           "C": "Nó đến từ những người thuê nhà ở căn B23"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHICH (LỰA CHỌN CỤ THỂ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It came from the tenants in B23\" (<em>Nó đ ế n t ừ nh ữ ng ngư ờ i thuê nhà ở căn B23</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường dùng đại từ 'the one...', danh từ cụ thể hoặc chỉ rõ đối tượng được chọn.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHICH (LỰA CHỌN CỤ THỂ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It came from the tenants in B23\" (<em>Nó đến từ những người thuê nhà ở căn B23</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường dùng đại từ 'the one...', danh từ cụ thể hoặc chỉ rõ đối tượng được chọn.</p>\n</div>",
         "vocabulary": [
           {
             "en": "apartment",
@@ -141,7 +141,7 @@ window.part02PracticeData = [
           "B": "Một biên nhận qua email.",
           "C": "Tôi có thể đổi lấy một đô la được không?"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Of course, I’ll take care of it\" (<em>T ấ t nhiên, tôi s ẽ lo vi ệ c đó</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Of course, I’ll take care of it\" (<em>Tất nhiên, tôi sẽ lo việc đó</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "contact",
@@ -178,7 +178,7 @@ window.part02PracticeData = [
           "B": "Từ ba giờ đến bốn giờ.",
           "C": "Bởi vì cần phải sửa một cái đèn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Because a light needed to be fixed.\" (<em>B ở i vì c ầ n ph ả i s ử a m ộ t cái đèn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Because a light needed to be fixed.\" (<em>Bởi vì cần phải sửa một cái đèn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "maintenance",
@@ -221,7 +221,7 @@ window.part02PracticeData = [
           "B": "Phòng nhân sự.",
           "C": "Vâng, họ đã chọn Jacob Borgman"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, they chose Jacob Borgman\" (<em>Vâng, h ọ đã ch ọ n Jacob Borgman</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, they chose Jacob Borgman\" (<em>Vâng, họ đã chọn Jacob Borgman</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "management",
@@ -293,9 +293,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Vâng, tôi đồng ý.",
           "B": "Không, tôi sẽ gửi nó ngay bây giờ.",
-          "C": "Kiểm tra sổ tay nhân viên.  TEST 01 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Kiểm tra sổ tay nhân viên."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"No, I’ll send it now.\" (<em>Không, tôi s ẽ g ử i nó ngay bây gi ờ .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"No, I’ll send it now.\" (<em>Không, tôi sẽ gửi nó ngay bây giờ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "commute",
@@ -332,7 +332,7 @@ window.part02PracticeData = [
           "B": "Chắc chắn rồi, tôi thích salad.",
           "C": "Ở cuối hành lang này."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There’s a lot of rain in the forecast.\" (<em>D ự báo s ẽ có r ấ t nhi ề u mưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There’s a lot of rain in the forecast.\" (<em>Dự báo sẽ có rất nhiều mưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
         "vocabulary": [
           {
             "en": "division",
@@ -369,7 +369,7 @@ window.part02PracticeData = [
           "B": "Để có thêm vài đô la.",
           "C": "Nghỉ giải lao mười lăm phút."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU ĐỀ NGHỊ & LỜI MỜI (SUGGESTIONS / INVITATIONS)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Just water, please.\" (<em>Ch ỉ c ầ n nư ớ c thôi .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thể hiện sự đồng ý (Sure, That sounds great) hoặc từ chối lịch sự kèm lý do.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU ĐỀ NGHỊ & LỜI MỜI (SUGGESTIONS / INVITATIONS)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Just water, please.\" (<em>Chỉ cần nước thôi.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thể hiện sự đồng ý (Sure, That sounds great) hoặc từ chối lịch sự kèm lý do.</p>\n</div>",
         "vocabulary": [
           {
             "en": "break",
@@ -396,11 +396,11 @@ window.part02PracticeData = [
         "answer": "A",
         "vietnamese_question": "Chúng ta đã đạt được mục tiêu bán hàng trong  tháng này.",
         "vietnamese_choices": {
-          "A": "It turned out well.",
-          "B": "Yes, I did find one.",
-          "C": "About once a month."
+          "A": "Đó là một tin tuyệt vời.",
+          "B": "Một vài lần một ngày.",
+          "C": "Đến cuối tháng Tư."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"That's excellent news.\" (<em>Đó là tin tuy ệ t v ờ i.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"That's excellent news.\" (<em>Đó là một tin tuyệt vời.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "achieve",
@@ -431,13 +431,13 @@ window.part02PracticeData = [
           "C": "About once a month."
         },
         "answer": "C",
-        "vietnamese_question": "Bạ n có thư ờ ng xuyên đi công tác không?",
+        "vietnamese_question": "Bạn có thường xuyên đi công tác không?",
         "vietnamese_choices": {
-          "A": "M ọ i vi ệ c di ễ n ra t ố t đ ẹ p.",
-          "B": "Vâng, tôi đã tìm th ấ y m ộ t cái.",
-          "C": "Kho ả ng m ộ t tháng m ộ t l ầ n."
+          "A": "Mọi việc diễn ra tốt đẹp.",
+          "B": "Vâng, tôi đã tìm thấy một cái.",
+          "C": "Khoảng một tháng một lần."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW OFTEN (TẦN SUẤT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"About once a month.\" (<em>Kho ả ng m ộ t tháng m ộ t l ầ n.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp tần suất (once a week, every month, rarely...).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW OFTEN (TẦN SUẤT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"About once a month.\" (<em>Khoảng một tháng một lần.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp tần suất (once a week, every month, rarely...).</p>\n</div>",
         "vocabulary": [
           {
             "en": "travel",
@@ -468,7 +468,7 @@ window.part02PracticeData = [
           "B": "Tôi không mang ủng.",
           "C": "Tại trung tâm dành cho du khách."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I didn’t bring boots.\" (<em>Tôi không mang ủ ng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I didn’t bring boots.\" (<em>Tôi không mang ủng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "hike",
@@ -505,7 +505,7 @@ window.part02PracticeData = [
           "B": "Anh ấy thường đi tàu.",
           "C": "Vâng, tôi đã đặt chỗ vào tuần trước."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, I made a reservation last week.\" (<em>Vâng, tôi đã đ ặ t ch ỗ vào tu ầ n trư ớ c.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, I made a reservation last week.\" (<em>Vâng, tôi đã đặt chỗ vào tuần trước.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "leave",
@@ -536,7 +536,7 @@ window.part02PracticeData = [
           "B": "Anh ấy là một nghệ sĩ violin hòa nhạc.",
           "C": "Họ đã rời đi rồi."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"It’s sold out.\" (<em>Nó đã đư ợ c bán h ế t.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"It’s sold out.\" (<em>Nó đã được bán hết.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "presentation",
@@ -571,9 +571,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Tôi có thể nhận đơn đặt hàng của bạn được  không?",
           "B": "Tôi chưa có cơ hội.",
-          "C": "Khoảng 40 đô la.  TEST 01 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Khoảng 40 đô la."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I haven’t had a chance.\" (<em>Tôi chưa có cơ h ộ i.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I haven’t had a chance.\" (<em>Tôi chưa có cơ hội.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "reserve",
@@ -610,7 +610,7 @@ window.part02PracticeData = [
           "B": "Trong tủ bếp.",
           "C": "Nguyên mẫu vẫn đang được thử nghiệm."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"The prototype is still being tested.\" (<em>Nguyên m ẫ u v ẫ n đang đư ợ c th ử nghi ệ m.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"The prototype is still being tested.\" (<em>Nguyên mẫu vẫn đang được thử nghiệm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "take over",
@@ -647,7 +647,7 @@ window.part02PracticeData = [
           "B": "Tại nhà ga số 2.",
           "C": "Đó là một vị trí marketing."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"They decided to drive.\" (<em>H ọ đã quy ế t đ ị nh lái xe.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"They decided to drive.\" (<em>Họ đã quyết định lái xe.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "renovation",
@@ -684,7 +684,7 @@ window.part02PracticeData = [
           "B": "Không, tôi chưa kiểm tra đợt giảm giá",
           "C": "Tôi cần một ít cho một bó hoa lớn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I needed some for a large bouquet.\" (<em>Tôi c ầ n m ộ t ít cho m ộ t bó hoa l ớ n.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I needed some for a large bouquet.\" (<em>Tôi cần một ít cho một bó hoa lớn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "headquarters",
@@ -715,7 +715,7 @@ window.part02PracticeData = [
           "B": "Sau thông báo.",
           "C": "Anh ấy đã có một bài phát biểu tuyệt vời."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Why don’t we go see it?\" (<em>T ạ i sao chúng ta không đi xem nó?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Why don’t we go see it?\" (<em>Tại sao chúng ta không đi xem nó?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "warranty",
@@ -752,7 +752,7 @@ window.part02PracticeData = [
           "B": "Carat đã tổ chức một cái rồi.",
           "C": "Đó là một bài viết rất thú vị."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Carat’s already organizing one.\" (<em>Carat đã t ổ ch ứ c m ộ t cái r ồ i.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Carat’s already organizing one.\" (<em>Carat đã tổ chức một cái rồi.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "attend",
@@ -789,7 +789,7 @@ window.part02PracticeData = [
           "B": "Năm đến bảy tháng.",
           "C": "Vâng, đó là một tòa nhà đẹp."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We just sent an e - mail to all instru ctors\" (<em>Chúng tôi v ừ a g ử i e - mail cho t ấ t c ả các gi ả ng viên</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We just sent an e - mail to all instru ctors\" (<em>Chúng tôi vừa gửi e-mail cho tất cả các giảng  viên</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "budget",
@@ -826,7 +826,7 @@ window.part02PracticeData = [
           "B": "Vâng, chúng có nhiều màu khác",
           "C": "Hàng hóa mùa xuân của chúng ta sắp đến"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Our spring merchandise is arriving soon\" (<em>Hàng hóa mùa xuân c ủ a chúng ta s ắ p đ ế n</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Our spring merchandise is arriving soon\" (<em>Hàng hóa mùa xuân của chúng ta sắp đến</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "sweater",
@@ -861,9 +861,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Cảm ơn bạn đã gặp tôi.",
           "B": "Đơn thuốc kính áp tròng.",
-          "C": "Tôi có rất ít thời gian.  TEST 01 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Tôi có rất ít thời gian."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I have very limited time .\" (<em>Tôi có r ấ t ít th ờ i gian .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I have very limited time .\" (<em>Tôi có rất ít thời gian.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "catering",
@@ -900,7 +900,7 @@ window.part02PracticeData = [
           "B": "Tôi thực sự thích làm việc với máy tính",
           "C": "Chỉ cần một bản lý lịch."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I really like working with computers\" (<em>Tôi th ự c s ự thích làm vi ệ c v ớ i máy tính</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I really like working with computers\" (<em>Tôi thực sự thích làm việc với máy tính</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
         "vocabulary": [
           {
             "en": "flight",
@@ -946,7 +946,7 @@ window.part02PracticeData = [
           "B": "Nó ở trong thùng vận chuyển.",
           "C": "Tôi vừa bỏ nó vào thùng rác"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"No. not yet.\" (<em>Chưa, v ẫ n chưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"No. not yet.\" (<em>Chưa, vẫn chưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "have",
@@ -977,7 +977,7 @@ window.part02PracticeData = [
           "B": "Tôi nghĩ là ba giờ.",
           "C": "Tại chi nhánh chính của ngân hàng."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW MUCH / HOW MANY (SỐ LƯỢNG & GIÁ CẢ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"About 10 percent.\" (<em>Kho ả ng 10 ph ầ n trăm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp số lượng, giá tiền hoặc phương thức thanh toán.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW MUCH / HOW MANY (SỐ LƯỢNG & GIÁ CẢ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"About 10 percent.\" (<em>Khoảng 10 phần trăm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp số lượng, giá tiền hoặc phương thức thanh toán.</p>\n</div>",
         "vocabulary": [
           {
             "en": "budget",
@@ -1002,7 +1002,7 @@ window.part02PracticeData = [
           "B": "Vâng, ngay sau bữa trưa.",
           "C": "Trong phòng nghỉ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, right after lunch .\" (<em>Vâng, ngay sau b ữ a trưa .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, right after lunch .\" (<em>Vâng, ngay sau bữa trưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "going",
@@ -1033,7 +1033,7 @@ window.part02PracticeData = [
           "B": "Tôi đã lên lịch rồi.",
           "C": "Hội thảo kéo dài ba ngày."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I already scheduled one.\" (<em>Tôi đã lên l ị ch r ồ i.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I already scheduled one.\" (<em>Tôi đã lên lịch rồi.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "schedule",
@@ -1070,7 +1070,7 @@ window.part02PracticeData = [
           "B": "Bản sao hai mặt.",
           "C": "Bạn có chắc nó có thể sửa được không?"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Are you sure it can be repaired?\" (<em>B ạ n có ch ắ c nó có th ể s ử a đư ợ c không? ?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Are you sure it can be repaired?\" (<em>Bạn có chắc nó có thể sửa được không?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "going",
@@ -1101,7 +1101,7 @@ window.part02PracticeData = [
           "B": "Vâng, tôi đã tìm thấy nó rồi.",
           "C": "Tôi sẽ để chúng ở quầy lễ tân."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I'll leave them at the front desk.\" (<em>Tôi s ẽ đ ể chúng ở qu ầ y l ễ tân.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I'll leave them at the front desk.\" (<em>Tôi sẽ để chúng ở quầy lễ tân.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
         "vocabulary": [
           {
             "en": "already",
@@ -1126,7 +1126,7 @@ window.part02PracticeData = [
           "B": "Có, thay vào đó nó sẽ diễn ra vào ngày mai.",
           "C": "Món súp tôi gọi rất ngon."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, it's happening tomorrow instead.\" (<em>Có , thay vào đó nó s ẽ di ễ n ra vào ngày mai .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, it's happening tomorrow instead.\" (<em>Có, thay vào đó nó sẽ diễn ra vào ngày mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "instead",
@@ -1149,9 +1149,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Chắc chắn rồi, chúng ta có thời gian cho việc  đó.",
           "B": "Một bữa tiệc buffet đầy đủ dịch vụ.",
-          "C": "Chủ đề là mạng lưới chuyên nghiệp.  TEST 02 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Chủ đề là mạng lưới chuyên nghiệp."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sure, we have time for that.\" (<em>Ch ắ c ch ắ n r ồ i, chúng ta có th ờ i gian cho vi ệ c đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sure, we have time for that.\" (<em>Chắc chắn rồi, chúng ta có thời gian cho việc  đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "workshop",
@@ -1182,7 +1182,7 @@ window.part02PracticeData = [
           "B": "Rồi, nó rất ngon.",
           "C": "Tôi sẽ cố gắng đến đúng giờ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, it was delicious.\" (<em>R ồ i , nó r ấ t ngon.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, it was delicious.\" (<em>Rồi, nó rất ngon.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "have",
@@ -1213,7 +1213,7 @@ window.part02PracticeData = [
           "B": "Một ca sĩ nhạc jazz đến từ Pháp.",
           "C": "Vị trí đã được lấp đầy."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"A jazz singer from France.\" (<em>M ộ t ca sĩ nh ạ c jazz đ ế n t ừ Pháp.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"A jazz singer from France.\" (<em>Một ca sĩ nhạc jazz đến từ Pháp.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "opening",
@@ -1244,7 +1244,7 @@ window.part02PracticeData = [
           "B": "Một số tính năng cải tiến.",
           "C": "Tôi nghĩ là ở phòng 202."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The schedule was e - mailed last Friday.\" (<em>L ị ch trình đã đư ợ c g ử i qua email vào th ứ 6 tu ầ n trư ớ c .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The schedule was e - mailed last Friday.\" (<em>Lịch trình đã được gửi qua email vào thứ 6  tuần trước.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "schedule",
@@ -1269,7 +1269,7 @@ window.part02PracticeData = [
           "B": "Thông thường chúng tôi đánh giá trực tuyến.",
           "C": "Chỉ cần gửi cho tôi những thay đổi mà bạn  muốn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Just send me the changes you want .\" (<em>Ch ỉ c ầ n g ử i cho tôi nh ữ ng thay đ ổ i mà b ạ n mu ố n.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Just send me the changes you want .\" (<em>Chỉ cần gửi cho tôi những thay đổi mà bạn  muốn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "tried",
@@ -1300,7 +1300,7 @@ window.part02PracticeData = [
           "B": "Vâng, anh ấy sẽ bắt đầu vào ngày mai.",
           "C": "Không, nó phải cao hơn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, he starts tomorrow.\" (<em>Vâng, anh ấ y s ẽ b ắ t đ ầ u vào ngày mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, he starts tomorrow.\" (<em>Vâng, anh ấy sẽ bắt đầu vào ngày mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "hire",
@@ -1316,7 +1316,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "Blue and orange.",
           "B": "It was fine, thanks,",
-          "C": "I wasn't involved. 2 1. When are we ordering more supplies for the"
+          "C": "I wasn't involved."
         },
         "answer": "C",
         "vietnamese_question": "Bảng màu cho sảnh được chọn bằng cách nào?",
@@ -1325,7 +1325,7 @@ window.part02PracticeData = [
           "B": "Không sao đâu, cảm ơn,",
           "C": "Tôi không liên quan."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I wasn't involved. 2 1. When are we ordering more supplies for the\" (<em>Tôi không liên quan.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I wasn't involved.\" (<em>Tôi không liên quan.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "supplies",
@@ -1350,7 +1350,7 @@ window.part02PracticeData = [
           "B": "Tuần tới vào thứ 2.",
           "C": "Chiếc bàn mới trông thật tuyệt!"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Next week on Monda y .\" (<em>Tu ầ n t ớ i vào th ứ 2.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Next week on Monda y .\" (<em>Tuần tới vào thứ 2.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "office",
@@ -1373,9 +1373,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Chúng tôi vẫn đang trong giai đoạn lập kế  hoạch.",
           "B": "Một trăm bốn mươi đô la mỗi năm.",
-          "C": "Vâng, tôi muốn một cốc nước.  TEST 02 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Vâng, tôi muốn một cốc nước."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're still in the planning stages.\" (<em>Chúng tôi v ẫ n đang trong giai đo ạ n l ậ p k ế ho ạ ch .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're still in the planning stages.\" (<em>Chúng tôi vẫn đang trong giai đoạn lập kế  hoạch.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
         "vocabulary": [
           {
             "en": "battery",
@@ -1406,7 +1406,7 @@ window.part02PracticeData = [
           "B": "Tôi có thể đặt một cái cho bạn",
           "C": "Chính sách hoàn trả có giới hạn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I can order one for you\" (<em>Tôi có th ể đ ặ t m ộ t cái cho b ạ n</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I can order one for you\" (<em>Tôi có thể đặt một cái cho bạn</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "charger",
@@ -1437,7 +1437,7 @@ window.part02PracticeData = [
           "B": "Dịch vụ này rất tốt.",
           "C": "Bài thuyết trình của tôi."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Yes, let me show you how.\" (<em>Vâng, đ ể tôi ch ỉ cho b ạ n cách th ự c hi ệ n.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Yes, let me show you how.\" (<em>Vâng, để tôi chỉ cho bạn cách thực hiện.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "presentation",
@@ -1462,7 +1462,7 @@ window.part02PracticeData = [
           "B": "Cô Pavlova vẫn chưa nghỉ hưu trong vài tuần  nữa.",
           "C": "Không, phòng đó ở trên lầu."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Ms. Pavlova isn't retiring for several weeks\" (<em>Cô Pavlova v ẫ n chưa ngh ỉ hưu trong vài tu ầ n n ữ a.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Ms. Pavlova isn't retiring for several weeks\" (<em>Cô Pavlova vẫn chưa nghỉ hưu trong vài tuần  nữa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "director",
@@ -1493,7 +1493,7 @@ window.part02PracticeData = [
           "B": "Mười đô la cho hai người.",
           "C": "Chúng đang được tới lấy."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"They're being picked up.\" (<em>Chúng đang đư ợ c t ớ i l ấ y .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"They're being picked up.\" (<em>Chúng đang được tới lấy.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "deliver",
@@ -1518,7 +1518,7 @@ window.part02PracticeData = [
           "B": "Những ngày nào đã được thay đổi?",
           "C": "Hai đô la một pound."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Which dates have been changed?\" (<em>Nh ữ ng ngày nào đã đư ợ c thay đ ổ i?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Which dates have been changed?\" (<em>Những ngày nào đã được thay đổi?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "schedule",
@@ -1549,7 +1549,7 @@ window.part02PracticeData = [
           "B": "Vâng, nó cũng có màu đỏ.",
           "C": "Trong khoảng hai tuần."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW MUCH / HOW MANY (SỐ LƯỢNG & GIÁ CẢ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The work is covered under the warranty plan.\" (<em>Công vi ệ c đư ợ c b ả o hi ể m theo gói b ả o hành.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp số lượng, giá tiền hoặc phương thức thanh toán.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW MUCH / HOW MANY (SỐ LƯỢNG & GIÁ CẢ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The work is covered under the warranty plan.\" (<em>Công việc được bảo hiểm theo gói bảo hành.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp số lượng, giá tiền hoặc phương thức thanh toán.</p>\n</div>",
         "vocabulary": [
           {
             "en": "available",
@@ -1574,7 +1574,7 @@ window.part02PracticeData = [
           "B": "Một khóa học thiết kế nội thất.",
           "C": "Có rất nhiều trong bìa hồ sơ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"There are plenty in the bi n ders.\" (<em>Có r ấ t nhi ề u trong bìa h ồ sơ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"There are plenty in the bi n ders.\" (<em>Có rất nhiều trong bìa hồ sơ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "provide",
@@ -1603,9 +1603,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Xin lỗi, tôi không có thời gian cho đến ngày  mai.",
           "B": "Nó có thiết kế rất hiện đại.",
-          "C": "Một ngôi nhà trên đường Maple.  TEST 02 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Một ngôi nhà trên đường Maple."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sorry, I won't have time until tomorrow.\" (<em>Xin l ỗ i, tôi không có th ờ i gian cho đ ế n ngày mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sorry, I won't have time until tomorrow.\" (<em>Xin lỗi, tôi không có thời gian cho đến ngày  mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "give",
@@ -1636,7 +1636,7 @@ window.part02PracticeData = [
           "B": "Đó là một album tuyệt vời phải không?",
           "C": "Khoảng sáu tuần trước."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're waiting for confirmation.\" (<em>Chúng tôi đang ch ờ xác nh ậ n.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're waiting for confirmation.\" (<em>Chúng tôi đang chờ xác nhận.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "scheduled",
@@ -1676,7 +1676,7 @@ window.part02PracticeData = [
           "B": "Những bông hồng đó có mùi thơm dễ chịu.",
           "C": "Không, cái bánh kia."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Because it's out of stock.\" (<em>B ở i vì nó đã h ế t hàng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Because it's out of stock.\" (<em>Bởi vì nó đã hết hàng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "flour",
@@ -1707,7 +1707,7 @@ window.part02PracticeData = [
           "B": "Đó là một hương vị thơm ngon.",
           "C": "Nhiều lựa chọn ăn chay."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"At four o'clock.\" (<em>Vào lúc b ố n gi ờ .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"At four o'clock.\" (<em>Vào lúc bốn giờ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "will",
@@ -1738,7 +1738,7 @@ window.part02PracticeData = [
           "B": "Tôi bắt đầu công việc này sáu năm trước.",
           "C": "Ngay sau bữa trưa."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Right after lunch.\" (<em>Ngay sau b ữ a trưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Right after lunch.\" (<em>Ngay sau bữa trưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "meeting",
@@ -1769,7 +1769,7 @@ window.part02PracticeData = [
           "B": "Khoảng 200 đô la.",
           "C": "Nhà hàng ở trung tâm thành phố."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW MUCH / HOW MANY (SỐ LƯỢNG & GIÁ CẢ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Around 200 dollars.\" (<em>Kho ả ng 200 đô la.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp số lượng, giá tiền hoặc phương thức thanh toán.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW MUCH / HOW MANY (SỐ LƯỢNG & GIÁ CẢ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Around 200 dollars.\" (<em>Khoảng 200 đô la.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp số lượng, giá tiền hoặc phương thức thanh toán.</p>\n</div>",
         "vocabulary": [
           {
             "en": "much",
@@ -1800,7 +1800,7 @@ window.part02PracticeData = [
           "B": "Có, để kiểm tra sức khỏe hàng năm.",
           "C": "Hãy đi xe buýt."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, for an annual checkup.\" (<em>Có, đ ể ki ể m tra s ứ c kh ỏ e hàng năm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, for an annual checkup.\" (<em>Có, để kiểm tra sức khỏe hàng năm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "annual",
@@ -1831,7 +1831,7 @@ window.part02PracticeData = [
           "B": "Trang thứ ba của tài liệu.",
           "C": "Hộp mực có thể tái sử dụng."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"In the corner by the stairs.\" (<em>Ở góc c ạ nh c ầ u thang.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"In the corner by the stairs.\" (<em>Ở góc cạnh cầu thang.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "printer",
@@ -1856,7 +1856,7 @@ window.part02PracticeData = [
           "B": "Cảm ơn - Tôi vừa mua nó.",
           "C": "Một loại cây không cần nhiều nước."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"One that doesn't require much water.\" (<em>M ộ t lo ạ i cây không c ầ n nhi ề u nư ớ c.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"One that doesn't require much water.\" (<em>Một loại cây không cần nhiều nước.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
         "vocabulary": [
           {
             "en": "type",
@@ -1885,9 +1885,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Không, nó không có trong kho.",
           "B": "Bạn có mua gì không?",
-          "C": "Một số biên lai cũ.  TEST 03 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Một số biên lai cũ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Did you buy anything?\" (<em>B ạ n có mua gì không?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Did you buy anything?\" (<em>Bạn có mua gì không?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "sale",
@@ -1918,7 +1918,7 @@ window.part02PracticeData = [
           "B": "Cáp nguồn bị hỏng.",
           "C": "Không, hơn mười phút."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Let me send you the link.\" (<em>Hãy đ ể tôi g ử i cho b ạ n đư ờ ng liên k ế t.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Let me send you the link.\" (<em>Hãy để tôi gửi cho bạn đường liên kết.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "ticket",
@@ -1943,7 +1943,7 @@ window.part02PracticeData = [
           "B": "Mười euro một giờ.",
           "C": "Chúng tôi tính phí nhiều hơn cho ảnh màu."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've never used that model before.\" (<em>Tôi chưa bao gi ờ s ử d ụ ng model này trư ớ c đây.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've never used that model before.\" (<em>Tôi chưa bao giờ sử dụng model này trước  đây.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "power",
@@ -1974,7 +1974,7 @@ window.part02PracticeData = [
           "B": "Bây giờ tôi rảnh để đi.",
           "C": "Không, tôi không sử dụng máy theo dõi sức  khỏe."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I'm free to walk now.\" (<em>Bây gi ờ tôi r ả nh đ ể đi .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I'm free to walk now.\" (<em>Bây giờ tôi rảnh để đi.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "want",
@@ -2005,7 +2005,7 @@ window.part02PracticeData = [
           "B": "Tuyệt vời - Tôi nóng lòng muốn sử dụng nó.",
           "C": "Đại lý ô tô."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Great - I can't wait to use it.\" (<em>Tuy ệ t v ờ i - Tôi nóng lòng mu ố n s ử d ụ ng nó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Great - I can't wait to use it.\" (<em>Tuyệt vời - Tôi nóng lòng muốn sử dụng nó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "equipment",
@@ -2030,7 +2030,7 @@ window.part02PracticeData = [
           "B": "Đó là một buổi biểu diễn tuyệt vời.",
           "C": "Một đơn xin thuê tiêu chuẩn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I just renewed my current lease.\" (<em>Tôi v ừ a gia h ạ n h ợ p đ ồ ng thuê hi ệ n t ạ i.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I just renewed my current lease.\" (<em>Tôi vừa gia hạn hợp đồng thuê hiện tại.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "nice",
@@ -2052,7 +2052,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "Yes, that's my Web site.",
           "B": "A five - kilometer run.",
-          "C": "I just called maintenance. 2 1. Isn't the roadwork in front of city hall finished"
+          "C": "I just called maintenance."
         },
         "answer": "C",
         "vietnamese_question": "Hệ thống sưởi ấm có hoạt động không?",
@@ -2061,7 +2061,7 @@ window.part02PracticeData = [
           "B": "Chạy năm km.",
           "C": "Tôi vừa gọi bảo trì."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I just called maintenance. 2 1. Isn't the roadwork in front of city hall finished\" (<em>Tôi v ừ a g ọ i b ả o trì.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I just called maintenance.\" (<em>Tôi vừa gọi bảo trì.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "maintenance",
@@ -2086,7 +2086,7 @@ window.part02PracticeData = [
           "B": "Rất nhiều xe cộ vào buổi tối.",
           "C": "Không, họ vẫn còn một tháng nữa."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"No, they still have another month to go.\" (<em>Không, h ọ v ẫ n còn m ộ t tháng n ữ a.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"No, they still have another month to go.\" (<em>Không, họ vẫn còn một tháng nữa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "conference",
@@ -2115,9 +2115,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Chúng tôi đang sử dụng một đoạn video đã  ghi lại.",
           "B": "Vâng, ngay sau bữa trưa.",
-          "C": "Lớp học 124.  TEST 03 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Lớp học 124."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're using a recorded video.\" (<em>Chúng tôi đang s ử d ụ ng m ộ t đo ạ n video đã ghi l ạ i.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're using a recorded video.\" (<em>Chúng tôi đang sử dụng một đoạn video đã  ghi lại.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "employee",
@@ -2148,7 +2148,7 @@ window.part02PracticeData = [
           "B": "Người giám sát nhà máy.",
           "C": "Là vào thứ 4 này."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It's this Wednesday.\" (<em>Là vào th ứ 4 này .</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It's this Wednesday.\" (<em>Là vào thứ 4 này.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "supervisor",
@@ -2179,7 +2179,7 @@ window.part02PracticeData = [
           "B": "Chắc chắn rồi, tôi có thể chịu được.",
           "C": "Công viên cạnh bảo tàng nghệ thuật."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"It's a week from tomorrow.\" (<em>M ộ t tu ầ n n ữ a k ể t ừ ngày mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"It's a week from tomorrow.\" (<em>Một tuần nữa kể từ ngày mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "harvest",
@@ -2210,7 +2210,7 @@ window.part02PracticeData = [
           "B": "Tôi có phiếu giảm giá.",
           "C": "Trên nóc tủ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I had a discount coupon.\" (<em>Tôi có phi ế u gi ả m giá.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I had a discount coupon.\" (<em>Tôi có phiếu giảm giá.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "expensive",
@@ -2241,7 +2241,7 @@ window.part02PracticeData = [
           "B": "Chúng ta nên rẽ trái hay rẽ phải?",
           "C": "Tôi có lịch biểu diễn với ban nhạc của mình."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I have a performance scheduled with my band.\" (<em>Tôi có l ị ch bi ể u di ễ n v ớ i ban nh ạ c c ủ a mình.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I have a performance scheduled with my band.\" (<em>Tôi có lịch biểu diễn với ban nhạc của mình.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "camping",
@@ -2272,7 +2272,7 @@ window.part02PracticeData = [
           "B": "Tôi chưa kiểm tra e-mail của mình.",
           "C": "Làm ơn cho một vé đi lúc 2 giờ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I haven't checked my e - mail.\" (<em>Tôi chưa ki ể m tra e - mail c ủ a mình.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I haven't checked my e - mail.\" (<em>Tôi chưa kiểm tra e-mail của mình.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "workshop",
@@ -2303,7 +2303,7 @@ window.part02PracticeData = [
           "B": "Chín giờ sáng.",
           "C": "Chúng ta đã đóng cửa trong một tuần."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"We were closed down for a week.\" (<em>Chúng t a đã đóng c ử a trong m ộ t tu ầ n.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"We were closed down for a week.\" (<em>Chúng ta đã đóng cửa trong một tuần.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "production",
@@ -2334,7 +2334,7 @@ window.part02PracticeData = [
           "B": "Chỉ là một chiếc micro.",
           "C": "Chiều mai thì sao?"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"How about tomorrow afternoon.\" (<em>Chi ề u mai thì sao?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"How about tomorrow afternoon.\" (<em>Chiều mai thì sao?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "speech",
@@ -2363,9 +2363,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Một cuộc thuyết minh sản phẩm.",
           "B": "Không, tôi tin Tomoko đang làm việc đó.",
-          "C": "Anh ấy thích ngồi ở lối đi hơn.    TEST 03 (LISTENING)                                                                                    HOTLINE: 096 740 36 48"
+          "C": "Anh ấy thích ngồi ở lối đi hơn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"No, I believe Tomoko is doing that.\" (<em>Không, tôi tin Tomoko đang làm vi ệ c đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"No, I believe Tomoko is doing that.\" (<em>Không, tôi tin Tomoko đang làm việc đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "aren",
@@ -2396,7 +2396,7 @@ window.part02PracticeData = [
           "B": "Không, ở phòng họp số hai.",
           "C": "Hợp đồng bây giờ đã chính thức được ký kết."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"The contract is now officially signed.\" (<em>H ợ p đ ồ ng bây gi ờ đã chính th ứ c đư ợ c ký k ế t.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"The contract is now officially signed.\" (<em>Hợp đồng bây giờ đã chính thức được ký kết.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "conference",
@@ -3027,7 +3027,7 @@ window.part02PracticeData = [
           "B": "Một số địa chỉ khách hàng.",
           "C": "Cô ấy đến vào thứ Tư"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've been really busy with the Williams account.\" (<em>Tôi thực sự bận rộn với tài khoản Williams.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've been really busy with the Williams account.\" (<em>Tôi thực sự bận rộn với tài khoản  Williams.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "customer",
@@ -3105,14 +3105,14 @@ window.part02PracticeData = [
         "choices": {
           "A": "Insook helped develop a new product.",
           "B": "We do have a significant budget surplus.",
-          "C": "He's always so professional. PART 3 32 - 34 W - Am Excuse me, but 32 wasn't the ferry to Osaka supposed to leave at ten o'clock? M - Cn 32 Yes, but 33 the port authority has suspended all marine traffic due to rough water. W - Am I see. Does that mean ferries are canceled all day? M - Cn This storm is expected to pass in about three hours. But operations should return to normal after that. Your ticket will be good until midnight."
+          "C": "He's always so professional."
         },
         "answer": "B",
         "vietnamese_question": "Công ty có trả tiền cho các khóa học phát triển  chuyên môn không?",
         "vietnamese_choices": {
           "A": "Insook đã giúp phát triển một sản phẩm  mới.",
           "B": "Chúng tôi có thặng dư ngân sách đáng kể.",
-          "C": "Anh ấy luôn rất chuyên nghiệp.          PART 3  32-34  W-Am Excuse me, but 32 wasn't the ferry to  Osaka supposed to leave at ten o'clock?    M-Cn 32 Yes, but 33 the port authority has  suspended all marine traffic due to rough  water.    W-Am I see. Does that mean ferries are  canceled all day?    M-Cn This storm is expected to pass in about  three hours. But operations should return to  normal after that. Your ticket will be good until  midnight.    Xin lỗi, nhưng chuyến phà số 32 tới Osaka  không phải khởi hành lúc 10 giờ sao?    M-Cn 32 Có, nhưng 33 chính quyền cảng đã  đình chỉ tất cả giao thông đường biển do nước  động.    T-Tôi hiểu rồi. Điều đó có nghĩa là phà bị hủy  cả ngày?    M-Cn Cơn bão này dự kiến sẽ đi qua trong  khoảng ba giờ nữa. Nhưng hoạt động sẽ trở lại  bình thường sau đó. Vé của bạn sẽ có hiệu lực  cho đến nửa đêm."
+          "C": "Anh ấy luôn rất chuyên nghiệp."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"We do have a significant budget surplus.\" (<em>Chúng tôi có thặng dư ngân sách đáng kể.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
@@ -3390,7 +3390,7 @@ window.part02PracticeData = [
           "B": "OK-Tôi sẽ cập nhật lịch trình của bạn.",
           "C": "Nó ở ngay cuối hành lang."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"OK - I'll update your schedule.\" (<em>OK - Tôi sẽ cập nhật lịch trình của bạn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"OK - I'll update your schedule.\" (<em>OK-Tôi sẽ cập nhật lịch trình của bạn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "schedule",
@@ -3421,7 +3421,7 @@ window.part02PracticeData = [
           "B": "Đây là lần thứ hai của bạn phải không?",
           "C": "Bản thiết kế cho một tòa nhà cao tầng."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Yes - I'm planning a trip to Barcelona.\" (<em>Vâng - Tôi đang lên kế hoạch cho một chuyến đi tới Barcelona.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Yes - I'm planning a trip to Barcelona.\" (<em>Vâng-Tôi đang lên kế hoạch cho một  chuyến đi tới Barcelona.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "taking",
@@ -3776,7 +3776,7 @@ window.part02PracticeData = [
           "B": "Tôi xin lỗi-phòng chứa đã đầy rồi.",
           "C": "Đó là một chiếc máy bay chở hàng."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Koji is in charge of supplier contracts.\" (<em>Koji phụ trách các hợp đồng với nhà cung cấp.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Koji is in charge of supplier contracts.\" (<em>Koji phụ trách các hợp đồng với nhà cung  cấp.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "supplier",
@@ -3817,14 +3817,14 @@ window.part02PracticeData = [
         "choices": {
           "A": "There's always a comedy show on Thursday nights.",
           "B": "Yes, I've played the piano for many years",
-          "C": "Their number one hit. PART 3 32 - 34 W - Br Hi, Shenchao. 32 I'm practicing my presentation in the conference room across the hall, and the projector in there keeps shutting off. I think it's overheating. Has this happened to you? M - Cn Oh, that projector is old. It really needs to be replaced. 33 If I were you, I'd just move to room 204 and practice there . Also, that room has a window. It's much nicer. W - Br OK. Thanks. M - Cn By the way, 34 you'll need a special cable to connect to the control panel in that room. Here, you can use this one. Just leave it plugged in when you're finished."
+          "C": "Their number one hit."
         },
         "answer": "A",
         "vietnamese_question": "Ban nhạc nào sẽ chơi ở câu lạc bộ tối nay?",
         "vietnamese_choices": {
           "A": "Tại bến phà",
           "B": "Vâng, tôi đã chơi piano được nhiều năm",
-          "C": "Bản hit số một của họ.        PART 3  32-34    W-Br Hi, Shenchao. 32 I'm practicing my  presentation in the conference room across  the hall, and the projector in there keeps  shutting off. I think it's overheating. Has this  happened to you?    M-Cn Oh, that projector is old. It really needs  to be replaced. 33 If I were you, I'd just move  to room 204 and practice there. Also, that  room has a window. It's much nicer.    W-Br OK. Thanks.  M-Cn By the way, 34 you'll need a special  cable to connect to the control panel in that  room. Here, you can use this one. Just leave it  plugged in when you're finished.    Xin chào, Shenchao. 32 Tôi đang thực hành  bài thuyết trình của mình trong phòng họp bên  kia hành lang và máy chiếu ở đó liên tục tắt.  Tôi nghĩ nó quá nóng. Điều này có xảy ra với  bạn không?    M-Cn Ồ, máy chiếu đó cũ rồi. Nó thực sự cần  phải được thay thế. 33 Nếu tôi là bạn, tôi sẽ  chuyển đến phòng 204 và tập ở đó. Ngoài ra,  căn phòng đó còn có cửa sổ. Nó đẹp hơn nhiều.    W-Anh OK. Cảm ơn.  M-Cn Nhân tiện, 34 bạn sẽ cần một dây cáp  đặc biệt để kết nối với bảng điều khiển trong  phòng đó. Đây, bạn có thể sử dụng cái này. Chỉ  cần cắm nó vào khi bạn hoàn tất.      32. Người nói có thể ở đâu nhất?"
+          "C": "Bản hit số một của họ."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHICH (LỰA CHỌN CỤ THỂ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There's always a comedy show on Thursday nights.\" (<em>Tại bến phà</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường dùng đại từ 'the one...', danh từ cụ thể hoặc chỉ rõ đối tượng được chọn.</p>\n</div>",
         "vocabulary": [
@@ -3959,7 +3959,7 @@ window.part02PracticeData = [
           "B": "Phí nhập học là hợp lý.",
           "C": "Mọi người trong đội của chúng tôi đang  đến."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Everybody on our team is coming.\" (<em>Mọi người trong đội của chúng tôi đang đến.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Everybody on our team is coming.\" (<em>Mọi người trong đội của chúng tôi đang  đến.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "conference",
@@ -4208,7 +4208,7 @@ window.part02PracticeData = [
           "B": "Nó đã có mặt trên trang web được một  tháng.",
           "C": "Bạn có thể đóng cửa lại được không?"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"It's been on the Web site for a month.\" (<em>Nó đã có mặt trên trang web được một tháng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"It's been on the Web site for a month.\" (<em>Nó đã có mặt trên trang web được một  tháng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "post",
@@ -4295,7 +4295,7 @@ window.part02PracticeData = [
           "B": "Phí thành viên hàng năm.",
           "C": "Có sáu tập tài liệu trên bàn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There's room in the budget for more advertising.\" (<em>Có chỗ trong ngân sách dành cho quảng cáo nhiều hơn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There's room in the budget for more advertising.\" (<em>Có chỗ trong ngân sách dành cho quảng cáo  nhiều hơn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "budget",
@@ -4332,7 +4332,7 @@ window.part02PracticeData = [
           "B": "Không, hôm nay mặt trời không tắt.",
           "C": "Tôi trả tiền cho một công ty để thực hiện tất  cả việc bảo trì"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I pay a company to do all the maintenance\" (<em>Tôi trả tiền cho một công ty để thực hiện tất cả việc bảo trì</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I pay a company to do all the maintenance\" (<em>Tôi trả tiền cho một công ty để thực hiện tất  cả việc bảo trì</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "maintenance",
@@ -4506,7 +4506,7 @@ window.part02PracticeData = [
           "B": "Số tiếp theo của tạp chí.",
           "C": "Chính sách này đã có hiệu lực chưa"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've heard that sales have increased.\" (<em>Tôi nghe nói doanh số bán hàng đã tăng lên.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've heard that sales have increased.\" (<em>Tôi nghe nói doanh số bán hàng đã tăng  lên.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
         "vocabulary": [
           {
             "en": "already",
@@ -4531,7 +4531,7 @@ window.part02PracticeData = [
           "B": "Không, ở khu vực đỗ xe B.",
           "C": "Làm ơn cho tôi ăn spaghetti."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The sales report is due at one o'clock.\" (<em>Báo cáo bán hàng sẽ đến hạn vào lúc một giờ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The sales report is due at one o'clock.\" (<em>Báo cáo bán hàng sẽ đến hạn vào lúc một  giờ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "report",
@@ -4689,7 +4689,7 @@ window.part02PracticeData = [
           "B": "Mã dự án mới.",
           "C": "Có một cuốn sách hướng dẫn trong ngăn  kéo."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"There's a manual in the drawer.\" (<em>Có một cuốn sách hướng dẫn trong ngăn kéo.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"There's a manual in the drawer.\" (<em>Có một cuốn sách hướng dẫn trong ngăn  kéo.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "this",
@@ -4716,11 +4716,11 @@ window.part02PracticeData = [
         "answer": "A",
         "vietnamese_question": "Ai đã nhận được thư thăng chức của họ?",
         "vietnamese_choices": {
-          "A": "I did yesterday.",
+          "A": "Tôi đã nhận ngày hôm qua.",
           "B": "Một lời mời dự tiệc.",
           "C": "Polina đã phát biểu."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I did yesterday.\" (<em>Tôi đã làm ngày hôm qua.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I did yesterday.\" (<em>Tôi đã nhận ngày hôm qua.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "promotion",
@@ -4751,7 +4751,7 @@ window.part02PracticeData = [
           "B": "Ở đây vẫn chưa mưa.",
           "C": "Công tắc hoạt động tốt."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I haven't checked my e - mail all day.\" (<em>Tôi đã không kiểm tra e - mail cả ngày.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I haven't checked my e - mail all day.\" (<em>Tôi đã không kiểm tra e-mail cả ngày.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "read",
@@ -4782,7 +4782,7 @@ window.part02PracticeData = [
           "B": "Đây là tờ báo cho bản tin của bạn.",
           "C": "Vâng, nó đã được gia hạn thêm sáu tháng  nữa"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, it was renewed for another six months\" (<em>Vâng, nó đã được gia hạn thêm sáu tháng nữa</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, it was renewed for another six months\" (<em>Vâng, nó đã được gia hạn thêm sáu tháng  nữa</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "didn",
@@ -4813,7 +4813,7 @@ window.part02PracticeData = [
           "B": "Chúng tôi được cấp vốn đầy đủ cho đến  cuối năm.",
           "C": "Bởi vì kế toán của chúng tôi đang đi nghỉ"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"We're fully funded through the end of the year.\" (<em>Chúng tôi được cấp vốn đầy đủ cho đến cuối năm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"We're fully funded through the end of the year.\" (<em>Chúng tôi được cấp vốn đầy đủ cho đến  cuối năm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "will",
@@ -4900,7 +4900,7 @@ window.part02PracticeData = [
           "C": "Cỏ cần cắt.",
           "A": "Không, chúng tôi đã kín chỗ vào ngày hôm  đó."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"No, we're fully booked that day.\" (<em>Không, chúng tôi đã kín chỗ vào ngày hôm đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"No, we're fully booked that day.\" (<em>Không, chúng tôi đã kín chỗ vào ngày hôm  đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "able",
@@ -5018,7 +5018,7 @@ window.part02PracticeData = [
           "B": "Một đạo diễn nổi tiếng.",
           "C": "Hai mươi lăm euro."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We should get them by the end of the week.\" (<em>Chúng ta sẽ nhận được chúng vào cuối tuần.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We should get them by the end of the week.\" (<em>Chúng ta sẽ nhận được chúng vào cuối  tuần.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "director",
@@ -5074,7 +5074,7 @@ window.part02PracticeData = [
           "B": "Tất nhiên-tôi sẽ làm ngay bây giờ.",
           "C": "Bạn đã kiểm tra dự báo thời tiết chưa?"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Of course - I'll do it now.\" (<em>Tất nhiên - tôi sẽ làm ngay bây giờ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Of course - I'll do it now.\" (<em>Tất nhiên-tôi sẽ làm ngay bây giờ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "report",
@@ -5251,10 +5251,10 @@ window.part02PracticeData = [
         "vietnamese_question": "Đừng quên tắt máy chiếu sau khi thuyết trình.",
         "vietnamese_choices": {
           "A": "Tôi không có bản tóm tắt.",
-          "B": "Should I return it to the supply  closet?",
+          "B": "Tôi có nên mang trả nó về tủ đồ dùng không?",
           "C": "Vui lòng phân phát những tài liệu này."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Should I return it to the supply closet?\" (<em>Tôi có nên trả nó lại tủ đựng đồ không?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Should I return it to the supply closet?\" (<em>Tôi có nên mang trả nó về tủ đồ dùng không?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "presentation",
@@ -5301,14 +5301,14 @@ window.part02PracticeData = [
         "choices": {
           "A": "There's mandatory training on Friday.",
           "B": "Yes, it was a good show.",
-          "C": "A daily schedule. PART 3 32 - 34 W - Am Hi. I'm Gabriela Alvarez of Organic Easy Meals. 32 I'm scheduled to offer some samples of our new vegetable chips to your customers from three to five P.M. M - Cn Oh yes. Hello, Ms. Alvarez. I'm Ryan Hughes, the manager. 33 We have a table set up for you at the end of aisle eight. That's our snacks aisle. W - Am Thanks. I'll start bringing in food and some equipment from my truck. But first I'd like to take a look at the table I'll be using. M - Cn Sounds good. 34 If you'd like any help bringing in your stuff, just let me know"
+          "C": "A daily schedule."
         },
         "answer": "A",
         "vietnamese_question": "Bạn có sẵn sàng làm việc vào thứ Năm hoặc thứ  Sáu không?",
         "vietnamese_choices": {
           "A": "Có buổi huấn luyện bắt buộc vào thứ Sáu.",
           "B": "Vâng, đó là một buổi biểu diễn hay.",
-          "C": "Một lịch trình hàng ngày.        PART 3  32-34  W-Am Hi. I'm Gabriela Alvarez of Organic  Easy Meals. 32 I'm scheduled to offer some  samples of our new vegetable chips to your  customers from three to five P.M.    M-Cn Oh yes. Hello, Ms. Alvarez. I'm Ryan  Hughes, the manager. 33 We have a table set  up for you at the end of aisle eight. That's  our snacks aisle.    W-Am Thanks. I'll start bringing in food and  some equipment from my truck. But first I'd  like to take a look at the table I'll be using.    M-Cn Sounds good. 34 If you'd like any help  bringing in your stuff, just let me know.  Xin chào. Tôi là Gabriela Alvarez của Bữa ăn  dễ dàng hữu cơ. 32 Tôi dự kiến sẽ cung cấp  một số mẫu khoai tây chiên rau củ mới của  chúng tôi cho khách hàng của bạn từ 3 đến 5  giờ chiều.    M-Cn Ồ vâng. Xin chào cô Alvarez. Tôi là  Ryan Hughes, người quản lý. 33 Chúng tôi đã  dọn sẵn một bàn cho bạn ở cuối lối đi số tám.  Đó là lối đi ăn nhẹ của chúng tôi.    W-Am Cảm ơn. Tôi sẽ bắt đầu mang thức ăn  và một số thiết bị từ xe tải của mình vào.  Nhưng trước tiên tôi muốn xem qua cái bàn tôi  sẽ sử dụng."
+          "C": "Một lịch trình hàng ngày."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There's mandatory training on Friday.\" (<em>Có buổi huấn luyện bắt buộc vào thứ Sáu.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
         "vocabulary": [
@@ -5673,7 +5673,7 @@ window.part02PracticeData = [
           "B": "Có một căn phòng lớn hơn ở cuối hành  lang.",
           "C": "Đôi giày này đúng kích cỡ"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"There's a larger room down the hallway.\" (<em>Có một căn phòng lớn hơn ở cuối hành lang.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"There's a larger room down the hallway.\" (<em>Có một căn phòng lớn hơn ở cuối hành  lang.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "workshop",
@@ -5841,7 +5841,7 @@ window.part02PracticeData = [
           "B": "Người cung cấp thực phẩm có tất cả thông  tin cần thiết.",
           "C": "Một phòng tiệc trên Phố Chính."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"The caterer has all the necessary information.\" (<em>Người cung cấp thực phẩm có tất cả thông tin cần thiết.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"The caterer has all the necessary information.\" (<em>Người cung cấp thực phẩm có tất cả thông  tin cần thiết.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "list",
@@ -5900,7 +5900,7 @@ window.part02PracticeData = [
         "vietnamese_question": "Làm cách nào để bật điều hòa ở văn phòng  này?",
         "vietnamese_choices": {
           "A": "Nhiệt độ được điều khiển tự động.",
-          "B": "Turn left after the post office.",
+          "B": "Rẽ trái sau bưu điện.",
           "C": "Không, tôi tắt hết đèn rồi."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The temperature is controlled automatically.\" (<em>Nhiệt độ được điều khiển tự động.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
@@ -6027,7 +6027,7 @@ window.part02PracticeData = [
           "B": "Danh mục cung cấp nằm trong tủ hồ sơ.",
           "C": "Chưa-nhưng chúng tôi hy vọng nó sẽ được  hoàn thành trong quý này."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Not yet - but we hope to have it finalized this quarter.\" (<em>Chưa - nhưng chúng tôi hy vọng nó sẽ được hoàn thành trong quý này.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Not yet - but we hope to have it finalized this quarter.\" (<em>Chưa-nhưng chúng tôi hy vọng nó sẽ được  hoàn thành trong quý này.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "equipment",
@@ -6043,16 +6043,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "Because there's no parking available.",
           "B": "I heard a new model is coming out in March.",
-          "C": "Only two doors. PART 3"
+          "C": "Only two doors."
         },
         "answer": "B",
         "vietnamese_question": "Bạn có muốn lái thử chiếc xe này không?",
         "vietnamese_choices": {
           "A": "Bởi vì không có chỗ đậu xe.",
           "B": "Tôi nghe nói một mẫu mới sẽ ra mắt vào  tháng 3.",
-          "C": "Chỉ có hai cánh cửa.        PART 3"
+          "C": "Chỉ có hai cánh cửa."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU ĐỀ NGHỊ & LỜI MỜI (SUGGESTIONS / INVITATIONS)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I heard a new model is coming out in March.\" (<em>Tôi nghe nói một mẫu mới sẽ ra mắt vào tháng 3.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thể hiện sự đồng ý (Sure, That sounds great) hoặc từ chối lịch sự kèm lý do.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU ĐỀ NGHỊ & LỜI MỜI (SUGGESTIONS / INVITATIONS)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I heard a new model is coming out in March.\" (<em>Tôi nghe nói một mẫu mới sẽ ra mắt vào  tháng 3.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thể hiện sự đồng ý (Sure, That sounds great) hoặc từ chối lịch sự kèm lý do.</p>\n</div>",
         "vocabulary": [
           {
             "en": "available",
@@ -6465,7 +6465,7 @@ window.part02PracticeData = [
           "B": "Chuyến bay của chúng tôi bị hủy.",
           "C": "Tôi sẽ đi thang máy."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sure - that's a great idea.\" (<em>Chắc chắn - đó là một ý tưởng tuyệt vời.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sure - that's a great idea.\" (<em>Chắc chắn-đó là một ý tưởng tuyệt vời.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "flight",
@@ -6720,7 +6720,7 @@ window.part02PracticeData = [
           "B": "Tiệm bánh Vittorio's.",
           "C": "Tôi rất thích bộ phim đó."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"My top client is in town.\" (<em>Khách hàng hàng đầu của tôi ở trong thị trấn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"My top client is in town.\" (<em>Khách hàng hàng đầu của tôi ở trong thị  trấn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "client",
@@ -6767,16 +6767,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "The largest model available.",
           "B": "Only a few more times.",
-          "C": "It's been running perfectly since I bought it PART 3 32 - 34"
+          "C": "It's been running perfectly since I bought it"
         },
         "answer": "C",
         "vietnamese_question": "Xe của bạn có đắt tiền để sửa chữa không?",
         "vietnamese_choices": {
           "A": "Mẫu lớn nhất hiện có.",
           "B": "Chỉ một vài lần nữa thôi.",
-          "C": "Nó đã chạy hoàn hảo kể từ khi tôi mua nó        PART 3  32-34"
+          "C": "Nó đã chạy hoàn hảo kể từ khi tôi mua nó"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It's been running perfectly since I bought it PART 3 32 - 34\" (<em>Nó đã chạy hoàn hảo kể từ khi tôi mua nó</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It's been running perfectly since I bought it\" (<em>Nó đã chạy hoàn hảo kể từ khi tôi mua nó</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "repair",
@@ -7083,7 +7083,7 @@ window.part02PracticeData = [
           "B": "Cách đây khoảng mười phút.",
           "C": "Không, thấp hơn một chút."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Didn't you check your e - mail?\" (<em>Bạn chưa kiểm tra e - mail của mình à?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Didn't you check your e - mail?\" (<em>Bạn chưa kiểm tra e-mail của mình à?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "director",
@@ -7226,7 +7226,7 @@ window.part02PracticeData = [
           "B": "Chúng tôi thuê một gian hàng lớn.",
           "C": "Tôi sẽ mặc áo khoác."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Because our current software is outdated.\" (<em>Bởi vì phần mềm hiện tại của chúng tôi đã lỗi thời.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Because our current software is outdated.\" (<em>Bởi vì phần mềm hiện tại của chúng tôi đã  lỗi thời.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "installing",
@@ -7257,7 +7257,7 @@ window.part02PracticeData = [
           "B": "Một khoản thặng dư bất ngờ.",
           "C": "Tôi đã gửi e-mail cách đây vài phút"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I sent an e - mail a few minutes ago\" (<em>Tôi đã gửi e - mail cách đây vài phút</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I sent an e - mail a few minutes ago\" (<em>Tôi đã gửi e-mail cách đây vài phút</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "recently",
@@ -7338,7 +7338,7 @@ window.part02PracticeData = [
           "B": "Trụ sở công ty.",
           "C": "Bởi vì cô ấy đang gặp người quản lý của  mình"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Because she's meeting with her manager\" (<em>Bởi vì cô ấy đang gặp người quản lý của mình</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Because she's meeting with her manager\" (<em>Bởi vì cô ấy đang gặp người quản lý của  mình</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "manager",
