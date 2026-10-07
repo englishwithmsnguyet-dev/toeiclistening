@@ -475,6 +475,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const testContentAreaP2 = document.getElementById("test-content-area-p2");
 
     const panelTitleP2 = document.getElementById("panel-title-p2");
+    const breadParentP2 = document.getElementById("bread-parent-p2");
     const breadCurrentP2 = document.getElementById("bread-current-p2");
     const secBtnTheoryP2 = document.getElementById("sec-btn-theory-p2");
     const secBtnVocabularyP2 = document.getElementById("sec-btn-vocabulary-p2");
@@ -2913,9 +2914,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // Set breadcrumbs
+        if (breadParentP2) breadParentP2.textContent = "LUYỆN TẬP";
         if (breadCurrentP2) breadCurrentP2.textContent = testId.toUpperCase().replace('_', ' ');
         const testObj = (window.part02PracticeData || []).find(t => t.id === testId);
-        if (panelTitleP2) panelTitleP2.textContent = testObj ? `LUYỆN TẬP PHẦN 02: ${testObj.title}` : `LUYỆN TẬP PHẦN 02: ${testId.toUpperCase()}`;
+        if (panelTitleP2) panelTitleP2.textContent = testObj ? `LUYỆN TẬP: ${testObj.title}` : `LUYỆN TẬP: ${testId.toUpperCase()}`;
 
         // Hide theory/examples panel and display test panel
         if (secTheoryP2) secTheoryP2.classList.remove("active");
@@ -3750,6 +3752,7 @@ document.addEventListener("DOMContentLoaded", () => {
             items.forEach(el => {
                 if (el.getAttribute('data-id') === sectionId) {
                     el.classList.add('active');
+                    if (breadParentP2) breadParentP2.textContent = "DẠNG CÂU HỎI";
                     if (breadCurrentP2) breadCurrentP2.textContent = el.textContent.replace(' 🔒', '');
                     if (panelTitleP2) panelTitleP2.textContent = el.textContent.replace(' 🔒', '');
                 } else {

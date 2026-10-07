@@ -905,12 +905,12 @@ body.light-mode .panel-section-btn.active, body.light-mode .panel-section-btn-p4
     display: none;
 }
 
-.panel-content, .panel-content-p4 {
+.panel-content, .panel-content-p4, .panel-content-p2 {
     display: none;
     animation: fade-in 0.35s ease forwards;
 }
 
-.panel-content.active, .panel-content-p4.active {
+.panel-content.active, .panel-content-p4.active, .panel-content-p2.active {
     display: block;
 }
 
