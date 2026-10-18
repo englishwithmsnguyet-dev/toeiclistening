@@ -158,8 +158,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
     const LOCKED_SECTIONS = [
-        "ets_test_01", "ets_test_02", "ets_test_03", "ets_test_04", "ets_test_05",
-        "dang_01_identity", "dang_01_location", "dang_01_topic", "dang_02_problem", "dang_02_what_according", "dang_02_what_do_next", "dang_02_what_imply", "dang_02_what_request", "dang_02_what_say", "dang_02_what_suggest", "dang_02_why", "dang_visual_questions",
         "topic_01", "topic_02", "topic_03", "topic_04", "topic_05", "topic_06"
     ];
 
@@ -536,7 +534,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const modalReviewBtn = document.getElementById("modal-review-btn");
     const modalRetryBtn = document.getElementById("modal-retry-btn");
 
-    const TOTAL_QUESTIONS_COUNT = 138;
+    const TOTAL_QUESTIONS_COUNT = 271;
 
     // Confetti Canvas Particle System
     const canvas = document.getElementById("confettiCanvas");
@@ -2001,43 +1999,88 @@ document.addEventListener("DOMContentLoaded", () => {
         vocabularyContentArea.innerHTML = "";
         
         if (!section.vocabulary || section.vocabulary.length === 0) {
-            vocabularyContentArea.innerHTML = "<p style='color: var(--text-muted); font-weight: 700;'>Không có từ vựng cho phần này.</p>";
+            vocabularyContentArea.innerHTML = "<p style='color: var(--text-muted); font-weight: 700; padding: 20px;'>Không có từ vựng cho phần này.</p>";
             return;
         }
         
-        section.vocabulary.forEach(slide => {
+        section.vocabulary.forEach((slide, sIdx) => {
             const card = document.createElement("div");
             card.className = "vocabulary-card";
+            card.style.borderRadius = "16px";
+            card.style.marginBottom = "24px";
+            card.style.background = "rgba(255, 255, 255, 0.02)";
+            card.style.border = "1px solid rgba(255, 255, 255, 0.08)";
+            card.style.padding = "24px";
             
-            const titleText = slide.text[0] || "Từ Vựng";
-            const subtitleText = slide.text.length > 1 ? slide.text[1] : "";
+            // Clean title & subtitle
+            const rawTitle = slide.text[0] || "Từ Vựng Chủ Đề";
+            const cleanTitle = rawTitle.replace(/<[^>]+>/g, "").trim();
+            const rawSub = slide.text.length > 1 ? slide.text[1] : "";
+            const cleanSub = rawSub.replace(/<[^>]+>/g, "").replace(/^[•o\-\*]\s*/, "").trim();
             const bullets = slide.text.slice(2);
+            
+            let badgeText = slide.slide_index >= 1000 ? `Chủ đề ${sIdx + 1}` : `Slide ${slide.slide_index}`;
             
             let bulletsHtml = "";
             bullets.forEach(b => {
-                let cleanB = b.trim();
-                cleanB = cleanB.replace(/^(o|•|-|\*)\s+/, "");
+                let plain = b.replace(/<[^>]+>/g, "").replace(/^[•o\-\*]\s*/, "").trim();
+                if (!plain) return;
+                
+                // Parse bullet
+                const colonIdx = plain.lastIndexOf(":");
+                let meaning = "";
+                let head = plain;
+                if (colonIdx !== -1) {
+                    meaning = plain.substring(colonIdx + 1).trim();
+                    head = plain.substring(0, colonIdx).trim();
+                }
+                
+                let pos = "";
+                const posMatch = head.match(/\(([^)]+)\)$/);
+                if (posMatch) {
+                    pos = posMatch[1].trim();
+                    head = head.substring(0, posMatch.index).trim();
+                }
+                
+                let ipa = "";
+                const ipaMatch = head.match(/(\/[^\/]+\/(?:\s*\/\s*\/[^\/]+\/)?)/);
+                let term = head;
+                if (ipaMatch) {
+                    ipa = ipaMatch[1].trim();
+                    term = head.substring(0, ipaMatch.index).trim();
+                }
+                
+                const spokenTerm = term.split("/")[0].trim().replace(/"/g, "&quot;");
+                
                 bulletsHtml += `
-                    <li class="vocabulary-bullet">
-                        <span>${cleanB}</span>
-                    </li>
+                    <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; padding: 10px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 10px; margin-bottom: 8px; transition: background 0.2s ease;">
+                        <span style="font-weight: 700; color: #38bdf8; font-size: 1.05rem;">${term}</span>
+                        ${ipa ? `<span style="color: #94a3b8; font-family: monospace; font-size: 0.9rem;">${ipa}</span>` : ""}
+                        ${pos ? `<span style="color: #c084fc; font-size: 0.85rem; font-style: italic; background: rgba(192, 132, 252, 0.1); padding: 2px 8px; border-radius: 4px;">(${pos})</span>` : ""}
+                        <span onclick="playTTS('${spokenTerm}', event)" style="cursor: pointer; opacity: 0.65; font-size: 1.15rem; margin-left: 4px; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'" title="Phát âm từ này">🔊</span>
+                        ${meaning ? `<span style="color: var(--text-muted); margin: 0 4px;">:</span><span style="color: var(--text-main); font-weight: 500;">${meaning}</span>` : ""}
+                    </div>
                 `;
             });
             
             let subtitleHtml = "";
-            if (subtitleText) {
-                subtitleHtml = `<div class="vocabulary-card-subtitle">${subtitleText}</div>`;
+            if (cleanSub) {
+                subtitleHtml = `
+                    <div style="margin-bottom: 16px; display: inline-flex; align-items: center; gap: 6px; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.25); color: #fbbf24; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 0.95rem;">
+                        <span>🎯</span> ${cleanSub}
+                    </div>
+                `;
             }
             
             card.innerHTML = `
-                <div class="vocabulary-card-header">
-                    <span class="vocabulary-card-title">${titleText}</span>
-                    <span class="slide-num-tag">Slide ${slide.slide_index}</span>
+                <div class="vocabulary-card-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 14px; margin-bottom: 14px;">
+                    <span class="vocabulary-card-title" style="font-size: 1.15rem; font-weight: 800; color: var(--color-blue); text-transform: uppercase; letter-spacing: 0.5px;">${cleanTitle}</span>
+                    <span class="slide-num-tag" style="background: rgba(99, 102, 241, 0.15); color: #818cf8; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700;">${badgeText}</span>
                 </div>
                 ${subtitleHtml}
-                <ul class="vocabulary-bullet-list">
-                    ${bulletsHtml || `<li class="vocabulary-bullet"><span>${titleText}</span></li>`}
-                </ul>
+                <div class="vocabulary-items-container">
+                    ${bulletsHtml || `<p style='color: var(--text-muted);'>${cleanTitle}</p>`}
+                </div>
             `;
             
             vocabularyContentArea.appendChild(card);
@@ -2643,134 +2686,665 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // E. PRACTICE SETS (FOR TOPICS)
+    // E. PRACTICE SETS (FOR ETS TESTS & DIALOGUE SETS IN PART 03)
 
     function renderPracticeSets(sets, section) {
         if (!practiceContentArea) return;
         
-        if (!window.checkP1PracticeAnswer) {
-            window.checkP1PracticeAnswer = function(exId, selectedKey, correctKey) {
-                const card = document.getElementById(exId);
-                if (!card) return;
-                
-                const btns = card.querySelectorAll('.p1-interactive-btn');
-                btns.forEach(btn => {
-                    btn.style.pointerEvents = 'none';
-                    if (btn.id === `btn-${exId}-${correctKey}`) {
-                        btn.classList.add('correct');
-                    } else if (btn.id === `btn-${exId}-${selectedKey}` && selectedKey !== correctKey) {
-                        btn.classList.add('incorrect');
-                    }
-                });
-                
-                const transcript = card.querySelector('.p1-ex-transcript');
-                if (transcript) {
-                    transcript.style.display = 'block';
-                    transcript.style.animation = 'fadeIn 0.5s ease forwards';
-                }
-                
-                const correctChoice = document.getElementById(`transcript-choice-${exId}-${correctKey}`);
-                if (correctChoice) correctChoice.classList.add('highlight-correct');
+        if (!sets || sets.length === 0) {
+            practiceContentArea.innerHTML = "<p style='color: var(--text-muted); font-weight: 700; padding: 20px;'>Bài tập đang được cập nhật.</p>";
+            return;
+        }
+
+        // Initialize set quiz state if needed
+        if (!state.setQuiz.sets || state.setQuiz.sectionId !== section.id) {
+            state.setQuiz = {
+                sectionId: section.id,
+                sets: sets,
+                currentIdx: 0,
+                completedSets: {}, // set_index -> score
+                reviewMode: false,
+                answers: {} // slide_index -> chosen option letter
             };
         }
+
+        if (state.setQuiz.reviewMode) {
+            renderPracticeSetsReview(sets, section);
+            return;
+        }
+
+        const currentIdx = state.setQuiz.currentIdx;
         
-        let html = `
-            <style>
-                @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-                .p1-ex-card {
-                    background: var(--bg-card); border: 1px solid rgba(255,255,255,0.08); padding: 30px; border-radius: 24px;
-                    margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); transition: all 0.4s ease;
-                    backdrop-filter: blur(10px); display: flex; flex-direction: column; align-items: center;
-                }
-                .p1-ex-card:hover { border-color: rgba(99, 102, 241, 0.4); box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
-                
-                .p1-image-container { width: 100%; max-width: 500px; margin-bottom: 25px; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
-                .p1-image-container img { width: 100%; height: auto; display: block; object-fit: cover; }
-                
-                .p1-audio-player { text-align: center; margin-bottom: 25px; width: 100%; }
-                
-                .p1-interactive-buttons { display: flex; justify-content: center; gap: 20px; margin-bottom: 10px; flex-wrap: wrap; }
-                .p1-interactive-btn {
-                    background: rgba(255,255,255,0.03); border: 2px solid rgba(255,255,255,0.15); color: var(--text-main);
-                    width: 65px; height: 65px; border-radius: 50%; font-size: 1.25rem; font-weight: 800;
-                    cursor: pointer; transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); 
-                    display: flex; align-items: center; justify-content: center; outline: none;
-                }
-                .p1-interactive-btn:hover { background: rgba(99, 102, 241, 0.1); border-color: #6366f1; transform: scale(1.1); color: #818cf8; }
-                .p1-interactive-btn.correct { background: #16a34a; border-color: #15803d; color: white; transform: scale(1.1); box-shadow: 0 0 15px rgba(22, 163, 74, 0.5); }
-                .p1-interactive-btn.incorrect { background: #dc2626; border-color: #b91c1c; color: white; transform: scale(0.95); opacity: 0.8; }
-                
-                .p1-ex-transcript {
-                    margin-top: 25px; padding-top: 25px; border-top: 1px dashed rgba(255,255,255,0.15); width: 100%;
-                }
-                .p1-ex-transcript-choices { display: flex; flex-direction: column; gap: 10px; }
-                .p1-ex-transcript-choice {
-                    display: flex; gap: 15px; font-size: 1.1rem; color: var(--text-muted); padding: 12px 18px;
-                    border-radius: 12px; background: var(--border); transition: all 0.3s ease; border: 1px solid transparent;
-                }
-                .p1-ex-transcript-choice .lbl { font-weight: 900; color: #94a3b8; min-width: 25px; }
-                .p1-ex-transcript-choice.highlight-correct {
-                    background: rgba(34, 197, 94, 0.1); color: #4ade80; border-color: rgba(34, 197, 94, 0.3);
-                }
-                .p1-ex-transcript-choice.highlight-correct .lbl { color: #4ade80; }
-            </style>
+        if (currentIdx >= sets.length) {
+            renderPracticeSetsSummary(sets, section);
+            return;
+        }
+
+        const set = sets[currentIdx];
+        practiceContentArea.innerHTML = "";
+        practiceContentArea.style.maxWidth = "1000px";
+        practiceContentArea.style.margin = "0 auto";
+
+        // Progress Header
+        const progressHeader = document.createElement("div");
+        progressHeader.className = "quiz-progress-header";
+        progressHeader.style.display = "flex";
+        progressHeader.style.justifyContent = "space-between";
+        progressHeader.style.alignItems = "center";
+        progressHeader.style.marginBottom = "20px";
+        progressHeader.style.padding = "14px 20px";
+        progressHeader.style.background = "rgba(255, 255, 255, 0.015)";
+        progressHeader.style.border = "1px solid var(--border)";
+        
+        const progressText = document.createElement("span");
+        progressText.style.fontWeight = "700";
+        progressText.style.fontSize = "0.9rem";
+        progressText.textContent = `ĐOẠN HỘI THOẠI ${currentIdx + 1} / ${sets.length}`;
+        
+        const completedCount = Object.keys(state.setQuiz.completedSets).length;
+        const progressScore = document.createElement("span");
+        progressScore.style.fontWeight = "800";
+        progressScore.style.fontSize = "0.95rem";
+        progressScore.style.color = "var(--color-blue)";
+        progressScore.textContent = `HOÀN THÀNH: ${completedCount} / ${sets.length}`;
+        
+        progressHeader.appendChild(progressText);
+        progressHeader.appendChild(progressScore);
+        practiceContentArea.appendChild(progressHeader);
+
+        // Navigator Row
+        const navigatorRow = document.createElement("div");
+        navigatorRow.className = "quiz-navigator-row";
+        navigatorRow.style.display = "flex";
+        navigatorRow.style.flexWrap = "wrap";
+        navigatorRow.style.gap = "8px";
+        navigatorRow.style.marginBottom = "20px";
+        navigatorRow.style.justifyContent = "center";
+        
+        sets.forEach((s, idx) => {
+            const navBtn = document.createElement("button");
+            navBtn.style.padding = "8px 14px";
+            navBtn.style.fontSize = "0.85rem";
+            navBtn.style.fontWeight = "700";
+            navBtn.style.border = "1px solid var(--border)";
+            navBtn.style.cursor = "pointer";
+            navBtn.style.minWidth = "36px";
+            navBtn.style.borderRadius = "0px";
+            navBtn.style.transition = "all 0.2s ease";
             
-            <div class="p2-hero" style="background: radial-gradient(circle at 0% 0%, rgba(99, 102, 241, 0.15) 0%, transparent 50%), linear-gradient(145deg, #0f172a 0%, #020617 100%); margin-bottom: 30px; border-radius: 16px; padding: 24px;">
-                <h2 class="p2-hero-title" style="text-align: center; color: #f8fafc; font-weight: 800; font-size: 1.5rem; margin-bottom: 8px;">LUYỆN TẬP TƯƠNG TÁC</h2>
-                <p class="p2-hero-subtitle" style="text-align: center; color: #94a3b8;">Bấm nút PLAY để nghe Audio. Sau đó chọn đáp án A, B, C hoặc D. Hệ thống sẽ chấm điểm và hiển thị nội dung chi tiết.</p>
+            navBtn.textContent = idx + 1;
+            
+            const isCompleted = state.setQuiz.completedSets[s.set_index] !== undefined;
+            
+            if (idx === currentIdx) {
+                navBtn.style.background = "var(--color-blue)";
+                navBtn.style.color = "white";
+                navBtn.style.borderColor = "var(--color-blue)";
+            } else if (isCompleted) {
+                navBtn.style.background = "rgba(16, 185, 129, 0.15)";
+                navBtn.style.color = "#10b981";
+                navBtn.style.borderColor = "#10b981";
+            } else {
+                navBtn.style.background = "transparent";
+                navBtn.style.color = "var(--text-main)";
+            }
+            
+            navBtn.addEventListener("click", () => {
+                state.setQuiz.currentIdx = idx;
+                renderPracticeSets(sets, section);
+            });
+            
+            navigatorRow.appendChild(navBtn);
+        });
+        
+        practiceContentArea.appendChild(navigatorRow);
+
+        // Set Card Wrapper
+        const setWrapper = document.createElement("div");
+        setWrapper.className = "practice-set-card";
+        setWrapper.style.padding = "24px";
+        setWrapper.style.border = "1px solid var(--border)";
+        setWrapper.style.background = "rgba(255, 255, 255, 0.01)";
+        
+        const setHeader = document.createElement("h3");
+        setHeader.style.fontSize = "1.1rem";
+        setHeader.style.marginBottom = "16px";
+        setHeader.style.fontWeight = "800";
+        setHeader.textContent = `LUYỆN TẬP ĐOẠN HỘI THOẠI ${set.set_index}`;
+        setWrapper.appendChild(setHeader);
+        
+        const audioDiv = document.createElement("div");
+        setWrapper.appendChild(audioDiv);
+        createAudioPlayer(set.audio, audioDiv);
+        
+        if (set.image) {
+            const imgDiv = document.createElement("div");
+            imgDiv.style.textAlign = "center";
+            imgDiv.style.marginTop = "20px";
+            imgDiv.style.marginBottom = "20px";
+            const imgSrc = set.image.startsWith("http") || set.image.startsWith("data/") || set.image.startsWith("media/")
+                ? set.image
+                : (set.image.startsWith("Slide") ? `data/graphics/${set.image}` : `media/${set.image}`);
+            imgDiv.innerHTML = `<img src="${imgSrc}" alt="Graphic for Set ${set.set_index}" style="max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">`;
+            setWrapper.appendChild(imgDiv);
+        }
+        
+        const qListDiv = document.createElement("div");
+        setWrapper.appendChild(qListDiv);
+        
+        const userSelections = {};
+        const setAlreadySubmitted = state.setQuiz.completedSets[set.set_index] !== undefined;
+
+        set.questions.forEach(q => {
+            const qCard = document.createElement("div");
+            qCard.className = "question-block";
+            qCard.style.padding = "20px";
+            qCard.style.marginTop = "16px";
+            
+            const savedAns = state.setQuiz.answers[q.slide_index];
+            const choicesHtml = renderChoicesHtml(q, setAlreadySubmitted, savedAns);
+            const questionTextHtml = renderQuestionTextHtml(q, `set-q-${q.slide_index}`, `<strong>QUESTION ${q.id}:</strong> `);
+            
+            qCard.innerHTML = `
+                ${questionTextHtml}
+                <div class="choices-stack" style="margin-top: 12px;">
+                    ${choicesHtml}
+                </div>
+            `;
+            
+            qListDiv.appendChild(qCard);
+            
+            if (!setAlreadySubmitted) {
+                const options = qCard.querySelectorAll(".choice-option");
+                options.forEach(opt => {
+                    opt.addEventListener("click", () => {
+                        // Toggle option translation inline on click
+                        const t = opt.querySelector(".c-trans");
+                        if (t) t.style.display = t.style.display === "block" ? "none" : "block";
+                        
+                        const key = opt.getAttribute("data-key");
+                        userSelections[q.slide_index] = key;
+                        state.setQuiz.answers[q.slide_index] = key;
+                        
+                        options.forEach(o => o.classList.remove("selected"));
+                        opt.classList.add("selected");
+                        
+                        // Enable submit button only if all questions answered
+                        let allSelected = true;
+                        set.questions.forEach(qi => {
+                            if (!userSelections[qi.slide_index]) {
+                                allSelected = false;
+                            }
+                        });
+                        
+                        if (allSelected) {
+                            submitBtn.disabled = false;
+                        }
+                    });
+                });
+            }
+        });
+        
+        const submitRow = document.createElement("div");
+        submitRow.className = "submit-row";
+        submitRow.style.marginTop = "24px";
+        submitRow.style.display = "flex";
+        submitRow.style.justifyContent = "space-between";
+        submitRow.style.alignItems = "center";
+        submitRow.style.gap = "12px";
+        
+        // Left Column: Quay lại button
+        const leftCol = document.createElement("div");
+        leftCol.style.flex = "1";
+        leftCol.style.textAlign = "left";
+        if (currentIdx > 0) {
+            const prevBtn = document.createElement("button");
+            prevBtn.className = "action-btn btn-secondary";
+            prevBtn.style.padding = "12px 20px";
+            prevBtn.style.background = "transparent";
+            prevBtn.style.border = "1px solid var(--border)";
+            prevBtn.style.color = "var(--text-main)";
+            prevBtn.style.cursor = "pointer";
+            prevBtn.style.borderRadius = "0px";
+            prevBtn.innerHTML = `&larr; QUAY LẠI`;
+            prevBtn.addEventListener("click", () => {
+                state.setQuiz.currentIdx--;
+                renderPracticeSets(sets, section);
+            });
+            leftCol.appendChild(prevBtn);
+        }
+        submitRow.appendChild(leftCol);
+        
+        // Center Column: Submit button or result score
+        const centerCol = document.createElement("div");
+        centerCol.style.flex = "2";
+        centerCol.style.display = "flex";
+        centerCol.style.justifyContent = "center";
+        centerCol.style.alignItems = "center";
+        centerCol.style.gap = "16px";
+        
+        const scoreSpan = document.createElement("span");
+        scoreSpan.className = "score-display";
+        scoreSpan.style.fontWeight = "800";
+        scoreSpan.style.fontSize = "1.05rem";
+        scoreSpan.style.color = "var(--color-blue)";
+        
+        const submitBtn = document.createElement("button");
+        submitBtn.className = "action-btn btn-primary";
+        submitBtn.style.padding = "12px 24px";
+        submitBtn.textContent = "NỘP BÀI TRẢ LỜI";
+        submitBtn.disabled = true;
+        submitBtn.style.borderRadius = "0px !important";
+        
+        if (setAlreadySubmitted) {
+            const score = state.setQuiz.completedSets[set.set_index];
+            scoreSpan.textContent = `Kết quả: ${score} / ${set.questions.length} câu đúng`;
+        }
+        
+        centerCol.appendChild(scoreSpan);
+        if (!setAlreadySubmitted) {
+            centerCol.appendChild(submitBtn);
+        }
+        submitRow.appendChild(centerCol);
+        
+        // Right Column: Next / Skip buttons
+        const rightCol = document.createElement("div");
+        rightCol.style.flex = "1";
+        rightCol.style.textAlign = "right";
+        
+        const nextBtn = document.createElement("button");
+        nextBtn.className = "action-btn btn-primary";
+        nextBtn.style.padding = "12px 24px";
+        nextBtn.innerHTML = `ĐOẠN TIẾP THEO &rarr;`;
+        nextBtn.style.borderRadius = "0px !important";
+        nextBtn.style.display = "none";
+        
+        const skipBtn = document.createElement("button");
+        skipBtn.className = "action-btn btn-secondary";
+        skipBtn.style.padding = "12px 20px";
+        skipBtn.style.background = "transparent";
+        skipBtn.style.border = "1px solid var(--border)";
+        skipBtn.style.color = "var(--text-muted)";
+        skipBtn.style.cursor = "pointer";
+        skipBtn.style.borderRadius = "0px";
+        skipBtn.innerHTML = `BỎ QUA &rarr;`;
+        skipBtn.style.display = "none";
+        
+        skipBtn.addEventListener("click", () => {
+            state.setQuiz.currentIdx++;
+            renderPracticeSets(sets, section);
+        });
+        
+        if (currentIdx < sets.length - 1) {
+            rightCol.appendChild(nextBtn);
+            rightCol.appendChild(skipBtn);
+            
+            if (setAlreadySubmitted) {
+                nextBtn.style.display = "flex";
+            } else {
+                skipBtn.style.display = "flex";
+            }
+        }
+        
+        submitRow.appendChild(rightCol);
+        setWrapper.appendChild(submitRow);
+        
+        // Transcript & Explanations Card
+        let explanationHtml = "";
+        set.questions.forEach(sq => {
+            if (sq.explanation) {
+                explanationHtml += `
+                    <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                        <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                            Giải thích QUESTION ${sq.id}:
+                        </h5>
+                        <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                            ${sq.explanation}
+                        </div>
+                    </div>
+                `;
+            }
+        });
+        
+        // Add vocabulary items if available
+        let allVocab = [];
+        set.questions.forEach(sq => {
+            if (sq.vocabulary && sq.vocabulary.length > 0) {
+                allVocab = allVocab.concat(sq.vocabulary);
+            }
+        });
+        if (allVocab.length > 0) {
+            let vocabItems = allVocab.map(v => `
+                <div style="margin-bottom: 8px; font-size: 1.05rem;">
+                    <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} ➔ ${v.gerund}` : v.en}</span> 
+                    <span style="color: #64748b; font-size: 0.9em; font-family: monospace;">${v.ipa}</span>
+                    <span style="color: #a855f7; font-size: 0.9em; font-style: italic;">(${v.pos})</span>: 
+                    <span style="color: var(--text-main);">${v.vi}</span>
+                    <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? v.base + ', ' + v.gerund : (v.base || v.en)).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
+                </div>
+            `).join('');
+            explanationHtml += `
+                <div class="p1-vocab-box" style="margin-top: 20px; padding: 18px 20px; border-radius: 12px; background: var(--bg-sidebar); border: 1px solid var(--border); box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);">
+                    <h4 style="font-weight: 800; font-size: 1.1rem; color: #10b981; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-transform: uppercase;">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                        Từ vựng hữu ích
+                    </h4>
+                    ${vocabItems}
+                </div>
+            `;
+        }
+        
+        const transcriptHtml = renderTranscriptHtml(set.transcript, set.vietnamese_transcript);
+        const scriptCard = document.createElement("div");
+        scriptCard.innerHTML = renderScriptCardHtml(`p3-set-${set.set_index}`, transcriptHtml, explanationHtml);
+        const innerScriptCard = scriptCard.firstElementChild;
+        if (!setAlreadySubmitted) {
+            innerScriptCard.classList.add("hidden");
+        }
+        
+        setWrapper.appendChild(innerScriptCard);
+        hookScriptCardToggler(`p3-set-${set.set_index}`);
+        
+        const submitHandler = () => {
+            const numQs = set.questions.length;
+            let correctCount = 0;
+            
+            set.questions.forEach(q => {
+                const userVal = userSelections[q.slide_index];
+                const correctVal = q.answer;
+                
+                const qOptions = qListDiv.querySelectorAll(`.choice-option[data-q-slide="${q.slide_index}"]`);
+                qOptions.forEach(o => {
+                    const oKey = o.getAttribute("data-key");
+                    o.classList.remove("correct", "selected");
+                    o.classList.add("checked-done");
+                    
+                    if (oKey === correctVal) {
+                        o.classList.add("correct");
+                    } else if (oKey === userVal) {
+                        o.classList.add("incorrect");
+                    }
+                    const t = o.querySelector(".c-trans");
+                    if (t) t.style.display = "block";
+                });
+                
+                if (userVal === correctVal) {
+                    correctCount++;
+                }
+                
+                markQuestionAnswered(q.slide_index);
+            });
+            
+            state.setQuiz.completedSets[set.set_index] = correctCount;
+            
+            scoreSpan.textContent = `Kết quả: ${correctCount} / ${numQs} câu đúng`;
+            submitBtn.style.display = "none";
+            if (currentIdx < sets.length - 1) {
+                skipBtn.style.display = "none";
+                nextBtn.style.display = "flex";
+            }
+            innerScriptCard.classList.remove("hidden");
+            
+            // Show result modal
+            modalScore.textContent = correctCount;
+            modalTotal.textContent = `/${numQs}`;
+            
+            let msg = "";
+            if (correctCount === numQs) {
+                msg = "Tuyệt vời! Bạn đã xuất sắc trả lời đúng tất cả các câu hỏi. Hãy tiếp tục phát huy nhé!";
+                SoundEffects.playCorrect();
+                let count = 0;
+                const interval = setInterval(() => {
+                    spawnConfetti(40, true);
+                    count++;
+                    if (count > 5) clearInterval(interval);
+                }, 450);
+            } else if (correctCount >= 2) {
+                msg = "Khá tốt! Bạn đã trả lời đúng phần lớn câu hỏi. Hãy xem lại transcript để củng cố câu sai nhé.";
+                SoundEffects.playCorrect();
+                spawnConfetti(50);
+            } else {
+                msg = "Cố gắng lên! Bạn cần luyện tập thêm. Hãy xem lại transcript và từ vựng để cải thiện kỹ năng nghe.";
+                SoundEffects.playWrong();
+            }
+            modalMessage.textContent = msg;
+            
+            // Submit to Google Forms background
+            const studentName = localStorage.getItem("studentName") || "Ẩn danh";
+            submitToGoogleForm(studentName, section.title, `Luyện tập (Đoạn ${set.set_index})`, correctCount, numQs);
+            
+            modalReviewBtn.onclick = () => {
+                resultModal.classList.add("hidden");
+            };
+            
+            modalRetryBtn.onclick = () => {
+                resultModal.classList.add("hidden");
+                scoreSpan.textContent = "";
+                submitBtn.style.display = "flex";
+                submitBtn.disabled = true;
+                nextBtn.style.display = "none";
+                innerScriptCard.classList.add("hidden");
+                
+                delete state.setQuiz.completedSets[set.set_index];
+                
+                set.questions.forEach(q => {
+                    delete userSelections[q.slide_index];
+                    delete state.setQuiz.answers[q.slide_index];
+                    delete state.answeredQuestions[q.slide_index];
+                    
+                    const qOptions = qListDiv.querySelectorAll(`.choice-option[data-q-slide="${q.slide_index}"]`);
+                    qOptions.forEach(o => {
+                        o.classList.remove("checked-done", "correct", "incorrect");
+                        o.disabled = false;
+                    });
+                });
+                
+                updateRouteProgress();
+            };
+            
+            resultModal.classList.remove("hidden");
+        };
+        
+        submitBtn.addEventListener("click", submitHandler);
+        
+        nextBtn.addEventListener("click", () => {
+            state.setQuiz.currentIdx++;
+            renderPracticeSets(sets, section);
+        });
+        
+        practiceContentArea.appendChild(setWrapper);
+    }
+
+    function renderPracticeSetsSummary(sets, section) {
+        practiceContentArea.innerHTML = "";
+        
+        let totalScore = 0;
+        let totalQs = 0;
+        
+        sets.forEach(set => {
+            totalScore += state.setQuiz.completedSets[set.set_index] || 0;
+            totalQs += set.questions.length;
+        });
+        
+        let msg = "";
+        if (totalScore === totalQs) {
+            msg = "THẬT SỰ QUÁ ĐỈNH! Bạn đã hoàn thành xuất sắc toàn bộ các đoạn hội thoại Part 3 với số điểm tối đa.";
+            let count = 0;
+            const interval = setInterval(() => {
+                spawnConfetti(45, true);
+                count++;
+                if (count > 6) clearInterval(interval);
+            }, 400);
+        } else if (totalScore >= totalQs * 0.7) {
+            msg = "CỰC KỲ TỐT! Kỹ năng nghe hiểu hội thoại Part 3 của bạn rất ấn tượng. Hãy xem lại các lỗi nhỏ nhé.";
+            spawnConfetti(55);
+        } else {
+            msg = "CỐ GẮNG LÊN! Luyện nghe Part 3 cần sự kiên trì. Hãy dành thời gian xem kỹ transcript và nghe lại nhiều lần.";
+        }
+        
+        const summaryCard = document.createElement("div");
+        summaryCard.className = "quiz-summary-card";
+        summaryCard.style.textAlign = "center";
+        summaryCard.style.padding = "48px 40px";
+        summaryCard.style.border = "1px solid var(--border)";
+        summaryCard.style.background = "rgba(255, 255, 255, 0.015)";
+        
+        summaryCard.innerHTML = `
+            <div style="font-size: 3.5rem; color: var(--color-gold); margin-bottom: 20px;">🏆</div>
+            <h3 style="font-size: 1.6rem; margin-bottom: 12px; font-weight: 800; text-transform: uppercase;">KẾT QUẢ BÀI THI PART 3</h3>
+            <div style="font-size: 2.8rem; font-weight: 800; color: var(--color-blue); margin-bottom: 16px;">
+                ${totalScore} / ${totalQs}
+            </div>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 36px; line-height: 1.7; max-width: 500px; margin-left: auto; margin-right: auto;">${msg}</p>
+            <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                <button class="btn btn-primary" id="btn-p3-retry" style="padding: 12px 24px; font-weight: 700; border-radius: 0px !important;">LÀM LẠI TOÀN BỘ</button>
+                <button class="btn btn-secondary" id="btn-p3-review" style="padding: 12px 24px; font-weight: 700; border-radius: 0px !important;">XEM LẠI CÁC ĐÁP ÁN</button>
             </div>
         `;
         
-        if (!sets || sets.length === 0) {
-            html += "<p style='color: var(--text-muted); padding: 20px;'>Bài tập đang được cập nhật.</p>";
-            practiceContentArea.innerHTML = html;
-            return;
-        }
+        practiceContentArea.appendChild(summaryCard);
         
-        sets.forEach((setObj, index) => {
-            const exId = `p1-ex-${section.id}-${index}`;
-            // Assuming setObj has image, audio, and questions[0]
-            const q = setObj.questions && setObj.questions[0];
-            if (!q) return;
+        document.getElementById("btn-p3-retry").addEventListener("click", () => {
+            state.setQuiz = {
+                sectionId: section.id,
+                sets: sets,
+                currentIdx: 0,
+                completedSets: {},
+                reviewMode: false,
+                answers: {}
+            };
             
-            const correctAns = q.answer || 'A';
+            sets.forEach(set => {
+                set.questions.forEach(q => {
+                    delete state.answeredQuestions[q.slide_index];
+                });
+            });
+            updateRouteProgress();
+            try {
+                localStorage.setItem("toeic_answered_questions", JSON.stringify(state.answeredQuestions));
+            } catch (e) {}
             
-            const imageHtml = setObj.image ? `
-                <div class="p1-image-container">
-                    <img src="${setObj.image}" alt="Question Image" onerror="this.src='media/${setObj.image}'">
-                </div>
-            ` : '';
+            renderPracticeSets(sets, section);
+        });
+        
+        document.getElementById("btn-p3-review").addEventListener("click", () => {
+            state.setQuiz.reviewMode = true;
+            renderPracticeSets(sets, section);
+        });
+    }
+
+    function renderPracticeSetsReview(sets, section) {
+        practiceContentArea.innerHTML = "";
+        practiceContentArea.style.maxWidth = "1000px";
+        practiceContentArea.style.margin = "0 auto";
+        
+        const reviewHeader = document.createElement("div");
+        reviewHeader.className = "quiz-progress-header";
+        reviewHeader.style.display = "flex";
+        reviewHeader.style.justifyContent = "space-between";
+        reviewHeader.style.alignItems = "center";
+        reviewHeader.style.marginBottom = "24px";
+        reviewHeader.style.padding = "14px 20px";
+        reviewHeader.style.background = "rgba(255, 255, 255, 0.015)";
+        reviewHeader.style.border = "1px solid var(--border)";
+        
+        const reviewTitle = document.createElement("span");
+        reviewTitle.style.fontWeight = "700";
+        reviewTitle.style.fontSize = "0.9rem";
+        reviewTitle.textContent = "XEM LẠI CÁC ĐOẠN HỘI THOẠI & TRANSCRIPTS";
+        
+        const backBtn = document.createElement("button");
+        backBtn.className = "mini-btn";
+        backBtn.style.padding = "6px 12px";
+        backBtn.textContent = "QUAY LẠI TỔNG KẾT";
+        backBtn.style.borderRadius = "0px !important";
+        backBtn.addEventListener("click", () => {
+            state.setQuiz.currentIdx = sets.length; // triggers summary
+            renderPracticeSets(sets, section);
+        });
+        
+        reviewHeader.appendChild(reviewTitle);
+        reviewHeader.appendChild(backBtn);
+        practiceContentArea.appendChild(reviewHeader);
+
+        sets.forEach(set => {
+            const setWrapper = document.createElement("div");
+            setWrapper.className = "practice-set-card";
+            setWrapper.style.padding = "24px";
+            setWrapper.style.marginBottom = "24px";
+            setWrapper.style.border = "1px solid var(--border)";
+            setWrapper.style.background = "rgba(255, 255, 255, 0.01)";
             
-            const audioHtml = setObj.audio ? `
-                <div class="p1-audio-player">
-                    <audio id="audio-${exId}" src="media/${setObj.audio}" controls style="width: 100%; max-width: 400px; border-radius: 50px; outline: none;"></audio>
-                </div>
-            ` : `<div class="p1-audio-player"><p style="color:#ef4444;">[Thiếu Audio]</p></div>`;
+            const setHeader = document.createElement("h3");
+            setHeader.style.fontSize = "1.1rem";
+            setHeader.style.marginBottom = "16px";
+            setHeader.style.fontWeight = "800";
+            setHeader.textContent = `ĐOẠN HỘI THOẠI ${set.set_index}`;
+            setWrapper.appendChild(setHeader);
             
-            let interactiveButtons = '<div class="p1-interactive-buttons">';
-            let transcriptChoicesHtml = '<div class="p1-ex-transcript-choices">';
+            const audioDiv = document.createElement("div");
+            setWrapper.appendChild(audioDiv);
+            createAudioPlayer(set.audio, audioDiv);
             
-            if (q.choices) {
-                Object.keys(q.choices).forEach(key => {
-                    interactiveButtons += `
-                        <button class="p1-interactive-btn" id="btn-${exId}-${key}" 
-                                onclick="window.checkP1PracticeAnswer('${exId}', '${key}', '${correctAns}')">
-                            ${key}
-                        </button>
-                    `;
-                    transcriptChoicesHtml += `
-                        <div class="p1-ex-transcript-choice" id="transcript-choice-${exId}-${key}">
-                            <span class="lbl">(${key})</span> <span class="txt">${q.choices[key]}</span>
+            if (set.image) {
+                const imgDiv = document.createElement("div");
+                imgDiv.style.textAlign = "center";
+                imgDiv.style.marginTop = "20px";
+                imgDiv.style.marginBottom = "20px";
+                const imgSrc = set.image.startsWith("http") || set.image.startsWith("data/") || set.image.startsWith("media/")
+                    ? set.image
+                    : (set.image.startsWith("Slide") ? `data/graphics/${set.image}` : `media/${set.image}`);
+                imgDiv.innerHTML = `<img src="${imgSrc}" alt="Graphic for Set ${set.set_index}" style="max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px;">`;
+                setWrapper.appendChild(imgDiv);
+            }
+            
+            const qListDiv = document.createElement("div");
+            setWrapper.appendChild(qListDiv);
+            
+            set.questions.forEach(q => {
+                const qCard = document.createElement("div");
+                qCard.className = "question-block";
+                qCard.style.padding = "20px";
+                qCard.style.marginTop = "16px";
+                
+                const savedAns = state.setQuiz.answers[q.slide_index];
+                const choicesHtml = renderChoicesHtml(q, true, savedAns);
+                const questionTextHtml = renderQuestionTextHtml(q, `rev-set-q-${q.slide_index}`, `<strong>QUESTION ${q.id}:</strong> `);
+                
+                qCard.innerHTML = `
+                    ${questionTextHtml}
+                    <div class="choices-stack" style="margin-top: 12px;">
+                        ${choicesHtml}
+                    </div>
+                `;
+                qListDiv.appendChild(qCard);
+            });
+            
+            // Explanations & transcript
+            let explanationHtml = "";
+            set.questions.forEach(sq => {
+                if (sq.explanation) {
+                    explanationHtml += `
+                        <div class="explanation-box" style="margin-bottom: 16px; padding: 14px 18px; border: 1px solid var(--border); border-left: 4px solid var(--color-blue); background: rgba(59, 130, 246, 0.015);">
+                            <h5 style="color: var(--color-blue); margin: 0 0 8px 0; font-size: 0.95rem; font-weight: 800; text-transform: uppercase;">
+                                Giải thích QUESTION ${sq.id}:
+                            </h5>
+                            <div style="font-size: 0.9rem; line-height: 1.5; color: var(--text-main);">
+                                ${sq.explanation}
+                            </div>
                         </div>
                     `;
-                });
-            }
-            interactiveButtons += '</div>';
-            transcriptChoicesHtml += '</div>';
-
-            let vocabHtml = '';
-            if (q.vocabulary && q.vocabulary.length > 0) {
-                let vocabItems = q.vocabulary.map(v => `
+                }
+            });
+            
+            let allVocab = [];
+            set.questions.forEach(sq => {
+                if (sq.vocabulary && sq.vocabulary.length > 0) {
+                    allVocab = allVocab.concat(sq.vocabulary);
+                }
+            });
+            if (allVocab.length > 0) {
+                let vocabItems = allVocab.map(v => `
                     <div style="margin-bottom: 8px; font-size: 1.05rem;">
                         <span style="font-weight: 700; color: #0284c7;">${v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? `${v.base} ➔ ${v.gerund}` : v.en}</span> 
                         <span style="color: #64748b; font-size: 0.9em; font-family: monospace;">${v.ipa}</span>
@@ -2779,7 +3353,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span onclick="playTTS(this.dataset.text, event)" data-text="${(v.pos === 'v' && v.base && v.gerund && v.base !== v.gerund ? v.base + ', ' + v.gerund : (v.base || v.en)).replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 6px; opacity: 0.6; font-size: 1.1em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span>
                     </div>
                 `).join('');
-                vocabHtml = `
+                explanationHtml += `
                     <div class="p1-vocab-box" style="margin-top: 20px; padding: 18px 20px; border-radius: 12px; background: var(--bg-sidebar); border: 1px solid var(--border); box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);">
                         <h4 style="font-weight: 800; font-size: 1.1rem; color: #10b981; margin-bottom: 15px; display: flex; align-items: center; gap: 8px; text-transform: uppercase;">
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
@@ -2790,22 +3364,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
             }
             
-            html += `
-                <div class="p1-ex-card" id="${exId}">
-                    <h3 style="align-self: flex-start; margin-bottom: 20px; font-weight: 800; color: var(--text-main);">QUESTION ${q.id}</h3>
-                    ${imageHtml}
-                    ${audioHtml}
-                    ${interactiveButtons}
-                    
-                    <div class="p1-ex-transcript" id="transcript-${exId}" style="display: none;">
-                        ${transcriptChoicesHtml}
-                        ${vocabHtml}
-                    </div>
-                </div>
-            `;
+            const transcriptHtml = renderTranscriptHtml(set.transcript, set.vietnamese_transcript);
+            const scriptCard = document.createElement("div");
+            scriptCard.innerHTML = renderScriptCardHtml(`rev-p3-set-${set.set_index}`, transcriptHtml, explanationHtml);
+            setWrapper.appendChild(scriptCard.firstElementChild);
+            hookScriptCardToggler(`rev-p3-set-${set.set_index}`);
+            
+            practiceContentArea.appendChild(setWrapper);
         });
-        
-        practiceContentArea.innerHTML = html;
     }
 
 
