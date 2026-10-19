@@ -1,4 +1,4 @@
-const PART03_DATA = [
+window.part03Data = [
   {
     "id": "overview",
     "title": "I. TỔNG QUAN PHẦN 03",
@@ -9731,6 +9731,7 @@ const PART03_DATA = [
   }
 ];
 
+var PART03_DATA = window.part03Data;
 if (typeof module !== "undefined" && module.exports) {
   module.exports = PART03_DATA;
 }

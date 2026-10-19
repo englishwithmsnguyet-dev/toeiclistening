@@ -1128,8 +1128,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return result;
     }
 
-    if (window.part03Data) {
-        state.part03Data = window.part03Data;
+    const p3Data = window.part03Data || (typeof PART03_DATA !== 'undefined' ? PART03_DATA : null);
+    if (p3Data) {
+        state.part03Data = p3Data;
+        window.part03Data = p3Data;
         
         state.part03Data.forEach(item => {
             if (item.examples && item.examples.length > 0) {
@@ -1165,6 +1167,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function initializePart03Sidebar() {
+        if (!state.part03Data) return;
         conceptsNavList.innerHTML = "";
         topicsNavList.innerHTML = "";
         
