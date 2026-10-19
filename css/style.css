@@ -1044,9 +1044,18 @@ body.light-mode .question-keyword {
 }
 
 .vocabulary-card {
-    background: rgba(255, 255, 255, 0.015);
+    background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--border);
-    padding: 30px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+body.light-mode .vocabulary-card {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
 }
 
 .vocabulary-card-header {
@@ -1055,14 +1064,23 @@ body.light-mode .question-keyword {
     align-items: center;
     border-bottom: 1px solid var(--border);
     padding-bottom: 14px;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
+}
+
+body.light-mode .vocabulary-card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .vocabulary-card-title {
     font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--color-purple);
+    font-weight: 800;
+    color: var(--color-blue);
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+body.light-mode .vocabulary-card-title {
+    color: #1d4ed8;
 }
 
 .vocabulary-card-subtitle {
@@ -1071,6 +1089,138 @@ body.light-mode .question-keyword {
     color: var(--color-gold);
     margin-bottom: 18px;
     line-height: 1.5;
+}
+
+.vocab-card-subtitle-badge {
+    margin-bottom: 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(245, 158, 11, 0.12);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    color: #fbbf24;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.95rem;
+}
+
+body.light-mode .vocab-card-subtitle-badge {
+    background: #fef3c7;
+    border: 1px solid #fde68a;
+    color: #92400e;
+}
+
+/* VOCABULARY ROW (Part 3 & General) */
+.vocab-row {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px 10px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.vocab-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+.vocab-row-term {
+    font-weight: 700;
+    color: #38bdf8;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+}
+
+.vocab-row-ipa {
+    color: #94a3b8;
+    font-family: 'SF Mono', Menlo, Consolas, Monaco, monospace;
+    font-size: 0.92rem;
+}
+
+.vocab-row-pos {
+    color: #c084fc;
+    font-size: 0.85rem;
+    font-style: italic;
+    font-weight: 600;
+    background: rgba(192, 132, 252, 0.15);
+    border: 1px solid rgba(192, 132, 252, 0.3);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.vocab-row-sound {
+    cursor: pointer;
+    opacity: 0.75;
+    font-size: 1.15rem;
+    margin-left: 4px;
+    transition: opacity 0.2s, transform 0.15s;
+    user-select: none;
+    line-height: 1;
+}
+
+.vocab-row-sound:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.vocab-row-colon {
+    color: var(--text-muted);
+    margin: 0 4px;
+    font-weight: 700;
+}
+
+.vocab-row-meaning {
+    color: var(--text-main);
+    font-weight: 500;
+    font-size: 1.02rem;
+}
+
+/* Light mode high-contrast overrides for vocabulary */
+body.light-mode .vocab-row {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+}
+
+body.light-mode .vocab-row:hover {
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+body.light-mode .vocab-row-term {
+    color: #0369a1; /* Ocean blue 700 - high contrast AAA on white */
+    font-weight: 800;
+}
+
+body.light-mode .vocab-row-ipa {
+    color: #334155; /* Slate 700 - sharp, clear phonetic script */
+    font-weight: 600;
+}
+
+body.light-mode .vocab-row-pos {
+    color: #581c87; /* Purple 900 - bold contrast */
+    background: #f3e8ff;
+    border: 1px solid #d8b4fe;
+    font-weight: 700;
+}
+
+body.light-mode .vocab-row-sound {
+    opacity: 0.85;
+}
+
+body.light-mode .vocab-row-colon {
+    color: #64748b;
+}
+
+body.light-mode .vocab-row-meaning {
+    color: #0f172a; /* Slate 900 - pitch dark crisp font for Vietnamese meaning */
+    font-weight: 600;
 }
 
 .vocabulary-bullet-list {

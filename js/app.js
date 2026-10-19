@@ -2013,24 +2013,19 @@ document.addEventListener("DOMContentLoaded", () => {
         section.vocabulary.forEach((slide, sIdx) => {
             const card = document.createElement("div");
             card.className = "vocabulary-card";
-            card.style.borderRadius = "16px";
-            card.style.marginBottom = "24px";
-            card.style.background = "rgba(255, 255, 255, 0.02)";
-            card.style.border = "1px solid rgba(255, 255, 255, 0.08)";
-            card.style.padding = "24px";
             
             // Clean title & subtitle
             const rawTitle = slide.text[0] || "Từ Vựng Chủ Đề";
             const cleanTitle = rawTitle.replace(/<[^>]+>/g, "").trim();
             const rawSub = slide.text.length > 1 ? slide.text[1] : "";
-            const cleanSub = rawSub.replace(/<[^>]+>/g, "").replace(/^[•o\-\*]\s*/, "").trim();
+            const cleanSub = rawSub.replace(/<[^>]+>/g, "").replace(/^[•◦\-\*]\s*|^o\s+/i, "").trim();
             const bullets = slide.text.slice(2);
             
             let badgeText = slide.slide_index >= 1000 ? `Chủ đề ${sIdx + 1}` : `Slide ${slide.slide_index}`;
             
             let bulletsHtml = "";
             bullets.forEach(b => {
-                let plain = b.replace(/<[^>]+>/g, "").replace(/^[•o\-\*]\s*/, "").trim();
+                let plain = b.replace(/<[^>]+>/g, "").replace(/^[•◦\-\*]\s*|^o\s+/i, "").trim();
                 if (!plain) return;
                 
                 // Parse bullet
@@ -2060,12 +2055,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 const spokenTerm = term.split("/")[0].trim().replace(/"/g, "&quot;");
                 
                 bulletsHtml += `
-                    <div style="display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px; padding: 10px 14px; background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 10px; margin-bottom: 8px; transition: background 0.2s ease;">
-                        <span style="font-weight: 700; color: #38bdf8; font-size: 1.05rem;">${term}</span>
-                        ${ipa ? `<span style="color: #94a3b8; font-family: monospace; font-size: 0.9rem;">${ipa}</span>` : ""}
-                        ${pos ? `<span style="color: #c084fc; font-size: 0.85rem; font-style: italic; background: rgba(192, 132, 252, 0.1); padding: 2px 8px; border-radius: 4px;">(${pos})</span>` : ""}
-                        <span onclick="playTTS('${spokenTerm}', event)" style="cursor: pointer; opacity: 0.65; font-size: 1.15rem; margin-left: 4px; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.65'" title="Phát âm từ này">🔊</span>
-                        ${meaning ? `<span style="color: var(--text-muted); margin: 0 4px;">:</span><span style="color: var(--text-main); font-weight: 500;">${meaning}</span>` : ""}
+                    <div class="vocab-row">
+                        <span class="vocab-row-term">${term}</span>
+                        ${ipa ? `<span class="vocab-row-ipa">${ipa}</span>` : ""}
+                        ${pos ? `<span class="vocab-row-pos">(${pos})</span>` : ""}
+                        <span class="vocab-row-sound" onclick="playTTS('${spokenTerm}', event)" title="Phát âm từ này">🔊</span>
+                        ${meaning ? `<span class="vocab-row-colon">:</span><span class="vocab-row-meaning">${meaning}</span>` : ""}
                     </div>
                 `;
             });
@@ -2073,16 +2068,16 @@ document.addEventListener("DOMContentLoaded", () => {
             let subtitleHtml = "";
             if (cleanSub) {
                 subtitleHtml = `
-                    <div style="margin-bottom: 16px; display: inline-flex; align-items: center; gap: 6px; background: rgba(245, 158, 11, 0.1); border: 1px solid rgba(245, 158, 11, 0.25); color: #fbbf24; padding: 6px 14px; border-radius: 20px; font-weight: 700; font-size: 0.95rem;">
+                    <div class="vocab-card-subtitle-badge">
                         <span>🎯</span> ${cleanSub}
                     </div>
                 `;
             }
             
             card.innerHTML = `
-                <div class="vocabulary-card-header" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 14px; margin-bottom: 14px;">
-                    <span class="vocabulary-card-title" style="font-size: 1.15rem; font-weight: 800; color: var(--color-blue); text-transform: uppercase; letter-spacing: 0.5px;">${cleanTitle}</span>
-                    <span class="slide-num-tag" style="background: rgba(99, 102, 241, 0.15); color: #818cf8; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 700;">${badgeText}</span>
+                <div class="vocabulary-card-header">
+                    <span class="vocabulary-card-title">${cleanTitle}</span>
+                    <span class="slide-num-tag">${badgeText}</span>
                 </div>
                 ${subtitleHtml}
                 <div class="vocabulary-items-container">
