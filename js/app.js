@@ -1,36 +1,122 @@
 
 
+// Smart, natural audio player for English vocabulary
 window.playTTS = function(text, event) {
     if (event) event.stopPropagation(); // prevent triggering row click
     
-    // Remove phonetic symbols or html tags if any are left
-    text = text.replace(/<[^>]+>/g, '').replace(/\/[^\/]+\//g, '').trim();
-
-    if (!('speechSynthesis' in window)) {
-        alert("Trình duyệt của bạn không hỗ trợ tính năng đọc từ vựng.");
-        return;
-    }
-    
-    window.speechSynthesis.cancel();
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = 'en-US';
-    
-    const setVoiceAndPlay = () => {
-        const voices = window.speechSynthesis.getVoices();
-        let bestVoice = voices.find(v => v.lang === 'en-US' && (v.name.includes('Google') || v.name.includes('Samantha') || v.name.includes('Microsoft')));
-        if (!bestVoice) bestVoice = voices.find(v => v.lang.startsWith('en-'));
-        if (bestVoice) utterance.voice = bestVoice;
+    // Clean text: strip HTML, phonetic slashes /.../, parenthesized text (...), colons, etc.
+    let cleanText = (text || '')
+        .replace(/<[^>]+>/g, '')
+        .replace(/\/[^\/]+\//g, '')
+        .replace(/\([^)]*\)/g, '')
+        .replace(/[:\-–—\.]/g, ' ')
+        .trim();
         
-        utterance.rate = 0.9;
-        utterance.pitch = 1.0;
-        window.speechSynthesis.speak(utterance);
+    if (!cleanText) return;
+
+    // Helper: speech synthesis with best natural voice
+    const speakWithNaturalTTS = (phrase) => {
+        if (!('speechSynthesis' in window)) return;
+        window.speechSynthesis.cancel();
+        
+        const utterance = new SpeechSynthesisUtterance(phrase);
+        utterance.lang = 'en-US';
+        
+        const applyVoiceAndSpeak = () => {
+            const voices = window.speechSynthesis.getVoices();
+            if (voices && voices.length > 0) {
+                // Score voices by naturalness & human-like quality
+                const scoreVoice = (v) => {
+                    const name = (v.name || '').toLowerCase();
+                    const lang = (v.lang || '').toLowerCase();
+                    let score = 0;
+                    
+                    if (lang === 'en-us') score += 15;
+                    else if (lang.startsWith('en')) score += 5;
+                    
+                    // Prioritize Premium / Enhanced / Natural / Neural voices
+                    if (name.includes('premium')) score += 120;
+                    if (name.includes('enhanced')) score += 100;
+                    if (name.includes('natural')) score += 90;
+                    if (name.includes('neural')) score += 90;
+                    if (name.includes('online')) score += 50;
+                    if (name.includes('siri')) score += 60;
+                    
+                    // Specific modern human-sounding voices
+                    if (name.includes('ava') || name.includes('zoe') || name.includes('evan') || name.includes('nathan')) score += 40;
+                    if (name.includes('google us english') || (name.includes('google') && lang.includes('en'))) score += 35;
+                    if (name.includes('jenny') || name.includes('guy') || name.includes('aria')) score += 35;
+                    if (name.includes('tom') || name.includes('oliver') || name.includes('allison') || name.includes('serena')) score += 25;
+                    
+                    // Deprioritize older robotic synthesizers
+                    if (name === 'samantha' || name === 'samantha (compact)') score -= 40;
+                    if (name.includes('alex')) score -= 25;
+                    if (name.includes('fred') || name.includes('victoria') || name.includes('albert') || name.includes('junior')) score -= 60;
+                    if (name.includes('compact')) score -= 50;
+                    
+                    return score;
+                };
+                
+                const sortedVoices = [...voices].filter(v => v.lang && v.lang.startsWith('en')).sort((a, b) => scoreVoice(b) - scoreVoice(a));
+                if (sortedVoices.length > 0 && scoreVoice(sortedVoices[0]) > -30) {
+                    utterance.voice = sortedVoices[0];
+                }
+            }
+            
+            // Natural human speed and cadence (0.96 natural tempo, 0.9 was robotic)
+            utterance.rate = 0.96;
+            utterance.pitch = 1.0;
+            window.speechSynthesis.speak(utterance);
+        };
+
+        if (window.speechSynthesis.getVoices().length === 0) {
+            window.speechSynthesis.addEventListener('voiceschanged', applyVoiceAndSpeak, { once: true });
+        } else {
+            applyVoiceAndSpeak();
+        }
     };
 
-    if (window.speechSynthesis.getVoices().length === 0) {
-        window.speechSynthesis.onvoiceschanged = setVoiceAndPlay;
-    } else {
-        setVoiceAndPlay();
+    // If single word: try native studio human audio from Google/Oxford dictionary CDN first
+    const words = cleanText.split(/\s+/).filter(Boolean);
+    if (words.length === 1) {
+        const word = words[0].toLowerCase().replace(/[^a-z]/g, '');
+        if (word.length >= 2) {
+            const studioAudioUrl = `https://ssl.gstatic.com/dictionary/static/sounds/20200429/${encodeURIComponent(word)}--_us_1.mp3`;
+            const audio = new Audio();
+            let played = false;
+            
+            audio.oncanplaythrough = function() {
+                if (!played) {
+                    played = true;
+                    audio.play().catch(() => {
+                        speakWithNaturalTTS(cleanText);
+                    });
+                }
+            };
+            
+            audio.onerror = function() {
+                if (!played) {
+                    played = true;
+                    speakWithNaturalTTS(cleanText);
+                }
+            };
+            
+            // Timeout fallback if network is slow
+            setTimeout(() => {
+                if (!played) {
+                    played = true;
+                    speakWithNaturalTTS(cleanText);
+                }
+            }, 800);
+            
+            audio.src = studioAudioUrl;
+            audio.load();
+            return;
+        }
     }
+    
+    // For phrases or compound words: use natural neural TTS
+    speakWithNaturalTTS(cleanText);
 };
 
 window.selectPracticeOption = function(el) {
