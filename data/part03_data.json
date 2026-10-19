@@ -315,7 +315,7 @@
           "D": "Finance"
         },
         "answer": "C",
-        "audio": "media1.mp3",
+        "audio": "part03/media1.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>W: </strong>In <strong><span style=\"color: #FF0000;\">sports</span></strong> news, our own Easton Jaguars won today’s <strong><span style=\"color: #FF0000;\">soccer match</span></strong><strong> </strong>against the Portville Lions. Here to tell us about the game is Aaron Parker, the <strong><span style=\"color: #FF0000;\">goalkeeper</span></strong> for the Jaguars. Mr. Parker, thanks for joining us.",
@@ -332,7 +332,7 @@
           "D": "Clothing"
         },
         "answer": "D",
-        "audio": "media2.mp3",
+        "audio": "part03/media2.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>M: </strong>All right, let&#x27;s start the meeting. <strong><span style=\"color: #FF0000;\">How were our clothing sales for June?</span></strong>",
@@ -351,7 +351,7 @@
           "D": "A project deadline"
         },
         "answer": "B",
-        "audio": "media3.mp3",
+        "audio": "part03/media3.mp3",
         "transcript": [
           "<strong>M:</strong> Hi. Ms. Larson. <strong><span style=\"color: #FF0000;\">Thanks for agreeing to review the budget report that I prepared</span></strong>. I wanted to make sure that I did it correctly since it&#x27;s my first time.",
           "<strong>W:</strong> Yes, Jason, it looked very good overall. The only thing I&#x27;ll need you to do is to add more details to the expenditures list. We like to have every office supply itemized."
@@ -379,7 +379,7 @@
           "D": "Safety ratings"
         },
         "answer": "B",
-        "audio": "media4.mp3",
+        "audio": "part03/media4.mp3",
         "transcript": [
           "<strong>W:</strong> Thank you for agreeing to meet me for this interview. <strong><span style=\"color: #FF0000;\">The readers of Auto World Magazine are eager to hear about your company&#x27;s plans for a new car manufacturing plant</span></strong>.",
           "<strong>M:</strong> Yes, we&#x27;ll be opening a facility in Indonesia soon. We currently have two plants in this country, so we&#x27;re looking forward to expanding our production capabilities overseas."
@@ -407,7 +407,7 @@
           "D": "A misplaced item"
         },
         "answer": "A",
-        "audio": "media5.mp3",
+        "audio": "part03/media5.mp3",
         "transcript": [
           "<strong>W:</strong> Hello, welcome to the Klineston Hotel. How can I help you?",
           "<strong>M:</strong> Hi, I&#x27;m Kris Wattana from Trouville Development Corporation. <strong><span style=\"color: #FF0000;\">I reserved your large meeting room for this afternoon. My colleague and I want to get everything in order before the three o&#x27;clock start time</span></strong>."
@@ -435,7 +435,7 @@
           "D": "A product demonstration"
         },
         "answer": "A",
-        "audio": "media6.mp3",
+        "audio": "part03/media6.mp3",
         "transcript": [
           "<strong>W:</strong> <strong><span style=\"color: #FF0000;\">Hi, </span></strong><strong><span style=\"color: #FF0000;\">Haruto</span></strong><strong><span style=\"color: #FF0000;\">, have you picked the caterer for the shareholders&#x27; meeting?</span></strong><strong> </strong>We want everything to go smoothly.",
           "<strong>M:</strong> I haven&#x27;t decided yet, but I&#x27;ve got quotes from a few local caterers. Our budget&#x27;s pretty tight so I&#x27;m leaning toward Star Restaurant. They have the least expensive lunch service."
@@ -463,7 +463,7 @@
           "D": "A travel policy"
         },
         "answer": "B",
-        "audio": "media7.mp3",
+        "audio": "part03/media7.mp3",
         "transcript": [
           "<strong>W:</strong> <strong><span style=\"color: #FF0000;\">Excuse me, sir, but I think you&#x27;re in my seat, 14-A?</span></strong>",
           "<strong>M:</strong> Let me take a look at my ticket.…hmm, no, it seems I&#x27;m in the right place. My ticket says 14-A as well."
@@ -491,7 +491,7 @@
           "D": "A presentation"
         },
         "answer": "D",
-        "audio": "media8.mp3",
+        "audio": "part03/media8.mp3",
         "transcript": [
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Susan, thanks for watching us practice our presentation about this new marketing campaign</span></strong>.",
           "<strong>W:</strong> Yes, we really appreciate it. Now that we&#x27;ve finished, do you have any comments? We&#x27;re showing it to our client next week, so your feedback will be really helpful."
@@ -519,7 +519,7 @@
           "D": "A business trip"
         },
         "answer": "B",
-        "audio": "media9.mp3",
+        "audio": "part03/media9.mp3",
         "transcript": [
           "<strong>W:</strong> <strong><span style=\"color: #FF0000;\">Takumi, I&#x27;m planning to attend the company health fair on Monday</span></strong>. Would you be interested in going together?",
           "<strong>M:</strong> Oh, I&#x27;m on vacation next week. I did go last year-it was really great. I learned some exercises and stretches that are helpful for office workers like us. I still do them every day."
@@ -547,7 +547,7 @@
           "D": "Business expenses"
         },
         "answer": "C",
-        "audio": "media10.mp3",
+        "audio": "part03/media10.mp3",
         "transcript": [
           "<strong>W:</strong> Good morning, Tushar. <strong><span style=\"color: #FF0000;\">Have you seen the marketing report for our furniture business?</span></strong>",
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Not yet. How do the data look?</span></strong><strong> </strong>Did we get a profile of who&#x27;s shopping at our stores?"
@@ -575,7 +575,7 @@
           "D": "A certification course"
         },
         "answer": "A",
-        "audio": "media11.mp3",
+        "audio": "part03/media11.mp3",
         "transcript": [
           "<strong>W:</strong> Welcome to Shana&#x27;s Gym! Do you have your member card?",
           "<strong>M:</strong> I&#x27;m actually not a member yet. I&#x27;m new to the area, and I&#x27;m trying to decide on a gym to join.",
@@ -607,7 +607,7 @@
           "D": "Practicing a sales presentation"
         },
         "answer": "A",
-        "audio": "media12.mp3",
+        "audio": "part03/media12.mp3",
         "transcript": [
           "<strong>W:</strong> Hi, Roger. <strong><span style=\"color: #FF0000;\">I have a question about my trip to the conference next month</span></strong>.",
           "<strong>M:</strong> Oh, the one in Chicago? Sure, what is it?",
@@ -1303,7 +1303,7 @@
           "D": "At a coffee shop"
         },
         "answer": "D",
-        "audio": "media13.mp3",
+        "audio": "part03/media13.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>M: </strong>Excuse me. My mobile phone is out of power. <strong><span style=\"color: #FF0000;\">Are there any tables here at the café that are near a wall socket, so I can charge my phone while I have some coffee?</span></strong>",
@@ -1320,7 +1320,7 @@
           "D": "At a library"
         },
         "answer": "A",
-        "audio": "media14.mp3",
+        "audio": "part03/media14.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>W:</strong> OK, Mr. Patel. <strong><span style=\"color: #FF0000;\">Did the doctor want you to make another appointment?</span></strong>",
@@ -1340,7 +1340,7 @@
           "D": "Security"
         },
         "answer": "A",
-        "audio": "media15.mp3",
+        "audio": "part03/media15.mp3",
         "transcript": [
           "<strong>W:</strong> Welcome to Metropolitan TV! My name&#x27;s Naomi and I&#x27;m in charge of your new employee orientation here at the television studio. I&#x27;ll show you around and then introduce you to your manager.",
           "<strong>M:</strong> Thanks. I&#x27;m excited to work in the entertainment industry. This is a whole new aspect of accounting for me.",
@@ -1370,7 +1370,7 @@
           "D": "On a train"
         },
         "answer": "D",
-        "audio": "media16.mp3",
+        "audio": "part03/media16.mp3",
         "transcript": [
           "<strong>M:</strong> Wow, look at all these people! <strong><span style=\"color: #FF0000;\">Is this train always so crowded?</span></strong>",
           "<strong>W:</strong> Not usually. The football championship is this afternoon... <strong><span style=\"color: #FF0000;\">Let&#x27;s walk to the back of the train... should be a lot of empty seats there</span></strong>."
@@ -1398,7 +1398,7 @@
           "D": "At a recreation center"
         },
         "answer": "C",
-        "audio": "media17.mp3",
+        "audio": "part03/media17.mp3",
         "transcript": [
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Fatima, do you remember the survey our health clinic sent out last month?</span></strong>",
           "<strong>W:</strong> Oh, yes, the one asking patients to rate their experiences here? What were the results?"
@@ -1426,7 +1426,7 @@
           "D": "In a baggage claim area"
         },
         "answer": "C",
-        "audio": "media18.mp3",
+        "audio": "part03/media18.mp3",
         "transcript": [
           "<strong>W: </strong>Excuse me, sir, but I think you&#x27;re in my seat, 14-A?",
           "<strong>M: </strong>Let me take a look at my ticket……hmm, no, it seems I&#x27;m in the right place. My ticket says 14-A as well.",
@@ -1456,7 +1456,7 @@
           "D": "At a theater"
         },
         "answer": "C",
-        "audio": "media19.mp3",
+        "audio": "part03/media19.mp3",
         "transcript": [
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Jackie, some of our hotel guests would like to see the symphony orchestra perform tomorrow night</span></strong>. I&#x27;ve called the box office a couple of times to book tickets for them, but I just get a recording.",
           "<strong>W: </strong>Well, I&#x27;ve got a brochure about another classical music performance happening tomorrow night at a different venue. Why don&#x27;t you ask our guests if they&#x27;d be interested in seeing that show instead?"
@@ -1484,7 +1484,7 @@
           "D": "At a manufacturing plant"
         },
         "answer": "B",
-        "audio": "media20.mp3",
+        "audio": "part03/media20.mp3",
         "transcript": [
           "<strong>M:</strong> Hey, Sunisa. <strong><span style=\"color: #FF0000;\">We&#x27;re about to leave to cater the event at Kimball Medical Foundation, but there aren&#x27;t enough cups</span></strong>. Do you know where I can find some?",
           "<strong>W:</strong> Oh no. I ordered some from our supplier two days ago, but they still haven&#x27;t delivered them. This isn&#x27;t the first time this has happened.",
@@ -1516,7 +1516,7 @@
           "D": "At a furniture store"
         },
         "answer": "B",
-        "audio": "media21.mp3",
+        "audio": "part03/media21.mp3",
         "transcript": [
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Ms. Chin, Ms. Frankel, I&#x27;m sorry that the gallery hasn&#x27;t been looking very tidy lately</span></strong>. I&#x27;ve been so busy with all the artwork that we&#x27;ve been receiving that I haven&#x27;t had time to focus on cleaning.",
           "<strong>W:</strong> Oh, I know. <strong><span style=\"color: #FF0000;\">The gallery&#x27;s been so busy that it&#x27;s hard to keep up with sweeping and dusting the main display area</span></strong>. Why don&#x27;t we hire a cleaning service?",
@@ -1547,7 +1547,7 @@
           "D": "At a car rental agency"
         },
         "answer": "A",
-        "audio": "media22.mp3",
+        "audio": "part03/media22.mp3",
         "transcript": [
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Excuse me, I&#x27;m ready to check out of the hotel</span></strong>.",
           "<strong>W:</strong> I can help you with that. How was your stay?",
@@ -1579,7 +1579,7 @@
           "D": "At a supermarket"
         },
         "answer": "B",
-        "audio": "media23.mp3",
+        "audio": "part03/media23.mp3",
         "transcript": [
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Hi, welcome to Gold Pyramid Clothing</span></strong>.",
           "<strong>W:</strong> <strong><span style=\"color: #FF0000;\">Hi, I bought a shirt here for my son, but unfortunately, he doesn&#x27;t like the color</span></strong>. What&#x27;s your return policy?",
@@ -1615,7 +1615,7 @@
           "D": "At a restaurant"
         },
         "answer": "C",
-        "audio": "media24.mp3",
+        "audio": "part03/media24.mp3",
         "transcript": [
           "<strong>W: </strong><strong><span style=\"color: #FF0000;\">Hi, Jorge, How&#x27;s preparation coming along for the new sculpture exhibit?</span></strong>",
           "<strong>M:</strong> Well, we&#x27;re a little bit behind actually... <strong><span style=\"color: #FF0000;\">the Museum of Plastic Arts is loaning us several sculptures, but the shipment&#x27;s been delayed</span></strong>.",
@@ -2075,7 +2075,7 @@
           "D": "A truck driver"
         },
         "answer": "A",
-        "audio": "media25.mp3",
+        "audio": "part03/media25.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>W: </strong>Hi, if you&#x27;re ready to <span style=\"color: #FF0000;\">check out</span>, I can help you at <span style=\"color: #FF0000;\">register</span> two.",
@@ -2092,7 +2092,7 @@
           "D": "A costume designer"
         },
         "answer": "B",
-        "audio": "media26.mp3",
+        "audio": "part03/media26.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>M</strong>: Ms. Batra, how does the <span style=\"color: #FF0000;\">stage</span> look to you? Is the <span style=\"color: #FF0000;\">piano</span> in the right place?",
@@ -2109,7 +2109,7 @@
           "D": "An accountant"
         },
         "answer": "D",
-        "audio": "media27.mp3",
+        "audio": "part03/media27.mp3",
         "title": "Ví dụ 3",
         "transcript": [
           "<strong>W</strong>: Hi Juan, welcome to your first day at TKZ <span style=\"color: #FF0000;\">Accounting</span>. I&#x27;m Kate, from the training division of <span style=\"color: #FF0000;\">Human Resources</span>.",
@@ -2128,7 +2128,7 @@
           "D": "A plant supervisor"
         },
         "answer": "A",
-        "audio": "media28.mp3",
+        "audio": "part03/media28.mp3",
         "transcript": [
           "<strong>W</strong>: <span style=\"color: #FF0000;\">Thank you for agreeing to meet me for this interview</span>. The readers of Auto World Magazine are eager to hear about your company&#x27;s plans for a new car manufacturing plant.",
           "<strong>M</strong>: Yes, we&#x27;ll be opening a facility in Indonesia soon. We currently have two plants in this country, so we&#x27;re looking forward to expanding our production capabilities overseas."
@@ -2156,7 +2156,7 @@
           "D": "Restaurant staff"
         },
         "answer": "D",
-        "audio": "media29.mp3",
+        "audio": "part03/media29.mp3",
         "transcript": [
           "<strong>M</strong>: <span style=\"color: #FF0000;\">I think the restaurant&#x27;s going to get some nice publicity by being in the community festival this weekend</span>. It&#x27;ll be a great way to get customers interested in our food.",
           "<strong>W</strong>: It&#x27;s definitely good advertising. Aren&#x27;t you working the first day of the festival?"
@@ -2184,7 +2184,7 @@
           "D": "Doctor"
         },
         "answer": "B",
-        "audio": "media30.mp3",
+        "audio": "part03/media30.mp3",
         "transcript": [
           "<strong>W</strong>: <span style=\"color: #FF0000;\">Hi, Mr. Lin, I&#x27;m calling from Central Dentistry. You have an appointment with Dr. Sumner on June eighth at two P.M</span>. I was wondering if we&#x27;d be able to move your appointment to three o&#x27;clock.",
           "<strong>M</strong>: Well, I have a sales call scheduled that morning, but I think three o&#x27;clock would be all right."
@@ -2212,7 +2212,7 @@
           "D": "A customer service representative"
         },
         "answer": "D",
-        "audio": "media31.mp3",
+        "audio": "part03/media31.mp3",
         "transcript": [
           "<strong>M</strong>: <span style=\"color: #FF0000;\">Crocker Sporting Goods, how may I help you</span>?",
           "<strong>W</strong>: <span style=\"color: #FF0000;\">Hello, I have to change the delivery address of a package I ordered from your Web site</span>. It&#x27;s being sent to my new home in Chicago, but my move-in date got delayed, so I won&#x27;t be there. Can my package be sent to my current address instead?"
@@ -2240,7 +2240,7 @@
           "D": "A product designer"
         },
         "answer": "B",
-        "audio": "media32.mp3",
+        "audio": "part03/media32.mp3",
         "transcript": [
           "<strong>W</strong>: <span style=\"color: #FF0000;\">Welcome to Woodford Electronics! How may I help you?</span>",
           "<strong>M</strong>: <span style=\"color: #FF0000;\">Well, I purchased this digital camera yesterday from your store</span> - but when I try to preview the photos I&#x27;ve taken, an error code displays on the screen."
@@ -2268,7 +2268,7 @@
           "D": "Parking attendant"
         },
         "answer": "B",
-        "audio": "media33.mp3",
+        "audio": "part03/media33.mp3",
         "transcript": [
           "<strong>W</strong>: <span style=\"color: #FF0000;\">Good afternoon, I&#x27;m from Star Locksmiths</span>. I&#x27;m here about a door that isn&#x27;t locking properly.",
           "<strong>M</strong>: Thank you for coming so quickly. It&#x27;s a major security concern that one of our doors doesn&#x27;t lock."
@@ -2296,7 +2296,7 @@
           "D": "A city official"
         },
         "answer": "C",
-        "audio": "media34.mp3",
+        "audio": "part03/media34.mp3",
         "transcript": [
           "<strong>W</strong>: <span style=\"color: #FF0000;\">Hi, I&#x27;m Rebecca from Howard Property Management</span>. I&#x27;m glad both of you could make it today. Let me show you around the office space available for lease here.",
           "<strong>M</strong>: Wow, this office is really nice. What do you think, Brian?"
@@ -2324,7 +2324,7 @@
           "D": "A theater owner"
         },
         "answer": "A",
-        "audio": "media35.mp3",
+        "audio": "part03/media35.mp3",
         "transcript": [
           "<strong>M</strong>: <span style=\"color: #FF0000;\">Deborah, I want to introduce Ken Jacobs. He&#x27;s the architect who&#x27;ll be doing the remodeling plans for the restaurant</span>.",
           "<strong>W</strong>: Oh, nice to meet you, Mr. Jacobs. We&#x27;re excited about the remodeling. One of our main priorities is to increase our seating capacity."
@@ -2352,7 +2352,7 @@
           "D": "Lawyer"
         },
         "answer": "C",
-        "audio": "media36.mp3",
+        "audio": "part03/media36.mp3",
         "transcript": [
           "<strong>W</strong>: <span style=\"color: #FF0000;\">Hi. This is Thalia Rosen from Transport Today Magazine. I&#x27;m calling about the article I&#x27;m working on</span>. Can I speak with Jorgen Schmidt, please?",
           "<strong>M</strong>: This is Jorgen. It&#x27;s nice to hear from you again. Did you enjoy the tour of our assembly plant last week?"
@@ -2380,7 +2380,7 @@
           "D": "An apartment manager"
         },
         "answer": "D",
-        "audio": "media37.mp3",
+        "audio": "part03/media37.mp3",
         "transcript": [
           "<strong>W</strong>: Mr. Potter? My name is Aki Kimura. <span style=\"color: #FF0000;\">I manage the Pine Street Apartments, and I&#x27;m calling to see whether you&#x27;ve made a decision about renting the unit I showed you last week</span>.",
           "<strong>M</strong>: Actually, I&#x27;m still thinking about it. I really like the updated kitchen -plus, it&#x27;s close to my work. But the apartment isn&#x27;t very big. I have a lot of furniture, and I don&#x27;t think all of it will fit in that apartment."
@@ -2445,7 +2445,7 @@
           "D": "A location is inconvenient."
         },
         "answer": "C",
-        "audio": "media38.mp3",
+        "audio": "part03/media38.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>W</strong>: Mr. Potter? My name is Aki Kimura. I manage the Pine Street Apartments, and I&#x27;m calling to see whether you&#x27;ve made a decision about renting the unit I showed you last week?",
@@ -2462,7 +2462,7 @@
           "D": "An employee is absent."
         },
         "answer": "A",
-        "audio": "media39.mp3",
+        "audio": "part03/media39.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>W</strong>: Hi, Makoto. Sorry to bother you, but <span style=\"color: #FF0000;\">where</span> will our department <span style=\"color: #FF0000;\">meeting</span> be this afternoon?",
@@ -2480,7 +2480,7 @@
           "D": "A meeting room is too small."
         },
         "answer": "B",
-        "audio": "media40.mp3",
+        "audio": "part03/media40.mp3",
         "title": "Ví dụ 3",
         "transcript": [
           "<strong>M</strong>: Eun-Mi, the new employees will be here in just a few minutes. Is everything set up for their training?",
@@ -2499,7 +2499,7 @@
           "D": "The size of a budget"
         },
         "answer": "A",
-        "audio": "media41.mp3",
+        "audio": "part03/media41.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, I&#x27;m Rebecca from Howard Property Management. I&#x27;m glad both of you could make it today. Let me show you around the office space available for lease here.",
           "<strong>M</strong>: Wow, this office is really nice. What do you think, Brian?",
@@ -2529,7 +2529,7 @@
           "D": "A computer is not working."
         },
         "answer": "B",
-        "audio": "media42.mp3",
+        "audio": "part03/media42.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, Jorge. How&#x27;s preparation coming along for the new sculpture exhibit?",
           "<strong>M</strong>: Well, we&#x27;re a little bit behind actually ... <span style=\"color: #FF0000;\">the Museum of Plastic Arts is loaning us several sculptures, but the shipment&#x27;s been delayed</span>."
@@ -2557,7 +2557,7 @@
           "D": "Some designs were rejected."
         },
         "answer": "D",
-        "audio": "media43.mp3",
+        "audio": "part03/media43.mp3",
         "transcript": [
           "<strong>M</strong>: Hi, Leticia. I wanted to update you about the discussion I had yesterday with our legal team about the company merger.",
           "<strong>W</strong>: OK. I heard we&#x27;re still on track to complete the merger by the end of the year.",
@@ -2587,7 +2587,7 @@
           "D": "A battery is not charging."
         },
         "answer": "B",
-        "audio": "media44.mp3",
+        "audio": "part03/media44.mp3",
         "transcript": [
           "<strong>M</strong>: Good morning, everyone, I&#x27;ve scheduled this conference call to discuss the advertising campaign we&#x27;re developing for Denson Hotels-more specifically, the television commercial. Holly will be sharing some preliminary ideas for that. And Carter is joining us by video call from our Tokyo office. Carter, are you there?",
           "<strong>M</strong>: Hello. Yes, I&#x27;m here.",
@@ -2620,7 +2620,7 @@
           "D": "Some materials are missing."
         },
         "answer": "A",
-        "audio": "media45.mp3",
+        "audio": "part03/media45.mp3",
         "transcript": [
           "<strong>M</strong>: Ms. Chin, Ms. Frankel, <span style=\"color: #FF0000;\">I</span><span style=\"color: #FF0000;\">&#x27;m sorry that the gallery hasn&#x27;t been looking very tidy lately</span>. I&#x27;ve been so busy with all the artwork that we&#x27;ve been receiving that <span style=\"color: #FF0000;\">I haven&#x27;t had time to focus on cleaning</span>.",
           "<strong>W</strong>: Oh, I know. <span style=\"color: #FF0000;\">The gallery&#x27;s been so busy that it&#x27;s hard to keep up with sweeping and dusting the main display area</span>."
@@ -2648,7 +2648,7 @@
           "D": "Some interns are unavailable"
         },
         "answer": "A",
-        "audio": "media46.mp3",
+        "audio": "part03/media46.mp3",
         "transcript": [
           "<strong>W</strong>: Hello Jun-Young, this is Sandra. I wanted to let you know that although I have the raw numbers needed to generate the quarterly sales reports, I&#x27;m having a problem with the software program.",
           "<strong>M</strong>: What&#x27;s the problem? We&#x27;d like to receive those reports here in Accounting by this afternoon.",
@@ -2678,7 +2678,7 @@
           "D": "Satisfying a technical requirement"
         },
         "answer": "B",
-        "audio": "media47.mp3",
+        "audio": "part03/media47.mp3",
         "transcript": [
           "<strong>M</strong>: Hi, Sunisa. I just finished the final cut of the TV commercial we produced for the Denton Company. Do you have time to take a look at it? I&#x27;d love to know what you think.",
           "<strong>W</strong>: To be honest, TV ads aren&#x27;t really my specialty. Now...I know he&#x27;s only been at our company for a few months, but Rashid has worked in television for years. And I think he&#x27;s in his office right now.",
@@ -2708,7 +2708,7 @@
           "D": "Where a room will be located"
         },
         "answer": "D",
-        "audio": "media48.mp3",
+        "audio": "part03/media48.mp3",
         "transcript": [
           "<strong>W</strong>: Mehdi, I&#x27;ve been working on the design for the new library. I put the floor plans on your desk this morning. Did you have a chance to look at them?",
           "<strong>M</strong>: Yes, I like what you did, but there&#x27;s one problem. <span style=\"color: #FF0000;\">In your plan, the computer lab is located on the second floor, and I thought it was supposed to be on the first floor next to the elevator</span>."
@@ -2736,7 +2736,7 @@
           "D": "Missing a call"
         },
         "answer": "B",
-        "audio": "media49.mp3",
+        "audio": "part03/media49.mp3",
         "transcript": [
           "<strong>M</strong>: Hey Sue. Hector and I are going to lunch at Antonio&#x27;s Restaurant. Would you like to join us?",
           "<strong>W</strong>: A few others from the office are coming as well. It&#x27;ll be a good chance for you to socialize with your new colleagues.",
@@ -2765,7 +2765,7 @@
           "D": "A water pipe is leaking."
         },
         "answer": "C",
-        "audio": "media50.mp3",
+        "audio": "part03/media50.mp3",
         "transcript": [
           "<strong>W</strong>: Thanks for this follow-up visit, Mr. Kessler. Your team did a nice job installing the parking area for my office building. It&#x27;s smooth and even. However, as you can see, behind the building, the work was never finished. Only a few of the white stripes that mark the individual parking spots have been painted.",
           "<strong>M</strong>: Hmm...Yes, I see. <span style=\"color: #FF0000;\">My team was supposed to paint that final section on Tuesday, but all the rain last week put us behind schedule</span>."
@@ -2834,7 +2834,7 @@
           "D": "To apply for a position"
         },
         "answer": "C",
-        "audio": "media51.mp3",
+        "audio": "part03/media51.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>M</strong>: Thanks for calling Riverside Auto Repair, How can I help you?",
@@ -2851,7 +2851,7 @@
           "D": "He has a project deadline."
         },
         "answer": "A",
-        "audio": "media52.mp3",
+        "audio": "part03/media52.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>W</strong>: Pablo, I heard about your promotion. That&#x27;s great news! When do you start your new position?",
@@ -2870,7 +2870,7 @@
           "D": "He has to practice a presentation."
         },
         "answer": "C",
-        "audio": "media53.mp3",
+        "audio": "part03/media53.mp3",
         "transcript": [
           "<strong>M</strong>: Hi Monica, I just wanted to let you know I&#x27;m about to leave for the trade show.",
           "<strong>W</strong>: Sounds good. I&#x27;ll help you load the product samples into your car.",
@@ -2902,7 +2902,7 @@
           "D": "She was waiting for an assistant."
         },
         "answer": "C",
-        "audio": "media54.mp3",
+        "audio": "part03/media54.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, I&#x27;m the technician from Tilson&#x27;s Electrical Service. Sorry I&#x27;m late. <span style=\"color: #FF0000;\">I couldn&#x27;t find a parking space nearby, so I had to park my car several blocks from here</span>. Are you the owner of the business?",
           "<strong>M</strong>: Yes. I hope you didn&#x27;t walk too far. So... I called you because the lights in this room aren&#x27;t functioning. The lights should turn on automatically when people walk into the room."
@@ -2930,7 +2930,7 @@
           "D": "He wants to tour a fitness center."
         },
         "answer": "B",
-        "audio": "media55.mp3",
+        "audio": "part03/media55.mp3",
         "transcript": [
           "<strong>M</strong>: Hello. I&#x27;m calling about becoming a member of your fitness center. I&#x27;m a flight attendant, and I&#x27;ve just started working a route to and from this city.",
           "<strong>W</strong>: So you don&#x27;t live in this city?",
@@ -2964,7 +2964,7 @@
           "D": "To buy some merchandise"
         },
         "answer": "D",
-        "audio": "media56.mp3",
+        "audio": "part03/media56.mp3",
         "transcript": [
           "<strong>W</strong>: Welcome to Granger Furniture. How can I help you?",
           "<strong>M</strong>: <span style=\"color: #FF0000;\">I&#x27;m looking for an adjustable desk</span>. I want one that I can either stand at or sit at. Do you carry those?"
@@ -2992,7 +2992,7 @@
           "D": "She forgot to file a report."
         },
         "answer": "B",
-        "audio": "media57.mp3",
+        "audio": "part03/media57.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, Roberto, <span style=\"color: #FF0000;\">I&#x27;m sorry I&#x27;m late. I got stuck in heavy traffic</span>. How&#x27;s everything going here at the reception desk?",
           "<strong>M</strong>: Fine. Most of the hotel guests have already checked out. By the way, the maintenance workers came by. I gave them today&#x27;s list of maintenance tasks."
@@ -3020,7 +3020,7 @@
           "D": "A delivery is delayed"
         },
         "answer": "D",
-        "audio": "media58.mp3",
+        "audio": "part03/media58.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, this is Megumi Sato. I&#x27;m waiting for a delivery of windows that I purchased from your company. They were supposed to be here at nine o&#x27;clock. I&#x27;m at the house that&#x27;s under construction on Tulane Road.",
           "<strong>M</strong>: Yes, Ms. Sato, <span style=\"color: #FF0000;\">I&#x27;m sorry, but the truck that&#x27;s delivering the windows got stuck in the mud at a different work site</span>. It doesn&#x27;t look like we&#x27;ll make it out to your house today. We can be there first thing tomorrow morning."
@@ -3048,7 +3048,7 @@
           "D": "To confirm a management decision"
         },
         "answer": "C",
-        "audio": "media59.mp3",
+        "audio": "part03/media59.mp3",
         "transcript": [
           "<strong>W</strong>: Good morning, this is Human Resources. How can I help you?",
           "<strong>M</strong>: Hi, this is Shinji Ito. I&#x27;m a delivery truck driver in the Shipping Department. <span style=\"color: #FF0000;\">I have some questions about our company&#x27;s retirement program</span>."
@@ -3076,7 +3076,7 @@
           "D": "To update an order"
         },
         "answer": "D",
-        "audio": "media60.mp3",
+        "audio": "part03/media60.mp3",
         "transcript": [
           "<strong>W</strong>: Oh, Jason - the people at table two asked for an order of French fries. They said they forgot to tell you when you took their order.",
           "<strong>M</strong>: Is that a small or large order of fries?",
@@ -3108,7 +3108,7 @@
           "D": "The pay was low."
         },
         "answer": "B",
-        "audio": "media61.mp3",
+        "audio": "part03/media61.mp3",
         "transcript": [
           "<strong>M</strong>: Hello. I&#x27;m Ron Wells, the hiring manager here at Douglas Fashions. Thank you for coming in to interview for the sales associate position.",
           "<strong>W</strong>: Of course. I&#x27;m excited about the possibility of working here. This is my favorite clothing shop.",
@@ -3140,7 +3140,7 @@
           "D": "To look at some real estate"
         },
         "answer": "B",
-        "audio": "media62.mp3",
+        "audio": "part03/media62.mp3",
         "transcript": [
           "<strong>W</strong>: Excuse me. <span style=\"color: #FF0000;\">I don&#x27;t live in the city, but I&#x27;m here for a conference</span>. Can you tell me which bus goes to the conference center at forty-first and Stockton Street?",
           "<strong>M</strong>: That&#x27;s the number eight bus. The conference center is just two stops down."
@@ -3198,7 +3198,7 @@
           "D": "Some dates"
         },
         "answer": "A",
-        "audio": "media63.mp3",
+        "audio": "part03/media63.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>W</strong>: Hello, Dan, You&#x27;ve been <span style=\"color: #FF0000;\">training</span> with us for a couple of months now--as your mentor, I&#x27;d like to <span style=\"color: #FF0000;\">hear</span> how your apprenticeship&#x27;s been going.",
@@ -3215,7 +3215,7 @@
           "D": "A sample document"
         },
         "answer": "D",
-        "audio": "media64.mp3",
+        "audio": "part03/media64.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>M</strong>: Hi, Ms. Larson. Thanks for agreeing to review the <span style=\"color: #FF0000;\">budget report</span> that I prepared. I wanted to make sure that I did it correctly since it&#x27;s my first time.",
@@ -3235,7 +3235,7 @@
           "D": "Arranging a teleconference"
         },
         "answer": "C",
-        "audio": "media65.mp3",
+        "audio": "part03/media65.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, Bob, I received your e-mail about the software training at two P.M. this Friday. But I have to meet with the marketing director of J. Alderman and Sons at that time.",
           "<strong>M</strong>: Oh, I&#x27;m sorry; I completely forgot that you had a client meeting. How long do you think it’ll take?",
@@ -3265,7 +3265,7 @@
           "D": "Accept a new position"
         },
         "answer": "D",
-        "audio": "media66.mp3",
+        "audio": "part03/media66.mp3",
         "transcript": [
           "<strong>W</strong>: To sum up, Jamal, you&#x27;ve had another very good year here with us. You&#x27;re a valuable member of the team, which is why you consistently receive outstanding performance reviews from other staff members.",
           "<strong>M</strong>: I&#x27;ve certainly enjoyed the opportunities that I&#x27;ve had while working here.",
@@ -3295,7 +3295,7 @@
           "D": "Reduce a price"
         },
         "answer": "B",
-        "audio": "media67.mp3",
+        "audio": "part03/media67.mp3",
         "transcript": [
           "<strong>M</strong>: Excuse me. I&#x27;m looking for a video camera. <span style=\"color: #FF0000;\">I&#x27;ve never bought one before, and I&#x27;m wondering if you could make some suggestions</span>.",
           "<strong>W</strong>: Sure. It&#x27;ll help, though, to know what your specific needs are and how much you&#x27;d like to spend."
@@ -3355,7 +3355,7 @@
           "D": "Sign up for a membership"
         },
         "answer": "D",
-        "audio": "media68.mp3",
+        "audio": "part03/media68.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>M</strong>: Hello. Welcome to Baldwin Fitness Club.",
@@ -3374,7 +3374,7 @@
           "D": "Looking for a coupon"
         },
         "answer": "C",
-        "audio": "media69.mp3",
+        "audio": "part03/media69.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>M</strong>: I&#x27;d like to book two tickets for tonight&#x27;s city bus tour.",
@@ -3397,7 +3397,7 @@
           "D": "Go to the library"
         },
         "answer": "D",
-        "audio": "media70.mp3",
+        "audio": "part03/media70.mp3",
         "transcript": [
           "<strong>M</strong>: Excuse me. My mobile phone is out of power. Are there any tables here at the café that are near a wall socket, so I can charge my phone while I have some coffee?",
           "<strong>W</strong>: Well, we only have a few outlets. And it looks like all the tables near them are occupied. I&#x27;m sorry about that.",
@@ -3429,7 +3429,7 @@
           "D": "Updating contact information"
         },
         "answer": "C",
-        "audio": "media71.mp3",
+        "audio": "part03/media71.mp3",
         "transcript": [
           "<strong>W</strong>: Hello. I&#x27;m calling about my subscription to TV Trivia Magazine. I moved a few months ago, and I called to give you my new address at that time. But I&#x27;ve only received one issue since then. I&#x27;m wondering what the problem is. The name is Fernandez.",
           "<strong>M</strong>: OK, let me check ... Oh yes, I see. <span style=\"color: #FF0000;\">Your subscription expired last month. Why don&#x27;t you sign up for our online version of the magazine?</span> We&#x27;re running a promotional sale for 20 percent off digital subscriptions right now."
@@ -3457,7 +3457,7 @@
           "D": "Submitting some travel receipts"
         },
         "answer": "A",
-        "audio": "media72.mp3",
+        "audio": "part03/media72.mp3",
         "transcript": [
           "<strong>W</strong>: Hey Ben, will you be attending the regional directors&#x27; meeting in Paris next Monday?",
           "<strong>M</strong>: Yes, I will. You too?",
@@ -3516,7 +3516,7 @@
           "D": "A doctor will begin a medical procedure."
         },
         "answer": "C",
-        "audio": "media73.mp3",
+        "audio": "part03/media73.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>M</strong>: Mary? I&#x27;m working on the bill for one of Dr. Singh&#x27;s patients, and I keep getting an error message for the code I&#x27;m using.",
@@ -3539,7 +3539,7 @@
           "D": "Update some equipment"
         },
         "answer": "B",
-        "audio": "media74.mp3",
+        "audio": "part03/media74.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>W</strong>: Pedro, there&#x27;s a lot of interest in our new line of women&#x27;s dresses planned for the spring. It looks like there will be a lot of <span style=\"color: #FF0000;\">demand</span>, so we&#x27;d better <span style=\"color: #FF0000;\">increase</span> production to be sure we have a supply of all garment sizes.",
@@ -3558,7 +3558,7 @@
           "D": "Conduct some background research"
         },
         "answer": "A",
-        "audio": "media75.mp3",
+        "audio": "part03/media75.mp3",
         "transcript": [
           "<strong>M</strong>: Ms. Batra, how does the stage look to you? Is the piano in the right place?",
           "<strong>W</strong>: The stage arrangement is fine. But can we make sure that there&#x27;ll be enough background lighting? I want all the members of my band to be visible.",
@@ -3590,7 +3590,7 @@
           "D": "A canceled flight"
         },
         "answer": "C",
-        "audio": "media76.mp3",
+        "audio": "part03/media76.mp3",
         "transcript": [
           "<strong>M</strong>: Mina, I was thinking about our travel plans for the industry conference we&#x27;re going to in Boston. It&#x27;s only two weeks away.",
           "<strong>W</strong>: Well, the three of us are all taking the same flight, so maybe we could ride together from the office to the airport. <span style=\"color: #FF0000;\">But, we&#x27;ll be gone for several days, so the cost of parking would really add up</span>."
@@ -3618,7 +3618,7 @@
           "D": "An interview"
         },
         "answer": "B",
-        "audio": "media77.mp3",
+        "audio": "part03/media77.mp3",
         "transcript": [
           "<strong>M</strong>: Hi, Ms. Chen. I&#x27;m calling from Industry Ovens Incorporated. I apologize, but the oven you had ordered was accidentally left off of this morning&#x27;s delivery schedule. We caught the oversight after the trucks had departed on their routes.",
           "<strong>W</strong>: This is not good news. <span style=\"color: #FF0000;\">Two days from now, on Friday, my bakery&#x27;s going to be visited by a safety inspector</span>. The new oven must be installed in time."
@@ -3675,7 +3675,7 @@
           "D": "A company policy"
         },
         "answer": "D",
-        "audio": "media78.mp3",
+        "audio": "part03/media78.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>M</strong>: Thanks for calling Riverside Auto Repair, How can I help you?",
@@ -3694,7 +3694,7 @@
           "D": "New employees were hired."
         },
         "answer": "D",
-        "audio": "media79.mp3",
+        "audio": "part03/media79.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>W</strong>: Hi Paul, I know we were planning to work at the trade show together next week, but something has come up. Do you think you could find someone else to go in my place?",
@@ -3714,7 +3714,7 @@
           "D": "A document was lost."
         },
         "answer": "C",
-        "audio": "media80.mp3",
+        "audio": "part03/media80.mp3",
         "transcript": [
           "<strong>M</strong>: Hi, Siba. Do you need help taking those files up to our office? It looks like you have your hands full.",
           "<strong>W</strong>: If you don&#x27;t mind, that&#x27;d be great. <span style=\"color: #FF0000;\">The elevator is still out of order, so we&#x27;ll have to use the stairs</span>.",
@@ -3744,7 +3744,7 @@
           "D": "Inexperienced workers"
         },
         "answer": "B",
-        "audio": "media81.mp3",
+        "audio": "part03/media81.mp3",
         "transcript": [
           "<strong>W</strong>: Thanks for this follow-up visit, Mr. Kessler. Your team did a nice job installing the parking area for my office building. It&#x27;s smooth and even. However, as you can see, behind the building, the work was never finished. Only a few of the white stripes that mark the individual parking spots have been painted.",
           "<strong>M</strong>: Hmm.…Yes, I see. <span style=\"color: #FF0000;\">My team was supposed to paint that final section on Tuesday, but all the rain last week put us behind schedule</span>.",
@@ -3773,7 +3773,7 @@
           "D": "An anniversary party"
         },
         "answer": "B",
-        "audio": "media82.mp3",
+        "audio": "part03/media82.mp3",
         "transcript": [
           "<strong>W</strong>: <span style=\"color: #FF0000;\">Hi Richard, I just saw the catering order for Satoshi Kato&#x27;s retirement party next week</span>.",
           "<strong>M</strong>: Yeah, the restaurant said they&#x27;d deliver the food around 11:45. That should give us plenty of time to set up for lunch."
@@ -3829,7 +3829,7 @@
           "D": "Rearrange a display"
         },
         "answer": "A",
-        "audio": "media83.mp3",
+        "audio": "part03/media83.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>M</strong>: Evelyn, I know you just started working at Star Botanical Gardens. Have you given any tours of the grounds yet?",
@@ -3848,7 +3848,7 @@
           "D": "Draft a travel itinerary"
         },
         "answer": "A",
-        "audio": "media84.mp3",
+        "audio": "part03/media84.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>W</strong>: Hi Paul, I know we were planning to work at the trade show together next week, but something has come up. Do you think you could find someone else to go in my place?",
@@ -3869,7 +3869,7 @@
           "D": "Go to a store"
         },
         "answer": "D",
-        "audio": "media85.mp3",
+        "audio": "part03/media85.mp3",
         "transcript": [
           "<strong>M</strong>: Hey, Sunisa. We&#x27;re about to leave to cater the event at Kimball Medical Foundation, but there aren&#x27;t enough cups. Do you know where I can find some?",
           "<strong>W</strong>: Oh no. I ordered some from our supplier two days ago, but they still haven&#x27;t delivered them. This isn&#x27;t the first time this has happened.",
@@ -3899,7 +3899,7 @@
           "D": "Review a policy"
         },
         "answer": "B",
-        "audio": "media86.mp3",
+        "audio": "part03/media86.mp3",
         "transcript": [
           "<strong>M</strong>: Hi, Nadia, our department manager mentioned you&#x27;re training our new hires.",
           "<strong>W</strong>: Yeah, I still have a lot to do, and the training starts Monday. I&#x27;ve been so busy updating the training documents, I haven&#x27;t had time to do anything else.",
@@ -3931,7 +3931,7 @@
           "D": "Check some specifications"
         },
         "answer": "B",
-        "audio": "media87.mp3",
+        "audio": "part03/media87.mp3",
         "transcript": [
           "<strong>M</strong>: Good afternoon, Vs. Dembo. I have some concerns-can I show you the report on our pasta production this week?",
           "<strong>W</strong>: Sure. What&#x27;s the problem exactly?",
@@ -3992,7 +3992,7 @@
           "D": "To complain about traffic noise"
         },
         "answer": "A",
-        "audio": "media88.mp3",
+        "audio": "part03/media88.mp3",
         "title": "Ví dụ 1",
         "transcript": [
           "<strong>M</strong>: Good morning, you&#x27;ve reached Taylor Dental. How can I help you?",
@@ -4014,7 +4014,7 @@
           "D": "To express surprise at a decision"
         },
         "answer": "C",
-        "audio": "media89.mp3",
+        "audio": "part03/media89.mp3",
         "title": "Ví dụ 2",
         "transcript": [
           "<strong>M</strong>: Hi, this is Takumi from Color Printing Solutions. I e-mailed you the mock-up of your company&#x27;s flyer this morning. Have you had time to review it?",
@@ -4034,7 +4034,7 @@
           "D": "He is excited about teaching a new course."
         },
         "answer": "A",
-        "audio": "media90.mp3",
+        "audio": "part03/media90.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, Jin-Sung. Oh, I was wondering...have you noticed how cold it&#x27;s been here in the coffee shop lately?",
           "<strong>M</strong>: Actually, yes. I wonder if it&#x27;s because the side door hasn&#x27;t been closing properly- that door should close automatically. Maybe a hinge is broken or needs to be adjusted",
@@ -4066,7 +4066,7 @@
           "D": "A manager will change a timeline."
         },
         "answer": "A",
-        "audio": "media91.mp3",
+        "audio": "part03/media91.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, Charlie. This is Cora from Thomasville Marketing. <span style=\"color: #FF0000;\">We&#x27;re impressed with your qualifications, and we&#x27;d like to offer you the position at our Chicago office</span>.",
           "<strong>M</strong>: Thank you. That&#x27;s exciting news. Moving to Chicago would be a big decision for me, though, so I&#x27;ll need to think about it.",
@@ -4098,7 +4098,7 @@
           "D": "She does not need directions to a location."
         },
         "answer": "C",
-        "audio": "media92.mp3",
+        "audio": "part03/media92.mp3",
         "transcript": [
           "<strong>W</strong>: outing for the staff, we&#x27;d better get started. It&#x27;s only a few months away!",
           "<strong>M</strong>: Right. But <span style=\"color: #FF0000;\">we could just follow the plans from previous years. Everyone had a lot of fun on those hikes in the mountains</span>.",
@@ -4141,7 +4141,7 @@
           "D": "June"
         },
         "answer": "C",
-        "audio": "media105.mp3",
+        "audio": "part03/media105.mp3",
         "transcript": [
           "<strong>M</strong>: Michelle, (1) thanks for agreeing to lead this afternoon's meeting with me. One topic I think we should discuss with the staff is factory productivity. We haven't met our quotas for lightbulbs for a few months.",
           "<strong>W</strong>: I know. Productivity hasn't been stable recently. (2) We had a month of strong production, but the next month was the lowest we've had in a year!",
@@ -4174,7 +4174,7 @@
           "D": "At Aruna&#x27;s Indian Buffet"
         },
         "answer": "D",
-        "audio": "media106.mp3",
+        "audio": "part03/media106.mp3",
         "transcript": [
           "<strong>M</strong>: The workshop starts in an hour, so we'd better get lunch now if we want to get back in time.",
           "<strong>W</strong>: Well, I found some dining options for the area in this guidebook. Korean food is my favorite, but I think Main Street is a bit far from here.",
@@ -4208,7 +4208,7 @@
           "D": "27E"
         },
         "answer": "B",
-        "audio": "media121.mp3",
+        "audio": "part03/media121.mp3",
         "transcript": [
           "<strong>M</strong>: Ms. Parker, (1) would you still like me to book a flight for you to Hawaii?",
           "<strong>W</strong>: Yes, I would. (1) The new branch office there is finally opening, and I want to be there for the first week to make sure everything goes smoothly.",
@@ -4244,7 +4244,7 @@
           "D": "To Las Vegas"
         },
         "answer": "A",
-        "audio": "media122.mp3",
+        "audio": "part03/media122.mp3",
         "transcript": [
           "<strong>W</strong>: Hi, José. It's Lea. (1) Are you at the airport yet? I'm still about fifteen minutes away. The traffic is terrible. I'm worried that I'll miss the flight-and the next one's not until tomorrow.",
           "<strong>M</strong>: Don't worry. I just got here and saw that (2) our flight's been delayed an hour. I'm sure you'll make it.",
@@ -4274,7 +4274,7 @@
           "D": "C-94"
         },
         "answer": "D",
-        "audio": "media124.mp3",
+        "audio": "part03/media124.mp3",
         "transcript": [
           "<strong>W</strong>: Hello. (1) I'd like to exchange these headphones for a different pair. I purchased them yesterday, but when I tried them on at home, I just didn't like them.",
           "<strong>M</strong>: Sure, I can help you with that. Tell me more about what you're looking for so I can recommend a different pair.",
@@ -4307,7 +4307,7 @@
           "D": "The T-shirt"
         },
         "answer": "C",
-        "audio": "media128.mp3",
+        "audio": "part03/media128.mp3",
         "transcript": [
           "<strong>M</strong>: Excuse me. I was here in your store yesterday, and (1) I need to return this item.",
           "<strong>W</strong>: OK. Are there any problems with it?",
@@ -4344,7 +4344,7 @@
           "D": "To Building 4"
         },
         "answer": "D",
-        "audio": "media129.mp3",
+        "audio": "part03/media129.mp3",
         "transcript": [
           "<strong>M</strong>: Joe's Pizza House. What would you like to order?",
           "<strong>W</strong>: Hi, Joe. It's Vanessa. I'm on Mill Street by the bus stop right now. (1) I'm almost finished delivering the food orders. (2) But this last one doesn't have an address on it.",
@@ -4380,7 +4380,7 @@
           "D": "She is a member."
         },
         "answer": "A",
-        "audio": "media137.mp3",
+        "audio": "part03/media137.mp3",
         "transcript": [
           "<strong>M</strong>: Good morning, (1) welcome to the Grafton Art Museum. How can I help you?",
           "<strong>W</strong>: I'll take one regular ticket, please. I'm here in the city on a business trip. I thought (2) I'd stop by before my meetings to see your portrait collection.",

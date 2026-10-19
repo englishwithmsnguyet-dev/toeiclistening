@@ -977,7 +977,11 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
         
-        const audioUrl = `media/${audioFile}`;
+        let resolvedFile = audioFile;
+        if (state.currentPart === 'part03' && typeof audioFile === 'string' && audioFile.startsWith('media') && !audioFile.includes('/')) {
+            resolvedFile = `part03/${audioFile}`;
+        }
+        const audioUrl = resolvedFile.startsWith('media/') ? resolvedFile : `media/${resolvedFile}`;
         
         container.innerHTML = `
             <div class="audio-player-card" style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.015);">
