@@ -2882,7 +2882,7 @@
       },
       {
         "slide_index": 131,
-        "question": "<strong>10. What problem does the woman mention?</strong><br><strong>",
+        "question": "<strong>10. What problem does the woman mention?</strong>",
         "choices": {
           "A": "An invoice is incorrect.",
           "B": "A window is broken.",
@@ -4345,7 +4345,7 @@
     "practice": [
       {
         "slide_index": 232,
-        "question": "<strong>1. What does the man imply when he says, &quot;I used to work at a hardware store&quot;? </strong><br><strong>",
+        "question": "<strong>1. What does the man imply when he says, &quot;I used to work at a hardware store&quot;? </strong>",
         "choices": {
           "A": "He can fix a problem.",
           "B": "He has experience in customer service.",
@@ -4377,7 +4377,7 @@
       },
       {
         "slide_index": 234,
-        "question": "<strong>2. What does the woman mean when she says, &quot;we&#x27;d really like to fill the position this week&quot;? </strong><br><strong>",
+        "question": "<strong>2. What does the woman mean when she says, &quot;we&#x27;d really like to fill the position this week&quot;? </strong>",
         "choices": {
           "A": "A candidate should decide quickly.",
           "B": "An alternative plan needs to be approved.",
@@ -4452,7 +4452,7 @@
     "practice": [
       {
         "slide_index": 327,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 01 </span></strong><br><strong><span style=\"color: #000000;\">Question 02.</span></strong><span style=\"color: #000000;\"> Look at the graphic. Which month do the speakers agree to discuss? </span><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><strong><span style=\"color: #FF0000;\"><br><span style=\"color: #000000;\">",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 01 </span></strong><br><strong><span style=\"color: #000000;\">Question 02.</span></strong><span style=\"color: #000000;\"> Look at the graphic. Which month do the speakers agree to discuss?</span>",
         "choices": {
           "A": "March",
           "B": "April",
@@ -4481,7 +4481,8 @@
           "M: Đúng vậy... Vì vậy trong cuộc họp hôm nay, chúng ta hãy tập trung vào tháng có năng suất rất thấp đó.",
           "W: Tôi biết các máy sản xuất bóng đèn đã bị hỏng vài lần trong tháng đó. Chúng ta nên cho kiểm tra lại toàn bộ máy móc."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tháng 5</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"So at today's meeting, let's focus on the month when productivity was very low.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Vì vậy trong cuộc họp hôm nay, hãy tập trung vào tháng có năng suất rất thấp đó.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Bài nghe yêu cầu tập trung vào tháng có năng suất rất thấp ('lowest we've had in a year'). Đối chiếu với biểu đồ sản lượng trong hình, cột tháng 5 (May) là tháng có sản lượng thấp nhất, do đó đáp án là Tháng 5 (May).</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tháng 5</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"So at today's meeting, let's focus on the month when productivity was very low.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Vì vậy trong cuộc họp hôm nay, hãy tập trung vào tháng có năng suất rất thấp đó.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Bài nghe yêu cầu tập trung vào tháng có năng suất rất thấp ('lowest we've had in a year'). Đối chiếu với biểu đồ sản lượng trong hình, cột tháng 5 (May) là tháng có sản lượng thấp nhất, do đó đáp án là Tháng 5 (May).</p>",
+        "graphic": "data/graphics/Slide327.png"
       },
       {
         "slide_index": 336,
@@ -4515,11 +4516,12 @@
           "W: Ồ, cuốn sách có liệt kê một nhà hàng nằm ngay trên Đường Lord Street này. Nó ở ngay cùng dãy phố này thôi. Hãy ăn ở đó đi!",
           "M: Được thôi."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Tại Nhà hàng Buffet Ấn Độ Aruna</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"we're on Lord Street now... Oh, the guidebook lists a restaurant on Lord Street. It should be on this block. Let's eat there.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"chúng ta đang ở đường Lord Street... cuốn hướng dẫn có nhà hàng ở đường Lord Street ngay dãy này. Hãy ăn ở đó đi.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Họ đang ở đường Lord Street và chọn ăn tại nhà hàng nằm trên đường Lord Street. Đối chiếu danh sách địa chỉ trên hình ảnh, chỉ có Aruna's Indian Buffet tọa lạc tại Lord Street, chọn D.</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Tại Nhà hàng Buffet Ấn Độ Aruna</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"we're on Lord Street now... Oh, the guidebook lists a restaurant on Lord Street. It should be on this block. Let's eat there.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"chúng ta đang ở đường Lord Street... cuốn hướng dẫn có nhà hàng ở đường Lord Street ngay dãy này. Hãy ăn ở đó đi.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Họ đang ở đường Lord Street và chọn ăn tại nhà hàng nằm trên đường Lord Street. Đối chiếu danh sách địa chỉ trên hình ảnh, chỉ có Aruna's Indian Buffet tọa lạc tại Lord Street, chọn D.</p>",
+        "graphic": "data/graphics/Slide336.png"
       },
       {
         "slide_index": 436,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 03 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which seat does the woman request? </span><br><span style=\"color: #000000;\"><br><strong><span style=\"color: #FF0000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\">",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 03 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which seat does the woman request?</span>",
         "choices": {
           "A": "26D",
           "B": "26F",
@@ -4551,11 +4553,12 @@
           "W: Ngày đó cũng được. Tôi muốn một ghế cạnh cửa sổ nếu còn.",
           "M: Chỉ còn đúng một chỗ trống cạnh cửa sổ thôi. Tôi sẽ đặt ghế đó cho cô ngay."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Ghế 26F</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'd prefer a window seat, if there is one. - There's just one seat available by a window. I'll book that for you now.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi muốn ghế cạnh cửa sổ nếu còn. - Chỉ còn duy nhất một ghế trống cạnh cửa sổ. Tôi sẽ đặt cho cô ngay.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ yêu cầu ghế cạnh cửa sổ ('window seat') và người đàn ông thông báo chỉ còn duy nhất một chỗ trống. Nhìn vào sơ đồ máy bay, dãy ghế cửa sổ là dãy A và F. Ghế 26F đang trống (các ghế khác đã kín), vì vậy đáp án là 26F.</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Ghế 26F</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'd prefer a window seat, if there is one. - There's just one seat available by a window. I'll book that for you now.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi muốn ghế cạnh cửa sổ nếu còn. - Chỉ còn duy nhất một ghế trống cạnh cửa sổ. Tôi sẽ đặt cho cô ngay.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ yêu cầu ghế cạnh cửa sổ ('window seat') và người đàn ông thông báo chỉ còn duy nhất một chỗ trống. Nhìn vào sơ đồ máy bay, dãy ghế cửa sổ là dãy A và F. Ghế 26F đang trống (các ghế khác đã kín), vì vậy đáp án là 26F.</p>",
+        "graphic": "data/graphics/Slide436.png"
       },
       {
         "slide_index": 441,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 04 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where are the speakers going? </span><br><strong><span style=\"color: #FF0000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\">",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 04 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where are the speakers going?</span>",
         "choices": {
           "A": "To Los Angeles",
           "B": "To San Antonio",
@@ -4581,7 +4584,8 @@
           "M: Đừng lo. Tôi vừa đến nơi và thấy chuyến bay của chúng ta bị hoãn một tiếng. Chắc chắn cô sẽ kịp thôi.",
           "W: Nhẹ cả người. Nhưng anh có thể gọi cho ban tổ chức hội nghị để báo chúng ta sẽ đến muộn buổi tiệc chiêu đãi tối nay không?"
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Đến Los Angeles</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"our flight's been delayed an hour. I'm sure you'll make it.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"chuyến bay của chúng ta đã bị hoãn một tiếng. Tôi chắc chắn cô sẽ kịp thôi.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người đàn ông cho biết chuyến bay của họ bị hoãn 1 tiếng ('delayed an hour'). Đối chiếu với bảng điện tử hiển thị tình trạng các chuyến bay trong hình, chuyến bay có trạng thái trễ 1 giờ (Delayed 1 hr) bay đến Los Angeles, chọn A.</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Đến Los Angeles</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"our flight's been delayed an hour. I'm sure you'll make it.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"chuyến bay của chúng ta đã bị hoãn một tiếng. Tôi chắc chắn cô sẽ kịp thôi.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người đàn ông cho biết chuyến bay của họ bị hoãn 1 tiếng ('delayed an hour'). Đối chiếu với bảng điện tử hiển thị tình trạng các chuyến bay trong hình, chuyến bay có trạng thái trễ 1 giờ (Delayed 1 hr) bay đến Los Angeles, chọn A.</p>",
+        "graphic": "data/graphics/Slide441.png"
       },
       {
         "slide_index": 455,
@@ -4614,11 +4618,12 @@
           "W: Tôi muốn loại tai nghe chụp qua đầu (headband). Và tôi muốn loại có khả năng chống ồn/giảm tiếng ồn. Tôi là kỹ sư điện, ở công trường rất ồn ào khiến tôi khó tập trung.",
           "M: Hãng Matphase Electronics sản xuất tai nghe rất tốt. Tôi khuyên cô nên dùng mẫu này ở đây. Chúng chống ồn tốt nhất và tôi nghĩ cô sẽ thích."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Mẫu C-94</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Matphase Electronics makes great headphones. I'd recommend this model here. They're the best at reducing noise...\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Hãng Matphase Electronics làm tai nghe rất tốt. Tôi gợi ý mẫu này. Chúng giảm tiếng ồn tốt nhất...\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ yêu cầu tai nghe chụp đầu ('wear on your head') có chống ồn ('reduce noise'), và người đàn ông giới thiệu mẫu tốt nhất của hãng Matphase Electronics. Nhìn vào bảng thông số, mẫu tai nghe chụp đầu chống ồn của hãng Matphase chính là C-94, chọn D.</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Mẫu C-94</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Matphase Electronics makes great headphones. I'd recommend this model here. They're the best at reducing noise...\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Hãng Matphase Electronics làm tai nghe rất tốt. Tôi gợi ý mẫu này. Chúng giảm tiếng ồn tốt nhất...\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ yêu cầu tai nghe chụp đầu ('wear on your head') có chống ồn ('reduce noise'), và người đàn ông giới thiệu mẫu tốt nhất của hãng Matphase Electronics. Nhìn vào bảng thông số, mẫu tai nghe chụp đầu chống ồn của hãng Matphase chính là C-94, chọn D.</p>",
+        "graphic": "data/graphics/Slide455.png"
       },
       {
         "slide_index": 481,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 06 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which item does the man want to return? </span><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><strong><span style=\"color: #FF0000;\"><br><span style=\"color: #000000;\">",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 06 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which item does the man want to return?</span>",
         "choices": {
           "A": "The jacket",
           "B": "The sweater",
@@ -4651,11 +4656,12 @@
           "M: Đúng vậy, và tôi đã thanh toán bằng thẻ tín dụng.",
           "W: Tôi có thể hoàn tiền vào thẻ tín dụng cho anh."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Khăn quàng cổ</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"So, it looks like you spent 32 dollars on the item. - Right, and I used my credit card for the purchase.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi thấy anh đã chi 32 đô la cho món đồ này. - Đúng vậy, và tôi dùng thẻ tín dụng.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ kiểm tra giá tiền món đồ trả lại là 32 đô la ('spent 32 dollars on the item'). Nhìn vào tờ hóa đơn trong ảnh, món hàng có giá chính xác $32.00 là The scarf (Khăn quàng cổ), do đó đáp án là C.</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Khăn quàng cổ</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"So, it looks like you spent 32 dollars on the item. - Right, and I used my credit card for the purchase.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi thấy anh đã chi 32 đô la cho món đồ này. - Đúng vậy, và tôi dùng thẻ tín dụng.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ kiểm tra giá tiền món đồ trả lại là 32 đô la ('spent 32 dollars on the item'). Nhìn vào tờ hóa đơn trong ảnh, món hàng có giá chính xác $32.00 là The scarf (Khăn quàng cổ), do đó đáp án là C.</p>",
+        "graphic": "data/graphics/Slide481.png"
       },
       {
         "slide_index": 490,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 07 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where will the woman go next? </span><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\">",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 07 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where will the woman go next?</span>",
         "choices": {
           "A": "To Building 1",
           "B": "To Building 2",
@@ -4687,11 +4693,12 @@
           "M: Để tôi tra... Đơn của anh Smith cần giao tới tòa nhà chung cư Hazelton - căn hộ số 12.",
           "W: À đúng rồi, trên đường Durham Road đối diện trực tiếp với công viên. Cảm ơn nhé!"
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Đến Tòa nhà 4</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"The Smith order needs to be delivered to the Hazelton apartment building... on Durham Road-directly across from the park.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Đơn của anh Smith cần giao tới chung cư Hazelton... trên đường Durham đối diện công viên.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ đi giao pizza đến chung cư Hazelton nằm trên đường Durham Road và đối diện trực tiếp công viên ('across from the park'). Nhìn vào sơ đồ bản đồ, tòa nhà đối diện công viên trên đường Durham Road được đánh số là Tòa nhà 4 (Building 4), chọn D.</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Đến Tòa nhà 4</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"The Smith order needs to be delivered to the Hazelton apartment building... on Durham Road-directly across from the park.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Đơn của anh Smith cần giao tới chung cư Hazelton... trên đường Durham đối diện công viên.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ đi giao pizza đến chung cư Hazelton nằm trên đường Durham Road và đối diện trực tiếp công viên ('across from the park'). Nhìn vào sơ đồ bản đồ, tòa nhà đối diện công viên trên đường Durham Road được đánh số là Tòa nhà 4 (Building 4), chọn D.</p>",
+        "graphic": "data/graphics/Slide490.png"
       },
       {
         "slide_index": 540,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 08 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Why is the woman&#x27;s ticket discounted? </span><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\"><br><span style=\"color: #000000;\">",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 08 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Why is the woman&#x27;s ticket discounted?</span>",
         "choices": {
           "A": "It is a Monday.",
           "B": "It is after 5 P.M.",
@@ -4723,7 +4730,8 @@
           "W: Tôi cứ tưởng vé đắt hơn chứ... À, tôi hiểu rồi.",
           "M: Đúng vậy. Hội trường sắp có diễn giả nói về phục chế nghệ thuật, nếu chị quan tâm có thể ghé xem."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Hôm nay là thứ Hai.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'll take one regular ticket, please... - OK - that'll be five dollars. - Hmm... I thought it would be more ... Oh, I see.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Bán cho tôi một vé thường... - Của chị là 5 đô la. - Tôi tưởng phải đắt hơn chứ... À tôi hiểu rồi.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ mua vé thường ('regular ticket') và ngạc nhiên khi thấy giá chỉ có 5 đô la thay vì mức giá thông thường cao hơn ('thought it would be more... Oh, I see'). Nhìn vào bảng giá vé trong hình, mức giá ưu đãi $5 áp dụng cho ngày thứ Hai (Monday Discount), do đó đáp án là A (It is a Monday).</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Hôm nay là thứ Hai.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'll take one regular ticket, please... - OK - that'll be five dollars. - Hmm... I thought it would be more ... Oh, I see.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Bán cho tôi một vé thường... - Của chị là 5 đô la. - Tôi tưởng phải đắt hơn chứ... À tôi hiểu rồi.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ mua vé thường ('regular ticket') và ngạc nhiên khi thấy giá chỉ có 5 đô la thay vì mức giá thông thường cao hơn ('thought it would be more... Oh, I see'). Nhìn vào bảng giá vé trong hình, mức giá ưu đãi $5 áp dụng cho ngày thứ Hai (Monday Discount), do đó đáp án là A (It is a Monday).</p>",
+        "graphic": "data/graphics/Slide540.png"
       }
     ]
   },
