@@ -1,4 +1,4 @@
-window.part03Data = [
+const PART03_DATA = [
   {
     "id": "overview",
     "title": "I. TỔNG QUAN PHẦN 03",
@@ -331,7 +331,7 @@ window.part03Data = [
           "C": "Calendars",
           "D": "Clothing"
         },
-        "answer": "C",
+        "answer": "D",
         "audio": "media2.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -1302,7 +1302,7 @@ window.part03Data = [
           "C": "At a furniture store",
           "D": "At a coffee shop"
         },
-        "answer": "C",
+        "answer": "D",
         "audio": "media13.mp3",
         "title": "Ví dụ 1",
         "transcript": [
@@ -2091,7 +2091,7 @@ window.part03Data = [
           "C": "A theater director",
           "D": "A costume designer"
         },
-        "answer": "A",
+        "answer": "B",
         "audio": "media26.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -2108,7 +2108,7 @@ window.part03Data = [
           "C": "An editor",
           "D": "An accountant"
         },
-        "answer": "C",
+        "answer": "D",
         "audio": "media27.mp3",
         "title": "Ví dụ 3",
         "transcript": [
@@ -2403,7 +2403,7 @@ window.part03Data = [
   {
     "id": "dang_02_problem",
     "title": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
-    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT",
+    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT",
     "type": "subsection",
     "theory": [
       {
@@ -2444,7 +2444,7 @@ window.part03Data = [
           "C": "A space is too small.",
           "D": "A location is inconvenient."
         },
-        "answer": "A",
+        "answer": "C",
         "audio": "media38.mp3",
         "title": "Ví dụ 1",
         "transcript": [
@@ -2788,7 +2788,7 @@ window.part03Data = [
   {
     "id": "dang_02_why",
     "title": "Dạng 2.II - Câu hỏi Why",
-    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT",
+    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT",
     "type": "subsection",
     "theory": [
       {
@@ -2833,7 +2833,7 @@ window.part03Data = [
           "C": "To ask about a fee",
           "D": "To apply for a position"
         },
-        "answer": "B",
+        "answer": "C",
         "audio": "media51.mp3",
         "title": "Ví dụ 1",
         "transcript": [
@@ -3163,7 +3163,7 @@ window.part03Data = [
   {
     "id": "dang_02_what_request",
     "title": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
-    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
+    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
     "type": "subsection",
     "theory": [
       {
@@ -3318,7 +3318,7 @@ window.part03Data = [
   {
     "id": "dang_02_what_suggest",
     "title": "Dạng 2.III.2 - Câu hỏi Gợi ý",
-    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
+    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
     "type": "subsection",
     "theory": [
       {
@@ -3373,7 +3373,7 @@ window.part03Data = [
           "C": "Bringing a camera",
           "D": "Looking for a coupon"
         },
-        "answer": "A",
+        "answer": "C",
         "audio": "media69.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -3488,7 +3488,7 @@ window.part03Data = [
   {
     "id": "dang_02_what_say",
     "title": "Dạng 2.III.3 - Câu hỏi 'What does the speaker say?'",
-    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
+    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
     "type": "subsection",
     "theory": [
       {
@@ -3538,7 +3538,7 @@ window.part03Data = [
           "C": "Organize a fashion show",
           "D": "Update some equipment"
         },
-        "answer": "A",
+        "answer": "B",
         "audio": "media74.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -3641,7 +3641,7 @@ window.part03Data = [
   {
     "id": "dang_02_what_according",
     "title": "Dạng 2.III.4 - Câu hỏi 'According to...'",
-    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
+    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
     "type": "subsection",
     "theory": [
       {
@@ -3796,7 +3796,7 @@ window.part03Data = [
   {
     "id": "dang_02_what_do_next",
     "title": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
-    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
+    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
     "type": "subsection",
     "theory": [
       {
@@ -3956,7 +3956,7 @@ window.part03Data = [
   {
     "id": "dang_02_what_imply",
     "title": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
-    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
+    "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
     "type": "subsection",
     "theory": [
       {
@@ -4013,7 +4013,7 @@ window.part03Data = [
           "C": "To request an update to an order",
           "D": "To express surprise at a decision"
         },
-        "answer": "D",
+        "answer": "C",
         "audio": "media89.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -5187,7 +5187,7 @@ window.part03Data = [
           "M1: Yes, and (58) because winter tourism has increased recently, we'd like to expand our space so that we can carry more inventory."
         ],
         "vietnamese_transcript": [
-          "W: Chào buổi sáng! Chào mừng đến với Ngân hàng Jasper.",
+          "W: Chào buổi sáng! Chào mừng đến với Ngân hàng Jasper.",
           "M1: (56) Cảm ơn bạn đã gặp chúng tôi để bàn về khoản vay cho hoạt động kinh doanh của chúng tôi.",
           "W: Tại sao bạn không cho tôi biết thêm về doanh nghiệp của bạn? Tôi hiểu đó là một cửa hàng sửa chữa?",
           "M2: À, mười năm trước, chúng tôi mở một cửa hàng sửa chữa xe trượt tuyết, nhưng sau vài năm, (57) chúng tôi cũng bắt đầu cho thuê xe trượt tuyết và các thiết bị thể thao khác.",
@@ -7652,7 +7652,7 @@ window.part03Data = [
               "C": "Một đại lý bất động sản",
               "D": "Một thanh tra xây dựng"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Một đại lý bất động sản</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Good morning. Thanks for coming to tour this apartment building.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chào buổi sáng. Cảm ơn bạn đã đến tham quan khu chung cư này.\"</span></div>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Một đại lý bất động sản</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Good morning. Thanks for coming to tour this apartment building.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chào buổi sáng. Cảm ơn bạn đã đến tham quan khu chung cư này.\"</span></div>"
           },
           {
             "id": 33,
@@ -7702,7 +7702,7 @@ window.part03Data = [
           "M: Oh, of course."
         ],
         "vietnamese_transcript": [
-          "W: Chào buổi sáng. (32) Cảm ơn bạn đã đến tham quan khu chung cư này.",
+          "W: Chào buổi sáng. (32) Cảm ơn bạn đã đến tham quan khu chung cư này.",
           "M: Tôi rất vui vì tôi có thể đến thăm trực tiếp. (33) Tôi luôn muốn sống ở khu phố này—nó thật đẹp. Tòa nhà này hoàn toàn mới phải không?",
           "W: Đúng. Trên thực tế, bạn sẽ là một trong những người thuê nhà đầu tiên nếu quyết định chuyển đến đây. Trước khi bạn xem một số căn hộ, (34) bạn vui lòng ký tên vào đây trong sổ lưu trú của chúng tôi được không?",
           "M: Ồ, tất nhiên."
@@ -9730,3 +9730,7 @@ window.part03Data = [
     ]
   }
 ];
+
+if (typeof module !== "undefined" && module.exports) {
+  module.exports = PART03_DATA;
+}

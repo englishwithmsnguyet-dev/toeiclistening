@@ -331,7 +331,7 @@
           "C": "Calendars",
           "D": "Clothing"
         },
-        "answer": "C",
+        "answer": "D",
         "audio": "media2.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -1302,7 +1302,7 @@
           "C": "At a furniture store",
           "D": "At a coffee shop"
         },
-        "answer": "C",
+        "answer": "D",
         "audio": "media13.mp3",
         "title": "Ví dụ 1",
         "transcript": [
@@ -2091,7 +2091,7 @@
           "C": "A theater director",
           "D": "A costume designer"
         },
-        "answer": "A",
+        "answer": "B",
         "audio": "media26.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -2108,7 +2108,7 @@
           "C": "An editor",
           "D": "An accountant"
         },
-        "answer": "C",
+        "answer": "D",
         "audio": "media27.mp3",
         "title": "Ví dụ 3",
         "transcript": [
@@ -2444,7 +2444,7 @@
           "C": "A space is too small.",
           "D": "A location is inconvenient."
         },
-        "answer": "A",
+        "answer": "C",
         "audio": "media38.mp3",
         "title": "Ví dụ 1",
         "transcript": [
@@ -2833,7 +2833,7 @@
           "C": "To ask about a fee",
           "D": "To apply for a position"
         },
-        "answer": "B",
+        "answer": "C",
         "audio": "media51.mp3",
         "title": "Ví dụ 1",
         "transcript": [
@@ -3373,7 +3373,7 @@
           "C": "Bringing a camera",
           "D": "Looking for a coupon"
         },
-        "answer": "A",
+        "answer": "C",
         "audio": "media69.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -3538,7 +3538,7 @@
           "C": "Organize a fashion show",
           "D": "Update some equipment"
         },
-        "answer": "A",
+        "answer": "B",
         "audio": "media74.mp3",
         "title": "Ví dụ 2",
         "transcript": [
@@ -4013,7 +4013,7 @@
           "C": "To request an update to an order",
           "D": "To express surprise at a decision"
         },
-        "answer": "D",
+        "answer": "C",
         "audio": "media89.mp3",
         "title": "Ví dụ 2",
         "transcript": [
