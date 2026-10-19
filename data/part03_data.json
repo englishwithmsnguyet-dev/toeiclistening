@@ -1439,7 +1439,7 @@
       },
       {
         "slide_index": 56,
-        "question": "<strong>3</strong><strong>. </strong><strong>Where do the speakers most likely work?</strong><br><strong><br><strong><span style=\"color: #FF0000;\"><br><strong><span style=\"color: #FF0000;\">",
+        "question": "<strong>3. Where do the speakers most likely work?</strong>",
         "choices": {
           "A": "At a law office",
           "B": "At a supermarket",
@@ -1467,7 +1467,7 @@
       },
       {
         "slide_index": 58,
-        "question": "<strong>4. Where is the conversation taking place?</strong><br><strong><span style=\"color: #FF0000;\">",
+        "question": "<strong>4. Where is the conversation taking place?</strong>",
         "choices": {
           "A": "In a parking garage",
           "B": "At a car rental agency",
@@ -1544,8 +1544,8 @@
         "vietnamese_choices": {
           "A": "Tại phòng khám y tế",
           "B": "Tại công ty dịch vụ ăn uống tiệc",
-          "C": "Tại cửa hàng tạp hóa",
-          "D": "Tại nhà hàng sang trọng"
+          "C": "Tại một cửa hàng tiện lợi",
+          "D": "Tại một nhà máy sản xuất"
         },
         "vietnamese_transcript": [
           "M: Này Sunisa. Chúng ta sắp phải xuất phát để phục vụ tiệc cho sự kiện tại Quỹ Y tế Kimball, nhưng lại không đủ cốc. Cô có biết lấy thêm cốc ở đâu không?",
@@ -1557,14 +1557,14 @@
       },
       {
         "slide_index": 64,
-        "question": "<strong>7. Where do the speakers most likely work?</strong><br><strong>",
+        "question": "<strong>7. Where do the speakers most likely work?</strong>",
         "choices": {
           "A": "At a movie theater",
           "B": "At a construction firm",
           "C": "At an art gallery",
           "D": "At a furniture store"
         },
-        "answer": "B",
+        "answer": "C",
         "audio": "part03/media21.mp3",
         "transcript": [
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Ms. Chin, Ms. Frankel, I&#x27;m sorry that the gallery hasn&#x27;t been looking very tidy lately</span></strong>. I&#x27;ve been so busy with all the artwork that we&#x27;ve been receiving that I haven&#x27;t had time to focus on cleaning.",
@@ -1574,17 +1574,18 @@
         ],
         "vietnamese_question": "Những người nói rất có thể làm việc ở đâu?",
         "vietnamese_choices": {
-          "A": "Tại công ty dọn vệ sinh",
-          "B": "Tại phòng tranh / triển lãm nghệ thuật",
-          "C": "Tại cửa hàng nội thất",
-          "D": "Tại xưởng sản xuất"
+          "A": "Tại một rạp chiếu phim",
+          "B": "Tại một công ty xây dựng",
+          "C": "Tại một phòng trưng bày nghệ thuật",
+          "D": "Tại một cửa hàng nội thất"
         },
         "vietnamese_transcript": [
           "M: Cô Chin, cô Frankel, tôi xin lỗi vì dạo này phòng tranh trông không được gọn gàng ngăn nắp. Tôi bận rộn với các tác phẩm nghệ thuật mới nhập về quá nên chưa có thời gian dọn dẹp.",
           "W: Tôi hiểu mà. Phòng tranh dạo này đông khách quá nên khó mà vừa quét dọn vừa lau bụi khu trưng bày chính. Hay là chúng ta thuê dịch vụ dọn vệ sinh nhỉ?",
-          "M: Được đấy. Tôi sẽ gọi cho vài đơn vị dọn dẹp để hỏi giá."
+          "M: Được đấy. Tôi sẽ gọi cho vài đơn vị dọn dẹp để hỏi giá.",
+          "W: Tuyệt quá. Cảm ơn anh đã nêu ra vấn đề này."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Tại phòng tranh / triển lãm nghệ thuật</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'm sorry that the gallery hasn't been looking very tidy lately... busy with all the artwork... display area\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"tôi xin lỗi vì dạo này phòng tranh trông không được gọn gàng... bận với tác phẩm nghệ thuật... khu trưng bày\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Các từ khóa 'gallery' (phòng tranh), 'artwork' (tác phẩm nghệ thuật), 'display area' (khu trưng bày) chứng minh họ làm việc tại phòng tranh (At an art gallery).</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tại một phòng trưng bày nghệ thuật</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Ms. Chin, Ms. Frankel, I'm sorry that the gallery hasn't been looking very tidy lately... busy with all the artwork... display area\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Cô Chin, cô Frankel, tôi xin lỗi vì dạo này phòng tranh trông không được gọn gàng... bận rộn với tác phẩm nghệ thuật... khu trưng bày\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Các từ khóa 'gallery' (phòng tranh / phòng trưng bày), 'artwork' (tác phẩm nghệ thuật), 'display area' (khu trưng bày chính) khẳng định nơi làm việc của họ là tại một phòng trưng bày nghệ thuật (At an art gallery).</p>"
       },
       {
         "slide_index": 66,
@@ -1606,9 +1607,9 @@
         "vietnamese_question": "Người phụ nữ làm việc ở đâu?",
         "vietnamese_choices": {
           "A": "Tại khách sạn",
-          "B": "Tại bãi đỗ xe",
-          "C": "Tại công ty xây dựng",
-          "D": "Tại trạm xăng"
+          "B": "Tại quán cà phê",
+          "C": "Tại sân bay",
+          "D": "Tại đại lý cho thuê xe"
         },
         "vietnamese_transcript": [
           "M: Xin lỗi, tôi muốn làm thủ tục trả phòng khách sạn.",
@@ -1620,14 +1621,14 @@
       },
       {
         "slide_index": 68,
-        "question": "<strong>9. Where most likely are the speakers?</strong><br><strong>",
+        "question": "<strong>9. Where most likely are the speakers?</strong>",
         "choices": {
           "A": "At a bookstore",
           "B": "At an art supply store",
           "C": "At a clothing retailer",
           "D": "At a supermarket"
         },
-        "answer": "B",
+        "answer": "C",
         "audio": "part03/media23.mp3",
         "transcript": [
           "<strong>M:</strong> <strong><span style=\"color: #FF0000;\">Hi, welcome to Gold Pyramid Clothing</span></strong>.",
@@ -1640,19 +1641,21 @@
         ],
         "vietnamese_question": "Những người nói rất có thể đang ở đâu?",
         "vietnamese_choices": {
-          "A": "Tại tiệm giặt ủi",
-          "B": "Tại cửa hàng quần áo",
-          "C": "Tại bưu điện",
-          "D": "Tại tiệm may"
+          "A": "Tại một hiệu sách",
+          "B": "Tại một cửa hàng họa phẩm",
+          "C": "Tại một cửa hàng bán lẻ quần áo",
+          "D": "Tại một siêu thị"
         },
         "vietnamese_transcript": [
           "M: Xin chào, chào mừng quý khách đến với Thời trang Gold Pyramid.",
           "W: Chào anh, tôi có mua một chiếc áo sơ mi ở đây cho con trai, nhưng tiếc là cháu không thích màu này. Chính sách đổi trả ở đây thế nào?",
           "M: Miễn là chưa quá 30 ngày kể từ lúc mua và có hóa đơn thì chị sẽ được hoàn tiền đầy đủ.",
-          "W: Tôi làm mất hóa đơn rồi.",
-          "M: Vậy thì tôi không thể hoàn tiền được, nhưng chị có thể đổi sang màu khác. Chúng tôi còn màu đen và màu xanh lá."
+          "W: Hmm, thực ra tôi làm mất hóa đơn rồi.",
+          "M: Vậy thì tôi không thể hoàn tiền được, nhưng chị có thể đổi sang màu khác.",
+          "W: Được rồi, tôi sẽ đổi màu khác.",
+          "M: Vâng! Tôi nghĩ chúng tôi có sẵn áo sơ mi đó màu đen và màu xanh lá."
         ],
-        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Tại cửa hàng quần áo</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"welcome to Gold Pyramid Clothing. - I bought a shirt here for my son... What's your return policy?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"chào mừng đến với Thời trang Gold Pyramid. - Tôi đã mua một chiếc áo sơ mi ở đây... chính sách đổi trả thế nào?\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Lời chào 'Gold Pyramid Clothing' và việc đổi áo sơ mi ('shirt', 'color') khẳng định địa điểm là cửa hàng quần áo (At a clothing store).</p>"
+        "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tại một cửa hàng bán lẻ quần áo</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Hi, welcome to Gold Pyramid Clothing... bought a shirt here for my son\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"chào mừng đến với Thời trang Gold Pyramid... đã mua một chiếc áo sơ mi ở đây cho con trai\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Lời chào 'welcome to Gold Pyramid Clothing' cùng với việc đổi áo sơ mi ('shirt') cho con trai cho thấy hai người đang ở một cửa hàng bán lẻ quần áo (At a clothing retailer).</p>"
       },
       {
         "slide_index": 70,
@@ -1675,9 +1678,9 @@
         "vietnamese_question": "Cuộc trò chuyện rất có thể đang diễn ra ở đâu?",
         "vietnamese_choices": {
           "A": "Tại thư viện",
-          "B": "Tại xưởng điêu khắc",
-          "C": "Tại viện bảo tàng",
-          "D": "Tại phòng hòa nhạc"
+          "B": "Tại một rạp hát",
+          "C": "Tại một viện bảo tàng",
+          "D": "Tại một nhà hàng"
         },
         "vietnamese_transcript": [
           "W: Chào Jorge, công tác chuẩn bị cho buổi triển lãm điêu khắc mới đến đâu rồi?",
