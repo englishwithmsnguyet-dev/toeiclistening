@@ -1019,6 +1019,23 @@ body.light-mode .vocab-trans {
     color: #7c3aed; /* Vibrant high-contrast purple */
 }
 
+/* Question Keyword Highlights */
+.question-keyword {
+    color: var(--color-cyan) !important;
+    font-weight: 800 !important;
+    text-decoration: underline !important;
+    text-decoration-color: rgba(0, 242, 254, 0.45) !important;
+    text-underline-offset: 4px !important;
+    text-decoration-thickness: 2px !important;
+    font-style: normal;
+    display: inline-block;
+}
+
+body.light-mode .question-keyword {
+    color: #0284c7 !important;
+    text-decoration-color: rgba(2, 132, 199, 0.5) !important;
+}
+
 /* --- B. VOCABULARY CARD --- */
 .vocabulary-container {
     display: flex;

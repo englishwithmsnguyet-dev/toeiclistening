@@ -38,13 +38,13 @@
           "<strong>1. CÂU HỎI VỀ CHỦ ĐỀ BÀI NGHE</strong>",
           "Đây là dạng câu hỏi yêu cầu <em><strong><span style=\"color: #00B0F0;\">xác định nội dung chính hoặc chủ đề </span></strong></em>mà những người nói đang thảo luận.",
           "<strong>Một số dạng câu hỏi thường gặp:</strong>",
-          "• <em>What is the topic of the conversation? </em>",
-          "• <em>What are the speakers discussing? </em>",
-          "• <em>What are they talking about? </em>",
-          "• <em>What is the conversation about? </em>",
-          "• <em>What is the subject of the conversation? </em>",
-          "• <em>What is the discussion mainly about? </em>",
-          "• <em>What are the speakers mainly discussing?</em>"
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">topic</strong> of the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong>?</em>",
+          "• <em>What are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>?</em>",
+          "• <em>What are they <strong class=\"question-keyword\" style=\"color: #00B0F0;\">talking about</strong>?</em>",
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation about</strong>?</em>",
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">subject</strong> of the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong>?</em>",
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussion mainly about</strong>?</em>",
+          "• <em>What are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mainly discussing</strong>?</em>"
         ]
       },
       {
@@ -307,7 +307,7 @@
     "examples": [
       {
         "slide_index": 6,
-        "question": "<strong>EXAMPLE 01 </strong><br><em>What is the topic of the conversation? </em>",
+        "question": "<strong>EXAMPLE 01 </strong><br><em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">topic</strong> of the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong>?</em>",
         "choices": {
           "A": "Health",
           "B": "Traffic",
@@ -324,7 +324,7 @@
       },
       {
         "slide_index": 8,
-        "question": "<strong>EXAMPLE 02 </strong><br><em>What product are the speakers discussing? </em>",
+        "question": "<strong>EXAMPLE 02 </strong><br><em>What product are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>?</em>",
         "choices": {
           "A": "Electronics",
           "B": "Office furniture",
@@ -642,10 +642,10 @@
           "<strong>1. Nhận biết câu hỏi</strong>",
           "Dạng câu hỏi này yêu cầu <strong>xác định địa điểm diễn ra cuộc hội thoại hoặc bài nói</strong>. Hầu hết các câu hỏi đều bắt đầu bằng từ để hỏi &quot;<strong>Where</strong>&quot;.",
           "<strong>VÍ DỤ:</strong>",
-          "• <em>Where does the conversation most likely take place? </em>",
-          "• <em>Where are the speakers? </em>",
-          "• <em>Where is the announcement being made? </em>",
-          "• <em>Where does the speaker work? </em>"
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong> most likely <strong class=\"question-keyword\" style=\"color: #00B0F0;\">take place</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> are the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">announcement being made</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speaker work</strong>?</em>"
         ]
       },
       {
@@ -1295,7 +1295,7 @@
     "examples": [
       {
         "slide_index": 47,
-        "question": "<strong>EXAMPLE 01 </strong><br><em>Where are the speakers? </em>",
+        "question": "<strong>EXAMPLE 01 </strong><br><em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> are the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong>?</em>",
         "choices": {
           "A": "At a train station",
           "B": "At an electronics repair shop",
@@ -1312,7 +1312,7 @@
       },
       {
         "slide_index": 49,
-        "question": "<strong>EXAMPLE 02 </strong><br><em>Where most likely are the speakers?</em>",
+        "question": "<strong>EXAMPLE 02 </strong><br><em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> most likely are the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong>?</em>",
         "choices": {
           "A": "At a medical office",
           "B": "At a bank",
@@ -1652,12 +1652,12 @@
           "<strong>3. CÂU HỎI VỀ NGHỀ NGHIỆP </strong>",
           "<strong>3.1. Nhận dạng câu hỏi</strong>",
           "Đây là dạng câu hỏi yêu cầu <strong>xác định nghề nghiệp, công việc, chức vụ hoặc vai trò </strong>của một hoặc nhiều người nói trong đoạn hội thoại. <strong>Các câu hỏi thường gặp bao gồm</strong>:",
-          "• <em>Who are </em><em><strong>the speakers</strong></em><em>? </em>",
-          "• <em>Who is </em><em><strong>the man </strong></em><em>/ </em><em><strong>the woman</strong></em><em>? </em>",
-          "• <em>Who most likely is </em><em><strong>the man</strong></em><em> / </em><em><strong>the woman</strong></em><em>?</em>",
-          "• <em>What most likely is </em><em><strong>the man&#x27;s job </strong></em><em>/ </em><em><strong>the woman&#x27;s job</strong></em><em>? </em>",
-          "• <em>What does </em><em><strong>the man </strong></em><em>/ </em><em><strong>the woman </strong></em><em>do? </em>",
-          "• <em>What is </em><em><strong>the man&#x27;s occupation </strong></em><em>/ </em><em><strong>the woman&#x27;s occupation</strong></em><em>?</em>"
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> are <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the speakers</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who most likely</strong> is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>?</em>",
+          "• <em>What most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man's job</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman's job</strong>?</em>",
+          "• <em>What does <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman do</strong>?</em>",
+          "• <em>What is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man's occupation</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman's occupation</strong>?</em>"
         ]
       },
       {
@@ -2067,7 +2067,7 @@
     "examples": [
       {
         "slide_index": 77,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>Who most likely is the woman?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>?",
         "choices": {
           "A": "A store cashier",
           "B": "A tour guide",
@@ -2084,7 +2084,7 @@
       },
       {
         "slide_index": 79,
-        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>Who most likely is the woman?",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>?",
         "choices": {
           "A": "A journalist",
           "B": "A musician",
@@ -2101,7 +2101,7 @@
       },
       {
         "slide_index": 81,
-        "question": "<strong>Example 03 </strong><br><strong>Question: </strong>What most likely is the man&#x27;s position?",
+        "question": "<strong>Example 03 </strong><br><strong>Question: </strong>What most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man's position</strong>?",
         "choices": {
           "A": "A maintenance worker",
           "B": "A government official",
@@ -2410,18 +2410,18 @@
         "slide_index": 104,
         "text": [
           "<strong><span style=\"color: #FF0000;\">4. CÂU HỎI VẤN ĐỀ</span></strong>",
-          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi về vấn đề thường gặp </span></strong>",
-          "o <em>What is the problem?</em>",
-          "o <em>What problem does the man / the woman mention? </em>",
-          "o <em>What is the man / woman worried about?</em>",
-          "o <em>What is the man / woman concerned about?</em>",
-          "o <em>Why is the man / the woman having trouble? </em>"
+          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi về vấn đề thường gặp </span></strong>",
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong>?</em>",
+          "• <em>What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the man / the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?</em>",
+          "• <em>What is the man / woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">worried about</strong>?</em>",
+          "• <em>What is the man / woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">concerned about</strong>?</em>",
+          "• <em>Why is the man / the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">having trouble</strong>?</em>"
         ]
       },
       {
         "slide_index": 105,
         "text": [
-          "<strong><span style=\"color: #00B0F0;\">Một số dấu hiệu, từ vựng báo hiệu vấn đề </span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số dấu hiệu, từ vựng báo hiệu vấn đề </span></strong>",
           "o <em>I&#x27;m sorry but ...</em>",
           "o <em>Unfortunately, / Actually, / However, / But ... </em>",
           "o <em>Here&#x27;s the problem (issue).</em>",
@@ -2437,7 +2437,7 @@
     "examples": [
       {
         "slide_index": 106,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What problem does the man mention?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?",
         "choices": {
           "A": "A room is poorly lit.",
           "B": "A machine is too noisy.",
@@ -2454,7 +2454,7 @@
       },
       {
         "slide_index": 108,
-        "question": "<strong>Example 02  </strong><br><strong>Question</strong>: What problem does the woman mention?",
+        "question": "<strong>Example 02  </strong><br><strong>Question</strong>: What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?",
         "choices": {
           "A": "Some equipment is not working.",
           "B": "Some documents are missing.",
@@ -2472,7 +2472,7 @@
       },
       {
         "slide_index": 110,
-        "question": "<strong>Example 03  </strong><br><strong>Question: </strong>What problem does the woman mention?",
+        "question": "<strong>Example 03  </strong><br><strong>Question: </strong>What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?",
         "choices": {
           "A": "Some presenters will be late.",
           "B": "Some equipment is not working.",
@@ -2794,23 +2794,23 @@
       {
         "slide_index": 133,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">5. CÂU HỎI LÝ DO/NGUYÊN NHÂN</span></strong><strong><span style=\"color: #00B0F0;\">Một số câu hỏi tại sao thường gặp: </span></strong>",
-          "o <em>Why is the man unavailable / surprised / disappointed? </em>",
-          "o <em>Why is the woman calling?</em><strong>Chú ý đến từ khoá trong câu hỏi: </strong>tên riêng, ngày tháng, địa điểm, động từ chính."
+          "<strong><span style=\"color: #FF0000;\">5. CÂU HỎI LÝ DO/NGUYÊN NHÂN</span></strong><strong><span style=\"color: #00B0F0;\">Một số câu hỏi tại sao thường gặp: </span></strong>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">unavailable</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">surprised</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">disappointed</strong>?</em>",
+          "o <em>Why is the woman calling?</em><strong>Chú ý đến từ khoá trong câu hỏi: </strong>tên riêng, ngày tháng, địa điểm, động từ chính."
         ]
       },
       {
         "slide_index": 134,
         "text": [
-          "<strong>Chú ý: </strong>Có nhiều câu hỏi &quot;Why&quot; nhưng nội dung câu hỏi là hỏi về <strong>mục đích </strong>đoạn hội thoại.",
+          "<strong>Chú ý: </strong>Có nhiều câu hỏi &quot;Why&quot; nhưng nội dung câu hỏi là hỏi về <strong>mục đích </strong>đoạn hội thoại.",
           "o <em>Why is the man calling?</em><em>\t</em>o <em>Why is the woman at the store? </em>",
-          "o <em>Why is the woman in the city? </em>"
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">in the city</strong>?</em>"
         ]
       },
       {
         "slide_index": 135,
         "text": [
-          "<span style=\"color: #00B0F0;\">Thông tin nói về mục đích của người nói thường bắt đầu bằng những cụm từ như:</span>",
+          "<span style=\"color: #00B0F0;\">Thông tin nói về mục đích của người nói thường bắt đầu bằng những cụm từ như:</span>",
           "<em>\to I&#x27;m here to ... </em>",
           "<em>\to I came to ... </em>",
           "<em>\to I want to ... </em>",
@@ -2826,7 +2826,7 @@
     "examples": [
       {
         "slide_index": 136,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>Why is the woman calling?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">calling</strong>?",
         "choices": {
           "A": "To make an appointment",
           "B": "To rent a car",
@@ -2843,7 +2843,7 @@
       },
       {
         "slide_index": 138,
-        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>Why does the man say he is busy?",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> does the man say he is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">busy</strong>?",
         "choices": {
           "A": "He is moving into a different office.",
           "B": "He is meeting with some clients.",
@@ -3169,20 +3169,20 @@
       {
         "slide_index": 161,
         "text": [
-          "<strong><span style=\"color: #00B0F0;\">6. CÂU HỎI YÊU CẦU</span></strong>",
-          "<strong>Một số câu hỏi thường gặp về nội dung yêu cầu: </strong>",
+          "<strong><span style=\"color: #00B0F0;\">6. CÂU HỎI YÊU CẦU</span></strong>",
+          "<strong>Một số câu hỏi thường gặp về nội dung yêu cầu: </strong>",
           "o <em>What does the man request?</em><em>\t</em>o <em>What does the woman inquired to do?</em><em>\t</em>o <em>What does the man ask the woman to do? </em>"
         ]
       },
       {
         "slide_index": 162,
         "text": [
-          "<strong>Một số cấu trúc mang ý nghĩa yêu cầu, nhờ vả người khác </strong>",
+          "<strong>Một số cấu trúc mang ý nghĩa yêu cầu, nhờ vả người khác </strong>",
           "<em>\to I&#x27;d like to + Vo / I&#x27;d like you to + </em><em><strong>Vo</strong></em><em>. </em>",
           "<em>\to I&#x27;m wondering if you could + </em><em><strong>Vo</strong></em><em>. </em>",
           "<em>\to Would you please ...? </em>",
           "<em>\to Is there ...? </em>",
-          "<strong><span style=\"color: #00B0F0;\">Lưu ý</span></strong>: Câu hỏi hỏi người đàn ông yêu cầu cái gì thì tập trung vào giọng nam trong bài nghe. Câu hỏi hỏi người phụ nữ yêu cầu cái gì thì tập trung vào giọng nữ trong bài nghe."
+          "<strong><span style=\"color: #00B0F0;\">Lưu ý</span></strong>: Câu hỏi hỏi người đàn ông yêu cầu cái gì thì tập trung vào giọng nam trong bài nghe. Câu hỏi hỏi người phụ nữ yêu cầu cái gì thì tập trung vào giọng nữ trong bài nghe."
         ]
       }
     ],
@@ -3190,7 +3190,7 @@
     "examples": [
       {
         "slide_index": 163,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the woman ask the man for?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the man for</strong>?",
         "choices": {
           "A": "Some feedback",
           "B": "Some assistance",
@@ -3207,7 +3207,7 @@
       },
       {
         "slide_index": 165,
-        "question": "<strong>Example 02 </strong><br><strong>Question: What does the man request? </strong>",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">request</strong>?",
         "choices": {
           "A": "Additional office supplies",
           "B": "Extra team members",
@@ -3324,22 +3324,22 @@
       {
         "slide_index": 174,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">7. CÂU HỎI GỢI Ý</span></strong>",
-          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi gợi ý thường gặp: </span></strong>",
-          "o <em>What does the woman suggest the man do? </em>",
-          "o <em>What does the man offer to do?</em>",
+          "<strong><span style=\"color: #FF0000;\">7. CÂU HỎI GỢI Ý</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi gợi ý thường gặp: </span></strong>",
+          "• <em>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest the man do</strong>?</em>",
+          "• <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">offer to do</strong>?</em>",
           "o <em>What does the man recommend doing?</em><em>\t</em>o <em>What does the man suggest? </em>"
         ]
       },
       {
         "slide_index": 175,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">2. CÂU HỎI GỢI Ý</span></strong>",
-          "<strong><span style=\"color: #00B0F0;\">Một số cấu trúc mang ý nghĩa gợi ý: </span></strong>",
+          "<strong><span style=\"color: #FF0000;\">2. CÂU HỎI GỢI Ý</span></strong>",
+          "<strong><span style=\"color: #00B0F0;\">Một số cấu trúc mang ý nghĩa gợi ý: </span></strong>",
           "<em><strong><span style=\"color: #00B0F0;\">\t</span></strong></em><em>o You&#x27;ll want to + </em><em><strong>Vo</strong></em><em>.</em>",
           "<em>\to Why don&#x27;t you + </em><em><strong>Vo</strong></em><em>?</em>",
           "<em>\to We should + </em><em><strong>Vo</strong></em><em>.</em>",
-          "<em><strong>Lưu ý</strong></em><em>: Câu hỏi hỏi </em><em>người đàn ông</em><em> gợi ý làm gì thì tập trung vào </em><em>giọng nam</em><em> trong bài nghe. Câu hỏi hỏi </em><em>người phụ nữ</em><em> gợi ý làm gì thì tập trung vào </em><em>giọng nữ</em><em> trong bài nghe. </em>"
+          "<em><strong>Lưu ý</strong></em><em>: Câu hỏi hỏi </em><em>người đàn ông</em><em> gợi ý làm gì thì tập trung vào </em><em>giọng nam</em><em> trong bài nghe. Câu hỏi hỏi </em><em>người phụ nữ</em><em> gợi ý làm gì thì tập trung vào </em><em>giọng nữ</em><em> trong bài nghe. </em>"
         ]
       }
     ],
@@ -3347,7 +3347,7 @@
     "examples": [
       {
         "slide_index": 176,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the man suggest the woman do?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest the woman do</strong>?",
         "choices": {
           "A": "Invite a friend to join her",
           "B": "Try a free class",
@@ -3366,7 +3366,7 @@
       },
       {
         "slide_index": 178,
-        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the woman suggest doing?",
+        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest doing</strong>?",
         "choices": {
           "A": "Wearing a jacket",
           "B": "Using a credit card",
@@ -3494,13 +3494,13 @@
       {
         "slide_index": 187,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">8. CÂU HỎI NGỤ Ý</span></strong>",
-          "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi &quot;What does the man / the woman say ...?&quot; thường gặp </span></strong>",
+          "<strong><span style=\"color: #FF0000;\">8. CÂU HỎI NGỤ Ý</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi &quot;What does the man / the woman say ...?&quot; thường gặp </span></strong>",
           "o <em>What does the man say he will do?</em>o <em>What does the man say he needs to purchase?</em>o <em>What does the woman say she would prefer to do?</em>",
           "<em> </em>o <em>What does the man say will take place in 2 weeks? </em>",
-          "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
-          "o <em>Tập trung nghe giọng nam hoặc giọng nữ tuỳ theo yêu cầu câu hỏi</em>",
-          "o <em>Xác định các từ khoá trước khi nghe: tên riêng, địa điểm, ngày tháng, động từ chính. </em>"
+          "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
+          "o <em>Tập trung nghe giọng nam hoặc giọng nữ tuỳ theo yêu cầu câu hỏi</em>",
+          "o <em>Xác định các từ khoá trước khi nghe: tên riêng, địa điểm, ngày tháng, động từ chính. </em>"
         ]
       }
     ],
@@ -3508,7 +3508,7 @@
     "examples": [
       {
         "slide_index": 188,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the woman say will happen soon?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">say will happen soon</strong>?",
         "choices": {
           "A": "Some patients will be transferred to another doctor.",
           "B": "Some employees will join a medical practice.",
@@ -3531,7 +3531,7 @@
       },
       {
         "slide_index": 190,
-        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the woman say they will need to do?",
+        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">say they will need to do</strong>?",
         "choices": {
           "A": "Rent storage space",
           "B": "Increase production",
@@ -3647,19 +3647,19 @@
       {
         "slide_index": 199,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">4. CÂU HỎI &quot;ACCORDING TO ... &quot;</span></strong>",
-          "• <strong><span style=\"color: #00B0F0;\"> Một số câu hỏi dạng &quot;According to ...&quot; thường gặp: </span></strong>",
-          "o <em>According to the man, what will happen in December?</em>",
-          "o <em>According to the woman, what is taking place next week?</em>",
-          "o <em>According to the woman, what complaint has been made about some employees? </em>"
+          "<strong><span style=\"color: #FF0000;\">4. CÂU HỎI &quot;ACCORDING TO ... &quot;</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\"> Một số câu hỏi dạng &quot;According to ...&quot; thường gặp: </span></strong>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the man</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">will happen</strong> in December?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the woman</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">is taking place</strong> next week?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the woman</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">complaint</strong> has been made about some employees?</em>"
         ]
       },
       {
         "slide_index": 200,
         "text": [
-          "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
-          "o Tập trung vào giọng nam hoặc nữ tuỳ theo câu hỏi.",
-          "o Xác định từ khoá trước khi nghe: tên riêng, địa điểm, ngày tháng, động từ chính."
+          "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
+          "o Tập trung vào giọng nam hoặc nữ tuỳ theo câu hỏi.",
+          "o Xác định từ khoá trước khi nghe: tên riêng, địa điểm, ngày tháng, động từ chính."
         ]
       }
     ],
@@ -3667,7 +3667,7 @@
     "examples": [
       {
         "slide_index": 201,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>According to the man, what has recently changed?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the man</strong>, what has <strong class=\"question-keyword\" style=\"color: #00B0F0;\">recently changed</strong>?",
         "choices": {
           "A": "Office hours",
           "B": "Job requirements",
@@ -3686,7 +3686,7 @@
       },
       {
         "slide_index": 203,
-        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>According to the woman, what recently happened in her department?",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the woman</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">recently happened</strong> in her department?",
         "choices": {
           "A": "A corporate policy was updated.",
           "B": "A supply order was mishandled.",
@@ -3802,18 +3802,18 @@
       {
         "slide_index": 212,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">5. CÂU HỎI &quot;DO NEXT”</span></strong>",
-          "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi dạng &quot;do next&quot; thường gặp: </span></strong>",
-          "o <em>What will </em><em><strong>the man / the woman </strong></em><em>most likely do next? </em>",
+          "<strong><span style=\"color: #FF0000;\">5. CÂU HỎI &quot;DO NEXT”</span></strong>",
+          "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi dạng &quot;do next&quot; thường gặp: </span></strong>",
+          "• <em>What will the man / the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">most likely do next</strong>?</em>",
           "o <em>What will the speakers probably do next?</em>o <em>What will Dr. Watanabe do next? </em>"
         ]
       },
       {
         "slide_index": 213,
         "text": [
-          "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
-          "o Tập trung nghe lượt nói cuối cùng của người đàn ông hoặc người phụ nữ, từ đó suy ra người đó sẽ làm gì tiếp theo.",
-          "o Với dạng câu hỏi này, chú ý nghe những cụm từ ở thì tương lai."
+          "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
+          "o Tập trung nghe lượt nói cuối cùng của người đàn ông hoặc người phụ nữ, từ đó suy ra người đó sẽ làm gì tiếp theo.",
+          "o Với dạng câu hỏi này, chú ý nghe những cụm từ ở thì tương lai."
         ]
       }
     ],
@@ -3821,7 +3821,7 @@
     "examples": [
       {
         "slide_index": 214,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What will the woman do next?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What will the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">do next</strong>?",
         "choices": {
           "A": "Give a tour",
           "B": "Read a manual",
@@ -3840,7 +3840,7 @@
       },
       {
         "slide_index": 216,
-        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the man say he will do next?",
+        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the man say he will <strong class=\"question-keyword\" style=\"color: #00B0F0;\">do next</strong>?",
         "choices": {
           "A": "Speak with a colleague",
           "B": "Conduct an interview",
@@ -3962,21 +3962,21 @@
       {
         "slide_index": 225,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">6. CÂU HỎI VỀ NGỤ Ý CỦA NGƯỜI NÓI TRONG NGỮ CẢNH </span></strong>",
-          "Câu hỏi này hỏi về ngụ ý của người nói trong ngữ cảnh của bài nói chuyện.",
-          "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi về ngụ ý của người nói</span></strong>",
-          "o <em>What does the man mean when he says &quot; ............ &quot;?</em>",
-          "o <em>What </em><em>does the woman mean when he says &quot; .......&quot;? </em>"
+          "<strong><span style=\"color: #FF0000;\">6. CÂU HỎI VỀ NGỤ Ý CỦA NGƯỜI NÓI TRONG NGỮ CẢNH </span></strong>",
+          "Câu hỏi này hỏi về ngụ ý của người nói trong ngữ cảnh của bài nói chuyện.",
+          "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi về ngụ ý của người nói</span></strong>",
+          "• <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mean when he says</strong> &quot; ... &quot;?</em>",
+          "• <em>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mean when she says</strong> &quot; ... &quot;?</em>"
         ]
       },
       {
         "slide_index": 226,
         "text": [
-          "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
-          "o Đọc hiểu câu hỏi và đáp áp trước",
-          "o Lưu ý câu nói được đề cập trong câu hỏi là của người đàn ông hay người phụ nữ.",
-          "o Chú ý giọng điệu của người nói (tức giận, ngạc nhiên, buồn bã, ...)",
-          "o Nghe kỹ lẫn câu trước lẫn câu sau để hiểu rõ ngữ cảnh bài nói."
+          "• <strong><span style=\"color: #00B0F0;\">Cách thức làm bài</span></strong>",
+          "o Đọc hiểu câu hỏi và đáp áp trước",
+          "o Lưu ý câu nói được đề cập trong câu hỏi là của người đàn ông hay người phụ nữ.",
+          "o Chú ý giọng điệu của người nói (tức giận, ngạc nhiên, buồn bã, ...)",
+          "o Nghe kỹ lẫn câu trước lẫn câu sau để hiểu rõ ngữ cảnh bài nói."
         ]
       }
     ],
@@ -3984,7 +3984,7 @@
     "examples": [
       {
         "slide_index": 227,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>Why does the man say, &quot;the Number 10 bus stops right outside our building&quot;?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>Why does the man say, &quot;<strong class=\"question-keyword\" style=\"color: #00B0F0;\">the Number 10 bus stops right outside our building</strong>&quot;?",
         "choices": {
           "A": "To recommend that the woman take the bus",
           "B": "To request that a bus route be extended",
@@ -4006,7 +4006,7 @@
       },
       {
         "slide_index": 229,
-        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>Why does the woman say, &quot;We actually have a new company logo&quot;?",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>Why does the woman say, &quot;<strong class=\"question-keyword\" style=\"color: #00B0F0;\">We actually have a new company logo</strong>&quot;?",
         "choices": {
           "A": "To compliment a colleague",
           "B": "To reassure a client",
@@ -4422,46 +4422,46 @@
       {
         "slide_index": 239,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">1. Tranh thủ đọc trước các câu hỏi và các câu trả lời cho sẵn ngay khi Phần 03 bắt đầu. </span></strong>",
-          "Khi Phần 03 bắt đầu, bạn sẽ được nghe phần hướng dẫn (directions). Trong khi máy đọc phần hướng dẫn, bạn nên đọc trước 03 câu hỏi (xác định từ khoá - key words) và 04 câu trả lời cho sẵn của mỗi câu. Việc đọc trước sẽ giúp bạn phần nào đoán được nội dung của bài đối thoại và việc này sẽ giúp bạn nghe tập trung hơn."
+          "<strong><span style=\"color: #FF0000;\">1. Tranh thủ đọc trước các câu hỏi và các câu trả lời cho sẵn ngay khi Phần 03 bắt đầu. </span></strong>",
+          "Khi Phần 03 bắt đầu, bạn sẽ được nghe phần hướng dẫn (directions). Trong khi máy đọc phần hướng dẫn, bạn nên đọc trước 03 câu hỏi (xác định từ khoá - key words) và 04 câu trả lời cho sẵn của mỗi câu. Việc đọc trước sẽ giúp bạn phần nào đoán được nội dung của bài đối thoại và việc này sẽ giúp bạn nghe tập trung hơn."
         ]
       },
       {
         "slide_index": 240,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">2. Xác định đối tượng trong cuộc hội thoại là rất quan trọng </span></strong>",
-          "Bạn nên chú ý đặc biệt đến đối tượng được hỏi là nam hay nữ. Khi xác định được vấn đề này, bạn sẽ nghe có trọng tâm hơn.",
-          "Nếu câu hỏi có từ &quot;the man&quot; thì bạn cần tập trung nhiều hơn vào lời thoại của người đàn ông. Ngược lại, nếu câu hỏi có từ &quot;the woman&quot; thì bạn cần tập trung nhiều hơn vào lời thoại của người phụ nữ."
+          "<strong><span style=\"color: #FF0000;\">2. Xác định đối tượng trong cuộc hội thoại là rất quan trọng </span></strong>",
+          "Bạn nên chú ý đặc biệt đến đối tượng được hỏi là nam hay nữ. Khi xác định được vấn đề này, bạn sẽ nghe có trọng tâm hơn.",
+          "Nếu câu hỏi có từ &quot;the man&quot; thì bạn cần tập trung nhiều hơn vào lời thoại của người đàn ông. Ngược lại, nếu câu hỏi có từ &quot;the woman&quot; thì bạn cần tập trung nhiều hơn vào lời thoại của người phụ nữ."
         ]
       },
       {
         "slide_index": 241,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">2. Xác định đối tượng trong cuộc hội thoại là rất quan trọng </span></strong>",
-          "Trong trường hợp câu hỏi không hỏi về những nhân vật đang nói chuyện, mà hỏi về một nhân vật thứ 3, thì bạn hãy chú ý rằng những thông tin được đề cập tới về nhân vật đó trong đoạn hội thọia đều là mấu chốt để tìm ra đáp án đúng của câu hỏi."
+          "<strong><span style=\"color: #FF0000;\">2. Xác định đối tượng trong cuộc hội thoại là rất quan trọng </span></strong>",
+          "Trong trường hợp câu hỏi không hỏi về những nhân vật đang nói chuyện, mà hỏi về một nhân vật thứ 3, thì bạn hãy chú ý rằng những thông tin được đề cập tới về nhân vật đó trong đoạn hội thọia đều là mấu chốt để tìm ra đáp án đúng của câu hỏi."
         ]
       },
       {
         "slide_index": 242,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">3. Câu đầu tiên của đoạn đối thoại là cực kỳ quan trọng. </span></strong>",
-          "<strong><span style=\"color: #FF0000;\">\t</span></strong>Thông thường những câu đầu tiên của đoạn đối thoại đều nêu ý tổng quát rồi sau đó mới đi vào chi tiết, nên bạn cần phải tập trung nghe ngay từ đầu để có thể chọn đáp án chính xác cho những câu hỏi tổng quát (Overview Questions)."
+          "<strong><span style=\"color: #FF0000;\">3. Câu đầu tiên của đoạn đối thoại là cực kỳ quan trọng. </span></strong>",
+          "<strong><span style=\"color: #FF0000;\">\t</span></strong>Thông thường những câu đầu tiên của đoạn đối thoại đều nêu ý tổng quát rồi sau đó mới đi vào chi tiết, nên bạn cần phải tập trung nghe ngay từ đầu để có thể chọn đáp án chính xác cho những câu hỏi tổng quát (Overview Questions)."
         ]
       },
       {
         "slide_index": 243,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">4. Hãy cố gắng nghe hết đoạn đối thoại rồi mới chọn câu trả lời </span></strong>",
-          "Để tránh bỏ qua các chi tiết quan trọng dẫn đến chọn sai (nói cách khác là trả lời những câu hỏi chi tiết - Detail Questions), bạn cần tập trung nghe kỹ hết đoạn đối thoại rồi mới tiến hành chọn đáp án cho cả 03 câu hỏi. Có thể tham khảo và áp dụng quy tắc bàn tay trái."
+          "<strong><span style=\"color: #FF0000;\">4. Hãy cố gắng nghe hết đoạn đối thoại rồi mới chọn câu trả lời </span></strong>",
+          "Để tránh bỏ qua các chi tiết quan trọng dẫn đến chọn sai (nói cách khác là trả lời những câu hỏi chi tiết - Detail Questions), bạn cần tập trung nghe kỹ hết đoạn đối thoại rồi mới tiến hành chọn đáp án cho cả 03 câu hỏi. Có thể tham khảo và áp dụng quy tắc bàn tay trái."
         ]
       },
       {
         "slide_index": 244,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">5. Nên vừa nghe vừa giải quyết câu hỏi </span></strong>",
-          "Trong khi nghe đoạn đối thoại, cố gắng tập trung nhìn các từ khoá và chọn đáp án nhanh nhất có thể.",
-          "<strong><span style=\"color: #FF0000;\">6. Đáp án đúng thường sử dụng Paraphrasing </span></strong>",
-          "&quot;Paraphrasing&quot; là việc điễn đạt ý nghĩa của một từ, một cụm từ bằng cách sử dụng một từ hoặc một cụm từ khác mà ý nghĩa vẫn không đổi nhằm hạn chế tối đa việc lặp từ. Ở Phần 03 và 04 của bài thi nghe, đáp án đúng thường rất hay sử dụng Paraphrasing."
+          "<strong><span style=\"color: #FF0000;\">5. Nên vừa nghe vừa giải quyết câu hỏi </span></strong>",
+          "Trong khi nghe đoạn đối thoại, cố gắng tập trung nhìn các từ khoá và chọn đáp án nhanh nhất có thể.",
+          "<strong><span style=\"color: #FF0000;\">6. Đáp án đúng thường sử dụng Paraphrasing </span></strong>",
+          "&quot;Paraphrasing&quot; là việc điễn đạt ý nghĩa của một từ, một cụm từ bằng cách sử dụng một từ hoặc một cụm từ khác mà ý nghĩa vẫn không đổi nhằm hạn chế tối đa việc lặp từ. Ở Phần 03 và 04 của bài thi nghe, đáp án đúng thường rất hay sử dụng Paraphrasing."
         ]
       }
     ],

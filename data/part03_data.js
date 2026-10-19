@@ -38,13 +38,13 @@ window.part03Data = [
           "<strong>1. CÂU HỎI VỀ CHỦ ĐỀ BÀI NGHE</strong>",
           "Đây là dạng câu hỏi yêu cầu <em><strong><span style=\"color: #00B0F0;\">xác định nội dung chính hoặc chủ đề </span></strong></em>mà những người nói đang thảo luận.",
           "<strong>Một số dạng câu hỏi thường gặp:</strong>",
-          "• <em>What is the topic of the conversation? </em>",
-          "• <em>What are the speakers discussing? </em>",
-          "• <em>What are they talking about? </em>",
-          "• <em>What is the conversation about? </em>",
-          "• <em>What is the subject of the conversation? </em>",
-          "• <em>What is the discussion mainly about? </em>",
-          "• <em>What are the speakers mainly discussing?</em>"
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">topic</strong> of the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong>?</em>",
+          "• <em>What are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>?</em>",
+          "• <em>What are they <strong class=\"question-keyword\" style=\"color: #00B0F0;\">talking about</strong>?</em>",
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation about</strong>?</em>",
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">subject</strong> of the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong>?</em>",
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussion mainly about</strong>?</em>",
+          "• <em>What are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mainly discussing</strong>?</em>"
         ]
       },
       {
@@ -307,7 +307,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 6,
-        "question": "<strong>EXAMPLE 01 </strong><br><em>What is the topic of the conversation? </em>",
+        "question": "<strong>EXAMPLE 01 </strong><br><em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">topic</strong> of the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong>?</em>",
         "choices": {
           "A": "Health",
           "B": "Traffic",
@@ -324,7 +324,7 @@ window.part03Data = [
       },
       {
         "slide_index": 8,
-        "question": "<strong>EXAMPLE 02 </strong><br><em>What product are the speakers discussing? </em>",
+        "question": "<strong>EXAMPLE 02 </strong><br><em>What product are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>?</em>",
         "choices": {
           "A": "Electronics",
           "B": "Office furniture",
@@ -642,10 +642,10 @@ window.part03Data = [
           "<strong>1. Nhận biết câu hỏi</strong>",
           "Dạng câu hỏi này yêu cầu <strong>xác định địa điểm diễn ra cuộc hội thoại hoặc bài nói</strong>. Hầu hết các câu hỏi đều bắt đầu bằng từ để hỏi &quot;<strong>Where</strong>&quot;.",
           "<strong>VÍ DỤ:</strong>",
-          "• <em>Where does the conversation most likely take place? </em>",
-          "• <em>Where are the speakers? </em>",
-          "• <em>Where is the announcement being made? </em>",
-          "• <em>Where does the speaker work? </em>"
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong> most likely <strong class=\"question-keyword\" style=\"color: #00B0F0;\">take place</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> are the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">announcement being made</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speaker work</strong>?</em>"
         ]
       },
       {
@@ -1295,7 +1295,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 47,
-        "question": "<strong>EXAMPLE 01 </strong><br><em>Where are the speakers? </em>",
+        "question": "<strong>EXAMPLE 01 </strong><br><em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> are the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong>?</em>",
         "choices": {
           "A": "At a train station",
           "B": "At an electronics repair shop",
@@ -1312,7 +1312,7 @@ window.part03Data = [
       },
       {
         "slide_index": 49,
-        "question": "<strong>EXAMPLE 02 </strong><br><em>Where most likely are the speakers?</em>",
+        "question": "<strong>EXAMPLE 02 </strong><br><em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> most likely are the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong>?</em>",
         "choices": {
           "A": "At a medical office",
           "B": "At a bank",
@@ -1652,12 +1652,12 @@ window.part03Data = [
           "<strong>3. CÂU HỎI VỀ NGHỀ NGHIỆP </strong>",
           "<strong>3.1. Nhận dạng câu hỏi</strong>",
           "Đây là dạng câu hỏi yêu cầu <strong>xác định nghề nghiệp, công việc, chức vụ hoặc vai trò </strong>của một hoặc nhiều người nói trong đoạn hội thoại. <strong>Các câu hỏi thường gặp bao gồm</strong>:",
-          "• <em>Who are </em><em><strong>the speakers</strong></em><em>? </em>",
-          "• <em>Who is </em><em><strong>the man </strong></em><em>/ </em><em><strong>the woman</strong></em><em>? </em>",
-          "• <em>Who most likely is </em><em><strong>the man</strong></em><em> / </em><em><strong>the woman</strong></em><em>?</em>",
-          "• <em>What most likely is </em><em><strong>the man&#x27;s job </strong></em><em>/ </em><em><strong>the woman&#x27;s job</strong></em><em>? </em>",
-          "• <em>What does </em><em><strong>the man </strong></em><em>/ </em><em><strong>the woman </strong></em><em>do? </em>",
-          "• <em>What is </em><em><strong>the man&#x27;s occupation </strong></em><em>/ </em><em><strong>the woman&#x27;s occupation</strong></em><em>?</em>"
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> are <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the speakers</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who most likely</strong> is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>?</em>",
+          "• <em>What most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man's job</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman's job</strong>?</em>",
+          "• <em>What does <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman do</strong>?</em>",
+          "• <em>What is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man's occupation</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman's occupation</strong>?</em>"
         ]
       },
       {
@@ -2067,7 +2067,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 77,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>Who most likely is the woman?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>?",
         "choices": {
           "A": "A store cashier",
           "B": "A tour guide",
@@ -2084,7 +2084,7 @@ window.part03Data = [
       },
       {
         "slide_index": 79,
-        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>Who most likely is the woman?",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>?",
         "choices": {
           "A": "A journalist",
           "B": "A musician",
@@ -2101,7 +2101,7 @@ window.part03Data = [
       },
       {
         "slide_index": 81,
-        "question": "<strong>Example 03 </strong><br><strong>Question: </strong>What most likely is the man&#x27;s position?",
+        "question": "<strong>Example 03 </strong><br><strong>Question: </strong>What most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man's position</strong>?",
         "choices": {
           "A": "A maintenance worker",
           "B": "A government official",
@@ -2411,11 +2411,11 @@ window.part03Data = [
         "text": [
           "<strong><span style=\"color: #FF0000;\">4. CÂU HỎI VẤN ĐỀ</span></strong>",
           "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi về vấn đề thường gặp </span></strong>",
-          "o <em>What is the problem?</em>",
-          "o <em>What problem does the man / the woman mention? </em>",
-          "o <em>What is the man / woman worried about?</em>",
-          "o <em>What is the man / woman concerned about?</em>",
-          "o <em>Why is the man / the woman having trouble? </em>"
+          "• <em>What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong>?</em>",
+          "• <em>What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the man / the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?</em>",
+          "• <em>What is the man / woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">worried about</strong>?</em>",
+          "• <em>What is the man / woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">concerned about</strong>?</em>",
+          "• <em>Why is the man / the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">having trouble</strong>?</em>"
         ]
       },
       {
@@ -2437,7 +2437,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 106,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What problem does the man mention?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?",
         "choices": {
           "A": "A room is poorly lit.",
           "B": "A machine is too noisy.",
@@ -2454,7 +2454,7 @@ window.part03Data = [
       },
       {
         "slide_index": 108,
-        "question": "<strong>Example 02  </strong><br><strong>Question</strong>: What problem does the woman mention?",
+        "question": "<strong>Example 02  </strong><br><strong>Question</strong>: What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?",
         "choices": {
           "A": "Some equipment is not working.",
           "B": "Some documents are missing.",
@@ -2472,7 +2472,7 @@ window.part03Data = [
       },
       {
         "slide_index": 110,
-        "question": "<strong>Example 03  </strong><br><strong>Question: </strong>What problem does the woman mention?",
+        "question": "<strong>Example 03  </strong><br><strong>Question: </strong>What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?",
         "choices": {
           "A": "Some presenters will be late.",
           "B": "Some equipment is not working.",
@@ -2795,7 +2795,7 @@ window.part03Data = [
         "slide_index": 133,
         "text": [
           "<strong><span style=\"color: #FF0000;\">5. CÂU HỎI LÝ DO/NGUYÊN NHÂN</span></strong><strong><span style=\"color: #00B0F0;\">Một số câu hỏi tại sao thường gặp: </span></strong>",
-          "o <em>Why is the man unavailable / surprised / disappointed? </em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">unavailable</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">surprised</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">disappointed</strong>?</em>",
           "o <em>Why is the woman calling?</em><strong>Chú ý đến từ khoá trong câu hỏi: </strong>tên riêng, ngày tháng, địa điểm, động từ chính."
         ]
       },
@@ -2804,7 +2804,7 @@ window.part03Data = [
         "text": [
           "<strong>Chú ý: </strong>Có nhiều câu hỏi &quot;Why&quot; nhưng nội dung câu hỏi là hỏi về <strong>mục đích </strong>đoạn hội thoại.",
           "o <em>Why is the man calling?</em><em>\t</em>o <em>Why is the woman at the store? </em>",
-          "o <em>Why is the woman in the city? </em>"
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">in the city</strong>?</em>"
         ]
       },
       {
@@ -2826,7 +2826,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 136,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>Why is the woman calling?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">calling</strong>?",
         "choices": {
           "A": "To make an appointment",
           "B": "To rent a car",
@@ -2843,7 +2843,7 @@ window.part03Data = [
       },
       {
         "slide_index": 138,
-        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>Why does the man say he is busy?",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> does the man say he is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">busy</strong>?",
         "choices": {
           "A": "He is moving into a different office.",
           "B": "He is meeting with some clients.",
@@ -3190,7 +3190,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 163,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the woman ask the man for?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the man for</strong>?",
         "choices": {
           "A": "Some feedback",
           "B": "Some assistance",
@@ -3207,7 +3207,7 @@ window.part03Data = [
       },
       {
         "slide_index": 165,
-        "question": "<strong>Example 02 </strong><br><strong>Question: What does the man request? </strong>",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">request</strong>?",
         "choices": {
           "A": "Additional office supplies",
           "B": "Extra team members",
@@ -3326,8 +3326,8 @@ window.part03Data = [
         "text": [
           "<strong><span style=\"color: #FF0000;\">7. CÂU HỎI GỢI Ý</span></strong>",
           "<strong><span style=\"color: #00B0F0;\">Một số câu hỏi gợi ý thường gặp: </span></strong>",
-          "o <em>What does the woman suggest the man do? </em>",
-          "o <em>What does the man offer to do?</em>",
+          "• <em>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest the man do</strong>?</em>",
+          "• <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">offer to do</strong>?</em>",
           "o <em>What does the man recommend doing?</em><em>\t</em>o <em>What does the man suggest? </em>"
         ]
       },
@@ -3347,7 +3347,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 176,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the man suggest the woman do?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest the woman do</strong>?",
         "choices": {
           "A": "Invite a friend to join her",
           "B": "Try a free class",
@@ -3366,7 +3366,7 @@ window.part03Data = [
       },
       {
         "slide_index": 178,
-        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the woman suggest doing?",
+        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest doing</strong>?",
         "choices": {
           "A": "Wearing a jacket",
           "B": "Using a credit card",
@@ -3508,7 +3508,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 188,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the woman say will happen soon?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">say will happen soon</strong>?",
         "choices": {
           "A": "Some patients will be transferred to another doctor.",
           "B": "Some employees will join a medical practice.",
@@ -3531,7 +3531,7 @@ window.part03Data = [
       },
       {
         "slide_index": 190,
-        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the woman say they will need to do?",
+        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">say they will need to do</strong>?",
         "choices": {
           "A": "Rent storage space",
           "B": "Increase production",
@@ -3649,9 +3649,9 @@ window.part03Data = [
         "text": [
           "<strong><span style=\"color: #FF0000;\">4. CÂU HỎI &quot;ACCORDING TO ... &quot;</span></strong>",
           "• <strong><span style=\"color: #00B0F0;\"> Một số câu hỏi dạng &quot;According to ...&quot; thường gặp: </span></strong>",
-          "o <em>According to the man, what will happen in December?</em>",
-          "o <em>According to the woman, what is taking place next week?</em>",
-          "o <em>According to the woman, what complaint has been made about some employees? </em>"
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the man</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">will happen</strong> in December?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the woman</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">is taking place</strong> next week?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the woman</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">complaint</strong> has been made about some employees?</em>"
         ]
       },
       {
@@ -3667,7 +3667,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 201,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>According to the man, what has recently changed?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the man</strong>, what has <strong class=\"question-keyword\" style=\"color: #00B0F0;\">recently changed</strong>?",
         "choices": {
           "A": "Office hours",
           "B": "Job requirements",
@@ -3686,7 +3686,7 @@ window.part03Data = [
       },
       {
         "slide_index": 203,
-        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>According to the woman, what recently happened in her department?",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong><strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the woman</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">recently happened</strong> in her department?",
         "choices": {
           "A": "A corporate policy was updated.",
           "B": "A supply order was mishandled.",
@@ -3804,7 +3804,7 @@ window.part03Data = [
         "text": [
           "<strong><span style=\"color: #FF0000;\">5. CÂU HỎI &quot;DO NEXT”</span></strong>",
           "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi dạng &quot;do next&quot; thường gặp: </span></strong>",
-          "o <em>What will </em><em><strong>the man / the woman </strong></em><em>most likely do next? </em>",
+          "• <em>What will the man / the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">most likely do next</strong>?</em>",
           "o <em>What will the speakers probably do next?</em>o <em>What will Dr. Watanabe do next? </em>"
         ]
       },
@@ -3821,7 +3821,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 214,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What will the woman do next?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>What will the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">do next</strong>?",
         "choices": {
           "A": "Give a tour",
           "B": "Read a manual",
@@ -3840,7 +3840,7 @@ window.part03Data = [
       },
       {
         "slide_index": 216,
-        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the man say he will do next?",
+        "question": "<strong>Example 02</strong><br><strong>Question: </strong>What does the man say he will <strong class=\"question-keyword\" style=\"color: #00B0F0;\">do next</strong>?",
         "choices": {
           "A": "Speak with a colleague",
           "B": "Conduct an interview",
@@ -3965,8 +3965,8 @@ window.part03Data = [
           "<strong><span style=\"color: #FF0000;\">6. CÂU HỎI VỀ NGỤ Ý CỦA NGƯỜI NÓI TRONG NGỮ CẢNH </span></strong>",
           "Câu hỏi này hỏi về ngụ ý của người nói trong ngữ cảnh của bài nói chuyện.",
           "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi về ngụ ý của người nói</span></strong>",
-          "o <em>What does the man mean when he says &quot; ............ &quot;?</em>",
-          "o <em>What </em><em>does the woman mean when he says &quot; .......&quot;? </em>"
+          "• <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mean when he says</strong> &quot; ... &quot;?</em>",
+          "• <em>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mean when she says</strong> &quot; ... &quot;?</em>"
         ]
       },
       {
@@ -3984,7 +3984,7 @@ window.part03Data = [
     "examples": [
       {
         "slide_index": 227,
-        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>Why does the man say, &quot;the Number 10 bus stops right outside our building&quot;?",
+        "question": "<strong>Example 01 </strong><br><strong>Question: </strong>Why does the man say, &quot;<strong class=\"question-keyword\" style=\"color: #00B0F0;\">the Number 10 bus stops right outside our building</strong>&quot;?",
         "choices": {
           "A": "To recommend that the woman take the bus",
           "B": "To request that a bus route be extended",
@@ -4006,7 +4006,7 @@ window.part03Data = [
       },
       {
         "slide_index": 229,
-        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>Why does the woman say, &quot;We actually have a new company logo&quot;?",
+        "question": "<strong>Example 02 </strong><br><strong>Question: </strong>Why does the woman say, &quot;<strong class=\"question-keyword\" style=\"color: #00B0F0;\">We actually have a new company logo</strong>&quot;?",
         "choices": {
           "A": "To compliment a colleague",
           "B": "To reassure a client",
