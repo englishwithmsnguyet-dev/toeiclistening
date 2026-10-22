@@ -808,7 +808,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function switchView(viewName) {
-        if (!window.isUnlocked && (viewName === "part3" || viewName === "part4")) {
+        if (!window.isUnlocked && viewName === "part4") {
             window.showPaywallModal(() => switchView(viewName));
             return;
         }
@@ -972,14 +972,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     
     navPart3Btn.addEventListener("click", () => {
-        if (!window.isUnlocked) {
-            window.showPaywallModal(() => {
-                if (state.activeView !== "part3") {
-                    loadSection(state.part03ActiveSection || "overview");
-                }
-            });
-            return;
-        }
         if (state.activeView === "part3") {
             const isVisible = part3SubmenuContainer.style.display === "block";
             togglePart3Submenu(!isVisible);
@@ -5272,7 +5264,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function loadSectionP4(id) {
         const isUnlocked = window.isUnlocked;
         if (LOCKED_SECTIONS.includes(id) && !isUnlocked) {
-            window.showPaywallModal(() => loadSection(id));
+            window.showPaywallModal(() => loadSectionP4(id));
             return;
             if (false) {
                 sessionStorage.setItem("portal_unlocked_v2", "true");
