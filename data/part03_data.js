@@ -664,19 +664,19 @@ window.part03Data = [
         "text": [
           "<strong>2. CÂU HỎI VỀ ĐỊA ĐIỂM</strong>",
           "<strong>1. Nhận biết câu hỏi</strong>",
-          "Dạng câu hỏi này yêu cầu <strong>xác định địa điểm diễn ra cuộc hội thoại hoặc bài nói</strong>. Hầu hết các câu hỏi đều bắt đầu bằng từ để hỏi &quot;<strong>Where</strong>&quot;.",
+          "Dạng câu hỏi này yêu cầu <strong>xác định địa điểm diễn ra cuộc hội thoại hoặc nơi làm việc của các nhân vật</strong>. Hầu hết các câu hỏi đều bắt đầu bằng từ để hỏi &quot;<strong>Where</strong>&quot;.",
           "<strong>VÍ DỤ:</strong>",
           "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong> most likely <strong class=\"question-keyword\" style=\"color: #00B0F0;\">take place</strong>?</em>",
           "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> are the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong>?</em>",
-          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">announcement being made</strong>?</em>",
-          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speaker work</strong>?</em>"
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> do the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers most likely work</strong>?</em>",
+          "• <em><strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">man</strong> / <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman work</strong>?</em>"
         ]
       },
       {
         "slide_index": 32,
         "text": [
           "<strong>2. Chiến thuật làm bài</strong>",
-          "• Chú ý đặc biệt đến <strong>phần mở đầu</strong> của đoạn hội thoại hoặc bài nói vì đây là nơi người nghe thường tìm thấy những <strong>từ khóa giúp xác định bối cảnh và địa điểm</strong>. Tuy nhiên, <em><strong>thông tin về địa điểm cũng có thể xuất hiện ở các phần sau của bài nghe</strong></em>.",
+          "• Chú ý đặc biệt đến <strong>phần mở đầu</strong> của đoạn hội thoại vì đây là nơi người nghe thường tìm thấy những <strong>từ khóa giúp xác định bối cảnh và địa điểm</strong>. Tuy nhiên, <em><strong>thông tin về địa điểm cũng có thể xuất hiện ở các phần sau của bài nghe</strong></em>.",
           "• Trong TOEIC, địa điểm thường <strong>không được nêu trực tiếp</strong>. Thay vào đó, người nghe cần <em><strong>dựa vào các từ khóa liên quan đến công việc, dịch vụ, hoạt động hoặc đồ vật để suy luận đáp án</strong></em>.",
           "• Kết hợp nhiều chi tiết trong bài nghe thay vì chỉ dựa vào một từ khóa đơn lẻ để xác định địa điểm chính xác."
         ]
@@ -3691,14 +3691,14 @@ window.part03Data = [
   },
   {
     "id": "dang_02_what_say",
-    "title": "Dạng 2.III.3 - Câu hỏi 'What does the speaker say?'",
+    "title": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "parent_title": "DẠNG 02: CÂU HỎI VỀ THÔNG TIN CHI TIẾT - CÂU HỎI WHAT",
     "type": "subsection",
     "theory": [
       {
         "slide_index": 187,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">8. CÂU HỎI NGỤ Ý</span></strong>",
+          "<strong><span style=\"color: #FF0000;\">3. CÂU HỎI 'WHAT DOES THE MAN / THE WOMAN SAY...?'</span></strong>",
           "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi &quot;What does the man / the woman say ...?&quot; thường gặp </span></strong>",
           "o <em>What does the man say he will do?</em>o <em>What does the man say he needs to purchase?</em>o <em>What does the woman say she would prefer to do?</em>",
           "<em> </em>o <em>What does the man say will take place in 2 weeks? </em>",
@@ -4251,8 +4251,8 @@ window.part03Data = [
       {
         "slide_index": 225,
         "text": [
-          "<strong><span style=\"color: #FF0000;\">6. CÂU HỎI VỀ NGỤ Ý CỦA NGƯỜI NÓI TRONG NGỮ CẢNH </span></strong>",
-          "Câu hỏi này hỏi về ngụ ý của người nói trong ngữ cảnh của bài nói chuyện.",
+          "<strong><span style=\"color: #FF0000;\">6. CÂU HỎI VỀ NGỤ Ý TRONG NGỮ CẢNH </span></strong>",
+          "Câu hỏi này hỏi về ngụ ý của người nói trong ngữ cảnh của cuộc hội thoại.",
           "• <strong><span style=\"color: #00B0F0;\">Một số câu hỏi về ngụ ý của người nói</span></strong>",
           "• <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mean when he says</strong> &quot; ... &quot;?</em>",
           "• <em>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mean when she says</strong> &quot; ... &quot;?</em>"
@@ -4265,7 +4265,7 @@ window.part03Data = [
           "o Đọc hiểu câu hỏi và đáp áp trước",
           "o Lưu ý câu nói được đề cập trong câu hỏi là của người đàn ông hay người phụ nữ.",
           "o Chú ý giọng điệu của người nói (tức giận, ngạc nhiên, buồn bã, ...)",
-          "o Nghe kỹ lẫn câu trước lẫn câu sau để hiểu rõ ngữ cảnh bài nói."
+          "o Nghe kỹ lẫn câu trước lẫn câu sau để hiểu rõ ngữ cảnh cuộc trò chuyện."
         ]
       }
     ],
