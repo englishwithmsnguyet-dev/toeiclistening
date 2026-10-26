@@ -367,7 +367,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 11,
-        "question": "<strong>1. What is the main topic of the conversation? </strong>",
+        "question": "<strong>1. What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">main topic</strong> of the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong>? </strong>",
         "choices": {
           "A": "A new supervisor",
           "B": "A budget report",
@@ -395,7 +395,7 @@ window.part03Data = [
       },
       {
         "slide_index": 13,
-        "question": "<strong>2. What is the main topic of the conversation? </strong>",
+        "question": "<strong>2. What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">main topic</strong> of the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong>? </strong>",
         "choices": {
           "A": "New car designs",
           "B": "The opening of a factory",
@@ -423,7 +423,7 @@ window.part03Data = [
       },
       {
         "slide_index": 15,
-        "question": "<strong>3. What is the conversation mainly about? </strong>",
+        "question": "<strong>3. What is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong> <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mainly about</strong>? </strong>",
         "choices": {
           "A": "A room reservation",
           "B": "A canceled event",
@@ -451,7 +451,7 @@ window.part03Data = [
       },
       {
         "slide_index": 17,
-        "question": "<strong>4. What type of event are the speakers discussing? </strong>",
+        "question": "<strong>4. What type of <strong class=\"question-keyword\" style=\"color: #00B0F0;\">event</strong> are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>? </strong>",
         "choices": {
           "A": "A shareholders&#x27; meeting",
           "B": "A press conference",
@@ -479,7 +479,7 @@ window.part03Data = [
       },
       {
         "slide_index": 19,
-        "question": "<strong>5. What are the speakers discussing? </strong>",
+        "question": "<strong>5. What are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>? </strong>",
         "choices": {
           "A": "An arrival time",
           "B": "A seat assignment",
@@ -507,7 +507,7 @@ window.part03Data = [
       },
       {
         "slide_index": 21,
-        "question": "<strong>6. What are the speakers discussing? </strong>",
+        "question": "<strong>6. What are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>? </strong>",
         "choices": {
           "A": "A budget",
           "B": "A client survey",
@@ -535,7 +535,7 @@ window.part03Data = [
       },
       {
         "slide_index": 23,
-        "question": "<strong>7. What are the speakers discussing? </strong>",
+        "question": "<strong>7. What are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>? </strong>",
         "choices": {
           "A": "A fund-raiser",
           "B": "A health fair",
@@ -563,7 +563,7 @@ window.part03Data = [
       },
       {
         "slide_index": 25,
-        "question": "<strong>8. What information are the speakers discussing? </strong><br><strong>",
+        "question": "<strong>8. What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">information</strong> are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>? </strong>",
         "choices": {
           "A": "Shipping dates",
           "B": "Product specifications",
@@ -591,7 +591,7 @@ window.part03Data = [
       },
       {
         "slide_index": 27,
-        "question": "<strong>9. What are the speakers mainly discussing? </strong><br><strong>",
+        "question": "<strong>9. What are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mainly discussing</strong>? </strong>",
         "choices": {
           "A": "A free trial period",
           "B": "Customer reviews",
@@ -623,7 +623,7 @@ window.part03Data = [
       },
       {
         "slide_index": 29,
-        "question": "<strong>10. What does the woman ask about? </strong>",
+        "question": "<strong>10. What does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">woman</strong> <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask about</strong>? </strong>",
         "choices": {
           "A": "Making travel arrangements",
           "B": "Leading a workshop",
@@ -1381,7 +1381,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 52,
-        "question": "<strong>1. What department will the man work in? </strong>",
+        "question": "<strong>1. What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">department</strong> will the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">man work in</strong>? </strong>",
         "choices": {
           "A": "Accounting",
           "B": "Legal",
@@ -1411,7 +1411,7 @@ window.part03Data = [
       },
       {
         "slide_index": 54,
-        "question": "<strong>2. Where does the conversation most likely take place?</strong>",
+        "question": "<strong>2. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong> most likely <strong class=\"question-keyword\" style=\"color: #00B0F0;\">take place</strong>?</strong>",
         "choices": {
           "A": "At a shopping mall",
           "B": "At a theater",
@@ -1439,7 +1439,7 @@ window.part03Data = [
       },
       {
         "slide_index": 56,
-        "question": "<strong>3. Where do the speakers most likely work?</strong>",
+        "question": "<strong>3. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> do the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong> most likely <strong class=\"question-keyword\" style=\"color: #00B0F0;\">work</strong>?</strong>",
         "choices": {
           "A": "At a law office",
           "B": "At a supermarket",
@@ -1467,7 +1467,7 @@ window.part03Data = [
       },
       {
         "slide_index": 58,
-        "question": "<strong>4. Where is the conversation taking place?</strong>",
+        "question": "<strong>4. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> is the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong> <strong class=\"question-keyword\" style=\"color: #00B0F0;\">taking place</strong>?</strong>",
         "choices": {
           "A": "In a parking garage",
           "B": "At a car rental agency",
@@ -1497,7 +1497,7 @@ window.part03Data = [
       },
       {
         "slide_index": 60,
-        "question": "<strong>5. Where do the speakers work?</strong>",
+        "question": "<strong>5. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> do the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers work</strong>?</strong>",
         "choices": {
           "A": "At a phone company",
           "B": "At a retail store",
@@ -1525,7 +1525,7 @@ window.part03Data = [
       },
       {
         "slide_index": 62,
-        "question": "<strong>6. Where do the speakers most likely work?</strong>",
+        "question": "<strong>6. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> do the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong> most likely <strong class=\"question-keyword\" style=\"color: #00B0F0;\">work</strong>?</strong>",
         "choices": {
           "A": "At a medical clinic",
           "B": "At a catering company",
@@ -1557,7 +1557,7 @@ window.part03Data = [
       },
       {
         "slide_index": 64,
-        "question": "<strong>7. Where do the speakers most likely work?</strong>",
+        "question": "<strong>7. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> do the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong> most likely <strong class=\"question-keyword\" style=\"color: #00B0F0;\">work</strong>?</strong>",
         "choices": {
           "A": "At a movie theater",
           "B": "At a construction firm",
@@ -1589,7 +1589,7 @@ window.part03Data = [
       },
       {
         "slide_index": 66,
-        "question": "<strong>8. Where does the woman work?</strong>",
+        "question": "<strong>8. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">woman work</strong>?</strong>",
         "choices": {
           "A": "At a hotel",
           "B": "At a cafe",
@@ -1621,7 +1621,7 @@ window.part03Data = [
       },
       {
         "slide_index": 68,
-        "question": "<strong>9. Where most likely are the speakers?</strong>",
+        "question": "<strong>9. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> most likely are the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">speakers</strong>?</strong>",
         "choices": {
           "A": "At a bookstore",
           "B": "At an art supply store",
@@ -1659,7 +1659,7 @@ window.part03Data = [
       },
       {
         "slide_index": 70,
-        "question": "<strong>10. Where does the conversation most likely take place?</strong>",
+        "question": "<strong>10. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> does the <strong class=\"question-keyword\" style=\"color: #00B0F0;\">conversation</strong> most likely <strong class=\"question-keyword\" style=\"color: #00B0F0;\">take place</strong>?</strong>",
         "choices": {
           "A": "At a library",
           "B": "At a theater",
@@ -2208,7 +2208,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 84,
-        "question": "<strong>1. Who most likely is the woman? </strong>",
+        "question": "<strong>1. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>? </strong>",
         "choices": {
           "A": "A journalist",
           "B": "A mechanic",
@@ -2236,7 +2236,7 @@ window.part03Data = [
       },
       {
         "slide_index": 86,
-        "question": "<strong>2. Who most likely are the speakers? </strong>",
+        "question": "<strong>2. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely are <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the speakers</strong>? </strong>",
         "choices": {
           "A": "Community organizers",
           "B": "Weather reporters",
@@ -2264,7 +2264,7 @@ window.part03Data = [
       },
       {
         "slide_index": 88,
-        "question": "<strong>3. What most likely is the woman&#x27;s job? </strong>",
+        "question": "<strong>3. What most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman&#x27;s job</strong>? </strong>",
         "choices": {
           "A": "Lab technician",
           "B": "Receptionist",
@@ -2292,7 +2292,7 @@ window.part03Data = [
       },
       {
         "slide_index": 90,
-        "question": "<strong>4. Who most likely is the man? </strong>",
+        "question": "<strong>4. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the man</strong>? </strong>",
         "choices": {
           "A": "A Web-site designer",
           "B": "A truck driver",
@@ -2320,7 +2320,7 @@ window.part03Data = [
       },
       {
         "slide_index": 92,
-        "question": "<strong>5. Who most likely is the woman? </strong>",
+        "question": "<strong>5. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>? </strong>",
         "choices": {
           "A": "A workshop instructor",
           "B": "A store clerk",
@@ -2348,7 +2348,7 @@ window.part03Data = [
       },
       {
         "slide_index": 94,
-        "question": "<strong>6. What most likely is the woman&#x27;s job title? </strong>",
+        "question": "<strong>6. What most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman&#x27;s job title</strong>? </strong>",
         "choices": {
           "A": "Custodian",
           "B": "Locksmith",
@@ -2376,7 +2376,7 @@ window.part03Data = [
       },
       {
         "slide_index": 96,
-        "question": "<strong>7. Who most likely is the woman? </strong>",
+        "question": "<strong>7. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> most likely is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>? </strong>",
         "choices": {
           "A": "An architect",
           "B": "An interior decorator",
@@ -2404,7 +2404,7 @@ window.part03Data = [
       },
       {
         "slide_index": 98,
-        "question": "<strong>8. Who is Ken Jacobs? </strong>",
+        "question": "<strong>8. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Ken Jacobs</strong>? </strong>",
         "choices": {
           "A": "An architect",
           "B": "A chef",
@@ -2432,7 +2432,7 @@ window.part03Data = [
       },
       {
         "slide_index": 100,
-        "question": "<strong>9. What is the woman&#x27;s job? </strong>",
+        "question": "<strong>9. What is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman&#x27;s job</strong>? </strong>",
         "choices": {
           "A": "Travel agent",
           "B": "Pilot",
@@ -2460,7 +2460,7 @@ window.part03Data = [
       },
       {
         "slide_index": 102,
-        "question": "<strong>10. Who is the woman? </strong>",
+        "question": "<strong>10. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Who</strong> is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">the woman</strong>? </strong>",
         "choices": {
           "A": "A financial adviser",
           "B": "An art gallery owner",
@@ -2616,7 +2616,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 113,
-        "question": "<strong>1. What are the men concerned about? </strong>",
+        "question": "<strong>1. What are the men <strong class=\"question-keyword\" style=\"color: #00B0F0;\">concerned about</strong>? </strong>",
         "choices": {
           "A": "The number of meeting rooms",
           "B": "The amount of storage space",
@@ -2646,7 +2646,7 @@ window.part03Data = [
       },
       {
         "slide_index": 115,
-        "question": "<strong>2. What problem does the man mention? </strong>",
+        "question": "<strong>2. What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>? </strong>",
         "choices": {
           "A": "A brochure contains an error.",
           "B": "A shipment is late.",
@@ -2674,7 +2674,7 @@ window.part03Data = [
       },
       {
         "slide_index": 117,
-        "question": "<strong>3. What problem does the man mention? </strong>",
+        "question": "<strong>3. What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>? </strong>",
         "choices": {
           "A": "Some paperwork has been lost.",
           "B": "Some equipment is broken.",
@@ -2704,7 +2704,7 @@ window.part03Data = [
       },
       {
         "slide_index": 119,
-        "question": "<strong>4. What problem is mentioned? </strong>",
+        "question": "<strong>4. What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mentioned</strong>? </strong>",
         "choices": {
           "A": "A power cord is missing.",
           "B": "A microphone is not functioning properly.",
@@ -2737,7 +2737,7 @@ window.part03Data = [
       },
       {
         "slide_index": 121,
-        "question": "<strong>5. What problem are the speakers discussing? </strong>",
+        "question": "<strong>5. What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discussing</strong>? </strong>",
         "choices": {
           "A": "A display area is not clean.",
           "B": "An appliance is broken.",
@@ -2765,7 +2765,7 @@ window.part03Data = [
       },
       {
         "slide_index": 123,
-        "question": "<strong>6. What problem does the woman mention? </strong>",
+        "question": "<strong>6. What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>? </strong>",
         "choices": {
           "A": "A password does not work.",
           "B": "A calculation was incorrect.",
@@ -2795,7 +2795,7 @@ window.part03Data = [
       },
       {
         "slide_index": 125,
-        "question": "<strong>7. What does the man say he is concerned about? </strong>",
+        "question": "<strong>7. What does the man say he is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">concerned about</strong>? </strong>",
         "choices": {
           "A": "Staying under budget",
           "B": "Impressing a client",
@@ -2825,7 +2825,7 @@ window.part03Data = [
       },
       {
         "slide_index": 127,
-        "question": "<strong>8. What is the man concerned about? </strong>",
+        "question": "<strong>8. What is the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">concerned about</strong>? </strong>",
         "choices": {
           "A": "How to lower costs",
           "B": "When to hold an event",
@@ -2853,7 +2853,7 @@ window.part03Data = [
       },
       {
         "slide_index": 129,
-        "question": "<strong>9. What does the woman say she is concerned about? </strong>",
+        "question": "<strong>9. What does the woman say she is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">concerned about</strong>? </strong>",
         "choices": {
           "A": "Not being qualified",
           "B": "Not having enough time",
@@ -2882,7 +2882,7 @@ window.part03Data = [
       },
       {
         "slide_index": 131,
-        "question": "<strong>10. What problem does the woman mention?</strong>",
+        "question": "<strong>10. What <strong class=\"question-keyword\" style=\"color: #00B0F0;\">problem</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mention</strong>?</strong>",
         "choices": {
           "A": "An invoice is incorrect.",
           "B": "A window is broken.",
@@ -3011,7 +3011,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 141,
-        "question": "<strong>1. Why is the man leaving early? </strong>",
+        "question": "<strong>1. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">leaving early</strong>? </strong>",
         "choices": {
           "A": "He has to catch a flight.",
           "B": "He needs time to eat lunch.",
@@ -3043,7 +3043,7 @@ window.part03Data = [
       },
       {
         "slide_index": 143,
-        "question": "<strong>2. Why is the woman late? </strong>",
+        "question": "<strong>2. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">late</strong>? </strong>",
         "choices": {
           "A": "She could not find a tool.",
           "B": "She did not submit a report on time.",
@@ -3071,7 +3071,7 @@ window.part03Data = [
       },
       {
         "slide_index": 145,
-        "question": "<strong>3. Why does the woman make an appointment for the man? </strong>",
+        "question": "<strong>3. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">make an appointment</strong> for the man? </strong>",
         "choices": {
           "A": "He has to take a fitness assessment.",
           "B": "He has to complete some paperwork.",
@@ -3105,7 +3105,7 @@ window.part03Data = [
       },
       {
         "slide_index": 147,
-        "question": "<strong>4. Why is the man at the store? </strong>",
+        "question": "<strong>4. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">at the store</strong>? </strong>",
         "choices": {
           "A": "To interview for a job",
           "B": "To make a delivery",
@@ -3133,7 +3133,7 @@ window.part03Data = [
       },
       {
         "slide_index": 149,
-        "question": "<strong>5. Why does the woman apologize? </strong>",
+        "question": "<strong>5. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">apologize</strong>? </strong>",
         "choices": {
           "A": "She damaged an item.",
           "B": "She arrived late to work.",
@@ -3161,7 +3161,7 @@ window.part03Data = [
       },
       {
         "slide_index": 151,
-        "question": "<strong>6. Why does the man apologize? </strong>",
+        "question": "<strong>6. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">apologize</strong>? </strong>",
         "choices": {
           "A": "He lost the woman&#x27;s phone number.",
           "B": "A coupon has expired.",
@@ -3189,7 +3189,7 @@ window.part03Data = [
       },
       {
         "slide_index": 153,
-        "question": "<strong>7. Why is the man calling? </strong>",
+        "question": "<strong>7. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">calling</strong>? </strong>",
         "choices": {
           "A": "To complain about a delay",
           "B": "To interview for a job",
@@ -3217,7 +3217,7 @@ window.part03Data = [
       },
       {
         "slide_index": 155,
-        "question": "<strong>8. Why will the man talk to some cooks? </strong>",
+        "question": "<strong>8. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> will the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">talk to some cooks</strong>? </strong>",
         "choices": {
           "A": "To compliment their work",
           "B": "To ask for some advice",
@@ -3249,7 +3249,7 @@ window.part03Data = [
       },
       {
         "slide_index": 157,
-        "question": "<strong>9. Why did the woman leave her previous job? </strong>",
+        "question": "<strong>9. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> did the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">leave her previous job</strong>? </strong>",
         "choices": {
           "A": "She began university studies.",
           "B": "Her commute was too long.",
@@ -3281,7 +3281,7 @@ window.part03Data = [
       },
       {
         "slide_index": 159,
-        "question": "<strong>10. Why does the woman say she is visiting the city? </strong>",
+        "question": "<strong>10. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> does the woman say she is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">visiting the city</strong>? </strong>",
         "choices": {
           "A": "To see a museum exhibit",
           "B": "To attend a conference",
@@ -3401,7 +3401,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 168,
-        "question": "<strong>1. What does the woman inquire about? </strong>",
+        "question": "<strong>1. What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">inquire about</strong>? </strong>",
         "choices": {
           "A": "Comparing competitors&#x27; prices",
           "B": "Purchasing new software",
@@ -3431,7 +3431,7 @@ window.part03Data = [
       },
       {
         "slide_index": 170,
-        "question": "<strong>2. What does the woman ask the man to do? </strong>",
+        "question": "<strong>2. What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the man to do</strong>? </strong>",
         "choices": {
           "A": "Attend a trade show",
           "B": "Join a leadership council",
@@ -3461,7 +3461,7 @@ window.part03Data = [
       },
       {
         "slide_index": 172,
-        "question": "<strong>3. </strong><strong>W</strong><strong>hat does the man ask the woman to do? </strong>",
+        "question": "<strong>3. What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the woman to do</strong>? </strong>",
         "choices": {
           "A": "Place an order",
           "B": "Recommend a product",
@@ -3593,7 +3593,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 181,
-        "question": "<strong>1. What does the woman suggest the man do? </strong>",
+        "question": "<strong>1. What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest the man do</strong>? </strong>",
         "choices": {
           "A": "Check a Web site",
           "B": "Call a taxi",
@@ -3625,7 +3625,7 @@ window.part03Data = [
       },
       {
         "slide_index": 183,
-        "question": "<strong>2. What does the man suggest? </strong>",
+        "question": "<strong>2. What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest</strong>? </strong>",
         "choices": {
           "A": "Replacing a membership card",
           "B": "Calling back later",
@@ -3653,7 +3653,7 @@ window.part03Data = [
       },
       {
         "slide_index": 185,
-        "question": "<strong>3. What does the man suggest?</strong>",
+        "question": "<strong>3. What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">suggest</strong>?</strong>",
         "choices": {
           "A": "Going to the train station together",
           "B": "Searching online for an address",
@@ -3784,7 +3784,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 193,
-        "question": "<strong>1. What does the man say he would prefer to do? </strong>",
+        "question": "<strong>1. What does the man say he <strong class=\"question-keyword\" style=\"color: #00B0F0;\">would prefer to do</strong>? </strong>",
         "choices": {
           "A": "Complete a task at a later time",
           "B": "Ask for a meal to be delivered",
@@ -3816,7 +3816,7 @@ window.part03Data = [
       },
       {
         "slide_index": 195,
-        "question": "<strong>2. What does the woman say she is concerned about? </strong>",
+        "question": "<strong>2. What does the woman say she is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">concerned about</strong>? </strong>",
         "choices": {
           "A": "An inconvenient location",
           "B": "A missed deadline",
@@ -3844,7 +3844,7 @@ window.part03Data = [
       },
       {
         "slide_index": 197,
-        "question": "<strong>3. What does the woman say is planned for Friday?<br></strong>",
+        "question": "<strong>3. What does the woman say is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">planned for Friday</strong>? </strong>",
         "choices": {
           "A": "A product launch",
           "B": "An inspection",
@@ -3967,7 +3967,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 206,
-        "question": "<strong>1. According to the man, what happened last week? </strong>",
+        "question": "<strong>1. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the man</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">happened last week</strong>? </strong>",
         "choices": {
           "A": "An office door would not lock.",
           "B": "A sink was installed incorrectly.",
@@ -3997,7 +3997,7 @@ window.part03Data = [
       },
       {
         "slide_index": 208,
-        "question": "<strong>2. According to the man, what caused the problem? </strong>",
+        "question": "<strong>2. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the man</strong>, what <strong class=\"question-keyword\" style=\"color: #00B0F0;\">caused the problem</strong>? </strong>",
         "choices": {
           "A": "Poor maintenance",
           "B": "Weather conditions",
@@ -4026,7 +4026,7 @@ window.part03Data = [
       },
       {
         "slide_index": 210,
-        "question": "<strong>3. According to the woman, what is taking place next week? </strong>",
+        "question": "<strong>3. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">According to the woman</strong>, what is <strong class=\"question-keyword\" style=\"color: #00B0F0;\">taking place next week</strong>? </strong>",
         "choices": {
           "A": "A career fair",
           "B": "A retirement celebration",
@@ -4150,7 +4150,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 219,
-        "question": "<strong>1. What will the woman most likely do next? </strong>",
+        "question": "<strong>1. What will the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">most likely do next</strong>? </strong>",
         "choices": {
           "A": "Check some equipment",
           "B": "Speak with a manager",
@@ -4180,7 +4180,7 @@ window.part03Data = [
       },
       {
         "slide_index": 221,
-        "question": "<strong>2. What will the man most likely do next? </strong>",
+        "question": "<strong>2. What will the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">most likely do next</strong>? </strong>",
         "choices": {
           "A": "Postpone a meeting",
           "B": "Follow up on a request",
@@ -4212,7 +4212,7 @@ window.part03Data = [
       },
       {
         "slide_index": 223,
-        "question": "<strong>3. What does the woman say she will do next? </strong>",
+        "question": "<strong>3. What does the woman say she will <strong class=\"question-keyword\" style=\"color: #00B0F0;\">do next</strong>? </strong>",
         "choices": {
           "A": "Taste some samples",
           "B": "Request some maintenance",
@@ -4345,7 +4345,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 232,
-        "question": "<strong>1. What does the man imply when he says, &quot;I used to work at a hardware store&quot;? </strong>",
+        "question": "<strong>1. What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">imply when he says</strong>, &quot;<strong class=\"question-keyword\" style=\"color: #00B0F0;\">I used to work at a hardware store</strong>&quot;? </strong>",
         "choices": {
           "A": "He can fix a problem.",
           "B": "He has experience in customer service.",
@@ -4377,7 +4377,7 @@ window.part03Data = [
       },
       {
         "slide_index": 234,
-        "question": "<strong>2. What does the woman mean when she says, &quot;we&#x27;d really like to fill the position this week&quot;? </strong>",
+        "question": "<strong>2. What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mean when she says</strong>, &quot;<strong class=\"question-keyword\" style=\"color: #00B0F0;\">we&#x27;d really like to fill the position this week</strong>&quot;? </strong>",
         "choices": {
           "A": "A candidate should decide quickly.",
           "B": "An alternative plan needs to be approved.",
@@ -4409,7 +4409,7 @@ window.part03Data = [
       },
       {
         "slide_index": 236,
-        "question": "<strong>3. What does the woman mean when she says, &quot;we&#x27;ve done that for three years in a row&quot;? </strong>",
+        "question": "<strong>3. What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">mean when she says</strong>, &quot;<strong class=\"question-keyword\" style=\"color: #00B0F0;\">we&#x27;ve done that for three years in a row</strong>&quot;? </strong>",
         "choices": {
           "A": "She does not have much experience with a task.",
           "B": "She thinks an activity has been popular.",
@@ -4452,7 +4452,7 @@ window.part03Data = [
     "practice": [
       {
         "slide_index": 327,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 01 </span></strong><br><strong><span style=\"color: #000000;\">Question 02.</span></strong><span style=\"color: #000000;\"> Look at the graphic. Which month do the speakers agree to discuss?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 01 </span></strong><br><strong><span style=\"color: #000000;\">Question 02.</span></strong><span style=\"color: #000000;\"> Look at the graphic. Which month do the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">agree to discuss</strong>?</span>",
         "choices": {
           "A": "March",
           "B": "April",
@@ -4486,7 +4486,7 @@ window.part03Data = [
       },
       {
         "slide_index": 336,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 02 </span></strong><br><strong>Question 03. </strong>Look at the graphic. Where will the speakers probably have lunch?",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 02 </span></strong><br><strong>Question 03. </strong>Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> will the speakers probably <strong class=\"question-keyword\" style=\"color: #00B0F0;\">have lunch</strong>?",
         "choices": {
           "A": "At Nico&#x27;s Italian Trattoria",
           "B": "At Kim&#x27;s Korean Grill",
@@ -4521,7 +4521,7 @@ window.part03Data = [
       },
       {
         "slide_index": 436,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 03 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which seat does the woman request?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 03 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Which seat</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">request</strong>?</span>",
         "choices": {
           "A": "26D",
           "B": "26F",
@@ -4558,7 +4558,7 @@ window.part03Data = [
       },
       {
         "slide_index": 441,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 04 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where are the speakers going?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 04 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">going</strong>?</span>",
         "choices": {
           "A": "To Los Angeles",
           "B": "To San Antonio",
@@ -4589,7 +4589,7 @@ window.part03Data = [
       },
       {
         "slide_index": 455,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05 </span></strong><br><strong>Question 03</strong>.  Look at the graphic. What model does the man recommend?",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 05 </span></strong><br><strong>Question 03</strong>. Look at the graphic. What model does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">recommend</strong>?",
         "choices": {
           "A": "F-12",
           "B": "A-66",
@@ -4623,7 +4623,7 @@ window.part03Data = [
       },
       {
         "slide_index": 481,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 06 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Which item does the man want to return?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 06 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Which item</strong> does the man want to <strong class=\"question-keyword\" style=\"color: #00B0F0;\">return</strong>?</span>",
         "choices": {
           "A": "The jacket",
           "B": "The sweater",
@@ -4661,7 +4661,7 @@ window.part03Data = [
       },
       {
         "slide_index": 490,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 07 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. Where will the woman go next?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 07 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> will the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">go next</strong>?</span>",
         "choices": {
           "A": "To Building 1",
           "B": "To Building 2",
@@ -4698,7 +4698,7 @@ window.part03Data = [
       },
       {
         "slide_index": 540,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 08 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. Why is the woman&#x27;s ticket discounted?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 08 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the woman&#x27;s ticket <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discounted</strong>?</span>",
         "choices": {
           "A": "It is a Monday.",
           "B": "It is after 5 P.M.",
