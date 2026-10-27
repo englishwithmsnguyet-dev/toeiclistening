@@ -5030,14 +5030,67 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                 `;
             } else {
-                // Single image: left/right layout
-                contentContainer.innerHTML = `
-                    <div style="display: flex; flex-direction: row; gap: 32px; flex-wrap: wrap; align-items: center;">
-                        <div style="flex: 1.2; min-width: 300px; display: flex; justify-content: center;">
-                            ${imgHtml}
+                // Single image: left/right balanced layout
+                const isSectionTitle = slide.slide_index === 1 && slide.text.length <= 2;
+                const isExampleSentence = slide.text.length === 1 && !slide.text[0].includes('<div');
+                const isVocabSlide = slide.text.length >= 2 && !slide.text.some(t => t.includes('<div')) && !isSectionTitle;
+
+                const singleImgHtml = `
+                    <div class="slide-images" style="display: flex; align-items: center; justify-content: center; background: #ffffff; border-radius: 14px; padding: 14px; border: 1.5px solid #e2e8f0; box-shadow: 0 8px 24px rgba(0,0,0,0.06); width: 100%; max-width: 440px;">
+                        <img src="data/graphics/part01/${slide.images[0]}" alt="Slide Image" style="max-width: 100%; max-height: 380px; width: auto; height: auto; object-fit: contain; border-radius: 8px; display: block;">
+                    </div>
+                `;
+
+                let rightCardContent = "";
+                if (isExampleSentence) {
+                    const sentence = slide.text[0];
+                    rightCardContent = `
+                        <div style="width: 100%; max-width: 480px; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 36px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #2563eb; background: #eff6ff; padding: 5px 16px; border-radius: 20px; border: 1px solid #dbeafe;">Ví dụ minh hoạ</span>
+                                <span onclick="playTTS(this.dataset.text, event)" data-text="${sentence.replace(/"/g, '&quot;')}" style="cursor: pointer; font-size: 1.15rem; color: #2563eb; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #eff6ff; transition: all 0.2s;" onmouseover="this.style.background='#dbeafe'" onmouseout="this.style.background='#eff6ff'" title="Nghe câu ví dụ">🔊</span>
+                            </div>
+                            <div style="font-size: 1.75rem; font-weight: 600; line-height: 1.6; color: #1e293b; text-align: center;">
+                                ${sentence}
+                            </div>
                         </div>
-                        <div class="slide-text" style="flex: 1; min-width: 300px; font-size: 1.35rem; line-height: 2; color: var(--text-main); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+                    `;
+                } else if (isVocabSlide) {
+                    rightCardContent = `
+                        <div style="width: 100%; max-width: 480px; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 32px 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
+                            <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #0284c7; background: #e0f2fe; padding: 5px 16px; border-radius: 20px; border: 1px solid #bae6fd;">Từ vựng trọng tâm</span>
+                            <div style="font-size: 2.3rem; font-weight: 800; line-height: 1.2; text-align: center; color: #0284c7;">${slide.text[0]}</div>
+                            ${slide.text[1] ? `<div style="font-size: 1.35rem; color: #64748b; font-family: 'Segoe UI', system-ui, sans-serif; text-align: center;">${slide.text[1]}</div>` : ''}
+                            ${slide.text[2] ? `<div style="font-size: 1.6rem; font-weight: 700; color: #16a34a; text-align: center;">${slide.text[2]}</div>` : ''}
+                            ${slide.text.length > 3 ? `
+                                <div style="margin-top: 8px; padding: 10px 14px; background: #f8fafc; border-radius: 8px; border: 1px dashed #cbd5e1; width: 100%; text-align: center;">
+                                    ${slide.text.slice(3).map(extra => `<div style="font-size: 1.15rem; line-height: 1.5; color: #334155;">${extra}</div>`).join('')}
+                                </div>
+                            ` : ''}
+                        </div>
+                    `;
+                } else if (isSectionTitle) {
+                    rightCardContent = `
+                        <div style="width: 100%; max-width: 480px; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 36px 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px;">
+                            <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #2563eb; background: #eff6ff; padding: 5px 16px; border-radius: 20px; border: 1px solid #dbeafe;">Chủ đề bài học</span>
+                            ${slide.text.map((t, idx) => `<div style="font-size: ${idx === 0 ? '1.9rem' : '1.5rem'}; font-weight: 800; text-align: center; line-height: 1.4;">${t}</div>`).join('')}
+                        </div>
+                    `;
+                } else {
+                    rightCardContent = `
+                        <div style="width: 100%; max-width: 480px; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 32px 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px;">
                             ${textHtml}
+                        </div>
+                    `;
+                }
+
+                contentContainer.innerHTML = `
+                    <div style="display: flex; flex-direction: row; gap: 40px; align-items: center; justify-content: center; width: 100%; height: 100%; max-width: 960px; margin: 0 auto; flex-wrap: wrap;">
+                        <div style="flex: 1; min-width: 320px; display: flex; justify-content: center; align-items: center; max-width: 460px;">
+                            ${singleImgHtml}
+                        </div>
+                        <div class="slide-text" style="flex: 1; min-width: 320px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; max-width: 480px;">
+                            ${rightCardContent}
                         </div>
                     </div>
                 `;

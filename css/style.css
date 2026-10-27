@@ -1839,11 +1839,11 @@ body.light-mode .q-trans {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    text-align: justify;
+    align-items: center;
     background-color: #f8fafc;
     position: relative;
     font-size: 1.25rem;
+    width: 100%;
 }
 
 /* Practice test layout inside PPT slide */
