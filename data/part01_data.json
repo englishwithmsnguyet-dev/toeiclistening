@@ -60,7 +60,7 @@
         "images": [
           "slide_10_img_4.png"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide10.mp3"
       },
       {
         "slide_index": 11,
@@ -97,7 +97,7 @@
         "images": [
           "slide_13_img_3.png"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide13.mp3"
       },
       {
         "slide_index": 14,
@@ -133,7 +133,7 @@
         "images": [
           "slide_16_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide16.mp3"
       },
       {
         "slide_index": 17,
@@ -171,7 +171,7 @@
           "The man is <strong>carrying</strong> <span style=\"color: #00B050;\"><strong>a ladder</strong></span>."
         ],
         "images": [],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide19.mp3"
       },
       {
         "slide_index": 20,
@@ -207,7 +207,7 @@
         "images": [
           "slide_22_img_3.png"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide22.mp3"
       },
       {
         "slide_index": 23,
@@ -243,7 +243,7 @@
         "images": [
           "slide_25_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide25.mp3"
       },
       {
         "slide_index": 26,
@@ -284,7 +284,7 @@
         "images": [
           "slide_28_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide28.mp3"
       },
       {
         "slide_index": 29,
@@ -319,7 +319,7 @@
         "images": [
           "slide_31_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide31.mp3"
       },
       {
         "slide_index": 32,
@@ -353,7 +353,7 @@
         "images": [
           "slide_34_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide34.mp3"
       },
       {
         "slide_index": 35,
@@ -389,7 +389,7 @@
         "images": [
           "slide_37_img_7.png"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide37.mp3"
       },
       {
         "slide_index": 38,
@@ -426,7 +426,7 @@
         "images": [
           "slide_40_img_2.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide40.mp3"
       },
       {
         "slide_index": 41,
@@ -464,7 +464,7 @@
         "images": [
           "slide_43_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide43.mp3"
       },
       {
         "slide_index": 44,
@@ -500,7 +500,7 @@
         "images": [
           "slide_46_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide46.mp3"
       },
       {
         "slide_index": 47,
@@ -538,7 +538,7 @@
         "images": [
           "slide_49_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide49.mp3"
       },
       {
         "slide_index": 50,
@@ -576,7 +576,7 @@
         "images": [
           "slide_52_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide52.mp3"
       },
       {
         "slide_index": 53,
@@ -612,7 +612,7 @@
         "images": [
           "slide_55_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide55.mp3"
       },
       {
         "slide_index": 56,
@@ -648,7 +648,7 @@
         "images": [
           "slide_58_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide58.mp3"
       },
       {
         "slide_index": 59,
@@ -686,7 +686,7 @@
         "images": [
           "slide_61_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide61.mp3"
       },
       {
         "slide_index": 62,
@@ -721,7 +721,7 @@
         "images": [
           "slide_64_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide64.mp3"
       },
       {
         "slide_index": 65,
@@ -757,7 +757,7 @@
         "images": [
           "slide_67_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide67.mp3"
       },
       {
         "slide_index": 68,
@@ -785,7 +785,7 @@
         "images": [
           "slide_69_img_3.png"
         ],
-        "audio": "media20.mp3"
+        "audio": "part01_examples/p1_ex_slide69.mp3"
       },
       {
         "slide_index": 70,
@@ -795,7 +795,7 @@
         "images": [
           "slide_70_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide70.mp3"
       },
       {
         "slide_index": 71,
@@ -819,7 +819,7 @@
           "<span style=\"color: #00B050;\"><strong>đứng</strong></span>"
         ],
         "images": [],
-        "audio": "media21.mp3"
+        "audio": "part01_examples/p1_ex_slide72.mp3"
       },
       {
         "slide_index": 73,
@@ -829,7 +829,7 @@
         "images": [
           "slide_73_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide73.mp3"
       },
       {
         "slide_index": 74,
@@ -855,7 +855,7 @@
         "images": [
           "slide_75_img_3.jpg"
         ],
-        "audio": "media22.mp3"
+        "audio": "part01_examples/p1_ex_slide75.mp3"
       },
       {
         "slide_index": 76,
@@ -865,7 +865,7 @@
         "images": [
           "slide_76_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide76.mp3"
       },
       {
         "slide_index": 77,
@@ -887,7 +887,7 @@
         "images": [
           "slide_78_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide78.mp3"
       },
       {
         "slide_index": 79,
@@ -923,7 +923,7 @@
         "images": [
           "slide_81_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide81.mp3"
       },
       {
         "slide_index": 82,
@@ -959,7 +959,7 @@
         "images": [
           "slide_84_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide84.mp3"
       },
       {
         "slide_index": 85,
@@ -995,7 +995,7 @@
         "images": [
           "slide_87_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide87.mp3"
       },
       {
         "slide_index": 88,
@@ -1032,7 +1032,7 @@
         "images": [
           "slide_90_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide90.mp3"
       },
       {
         "slide_index": 91,
@@ -1068,7 +1068,7 @@
         "images": [
           "slide_93_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide93.mp3"
       },
       {
         "slide_index": 94,
@@ -1104,7 +1104,7 @@
         "images": [
           "slide_96_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide96.mp3"
       },
       {
         "slide_index": 97,
@@ -1138,7 +1138,7 @@
         "images": [
           "slide_99_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide99.mp3"
       },
       {
         "slide_index": 100,
@@ -1174,7 +1174,7 @@
         "images": [
           "slide_102_img_3.jpg"
         ],
-        "audio": null
+        "audio": "part01_examples/p1_ex_slide102.mp3"
       },
       {
         "slide_index": 103,

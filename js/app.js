@@ -1,5 +1,17 @@
 
 
+// Helper to play an authentic audio file (e.g., TOEIC studio recordings)
+window.playAudioFile = function(url, event) {
+    if (event) event.stopPropagation();
+    if (!url) return;
+    if (!window._globalAudioPlayer) {
+        window._globalAudioPlayer = new Audio();
+    }
+    window._globalAudioPlayer.src = url;
+    window._globalAudioPlayer.currentTime = 0;
+    window._globalAudioPlayer.play().catch(e => console.log('Audio playback error:', e));
+};
+
 // Smart, natural audio player for English vocabulary
 window.playTTS = function(text, event) {
     if (event) event.stopPropagation(); // prevent triggering row click
@@ -5044,11 +5056,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 let rightCardContent = "";
                 if (isExampleSentence) {
                     const sentence = slide.text[0];
+                    const audioUrl = slide.audio ? (slide.audio.startsWith('media/') ? slide.audio : `media/${slide.audio}`) : '';
+                    const soundAction = audioUrl ? `playAudioFile('${audioUrl}', event)` : `playTTS(this.dataset.text, event)`;
                     rightCardContent = `
                         <div style="width: 100%; max-width: 480px; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 36px 30px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px;">
                             <div style="display: flex; align-items: center; gap: 8px;">
                                 <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #2563eb; background: #eff6ff; padding: 5px 16px; border-radius: 20px; border: 1px solid #dbeafe;">Ví dụ minh hoạ</span>
-                                <span onclick="playTTS(this.dataset.text, event)" data-text="${sentence.replace(/"/g, '&quot;')}" style="cursor: pointer; font-size: 1.15rem; color: #2563eb; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #eff6ff; transition: all 0.2s;" onmouseover="this.style.background='#dbeafe'" onmouseout="this.style.background='#eff6ff'" title="Nghe câu ví dụ">🔊</span>
+                                <span onclick="${soundAction}" data-text="${sentence.replace(/"/g, '&quot;')}" style="cursor: pointer; font-size: 1.15rem; color: #2563eb; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #eff6ff; transition: all 0.2s;" onmouseover="this.style.background='#dbeafe'" onmouseout="this.style.background='#eff6ff'" title="Nghe audio chuẩn TOEIC">🔊</span>
                             </div>
                             <div style="font-size: 1.75rem; font-weight: 600; line-height: 1.6; color: #1e293b; text-align: center;">
                                 ${sentence}
@@ -5056,9 +5070,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     `;
                 } else if (isVocabSlide) {
+                    const audioUrl = slide.audio ? (slide.audio.startsWith('media/') ? slide.audio : `media/${slide.audio}`) : '';
+                    const soundAction = audioUrl ? `playAudioFile('${audioUrl}', event)` : `playTTS(this.dataset.text, event)`;
                     rightCardContent = `
                         <div style="width: 100%; max-width: 480px; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 32px 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.06); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px;">
-                            <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #0284c7; background: #e0f2fe; padding: 5px 16px; border-radius: 20px; border: 1px solid #bae6fd;">Từ vựng trọng tâm</span>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #0284c7; background: #e0f2fe; padding: 5px 16px; border-radius: 20px; border: 1px solid #bae6fd;">Từ vựng trọng tâm</span>
+                                <span onclick="${soundAction}" data-text="${slide.text[0].replace(/"/g, '&quot;')}" style="cursor: pointer; font-size: 1.15rem; color: #0284c7; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: #e0f2fe; transition: all 0.2s;" onmouseover="this.style.background='#bae6fd'" onmouseout="this.style.background='#e0f2fe'" title="Nghe phát âm">🔊</span>
+                            </div>
                             <div style="font-size: 2.3rem; font-weight: 800; line-height: 1.2; text-align: center; color: #0284c7;">${slide.text[0]}</div>
                             ${slide.text[1] ? `<div style="font-size: 1.35rem; color: #64748b; font-family: 'Segoe UI', system-ui, sans-serif; text-align: center;">${slide.text[1]}</div>` : ''}
                             ${slide.text[2] ? `<div style="font-size: 1.6rem; font-weight: 700; color: #16a34a; text-align: center;">${slide.text[2]}</div>` : ''}
