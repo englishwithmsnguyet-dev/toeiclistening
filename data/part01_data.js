@@ -1012,7 +1012,7 @@ window.part01Data = [
                 "images": [
                     "slide_105_img_2.png"
                 ],
-                "audio": "media32.mp3",
+                "audio": "part01_practice/dang01_q1.mp3",
                 "practice": {
                     "options": [
                         "A man is pushing a shopping cart.",
@@ -1047,7 +1047,7 @@ window.part01Data = [
                 "images": [
                     "slide_106_img_2.png"
                 ],
-                "audio": "media33.mp3",
+                "audio": "part01_practice/dang01_q2.mp3",
                 "practice": {
                     "options": [
                         "She's picking some flowers.",
@@ -1082,7 +1082,7 @@ window.part01Data = [
                 "images": [
                     "slide_107_img_2.png"
                 ],
-                "audio": "media33.mp3",
+                "audio": "part01_practice/dang01_q3.mp3",
                 "practice": {
                     "options": [
                         "He's walking along the shore.",
@@ -1117,7 +1117,7 @@ window.part01Data = [
                 "images": [
                     "slide_108_img_2.png"
                 ],
-                "audio": "media33.mp3",
+                "audio": "part01_practice/dang01_q4.mp3",
                 "practice": {
                     "options": [
                         "A woman's standing on a busy street.",
@@ -1152,7 +1152,7 @@ window.part01Data = [
                 "images": [
                     "slide_109_img_2.png"
                 ],
-                "audio": "media33.mp3",
+                "audio": "part01_practice/dang01_q5.mp3",
                 "practice": {
                     "options": [
                         "He's talking on a phone.",
@@ -1187,7 +1187,7 @@ window.part01Data = [
                 "images": [
                     "slide_110_img_2.png"
                 ],
-                "audio": "media33.mp3",
+                "audio": "part01_practice/dang01_q6.mp3",
                 "practice": {
                     "options": [
                         "A man is opening a drawer.",
@@ -1401,7 +1401,7 @@ window.part01Data = [
                 "images": [
                     "slide_134_img_2.png"
                 ],
-                "audio": "media34.mp3",
+                "audio": "part01_practice/dang02_q1.mp3",
                 "practice": {
                     "options": [
                         "One of the men is repairing a motorcycle.",
@@ -1436,7 +1436,7 @@ window.part01Data = [
                 "images": [
                     "slide_135_img_3.png"
                 ],
-                "audio": "media35.mp3",
+                "audio": "part01_practice/dang02_q2.mp3",
                 "practice": {
                     "options": [
                         "They are seated in a waiting area.",
@@ -1471,7 +1471,7 @@ window.part01Data = [
                     "<div style=\"text-align: center; margin-bottom: 24px; font-size: 2rem; color: #dc2626; font-weight: bold;\">PRACTICE 02</div><div style=\"display: flex; flex-wrap: wrap; justify-content: center; align-items: center; width: 100%; max-width: 900px; margin: 0 auto;\"><img src=\"data/graphics/part01/slide_136_img_3.png\" style=\"width: 30%; max-height: 150px; object-fit: contain; margin: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\"><img src=\"data/graphics/part01/slide_136_img_5.png\" style=\"width: 30%; max-height: 150px; object-fit: contain; margin: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\"><img src=\"data/graphics/part01/slide_136_img_6.png\" style=\"width: 30%; max-height: 150px; object-fit: contain; margin: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\"><img src=\"data/graphics/part01/slide_136_img_7.png\" style=\"width: 30%; max-height: 150px; object-fit: contain; margin: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\"><img src=\"data/graphics/part01/slide_136_img_8.png\" style=\"width: 30%; max-height: 150px; object-fit: contain; margin: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\"><img src=\"data/graphics/part01/slide_136_img_9.png\" style=\"width: 30%; max-height: 150px; object-fit: contain; margin: 10px; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);\"></div>"
                 ],
                 "images": [],
-                "audio": "media36.mp3"
+                "audio": null
             },
             {
                 "slide_index": 28,
@@ -1479,7 +1479,7 @@ window.part01Data = [
                 "images": [
                     "slide_137_img_3.png"
                 ],
-                "audio": "media36.mp3",
+                "audio": "part01_practice/dang02_q3.mp3",
                 "practice": {
                     "options": [
                         "One of the women is wearing a scarf.",
@@ -1506,7 +1506,7 @@ window.part01Data = [
                             "vi": "gấp thực đơn"
                         }
                     ],
-                    "audio": "media36.mp3"
+                    "audio": "part01_practice/dang02_q3.mp3"
                 }
             },
             {
@@ -1515,7 +1515,7 @@ window.part01Data = [
                 "images": [
                     "slide_139_img_3.png"
                 ],
-                "audio": "media36.mp3",
+                "audio": "part01_practice/dang02_q4.mp3",
                 "practice": {
                     "options": [
                         "A notice is being hung on a post.",
@@ -1542,7 +1542,7 @@ window.part01Data = [
                             "vi": "xe đẩy"
                         }
                     ],
-                    "audio": "media36.mp3"
+                    "audio": "part01_practice/dang02_q4.mp3"
                 }
             },
             {
@@ -1551,7 +1551,7 @@ window.part01Data = [
                 "images": [
                     "slide_141_img_3.png"
                 ],
-                "audio": "media36.mp3",
+                "audio": "part01_practice/dang02_q5.mp3",
                 "practice": {
                     "options": [
                         "One of the women is writing on a notepad.",
@@ -1578,7 +1578,7 @@ window.part01Data = [
                             "vi": "đối mặt nhau"
                         }
                     ],
-                    "audio": "media36.mp3"
+                    "audio": "part01_practice/dang02_q5.mp3"
                 }
             },
             {
@@ -1587,7 +1587,7 @@ window.part01Data = [
                 "images": [
                     "slide_143_img_3.png"
                 ],
-                "audio": "media36.mp3",
+                "audio": "part01_practice/dang02_q6.mp3",
                 "practice": {
                     "options": [
                         "Some travelers are seated in a waiting area.",
@@ -1614,7 +1614,7 @@ window.part01Data = [
                             "vi": "tiến đến quầy"
                         }
                     ],
-                    "audio": "media36.mp3"
+                    "audio": "part01_practice/dang02_q6.mp3"
                 }
             },
             {
@@ -1623,7 +1623,7 @@ window.part01Data = [
                 "images": [
                     "slide_145_img_3.png"
                 ],
-                "audio": "media36.mp3",
+                "audio": "part01_practice/dang02_q7.mp3",
                 "practice": {
                     "options": [
                         "Some people are sitting in a car.",
@@ -1650,7 +1650,7 @@ window.part01Data = [
                             "vi": "cởi áo khoác"
                         }
                     ],
-                    "audio": "media36.mp3"
+                    "audio": "part01_practice/dang02_q7.mp3"
                 }
             },
             {
@@ -1659,7 +1659,7 @@ window.part01Data = [
                 "images": [
                     "slide_147_img_3.png"
                 ],
-                "audio": "media36.mp3",
+                "audio": "part01_practice/dang02_q8.mp3",
                 "practice": {
                     "options": [
                         "They're looking into a copy machine.",
@@ -1686,7 +1686,7 @@ window.part01Data = [
                             "vi": "di chuyển thiết bị"
                         }
                     ],
-                    "audio": "media36.mp3"
+                    "audio": "part01_practice/dang02_q8.mp3"
                 }
             }
         ]

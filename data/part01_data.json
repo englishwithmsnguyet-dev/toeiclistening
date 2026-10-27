@@ -1214,7 +1214,7 @@
         "images": [
           "slide_105_img_2.png"
         ],
-        "audio": "media32.mp3"
+        "audio": "part01_practice/dang01_q1.mp3"
       },
       {
         "slide_index": 106,
@@ -1231,7 +1231,7 @@
         "images": [
           "slide_106_img_2.png"
         ],
-        "audio": "media33.mp3"
+        "audio": "part01_practice/dang01_q2.mp3"
       },
       {
         "slide_index": 107,
@@ -1248,7 +1248,7 @@
         "images": [
           "slide_107_img_2.png"
         ],
-        "audio": "media33.mp3"
+        "audio": "part01_practice/dang01_q3.mp3"
       },
       {
         "slide_index": 108,
@@ -1265,7 +1265,7 @@
         "images": [
           "slide_108_img_2.png"
         ],
-        "audio": "media33.mp3"
+        "audio": "part01_practice/dang01_q4.mp3"
       },
       {
         "slide_index": 109,
@@ -1282,7 +1282,7 @@
         "images": [
           "slide_109_img_2.png"
         ],
-        "audio": "media33.mp3"
+        "audio": "part01_practice/dang01_q5.mp3"
       },
       {
         "slide_index": 110,
@@ -1299,7 +1299,7 @@
         "images": [
           "slide_110_img_2.png"
         ],
-        "audio": "media33.mp3"
+        "audio": "part01_practice/dang01_q6.mp3"
       }
     ]
   },

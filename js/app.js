@@ -132,44 +132,157 @@ window.playTTS = function(text, event) {
 };
 
 window.selectPracticeOption = function(el) {
-    if (el.parentElement.hasAttribute('data-checked')) return;
-    const siblings = el.parentElement.querySelectorAll('.practice-option');
+    const container = el.closest('#practice-options-container');
+    if (!container) return;
+    if (container.getAttribute('data-checked') === 'true') return;
+    
+    const siblings = container.querySelectorAll('.practice-option');
     siblings.forEach(s => {
-        s.style.backgroundColor = '';
-        s.style.borderColor = 'var(--border)';
         s.classList.remove('selected');
+        s.style.backgroundColor = '';
+        s.style.borderColor = '#e2e8f0';
     });
-    el.style.backgroundColor = '#f0f9ff';
-    el.style.borderColor = '#0284c7';
+    
     el.classList.add('selected');
+    el.style.backgroundColor = '#eff6ff';
+    el.style.borderColor = '#2563eb';
+    
+    // Automatically evaluate and reveal scripts upon selection
+    window.evaluatePracticeContainer(container, el);
 };
 
-window.checkPracticeAnswer = function(btn) {
-    const container = document.getElementById('practice-options-container');
-    const selected = container.querySelector('.practice-option.selected');
-    if (!selected) {
-        alert("Vui lòng chọn một đáp án trước khi kiểm tra!");
-        return;
-    }
-    
-    if (container.hasAttribute('data-checked')) return;
+window.evaluatePracticeContainer = function(container, selectedEl) {
+    if (!container) return;
     container.setAttribute('data-checked', 'true');
-    btn.style.opacity = '0.5';
-    btn.style.cursor = 'not-allowed';
+    
+    // Reveal all scripts
+    const scripts = container.querySelectorAll('.opt-script-text');
+    scripts.forEach(s => {
+        s.style.display = 'block';
+    });
     
     const options = container.querySelectorAll('.practice-option');
     options.forEach(opt => {
         const isCorrect = opt.getAttribute('data-correct') === 'true';
+        const labelBadge = opt.querySelector('.opt-label-badge');
+        const badgeTag = opt.querySelector('.opt-result-badge');
+        
+        opt.style.cursor = 'default';
+        opt.style.transform = 'none';
+        
         if (isCorrect) {
-            opt.style.backgroundColor = '#dcfce7';
-            opt.style.borderColor = '#16a34a';
-            opt.innerHTML = opt.innerHTML.replace('</strong>', '</strong> <span style="color: #16a34a;">✔️</span>');
-        } else if (opt === selected && !isCorrect) {
-            opt.style.backgroundColor = '#fee2e2';
-            opt.style.borderColor = '#dc2626';
-            opt.innerHTML = opt.innerHTML.replace('</strong>', '</strong> <span style="color: #dc2626;">❌</span>');
+            opt.style.backgroundColor = '#f0fdf4';
+            opt.style.borderColor = '#22c55e';
+            opt.style.boxShadow = '0 4px 12px rgba(34,197,94,0.12)';
+            opt.style.opacity = '1';
+            if (labelBadge) {
+                labelBadge.style.backgroundColor = '#22c55e';
+                labelBadge.style.borderColor = '#16a34a';
+                labelBadge.style.color = '#ffffff';
+            }
+            if (badgeTag) {
+                badgeTag.style.display = 'inline-flex';
+                badgeTag.style.backgroundColor = '#dcfce7';
+                badgeTag.style.color = '#15803d';
+                badgeTag.style.border = '1px solid #86efac';
+                badgeTag.innerHTML = '✔️ Đáp án đúng';
+            }
+        } else if (opt === selectedEl && !isCorrect) {
+            opt.style.backgroundColor = '#fef2f2';
+            opt.style.borderColor = '#ef4444';
+            opt.style.boxShadow = '0 4px 12px rgba(239,68,68,0.12)';
+            opt.style.opacity = '1';
+            if (labelBadge) {
+                labelBadge.style.backgroundColor = '#ef4444';
+                labelBadge.style.borderColor = '#dc2626';
+                labelBadge.style.color = '#ffffff';
+            }
+            if (badgeTag) {
+                badgeTag.style.display = 'inline-flex';
+                badgeTag.style.backgroundColor = '#fee2e2';
+                badgeTag.style.color = '#b91c1c';
+                badgeTag.style.border = '1px solid #fca5a5';
+                badgeTag.innerHTML = '❌ Bạn đã chọn';
+            }
+        } else {
+            opt.style.backgroundColor = '#f8fafc';
+            opt.style.borderColor = '#e2e8f0';
+            opt.style.opacity = '0.75';
+            if (labelBadge) {
+                labelBadge.style.backgroundColor = '#e2e8f0';
+                labelBadge.style.borderColor = '#cbd5e1';
+                labelBadge.style.color = '#64748b';
+            }
         }
     });
+    
+    // Update action button to "Làm lại"
+    const actionBtn = document.getElementById('practice-action-btn');
+    if (actionBtn) {
+        actionBtn.innerHTML = '🔄 Làm lại câu này (Ẩn script)';
+        actionBtn.style.background = '#0284c7';
+        actionBtn.style.opacity = '1';
+        actionBtn.style.cursor = 'pointer';
+        actionBtn.onclick = function() {
+            window.resetPracticeQuestion();
+        };
+    }
+};
+
+window.resetPracticeQuestion = function() {
+    const container = document.getElementById('practice-options-container');
+    if (!container) return;
+    container.removeAttribute('data-checked');
+    
+    const options = container.querySelectorAll('.practice-option');
+    options.forEach(opt => {
+        opt.classList.remove('selected');
+        opt.style.backgroundColor = '#ffffff';
+        opt.style.borderColor = '#e2e8f0';
+        opt.style.boxShadow = '0 2px 6px rgba(0,0,0,0.02)';
+        opt.style.opacity = '1';
+        opt.style.cursor = 'pointer';
+        
+        const labelBadge = opt.querySelector('.opt-label-badge');
+        if (labelBadge) {
+            labelBadge.style.backgroundColor = '#eff6ff';
+            labelBadge.style.borderColor = '#bfdbfe';
+            labelBadge.style.color = '#2563eb';
+        }
+        
+        const script = opt.querySelector('.opt-script-text');
+        if (script) {
+            script.style.display = 'none';
+        }
+        
+        const badgeTag = opt.querySelector('.opt-result-badge');
+        if (badgeTag) {
+            badgeTag.style.display = 'none';
+            badgeTag.innerHTML = '';
+        }
+    });
+    
+    const actionBtn = document.getElementById('practice-action-btn');
+    if (actionBtn) {
+        actionBtn.innerHTML = 'KIỂM TRA ĐÁP ÁN';
+        actionBtn.style.background = '#2563eb';
+        actionBtn.style.opacity = '1';
+        actionBtn.style.cursor = 'pointer';
+        actionBtn.onclick = function() {
+            window.checkPracticeAnswer(this);
+        };
+    }
+};
+
+window.checkPracticeAnswer = function(btn) {
+    const container = document.getElementById('practice-options-container');
+    if (!container) return;
+    const selected = container.querySelector('.practice-option.selected');
+    if (!selected) {
+        alert("Vui lòng click chọn một phương án (A, B, C hoặc D) trước khi kiểm tra!");
+        return;
+    }
+    window.evaluatePracticeContainer(container, selected);
 };
 
 // -------------------------------------------------------------
@@ -4941,50 +5054,70 @@ document.addEventListener("DOMContentLoaded", () => {
             p.options.forEach((opt, i) => {
                 const isCorrect = labels[i] === p.answer;
                 optionsHtml += `
-                    <div class="practice-option" data-correct="${isCorrect}" style="display: flex; align-items: flex-start; gap: 8px; padding: 12px 16px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; cursor: pointer; transition: all 0.2s;" onclick="selectPracticeOption(this)">
-                        <strong style="font-size: 1.1em; flex-shrink: 0; min-width: 24px;">${labels[i]}.</strong> <span style="flex: 1;">${opt}</span>
+                    <div class="practice-option" data-option="${labels[i]}" data-correct="${isCorrect}" style="display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 14px 18px; border: 2px solid #e2e8f0; border-radius: 12px; margin-bottom: 12px; cursor: pointer; background: #ffffff; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.02);" onclick="selectPracticeOption(this)">
+                        <div style="display: flex; align-items: center; gap: 14px; flex: 1;">
+                            <span class="opt-label-badge" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #eff6ff; color: #2563eb; font-weight: 800; font-size: 1.15rem; border: 2px solid #bfdbfe; flex-shrink: 0; transition: all 0.2s;">(${labels[i]})</span>
+                            <span class="opt-script-text" style="display: none; font-size: 1.15rem; color: #1e293b; font-weight: 500; line-height: 1.5;">${opt}</span>
+                        </div>
+                        <span class="opt-result-badge" style="display: none; padding: 4px 12px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; flex-shrink: 0;"></span>
                     </div>
                 `;
             });
             
             let vocabHtml = '';
-            p.vocab.forEach(v => {
-                vocabHtml += `
-                    <div style="display: flex; gap: 8px; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px dashed #e2e8f0; font-size: 1.15rem;">
-                        <span style="font-weight: 600; color: #0284c7; min-width: 140px; display: inline-block;">${v.en} <span onclick="playTTS(this.dataset.text, event)" data-text="${v.en.replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 4px; opacity: 0.5; font-size: 0.9em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'" title="Đọc từ này">🔊</span></span>
-                        <span style="color: var(--text-main);">- ${v.vi}</span>
-                    </div>
-                `;
-            });
+            if (p.vocab && p.vocab.length > 0) {
+                p.vocab.forEach(v => {
+                    vocabHtml += `
+                        <div style="display: flex; gap: 8px; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px dashed #e2e8f0; font-size: 1.15rem;">
+                            <span style="font-weight: 600; color: #0284c7; min-width: 140px; display: inline-block;">${v.en} <span onclick="playTTS(this.dataset.text, event)" data-text="${v.en.replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 4px; opacity: 0.5; font-size: 0.9em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'" title="Đọc từ này">🔊</span></span>
+                            <span style="color: var(--text-main);">- ${v.vi}</span>
+                        </div>
+                    `;
+                });
+            }
 
-            const hideRedWordCSS = `
+            const practiceStyles = `
                 <style>
-                    #practice-options-container:not([data-checked="true"]) .practice-option span[style*="color: #FF0000"] {
-                        color: transparent !important;
-                        border-bottom: 1px solid #94a3b8;
+                    #practice-options-container .practice-option:hover {
+                        border-color: #3b82f6 !important;
+                        background-color: #f8fafc !important;
+                        transform: translateY(-1px);
+                    }
+                    #practice-options-container[data-checked="true"] .practice-option:hover {
+                        transform: none !important;
                     }
                 </style>
             `;
 
             contentContainer.innerHTML = `
-                ${hideRedWordCSS}
-                <div style="display: flex; flex-direction: row; gap: 40px; flex-wrap: nowrap; align-items: stretch; justify-content: center; width: 100%;">
-                    <div style="flex: 1; max-width: 35%; display: flex; justify-content: center; align-items: flex-start;">
-                        <img src="${imgPath}" alt="Practice Image" style="width: 100%; max-height: 450px; object-fit: contain; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.08);">
+                ${practiceStyles}
+                <div style="display: flex; flex-direction: row; gap: 36px; flex-wrap: nowrap; align-items: stretch; justify-content: center; width: 100%;">
+                    <div style="flex: 1; max-width: 38%; display: flex; justify-content: center; align-items: center; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
+                        <img src="${imgPath}" alt="Practice Image" style="width: 100%; max-height: 440px; object-fit: contain; border-radius: 8px;">
                     </div>
-                    <div style="flex: 1; min-width: 300px; max-width: 65%; font-size: 1.15rem; line-height: 1.6; color: var(--text-main); display: flex; flex-direction: column;">
-                        <div id="practice-options-container" style="margin-bottom: 24px;">
+                    <div style="flex: 1.2; min-width: 320px; max-width: 62%; font-size: 1.15rem; line-height: 1.6; color: var(--text-main); display: flex; flex-direction: column;">
+                        <div style="margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between;">
+                            <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #2563eb; background: #eff6ff; padding: 4px 14px; border-radius: 20px; border: 1px solid #bfdbfe;">
+                                🎧 BÀI TẬP THỰC HÀNH TRANH
+                            </span>
+                            <span style="font-size: 0.9rem; color: #64748b; font-style: italic;">
+                                Nghe audio & click chọn phương án
+                            </span>
+                        </div>
+                        <div id="practice-options-container" style="margin-bottom: 18px;">
                             ${optionsHtml}
                         </div>
-                        <div style="display: flex; gap: 16px; margin-bottom: 24px;">
-                            <button onclick="checkPracticeAnswer(this)" style="background: #2563eb; color: white; border: none; padding: 12px 32px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1.1rem; box-shadow: 0 4px 12px rgba(37,99,235,0.2); transition: all 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">KIỂM TRA</button>
+                        <div style="display: flex; gap: 14px; margin-bottom: 18px;">
+                            <button id="practice-action-btn" onclick="checkPracticeAnswer(this)" style="background: #2563eb; color: white; border: none; padding: 12px 28px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(37,99,235,0.2); transition: all 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">KIỂM TRA ĐÁP ÁN</button>
                         </div>
-                        <details style="cursor: pointer; background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 16px;">
-                          <summary style="font-weight: bold; color: #16a34a; outline: none; list-style-type: '👉 '; font-size: 1.15rem;">Hiển thị từ vựng</summary>
-                          <div style="margin-top: 16px;">
+                        ${vocabHtml ? `
+                        <details style="cursor: pointer; background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px;">
+                          <summary style="font-weight: bold; color: #16a34a; outline: none; list-style-type: '👉 '; font-size: 1.1rem;">Hiển thị từ vựng trọng tâm</summary>
+                          <div style="margin-top: 14px;">
                             ${vocabHtml}
                           </div>
                         </details>
+                        ` : ''}
                     </div>
                 </div>
             `;
