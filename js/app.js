@@ -1502,10 +1502,26 @@ document.addEventListener("DOMContentLoaded", () => {
                         window.showPaywallModal(() => loadSectionP1(node.id));
                         return;
                     }
-                    loadSectionP1(node.id);
+                    loadSectionP1(node.id, "theory");
                 });
                 
                 part1ConceptsNavList.appendChild(submenuItem);
+
+                if (node.id === "dang_01") {
+                    const trabaiItem = document.createElement("div");
+                    trabaiItem.className = "submenu-item group-item";
+                    trabaiItem.setAttribute("data-id", "dang_01_trabai");
+                    trabaiItem.innerHTML = `<span class="submenu-dot" style="background: #f59e0b;"></span><span class="submenu-text" style="color: #f59e0b; font-weight: 700;">🎯 TRẢ BÀI TỪ VỰNG</span>`;
+                    trabaiItem.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        if (LOCKED_SECTIONS.includes(node.id) && !window.isUnlocked) {
+                            window.showPaywallModal(() => loadSectionP1(node.id, "trabai"));
+                            return;
+                        }
+                        loadSectionP1("dang_01", "trabai");
+                    });
+                    part1ConceptsNavList.appendChild(trabaiItem);
+                }
             }
         });
         
@@ -4919,9 +4935,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // ================= PART 04 FUNCTIONS =================
 
     
-    function loadSectionP1(sectionId) {
+    function loadSectionP1(sectionId, targetTab = 'theory') {
         if (LOCKED_SECTIONS.includes(sectionId) && !window.isUnlocked) {
-            window.showPaywallModal(() => loadSectionP1(sectionId));
+            window.showPaywallModal(() => loadSectionP1(sectionId, targetTab));
             return;
         }
         if (!window.part01Data) return;
@@ -4929,43 +4945,102 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!sectionData) return;
 
         state.part01ActiveSection = sectionId;
+        state.part01ActiveTab = targetTab;
         
         // Update active in submenu
         document.querySelectorAll(".submenu-item").forEach(item => {
-            if (item.getAttribute("data-id") === sectionId) {
-                item.classList.add("active");
+            const dataId = item.getAttribute("data-id");
+            if (sectionId === "dang_01") {
+                if (targetTab === "trabai") {
+                    if (dataId === "dang_01_trabai") item.classList.add("active");
+                    else item.classList.remove("active");
+                } else {
+                    if (dataId === "dang_01") item.classList.add("active");
+                    else item.classList.remove("active");
+                }
+            } else {
+                if (dataId === sectionId) {
+                    item.classList.add("active");
+                } else {
+                    item.classList.remove("active");
+                }
+            }
+            if (item.classList.contains("active")) {
                 let parentSubmenu = item.closest(".part1-collapsible-submenu");
                 if (parentSubmenu) {
                     parentSubmenu.style.display = "block";
                     if (part1ExpandIcon) part1ExpandIcon.innerHTML = `<svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>`;
                 }
-            } else {
-                item.classList.remove("active");
             }
         });
 
+        // Tabs HTML for dang_01
+        let tabsHtml = '';
+        if (sectionId === 'dang_01') {
+            tabsHtml = `
+                <div class="p1-nav-tabs">
+                    <button type="button" id="p1-tab-btn-theory" class="p1-tab-nav-btn ${targetTab === 'theory' ? 'active' : ''}" onclick="window.switchPart01Tab('theory')">
+                        <span style="font-size: 1.15rem;">📑</span> BÀI GIẢNG & THỰC HÀNH (101 SLIDES)
+                    </button>
+                    <button type="button" id="p1-tab-btn-trabai" class="p1-tab-nav-btn ${targetTab === 'trabai' ? 'active' : ''}" onclick="window.switchPart01Tab('trabai')">
+                        <span style="font-size: 1.15rem;">🎯</span> TRẢ BÀI TỪ VỰNG (164 CỤM)
+                    </button>
+                </div>
+            `;
+        }
+
         // Setup Header
         part1Panel.innerHTML = `
-            <div class="panel-header">
+            <div class="panel-header" style="padding-bottom: ${sectionId === 'dang_01' ? '0' : '20px'};">
                 <div class="breadcrumbs">
                     <span>PART 01: PHOTOGRAPHS</span> &nbsp;/&nbsp; <span>${sectionData.type === 'test' ? 'LUYỆN TẬP ETS 2026' : (sectionData.id === 'overview' ? 'TỔNG QUAN' : 'DẠNG CÂU HỎI')}</span>
+                    ${targetTab === 'trabai' ? ' &nbsp;/&nbsp; <span style="color: #f59e0b; font-weight: 700;">TRẢ BÀI TỪ VỰNG</span>' : ''}
                 </div>
                 <h3 id="panel-title-p1">${sectionData.title}</h3>
+                ${tabsHtml}
             </div>
             <div id="p1-content-area" style="padding: 24px;"></div>
         `;
         
         const contentArea = document.getElementById("p1-content-area");
 
-        if (sectionData.type === "theory" || sectionData.type === "overview") {
+        if (sectionId === 'dang_01' && targetTab === 'trabai') {
+            renderTraBaiP1(contentArea);
+        } else if (sectionData.type === "theory" || sectionData.type === "overview") {
             state.part01SlidesData = sectionData.theory || [];
             state.part01TotalSlides = state.part01SlidesData.length;
-            state.part01CurrentSlide = 1;
+            if (!state.part01CurrentSlide) state.part01CurrentSlide = 1;
             renderTheoryP1(contentArea);
         } else if (sectionData.type === "test") {
             renderTestP1(sectionData, contentArea);
         }
     }
+    window.loadSectionP1 = loadSectionP1;
+
+    window.switchPart01Tab = function(tabName) {
+        state.part01ActiveTab = tabName;
+        const contentArea = document.getElementById("p1-content-area");
+        const theoryBtn = document.getElementById("p1-tab-btn-theory");
+        const trabaiBtn = document.getElementById("p1-tab-btn-trabai");
+        
+        if (tabName === 'trabai') {
+            if (theoryBtn) theoryBtn.classList.remove("active");
+            if (trabaiBtn) trabaiBtn.classList.add("active");
+            document.querySelectorAll(".submenu-item").forEach(item => {
+                if (item.getAttribute("data-id") === 'dang_01_trabai') item.classList.add("active");
+                else if (item.getAttribute("data-id") === 'dang_01') item.classList.remove("active");
+            });
+            if (contentArea) renderTraBaiP1(contentArea);
+        } else {
+            if (trabaiBtn) trabaiBtn.classList.remove("active");
+            if (theoryBtn) theoryBtn.classList.add("active");
+            document.querySelectorAll(".submenu-item").forEach(item => {
+                if (item.getAttribute("data-id") === 'dang_01') item.classList.add("active");
+                else if (item.getAttribute("data-id") === 'dang_01_trabai') item.classList.remove("active");
+            });
+            if (contentArea) renderTheoryP1(contentArea);
+        }
+    };
 
     function renderTheoryP1(container) {
         if (!state.part01SlidesData || state.part01SlidesData.length === 0) {
@@ -5191,6 +5266,21 @@ document.addEventListener("DOMContentLoaded", () => {
                         </details>
                         ` : ''}
                     </div>
+                    ${(state.part01ActiveSection === 'dang_01' && state.part01CurrentSlide === state.part01TotalSlides) ? `
+                    <div style="margin-top: 24px; width: 100%; padding: 22px 24px; background: linear-gradient(135deg, #eff6ff, #f0fdf4); border: 2px solid #86efac; border-radius: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; box-shadow: 0 6px 20px rgba(22, 163, 74, 0.12);">
+                        <div style="display: flex; align-items: center; gap: 14px;">
+                            <span style="font-size: 2.2rem;">🎉</span>
+                            <div>
+                                <div style="font-size: 1.15rem; font-weight: 800; color: #166534;">Chúc mừng bạn đã hoàn thành 6 câu bài tập thực hành!</div>
+                                <div style="font-size: 0.95rem; color: #15803d; margin-top: 2px;">Củng cố kiến thức ngay với hệ thống <strong>164 cụm từ vựng cốt lõi</strong> (Flashcard & Trắc nghiệm phản xạ).</div>
+                            </div>
+                        </div>
+                        <button type="button" onclick="window.switchPart01Tab('trabai')" style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; border: none; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                            <span>🎯 VÀO TRẢ BÀI TỪ VỰNG NGAY</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                        </button>
+                    </div>
+                    ` : ''}
                 </div>
             `;
         } else {
@@ -5536,6 +5626,907 @@ document.addEventListener("DOMContentLoaded", () => {
         html += `</div>`;
         container.innerHTML = html;
     }
+
+// ================= PART 01: TRẢ BÀI TỪ VỰNG DẠNG 01 =================
+
+    function saveTraBaiLearned() {
+        try {
+            if (window.traBaiState && window.traBaiState.learnedIds) {
+                localStorage.setItem("p1_trabai_learned_ids", JSON.stringify(Array.from(window.traBaiState.learnedIds)));
+            }
+        } catch (e) {}
+    }
+
+    function getTraBaiFilteredItems() {
+        const all = window.part01Dang01TraBaiData || [];
+        if (!window.traBaiState) return all;
+        const s = window.traBaiState.scope;
+        if (s === 'lecture') return all.filter(d => d.source === 'Bài giảng');
+        if (s === 'practice') return all.filter(d => d.source === 'Bài tập thực hành');
+        if (s === 'verbs') return all.filter(d => d.category === 'Động từ chính');
+        if (s === 'unlearned') {
+            const un = all.filter(d => !window.traBaiState.learnedIds.has(d.id));
+            return un.length > 0 ? un : all;
+        }
+        return all;
+    }
+
+    function shuffleTraBaiArray(arr) {
+        const a = [...arr];
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
+
+    function renderTraBaiP1(container) {
+        if (!window.part01Dang01TraBaiData || window.part01Dang01TraBaiData.length === 0) {
+            container.innerHTML = `<div style="text-align: center; padding: 50px; color: #64748b; font-size: 1.1rem;">Đang tải dữ liệu trả bài từ vựng...</div>`;
+            return;
+        }
+
+        const allData = window.part01Dang01TraBaiData;
+
+        // Initialize state if not present
+        if (!window.traBaiState) {
+            let savedLearned = [];
+            try {
+                savedLearned = JSON.parse(localStorage.getItem("p1_trabai_learned_ids") || "[]");
+            } catch (e) { savedLearned = []; }
+
+            window.traBaiState = {
+                scope: 'all',
+                mode: 'flashcard',
+                cardIndex: 0,
+                isFlipped: false,
+                learnedIds: new Set(savedLearned),
+                quizLength: 10,
+                quizIndex: 0,
+                quizQuestions: [],
+                quizAnswered: false,
+                quizScore: 0,
+                quizFinished: false,
+                quizReview: [],
+                searchQuery: '',
+                categoryFilter: 'all'
+            };
+        }
+
+        // Attach global keydown listener for Flashcard mode once
+        if (!window.tbKeyHandlerAttached) {
+            window.tbKeyHandlerAttached = true;
+            document.addEventListener("keydown", (e) => {
+                if (state.part01ActiveSection !== "dang_01" || state.part01ActiveTab !== "trabai") return;
+                if (!window.traBaiState || window.traBaiState.mode !== "flashcard") return;
+                if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) return;
+
+                if (e.code === "Space") {
+                    e.preventDefault();
+                    window.tbFlipCard();
+                } else if (e.key === "ArrowLeft") {
+                    e.preventDefault();
+                    window.tbPrevCard();
+                } else if (e.key === "ArrowRight") {
+                    e.preventDefault();
+                    window.tbNextCard();
+                } else if (e.key === "1") {
+                    window.tbMarkCard(false);
+                } else if (e.key === "2") {
+                    window.tbMarkCard(true);
+                }
+            });
+        }
+
+        const tbs = window.traBaiState;
+        const totalItemsCount = allData.length;
+        const learnedCount = tbs.learnedIds.size;
+        const percentLearned = Math.min(100, Math.round((learnedCount / totalItemsCount) * 100));
+
+        const lectureCount = allData.filter(d => d.source === 'Bài giảng').length;
+        const practiceCount = allData.filter(d => d.source === 'Bài tập thực hành').length;
+        const verbsCount = allData.filter(d => d.category === 'Động từ chính').length;
+        const unlearnedCount = allData.filter(d => !tbs.learnedIds.has(d.id)).length;
+
+        container.innerHTML = `
+            <div class="tb-main-container">
+                <!-- TOP HEADER CARD: STATS & SCOPE FILTER -->
+                <div class="tb-header-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.5rem;">🎯</span>
+                                <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--text-main); margin: 0;">
+                                    TRẢ BÀI TỪ VỰNG: TRANH MÔ TẢ MỘT NGƯỜI
+                                </h2>
+                            </div>
+                            <p style="color: #64748b; font-size: 0.95rem; margin-top: 6px; margin-bottom: 0;">
+                                Tổng hợp <strong>164 cụm từ vựng cốt lõi</strong> (119 cụm từ slide bài giảng + 45 cụm từ 6 câu bài tập thực hành ETS).
+                            </p>
+                        </div>
+                        <!-- Progress stat pill -->
+                        <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 12px; padding: 10px 18px; text-align: right; min-width: 170px;">
+                            <div style="font-size: 0.8rem; font-weight: 700; color: #166534; text-transform: uppercase; letter-spacing: 0.05em;">TIẾN ĐỘ THUỘC TỪ</div>
+                            <div style="font-size: 1.4rem; font-weight: 800; color: #15803d; line-height: 1.2;">
+                                <span id="tb-learned-count">${learnedCount}</span> / ${totalItemsCount} <span style="font-size: 0.95rem; font-weight: 700;">(${percentLearned}%)</span>
+                            </div>
+                            <div style="width: 100%; background: #dcfce7; height: 6px; border-radius: 4px; margin-top: 6px; overflow: hidden;">
+                                <div id="tb-progress-fill" style="width: ${percentLearned}%; height: 100%; background: linear-gradient(90deg, #22c55e, #16a34a); transition: width 0.3s ease;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scope Filter Chips -->
+                    <div style="border-top: 1px solid #e2e8f0; padding-top: 14px; display: flex; flex-direction: column; gap: 8px;">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">
+                            Phạm vi từ vựng ôn tập:
+                        </div>
+                        <div class="tb-scope-chips">
+                            <button type="button" class="tb-scope-chip ${tbs.scope === 'all' ? 'active' : ''}" onclick="window.tbSetScope('all')">
+                                🌟 Tất cả (164 cụm)
+                            </button>
+                            <button type="button" class="tb-scope-chip ${tbs.scope === 'lecture' ? 'active' : ''}" onclick="window.tbSetScope('lecture')">
+                                📖 Bài giảng (${lectureCount} cụm)
+                            </button>
+                            <button type="button" class="tb-scope-chip ${tbs.scope === 'practice' ? 'active' : ''}" onclick="window.tbSetScope('practice')">
+                                📝 Bài tập thực hành (${practiceCount} cụm)
+                            </button>
+                            <button type="button" class="tb-scope-chip ${tbs.scope === 'verbs' ? 'active' : ''}" onclick="window.tbSetScope('verbs')">
+                                ⚡ 28 Động từ cốt lõi
+                            </button>
+                            <button type="button" class="tb-scope-chip ${tbs.scope === 'unlearned' ? 'active' : ''}" onclick="window.tbSetScope('unlearned')">
+                                🔄 Cụm chưa thuộc (<span id="tb-unlearned-badge">${unlearnedCount}</span>)
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Mode Switcher Nav -->
+                    <div class="tb-modes-nav">
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'flashcard' ? 'active' : ''}" onclick="window.tbSetMode('flashcard')">
+                            <span>🗂️</span> Lật thẻ Flashcard
+                        </button>
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'quiz' ? 'active' : ''}" onclick="window.tbSetMode('quiz')">
+                            <span>⚡</span> Trắc nghiệm phản xạ
+                        </button>
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'list' ? 'active' : ''}" onclick="window.tbSetMode('list')">
+                            <span>📋</span> Tra cứu toàn bộ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MAIN WORKSPACE ACCORDING TO ACTIVE MODE -->
+                <div id="tb-active-workspace"></div>
+            </div>
+        `;
+
+        window.tbRenderActiveMode();
+    }
+
+    window.tbRenderActiveMode = function() {
+        const workspace = document.getElementById("tb-active-workspace");
+        if (!workspace) return;
+        const mode = window.traBaiState.mode;
+
+        if (mode === "flashcard") {
+            window.tbRenderFlashcardView(workspace);
+        } else if (mode === "quiz") {
+            window.tbRenderQuizView(workspace);
+        } else if (mode === "list") {
+            window.tbRenderListView(workspace);
+        }
+    };
+
+    window.tbSetScope = function(scope) {
+        window.traBaiState.scope = scope;
+        window.traBaiState.cardIndex = 0;
+        window.traBaiState.isFlipped = false;
+        // Re-render whole container to update chips and stats
+        const contentArea = document.getElementById("p1-content-area");
+        if (contentArea) renderTraBaiP1(contentArea);
+    };
+
+    window.tbSetMode = function(mode) {
+        window.traBaiState.mode = mode;
+        window.traBaiState.isFlipped = false;
+        // Update nav buttons active class
+        document.querySelectorAll(".tb-mode-btn").forEach(btn => {
+            btn.classList.remove("active");
+        });
+        if (event && event.currentTarget) event.currentTarget.classList.add("active");
+        window.tbRenderActiveMode();
+    };
+
+    // ================= FLASHCARD MODE =================
+    window.tbRenderFlashcardView = function(workspace) {
+        const items = getTraBaiFilteredItems();
+        if (items.length === 0) {
+            workspace.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 40px; text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 12px;">🎉</div>
+                    <h3 style="font-size: 1.3rem; font-weight: 800; color: #166534;">Bạn đã thuộc hết tất cả từ vựng trong phạm vi này!</h3>
+                    <p style="color: #64748b; margin-top: 8px;">Hãy chọn "Tất cả" hoặc "Trắc nghiệm phản xạ" để kiểm tra phản xạ nhé.</p>
+                    <button type="button" class="tb-ctrl-btn" onclick="window.tbSetScope('all')" style="margin-top: 14px; background: #2563eb; color: white; border-color: #1d4ed8;">
+                        Xem toàn bộ 164 cụm
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        const tbs = window.traBaiState;
+        if (tbs.cardIndex >= items.length) tbs.cardIndex = 0;
+        if (tbs.cardIndex < 0) tbs.cardIndex = items.length - 1;
+
+        workspace.innerHTML = `
+            <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <!-- 3D FLIP CARD CONTAINER -->
+                <div id="tb-card-wrapper" class="tb-card-wrapper" onclick="window.tbFlipCard()">
+                    <div id="tb-active-card-inner" class="tb-card-inner ${tbs.isFlipped ? 'flipped' : ''}">
+                        <!-- FRONT OF CARD -->
+                        <div class="tb-card-front" id="tb-card-front-content"></div>
+                        <!-- BACK OF CARD -->
+                        <div class="tb-card-back" id="tb-card-back-content"></div>
+                    </div>
+                </div>
+
+                <!-- ACTION BUTTONS: MARK LEARNED & NAVIGATION -->
+                <div style="width: 100%; max-width: 660px; margin-top: 20px; display: flex; flex-direction: column; gap: 14px;">
+                    <!-- Row 1: Learned Status Buttons -->
+                    <div style="display: flex; justify-content: center; gap: 16px;">
+                        <button type="button" class="tb-ctrl-btn tb-btn-unlearned" onclick="window.tbMarkCard(false)" title="Chưa nhớ (Phím 1)">
+                            <span>❌ Chưa nhớ (Phím 1)</span>
+                        </button>
+                        <button type="button" class="tb-ctrl-btn tb-btn-learned" onclick="window.tbMarkCard(true)" title="Đã thuộc (Phím 2)">
+                            <span>✔️ Đã thuộc (Phím 2)</span>
+                        </button>
+                    </div>
+
+                    <!-- Row 2: Nav Controls -->
+                    <div class="tb-controls-bar">
+                        <button type="button" class="tb-ctrl-btn" onclick="window.tbPrevCard()" title="Câu trước (Phím ←)">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            Trước
+                        </button>
+                        
+                        <div style="font-weight: 800; color: #475569; font-size: 1.05rem; padding: 6px 14px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+                            Thẻ <span id="tb-card-curr-num">${tbs.cardIndex + 1}</span> / <span id="tb-card-total-num">${items.length}</span>
+                        </div>
+
+                        <button type="button" class="tb-ctrl-btn" onclick="window.tbNextCard()" title="Câu tiếp (Phím →)">
+                            Tiếp
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                        </button>
+
+                        <button type="button" class="tb-ctrl-btn" onclick="window.tbShuffleCards()" title="Xáo trộn thứ tự các thẻ">
+                            <span>🔀 Xáo trộn</span>
+                        </button>
+                    </div>
+
+                    <!-- Keyboard navigation guide -->
+                    <div style="text-align: center; color: #94a3b8; font-size: 0.85rem; margin-top: 4px;">
+                        💡 <strong>Phím tắt:</strong> [← / →]: Chuyển thẻ &nbsp;•&nbsp; [Phím Cách / Click]: Lật thẻ &nbsp;•&nbsp; [Phím 1]: Chưa nhớ &nbsp;•&nbsp; [Phím 2]: Đã thuộc
+                    </div>
+                </div>
+            </div>
+        `;
+
+        window.tbUpdateCardContentOnly();
+    };
+
+    window.tbUpdateCardContentOnly = function() {
+        const items = getTraBaiFilteredItems();
+        const tbs = window.traBaiState;
+        if (!items || items.length === 0) return;
+        if (tbs.cardIndex >= items.length) tbs.cardIndex = 0;
+        const item = items[tbs.cardIndex];
+
+        const frontEl = document.getElementById("tb-card-front-content");
+        const backEl = document.getElementById("tb-card-back-content");
+        const currNumEl = document.getElementById("tb-card-curr-num");
+        const totalNumEl = document.getElementById("tb-card-total-num");
+        if (currNumEl) currNumEl.textContent = tbs.cardIndex + 1;
+        if (totalNumEl) totalNumEl.textContent = items.length;
+
+        const isLearned = tbs.learnedIds.has(item.id);
+        const sourceBadgeColor = item.source === 'Bài giảng' ? '#2563eb' : '#059669';
+        const sourceBadgeBg = item.source === 'Bài giảng' ? '#eff6ff' : '#f0fdf4';
+        const sourceBadgeBorder = item.source === 'Bài giảng' ? '#bfdbfe' : '#a7f3d0';
+
+        if (frontEl) {
+            frontEl.innerHTML = `
+                <!-- Top Header on Front -->
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center; gap: 8px;">
+                        <span style="background: ${sourceBadgeBg}; color: ${sourceBadgeColor}; border: 1px solid ${sourceBadgeBorder}; padding: 4px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 800;">
+                            ${item.source === 'Bài giảng' ? '📖 Bài giảng' : '📝 Bài tập ETS'} (Slide ${item.slide})
+                        </span>
+                        <span style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">
+                            ${item.category}
+                        </span>
+                    </div>
+                    ${isLearned ? `
+                        <span style="background: #dcfce7; color: #15803d; border: 1px solid #86efac; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;">
+                            ✔️ Đã thuộc
+                        </span>
+                    ` : ''}
+                </div>
+
+                <!-- Center Content on Front -->
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; margin: auto 0;">
+                    <div style="font-size: ${item.en.length > 25 ? '1.8rem' : '2.3rem'}; font-weight: 800; color: #0284c7; line-height: 1.35; max-width: 540px;">
+                        ${item.en}
+                    </div>
+                    <button type="button" onclick="event.stopPropagation(); playTTS('${item.en.replace(/'/g, "\\'")}', event)" style="background: #f0f9ff; border: 1.5px solid #bae6fd; color: #0284c7; padding: 8px 18px; border-radius: 24px; font-size: 0.95rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2,132,199,0.1); transition: all 0.2s;" onmouseover="this.style.background='#e0f2fe'" onmouseout="this.style.background='#f0f9ff'">
+                        <span>🔊</span> Nghe phát âm
+                    </button>
+                </div>
+
+                <!-- Bottom Hint on Front -->
+                <div style="font-size: 0.88rem; color: #94a3b8; display: flex; align-items: center; gap: 6px;">
+                    <span>💡 Click vào thẻ hoặc bấm phím Cách để lật xem nghĩa tiếng Việt</span>
+                </div>
+            `;
+        }
+
+        if (backEl) {
+            backEl.innerHTML = `
+                <!-- Top Header on Back -->
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center;">
+                    <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #166534;">
+                        🇻🇳 NGHĨA TIẾNG VIỆT
+                    </span>
+                    <span style="font-size: 0.82rem; font-weight: 700; color: #15803d; background: #dcfce7; padding: 4px 12px; border-radius: 20px;">
+                        ${item.category}
+                    </span>
+                </div>
+
+                <!-- Center Content on Back -->
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; margin: auto 0;">
+                    <div style="font-size: ${item.vi.length > 30 ? '1.8rem' : '2.2rem'}; font-weight: 800; color: #15803d; line-height: 1.35; max-width: 540px;">
+                        ${item.vi}
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; font-size: 1.25rem; font-weight: 600; color: #0369a1;">
+                        <span>${item.en}</span>
+                        <span onclick="event.stopPropagation(); playTTS('${item.en.replace(/'/g, "\\'")}', event)" style="cursor: pointer; opacity: 0.8;" title="Nghe lại">🔊</span>
+                    </div>
+                </div>
+
+                <!-- Bottom Hint on Back -->
+                <div style="font-size: 0.88rem; color: #166534; display: flex; align-items: center; gap: 6px;">
+                    <span>💡 Click vào thẻ để lật lại mặt tiếng Anh</span>
+                </div>
+            `;
+        }
+    };
+
+    window.tbFlipCard = function() {
+        const tbs = window.traBaiState;
+        tbs.isFlipped = !tbs.isFlipped;
+        const inner = document.getElementById("tb-active-card-inner");
+        if (inner) {
+            if (tbs.isFlipped) inner.classList.add("flipped");
+            else inner.classList.remove("flipped");
+        }
+    };
+
+    window.tbPrevCard = function() {
+        const items = getTraBaiFilteredItems();
+        if (items.length === 0) return;
+        const tbs = window.traBaiState;
+        tbs.isFlipped = false;
+        const inner = document.getElementById("tb-active-card-inner");
+        if (inner) inner.classList.remove("flipped");
+        tbs.cardIndex = (tbs.cardIndex - 1 + items.length) % items.length;
+        window.tbUpdateCardContentOnly();
+    };
+
+    window.tbNextCard = function() {
+        const items = getTraBaiFilteredItems();
+        if (items.length === 0) return;
+        const tbs = window.traBaiState;
+        tbs.isFlipped = false;
+        const inner = document.getElementById("tb-active-card-inner");
+        if (inner) inner.classList.remove("flipped");
+        tbs.cardIndex = (tbs.cardIndex + 1) % items.length;
+        window.tbUpdateCardContentOnly();
+    };
+
+    window.tbShuffleCards = function() {
+        const items = getTraBaiFilteredItems();
+        if (items.length === 0) return;
+        const tbs = window.traBaiState;
+        tbs.cardIndex = Math.floor(Math.random() * items.length);
+        tbs.isFlipped = false;
+        const inner = document.getElementById("tb-active-card-inner");
+        if (inner) inner.classList.remove("flipped");
+        window.tbUpdateCardContentOnly();
+    };
+
+    window.tbMarkCard = function(isLearned) {
+        const items = getTraBaiFilteredItems();
+        if (items.length === 0) return;
+        const tbs = window.traBaiState;
+        const item = items[tbs.cardIndex];
+        if (!item) return;
+
+        if (isLearned) {
+            tbs.learnedIds.add(item.id);
+        } else {
+            tbs.learnedIds.delete(item.id);
+        }
+        saveTraBaiLearned();
+
+        // Update stats bar
+        const totalCount = (window.part01Dang01TraBaiData || []).length;
+        const learnedCount = tbs.learnedIds.size;
+        const percent = Math.min(100, Math.round((learnedCount / totalCount) * 100));
+
+        const learnedCountEl = document.getElementById("tb-learned-count");
+        const progressFillEl = document.getElementById("tb-progress-fill");
+        const unlearnedBadgeEl = document.getElementById("tb-unlearned-badge");
+        if (learnedCountEl) learnedCountEl.textContent = learnedCount;
+        if (progressFillEl) progressFillEl.style.width = `${percent}%`;
+        if (unlearnedBadgeEl) unlearnedBadgeEl.textContent = totalCount - learnedCount;
+
+        // Auto move to next card
+        window.tbNextCard();
+    };
+
+    // ================= QUIZ MODE (TRẮC NGHIỆM PHẢN XẠ) =================
+    window.tbRenderQuizView = function(workspace) {
+        const tbs = window.traBaiState;
+
+        // If quiz is finished, show result screen
+        if (tbs.quizFinished && tbs.quizQuestions.length > 0) {
+            window.tbRenderQuizResults(workspace);
+            return;
+        }
+
+        // If no active quiz, show setup start screen
+        if (!tbs.quizQuestions || tbs.quizQuestions.length === 0) {
+            const items = getTraBaiFilteredItems();
+            workspace.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 40px 30px; text-align: center; max-width: 680px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+                    <div style="font-size: 3rem; margin-bottom: 14px;">⚡</div>
+                    <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                        TRẮC NGHIỆM PHẢN XẠ TỪ VỰNG PART 01
+                    </h3>
+                    <p style="color: #64748b; font-size: 1rem; line-height: 1.6; max-width: 520px; margin: 0 auto 24px auto;">
+                        Hệ thống sẽ đưa ra nghĩa tiếng Việt và 4 phương án tiếng Anh. Chọn câu đúng nhanh nhất để rèn luyện phản xạ nghe - hiểu đề thi TOEIC!
+                    </p>
+
+                    <!-- Quiz Length Selection -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 28px;">
+                        <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn số lượng câu hỏi:</div>
+                        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                            <button type="button" class="tb-scope-chip ${tbs.quizLength === 10 ? 'active' : ''}" onclick="window.tbSelectQuizLength(10, this)">
+                                10 câu phản xạ
+                            </button>
+                            <button type="button" class="tb-scope-chip ${tbs.quizLength === 20 ? 'active' : ''}" onclick="window.tbSelectQuizLength(20, this)">
+                                20 câu phản xạ
+                            </button>
+                            <button type="button" class="tb-scope-chip ${tbs.quizLength >= 50 ? 'active' : ''}" onclick="window.tbSelectQuizLength(${Math.min(items.length, 50)}, this)">
+                                Thử thách (${Math.min(items.length, 50)} câu)
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="window.tbStartQuiz()" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 14px 36px; border-radius: 12px; font-size: 1.1rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(37,99,235,0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                        🚀 BẮT ĐẦU LÀM BÀI NGAY
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        // Active Quiz Question View
+        const qIndex = tbs.quizIndex;
+        const q = tbs.quizQuestions[qIndex];
+        if (!q) {
+            tbs.quizFinished = true;
+            window.tbRenderQuizView(workspace);
+            return;
+        }
+
+        const labels = ['A', 'B', 'C', 'D'];
+        let optionsHtml = '';
+        q.options.forEach((opt, idx) => {
+            const letter = labels[idx];
+            optionsHtml += `
+                <button type="button" class="tb-quiz-opt" data-id="${opt.id}" onclick="window.tbAnswerQuiz(${opt.id}, ${q.item.id}, this)">
+                    <span class="tb-quiz-letter">${letter}</span>
+                    <span style="flex: 1;">${opt.en}</span>
+                </button>
+            `;
+        });
+
+        workspace.innerHTML = `
+            <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <!-- Quiz Progress Bar & Header -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <span style="font-weight: 800; color: #2563eb; font-size: 1.15rem;">CÂU ${qIndex + 1} / ${tbs.quizQuestions.length}</span>
+                        <span style="background: #f1f5f9; color: #64748b; padding: 3px 10px; border-radius: 20px; font-size: 0.82rem; font-weight: 700;">
+                            ${q.item.category}
+                        </span>
+                    </div>
+                    <div style="font-weight: 800; color: #16a34a; font-size: 1.1rem; display: flex; align-items: center; gap: 6px;">
+                        <span>Điểm:</span> <span id="tb-quiz-score-val" style="background: #dcfce7; padding: 2px 10px; border-radius: 8px;">${tbs.quizScore}</span>
+                    </div>
+                </div>
+
+                <!-- Prompt Card -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 30px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px;">
+                    <div style="font-size: 0.88rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">
+                        Từ / Cụm từ tiếng Anh tương ứng với nghĩa:
+                    </div>
+                    <div style="font-size: 2.1rem; font-weight: 800; color: #0f172a; line-height: 1.35;">
+                        "${q.item.vi}"
+                    </div>
+                    <div style="font-size: 0.85rem; color: #94a3b8; margin-top: 2px;">
+                        Nguồn: ${q.item.source} (Slide ${q.item.slide})
+                    </div>
+                </div>
+
+                <!-- 4 Options -->
+                <div id="tb-quiz-options-box" style="display: flex; flex-direction: column; gap: 12px;">
+                    ${optionsHtml}
+                </div>
+
+                <!-- Evaluation & Next Button (Hidden until chosen) -->
+                <div id="tb-quiz-feedback-box" style="display: none; flex-direction: column; gap: 12px;">
+                    <div id="tb-quiz-result-banner" style="padding: 14px 20px; border-radius: 12px; font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; justify-content: space-between;"></div>
+                    <button type="button" id="tb-quiz-next-btn" onclick="window.tbNextQuizQuestion()" style="background: #2563eb; color: white; border: none; padding: 14px 24px; border-radius: 12px; font-size: 1.05rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+                        <span>${qIndex + 1 === tbs.quizQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO'}</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                    </button>
+                </div>
+            </div>
+        `;
+    };
+
+    window.tbSelectQuizLength = function(len, btnEl) {
+        window.traBaiState.quizLength = len;
+        const siblings = btnEl.parentElement.querySelectorAll(".tb-scope-chip");
+        siblings.forEach(s => s.classList.remove("active"));
+        btnEl.classList.add("active");
+    };
+
+    window.tbStartQuiz = function(customItems = null) {
+        const pool = customItems || getTraBaiFilteredItems();
+        if (!pool || pool.length === 0) return;
+
+        const allData = window.part01Dang01TraBaiData;
+        const tbs = window.traBaiState;
+        const length = Math.min(pool.length, tbs.quizLength || 10);
+        const shuffled = shuffleTraBaiArray(pool).slice(0, length);
+
+        const questions = shuffled.map(item => {
+            // Find 3 distractors
+            const otherItems = allData.filter(d => d.id !== item.id);
+            const distractors = shuffleTraBaiArray(otherItems).slice(0, 3);
+            const options = shuffleTraBaiArray([item, ...distractors]);
+            return {
+                item: item,
+                options: options
+            };
+        });
+
+        tbs.quizQuestions = questions;
+        tbs.quizIndex = 0;
+        tbs.quizScore = 0;
+        tbs.quizAnswered = false;
+        tbs.quizFinished = false;
+        tbs.quizReview = [];
+
+        window.tbRenderQuizView(document.getElementById("tb-active-workspace"));
+    };
+
+    window.tbAnswerQuiz = function(chosenId, correctId, btnEl) {
+        const tbs = window.traBaiState;
+        if (tbs.quizAnswered) return;
+        tbs.quizAnswered = true;
+
+        const container = document.getElementById("tb-quiz-options-box");
+        if (!container) return;
+        const optionsBtns = container.querySelectorAll(".tb-quiz-opt");
+        const isCorrect = chosenId === correctId;
+        const currentQ = tbs.quizQuestions[tbs.quizIndex];
+
+        optionsBtns.forEach(btn => {
+            btn.style.pointerEvents = 'none';
+            const optId = parseInt(btn.getAttribute("data-id"));
+            if (optId === correctId) {
+                btn.classList.add("correct");
+            } else if (optId === chosenId && !isCorrect) {
+                btn.classList.add("incorrect");
+            } else {
+                btn.style.opacity = '0.5';
+            }
+        });
+
+        if (isCorrect) {
+            tbs.quizScore++;
+            const scoreValEl = document.getElementById("tb-quiz-score-val");
+            if (scoreValEl) scoreValEl.textContent = tbs.quizScore;
+        }
+
+        // Save to review history
+        tbs.quizReview.push({
+            q: currentQ,
+            chosenId: chosenId,
+            isCorrect: isCorrect
+        });
+
+        // Play audio pronunciation of the correct English phrase
+        playTTS(currentQ.item.en, event);
+
+        // Show feedback banner & Next button
+        const feedbackBox = document.getElementById("tb-quiz-feedback-box");
+        const banner = document.getElementById("tb-quiz-result-banner");
+        if (feedbackBox && banner) {
+            if (isCorrect) {
+                banner.style.background = "#dcfce7";
+                banner.style.color = "#15803d";
+                banner.style.border = "1.5px solid #86efac";
+                banner.innerHTML = `
+                    <span>🎉 <strong>Chính xác!</strong> +1 điểm</span>
+                    <button type="button" onclick="playTTS('${currentQ.item.en.replace(/'/g, "\\'")}', event)" style="background: white; border: 1px solid #86efac; border-radius: 8px; padding: 4px 10px; cursor: pointer; color: #15803d; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe lại
+                    </button>
+                `;
+            } else {
+                banner.style.background = "#fee2e2";
+                banner.style.color = "#b91c1c";
+                banner.style.border = "1.5px solid #fca5a5";
+                banner.innerHTML = `
+                    <span>❌ <strong>Chưa chính xác!</strong> Đáp án đúng: <em>${currentQ.item.en}</em></span>
+                    <button type="button" onclick="playTTS('${currentQ.item.en.replace(/'/g, "\\'")}', event)" style="background: white; border: 1px solid #fca5a5; border-radius: 8px; padding: 4px 10px; cursor: pointer; color: #b91c1c; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe phát âm
+                    </button>
+                `;
+            }
+            feedbackBox.style.display = "flex";
+        }
+    };
+
+    window.tbNextQuizQuestion = function() {
+        const tbs = window.traBaiState;
+        tbs.quizAnswered = false;
+        tbs.quizIndex++;
+        if (tbs.quizIndex >= tbs.quizQuestions.length) {
+            tbs.quizFinished = true;
+        }
+        window.tbRenderQuizView(document.getElementById("tb-active-workspace"));
+    };
+
+    window.tbRenderQuizResults = function(workspace) {
+        const tbs = window.traBaiState;
+        const total = tbs.quizQuestions.length;
+        const score = tbs.quizScore;
+        const percent = Math.round((score / total) * 100);
+
+        let icon = "🏆";
+        let message = "Xuất sắc! Bạn đã làm chủ hoàn hảo các cụm từ vựng này!";
+        let color = "#15803d";
+        if (percent < 50) {
+            icon = "💪";
+            message = "Cần ôn tập thêm! Hãy dùng chế độ Flashcard để củng cố nhé!";
+            color = "#dc2626";
+        } else if (percent < 80) {
+            icon = "👏";
+            message = "Rất tốt! Bạn nắm khá vững từ vựng bài học!";
+            color = "#2563eb";
+        }
+
+        const wrongQuestions = tbs.quizReview.filter(r => !r.isCorrect);
+
+        let reviewListHtml = '';
+        tbs.quizReview.forEach((r, idx) => {
+            const correctOpt = r.q.item;
+            const chosenOpt = r.q.options.find(o => o.id === r.chosenId);
+            reviewListHtml += `
+                <div style="background: #ffffff; border: 1.5px solid ${r.isCorrect ? '#86efac' : '#fca5a5'}; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <div style="font-weight: 700; color: #0f172a; font-size: 1.05rem;">
+                            Câu ${idx + 1}: "${r.q.item.vi}"
+                        </div>
+                        <div style="font-size: 0.95rem; color: #166534; font-weight: 600;">
+                            ✔ Đáp án đúng: <strong>${correctOpt.en}</strong>
+                        </div>
+                        ${!r.isCorrect ? `
+                            <div style="font-size: 0.9rem; color: #dc2626;">
+                                ✖ Bạn đã chọn: ${chosenOpt ? chosenOpt.en : 'Không chọn'}
+                            </div>
+                        ` : ''}
+                    </div>
+                    <button type="button" onclick="playTTS('${correctOpt.en.replace(/'/g, "\\'")}', event)" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-weight: 700; color: #0284c7; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe
+                    </button>
+                </div>
+            `;
+        });
+
+        workspace.innerHTML = `
+            <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+                <!-- Final Score Card -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 36px 30px; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+                    <div style="font-size: 3.5rem; margin-bottom: 8px;">${icon}</div>
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">KẾT QUẢ TRẢ BÀI</h2>
+                    <div style="font-size: 2.8rem; font-weight: 900; color: ${color}; line-height: 1.2; margin-bottom: 8px;">
+                        ${score} / ${total}
+                    </div>
+                    <div style="font-size: 1.15rem; font-weight: 700; color: #475569; margin-bottom: 12px;">
+                        Độ chính xác: <strong>${percent}%</strong>
+                    </div>
+                    <p style="color: #64748b; font-size: 1.05rem; max-width: 480px; margin: 0 auto 24px auto;">
+                        ${message}
+                    </p>
+
+                    <!-- Buttons -->
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                        <button type="button" onclick="window.tbStartQuiz()" style="background: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🔄 Làm đề mới (10 câu khác)
+                        </button>
+                        ${wrongQuestions.length > 0 ? `
+                        <button type="button" onclick="window.tbRetryWrongQuestions()" style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🎯 Ôn lại ${wrongQuestions.length} câu làm sai
+                        </button>
+                        ` : ''}
+                        <button type="button" onclick="window.tbSetMode('flashcard')" style="background: #f1f5f9; color: #334155; border: 1.5px solid #cbd5e1; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer;">
+                            🗂️ Luyện thẻ Flashcard
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Review Section -->
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #334155; padding-left: 4px;">
+                        CHI TIẾT BÀI LÀM:
+                    </div>
+                    ${reviewListHtml}
+                </div>
+            </div>
+        `;
+    };
+
+    window.tbRetryWrongQuestions = function() {
+        const tbs = window.traBaiState;
+        const wrongItems = tbs.quizReview.filter(r => !r.isCorrect).map(r => r.q.item);
+        if (wrongItems.length > 0) {
+            window.tbStartQuiz(wrongItems);
+        }
+    };
+
+    // ================= LIST MODE (BẢNG TRA CỨU TOÀN BỘ) =================
+    window.tbRenderListView = function(workspace) {
+        const allData = window.part01Dang01TraBaiData || [];
+        const tbs = window.traBaiState;
+
+        // Categories list
+        const categories = Array.from(new Set(allData.map(d => d.category)));
+
+        workspace.innerHTML = `
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <!-- Filter & Search Bar -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px 20px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+                    <div style="flex: 1; min-width: 240px; position: relative;">
+                        <input type="text" id="tb-list-search" placeholder="🔍 Tìm kiếm cụm từ tiếng Anh hoặc tiếng Việt..." value="${tbs.searchQuery || ''}" oninput="window.tbFilterList(this.value)" style="width: 100%; padding: 10px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 0.95rem; outline: none;">
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <select id="tb-list-cat-select" onchange="window.tbFilterListCat(this.value)" style="padding: 10px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 0.95rem; font-weight: 600; color: #334155; outline: none; background: white;">
+                            <option value="all" ${tbs.categoryFilter === 'all' ? 'selected' : ''}>Tất cả phân loại</option>
+                            ${categories.map(c => `<option value="${c}" ${tbs.categoryFilter === c ? 'selected' : ''}>${c}</option>`).join('')}
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Table Container -->
+                <div id="tb-list-results-box" style="display: flex; flex-direction: column; gap: 8px;"></div>
+            </div>
+        `;
+
+        window.tbUpdateListResultsOnly();
+    };
+
+    window.tbFilterList = function(query) {
+        window.traBaiState.searchQuery = query.trim().toLowerCase();
+        window.tbUpdateListResultsOnly();
+    };
+
+    window.tbFilterListCat = function(cat) {
+        window.traBaiState.categoryFilter = cat;
+        window.tbUpdateListResultsOnly();
+    };
+
+    window.tbUpdateListResultsOnly = function() {
+        const box = document.getElementById("tb-list-results-box");
+        if (!box) return;
+
+        const allData = window.part01Dang01TraBaiData || [];
+        const tbs = window.traBaiState;
+        const q = tbs.searchQuery || '';
+        const cat = tbs.categoryFilter || 'all';
+
+        let filtered = allData;
+        if (cat !== 'all') {
+            filtered = filtered.filter(d => d.category === cat);
+        }
+        if (q) {
+            filtered = filtered.filter(d => d.en.toLowerCase().includes(q) || d.vi.toLowerCase().includes(q));
+        }
+
+        if (filtered.length === 0) {
+            box.innerHTML = `<div style="text-align: center; padding: 40px; color: #94a3b8; font-size: 1.05rem;">Không tìm thấy cụm từ nào phù hợp với từ khóa "${q}".</div>`;
+            return;
+        }
+
+        let rowsHtml = '';
+        filtered.forEach((item, index) => {
+            const isLearned = tbs.learnedIds.has(item.id);
+            rowsHtml += `
+                <div class="tb-list-row" style="padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 14px; flex: 1; min-width: 280px;">
+                        <span style="font-weight: 800; color: #94a3b8; font-size: 0.9rem; min-width: 32px;">#${item.id}</span>
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <span style="font-weight: 800; color: #0284c7; font-size: 1.15rem;">${item.en}</span>
+                                <span onclick="playTTS('${item.en.replace(/'/g, "\\'")}', event)" style="cursor: pointer; opacity: 0.6; font-size: 1.05rem;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Nghe phát âm">🔊</span>
+                            </div>
+                            <div style="color: #334155; font-size: 1.02rem; font-weight: 500;">
+                                ${item.vi}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <span style="background: ${item.source === 'Bài giảng' ? '#eff6ff' : '#f0fdf4'}; color: ${item.source === 'Bài giảng' ? '#2563eb' : '#15803d'}; border: 1px solid ${item.source === 'Bài giảng' ? '#bfdbfe' : '#86efac'}; padding: 4px 10px; border-radius: 14px; font-size: 0.8rem; font-weight: 700;">
+                            Slide ${item.slide}
+                        </span>
+                        <span style="background: #f8fafc; color: #64748b; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 14px; font-size: 0.8rem; font-weight: 600;">
+                            ${item.category}
+                        </span>
+                        <button type="button" onclick="window.tbToggleLearnItem(${item.id}, this)" style="border: 1.5px solid ${isLearned ? '#86efac' : '#cbd5e1'}; background: ${isLearned ? '#dcfce7' : '#ffffff'}; color: ${isLearned ? '#15803d' : '#64748b'}; padding: 6px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: all 0.2s;" title="Đánh dấu đã thuộc / chưa nhớ">
+                            ${isLearned ? '✔️ Đã thuộc' : '○ Chưa nhớ'}
+                        </button>
+                    </div>
+                </div>
+            `;
+        });
+
+        box.innerHTML = rowsHtml;
+    };
+
+    window.tbToggleLearnItem = function(id, btnEl) {
+        const tbs = window.traBaiState;
+        if (tbs.learnedIds.has(id)) {
+            tbs.learnedIds.delete(id);
+        } else {
+            tbs.learnedIds.add(id);
+        }
+        saveTraBaiLearned();
+
+        // Update header stats
+        const totalCount = (window.part01Dang01TraBaiData || []).length;
+        const learnedCount = tbs.learnedIds.size;
+        const percent = Math.min(100, Math.round((learnedCount / totalCount) * 100));
+
+        const learnedCountEl = document.getElementById("tb-learned-count");
+        const progressFillEl = document.getElementById("tb-progress-fill");
+        const unlearnedBadgeEl = document.getElementById("tb-unlearned-badge");
+        if (learnedCountEl) learnedCountEl.textContent = learnedCount;
+        if (progressFillEl) progressFillEl.style.width = `${percent}%`;
+        if (unlearnedBadgeEl) unlearnedBadgeEl.textContent = totalCount - learnedCount;
+
+        const isLearned = tbs.learnedIds.has(id);
+        if (btnEl) {
+            btnEl.style.borderColor = isLearned ? '#86efac' : '#cbd5e1';
+            btnEl.style.background = isLearned ? '#dcfce7' : '#ffffff';
+            btnEl.style.color = isLearned ? '#15803d' : '#64748b';
+            btnEl.textContent = isLearned ? '✔️ Đã thuộc' : '○ Chưa nhớ';
+        }
+    };
+
 
 
     function loadSectionP4(id) {

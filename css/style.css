@@ -1942,3 +1942,389 @@ body.light-mode .q-trans {
     cursor: not-allowed;
 }
 
+/* ================= PART 01: TRẢ BÀI TỪ VỰNG ================= */
+.p1-nav-tabs {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0;
+    overflow-x: auto;
+}
+
+body:not(.light-mode) .p1-nav-tabs {
+    border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.p1-tab-nav-btn {
+    padding: 12px 22px;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #64748b;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    border-radius: 8px 8px 0 0;
+    white-space: nowrap;
+}
+
+.p1-tab-nav-btn:hover {
+    color: #1e293b;
+    background: rgba(0, 0, 0, 0.03);
+}
+
+body:not(.light-mode) .p1-tab-nav-btn:hover {
+    color: #f1f5f9;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.p1-tab-nav-btn.active {
+    color: #2563eb;
+    border-bottom-color: #2563eb;
+    background: rgba(37, 99, 235, 0.05);
+}
+
+#p1-tab-btn-trabai.active {
+    color: #d97706;
+    border-bottom-color: #f59e0b;
+    background: rgba(245, 158, 11, 0.08);
+}
+
+/* Tra Bai Container & Controls */
+.tb-main-container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tb-header-card {
+    background: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 22px 28px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+body:not(.light-mode) .tb-header-card {
+    background: var(--bg-card);
+    border-color: rgba(255,255,255,0.1);
+}
+
+.tb-scope-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.tb-scope-chip {
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    border: 1.5px solid #cbd5e1;
+    background: #f8fafc;
+    color: #475569;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tb-scope-chip:hover {
+    background: #f1f5f9;
+    border-color: #94a3b8;
+    color: #0f172a;
+}
+
+.tb-scope-chip.active {
+    background: #2563eb;
+    color: #ffffff;
+    border-color: #1d4ed8;
+    box-shadow: 0 2px 8px rgba(37,99,235,0.25);
+}
+
+.tb-modes-nav {
+    display: flex;
+    border-radius: 12px;
+    background: #f1f5f9;
+    padding: 4px;
+    gap: 4px;
+    max-width: 540px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body:not(.light-mode) .tb-modes-nav {
+    background: rgba(255,255,255,0.06);
+}
+
+.tb-mode-btn {
+    flex: 1;
+    padding: 10px 14px;
+    border: none;
+    background: transparent;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    text-align: center;
+}
+
+.tb-mode-btn:hover {
+    color: #0f172a;
+}
+
+.tb-mode-btn.active {
+    background: #ffffff;
+    color: #2563eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+body:not(.light-mode) .tb-mode-btn.active {
+    background: #1e293b;
+    color: #38bdf8;
+}
+
+/* 3D Flashcard */
+.tb-card-wrapper {
+    perspective: 1200px;
+    width: 100%;
+    max-width: 660px;
+    margin: 10px auto;
+    height: 340px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tb-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+}
+
+.tb-card-inner.flipped {
+    transform: rotateY(180deg);
+}
+
+.tb-card-front, .tb-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.tb-card-front {
+    background: #ffffff;
+    border: 2px solid #e2e8f0;
+}
+
+body:not(.light-mode) .tb-card-front {
+    background: #0f172a;
+    border-color: #334155;
+}
+
+.tb-card-back {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border: 2px solid #86efac;
+    transform: rotateY(180deg);
+}
+
+body:not(.light-mode) .tb-card-back {
+    background: linear-gradient(135deg, #064e3b 0%, #065f46 100%);
+    border-color: #059669;
+}
+
+/* Flashcard Controls */
+.tb-controls-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tb-ctrl-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    border: 1.5px solid #cbd5e1;
+    background: #ffffff;
+    color: #334155;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.tb-ctrl-btn:hover {
+    background: #f8fafc;
+    border-color: #94a3b8;
+    transform: translateY(-1px);
+}
+
+.tb-btn-learned {
+    background: #16a34a;
+    color: #ffffff;
+    border-color: #15803d;
+}
+
+.tb-btn-learned:hover {
+    background: #15803d;
+    border-color: #166534;
+    color: #ffffff;
+}
+
+.tb-btn-unlearned {
+    background: #fee2e2;
+    color: #b91c1c;
+    border-color: #fca5a5;
+}
+
+.tb-btn-unlearned:hover {
+    background: #fecaca;
+    border-color: #f87171;
+}
+
+/* Quiz Styles */
+.tb-quiz-opt {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 12px;
+    border: 2px solid #e2e8f0;
+    background: #ffffff;
+    color: #1e293b;
+    font-size: 1.12rem;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: all 0.2s ease;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+
+body:not(.light-mode) .tb-quiz-opt {
+    background: #1e293b;
+    border-color: #334155;
+    color: #f8fafc;
+}
+
+.tb-quiz-opt:hover:not(:disabled) {
+    border-color: #2563eb;
+    background: #eff6ff;
+    transform: translateX(4px);
+}
+
+body:not(.light-mode) .tb-quiz-opt:hover:not(:disabled) {
+    background: rgba(37,99,235,0.15);
+    border-color: #60a5fa;
+}
+
+.tb-quiz-opt.correct {
+    border-color: #16a34a !important;
+    background: #f0fdf4 !important;
+    color: #15803d !important;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(22,163,74,0.2) !important;
+}
+
+body:not(.light-mode) .tb-quiz-opt.correct {
+    background: rgba(22,163,74,0.2) !important;
+    border-color: #22c55e !important;
+    color: #4ade80 !important;
+}
+
+.tb-quiz-opt.incorrect {
+    border-color: #dc2626 !important;
+    background: #fef2f2 !important;
+    color: #b91c1c !important;
+    font-weight: 700;
+    box-shadow: 0 4px 12px rgba(220,38,38,0.2) !important;
+}
+
+body:not(.light-mode) .tb-quiz-opt.incorrect {
+    background: rgba(220,38,38,0.2) !important;
+    border-color: #ef4444 !important;
+    color: #f87171 !important;
+}
+
+.tb-quiz-letter {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    color: #475569;
+    font-weight: 800;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+body:not(.light-mode) .tb-quiz-letter {
+    background: #334155;
+    color: #cbd5e1;
+}
+
+/* List Table */
+.tb-list-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+.tb-list-row {
+    background: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    transition: all 0.2s ease;
+}
+
+body:not(.light-mode) .tb-list-row {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.tb-list-row:hover {
+    border-color: #93c5fd;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+
