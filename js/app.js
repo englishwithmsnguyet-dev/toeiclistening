@@ -4833,7 +4833,7 @@ document.addEventListener("DOMContentLoaded", () => {
         part1Panel.innerHTML = `
             <div class="panel-header">
                 <div class="breadcrumbs">
-                    <span>PART 01: PHOTOGRAPHS</span> &nbsp;/&nbsp; <span>${sectionData.type === 'test' ? 'LUYỆN TẬP ETS 2026' : 'DẠNG CÂU HỎI'}</span>
+                    <span>PART 01: PHOTOGRAPHS</span> &nbsp;/&nbsp; <span>${sectionData.type === 'test' ? 'LUYỆN TẬP ETS 2026' : (sectionData.id === 'overview' ? 'TỔNG QUAN' : 'DẠNG CÂU HỎI')}</span>
                 </div>
                 <h3 id="panel-title-p1">${sectionData.title}</h3>
             </div>
@@ -4862,7 +4862,7 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = `
             <div class="ppt-slide-container">
                 <div class="ppt-header">
-                    LÝ THUYẾT
+                    ${state.part01ActiveSection === 'overview' ? 'TỔNG QUAN PHẦN 01: PHOTOGRAPHS' : 'LÝ THUYẾT'}
                 </div>
                 <div class="ppt-content" id="p1-slide-content">
                     <!-- Slide content rendered here -->
