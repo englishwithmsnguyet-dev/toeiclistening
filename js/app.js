@@ -136,16 +136,12 @@ window.selectPracticeOption = function(el) {
     if (!container) return;
     if (container.getAttribute('data-checked') === 'true') return;
     
-    const siblings = container.querySelectorAll('.practice-option');
+    const siblings = container.querySelectorAll('.practice-circle-opt');
     siblings.forEach(s => {
         s.classList.remove('selected');
-        s.style.backgroundColor = '';
-        s.style.borderColor = '#e2e8f0';
     });
     
     el.classList.add('selected');
-    el.style.backgroundColor = '#eff6ff';
-    el.style.borderColor = '#2563eb';
     
     // Automatically evaluate and reveal scripts upon selection
     window.evaluatePracticeContainer(container, el);
@@ -155,77 +151,88 @@ window.evaluatePracticeContainer = function(container, selectedEl) {
     if (!container) return;
     container.setAttribute('data-checked', 'true');
     
-    // Reveal all scripts
-    const scripts = container.querySelectorAll('.opt-script-text');
-    scripts.forEach(s => {
-        s.style.display = 'block';
-    });
+    const chosenOpt = selectedEl.getAttribute('data-option');
+    const isChosenCorrect = selectedEl.getAttribute('data-correct') === 'true';
     
-    const options = container.querySelectorAll('.practice-option');
-    options.forEach(opt => {
-        const isCorrect = opt.getAttribute('data-correct') === 'true';
-        const labelBadge = opt.querySelector('.opt-label-badge');
-        const badgeTag = opt.querySelector('.opt-result-badge');
+    // Update circle buttons
+    const circles = container.querySelectorAll('.practice-circle-opt');
+    let correctOpt = '';
+    circles.forEach(btn => {
+        const isCorrect = btn.getAttribute('data-correct') === 'true';
+        if (isCorrect) correctOpt = btn.getAttribute('data-option');
         
-        opt.style.cursor = 'default';
-        opt.style.transform = 'none';
+        btn.style.cursor = 'default';
+        btn.style.transform = 'none';
         
         if (isCorrect) {
-            opt.style.backgroundColor = '#f0fdf4';
-            opt.style.borderColor = '#22c55e';
-            opt.style.boxShadow = '0 4px 12px rgba(34,197,94,0.12)';
-            opt.style.opacity = '1';
-            if (labelBadge) {
-                labelBadge.style.backgroundColor = '#22c55e';
-                labelBadge.style.borderColor = '#16a34a';
-                labelBadge.style.color = '#ffffff';
-            }
-            if (badgeTag) {
-                badgeTag.style.display = 'inline-flex';
-                badgeTag.style.backgroundColor = '#dcfce7';
-                badgeTag.style.color = '#15803d';
-                badgeTag.style.border = '1px solid #86efac';
-                badgeTag.innerHTML = '✔️ Đáp án đúng';
-            }
-        } else if (opt === selectedEl && !isCorrect) {
-            opt.style.backgroundColor = '#fef2f2';
-            opt.style.borderColor = '#ef4444';
-            opt.style.boxShadow = '0 4px 12px rgba(239,68,68,0.12)';
-            opt.style.opacity = '1';
-            if (labelBadge) {
-                labelBadge.style.backgroundColor = '#ef4444';
-                labelBadge.style.borderColor = '#dc2626';
-                labelBadge.style.color = '#ffffff';
-            }
-            if (badgeTag) {
-                badgeTag.style.display = 'inline-flex';
-                badgeTag.style.backgroundColor = '#fee2e2';
-                badgeTag.style.color = '#b91c1c';
-                badgeTag.style.border = '1px solid #fca5a5';
-                badgeTag.innerHTML = '❌ Bạn đã chọn';
-            }
+            btn.style.backgroundColor = '#22c55e';
+            btn.style.borderColor = '#16a34a';
+            btn.style.color = '#ffffff';
+            btn.style.boxShadow = '0 4px 14px rgba(34,197,94,0.35)';
+        } else if (btn === selectedEl && !isCorrect) {
+            btn.style.backgroundColor = '#ef4444';
+            btn.style.borderColor = '#dc2626';
+            btn.style.color = '#ffffff';
+            btn.style.boxShadow = '0 4px 14px rgba(239,68,68,0.35)';
         } else {
-            opt.style.backgroundColor = '#f8fafc';
-            opt.style.borderColor = '#e2e8f0';
-            opt.style.opacity = '0.75';
-            if (labelBadge) {
-                labelBadge.style.backgroundColor = '#e2e8f0';
-                labelBadge.style.borderColor = '#cbd5e1';
-                labelBadge.style.color = '#64748b';
-            }
+            btn.style.backgroundColor = '#f1f5f9';
+            btn.style.borderColor = '#cbd5e1';
+            btn.style.color = '#94a3b8';
+            btn.style.opacity = '0.55';
         }
     });
     
-    // Update action button to "Làm lại"
-    const actionBtn = document.getElementById('practice-action-btn');
-    if (actionBtn) {
-        actionBtn.innerHTML = '🔄 Làm lại câu này (Ẩn script)';
-        actionBtn.style.background = '#0284c7';
-        actionBtn.style.opacity = '1';
-        actionBtn.style.cursor = 'pointer';
-        actionBtn.onclick = function() {
-            window.resetPracticeQuestion();
-        };
+    // Update Result Message
+    const resultMsg = document.getElementById('practice-result-msg');
+    if (resultMsg) {
+        if (isChosenCorrect) {
+            resultMsg.innerHTML = `<span style="background: #dcfce7; color: #15803d; border: 1.5px solid #86efac; padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 1rem; display: inline-flex; align-items: center; gap: 6px;">🎉 Chính xác! Đáp án đúng là (${correctOpt})</span>`;
+        } else {
+            resultMsg.innerHTML = `<span style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 1rem; display: inline-flex; align-items: center; gap: 6px;">❌ Bạn chọn (${chosenOpt}) — Đáp án đúng là (${correctOpt})</span>`;
+        }
+    }
+    
+    // Update and reveal Transcript rows
+    const transcriptBox = document.getElementById('practice-transcript-box');
+    if (transcriptBox) {
+        const rows = transcriptBox.querySelectorAll('.practice-transcript-row');
+        rows.forEach(row => {
+            const rowOpt = row.getAttribute('data-option');
+            const isCorrect = row.getAttribute('data-correct') === 'true';
+            const badgeTag = row.querySelector('.transcript-badge-tag');
+            
+            if (isCorrect) {
+                row.style.backgroundColor = '#f0fdf4';
+                row.style.borderColor = '#22c55e';
+                row.style.boxShadow = '0 2px 8px rgba(34,197,94,0.1)';
+                if (badgeTag) {
+                    badgeTag.style.display = 'inline-flex';
+                    badgeTag.style.backgroundColor = '#22c55e';
+                    badgeTag.style.color = '#ffffff';
+                    badgeTag.innerHTML = 'ĐÚNG ✔';
+                }
+            } else if (rowOpt === chosenOpt && !isCorrect) {
+                row.style.backgroundColor = '#fef2f2';
+                row.style.borderColor = '#ef4444';
+                row.style.boxShadow = '0 2px 8px rgba(239,68,68,0.1)';
+                if (badgeTag) {
+                    badgeTag.style.display = 'inline-flex';
+                    badgeTag.style.backgroundColor = '#ef4444';
+                    badgeTag.style.color = '#ffffff';
+                    badgeTag.innerHTML = 'BẠN ĐÃ CHỌN ✕';
+                }
+            } else {
+                row.style.backgroundColor = '#ffffff';
+                row.style.borderColor = '#e2e8f0';
+                row.style.boxShadow = 'none';
+                if (badgeTag) {
+                    badgeTag.style.display = 'none';
+                    badgeTag.innerHTML = '';
+                }
+            }
+        });
+        
+        transcriptBox.style.display = 'flex';
     }
 };
 
@@ -234,52 +241,35 @@ window.resetPracticeQuestion = function() {
     if (!container) return;
     container.removeAttribute('data-checked');
     
-    const options = container.querySelectorAll('.practice-option');
-    options.forEach(opt => {
-        opt.classList.remove('selected');
-        opt.style.backgroundColor = '#ffffff';
-        opt.style.borderColor = '#e2e8f0';
-        opt.style.boxShadow = '0 2px 6px rgba(0,0,0,0.02)';
-        opt.style.opacity = '1';
-        opt.style.cursor = 'pointer';
-        
-        const labelBadge = opt.querySelector('.opt-label-badge');
-        if (labelBadge) {
-            labelBadge.style.backgroundColor = '#eff6ff';
-            labelBadge.style.borderColor = '#bfdbfe';
-            labelBadge.style.color = '#2563eb';
-        }
-        
-        const script = opt.querySelector('.opt-script-text');
-        if (script) {
-            script.style.display = 'none';
-        }
-        
-        const badgeTag = opt.querySelector('.opt-result-badge');
-        if (badgeTag) {
-            badgeTag.style.display = 'none';
-            badgeTag.innerHTML = '';
-        }
+    const circles = container.querySelectorAll('.practice-circle-opt');
+    circles.forEach(btn => {
+        btn.classList.remove('selected');
+        btn.style.backgroundColor = '#ffffff';
+        btn.style.borderColor = '#bfdbfe';
+        btn.style.color = '#2563eb';
+        btn.style.boxShadow = '0 4px 12px rgba(37,99,235,0.08)';
+        btn.style.opacity = '1';
+        btn.style.cursor = 'pointer';
+        btn.style.transform = '';
     });
     
-    const actionBtn = document.getElementById('practice-action-btn');
-    if (actionBtn) {
-        actionBtn.innerHTML = 'KIỂM TRA ĐÁP ÁN';
-        actionBtn.style.background = '#2563eb';
-        actionBtn.style.opacity = '1';
-        actionBtn.style.cursor = 'pointer';
-        actionBtn.onclick = function() {
-            window.checkPracticeAnswer(this);
-        };
+    const transcriptBox = document.getElementById('practice-transcript-box');
+    if (transcriptBox) {
+        transcriptBox.style.display = 'none';
+    }
+    
+    const resultMsg = document.getElementById('practice-result-msg');
+    if (resultMsg) {
+        resultMsg.innerHTML = '';
     }
 };
 
 window.checkPracticeAnswer = function(btn) {
     const container = document.getElementById('practice-options-container');
     if (!container) return;
-    const selected = container.querySelector('.practice-option.selected');
+    const selected = container.querySelector('.practice-circle-opt.selected');
     if (!selected) {
-        alert("Vui lòng click chọn một phương án (A, B, C hoặc D) trước khi kiểm tra!");
+        alert("Vui lòng click chọn một vòng tròn đáp án (A, B, C hoặc D)!");
         return;
     }
     window.evaluatePracticeContainer(container, selected);
@@ -5048,18 +5038,30 @@ document.addEventListener("DOMContentLoaded", () => {
         if (slide.practice) {
             const p = slide.practice;
             const imgPath = slide.images && slide.images.length > 0 ? `data/graphics/part01/${slide.images[0]}` : '';
-            
-            let optionsHtml = '';
             const labels = ['A', 'B', 'C', 'D'];
+            
+            // 4 Circular Buttons
+            let circlesHtml = '';
+            labels.forEach(label => {
+                const isCorrect = label === p.answer;
+                circlesHtml += `
+                    <button type="button" class="practice-circle-opt" data-option="${label}" data-correct="${isCorrect}" onclick="selectPracticeOption(this)" title="Chọn phương án (${label})">
+                        ${label}
+                    </button>
+                `;
+            });
+            
+            // 4 Transcript Rows (hidden initially inside #practice-transcript-box)
+            let transcriptRowsHtml = '';
             p.options.forEach((opt, i) => {
                 const isCorrect = labels[i] === p.answer;
-                optionsHtml += `
-                    <div class="practice-option" data-option="${labels[i]}" data-correct="${isCorrect}" style="display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 14px 18px; border: 2px solid #e2e8f0; border-radius: 12px; margin-bottom: 12px; cursor: pointer; background: #ffffff; transition: all 0.2s ease; box-shadow: 0 2px 6px rgba(0,0,0,0.02);" onclick="selectPracticeOption(this)">
-                        <div style="display: flex; align-items: center; gap: 14px; flex: 1;">
-                            <span class="opt-label-badge" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 50%; background: #eff6ff; color: #2563eb; font-weight: 800; font-size: 1.15rem; border: 2px solid #bfdbfe; flex-shrink: 0; transition: all 0.2s;">(${labels[i]})</span>
-                            <span class="opt-script-text" style="display: none; font-size: 1.15rem; color: #1e293b; font-weight: 500; line-height: 1.5;">${opt}</span>
+                transcriptRowsHtml += `
+                    <div class="practice-transcript-row" data-option="${labels[i]}" data-correct="${isCorrect}">
+                        <div class="row-left">
+                            <span class="row-label">(${labels[i]})</span>
+                            <span class="row-text">${opt}</span>
                         </div>
-                        <span class="opt-result-badge" style="display: none; padding: 4px 12px; border-radius: 20px; font-weight: 700; font-size: 0.88rem; flex-shrink: 0;"></span>
+                        <span class="transcript-badge-tag"></span>
                     </div>
                 `;
             });
@@ -5078,41 +5080,111 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const practiceStyles = `
                 <style>
-                    #practice-options-container .practice-option:hover {
-                        border-color: #3b82f6 !important;
-                        background-color: #f8fafc !important;
-                        transform: translateY(-1px);
+                    .practice-circle-opt {
+                        width: 62px;
+                        height: 62px;
+                        border-radius: 50%;
+                        background: #ffffff;
+                        color: #2563eb;
+                        border: 2.5px solid #bfdbfe;
+                        font-size: 1.45rem;
+                        font-weight: 800;
+                        cursor: pointer;
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: 0 4px 12px rgba(37,99,235,0.08);
+                        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                        user-select: none;
+                        outline: none;
                     }
-                    #practice-options-container[data-checked="true"] .practice-option:hover {
-                        transform: none !important;
+                    #practice-options-container:not([data-checked="true"]) .practice-circle-opt:hover {
+                        background: #2563eb !important;
+                        color: #ffffff !important;
+                        border-color: #1d4ed8 !important;
+                        transform: translateY(-3px) scale(1.08);
+                        box-shadow: 0 8px 20px rgba(37,99,235,0.28);
+                    }
+                    #practice-options-container:not([data-checked="true"]) .practice-circle-opt:active {
+                        transform: scale(0.96);
+                    }
+                    .practice-transcript-row {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        gap: 14px;
+                        padding: 13px 18px;
+                        border-radius: 10px;
+                        border: 1.5px solid #e2e8f0;
+                        background: #ffffff;
+                        transition: all 0.25s ease;
+                    }
+                    .practice-transcript-row .row-left {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        flex: 1;
+                    }
+                    .practice-transcript-row .row-label {
+                        font-weight: 800;
+                        font-size: 1.15rem;
+                        min-width: 32px;
+                        color: #64748b;
+                        flex-shrink: 0;
+                    }
+                    .practice-transcript-row .row-text {
+                        font-size: 1.15rem;
+                        color: #1e293b;
+                        font-weight: 500;
+                        line-height: 1.5;
+                    }
+                    .transcript-badge-tag {
+                        display: none;
+                        padding: 4px 12px;
+                        border-radius: 20px;
+                        font-size: 0.85rem;
+                        font-weight: 800;
+                        flex-shrink: 0;
+                    }
+                    @keyframes fadeInDown {
+                        from { opacity: 0; transform: translateY(-8px); }
+                        to { opacity: 1; transform: translateY(0); }
                     }
                 </style>
             `;
 
             contentContainer.innerHTML = `
                 ${practiceStyles}
-                <div style="display: flex; flex-direction: row; gap: 36px; flex-wrap: nowrap; align-items: stretch; justify-content: center; width: 100%;">
-                    <div style="flex: 1; max-width: 38%; display: flex; justify-content: center; align-items: center; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.06);">
-                        <img src="${imgPath}" alt="Practice Image" style="width: 100%; max-height: 440px; object-fit: contain; border-radius: 8px;">
+                <div style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 860px; margin: 0 auto;">
+                    <!-- 1. FULL IMAGE ON TOP -->
+                    <div style="width: 100%; display: flex; justify-content: center; align-items: center; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); margin-bottom: 22px;">
+                        <img src="${imgPath}" alt="Practice Image" style="max-height: 440px; max-width: 100%; width: auto; height: auto; object-fit: contain; border-radius: 8px; display: block;">
                     </div>
-                    <div style="flex: 1.2; min-width: 320px; max-width: 62%; font-size: 1.15rem; line-height: 1.6; color: var(--text-main); display: flex; flex-direction: column;">
-                        <div style="margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between;">
-                            <span style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #2563eb; background: #eff6ff; padding: 4px 14px; border-radius: 20px; border: 1px solid #bfdbfe;">
-                                🎧 BÀI TẬP THỰC HÀNH TRANH
-                            </span>
-                            <span style="font-size: 0.9rem; color: #64748b; font-style: italic;">
-                                Nghe audio & click chọn phương án
-                            </span>
+
+                    <!-- 2. 4 CLICKABLE CIRCLES BELOW IMAGE -->
+                    <div style="display: flex; flex-direction: column; align-items: center; width: 100%; margin-bottom: 8px;">
+                        <div style="font-size: 0.95rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
+                            <span>🎧 Click chọn phương án A, B, C hoặc D:</span>
                         </div>
-                        <div id="practice-options-container" style="margin-bottom: 18px;">
-                            ${optionsHtml}
+                        <div id="practice-options-container" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 6px;">
+                            ${circlesHtml}
                         </div>
-                        <div style="display: flex; gap: 14px; margin-bottom: 18px;">
-                            <button id="practice-action-btn" onclick="checkPracticeAnswer(this)" style="background: #2563eb; color: white; border: none; padding: 12px 28px; border-radius: 8px; font-weight: 700; cursor: pointer; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(37,99,235,0.2); transition: all 0.2s;" onmouseover="this.style.opacity='0.9'" onmouseout="this.style.opacity='1'">KIỂM TRA ĐÁP ÁN</button>
+                    </div>
+
+                    <!-- 3. TRANSCRIPT & VOCABULARY SECTION (REVEALED AFTER CLICK) -->
+                    <div id="practice-transcript-box" style="display: none; flex-direction: column; gap: 10px; width: 100%; margin-top: 14px; animation: fadeInDown 0.3s ease;">
+                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 4px; flex-wrap: wrap; gap: 10px;">
+                            <div id="practice-result-msg"></div>
+                            <button type="button" onclick="resetPracticeQuestion()" style="background: #ffffff; border: 1.5px solid #cbd5e1; color: #334155; padding: 6px 16px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: all 0.2s;" onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#94a3b8'" onmouseout="this.style.background='#ffffff'; this.style.borderColor='#cbd5e1'">
+                                🔄 Làm lại (Ẩn script)
+                            </button>
+                        </div>
+                        <div id="practice-transcript-rows" style="display: flex; flex-direction: column; gap: 8px;">
+                            ${transcriptRowsHtml}
                         </div>
                         ${vocabHtml ? `
-                        <details style="cursor: pointer; background: #f8fafc; border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px;">
-                          <summary style="font-weight: bold; color: #16a34a; outline: none; list-style-type: '👉 '; font-size: 1.1rem;">Hiển thị từ vựng trọng tâm</summary>
+                        <details style="cursor: pointer; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 14px 18px; margin-top: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+                          <summary style="font-weight: 800; color: #16a34a; outline: none; list-style-type: '👉 '; font-size: 1.1rem;">Hiển thị từ vựng trọng tâm</summary>
                           <div style="margin-top: 14px;">
                             ${vocabHtml}
                           </div>
