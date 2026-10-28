@@ -188,9 +188,9 @@ window.evaluatePracticeContainer = function(container, selectedEl) {
     const resultMsg = document.getElementById('practice-result-msg');
     if (resultMsg) {
         if (isChosenCorrect) {
-            resultMsg.innerHTML = `<span style="background: #dcfce7; color: #15803d; border: 1.5px solid #86efac; padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 1rem; display: inline-flex; align-items: center; gap: 6px;">🎉 Chính xác! Đáp án đúng là (${correctOpt})</span>`;
+            resultMsg.innerHTML = `<span style="background: #dcfce7; color: #15803d; border: 2px solid #86efac; padding: 8px 20px; border-radius: 24px; font-weight: 800; font-size: 1.2rem; display: inline-flex; align-items: center; gap: 8px;">🎉 Chính xác! Đáp án đúng là (${correctOpt})</span>`;
         } else {
-            resultMsg.innerHTML = `<span style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 6px 16px; border-radius: 20px; font-weight: 800; font-size: 1rem; display: inline-flex; align-items: center; gap: 6px;">❌ Bạn chọn (${chosenOpt}) — Đáp án đúng là (${correctOpt})</span>`;
+            resultMsg.innerHTML = `<span style="background: #fee2e2; color: #b91c1c; border: 2px solid #fca5a5; padding: 8px 20px; border-radius: 24px; font-weight: 800; font-size: 1.2rem; display: inline-flex; align-items: center; gap: 8px;">❌ Bạn chọn (${chosenOpt}) — Đáp án đúng là (${correctOpt})</span>`;
         }
     }
     
@@ -5147,9 +5147,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (p.vocab && p.vocab.length > 0) {
                 p.vocab.forEach(v => {
                     vocabHtml += `
-                        <div style="display: flex; gap: 8px; margin-bottom: 8px; padding-bottom: 8px; border-bottom: 1px dashed #e2e8f0; font-size: 1.15rem;">
-                            <span style="font-weight: 600; color: #0284c7; min-width: 140px; display: inline-block;">${v.en} <span onclick="playTTS(this.dataset.text, event)" data-text="${v.en.replace(/"/g, '&quot;')}" style="cursor: pointer; margin-left: 4px; opacity: 0.5; font-size: 0.9em;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.5'" title="Đọc từ này">🔊</span></span>
-                            <span style="color: var(--text-main);">- ${v.vi}</span>
+                        <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px dashed #e2e8f0; font-size: 1.3rem;">
+                            <span style="font-weight: 700; color: #0284c7; min-width: 170px; display: inline-flex; align-items: center; gap: 6px;">${v.en} <span onclick="playTTS(this.dataset.text, event)" data-text="${v.en.replace(/"/g, '&quot;')}" style="cursor: pointer; opacity: 0.6; font-size: 1rem;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Đọc từ này">🔊</span></span>
+                            <span style="color: #334155; font-weight: 500;">- ${v.vi}</span>
                         </div>
                     `;
                 });
@@ -5158,19 +5158,19 @@ document.addEventListener("DOMContentLoaded", () => {
             const practiceStyles = `
                 <style>
                     .practice-circle-opt {
-                        width: 62px;
-                        height: 62px;
+                        width: 72px;
+                        height: 72px;
                         border-radius: 50%;
                         background: #ffffff;
                         color: #2563eb;
-                        border: 2.5px solid #bfdbfe;
-                        font-size: 1.45rem;
+                        border: 3px solid #bfdbfe;
+                        font-size: 1.7rem;
                         font-weight: 800;
                         cursor: pointer;
                         display: inline-flex;
                         align-items: center;
                         justify-content: center;
-                        box-shadow: 0 4px 12px rgba(37,99,235,0.08);
+                        box-shadow: 0 4px 14px rgba(37,99,235,0.1);
                         transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
                         user-select: none;
                         outline: none;
@@ -5180,7 +5180,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         color: #ffffff !important;
                         border-color: #1d4ed8 !important;
                         transform: translateY(-3px) scale(1.08);
-                        box-shadow: 0 8px 20px rgba(37,99,235,0.28);
+                        box-shadow: 0 8px 22px rgba(37,99,235,0.3);
                     }
                     #practice-options-container:not([data-checked="true"]) .practice-circle-opt:active {
                         transform: scale(0.96);
@@ -5189,9 +5189,9 @@ document.addEventListener("DOMContentLoaded", () => {
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                        gap: 14px;
-                        padding: 13px 18px;
-                        border-radius: 10px;
+                        gap: 16px;
+                        padding: 16px 22px;
+                        border-radius: 12px;
                         border: 1.5px solid #e2e8f0;
                         background: #ffffff;
                         transition: all 0.25s ease;
@@ -5199,27 +5199,27 @@ document.addEventListener("DOMContentLoaded", () => {
                     .practice-transcript-row .row-left {
                         display: flex;
                         align-items: center;
-                        gap: 12px;
+                        gap: 14px;
                         flex: 1;
                     }
                     .practice-transcript-row .row-label {
                         font-weight: 800;
-                        font-size: 1.15rem;
-                        min-width: 32px;
-                        color: #64748b;
+                        font-size: 1.45rem;
+                        min-width: 44px;
+                        color: #475569;
                         flex-shrink: 0;
                     }
                     .practice-transcript-row .row-text {
-                        font-size: 1.15rem;
-                        color: #1e293b;
-                        font-weight: 500;
-                        line-height: 1.5;
+                        font-size: 1.35rem;
+                        color: #0f172a;
+                        font-weight: 600;
+                        line-height: 1.55;
                     }
                     .transcript-badge-tag {
                         display: none;
-                        padding: 4px 12px;
+                        padding: 6px 14px;
                         border-radius: 20px;
-                        font-size: 0.85rem;
+                        font-size: 1rem;
                         font-weight: 800;
                         flex-shrink: 0;
                     }
@@ -5232,37 +5232,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
             contentContainer.innerHTML = `
                 ${practiceStyles}
-                <div style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 860px; margin: 0 auto;">
+                <div style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 920px; margin: 0 auto;">
                     <!-- 1. FULL IMAGE ON TOP -->
                     <div style="width: 100%; display: flex; justify-content: center; align-items: center; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 14px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); margin-bottom: 22px;">
-                        <img src="${imgPath}" alt="Practice Image" style="max-height: 440px; max-width: 100%; width: auto; height: auto; object-fit: contain; border-radius: 8px; display: block;">
+                        <img src="${imgPath}" alt="Practice Image" style="max-height: 460px; max-width: 100%; width: auto; height: auto; object-fit: contain; border-radius: 8px; display: block;">
                     </div>
 
                     <!-- 2. 4 CLICKABLE CIRCLES BELOW IMAGE -->
                     <div style="display: flex; flex-direction: column; align-items: center; width: 100%; margin-bottom: 8px;">
-                        <div style="font-size: 0.95rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; display: flex; align-items: center; gap: 6px;">
+                        <div style="font-size: 1.15rem; font-weight: 800; color: #475569; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 14px; display: flex; align-items: center; gap: 8px;">
                             <span>🎧 Click chọn phương án A, B, C hoặc D:</span>
                         </div>
-                        <div id="practice-options-container" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 24px; flex-wrap: wrap; margin-bottom: 6px;">
+                        <div id="practice-options-container" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 26px; flex-wrap: wrap; margin-bottom: 8px;">
                             ${circlesHtml}
                         </div>
                     </div>
 
                     <!-- 3. TRANSCRIPT & VOCABULARY SECTION (REVEALED AFTER CLICK) -->
-                    <div id="practice-transcript-box" style="display: none; flex-direction: column; gap: 10px; width: 100%; margin-top: 14px; animation: fadeInDown 0.3s ease;">
-                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 4px; flex-wrap: wrap; gap: 10px;">
+                    <div id="practice-transcript-box" style="display: none; flex-direction: column; gap: 12px; width: 100%; margin-top: 16px; animation: fadeInDown 0.3s ease;">
+                        <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 4px; flex-wrap: wrap; gap: 12px;">
                             <div id="practice-result-msg"></div>
-                            <button type="button" onclick="resetPracticeQuestion()" style="background: #ffffff; border: 1.5px solid #cbd5e1; color: #334155; padding: 6px 16px; border-radius: 8px; font-weight: 700; font-size: 0.9rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: all 0.2s;" onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#94a3b8'" onmouseout="this.style.background='#ffffff'; this.style.borderColor='#cbd5e1'">
+                            <button type="button" onclick="resetPracticeQuestion()" style="background: #ffffff; border: 1.5px solid #cbd5e1; color: #334155; padding: 8px 18px; border-radius: 10px; font-weight: 700; font-size: 1.05rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: all 0.2s;" onmouseover="this.style.background='#f8fafc'; this.style.borderColor='#94a3b8'" onmouseout="this.style.background='#ffffff'; this.style.borderColor='#cbd5e1'">
                                 🔄 Làm lại (Ẩn script)
                             </button>
                         </div>
-                        <div id="practice-transcript-rows" style="display: flex; flex-direction: column; gap: 8px;">
+                        <div id="practice-transcript-rows" style="display: flex; flex-direction: column; gap: 10px;">
                             ${transcriptRowsHtml}
                         </div>
                         ${vocabHtml ? `
-                        <details style="cursor: pointer; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 10px; padding: 14px 18px; margin-top: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
-                          <summary style="font-weight: 800; color: #16a34a; outline: none; list-style-type: '👉 '; font-size: 1.1rem;">Hiển thị từ vựng trọng tâm</summary>
-                          <div style="margin-top: 14px;">
+                        <details style="cursor: pointer; background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; margin-top: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.02);">
+                          <summary style="font-weight: 800; color: #16a34a; outline: none; list-style-type: '👉 '; font-size: 1.25rem;">Hiển thị từ vựng trọng tâm</summary>
+                          <div style="margin-top: 16px;">
                             ${vocabHtml}
                           </div>
                         </details>

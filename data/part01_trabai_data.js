@@ -1010,64 +1010,64 @@ window.part01Dang01TraBaiData = [
     },
     {
         "id": 127,
-        "en": "a walkway",
-        "vi": "lối đi bộ",
+        "en": "a handbag",
+        "vi": "túi xách tay",
         "source": "Bài tập thực hành",
         "category": "Từ vựng bài tập",
         "slide": 97
     },
     {
         "id": 128,
-        "en": "a watering can",
-        "vi": "bình tưới nước",
+        "en": "a display case",
+        "vi": "tủ trưng bày",
         "source": "Bài tập thực hành",
         "category": "Từ vựng bài tập",
         "slide": 97
     },
     {
         "id": 129,
-        "en": "arrange",
-        "vi": "sắp xếp",
+        "en": "a purchase",
+        "vi": "việc mua hàng",
         "source": "Bài tập thực hành",
         "category": "Từ vựng bài tập",
         "slide": 97
     },
     {
         "id": 130,
-        "en": "pick flowers",
-        "vi": "hái hoa",
+        "en": "some flowers",
+        "vi": "một vài bông hoa",
         "source": "Bài tập thực hành",
         "category": "Từ vựng bài tập",
         "slide": 97
     },
     {
         "id": 131,
-        "en": "picking some flowers",
-        "vi": "hái một số bông hoa",
+        "en": "searching in her handbag",
+        "vi": "lục tìm trong túi xách",
         "source": "Bài tập thực hành",
         "category": "Cụm hành động bài tập",
         "slide": 97
     },
     {
         "id": 132,
-        "en": "holding a watering can",
-        "vi": "cầm bình tưới nước",
+        "en": "looking in a display case",
+        "vi": "nhìn vào tủ trưng bày",
         "source": "Bài tập thực hành",
         "category": "Cụm hành động bài tập",
         "slide": 97
     },
     {
         "id": 133,
-        "en": "arranging some chairs",
-        "vi": "sắp xếp một số chiếc ghế",
+        "en": "paying for a purchase",
+        "vi": "thanh toán việc mua hàng",
         "source": "Bài tập thực hành",
         "category": "Cụm hành động bài tập",
         "slide": 97
     },
     {
         "id": 134,
-        "en": "sweeping a walkway",
-        "vi": "quét lối đi bộ",
+        "en": "holding some flowers",
+        "vi": "cầm một vài bông hoa",
         "source": "Bài tập thực hành",
         "category": "Cụm hành động bài tập",
         "slide": 97

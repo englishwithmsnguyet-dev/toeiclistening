@@ -1050,28 +1050,28 @@ window.part01Data = [
                 "audio": "part01_practice/dang01_q2.mp3",
                 "practice": {
                     "options": [
-                        "She's picking some flowers.",
-                        "She's holding a watering can.",
-                        "She's arranging some chairs.",
-                        "She's sweeping a walkway."
+                        "She’s searching in her handbag.",
+                        "She’s looking in a display case.",
+                        "She’s paying for a purchase.",
+                        "She’s holding some flowers."
                     ],
                     "answer": "B",
                     "vocab": [
                         {
-                            "en": "a walkway",
-                            "vi": "lối đi bộ"
+                            "en": "a handbag",
+                            "vi": "túi xách tay"
                         },
                         {
-                            "en": "a watering can",
-                            "vi": "bình tưới nước"
+                            "en": "a display case",
+                            "vi": "tủ trưng bày"
                         },
                         {
-                            "en": "arrange",
-                            "vi": "sắp xếp"
+                            "en": "a purchase",
+                            "vi": "việc mua hàng"
                         },
                         {
-                            "en": "pick flowers",
-                            "vi": "hái hoa"
+                            "en": "some flowers",
+                            "vi": "một vài bông hoa"
                         }
                     ]
                 }
@@ -1125,7 +1125,7 @@ window.part01Data = [
                         "A woman's carrying a jacket over her arm.",
                         "A woman's parking a vehicle."
                     ],
-                    "answer": "B",
+                    "answer": "C",
                     "vocab": [
                         {
                             "en": "a busy street",
@@ -1160,7 +1160,7 @@ window.part01Data = [
                         "He's writing on a form.",
                         "He's leaving an office."
                     ],
-                    "answer": "A",
+                    "answer": "C",
                     "vocab": [
                         {
                             "en": "a phone",
@@ -1195,7 +1195,7 @@ window.part01Data = [
                         "A man is ordering a meal.",
                         "A man is pouring a beverage."
                     ],
-                    "answer": "D",
+                    "answer": "B",
                     "vocab": [
                         {
                             "en": "a drawer",
