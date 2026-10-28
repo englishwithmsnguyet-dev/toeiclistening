@@ -364,6 +364,151 @@ document.addEventListener("DOMContentLoaded", () => {
         "topic_01", "topic_02", "topic_03", "topic_04", "topic_05", "topic_06"
     ];
 
+    // --- STUDENT ACCESS CONTROL (PHẠM THỊ THU TRANG & GENERAL PERMISSIONS) ---
+    function normalizeVietnameseName(str) {
+        if (!str) return '';
+        return str
+            .trim()
+            .toLowerCase()
+            .replace(/[-_]+/g, ' ')
+            .normalize('NFD')
+            .replace(/[̀-ͯ]/g, '')
+            .replace(/đ/g, 'd')
+            .replace(/Đ/g, 'd')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
+    function isThuTrangStudent() {
+        const name = localStorage.getItem("studentName") || "";
+        return normalizeVietnameseName(name) === "pham thi thu trang";
+    }
+
+    function isTeacherName(str) {
+        const norm = normalizeVietnameseName(str);
+        return norm === "missnguyet2026" ||
+               norm === "co nguyet" ||
+               norm === "miss nguyet" ||
+               norm === "nguyet pham" ||
+               norm === "que anh";
+    }
+
+    function isContentLocked(partNum, sectionId) {
+        if (window.isUnlocked) return false;
+
+        // Restriction rule for student Pham Thi Thu Trang:
+        // Only unlocks Part 01 Overview, Dang 01, and Dang 01 Tra Bai.
+        // Everything else across the portal is locked!
+        if (isThuTrangStudent()) {
+            if (partNum === 1) {
+                if (sectionId === "overview" || sectionId === "dang_01" || sectionId === "dang_01_trabai") {
+                    return false;
+                }
+                return true;
+            }
+            return true;
+        }
+
+        // Default rules for other learners
+        if (partNum === 4) return true;
+        if (sectionId && LOCKED_SECTIONS.includes(sectionId)) return true;
+        return false;
+    }
+
+    window.isThuTrangStudent = isThuTrangStudent;
+    window.isContentLocked = isContentLocked;
+
+    function refreshAccessUI() {
+        if (typeof initializePart01Sidebar === 'function') initializePart01Sidebar();
+        if (typeof initializePart02Sidebar === 'function') initializePart02Sidebar();
+        if (typeof initializePart03Sidebar === 'function') initializePart03Sidebar();
+        if (typeof initializePart04Sidebar === 'function') initializePart04Sidebar();
+
+        const cardPart1 = document.getElementById("card-part1");
+        const cardPart2 = document.getElementById("card-part2");
+        const cardPart3 = document.getElementById("card-part3");
+        const cardPart4 = document.getElementById("card-part4");
+
+        const p2Locked = isContentLocked(2);
+        const p3Locked = isContentLocked(3);
+        const p4Locked = isContentLocked(4);
+
+        if (cardPart1) {
+            cardPart1.classList.remove("locked");
+            const tag = cardPart1.querySelector(".status-tag");
+            if (tag) {
+                tag.className = "status-tag active";
+                tag.textContent = "ĐÃ SẴN SÀNG";
+            }
+        }
+
+        if (cardPart2) {
+            const tag = cardPart2.querySelector(".status-tag");
+            if (p2Locked) {
+                cardPart2.classList.add("locked");
+                if (tag) {
+                    tag.className = "status-tag coming-soon";
+                    tag.textContent = "ĐÃ KHÓA 🔒";
+                }
+            } else {
+                cardPart2.classList.remove("locked");
+                if (tag) {
+                    tag.className = "status-tag active";
+                    tag.textContent = "SẴN SÀNG";
+                }
+            }
+        }
+
+        if (cardPart3) {
+            const tag = cardPart3.querySelector(".status-tag");
+            if (p3Locked) {
+                cardPart3.classList.add("locked");
+                if (tag) {
+                    tag.className = "status-tag coming-soon";
+                    tag.textContent = "ĐÃ KHÓA 🔒";
+                }
+            } else {
+                cardPart3.classList.remove("locked");
+                if (tag) {
+                    tag.className = "status-tag active";
+                    tag.textContent = "ĐÃ SẴN SÀNG";
+                }
+            }
+        }
+
+        if (cardPart4) {
+            const tag = cardPart4.querySelector(".status-tag");
+            if (p4Locked) {
+                cardPart4.classList.add("locked");
+                if (tag) {
+                    tag.className = "status-tag coming-soon";
+                    tag.textContent = "ĐÃ KHÓA 🔒";
+                }
+            } else {
+                cardPart4.classList.remove("locked");
+                if (tag) {
+                    tag.className = "status-tag active";
+                    tag.textContent = "ĐÃ MỞ KHÓA";
+                }
+            }
+        }
+
+        // Sidebar Navigation titles
+        const p2NavText = document.querySelector("#navPart2Btn .nav-item-text");
+        if (p2NavText) {
+            p2NavText.textContent = p2Locked ? "PART 02: QUESTIONS-RESPONSES 🔒" : "PART 02: QUESTIONS-RESPONSES";
+        }
+        const p3NavText = document.querySelector("#navPart3Btn .nav-item-text");
+        if (p3NavText) {
+            p3NavText.textContent = p3Locked ? "PART 03: SHORT CONVERSATIONS 🔒" : "PART 03: SHORT CONVERSATIONS";
+        }
+        const p4NavText = document.querySelector("#navPart4Btn .nav-item-text");
+        if (p4NavText) {
+            p4NavText.textContent = p4Locked ? "PART 04: SHORT TALKS 🔒" : "PART 04: SHORT TALKS";
+        }
+    }
+    window.refreshAccessUI = refreshAccessUI;
+
     // App State
     const state = {
         activeView: "home",
@@ -414,7 +559,7 @@ document.addEventListener("DOMContentLoaded", () => {
     window.isUnlocked = sessionStorage.getItem("portal_unlocked_v2") === "true";
     window.pendingUnlockCallback = null;
 
-    window.showPaywallModal = function(callback) {
+    window.showPaywallModal = function(callback, customMsg) {
         if (window.isUnlocked) {
             if (callback) callback();
             return;
@@ -427,6 +572,14 @@ document.addEventListener("DOMContentLoaded", () => {
             modal.style.pointerEvents = 'auto';
             document.getElementById('passwordInput').value = '';
             document.getElementById('passwordError').style.display = 'none';
+
+            const desc = modal.querySelector('p');
+            if (desc) {
+                desc.textContent = customMsg || (isThuTrangStudent()
+                    ? "Nội dung này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!"
+                    : "Vui lòng nhập mật khẩu để truy cập.");
+            }
+
             setTimeout(() => {
                 const input = document.getElementById('passwordInput');
                 if(input) input.focus();
@@ -455,14 +608,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 sessionStorage.setItem("portal_unlocked_v2", "true");
                 window.closePasswordModal();
                 if (window.pendingUnlockCallback) window.pendingUnlockCallback();
-                
-                // Refresh sidebars to remove lock icons
-                if (typeof initializePart01Sidebar === 'function') initializePart01Sidebar();
-                if (typeof initializePart02Sidebar === 'function') initializePart02Sidebar();
-                if (typeof initializePart03Sidebar === 'function') initializePart03Sidebar();
-                if (typeof initializePart04Sidebar === 'function') initializePart04Sidebar();
-                
-                document.querySelectorAll('.dashboard-card').forEach(card => card.classList.remove('locked'));
+
+                // Refresh sidebars and dashboard cards
+                if (typeof refreshAccessUI === 'function') refreshAccessUI();
             } else {
                 const err = document.getElementById('passwordError');
                 if(err) err.style.display = 'block';
@@ -925,8 +1073,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function switchView(viewName) {
-        if (!window.isUnlocked && viewName === "part4") {
-            window.showPaywallModal(() => switchView(viewName));
+        if (viewName === "part2" && isContentLocked(2)) {
+            window.showPaywallModal(() => switchView(viewName), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            return;
+        }
+        if (viewName === "part3" && isContentLocked(3)) {
+            window.showPaywallModal(() => switchView(viewName), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            return;
+        }
+        if (viewName === "part4" && isContentLocked(4)) {
+            window.showPaywallModal(() => switchView(viewName), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         state.activeView = viewName;
@@ -1080,6 +1236,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     navPart2Btn.addEventListener("click", () => {
+        if (isContentLocked(2)) {
+            window.showPaywallModal(() => switchView("part2"), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            return;
+        }
         if (viewPart2.classList.contains("active")) {
             const isExpanded = part2SubmenuContainer.style.display === "block";
             togglePart2Submenu(!isExpanded);
@@ -1087,8 +1247,12 @@ document.addEventListener("DOMContentLoaded", () => {
             switchView("part2");
         }
     });
-    
+
     navPart3Btn.addEventListener("click", () => {
+        if (isContentLocked(3)) {
+            window.showPaywallModal(() => loadSection(state.part03ActiveSection || "overview"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            return;
+        }
         if (state.activeView === "part3") {
             const isVisible = part3SubmenuContainer.style.display === "block";
             togglePart3Submenu(!isVisible);
@@ -1099,12 +1263,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (typeof navPart4Btn !== 'undefined' && navPart4Btn) {
         navPart4Btn.addEventListener("click", () => {
-            if (!window.isUnlocked) {
+            if (isContentLocked(4)) {
                 window.showPaywallModal(() => {
                     if (state.activeView !== "part4") {
                         loadSectionP4(state.part04ActiveSection || "overview");
                     }
-                });
+                }, "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
                 return;
             }
             if (state.activeView === "part4") {
@@ -1115,24 +1279,42 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-    
+
     // Quick triggers from Dashboard
     const cardPart1 = document.getElementById("card-part1");
     if (cardPart1) {
         cardPart1.addEventListener("click", () => switchView("part1"));
     }
-    
+
     const cardPart2 = document.getElementById("card-part2");
     if (cardPart2) {
-        cardPart2.addEventListener("click", () => switchView("part2"));
+        cardPart2.addEventListener("click", () => {
+            if (isContentLocked(2)) {
+                window.showPaywallModal(() => switchView("part2"), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                return;
+            }
+            switchView("part2");
+        });
     }
     const cardPart3 = document.getElementById("card-part3");
     if (cardPart3) {
-        cardPart3.addEventListener("click", () => loadSection("overview"));
+        cardPart3.addEventListener("click", () => {
+            if (isContentLocked(3)) {
+                window.showPaywallModal(() => loadSection("overview"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                return;
+            }
+            loadSection("overview");
+        });
     }
     const cardPart4 = document.getElementById("card-part4");
     if (cardPart4) {
-        cardPart4.addEventListener("click", () => loadSectionP4("overview"));
+        cardPart4.addEventListener("click", () => {
+            if (isContentLocked(4)) {
+                window.showPaywallModal(() => loadSectionP4("overview"), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                return;
+            }
+            loadSectionP4("overview");
+        });
     }
 
 
@@ -1365,73 +1547,84 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!state.part03Data) return;
         conceptsNavList.innerHTML = "";
         topicsNavList.innerHTML = "";
-        
-        const isUnlocked = window.isUnlocked;
-        
+
         // Render Dạng câu hỏi (concepts) using the category tree
         categoryTree.forEach(node => {
             if (node.type === "item") {
                 const submenuItem = document.createElement("div");
                 submenuItem.className = "submenu-item";
                 submenuItem.setAttribute("data-id", node.id);
-                
+
+                const locked = isContentLocked(3, node.id);
                 let text = node.title.toUpperCase();
-                if (LOCKED_SECTIONS.includes(node.id) && !isUnlocked) {
+                if (locked) {
                     text += " 🔒";
                 }
                 submenuItem.textContent = text;
-                
+
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
+                    if (isContentLocked(3, node.id)) {
+                        window.showPaywallModal(() => loadSection(node.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        return;
+                    }
                     loadSection(node.id);
                 });
                 conceptsNavList.appendChild(submenuItem);
             } else if (node.type === "group") {
-                // Render group header
                 const groupHeader = document.createElement("div");
                 groupHeader.className = "sidebar-group-header";
                 groupHeader.textContent = node.title.toUpperCase();
                 conceptsNavList.appendChild(groupHeader);
-                
-                // Render items inside group
+
                 node.items.forEach(item => {
                     const submenuItem = document.createElement("div");
                     submenuItem.className = "submenu-item group-item";
                     submenuItem.setAttribute("data-id", item.id);
-                    
+
+                    const locked = isContentLocked(3, item.id);
                     let text = item.title.toUpperCase();
-                    if (LOCKED_SECTIONS.includes(item.id) && !isUnlocked) {
+                    if (locked) {
                         text += " 🔒";
                     }
                     submenuItem.textContent = text;
-                    
+
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
+                        if (isContentLocked(3, item.id)) {
+                            window.showPaywallModal(() => loadSection(item.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            return;
+                        }
                         loadSection(item.id);
                     });
                     conceptsNavList.appendChild(submenuItem);
                 });
             }
         });
-        
+
         // Render Chủ đề nghe (topics)
         state.part03Data.forEach(item => {
             if (item.type === "topic" || item.type === "test") {
                 const submenuItem = document.createElement("div");
                 submenuItem.className = "submenu-item";
                 submenuItem.setAttribute("data-id", item.id);
-                
+
+                const locked = isContentLocked(3, item.id);
                 let text = item.title.toUpperCase();
-                if (LOCKED_SECTIONS.includes(item.id) && !isUnlocked) {
+                if (locked) {
                     text += " 🔒";
                 }
                 submenuItem.textContent = text;
-                
+
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
+                    if (isContentLocked(3, item.id)) {
+                        window.showPaywallModal(() => loadSection(item.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        return;
+                    }
                     loadSection(item.id);
                 });
-                
+
                 topicsNavList.appendChild(submenuItem);
             }
         });
@@ -1479,45 +1672,46 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function initializePart01Sidebar() {
         if (!part1ConceptsNavList || !part1TopicsNavList) return;
-        
+
         part1ConceptsNavList.innerHTML = "";
         part1TopicsNavList.innerHTML = "";
-        
-        const isUnlocked = window.isUnlocked;
-        
+
         categoryTreeP1.forEach(node => {
             if (node.type === "item") {
                 const submenuItem = document.createElement("div");
                 submenuItem.className = "submenu-item";
                 submenuItem.setAttribute("data-id", node.id);
-                
+
+                const locked = isContentLocked(1, node.id);
                 let text = node.title.toUpperCase();
-                if (LOCKED_SECTIONS.includes(node.id) && !isUnlocked) {
+                if (locked) {
                     text += " 🔒";
                 }
-                
+
                 submenuItem.innerHTML = `<span class="submenu-dot"></span><span class="submenu-text">${text}</span>`;
-                
+
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
-                    if (LOCKED_SECTIONS.includes(node.id) && !window.isUnlocked) {
-                        window.showPaywallModal(() => loadSectionP1(node.id));
+                    if (isContentLocked(1, node.id)) {
+                        window.showPaywallModal(() => loadSectionP1(node.id), "Phần học này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
                         return;
                     }
                     loadSectionP1(node.id, "theory");
                 });
-                
+
                 part1ConceptsNavList.appendChild(submenuItem);
 
                 if (node.id === "dang_01") {
                     const trabaiItem = document.createElement("div");
                     trabaiItem.className = "submenu-item group-item";
                     trabaiItem.setAttribute("data-id", "dang_01_trabai");
-                    trabaiItem.innerHTML = `<span class="submenu-dot" style="background: #f59e0b;"></span><span class="submenu-text" style="color: #f59e0b; font-weight: 700;">🎯 TRẢ BÀI TỪ VỰNG</span>`;
+                    const trabaiLocked = isContentLocked(1, "dang_01_trabai");
+                    const trabaiLockIcon = trabaiLocked ? " 🔒" : "";
+                    trabaiItem.innerHTML = `<span class="submenu-dot" style="background: #f59e0b;"></span><span class="submenu-text" style="color: #f59e0b; font-weight: 700;">🎯 TRẢ BÀI TỪ VỰNG${trabaiLockIcon}</span>`;
                     trabaiItem.addEventListener("click", (e) => {
                         e.stopPropagation();
-                        if (LOCKED_SECTIONS.includes(node.id) && !window.isUnlocked) {
-                            window.showPaywallModal(() => loadSectionP1(node.id, "trabai"));
+                        if (trabaiLocked) {
+                            window.showPaywallModal(() => loadSectionP1(node.id, "trabai"), "Phần Trả bài hiện đang tạm khoá cho tài khoản của bạn.");
                             return;
                         }
                         loadSectionP1("dang_01", "trabai");
@@ -1526,7 +1720,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         });
-        
+
         // Render Tests for Part 1
         if (window.part01Data) {
             window.part01Data.forEach(section => {
@@ -1534,23 +1728,24 @@ document.addEventListener("DOMContentLoaded", () => {
                     const submenuItem = document.createElement("div");
                     submenuItem.className = "submenu-item";
                     submenuItem.setAttribute("data-id", section.id);
-                    
+
+                    const testLocked = isContentLocked(1, section.id);
                     let text = section.title.toUpperCase();
-                    if (LOCKED_SECTIONS.includes(section.id) && !isUnlocked) {
+                    if (testLocked) {
                         text += " 🔒";
                     }
-                    
+
                     submenuItem.innerHTML = `<span class="submenu-dot"></span><span class="submenu-text">${text}</span>`;
-                    
+
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
-                        if (LOCKED_SECTIONS.includes(section.id) && !window.isUnlocked) {
-                            window.showPaywallModal(() => loadSectionP1(section.id));
+                        if (isContentLocked(1, section.id)) {
+                            window.showPaywallModal(() => loadSectionP1(section.id), "Phần luyện tập này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
                             return;
                         }
                         loadSectionP1(section.id);
                     });
-                    
+
                     part1TopicsNavList.appendChild(submenuItem);
                 }
             });
@@ -1559,85 +1754,95 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function initializePart04Sidebar() {
         if (!part4ConceptsNavList || !part4TopicsNavList) return;
-        
+
         part4ConceptsNavList.innerHTML = "";
         part4TopicsNavList.innerHTML = "";
-        
-        const isUnlocked = window.isUnlocked;
-        
+
         // Render Dạng câu hỏi (concepts) using the category tree P4
         categoryTreeP4.forEach(node => {
             if (node.type === "item") {
                 const submenuItem = document.createElement("div");
                 submenuItem.className = "submenu-item";
                 submenuItem.setAttribute("data-id", node.id);
-                
+
+                const locked = isContentLocked(4, node.id);
                 let text = node.title.toUpperCase();
-                if (LOCKED_SECTIONS.includes(node.id) && !isUnlocked) {
+                if (locked) {
                     text += " 🔒";
                 }
                 submenuItem.textContent = text;
-                
+
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
+                    if (isContentLocked(4, node.id)) {
+                        window.showPaywallModal(() => loadSectionP4(node.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        return;
+                    }
                     loadSectionP4(node.id);
                 });
                 part4ConceptsNavList.appendChild(submenuItem);
             } else if (node.type === "group") {
-                // Render group header
                 const groupHeader = document.createElement("div");
                 groupHeader.className = "sidebar-group-header";
                 groupHeader.textContent = node.title.toUpperCase();
                 part4ConceptsNavList.appendChild(groupHeader);
-                
-                // Render items inside group
+
                 node.items.forEach(item => {
                     const submenuItem = document.createElement("div");
                     submenuItem.className = "submenu-item group-item";
                     submenuItem.setAttribute("data-id", item.id);
-                    
+
+                    const locked = isContentLocked(4, item.id);
                     let text = item.title.toUpperCase();
-                    if (LOCKED_SECTIONS.includes(item.id) && !isUnlocked) {
+                    if (locked) {
                         text += " 🔒";
                     }
                     submenuItem.textContent = text;
-                    
+
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
+                        if (isContentLocked(4, item.id)) {
+                            window.showPaywallModal(() => loadSectionP4(item.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            return;
+                        }
                         loadSectionP4(item.id);
                     });
                     part4ConceptsNavList.appendChild(submenuItem);
                 });
             }
         });
-        
+
         // Render Bài Test ETS (topics)
         state.part04Data.forEach(item => {
             if (item.type === "test") {
                 const submenuItem = document.createElement("div");
                 submenuItem.className = "submenu-item";
                 submenuItem.setAttribute("data-id", item.id);
-                
+
+                const locked = isContentLocked(4, item.id);
                 let text = item.title.toUpperCase();
-                if (LOCKED_SECTIONS.includes(item.id) && !isUnlocked) {
+                if (locked) {
                     text += " 🔒";
                 }
                 submenuItem.textContent = text;
-                
+
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
+                    if (isContentLocked(4, item.id)) {
+                        window.showPaywallModal(() => loadSectionP4(item.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        return;
+                    }
                     loadSectionP4(item.id);
                 });
-                
+
                 part4TopicsNavList.appendChild(submenuItem);
             }
         });
     }
 
     function loadSection(id) {
-        const isUnlocked = window.isUnlocked;
-        if (LOCKED_SECTIONS.includes(id) && !isUnlocked) {
-            window.showPaywallModal(() => loadSection(id));
+        if (isContentLocked(3, id)) {
+            window.showPaywallModal(() => loadSection(id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
             return;
             if (false) {
                 sessionStorage.setItem("portal_unlocked_v2", "true");
@@ -3593,10 +3798,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // ================= PART 02 FUNCTIONS =================
     function initializePart02Sidebar() {
         if (!part2ConceptsNavList) return;
-        
+
         part2ConceptsNavList.innerHTML = "";
-        const isUnlocked = window.isUnlocked;
-        
+
         if (part2PracticeNavList && typeof practiceTestsP2 !== "undefined") {
             part2PracticeNavList.innerHTML = "";
             practiceTestsP2.forEach(test => {
@@ -3604,17 +3808,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.className = "submenu-item";
                 item.setAttribute("data-id", test.id);
                 item.setAttribute("data-type", "practice_test");
-                
-                // Show completion indicator if answered
+
+                const locked = isContentLocked(2, test.id);
                 const savedAnswers = state.answeredQuestions[`p2_test_${test.id}`] || null;
                 let statusBadge = "";
                 if (savedAnswers) {
                     statusBadge = " ✅";
                 }
-                item.textContent = `${test.title}${statusBadge}`;
-                
+                item.textContent = `${test.title}${locked ? ' 🔒' : statusBadge}`;
+
                 item.addEventListener("click", (e) => {
                     e.stopPropagation();
+                    if (isContentLocked(2, test.id)) {
+                        window.showPaywallModal(() => loadPart02Test(test.id), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        return;
+                    }
                     loadPart02Test(test.id);
                 });
                 part2PracticeNavList.appendChild(item);
@@ -3627,39 +3835,47 @@ document.addEventListener("DOMContentLoaded", () => {
                     const submenuItem = document.createElement("div");
                     submenuItem.className = "submenu-item";
                     submenuItem.setAttribute("data-id", node.id);
-                    
+
+                    const locked = isContentLocked(2, node.id);
                     let text = node.title.toUpperCase();
-                    if (LOCKED_SECTIONS.includes(node.id) && !isUnlocked) {
+                    if (locked) {
                         text += " 🔒";
                     }
                     submenuItem.textContent = text;
-                    
+
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
+                        if (isContentLocked(2, node.id)) {
+                            window.showPaywallModal(() => loadSectionP2(node.id), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            return;
+                        }
                         loadSectionP2(node.id);
                     });
                     part2ConceptsNavList.appendChild(submenuItem);
                 } else if (node.type === "group") {
-                    // Render group header
                     const groupHeader = document.createElement("div");
                     groupHeader.className = "sidebar-group-header";
                     groupHeader.textContent = node.title.toUpperCase();
                     part2ConceptsNavList.appendChild(groupHeader);
-                    
-                    // Render items inside group
+
                     node.items.forEach(item => {
                         const submenuItem = document.createElement("div");
                         submenuItem.className = "submenu-item group-item";
                         submenuItem.setAttribute("data-id", item.id);
-                        
+
+                        const locked = isContentLocked(2, item.id);
                         let text = item.title.toUpperCase();
-                        if (LOCKED_SECTIONS.includes(item.id) && !isUnlocked) {
+                        if (locked) {
                             text += " 🔒";
                         }
                         submenuItem.textContent = text;
-                        
+
                         submenuItem.addEventListener("click", (e) => {
                             e.stopPropagation();
+                            if (isContentLocked(2, item.id)) {
+                                window.showPaywallModal(() => loadSectionP2(item.id), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                                return;
+                            }
                             loadSectionP2(item.id);
                         });
                         part2ConceptsNavList.appendChild(submenuItem);
@@ -3681,6 +3897,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function loadPart02Test(testId) {
+        if (isContentLocked(2, testId)) {
+            window.showPaywallModal(() => loadPart02Test(testId), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            return;
+        }
         state.part02ActiveSection = testId;
         
         // Highlight active sidebar item
@@ -4552,8 +4772,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function loadSectionP2(sectionId) {
-        if (LOCKED_SECTIONS.includes(sectionId) && !window.isUnlocked) {
-            if (window.showPaywallModal) window.showPaywallModal();
+        if (isContentLocked(2, sectionId)) {
+            window.showPaywallModal(() => loadSectionP2(sectionId), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         
@@ -4938,8 +5158,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     
     function loadSectionP1(sectionId, targetTab = 'theory') {
-        if (LOCKED_SECTIONS.includes(sectionId) && !window.isUnlocked) {
-            window.showPaywallModal(() => loadSectionP1(sectionId, targetTab));
+        if (isContentLocked(1, sectionId)) {
+            window.showPaywallModal(() => loadSectionP1(sectionId, targetTab), "Phần học này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         if (!window.part01Data) return;
@@ -6970,9 +7190,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     function loadSectionP4(id) {
-        const isUnlocked = window.isUnlocked;
-        if (LOCKED_SECTIONS.includes(id) && !isUnlocked) {
-            window.showPaywallModal(() => loadSectionP4(id));
+        if (isContentLocked(4, id)) {
+            window.showPaywallModal(() => loadSectionP4(id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
             return;
             if (false) {
                 sessionStorage.setItem("portal_unlocked_v2", "true");
@@ -8844,6 +9063,7 @@ document.addEventListener("DOMContentLoaded", () => {
             profileAvatar.textContent = name.trim().charAt(0).toUpperCase();
             logStudentEntry(name);
         }
+        if (typeof refreshAccessUI === 'function') refreshAccessUI();
     }
 
     startLearningBtn.addEventListener("click", () => {
@@ -8865,11 +9085,26 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 nameEntryOverlay.style.display = "none";
             }, 500);
-            
+
             sidebarProfileBox.style.display = "flex";
             sidebarStudentName.textContent = name.toUpperCase();
             profileAvatar.textContent = name.charAt(0).toUpperCase();
             logStudentEntry(name);
+
+            // Automatically recognize teacher login
+            if (isTeacherName(name)) {
+                window.isUnlocked = true;
+                sessionStorage.setItem("portal_unlocked_v2", "true");
+            }
+
+            // Refresh UI permissions across sidebar & dashboard
+            if (typeof refreshAccessUI === 'function') refreshAccessUI();
+
+            // If Thu Trang logs in, guide directly to Part 01 Overview / Dang 1
+            if (isThuTrangStudent()) {
+                switchView("part1");
+                loadSectionP1("overview");
+            }
         }
     });
 
@@ -8880,6 +9115,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     changeNameBtn.addEventListener("click", () => {
+        if (typeof refreshAccessUI === 'function') refreshAccessUI();
         const currentName = localStorage.getItem("studentName") || "";
         studentNameInput.value = currentName;
         nameInputError.style.display = "none";
