@@ -13,8 +13,8 @@ window.playAudioFile = function(url, event) {
 };
 
 // Smart, natural audio player for English vocabulary
-window.playTTS = function(text, event) {
-    if (event) event.stopPropagation(); // prevent triggering row click
+window.playTTS = function(text, event, customRate = null) {
+    if (event && event.stopPropagation) event.stopPropagation(); // prevent triggering row click
     
     // Clean text: strip HTML, phonetic slashes /.../, parenthesized text (...), colons, etc.
     let cleanText = (text || '')
@@ -25,6 +25,8 @@ window.playTTS = function(text, event) {
         .trim();
         
     if (!cleanText) return;
+
+    const rateVal = customRate || 0.96;
 
     // Helper: speech synthesis with best natural voice
     const speakWithNaturalTTS = (phrase) => {
@@ -76,7 +78,7 @@ window.playTTS = function(text, event) {
             }
             
             // Natural human speed and cadence (0.96 natural tempo, 0.9 was robotic)
-            utterance.rate = 0.96;
+            utterance.rate = rateVal;
             utterance.pitch = 1.0;
             window.speechSynthesis.speak(utterance);
         };
@@ -88,9 +90,9 @@ window.playTTS = function(text, event) {
         }
     };
 
-    // If single word: try native studio human audio from Google/Oxford dictionary CDN first
+    // If single word and not slow rate: try native studio human audio from Google/Oxford dictionary CDN first
     const words = cleanText.split(/\s+/).filter(Boolean);
-    if (words.length === 1) {
+    if (words.length === 1 && !customRate) {
         const word = words[0].toLowerCase().replace(/[^a-z]/g, '');
         if (word.length >= 2) {
             const studioAudioUrl = `https://ssl.gstatic.com/dictionary/static/sounds/20200429/${encodeURIComponent(word)}--_us_1.mp3`;
@@ -5638,17 +5640,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function getTraBaiFilteredItems() {
-        const all = window.part01Dang01TraBaiData || [];
-        if (!window.traBaiState) return all;
-        const s = window.traBaiState.scope;
-        if (s === 'lecture') return all.filter(d => d.source === 'Bài giảng');
-        if (s === 'practice') return all.filter(d => d.source === 'Bài tập thực hành');
-        if (s === 'verbs') return all.filter(d => d.category === 'Động từ chính');
-        if (s === 'unlearned') {
-            const un = all.filter(d => !window.traBaiState.learnedIds.has(d.id));
-            return un.length > 0 ? un : all;
-        }
-        return all;
+        return window.part01Dang01TraBaiData || [];
     }
 
     function shuffleTraBaiArray(arr) {
@@ -5658,6 +5650,15 @@ document.addEventListener("DOMContentLoaded", () => {
             [a[i], a[j]] = [a[j], a[i]];
         }
         return a;
+    }
+
+    function normalizeDictationText(str) {
+        return (str || '')
+            .toLowerCase()
+            .replace(/['’]/g, "'")
+            .replace(/[^a-z0-9'\s]/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
     }
 
     function renderTraBaiP1(container) {
@@ -5676,44 +5677,95 @@ document.addEventListener("DOMContentLoaded", () => {
             } catch (e) { savedLearned = []; }
 
             window.traBaiState = {
-                scope: 'all',
                 mode: 'flashcard',
                 cardIndex: 0,
                 isFlipped: false,
                 learnedIds: new Set(savedLearned),
-                quizLength: 10,
-                quizIndex: 0,
+                // Quiz state
+                quizBatch: 'all',
                 quizQuestions: [],
+                quizIndex: 0,
                 quizAnswered: false,
                 quizScore: 0,
                 quizFinished: false,
                 quizReview: [],
+                // Dictation state
+                dictBatch: 'all',
+                dictQuestions: [],
+                dictIndex: 0,
+                dictScore: 0,
+                dictAnswered: false,
+                dictFinished: false,
+                dictReview: [],
+                dictAutoPlay: true,
+                // List state
                 searchQuery: '',
                 categoryFilter: 'all'
             };
         }
 
-        // Attach global keydown listener for Flashcard mode once
+        // Attach global keydown listener once
         if (!window.tbKeyHandlerAttached) {
             window.tbKeyHandlerAttached = true;
             document.addEventListener("keydown", (e) => {
                 if (state.part01ActiveSection !== "dang_01" || state.part01ActiveTab !== "trabai") return;
-                if (!window.traBaiState || window.traBaiState.mode !== "flashcard") return;
-                if (["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) return;
+                if (!window.traBaiState) return;
+                const mode = window.traBaiState.mode;
 
-                if (e.code === "Space") {
-                    e.preventDefault();
-                    window.tbFlipCard();
-                } else if (e.key === "ArrowLeft") {
-                    e.preventDefault();
-                    window.tbPrevCard();
-                } else if (e.key === "ArrowRight") {
-                    e.preventDefault();
-                    window.tbNextCard();
-                } else if (e.key === "1") {
-                    window.tbMarkCard(false);
-                } else if (e.key === "2") {
-                    window.tbMarkCard(true);
+                // Flashcard shortcuts (when not typing)
+                if (mode === "flashcard" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+                    if (e.code === "Space") {
+                        e.preventDefault();
+                        window.tbFlipCard();
+                    } else if (e.key === "ArrowLeft") {
+                        e.preventDefault();
+                        window.tbPrevCard();
+                    } else if (e.key === "ArrowRight") {
+                        e.preventDefault();
+                        window.tbNextCard();
+                    } else if (e.key === "1") {
+                        window.tbMarkCard(false);
+                    } else if (e.key === "2") {
+                        window.tbMarkCard(true);
+                    }
+                }
+
+                // Quiz shortcuts
+                if (mode === "quiz" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+                    const tbs = window.traBaiState;
+                    if (tbs.quizAnswered) {
+                        if (e.key === "Enter" || e.code === "Space") {
+                            e.preventDefault();
+                            window.tbNextQuizQuestion();
+                        }
+                    } else if (tbs.quizQuestions && tbs.quizQuestions.length > 0) {
+                        const key = e.key.toUpperCase();
+                        let choiceIdx = -1;
+                        if (['1', 'A'].includes(key)) choiceIdx = 0;
+                        else if (['2', 'B'].includes(key)) choiceIdx = 1;
+                        else if (['3', 'C'].includes(key)) choiceIdx = 2;
+                        else if (['4', 'D'].includes(key)) choiceIdx = 3;
+
+                        if (choiceIdx !== -1) {
+                            const container = document.getElementById("tb-quiz-options-box");
+                            if (container) {
+                                const btns = container.querySelectorAll(".tb-quiz-opt");
+                                if (btns[choiceIdx]) btns[choiceIdx].click();
+                            }
+                        }
+                    }
+                }
+
+                // Dictation shortcuts
+                if (mode === "dictation") {
+                    const tbs = window.traBaiState;
+                    // Ctrl+Space or Alt+Space replays audio
+                    if ((e.ctrlKey || e.altKey) && e.code === "Space") {
+                        e.preventDefault();
+                        if (tbs.dictQuestions && tbs.dictQuestions[tbs.dictIndex]) {
+                            playTTS(tbs.dictQuestions[tbs.dictIndex].en);
+                        }
+                    }
                 }
             });
         }
@@ -5723,16 +5775,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const learnedCount = tbs.learnedIds.size;
         const percentLearned = Math.min(100, Math.round((learnedCount / totalItemsCount) * 100));
 
-        const lectureCount = allData.filter(d => d.source === 'Bài giảng').length;
-        const practiceCount = allData.filter(d => d.source === 'Bài tập thực hành').length;
-        const verbsCount = allData.filter(d => d.category === 'Động từ chính').length;
-        const unlearnedCount = allData.filter(d => !tbs.learnedIds.has(d.id)).length;
-
         container.innerHTML = `
             <div class="tb-main-container">
-                <!-- TOP HEADER CARD: STATS & SCOPE FILTER -->
+                <!-- TOP HEADER CARD: STATS & CLEAN NAVIGATION -->
                 <div class="tb-header-card">
-                    <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 16px;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 8px;">
                                 <span style="font-size: 1.5rem;">🎯</span>
@@ -5741,7 +5788,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </h2>
                             </div>
                             <p style="color: #64748b; font-size: 0.95rem; margin-top: 6px; margin-bottom: 0;">
-                                Tổng hợp <strong>164 cụm từ vựng cốt lõi</strong> (119 cụm từ slide bài giảng + 45 cụm từ 6 câu bài tập thực hành ETS).
+                                Đầy đủ <strong>164 cụm từ vựng cốt lõi</strong> (119 cụm bài giảng + 45 cụm 6 câu bài tập thực hành ETS).
                             </p>
                         </div>
                         <!-- Progress stat pill -->
@@ -5756,37 +5803,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
 
-                    <!-- Scope Filter Chips -->
-                    <div style="border-top: 1px solid #e2e8f0; padding-top: 14px; display: flex; flex-direction: column; gap: 8px;">
-                        <div style="font-size: 0.85rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">
-                            Phạm vi từ vựng ôn tập:
-                        </div>
-                        <div class="tb-scope-chips">
-                            <button type="button" class="tb-scope-chip ${tbs.scope === 'all' ? 'active' : ''}" onclick="window.tbSetScope('all')">
-                                🌟 Tất cả (164 cụm)
-                            </button>
-                            <button type="button" class="tb-scope-chip ${tbs.scope === 'lecture' ? 'active' : ''}" onclick="window.tbSetScope('lecture')">
-                                📖 Bài giảng (${lectureCount} cụm)
-                            </button>
-                            <button type="button" class="tb-scope-chip ${tbs.scope === 'practice' ? 'active' : ''}" onclick="window.tbSetScope('practice')">
-                                📝 Bài tập thực hành (${practiceCount} cụm)
-                            </button>
-                            <button type="button" class="tb-scope-chip ${tbs.scope === 'verbs' ? 'active' : ''}" onclick="window.tbSetScope('verbs')">
-                                ⚡ 28 Động từ cốt lõi
-                            </button>
-                            <button type="button" class="tb-scope-chip ${tbs.scope === 'unlearned' ? 'active' : ''}" onclick="window.tbSetScope('unlearned')">
-                                🔄 Cụm chưa thuộc (<span id="tb-unlearned-badge">${unlearnedCount}</span>)
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Mode Switcher Nav -->
-                    <div class="tb-modes-nav">
+                    <!-- Mode Switcher Nav (4 modes: Flashcard, Quiz 164 câu, Dictation Gõ chữ, Tra cứu) -->
+                    <div class="tb-modes-nav" style="max-width: 720px;">
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'flashcard' ? 'active' : ''}" onclick="window.tbSetMode('flashcard')">
                             <span>🗂️</span> Lật thẻ Flashcard
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'quiz' ? 'active' : ''}" onclick="window.tbSetMode('quiz')">
-                            <span>⚡</span> Trắc nghiệm phản xạ
+                            <span>⚡</span> Trắc nghiệm (164 câu)
+                        </button>
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'dictation' ? 'active' : ''}" onclick="window.tbSetMode('dictation')">
+                            <span>✍️</span> Nghe & Gõ chữ
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'list' ? 'active' : ''}" onclick="window.tbSetMode('list')">
                             <span>📋</span> Tra cứu toàn bộ
@@ -5811,24 +5837,16 @@ document.addEventListener("DOMContentLoaded", () => {
             window.tbRenderFlashcardView(workspace);
         } else if (mode === "quiz") {
             window.tbRenderQuizView(workspace);
+        } else if (mode === "dictation") {
+            window.tbRenderDictationView(workspace);
         } else if (mode === "list") {
             window.tbRenderListView(workspace);
         }
     };
 
-    window.tbSetScope = function(scope) {
-        window.traBaiState.scope = scope;
-        window.traBaiState.cardIndex = 0;
-        window.traBaiState.isFlipped = false;
-        // Re-render whole container to update chips and stats
-        const contentArea = document.getElementById("p1-content-area");
-        if (contentArea) renderTraBaiP1(contentArea);
-    };
-
     window.tbSetMode = function(mode) {
         window.traBaiState.mode = mode;
         window.traBaiState.isFlipped = false;
-        // Update nav buttons active class
         document.querySelectorAll(".tb-mode-btn").forEach(btn => {
             btn.classList.remove("active");
         });
@@ -5842,12 +5860,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (items.length === 0) {
             workspace.innerHTML = `
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 40px; text-align: center;">
-                    <div style="font-size: 3rem; margin-bottom: 12px;">🎉</div>
-                    <h3 style="font-size: 1.3rem; font-weight: 800; color: #166534;">Bạn đã thuộc hết tất cả từ vựng trong phạm vi này!</h3>
-                    <p style="color: #64748b; margin-top: 8px;">Hãy chọn "Tất cả" hoặc "Trắc nghiệm phản xạ" để kiểm tra phản xạ nhé.</p>
-                    <button type="button" class="tb-ctrl-btn" onclick="window.tbSetScope('all')" style="margin-top: 14px; background: #2563eb; color: white; border-color: #1d4ed8;">
-                        Xem toàn bộ 164 cụm
-                    </button>
+                    <p style="color: #64748b;">Chưa có dữ liệu từ vựng.</p>
                 </div>
             `;
             return;
@@ -6063,16 +6076,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const learnedCountEl = document.getElementById("tb-learned-count");
         const progressFillEl = document.getElementById("tb-progress-fill");
-        const unlearnedBadgeEl = document.getElementById("tb-unlearned-badge");
         if (learnedCountEl) learnedCountEl.textContent = learnedCount;
         if (progressFillEl) progressFillEl.style.width = `${percent}%`;
-        if (unlearnedBadgeEl) unlearnedBadgeEl.textContent = totalCount - learnedCount;
 
         // Auto move to next card
         window.tbNextCard();
     };
 
-    // ================= QUIZ MODE (TRẮC NGHIỆM PHẢN XẠ) =================
+    // ================= QUIZ MODE (TRẮC NGHIỆM ĐỦ 164 CÂU) =================
     window.tbRenderQuizView = function(workspace) {
         const tbs = window.traBaiState;
 
@@ -6084,35 +6095,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // If no active quiz, show setup start screen
         if (!tbs.quizQuestions || tbs.quizQuestions.length === 0) {
-            const items = getTraBaiFilteredItems();
             workspace.innerHTML = `
-                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 40px 30px; text-align: center; max-width: 680px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
-                    <div style="font-size: 3rem; margin-bottom: 14px;">⚡</div>
-                    <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+                    <div style="font-size: 3.2rem; margin-bottom: 12px;">⚡</div>
+                    <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
                         TRẮC NGHIỆM PHẢN XẠ TỪ VỰNG PART 01
                     </h3>
-                    <p style="color: #64748b; font-size: 1rem; line-height: 1.6; max-width: 520px; margin: 0 auto 24px auto;">
-                        Hệ thống sẽ đưa ra nghĩa tiếng Việt và 4 phương án tiếng Anh. Chọn câu đúng nhanh nhất để rèn luyện phản xạ nghe - hiểu đề thi TOEIC!
+                    <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
+                        Đọc nghĩa tiếng Việt ➔ Chọn cụm từ tiếng Anh tương ứng. Hệ thống chấm điểm tức thì, phát âm chuẩn và tự động theo dõi tiến độ toàn bài.
                     </p>
 
-                    <!-- Quiz Length Selection -->
-                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin-bottom: 28px;">
-                        <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn số lượng câu hỏi:</div>
-                        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-                            <button type="button" class="tb-scope-chip ${tbs.quizLength === 10 ? 'active' : ''}" onclick="window.tbSelectQuizLength(10, this)">
-                                10 câu phản xạ
+                    <!-- Scope selection for Quiz -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
+                        <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn phạm vi trả bài:</div>
+                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                            <button type="button" class="tb-scope-chip ${(tbs.quizBatch || 'all') === 'all' ? 'active' : ''}" onclick="window.tbSelectQuizBatch('all', this)">
+                                🌟 Toàn bộ 164 câu (Khuyên dùng)
                             </button>
-                            <button type="button" class="tb-scope-chip ${tbs.quizLength === 20 ? 'active' : ''}" onclick="window.tbSelectQuizLength(20, this)">
-                                20 câu phản xạ
+                            <button type="button" class="tb-scope-chip ${(tbs.quizBatch) === 'b1' ? 'active' : ''}" onclick="window.tbSelectQuizBatch('b1', this)">
+                                Chặng 1: Câu 1 - 50
                             </button>
-                            <button type="button" class="tb-scope-chip ${tbs.quizLength >= 50 ? 'active' : ''}" onclick="window.tbSelectQuizLength(${Math.min(items.length, 50)}, this)">
-                                Thử thách (${Math.min(items.length, 50)} câu)
+                            <button type="button" class="tb-scope-chip ${(tbs.quizBatch) === 'b2' ? 'active' : ''}" onclick="window.tbSelectQuizBatch('b2', this)">
+                                Chặng 2: Câu 51 - 100
+                            </button>
+                            <button type="button" class="tb-scope-chip ${(tbs.quizBatch) === 'b3' ? 'active' : ''}" onclick="window.tbSelectQuizBatch('b3', this)">
+                                Chặng 3: Câu 101 - 164
                             </button>
                         </div>
                     </div>
 
-                    <button type="button" onclick="window.tbStartQuiz()" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 14px 36px; border-radius: 12px; font-size: 1.1rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(37,99,235,0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-                        🚀 BẮT ĐẦU LÀM BÀI NGAY
+                    <button type="button" onclick="window.tbStartQuiz()" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 14px 38px; border-radius: 12px; font-size: 1.15rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(37,99,235,0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                        🚀 BẮT ĐẦU TRẢ BÀI NGAY
                     </button>
                 </div>
             `;
@@ -6140,18 +6153,26 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
         });
 
+        const progressPercent = Math.round(((qIndex + 1) / tbs.quizQuestions.length) * 100);
+
         workspace.innerHTML = `
             <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
                 <!-- Quiz Progress Bar & Header -->
-                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 18px 24px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
-                    <div style="display: flex; align-items: center; gap: 12px;">
-                        <span style="font-weight: 800; color: #2563eb; font-size: 1.15rem;">CÂU ${qIndex + 1} / ${tbs.quizQuestions.length}</span>
-                        <span style="background: #f1f5f9; color: #64748b; padding: 3px 10px; border-radius: 20px; font-size: 0.82rem; font-weight: 700;">
-                            ${q.item.category}
-                        </span>
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px 22px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="font-weight: 800; color: #2563eb; font-size: 1.15rem;">CÂU ${qIndex + 1} / ${tbs.quizQuestions.length}</span>
+                            <span style="background: #f1f5f9; color: #64748b; padding: 3px 10px; border-radius: 20px; font-size: 0.82rem; font-weight: 700;">
+                                ${q.item.category}
+                            </span>
+                        </div>
+                        <div style="font-weight: 800; color: #16a34a; font-size: 1.1rem; display: flex; align-items: center; gap: 6px;">
+                            <span>Điểm:</span> <span id="tb-quiz-score-val" style="background: #dcfce7; padding: 2px 10px; border-radius: 8px;">${tbs.quizScore}</span>
+                        </div>
                     </div>
-                    <div style="font-weight: 800; color: #16a34a; font-size: 1.1rem; display: flex; align-items: center; gap: 6px;">
-                        <span>Điểm:</span> <span id="tb-quiz-score-val" style="background: #dcfce7; padding: 2px 10px; border-radius: 8px;">${tbs.quizScore}</span>
+                    <!-- Visual Progress Line -->
+                    <div style="width: 100%; background: #e2e8f0; height: 6px; border-radius: 4px; overflow: hidden;">
+                        <div style="width: ${progressPercent}%; height: 100%; background: linear-gradient(90deg, #2563eb, #3b82f6); transition: width 0.3s ease;"></div>
                     </div>
                 </div>
 
@@ -6177,7 +6198,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div id="tb-quiz-feedback-box" style="display: none; flex-direction: column; gap: 12px;">
                     <div id="tb-quiz-result-banner" style="padding: 14px 20px; border-radius: 12px; font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; justify-content: space-between;"></div>
                     <button type="button" id="tb-quiz-next-btn" onclick="window.tbNextQuizQuestion()" style="background: #2563eb; color: white; border: none; padding: 14px 24px; border-radius: 12px; font-size: 1.05rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
-                        <span>${qIndex + 1 === tbs.quizQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO'}</span>
+                        <span>${qIndex + 1 === tbs.quizQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO (Enter)'}</span>
                         <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
                     </button>
                 </div>
@@ -6185,24 +6206,29 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     };
 
-    window.tbSelectQuizLength = function(len, btnEl) {
-        window.traBaiState.quizLength = len;
+    window.tbSelectQuizBatch = function(batch, btnEl) {
+        window.traBaiState.quizBatch = batch;
         const siblings = btnEl.parentElement.querySelectorAll(".tb-scope-chip");
         siblings.forEach(s => s.classList.remove("active"));
         btnEl.classList.add("active");
     };
 
     window.tbStartQuiz = function(customItems = null) {
-        const pool = customItems || getTraBaiFilteredItems();
+        const allData = window.part01Dang01TraBaiData || [];
+        const tbs = window.traBaiState;
+        let pool = customItems;
+        if (!pool) {
+            const batch = tbs.quizBatch || 'all';
+            if (batch === 'b1') pool = allData.slice(0, 50);
+            else if (batch === 'b2') pool = allData.slice(50, 100);
+            else if (batch === 'b3') pool = allData.slice(100);
+            else pool = allData; // All 164 items!
+        }
         if (!pool || pool.length === 0) return;
 
-        const allData = window.part01Dang01TraBaiData;
-        const tbs = window.traBaiState;
-        const length = Math.min(pool.length, tbs.quizLength || 10);
-        const shuffled = shuffleTraBaiArray(pool).slice(0, length);
+        const shuffled = shuffleTraBaiArray(pool);
 
         const questions = shuffled.map(item => {
-            // Find 3 distractors
             const otherItems = allData.filter(d => d.id !== item.id);
             const distractors = shuffleTraBaiArray(otherItems).slice(0, 3);
             const options = shuffleTraBaiArray([item, ...distractors]);
@@ -6249,6 +6275,9 @@ document.addEventListener("DOMContentLoaded", () => {
             tbs.quizScore++;
             const scoreValEl = document.getElementById("tb-quiz-score-val");
             if (scoreValEl) scoreValEl.textContent = tbs.quizScore;
+            // Mark learned
+            tbs.learnedIds.add(currentQ.item.id);
+            saveTraBaiLearned();
         }
 
         // Save to review history
@@ -6259,7 +6288,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         // Play audio pronunciation of the correct English phrase
-        playTTS(currentQ.item.en, event);
+        playTTS(currentQ.item.en);
 
         // Show feedback banner & Next button
         const feedbackBox = document.getElementById("tb-quiz-feedback-box");
@@ -6287,6 +6316,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
             }
             feedbackBox.style.display = "flex";
+
+            // Focus next button for easy Enter keypress
+            setTimeout(() => {
+                const nextBtn = document.getElementById("tb-quiz-next-btn");
+                if (nextBtn) nextBtn.focus();
+            }, 100);
         }
     };
 
@@ -6311,7 +6346,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let color = "#15803d";
         if (percent < 50) {
             icon = "💪";
-            message = "Cần ôn tập thêm! Hãy dùng chế độ Flashcard để củng cố nhé!";
+            message = "Cần ôn tập thêm! Hãy dùng chế độ Flashcard hoặc Nghe gõ chữ để củng cố nhé!";
             color = "#dc2626";
         } else if (percent < 80) {
             icon = "👏";
@@ -6352,7 +6387,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <!-- Final Score Card -->
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 36px 30px; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
                     <div style="font-size: 3.5rem; margin-bottom: 8px;">${icon}</div>
-                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">KẾT QUẢ TRẢ BÀI</h2>
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">KẾT QUẢ TRẢ BÀI TRẮC NGHIỆM</h2>
                     <div style="font-size: 2.8rem; font-weight: 900; color: ${color}; line-height: 1.2; margin-bottom: 8px;">
                         ${score} / ${total}
                     </div>
@@ -6366,15 +6401,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     <!-- Buttons -->
                     <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
                         <button type="button" onclick="window.tbStartQuiz()" style="background: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
-                            🔄 Làm đề mới (10 câu khác)
+                            🔄 Làm lại đề mới
                         </button>
                         ${wrongQuestions.length > 0 ? `
                         <button type="button" onclick="window.tbRetryWrongQuestions()" style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
                             🎯 Ôn lại ${wrongQuestions.length} câu làm sai
                         </button>
                         ` : ''}
-                        <button type="button" onclick="window.tbSetMode('flashcard')" style="background: #f1f5f9; color: #334155; border: 1.5px solid #cbd5e1; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer;">
-                            🗂️ Luyện thẻ Flashcard
+                        <button type="button" onclick="window.tbSetMode('dictation')" style="background: #0284c7; color: white; border: none; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer;">
+                            ✍️ Chuyển sang Nghe & Gõ chữ
                         </button>
                     </div>
                 </div>
@@ -6395,6 +6430,413 @@ document.addEventListener("DOMContentLoaded", () => {
         const wrongItems = tbs.quizReview.filter(r => !r.isCorrect).map(r => r.q.item);
         if (wrongItems.length > 0) {
             window.tbStartQuiz(wrongItems);
+        }
+    };
+
+    // ================= DICTATION MODE (NGHE & GÕ CHỮ) =================
+    window.tbSelectDictBatch = function(batch, btnEl) {
+        window.traBaiState.dictBatch = batch;
+        const siblings = btnEl.parentElement.querySelectorAll(".tb-scope-chip");
+        siblings.forEach(s => s.classList.remove("active"));
+        btnEl.classList.add("active");
+    };
+
+    window.tbStartDictation = function(customItems = null) {
+        const allData = window.part01Dang01TraBaiData || [];
+        const tbs = window.traBaiState;
+        let pool = customItems;
+        if (!pool) {
+            const batch = tbs.dictBatch || 'all';
+            if (batch === 'b1') pool = allData.slice(0, 50);
+            else if (batch === 'b2') pool = allData.slice(50, 100);
+            else if (batch === 'b3') pool = allData.slice(100);
+            else pool = allData; // All 164 items!
+        }
+        if (!pool || pool.length === 0) return;
+
+        tbs.dictQuestions = shuffleTraBaiArray(pool);
+        tbs.dictIndex = 0;
+        tbs.dictScore = 0;
+        tbs.dictAnswered = false;
+        tbs.dictFinished = false;
+        tbs.dictReview = [];
+
+        window.tbRenderDictationView(document.getElementById("tb-active-workspace"));
+    };
+
+    window.tbRenderDictationView = function(workspace) {
+        const tbs = window.traBaiState;
+
+        // If dictation finished, show result screen
+        if (tbs.dictFinished && tbs.dictQuestions.length > 0) {
+            window.tbRenderDictResults(workspace);
+            return;
+        }
+
+        // If not started yet, show setup screen
+        if (!tbs.dictQuestions || tbs.dictQuestions.length === 0) {
+            workspace.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+                    <div style="font-size: 3.2rem; margin-bottom: 12px;">✍️</div>
+                    <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                        NGHE VÀ GÕ CHỮ (DICTATION - 164 CỤM TỪ)
+                    </h3>
+                    <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
+                        Luyện tập nghe phát âm và gõ lại chính xác từng từ / cụm từ tiếng Anh. Phương pháp này giúp khắc phục triệt để lỗi nghe thiếu âm cuối (ending sounds) và nhớ mặt chữ chuẩn xác.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
+                        <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn phạm vi luyện gõ:</div>
+                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                            <button type="button" class="tb-scope-chip ${(tbs.dictBatch || 'all') === 'all' ? 'active' : ''}" onclick="window.tbSelectDictBatch('all', this)">
+                                🌟 Toàn bộ 164 cụm (Khuyên dùng)
+                            </button>
+                            <button type="button" class="tb-scope-chip ${(tbs.dictBatch) === 'b1' ? 'active' : ''}" onclick="window.tbSelectDictBatch('b1', this)">
+                                Chặng 1: Cụm 1 - 50
+                            </button>
+                            <button type="button" class="tb-scope-chip ${(tbs.dictBatch) === 'b2' ? 'active' : ''}" onclick="window.tbSelectDictBatch('b2', this)">
+                                Chặng 2: Cụm 51 - 100
+                            </button>
+                            <button type="button" class="tb-scope-chip ${(tbs.dictBatch) === 'b3' ? 'active' : ''}" onclick="window.tbSelectDictBatch('b3', this)">
+                                Chặng 3: Cụm 101 - 164
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="window.tbStartDictation()" style="background: linear-gradient(135deg, #0284c7, #0369a1); color: white; border: none; padding: 14px 38px; border-radius: 12px; font-size: 1.15rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(2,132,199,0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                        🚀 BẮT ĐẦU NGHE & GÕ CHỮ
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        const dIndex = tbs.dictIndex;
+        const currentItem = tbs.dictQuestions[dIndex];
+        if (!currentItem) {
+            tbs.dictFinished = true;
+            window.tbRenderDictationView(workspace);
+            return;
+        }
+
+        const progressPercent = Math.round(((dIndex + 1) / tbs.dictQuestions.length) * 100);
+
+        workspace.innerHTML = `
+            <div class="tb-dict-container">
+                <!-- Header with Progress -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px 22px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="font-weight: 800; color: #0284c7; font-size: 1.15rem;">CÂU ${dIndex + 1} / ${tbs.dictQuestions.length}</span>
+                            <span style="background: #f1f5f9; color: #64748b; padding: 3px 10px; border-radius: 20px; font-size: 0.82rem; font-weight: 700;">
+                                ${currentItem.category}
+                            </span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <label style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
+                                <input type="checkbox" id="tb-dict-autoplay-cb" ${tbs.dictAutoPlay ? 'checked' : ''} onchange="window.tbToggleDictAutoPlay(this.checked)" style="cursor: pointer; width: 16px; height: 16px;">
+                                <span>Tự động phát âm</span>
+                            </label>
+                            <div style="font-weight: 800; color: #16a34a; font-size: 1.05rem; display: flex; align-items: center; gap: 6px;">
+                                <span>Đúng:</span> <span id="tb-dict-score-val" style="background: #dcfce7; padding: 2px 10px; border-radius: 8px;">${tbs.dictScore}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Progress line -->
+                    <div style="width: 100%; background: #e2e8f0; height: 6px; border-radius: 4px; overflow: hidden;">
+                        <div style="width: ${progressPercent}%; height: 100%; background: linear-gradient(90deg, #0284c7, #38bdf8); transition: width 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <!-- Main Dictation Card -->
+                <div class="tb-dict-card">
+                    <!-- Audio Playback Buttons -->
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                        <button type="button" class="tb-dict-audio-btn" onclick="playTTS('${currentItem.en.replace(/'/g, "\\'")}', event)">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                            <span>Bấm để nghe phát âm</span>
+                        </button>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <button type="button" class="tb-dict-slow-btn" onclick="playTTS('${currentItem.en.replace(/'/g, "\\'")}', event, 0.78)" title="Nghe với tốc độ chậm hơn">
+                                <span>🐢</span> Nghe chậm (0.8x)
+                            </button>
+                            <span style="font-size: 0.8rem; color: #94a3b8;">Phím tắt: Ctrl + Space để nghe lại</span>
+                        </div>
+                    </div>
+
+                    <!-- Meaning Hint -->
+                    <div style="background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 12px; padding: 12px 20px; max-width: 560px; width: 100%;">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: #64748b; text-transform: uppercase; margin-bottom: 4px;">
+                            💡 Gợi ý nghĩa tiếng Việt:
+                        </div>
+                        <div style="font-size: 1.35rem; font-weight: 800; color: #166534;">
+                            "${currentItem.vi}"
+                        </div>
+                        <div style="font-size: 0.82rem; color: #94a3b8; margin-top: 4px;">
+                            ${currentItem.source} (Slide ${currentItem.slide})
+                        </div>
+                    </div>
+
+                    <!-- Typing Input Field -->
+                    <div style="width: 100%; max-width: 620px; display: flex; flex-direction: column; gap: 12px;">
+                        <input type="text" id="tb-dict-input" class="tb-dict-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Gõ từ hoặc cụm từ bạn nghe được tại đây... (Nhấn Enter)" onkeydown="window.tbHandleDictInputKeydown(event)">
+                        
+                        <div id="tb-dict-action-buttons" style="display: flex; justify-content: center; gap: 12px;">
+                            <button type="button" id="tb-dict-submit-btn" onclick="window.tbCheckDictation()" style="background: #2563eb; color: white; border: none; padding: 12px 28px; border-radius: 10px; font-weight: 800; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+                                <span>Kiểm tra (Enter)</span>
+                            </button>
+                            <button type="button" onclick="window.tbSkipDictation()" style="background: #ffffff; color: #64748b; border: 1.5px solid #cbd5e1; padding: 12px 20px; border-radius: 10px; font-weight: 700; font-size: 0.95rem; cursor: pointer;">
+                                <span>Xem đáp án</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Result Feedback Area (Hidden initially) -->
+                    <div id="tb-dict-feedback-area" style="display: none; width: 100%; max-width: 620px;"></div>
+                </div>
+            </div>
+        `;
+
+        // Auto-focus input
+        setTimeout(() => {
+            const input = document.getElementById("tb-dict-input");
+            if (input) input.focus();
+        }, 100);
+
+        // Auto-play audio if enabled
+        if (tbs.dictAutoPlay) {
+            setTimeout(() => {
+                playTTS(currentItem.en);
+            }, 250);
+        }
+    };
+
+    window.tbCheckDictation = function() {
+        const tbs = window.traBaiState;
+        if (tbs.dictAnswered) return;
+
+        const inputEl = document.getElementById("tb-dict-input");
+        if (!inputEl) return;
+        const userInput = inputEl.value.trim();
+        const currentItem = tbs.dictQuestions[tbs.dictIndex];
+        if (!currentItem) return;
+
+        tbs.dictAnswered = true;
+        inputEl.disabled = true;
+
+        const normUser = normalizeDictationText(userInput);
+        const normTarget = normalizeDictationText(currentItem.en);
+        const isMatch = normUser === normTarget;
+
+        if (isMatch) {
+            tbs.dictScore++;
+            const scoreEl = document.getElementById("tb-dict-score-val");
+            if (scoreEl) scoreEl.textContent = tbs.dictScore;
+            // Mark learned
+            tbs.learnedIds.add(currentItem.id);
+            saveTraBaiLearned();
+        }
+
+        tbs.dictReview.push({
+            item: currentItem,
+            userInput: userInput,
+            isCorrect: isMatch
+        });
+
+        // Hide action buttons
+        const actionBtns = document.getElementById("tb-dict-action-buttons");
+        if (actionBtns) actionBtns.style.display = "none";
+
+        // Show feedback banner
+        const fbArea = document.getElementById("tb-dict-feedback-area");
+        if (fbArea) {
+            if (isMatch) {
+                fbArea.innerHTML = `
+                    <div class="tb-dict-result-box tb-dict-result-correct">
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                            <div style="font-size: 1.15rem; font-weight: 800;">
+                                🎉 Chính xác 100%! Xuất sắc!
+                            </div>
+                            <button type="button" onclick="playTTS('${currentItem.en.replace(/'/g, "\\'")}', event)" style="background: white; border: 1px solid #86efac; border-radius: 8px; padding: 4px 10px; cursor: pointer; color: #166534; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                                🔊 Nghe lại
+                            </button>
+                        </div>
+                        <div style="font-size: 1.35rem; font-weight: 800; color: #15803d; margin: 4px 0;">
+                            "${currentItem.en}"
+                        </div>
+                        <button type="button" id="tb-dict-next-btn" onclick="window.tbNextDictQuestion()" style="background: #16a34a; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 6px; box-shadow: 0 4px 12px rgba(22,163,74,0.3);">
+                            <span>${tbs.dictIndex + 1 === tbs.dictQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO (Enter)'}</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                        </button>
+                    </div>
+                `;
+            } else {
+                playTTS(currentItem.en);
+                fbArea.innerHTML = `
+                    <div class="tb-dict-result-box tb-dict-result-wrong">
+                        <div style="font-size: 1.15rem; font-weight: 800;">
+                            ❌ Chưa chính xác!
+                        </div>
+                        <div style="font-size: 1.05rem; margin-top: 4px;">
+                            Bạn đã gõ: <strong style="color: #b91c1c; text-decoration: line-through;">${userInput || '(Chưa nhập)'}</strong>
+                        </div>
+                        <div style="font-size: 1.1rem; margin-top: 4px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                            Đáp án đúng: <strong style="color: #166534; font-size: 1.35rem; background: #dcfce7; padding: 2px 8px; border-radius: 6px;">${currentItem.en}</strong>
+                            <button type="button" onclick="playTTS('${currentItem.en.replace(/'/g, "\\'")}', event)" style="background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 4px 8px; cursor: pointer;">🔊</button>
+                        </div>
+                        <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+                            <button type="button" onclick="window.tbRetryCurrentDictQuestion()" style="background: #ffffff; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 10px 18px; border-radius: 8px; font-weight: 800; font-size: 0.95rem; cursor: pointer;">
+                                🔄 Gõ lại câu này
+                            </button>
+                            <button type="button" id="tb-dict-next-btn" onclick="window.tbNextDictQuestion()" style="background: #2563eb; color: white; border: none; padding: 10px 22px; border-radius: 8px; font-weight: 800; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                                <span>${tbs.dictIndex + 1 === tbs.dictQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO (Enter)'}</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+            fbArea.style.display = "block";
+
+            // Focus next button
+            setTimeout(() => {
+                const nextBtn = document.getElementById("tb-dict-next-btn");
+                if (nextBtn) nextBtn.focus();
+            }, 100);
+        }
+    };
+
+    window.tbSkipDictation = function() {
+        const inputEl = document.getElementById("tb-dict-input");
+        if (inputEl) inputEl.value = "";
+        window.tbCheckDictation();
+    };
+
+    window.tbRetryCurrentDictQuestion = function() {
+        const tbs = window.traBaiState;
+        tbs.dictAnswered = false;
+        if (tbs.dictReview.length > 0 && tbs.dictReview[tbs.dictReview.length - 1].item.id === tbs.dictQuestions[tbs.dictIndex].id) {
+            tbs.dictReview.pop();
+        }
+        window.tbRenderDictationView(document.getElementById("tb-active-workspace"));
+    };
+
+    window.tbNextDictQuestion = function() {
+        const tbs = window.traBaiState;
+        tbs.dictAnswered = false;
+        tbs.dictIndex++;
+        if (tbs.dictIndex >= tbs.dictQuestions.length) {
+            tbs.dictFinished = true;
+        }
+        window.tbRenderDictationView(document.getElementById("tb-active-workspace"));
+    };
+
+    window.tbToggleDictAutoPlay = function(checked) {
+        window.traBaiState.dictAutoPlay = checked;
+    };
+
+    window.tbHandleDictInputKeydown = function(e) {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            const tbs = window.traBaiState;
+            if (!tbs.dictAnswered) {
+                window.tbCheckDictation();
+            } else {
+                window.tbNextDictQuestion();
+            }
+        }
+    };
+
+    window.tbRenderDictResults = function(workspace) {
+        const tbs = window.traBaiState;
+        const total = tbs.dictQuestions.length;
+        const score = tbs.dictScore;
+        const percent = Math.round((score / total) * 100);
+
+        let icon = "🏆";
+        let message = "Xuất sắc! Bạn đã gõ chính xác gần như toàn bộ từ vựng!";
+        let color = "#15803d";
+        if (percent < 50) {
+            icon = "💪";
+            message = "Cần luyện tập thêm! Hãy nghe kỹ các âm cuối (ending sounds) và luyện lại nhé!";
+            color = "#dc2626";
+        } else if (percent < 80) {
+            icon = "👏";
+            message = "Rất tốt! Khả năng nghe và phản xạ chữ viết của bạn rất ấn tượng!";
+            color = "#2563eb";
+        }
+
+        const wrongQuestions = tbs.dictReview.filter(r => !r.isCorrect);
+
+        let reviewListHtml = '';
+        tbs.dictReview.forEach((r, idx) => {
+            reviewListHtml += `
+                <div style="background: #ffffff; border: 1.5px solid ${r.isCorrect ? '#86efac' : '#fca5a5'}; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <div style="font-weight: 700; color: #0f172a; font-size: 1.05rem;">
+                            Câu ${idx + 1}: "${r.item.vi}"
+                        </div>
+                        <div style="font-size: 0.95rem; color: #166534; font-weight: 600;">
+                            ✔ Cụm chuẩn: <strong>${r.item.en}</strong>
+                        </div>
+                        ${!r.isCorrect ? `
+                            <div style="font-size: 0.9rem; color: #dc2626;">
+                                ✖ Bạn đã gõ: ${r.userInput || '(Bỏ qua)'}
+                            </div>
+                        ` : ''}
+                    </div>
+                    <button type="button" onclick="playTTS('${r.item.en.replace(/'/g, "\\'")}', event)" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-weight: 700; color: #0284c7; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe
+                    </button>
+                </div>
+            `;
+        });
+
+        workspace.innerHTML = `
+            <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 36px 30px; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+                    <div style="font-size: 3.5rem; margin-bottom: 8px;">${icon}</div>
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">KẾT QUẢ NGHE & GÕ CHỮ</h2>
+                    <div style="font-size: 2.8rem; font-weight: 900; color: ${color}; line-height: 1.2; margin-bottom: 8px;">
+                        ${score} / ${total}
+                    </div>
+                    <div style="font-size: 1.15rem; font-weight: 700; color: #475569; margin-bottom: 12px;">
+                        Độ chính xác: <strong>${percent}%</strong>
+                    </div>
+                    <p style="color: #64748b; font-size: 1.05rem; max-width: 480px; margin: 0 auto 24px auto;">
+                        ${message}
+                    </p>
+
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                        <button type="button" onclick="window.tbStartDictation()" style="background: #0284c7; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🔄 Luyện lại toàn bộ đề mới
+                        </button>
+                        ${wrongQuestions.length > 0 ? `
+                        <button type="button" onclick="window.tbRetryWrongDictation()" style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🎯 Luyện lại ${wrongQuestions.length} câu đã gõ sai
+                        </button>
+                        ` : ''}
+                        <button type="button" onclick="window.tbSetMode('quiz')" style="background: #f1f5f9; color: #334155; border: 1.5px solid #cbd5e1; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer;">
+                            ⚡ Sang Trắc nghiệm phản xạ
+                        </button>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #334155; padding-left: 4px;">
+                        CHI TIẾT BÀI LÀM:
+                    </div>
+                    ${reviewListHtml}
+                </div>
+            </div>
+        `;
+    };
+
+    window.tbRetryWrongDictation = function() {
+        const tbs = window.traBaiState;
+        const wrongItems = tbs.dictReview.filter(r => !r.isCorrect).map(r => r.item);
+        if (wrongItems.length > 0) {
+            window.tbStartDictation(wrongItems);
         }
     };
 
@@ -6513,10 +6955,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const learnedCountEl = document.getElementById("tb-learned-count");
         const progressFillEl = document.getElementById("tb-progress-fill");
-        const unlearnedBadgeEl = document.getElementById("tb-unlearned-badge");
         if (learnedCountEl) learnedCountEl.textContent = learnedCount;
         if (progressFillEl) progressFillEl.style.width = `${percent}%`;
-        if (unlearnedBadgeEl) unlearnedBadgeEl.textContent = totalCount - learnedCount;
 
         const isLearned = tbs.learnedIds.has(id);
         if (btnEl) {

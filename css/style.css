@@ -2327,4 +2327,147 @@ body:not(.light-mode) .tb-list-row {
     box-shadow: 0 4px 14px rgba(0,0,0,0.05);
 }
 
+/* Dictation / Typing Practice Styles */
+.tb-dict-container {
+    max-width: 760px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tb-dict-card {
+    background: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 18px;
+    padding: 32px 28px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+}
+
+body:not(.light-mode) .tb-dict-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.tb-dict-input {
+    width: 100%;
+    max-width: 620px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 16px 22px;
+    border-radius: 12px;
+    border: 2px solid #cbd5e1;
+    background: #f8fafc;
+    color: #0f172a;
+    outline: none;
+    transition: all 0.2s ease;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+body:not(.light-mode) .tb-dict-input {
+    background: #0f172a;
+    border-color: #475569;
+    color: #f8fafc;
+}
+
+.tb-dict-input:focus {
+    border-color: #2563eb;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15);
+}
+
+body:not(.light-mode) .tb-dict-input:focus {
+    background: #1e293b;
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.2);
+}
+
+.tb-dict-audio-btn {
+    background: linear-gradient(135deg, #0284c7, #0369a1);
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 16px rgba(2, 132, 199, 0.25);
+    transition: all 0.2s ease;
+}
+
+.tb-dict-audio-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.35);
+}
+
+.tb-dict-audio-btn:active {
+    transform: translateY(0);
+}
+
+.tb-dict-slow-btn {
+    background: #f0f9ff;
+    color: #0284c7;
+    border: 1.5px solid #bae6fd;
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+}
+
+.tb-dict-slow-btn:hover {
+    background: #e0f2fe;
+    border-color: #7dd3fc;
+}
+
+.tb-dict-result-box {
+    width: 100%;
+    max-width: 620px;
+    border-radius: 14px;
+    padding: 18px 22px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: fadeInDown 0.25s ease;
+}
+
+.tb-dict-result-correct {
+    background: #f0fdf4;
+    border: 2px solid #86efac;
+    color: #166534;
+}
+
+body:not(.light-mode) .tb-dict-result-correct {
+    background: rgba(34, 197, 94, 0.15);
+    border-color: #22c55e;
+    color: #4ade80;
+}
+
+.tb-dict-result-wrong {
+    background: #fef2f2;
+    border: 2px solid #fca5a5;
+    color: #991b1b;
+}
+
+body:not(.light-mode) .tb-dict-result-wrong {
+    background: rgba(239, 68, 68, 0.15);
+    border-color: #ef4444;
+    color: #f87171;
+}
+
+
 
