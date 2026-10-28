@@ -5487,22 +5487,22 @@ document.addEventListener("DOMContentLoaded", () => {
                           </div>
                         </details>
                         ` : ''}
-                    </div>
-                    ${(state.part01ActiveSection === 'dang_01' && state.part01CurrentSlide === state.part01TotalSlides) ? `
-                    <div style="margin-top: 24px; width: 100%; padding: 22px 24px; background: linear-gradient(135deg, #eff6ff, #f0fdf4); border: 2px solid #86efac; border-radius: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; box-shadow: 0 6px 20px rgba(22, 163, 74, 0.12);">
-                        <div style="display: flex; align-items: center; gap: 14px;">
-                            <span style="font-size: 2.2rem;">🎉</span>
-                            <div>
-                                <div style="font-size: 1.15rem; font-weight: 800; color: #166534;">Chúc mừng bạn đã hoàn thành 6 câu bài tập thực hành!</div>
-                                <div style="font-size: 0.95rem; color: #15803d; margin-top: 2px;">Củng cố kiến thức ngay với hệ thống <strong>164 cụm từ vựng cốt lõi</strong> (Flashcard & Trắc nghiệm phản xạ).</div>
+                        ${(state.part01ActiveSection === 'dang_01' && state.part01CurrentSlide === state.part01TotalSlides) ? `
+                        <div id="practice-congrats-box" style="margin-top: 24px; width: 100%; padding: 22px 24px; background: linear-gradient(135deg, #eff6ff, #f0fdf4); border: 2px solid #86efac; border-radius: 16px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; box-shadow: 0 6px 20px rgba(22, 163, 74, 0.12);">
+                            <div style="display: flex; align-items: center; gap: 14px;">
+                                <span style="font-size: 2.2rem;">🎉</span>
+                                <div>
+                                    <div style="font-size: 1.15rem; font-weight: 800; color: #166534;">Chúc mừng bạn đã hoàn thành 6 câu bài tập thực hành!</div>
+                                    <div style="font-size: 0.95rem; color: #15803d; margin-top: 2px;">Củng cố kiến thức ngay với hệ thống <strong>164 cụm từ vựng cốt lõi</strong> (Flashcard & Trắc nghiệm phản xạ).</div>
+                                </div>
                             </div>
+                            <button type="button" onclick="window.switchPart01Tab('trabai')" style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; border: none; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                                <span>🎯 VÀO TRẢ BÀI TỪ VỰNG NGAY</span>
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                            </button>
                         </div>
-                        <button type="button" onclick="window.switchPart01Tab('trabai')" style="background: linear-gradient(135deg, #16a34a, #15803d); color: white; border: none; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
-                            <span>🎯 VÀO TRẢ BÀI TỪ VỰNG NGAY</span>
-                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
-                        </button>
+                        ` : ''}
                     </div>
-                    ` : ''}
                 </div>
             `;
         } else {
