@@ -2837,7 +2837,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </h2>
                             </div>
                             <p style="color: #64748b; font-size: 0.95rem; margin-top: 6px; margin-bottom: 0;">
-                                Đầy đủ <strong>${totalItemsCount} từ vựng cốt lõi</strong> của dạng câu hỏi này.
+                                Đầy đủ <strong>${totalItemsCount} từ vựng cốt lõi</strong> của dạng bài này (tổng hợp từ: <em>Phần Từ Vựng, Câu Hỏi & 4 Phương Án và Transcript</em>).
                             </p>
                         </div>
 

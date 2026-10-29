@@ -1,4 +1,5 @@
-// Dữ liệu trả bài từ vựng Part 03 (533 từ vựng cốt lõi theo dạng câu hỏi)
+// Dữ liệu trả bài từ vựng Part 03 toàn diện theo từng dạng câu hỏi
+// Bao gồm: Phần Từ Vựng bài giảng + Câu Hỏi & 4 Phương Án + Transcript bài nghe (948 từ vựng cốt lõi)
 window.part03TraBaiData = [
   {
     "id": 1,
@@ -9,7 +10,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a music festival – lễ hội âm nhạc",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 2,
@@ -20,7 +22,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a music festival – lễ hội âm nhạc",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 3,
@@ -31,7 +34,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a music festival – lễ hội âm nhạc",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 4,
@@ -42,7 +46,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a music festival – lễ hội âm nhạc",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 5,
@@ -53,7 +58,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a music festival – lễ hội âm nhạc",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 6,
@@ -64,7 +70,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a sporting event – sự kiện thể thao",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 7,
@@ -75,7 +82,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a sporting event – sự kiện thể thao",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 8,
@@ -86,7 +94,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a sporting event – sự kiện thể thao",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 9,
@@ -97,7 +106,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a sporting event – sự kiện thể thao",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 10,
@@ -108,7 +118,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a sporting event – sự kiện thể thao",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 11,
@@ -119,7 +130,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an orientation session – buổi định hướng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 12,
@@ -130,7 +142,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an orientation session – buổi định hướng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 13,
@@ -141,7 +154,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an orientation session – buổi định hướng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 14,
@@ -152,7 +166,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an orientation session – buổi định hướng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 15,
@@ -163,7 +178,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an anniversary celebration – lễ kỷ niệm",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 16,
@@ -174,7 +190,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an anniversary celebration – lễ kỷ niệm",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 17,
@@ -185,7 +202,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an anniversary celebration – lễ kỷ niệm",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 18,
@@ -196,7 +214,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an anniversary celebration – lễ kỷ niệm",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 19,
@@ -207,7 +226,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an anniversary celebration – lễ kỷ niệm",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 20,
@@ -218,7 +238,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a community fundraiser – buổi gây quỹ cộng đồng",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 21,
@@ -229,7 +250,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a community fundraiser – buổi gây quỹ cộng đồng",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 22,
@@ -240,7 +262,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a community fundraiser – buổi gây quỹ cộng đồng",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 23,
@@ -251,7 +274,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a community fundraiser – buổi gây quỹ cộng đồng",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 24,
@@ -262,7 +286,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a community fundraiser – buổi gây quỹ cộng đồng",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 25,
@@ -273,7 +298,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a press conference – cuộc họp báo",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 26,
@@ -284,7 +310,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a press conference – cuộc họp báo",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 27,
@@ -295,7 +322,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a press conference – cuộc họp báo",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 28,
@@ -306,7 +334,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a press conference – cuộc họp báo",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 29,
@@ -317,7 +346,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a product demonstration – buổi trình diễn sản phẩm",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 30,
@@ -328,7 +358,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a product demonstration – buổi trình diễn sản phẩm",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 31,
@@ -339,7 +370,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a product demonstration – buổi trình diễn sản phẩm",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 32,
@@ -350,7 +382,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a product demonstration – buổi trình diễn sản phẩm",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 33,
@@ -361,7 +394,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a product demonstration – buổi trình diễn sản phẩm",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 34,
@@ -372,7 +406,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a charity auction – buổi đấu giá từ thiện",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 35,
@@ -383,7 +418,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a charity auction – buổi đấu giá từ thiện",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 36,
@@ -394,7 +430,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a charity auction – buổi đấu giá từ thiện",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 37,
@@ -405,7 +442,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a charity auction – buổi đấu giá từ thiện",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 38,
@@ -416,7 +454,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a charity auction – buổi đấu giá từ thiện",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 39,
@@ -427,7 +466,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an employee training – buổi đào tạo nhân viên",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 40,
@@ -438,7 +478,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an employee training – buổi đào tạo nhân viên",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 41,
@@ -449,7 +490,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an employee training – buổi đào tạo nhân viên",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 42,
@@ -460,7 +502,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "an employee training – buổi đào tạo nhân viên",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 43,
@@ -471,7 +514,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a company outing – chuyến đi chơi của công ty",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 44,
@@ -482,7 +526,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a company outing – chuyến đi chơi của công ty",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 45,
@@ -493,7 +538,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a company outing – chuyến đi chơi của công ty",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 46,
@@ -504,7 +550,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a company outing – chuyến đi chơi của công ty",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 47,
@@ -515,7 +562,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a company outing – chuyến đi chơi của công ty",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 48,
@@ -526,7 +574,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a school open house – ngày hội mở trường",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 49,
@@ -537,7 +586,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a school open house – ngày hội mở trường",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 50,
@@ -548,7 +598,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a school open house – ngày hội mở trường",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 51,
@@ -559,7 +610,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a school open house – ngày hội mở trường",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 52,
@@ -570,7 +622,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a union meeting – cuộc họp công đoàn",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 53,
@@ -581,7 +634,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a union meeting – cuộc họp công đoàn",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 54,
@@ -592,7 +646,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a union meeting – cuộc họp công đoàn",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 55,
@@ -603,7 +658,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a union meeting – cuộc họp công đoàn",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 56,
@@ -614,7 +670,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_topic",
     "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
     "category": "a union meeting – cuộc họp công đoàn",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 57,
@@ -625,7 +682,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 58,
@@ -636,7 +694,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 59,
@@ -647,7 +706,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 60,
@@ -658,7 +718,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 61,
@@ -669,7 +730,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 62,
@@ -680,7 +742,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 63,
@@ -691,7 +754,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 64,
@@ -702,7 +766,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 65,
@@ -713,7 +778,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 66,
@@ -724,7 +790,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 67,
@@ -735,7 +802,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 68,
@@ -746,7 +814,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a restaurant – tại nhà hàng",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 69,
@@ -757,7 +826,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 70,
@@ -768,7 +838,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 71,
@@ -779,7 +850,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 72,
@@ -790,7 +862,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 73,
@@ -801,7 +874,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 74,
@@ -812,7 +886,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 75,
@@ -823,7 +898,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 76,
@@ -834,7 +910,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 77,
@@ -845,7 +922,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 78,
@@ -856,7 +934,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 79,
@@ -867,7 +946,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 80,
@@ -878,7 +958,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a hotel – tại khách sạn",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 81,
@@ -889,7 +970,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 82,
@@ -900,7 +982,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 83,
@@ -911,7 +994,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 84,
@@ -922,7 +1006,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 85,
@@ -933,7 +1018,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 86,
@@ -944,7 +1030,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 87,
@@ -955,7 +1042,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 88,
@@ -966,7 +1054,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 89,
@@ -977,7 +1066,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 90,
@@ -988,7 +1078,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 91,
@@ -999,7 +1090,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 92,
@@ -1010,7 +1102,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the bank – tại ngân hàng",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 93,
@@ -1021,7 +1114,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 94,
@@ -1032,7 +1126,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 95,
@@ -1043,7 +1138,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 96,
@@ -1054,7 +1150,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 97,
@@ -1065,7 +1162,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 98,
@@ -1076,7 +1174,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 99,
@@ -1087,7 +1186,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 100,
@@ -1098,7 +1198,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 101,
@@ -1109,7 +1210,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 102,
@@ -1120,7 +1222,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 103,
@@ -1131,7 +1234,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 104,
@@ -1142,7 +1246,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 105,
@@ -1153,7 +1258,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the post office – tại bưu điện",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 106,
@@ -1164,7 +1270,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 107,
@@ -1175,7 +1282,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 108,
@@ -1186,7 +1294,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 109,
@@ -1197,7 +1306,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 110,
@@ -1208,7 +1318,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 111,
@@ -1219,7 +1330,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 112,
@@ -1230,7 +1342,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 113,
@@ -1241,7 +1354,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 114,
@@ -1252,7 +1366,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 115,
@@ -1263,7 +1378,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 116,
@@ -1274,7 +1390,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 117,
@@ -1285,7 +1402,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a medical office – tại phòng khám",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 118,
@@ -1296,7 +1414,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 119,
@@ -1307,7 +1426,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 120,
@@ -1318,7 +1438,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 121,
@@ -1329,7 +1450,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 122,
@@ -1340,7 +1462,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 123,
@@ -1351,7 +1474,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 124,
@@ -1362,7 +1486,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 125,
@@ -1373,7 +1498,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 126,
@@ -1384,7 +1510,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 127,
@@ -1395,7 +1522,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 128,
@@ -1406,7 +1534,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 129,
@@ -1417,7 +1546,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at the airport – tại sân bay",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 130,
@@ -1428,7 +1558,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 131,
@@ -1439,7 +1570,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 132,
@@ -1450,7 +1582,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 133,
@@ -1461,7 +1594,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 134,
@@ -1472,7 +1606,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 135,
@@ -1483,7 +1618,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 136,
@@ -1494,7 +1630,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 137,
@@ -1505,7 +1642,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 138,
@@ -1516,7 +1654,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 139,
@@ -1527,7 +1666,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 140,
@@ -1538,7 +1678,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 141,
@@ -1549,7 +1690,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 142,
@@ -1560,7 +1702,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a shop/store – tại cửa hàng",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 143,
@@ -1571,7 +1714,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 144,
@@ -1582,7 +1726,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 145,
@@ -1593,7 +1738,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 146,
@@ -1604,7 +1750,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 147,
@@ -1615,7 +1762,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 148,
@@ -1626,7 +1774,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 149,
@@ -1637,7 +1786,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 150,
@@ -1648,7 +1798,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 151,
@@ -1659,7 +1810,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 152,
@@ -1670,7 +1822,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 153,
@@ -1681,7 +1834,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 154,
@@ -1692,7 +1846,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a warehouse – tại nhà kho",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 155,
@@ -1703,7 +1858,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 156,
@@ -1714,7 +1870,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 157,
@@ -1725,7 +1882,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 158,
@@ -1736,7 +1894,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 159,
@@ -1747,7 +1906,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 160,
@@ -1758,7 +1918,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 161,
@@ -1769,7 +1930,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 162,
@@ -1780,7 +1942,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 163,
@@ -1791,7 +1954,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 164,
@@ -1802,7 +1966,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 165,
@@ -1813,7 +1978,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 166,
@@ -1824,7 +1990,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 167,
@@ -1835,7 +2002,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at an office – tại văn phòng",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 168,
@@ -1846,7 +2014,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 169,
@@ -1857,7 +2026,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 170,
@@ -1868,7 +2038,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 171,
@@ -1879,7 +2050,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 172,
@@ -1890,7 +2062,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 173,
@@ -1901,7 +2074,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 174,
@@ -1912,7 +2086,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 175,
@@ -1923,7 +2098,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 176,
@@ -1934,7 +2110,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 177,
@@ -1945,7 +2122,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 178,
@@ -1956,7 +2134,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 179,
@@ -1967,7 +2146,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 180,
@@ -1978,7 +2158,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a theater – tại rạp/nhà hát",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 181,
@@ -1989,7 +2170,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 182,
@@ -2000,7 +2182,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 183,
@@ -2011,7 +2194,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 184,
@@ -2022,7 +2206,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 185,
@@ -2033,7 +2218,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 186,
@@ -2044,7 +2230,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 187,
@@ -2055,7 +2242,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 188,
@@ -2066,7 +2254,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 189,
@@ -2077,7 +2266,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 190,
@@ -2088,7 +2278,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 191,
@@ -2099,7 +2290,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 192,
@@ -2110,7 +2302,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a real estate agency – tại công ty bất động sản",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 193,
@@ -2121,7 +2314,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 194,
@@ -2132,7 +2326,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 195,
@@ -2143,7 +2338,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 196,
@@ -2154,7 +2350,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 197,
@@ -2165,7 +2362,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 198,
@@ -2176,7 +2374,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 199,
@@ -2187,7 +2386,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 200,
@@ -2198,7 +2398,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 201,
@@ -2209,7 +2410,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 202,
@@ -2220,7 +2422,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 203,
@@ -2231,7 +2434,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 204,
@@ -2242,7 +2446,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "at a train/bus station – tại trạm xe lửa/xe buýt",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 205,
@@ -2253,7 +2458,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "an advertising company – tại công ty quảng cáo",
-    "slide": 1013
+    "slide": 1013,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 206,
@@ -2264,7 +2470,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "an advertising company – tại công ty quảng cáo",
-    "slide": 1013
+    "slide": 1013,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 207,
@@ -2275,7 +2482,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "an advertising company – tại công ty quảng cáo",
-    "slide": 1013
+    "slide": 1013,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 208,
@@ -2286,7 +2494,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "an advertising company – tại công ty quảng cáo",
-    "slide": 1013
+    "slide": 1013,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 209,
@@ -2297,7 +2506,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "an advertising company – tại công ty quảng cáo",
-    "slide": 1013
+    "slide": 1013,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 210,
@@ -2308,7 +2518,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a factory – tại nhà máy",
-    "slide": 1014
+    "slide": 1014,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 211,
@@ -2319,7 +2530,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a factory – tại nhà máy",
-    "slide": 1014
+    "slide": 1014,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 212,
@@ -2330,7 +2542,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a factory – tại nhà máy",
-    "slide": 1014
+    "slide": 1014,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 213,
@@ -2341,7 +2554,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a factory – tại nhà máy",
-    "slide": 1014
+    "slide": 1014,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 214,
@@ -2352,7 +2566,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a newspaper / press office – tại tòa soạn báo/văn phòng báo chí",
-    "slide": 1015
+    "slide": 1015,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 215,
@@ -2363,7 +2578,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a newspaper / press office – tại tòa soạn báo/văn phòng báo chí",
-    "slide": 1015
+    "slide": 1015,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 216,
@@ -2374,7 +2590,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a newspaper / press office – tại tòa soạn báo/văn phòng báo chí",
-    "slide": 1015
+    "slide": 1015,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 217,
@@ -2385,7 +2602,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a newspaper / press office – tại tòa soạn báo/văn phòng báo chí",
-    "slide": 1015
+    "slide": 1015,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 218,
@@ -2396,7 +2614,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a newspaper / press office – tại tòa soạn báo/văn phòng báo chí",
-    "slide": 1015
+    "slide": 1015,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 219,
@@ -2407,7 +2626,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a customer service center – tại trung tâm dịch vụ khách hàng",
-    "slide": 1016
+    "slide": 1016,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 220,
@@ -2418,7 +2638,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a customer service center – tại trung tâm dịch vụ khách hàng",
-    "slide": 1016
+    "slide": 1016,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 221,
@@ -2429,7 +2650,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a customer service center – tại trung tâm dịch vụ khách hàng",
-    "slide": 1016
+    "slide": 1016,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 222,
@@ -2440,7 +2662,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a customer service center – tại trung tâm dịch vụ khách hàng",
-    "slide": 1016
+    "slide": 1016,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 223,
@@ -2451,7 +2674,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a customer service center – tại trung tâm dịch vụ khách hàng",
-    "slide": 1016
+    "slide": 1016,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 224,
@@ -2462,7 +2686,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a car dealership – tại đại lý ô tô",
-    "slide": 1017
+    "slide": 1017,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 225,
@@ -2473,7 +2698,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a car dealership – tại đại lý ô tô",
-    "slide": 1017
+    "slide": 1017,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 226,
@@ -2484,7 +2710,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a car dealership – tại đại lý ô tô",
-    "slide": 1017
+    "slide": 1017,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 227,
@@ -2495,7 +2722,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a car dealership – tại đại lý ô tô",
-    "slide": 1017
+    "slide": 1017,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 228,
@@ -2506,7 +2734,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a fitness center / gym – tại phòng tập thể hình",
-    "slide": 1018
+    "slide": 1018,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 229,
@@ -2517,7 +2746,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a fitness center / gym – tại phòng tập thể hình",
-    "slide": 1018
+    "slide": 1018,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 230,
@@ -2528,7 +2758,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a fitness center / gym – tại phòng tập thể hình",
-    "slide": 1018
+    "slide": 1018,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 231,
@@ -2539,7 +2770,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a fitness center / gym – tại phòng tập thể hình",
-    "slide": 1018
+    "slide": 1018,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 232,
@@ -2550,7 +2782,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a university campus – tại khuôn viên trường đại học",
-    "slide": 1019
+    "slide": 1019,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 233,
@@ -2561,7 +2794,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a university campus – tại khuôn viên trường đại học",
-    "slide": 1019
+    "slide": 1019,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 234,
@@ -2572,7 +2806,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a university campus – tại khuôn viên trường đại học",
-    "slide": 1019
+    "slide": 1019,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 235,
@@ -2583,7 +2818,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a university campus – tại khuôn viên trường đại học",
-    "slide": 1019
+    "slide": 1019,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 236,
@@ -2594,7 +2830,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a university campus – tại khuôn viên trường đại học",
-    "slide": 1019
+    "slide": 1019,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 237,
@@ -2605,7 +2842,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a grocery store – tại cửa hàng tạp hoá",
-    "slide": 1020
+    "slide": 1020,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 238,
@@ -2616,7 +2854,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a grocery store – tại cửa hàng tạp hoá",
-    "slide": 1020
+    "slide": 1020,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 239,
@@ -2627,7 +2866,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a grocery store – tại cửa hàng tạp hoá",
-    "slide": 1020
+    "slide": 1020,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 240,
@@ -2638,7 +2878,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a grocery store – tại cửa hàng tạp hoá",
-    "slide": 1020
+    "slide": 1020,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 241,
@@ -2649,7 +2890,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a grocery store – tại cửa hàng tạp hoá",
-    "slide": 1020
+    "slide": 1020,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 242,
@@ -2660,7 +2902,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a delivery hub – tại trung tâm phân phối hàng hóa",
-    "slide": 1021
+    "slide": 1021,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 243,
@@ -2671,7 +2914,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a delivery hub – tại trung tâm phân phối hàng hóa",
-    "slide": 1021
+    "slide": 1021,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 244,
@@ -2682,7 +2926,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a delivery hub – tại trung tâm phân phối hàng hóa",
-    "slide": 1021
+    "slide": 1021,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 245,
@@ -2693,7 +2938,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a delivery hub – tại trung tâm phân phối hàng hóa",
-    "slide": 1021
+    "slide": 1021,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 246,
@@ -2704,7 +2950,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a delivery hub – tại trung tâm phân phối hàng hóa",
-    "slide": 1021
+    "slide": 1021,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 247,
@@ -2715,7 +2962,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a market – tại chợ",
-    "slide": 1022
+    "slide": 1022,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 248,
@@ -2726,7 +2974,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a market – tại chợ",
-    "slide": 1022
+    "slide": 1022,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 249,
@@ -2737,7 +2986,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a market – tại chợ",
-    "slide": 1022
+    "slide": 1022,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 250,
@@ -2748,7 +2998,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a market – tại chợ",
-    "slide": 1022
+    "slide": 1022,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 251,
@@ -2759,7 +3010,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_location",
     "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
     "category": "a market – tại chợ",
-    "slide": 1022
+    "slide": 1022,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 252,
@@ -2770,7 +3022,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 253,
@@ -2781,7 +3034,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 254,
@@ -2792,7 +3046,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 255,
@@ -2803,7 +3058,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 256,
@@ -2814,7 +3070,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 257,
@@ -2825,7 +3082,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 258,
@@ -2836,7 +3094,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 259,
@@ -2847,7 +3106,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 260,
@@ -2858,7 +3118,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 261,
@@ -2869,7 +3130,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC GIÁO DỤC",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 262,
@@ -2880,7 +3142,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KHOA HỌC – NGHIÊN CỨU",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 263,
@@ -2891,7 +3154,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KHOA HỌC – NGHIÊN CỨU",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 264,
@@ -2902,7 +3166,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KHOA HỌC – NGHIÊN CỨU",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 265,
@@ -2913,7 +3178,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KHOA HỌC – NGHIÊN CỨU",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 266,
@@ -2924,7 +3190,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KHOA HỌC – NGHIÊN CỨU",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 267,
@@ -2935,7 +3202,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KHOA HỌC – NGHIÊN CỨU",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 268,
@@ -2946,7 +3214,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KHOA HỌC – NGHIÊN CỨU",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 269,
@@ -2957,7 +3226,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KHOA HỌC – NGHIÊN CỨU",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 270,
@@ -2968,7 +3238,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 271,
@@ -2979,7 +3250,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 272,
@@ -2990,7 +3262,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 273,
@@ -3001,7 +3274,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 274,
@@ -3012,7 +3286,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 275,
@@ -3023,7 +3298,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 276,
@@ -3034,7 +3310,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 277,
@@ -3045,7 +3322,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 278,
@@ -3056,7 +3334,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 279,
@@ -3067,7 +3346,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 280,
@@ -3078,7 +3358,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 281,
@@ -3089,7 +3370,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC Y TẾ",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 282,
@@ -3100,7 +3382,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 283,
@@ -3111,7 +3394,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 284,
@@ -3122,7 +3406,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 285,
@@ -3133,7 +3418,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 286,
@@ -3144,7 +3430,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 287,
@@ -3155,7 +3442,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 288,
@@ -3166,7 +3454,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 289,
@@ -3177,7 +3466,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 290,
@@ -3188,7 +3478,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 291,
@@ -3199,7 +3490,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 292,
@@ -3210,7 +3502,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 293,
@@ -3221,7 +3514,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC KINH DOANH – HÀNH CHÍNH",
-    "slide": 1004
+    "slide": 1004,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 294,
@@ -3232,7 +3526,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 295,
@@ -3243,7 +3538,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 296,
@@ -3254,7 +3550,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 297,
@@ -3265,7 +3562,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 298,
@@ -3276,7 +3574,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 299,
@@ -3287,7 +3586,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 300,
@@ -3298,7 +3598,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 301,
@@ -3309,7 +3610,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 302,
@@ -3320,7 +3622,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 303,
@@ -3331,7 +3634,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 304,
@@ -3342,7 +3646,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 305,
@@ -3353,7 +3658,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC DỊCH VỤ – BÁN HÀNG",
-    "slide": 1005
+    "slide": 1005,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 306,
@@ -3364,7 +3670,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 307,
@@ -3375,7 +3682,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 308,
@@ -3386,7 +3694,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 309,
@@ -3397,7 +3706,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 310,
@@ -3408,7 +3718,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 311,
@@ -3419,7 +3730,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 312,
@@ -3430,7 +3742,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 313,
@@ -3441,7 +3754,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 314,
@@ -3452,7 +3766,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 315,
@@ -3463,7 +3778,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 316,
@@ -3474,7 +3790,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 317,
@@ -3485,7 +3802,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC CÔNG NGHỆ – TRUYỀN THÔNG",
-    "slide": 1006
+    "slide": 1006,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 318,
@@ -3496,7 +3814,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 319,
@@ -3507,7 +3826,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 320,
@@ -3518,7 +3838,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 321,
@@ -3529,7 +3850,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 322,
@@ -3540,7 +3862,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 323,
@@ -3551,7 +3874,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 324,
@@ -3562,7 +3886,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 325,
@@ -3573,7 +3898,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 326,
@@ -3584,7 +3910,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 327,
@@ -3595,7 +3922,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 328,
@@ -3606,7 +3934,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 329,
@@ -3617,7 +3946,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 330,
@@ -3628,7 +3958,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 331,
@@ -3639,7 +3970,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 332,
@@ -3650,7 +3982,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 333,
@@ -3661,7 +3994,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 334,
@@ -3672,7 +4006,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 335,
@@ -3683,7 +4018,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 336,
@@ -3694,7 +4030,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 337,
@@ -3705,7 +4042,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 338,
@@ -3716,7 +4054,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 339,
@@ -3727,7 +4066,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC XÂY DỰNG – GIAO THÔNG",
-    "slide": 1007
+    "slide": 1007,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 340,
@@ -3738,7 +4078,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 341,
@@ -3749,7 +4090,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 342,
@@ -3760,7 +4102,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 343,
@@ -3771,7 +4114,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 344,
@@ -3782,7 +4126,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 345,
@@ -3793,7 +4138,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 346,
@@ -3804,7 +4150,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 347,
@@ -3815,7 +4162,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 348,
@@ -3826,7 +4174,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 349,
@@ -3837,7 +4186,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC NGHỆ THUẬT – GIẢI TRÍ",
-    "slide": 1008
+    "slide": 1008,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 350,
@@ -3848,7 +4198,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 351,
@@ -3859,7 +4210,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 352,
@@ -3870,7 +4222,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 353,
@@ -3881,7 +4234,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 354,
@@ -3892,7 +4246,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 355,
@@ -3903,7 +4258,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 356,
@@ -3914,7 +4270,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 357,
@@ -3925,7 +4282,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 358,
@@ -3936,7 +4294,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 359,
@@ -3947,7 +4306,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 360,
@@ -3958,7 +4318,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 361,
@@ -3969,7 +4330,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LUẬT – CHÍNH PHỦ",
-    "slide": 1009
+    "slide": 1009,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 362,
@@ -3980,7 +4342,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC THỦ CÔNG – KỸ THUẬT",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 363,
@@ -3991,7 +4354,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC THỦ CÔNG – KỸ THUẬT",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 364,
@@ -4002,7 +4366,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC THỦ CÔNG – KỸ THUẬT",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 365,
@@ -4013,7 +4378,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC THỦ CÔNG – KỸ THUẬT",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 366,
@@ -4024,7 +4390,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC THỦ CÔNG – KỸ THUẬT",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 367,
@@ -4035,7 +4402,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC THỦ CÔNG – KỸ THUẬT",
-    "slide": 1010
+    "slide": 1010,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 368,
@@ -4046,7 +4414,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LOGISTICS – KHO VẬN",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 369,
@@ -4057,7 +4426,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LOGISTICS – KHO VẬN",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 370,
@@ -4068,7 +4438,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LOGISTICS – KHO VẬN",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 371,
@@ -4079,7 +4450,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LOGISTICS – KHO VẬN",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 372,
@@ -4090,7 +4462,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LOGISTICS – KHO VẬN",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 373,
@@ -4101,7 +4474,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "LĨNH VỰC LOGISTICS – KHO VẬN",
-    "slide": 1011
+    "slide": 1011,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 374,
@@ -4112,7 +4486,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "MỘT SỐ NGHỀ NGHIỆP KHÁC",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 375,
@@ -4123,7 +4498,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "MỘT SỐ NGHỀ NGHIỆP KHÁC",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 376,
@@ -4134,7 +4510,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "MỘT SỐ NGHỀ NGHIỆP KHÁC",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 377,
@@ -4145,7 +4522,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "MỘT SỐ NGHỀ NGHIỆP KHÁC",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 378,
@@ -4156,7 +4534,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "MỘT SỐ NGHỀ NGHIỆP KHÁC",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 379,
@@ -4167,7 +4546,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "MỘT SỐ NGHỀ NGHIỆP KHÁC",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 380,
@@ -4178,7 +4558,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "MỘT SỐ NGHỀ NGHIỆP KHÁC",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 381,
@@ -4189,7 +4570,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_01_identity",
     "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
     "category": "MỘT SỐ NGHỀ NGHIỆP KHÁC",
-    "slide": 1012
+    "slide": 1012,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 382,
@@ -4200,7 +4582,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 383,
@@ -4211,7 +4594,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 384,
@@ -4222,7 +4606,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 385,
@@ -4233,7 +4618,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 386,
@@ -4244,7 +4630,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 387,
@@ -4255,7 +4642,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 388,
@@ -4266,7 +4654,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 389,
@@ -4277,7 +4666,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 390,
@@ -4288,7 +4678,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 391,
@@ -4299,7 +4690,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 392,
@@ -4310,7 +4702,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 393,
@@ -4321,7 +4714,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 394,
@@ -4332,7 +4726,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 395,
@@ -4343,7 +4738,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 396,
@@ -4354,7 +4750,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 397,
@@ -4365,7 +4762,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 398,
@@ -4376,7 +4774,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 399,
@@ -4387,7 +4786,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 400,
@@ -4398,7 +4798,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 401,
@@ -4409,7 +4810,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 402,
@@ -4420,7 +4822,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 403,
@@ -4431,7 +4834,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 404,
@@ -4442,7 +4846,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 405,
@@ -4453,7 +4858,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_problem",
     "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
     "category": "Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
-    "slide": 1003
+    "slide": 1003,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 406,
@@ -4464,7 +4870,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 407,
@@ -4475,7 +4882,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 408,
@@ -4486,7 +4894,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 409,
@@ -4497,7 +4906,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 410,
@@ -4508,7 +4918,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 411,
@@ -4519,7 +4930,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 412,
@@ -4530,7 +4942,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 413,
@@ -4541,7 +4954,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 414,
@@ -4552,7 +4966,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 415,
@@ -4563,7 +4978,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 416,
@@ -4574,7 +4990,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 417,
@@ -4585,7 +5002,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 418,
@@ -4596,7 +5014,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 419,
@@ -4607,7 +5026,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 420,
@@ -4618,7 +5038,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 421,
@@ -4629,7 +5050,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_why",
     "sectionTitle": "Dạng 2.II - Câu hỏi Why",
     "category": "Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 422,
@@ -4640,7 +5062,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 423,
@@ -4651,7 +5074,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 424,
@@ -4662,7 +5086,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 425,
@@ -4673,7 +5098,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 426,
@@ -4684,7 +5110,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 427,
@@ -4695,7 +5122,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 428,
@@ -4706,7 +5134,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 429,
@@ -4717,7 +5146,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 430,
@@ -4728,7 +5158,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 431,
@@ -4739,7 +5170,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 432,
@@ -4750,7 +5182,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 433,
@@ -4761,7 +5194,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 434,
@@ -4772,7 +5206,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 435,
@@ -4783,7 +5218,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 436,
@@ -4794,7 +5230,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 437,
@@ -4805,7 +5242,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_request",
     "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
     "category": "Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 438,
@@ -4816,7 +5254,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 439,
@@ -4827,7 +5266,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 440,
@@ -4838,7 +5278,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 441,
@@ -4849,7 +5290,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 442,
@@ -4860,7 +5302,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 443,
@@ -4871,7 +5314,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 444,
@@ -4882,7 +5326,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 445,
@@ -4893,7 +5338,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 446,
@@ -4904,7 +5350,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 447,
@@ -4915,7 +5362,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 448,
@@ -4926,7 +5374,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 449,
@@ -4937,7 +5386,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 450,
@@ -4948,7 +5398,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 451,
@@ -4959,7 +5410,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 452,
@@ -4970,7 +5422,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 453,
@@ -4981,7 +5434,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_suggest",
     "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
     "category": "Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 454,
@@ -4992,7 +5446,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 455,
@@ -5003,7 +5458,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 456,
@@ -5014,7 +5470,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 457,
@@ -5025,7 +5482,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 458,
@@ -5036,7 +5494,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 459,
@@ -5047,7 +5506,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 460,
@@ -5058,7 +5518,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 461,
@@ -5069,7 +5530,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 462,
@@ -5080,7 +5542,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Chính sách & Kết quả kinh doanh (Policies & Business Results)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 463,
@@ -5091,7 +5554,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Chính sách & Kết quả kinh doanh (Policies & Business Results)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 464,
@@ -5102,7 +5566,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Chính sách & Kết quả kinh doanh (Policies & Business Results)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 465,
@@ -5113,7 +5578,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Chính sách & Kết quả kinh doanh (Policies & Business Results)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 466,
@@ -5124,7 +5590,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Chính sách & Kết quả kinh doanh (Policies & Business Results)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 467,
@@ -5135,7 +5602,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Chính sách & Kết quả kinh doanh (Policies & Business Results)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 468,
@@ -5146,7 +5614,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Chính sách & Kết quả kinh doanh (Policies & Business Results)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 469,
@@ -5157,7 +5626,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_say",
     "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
     "category": "Chính sách & Kết quả kinh doanh (Policies & Business Results)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 470,
@@ -5168,7 +5638,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 471,
@@ -5179,7 +5650,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 472,
@@ -5190,7 +5662,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 473,
@@ -5201,7 +5674,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 474,
@@ -5212,7 +5686,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 475,
@@ -5223,7 +5698,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 476,
@@ -5234,7 +5710,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 477,
@@ -5245,7 +5722,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 478,
@@ -5256,7 +5734,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 479,
@@ -5267,7 +5746,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 480,
@@ -5278,7 +5758,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 481,
@@ -5289,7 +5770,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 482,
@@ -5300,7 +5782,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 483,
@@ -5311,7 +5794,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 484,
@@ -5322,7 +5806,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 485,
@@ -5333,7 +5818,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_according",
     "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
     "category": "Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 486,
@@ -5344,7 +5830,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động tiến hành ngay (Immediate Follow-up Tasks)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 487,
@@ -5355,7 +5842,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động tiến hành ngay (Immediate Follow-up Tasks)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 488,
@@ -5366,7 +5854,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động tiến hành ngay (Immediate Follow-up Tasks)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 489,
@@ -5377,7 +5866,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động tiến hành ngay (Immediate Follow-up Tasks)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 490,
@@ -5388,7 +5878,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động tiến hành ngay (Immediate Follow-up Tasks)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 491,
@@ -5399,7 +5890,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động tiến hành ngay (Immediate Follow-up Tasks)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 492,
@@ -5410,7 +5902,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động tiến hành ngay (Immediate Follow-up Tasks)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 493,
@@ -5421,7 +5914,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động tiến hành ngay (Immediate Follow-up Tasks)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 494,
@@ -5432,7 +5926,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 495,
@@ -5443,7 +5938,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 496,
@@ -5454,7 +5950,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 497,
@@ -5465,7 +5962,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 498,
@@ -5476,7 +5974,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 499,
@@ -5487,7 +5986,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 500,
@@ -5498,7 +5998,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 501,
@@ -5509,7 +6010,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_do_next",
     "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
     "category": "Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 502,
@@ -5520,7 +6022,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 503,
@@ -5531,7 +6034,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 504,
@@ -5542,7 +6046,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 505,
@@ -5553,7 +6058,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 506,
@@ -5564,7 +6070,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 507,
@@ -5575,7 +6082,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 508,
@@ -5586,7 +6094,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 509,
@@ -5597,7 +6106,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 510,
@@ -5608,7 +6118,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 511,
@@ -5619,7 +6130,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 512,
@@ -5630,7 +6142,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 513,
@@ -5641,7 +6154,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 514,
@@ -5652,7 +6166,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 515,
@@ -5663,7 +6178,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 516,
@@ -5674,7 +6190,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 517,
@@ -5685,7 +6202,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_02_what_imply",
     "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
     "category": "Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 518,
@@ -5696,7 +6214,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 519,
@@ -5707,7 +6226,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 520,
@@ -5718,7 +6238,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 521,
@@ -5729,7 +6250,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 522,
@@ -5740,7 +6262,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 523,
@@ -5751,7 +6274,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 524,
@@ -5762,7 +6286,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 525,
@@ -5773,7 +6298,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
-    "slide": 1001
+    "slide": 1001,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 526,
@@ -5784,7 +6310,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 527,
@@ -5795,7 +6322,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 528,
@@ -5806,7 +6334,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 529,
@@ -5817,7 +6346,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 530,
@@ -5828,7 +6358,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 531,
@@ -5839,7 +6370,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 532,
@@ -5850,7 +6382,8 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
   },
   {
     "id": 533,
@@ -5861,6 +6394,4987 @@ window.part03TraBaiData = [
     "sectionId": "dang_visual_questions",
     "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
     "category": "Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
-    "slide": 1002
+    "slide": 1002,
+    "source": "Phần Từ vựng"
+  },
+  {
+    "en": "service charge",
+    "vi": "phí dịch vụ",
+    "ipa": "/ˈsɜː.vɪs tʃɑːdʒ/",
+    "pos": "n",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 534,
+    "slide": 2000
+  },
+  {
+    "en": "personal belongings",
+    "vi": "đồ đạc cá nhân",
+    "ipa": "/ˈpɜː.sən.əl bɪˈlɒŋ.ɪŋz/",
+    "pos": "n",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 535,
+    "slide": 2001
+  },
+  {
+    "en": "traffic on the highway",
+    "vi": "giao thông trên đường cao tốc",
+    "ipa": "/ˈtræf.ɪk ɒn ðə ˈhaɪ.weɪ/",
+    "pos": "n",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 536,
+    "slide": 2002
+  },
+  {
+    "en": "parking space",
+    "vi": "chỗ đỗ xe",
+    "ipa": "/ˈpɑː.kɪŋ speɪs/",
+    "pos": "n",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 537,
+    "slide": 2003
+  },
+  {
+    "en": "membership forms",
+    "vi": "các mẫu đơn thành viên",
+    "ipa": "/ˈmem.bə.ʃɪp fɔːmz/",
+    "pos": "n",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 538,
+    "slide": 2004
+  },
+  {
+    "en": "adjustable desk",
+    "vi": "bàn làm việc nâng hạ độ cao",
+    "ipa": "/əˈdʒʌs.tə.bəl desk/",
+    "pos": "n",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 539,
+    "slide": 2005
+  },
+  {
+    "en": "stuck in heavy traffic",
+    "vi": "bị kẹt trong đám tắc đường",
+    "ipa": "/stʌk ɪn ˈhev.i ˈtræf.ɪk/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 540,
+    "slide": 2006
+  },
+  {
+    "en": "company retirement program",
+    "vi": "chương trình hưu trí của công ty",
+    "ipa": "/ˈkʌm.pə.ni rɪˈtaɪə.mənt ˈprəʊ.ɡræm/",
+    "pos": "n",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 541,
+    "slide": 2007
+  },
+  {
+    "en": "commute to work",
+    "vi": "đi lại hàng ngày tới chỗ làm",
+    "ipa": "/kəˈmjuːt tuː wɜːk/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 542,
+    "slide": 2008
+  },
+  {
+    "en": "apprenticeship",
+    "vi": "việc học việc / học nghề",
+    "ipa": "/əˈpren.tɪs.ʃɪp/",
+    "pos": "n",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 543,
+    "slide": 2009
+  },
+  {
+    "en": "sample report",
+    "vi": "bản báo cáo mẫu",
+    "ipa": "/ˈsɑːm.pəl rɪˈpɔːt/",
+    "pos": "n",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 544,
+    "slide": 2010
+  },
+  {
+    "en": "start the training",
+    "vi": "bắt đầu buổi tập huấn",
+    "ipa": "/stɑːt ðə ˈtreɪ.nɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 545,
+    "slide": 2011
+  },
+  {
+    "en": "manage an office",
+    "vi": "quản lý một văn phòng chi nhánh",
+    "ipa": "/ˈmæn.ɪdʒ ən ˈɒf.ɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 546,
+    "slide": 2012
+  },
+  {
+    "en": "make suggestions",
+    "vi": "đưa ra các gợi ý đề xuất",
+    "ipa": "/meɪk səˈdʒes.tʃənz/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 547,
+    "slide": 2013
+  },
+  {
+    "en": "city skyline",
+    "vi": "đường chân trời của thành phố",
+    "ipa": "/ˈsɪt.i ˈskaɪ.laɪn/",
+    "pos": "n",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 548,
+    "slide": 2014
+  },
+  {
+    "en": "public library",
+    "vi": "thư viện công cộng",
+    "ipa": "/ˈpʌb.lɪk ˈlaɪ.brər.i/",
+    "pos": "n",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 549,
+    "slide": 2015
+  },
+  {
+    "en": "digital subscription",
+    "vi": "gói đăng ký đọc báo điện tử",
+    "ipa": "/ˈdɪdʒ.ɪ.təl səbˈskrɪp.ʃən/",
+    "pos": "n",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 550,
+    "slide": 2016
+  },
+  {
+    "en": "promotional sale",
+    "vi": "đợt giảm giá khuyến mãi",
+    "ipa": "/prəˈməʊ.ʃən.əl seɪl/",
+    "pos": "n",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 551,
+    "slide": 2017
+  },
+  {
+    "en": "share a taxi",
+    "vi": "đi chung một chuyến taxi",
+    "ipa": "/ʃeər ə ˈtæk.si/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 552,
+    "slide": 2018
+  },
+  {
+    "en": "billing software",
+    "vi": "phần mềm thanh toán viện phí / hóa đơn",
+    "ipa": "/ˈbɪl.ɪŋ ˈsɒft.weər/",
+    "pos": "n",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 553,
+    "slide": 2019
+  },
+  {
+    "en": "increase production",
+    "vi": "gia tăng sản lượng sản xuất",
+    "ipa": "/ˈɪn.kriːs prəˈdʌk.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 554,
+    "slide": 2020
+  },
+  {
+    "en": "stage lighting",
+    "vi": "hệ thống ánh sáng sân khấu",
+    "ipa": "/steɪdʒ ˈlaɪ.tɪŋ/",
+    "pos": "n",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 555,
+    "slide": 2021
+  },
+  {
+    "en": "cost of parking",
+    "vi": "chi phí gửi đỗ xe",
+    "ipa": "/kɒst əv ˈpɑː.kɪŋ/",
+    "pos": "n",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 556,
+    "slide": 2022
+  },
+  {
+    "en": "safety inspector",
+    "vi": "thanh tra viên an toàn vệ sinh",
+    "ipa": "/ˈseɪf.ti ɪnˈspek.tər/",
+    "pos": "n",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 557,
+    "slide": 2023
+  },
+  {
+    "en": "Health",
+    "vi": "Sức khỏe",
+    "ipa": "/helθ/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 558,
+    "slide": 2024
+  },
+  {
+    "en": "Traffic",
+    "vi": "Giao thông",
+    "ipa": "/ˈtræf.ɪk/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 559,
+    "slide": 2025
+  },
+  {
+    "en": "Sports",
+    "vi": "Thể thao",
+    "ipa": "/spɔːts/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 560,
+    "slide": 2026
+  },
+  {
+    "en": "Finance",
+    "vi": "Tài chính",
+    "ipa": "/finance/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 561,
+    "slide": 2027
+  },
+  {
+    "en": "Electronics",
+    "vi": "Đồ điện tử",
+    "ipa": "/ɪˌlekˈtrɒn.ɪks/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 562,
+    "slide": 2028
+  },
+  {
+    "en": "Office furniture",
+    "vi": "Nội thất văn phòng",
+    "ipa": "/ˈɒf.ɪs ˈfɜː.nɪ.tʃər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 563,
+    "slide": 2029
+  },
+  {
+    "en": "Calendars",
+    "vi": "Lịch",
+    "ipa": "/calendars/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 564,
+    "slide": 2030
+  },
+  {
+    "en": "Clothing",
+    "vi": "Quần áo",
+    "ipa": "/ˈkləʊ.ðɪŋ/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 565,
+    "slide": 2031
+  },
+  {
+    "en": "new supervisor",
+    "vi": "Người giám sát mới",
+    "ipa": "/njuː ˈsuː.pə.vaɪ.zər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 566,
+    "slide": 2032
+  },
+  {
+    "en": "budget report",
+    "vi": "Báo cáo ngân sách",
+    "ipa": "/ˈbʌdʒ.ɪt rɪˈpɔːt/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 567,
+    "slide": 2033
+  },
+  {
+    "en": "office floor plan",
+    "vi": "Sơ đồ mặt bằng văn phòng",
+    "ipa": "/ˈɒf.ɪs flɔːr plæn/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 568,
+    "slide": 2034
+  },
+  {
+    "en": "project deadline",
+    "vi": "Thời hạn dự án",
+    "ipa": "/ˈprɒdʒ.ekt ˈded.laɪn/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 569,
+    "slide": 2035
+  },
+  {
+    "en": "New car designs",
+    "vi": "Thiết kế xe hơi mới",
+    "ipa": "/njuː kɑːr dɪˈzaɪnz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 570,
+    "slide": 2036
+  },
+  {
+    "en": "opening of a factory",
+    "vi": "mở một nhà máy",
+    "ipa": "/ˈəʊ.pən.ɪŋ əv ə ˈfæk.tər.i/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 571,
+    "slide": 2037
+  },
+  {
+    "en": "increase in costs",
+    "vi": "Chi phí gia tăng",
+    "ipa": "/ˈɪn.kriːs ɪn kɒsts/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 572,
+    "slide": 2038
+  },
+  {
+    "en": "Safety ratings",
+    "vi": "Xếp hạng an toàn",
+    "ipa": "/ˈseɪf.ti ˈreɪ.tɪŋz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 573,
+    "slide": 2039
+  },
+  {
+    "en": "room reservation",
+    "vi": "đặt phòng họp",
+    "ipa": "/ruːm ˌrez.əˈveɪ.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 574,
+    "slide": 2040
+  },
+  {
+    "en": "canceled event",
+    "vi": "sự kiện bị hủy",
+    "ipa": "/ˈkæn.səld ɪˈvent/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 575,
+    "slide": 2041
+  },
+  {
+    "en": "restaurant recommendation",
+    "vi": "Gợi ý nhà hàng",
+    "ipa": "/ˈres.trɒnt ˌrek.ə.menˈdeɪ.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 576,
+    "slide": 2042
+  },
+  {
+    "en": "misplaced item",
+    "vi": "món đồ để quên",
+    "ipa": "/ˌmɪsˈpleɪst ˈaɪ.təm/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 577,
+    "slide": 2043
+  },
+  {
+    "en": "shareholders' meeting",
+    "vi": "Đại hội cổ đông",
+    "ipa": "/ˈʃeəˌhəʊl.dəz ˈmiː.tɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 578,
+    "slide": 2044
+  },
+  {
+    "en": "press conference",
+    "vi": "Họp báo",
+    "ipa": "/pres ˈkɒn.fər.əns/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 579,
+    "slide": 2045
+  },
+  {
+    "en": "job fair",
+    "vi": "Hội chợ việc làm",
+    "ipa": "/dʒɒb feər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 580,
+    "slide": 2046
+  },
+  {
+    "en": "product demonstration",
+    "vi": "Buổi giới thiệu sản phẩm",
+    "ipa": "/ˈprɒd.ʌkt ˌdem.ənˈstreɪ.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 581,
+    "slide": 2047
+  },
+  {
+    "en": "arrival time",
+    "vi": "Thời gian đến",
+    "ipa": "/əˈraɪ.vəl taɪm/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 582,
+    "slide": 2048
+  },
+  {
+    "en": "seat assignment",
+    "vi": "Chỗ ngồi được chỉ định",
+    "ipa": "/siːt əˈsaɪn.mənt/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 583,
+    "slide": 2049
+  },
+  {
+    "en": "ticket price",
+    "vi": "Giá vé",
+    "ipa": "/ˈtɪk.ɪt praɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 584,
+    "slide": 2050
+  },
+  {
+    "en": "travel policy",
+    "vi": "Chính sách du lịch",
+    "ipa": "/ˈtræv.əl ˈpɒl.ə.si/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 585,
+    "slide": 2051
+  },
+  {
+    "en": "budget",
+    "vi": "Ngân sách",
+    "ipa": "/ˈbʌdʒ.ɪt/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 586,
+    "slide": 2052
+  },
+  {
+    "en": "client survey",
+    "vi": "Khảo sát khách hàng",
+    "ipa": "/ˈklaɪ.ənt ˈsɜː.veɪ/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 587,
+    "slide": 2053
+  },
+  {
+    "en": "new employee",
+    "vi": "Nhân viên mới",
+    "ipa": "/njuː ɪmˈplɔɪ.iː/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 588,
+    "slide": 2054
+  },
+  {
+    "en": "presentation",
+    "vi": "bài thuyết trình",
+    "ipa": "/ˌprez.ənˈteɪ.ʃən/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 589,
+    "slide": 2055
+  },
+  {
+    "en": "fund-raiser",
+    "vi": "Buổi gây quỹ",
+    "ipa": "/fund raiser/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 590,
+    "slide": 2056
+  },
+  {
+    "en": "health fair",
+    "vi": "Hội chợ sức khỏe",
+    "ipa": "/helθ feər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 591,
+    "slide": 2057
+  },
+  {
+    "en": "facility tour",
+    "vi": "Chuyến tham quan cơ sở",
+    "ipa": "/fəˈsɪl.ə.ti tʊər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 592,
+    "slide": 2058
+  },
+  {
+    "en": "business trip",
+    "vi": "Chuyến công tác",
+    "ipa": "/ˈbɪz.nɪs trɪp/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 593,
+    "slide": 2059
+  },
+  {
+    "en": "Shipping dates",
+    "vi": "Ngày giao hàng",
+    "ipa": "/ˈʃɪp.ɪŋ deɪts/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 594,
+    "slide": 2060
+  },
+  {
+    "en": "Product specifications",
+    "vi": "Thông số kỹ thuật sản phẩm",
+    "ipa": "/ˈprɒd.ʌkt ˌspes.ɪ.fɪˈkeɪ.ʃənz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 595,
+    "slide": 2061
+  },
+  {
+    "en": "Marketing data",
+    "vi": "Dữ liệu tiếp thị",
+    "ipa": "/ˈmɑː.kɪ.tɪŋ ˈdeɪ.tə/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 596,
+    "slide": 2062
+  },
+  {
+    "en": "Business expenses",
+    "vi": "Chi phí kinh doanh",
+    "ipa": "/ˈbɪz.nɪs ɪkˈspen.sɪz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 597,
+    "slide": 2063
+  },
+  {
+    "en": "free trial period",
+    "vi": "Thời gian dùng thử miễn phí",
+    "ipa": "/friː traɪəl ˈpɪə.ri.əd/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 598,
+    "slide": 2064
+  },
+  {
+    "en": "Customer reviews",
+    "vi": "Đánh giá của khách hàng",
+    "ipa": "/ˈkʌs.tə.mər rɪˈvjuːz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 599,
+    "slide": 2065
+  },
+  {
+    "en": "Job qualifications",
+    "vi": "Yêu cầu công việc",
+    "ipa": "/dʒɒb ˌkwɒl.ɪ.fɪˈkeɪ.ʃənz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 600,
+    "slide": 2066
+  },
+  {
+    "en": "certification course",
+    "vi": "Khóa học cấp chứng chỉ",
+    "ipa": "/ˌsɜː.tɪ.fɪˈkeɪ.ʃən kɔːs/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 601,
+    "slide": 2067
+  },
+  {
+    "en": "Making travel arrangements",
+    "vi": "Sắp xếp lịch trình di chuyển",
+    "ipa": "/making ˈtræv.əl əˈreɪndʒ.mənts/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 602,
+    "slide": 2068
+  },
+  {
+    "en": "Leading a workshop",
+    "vi": "Điều hành một buổi hội thảo",
+    "ipa": "/leading ə ˈwɜːk.ʃɒp/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 603,
+    "slide": 2069
+  },
+  {
+    "en": "Ordering promotional materials",
+    "vi": "Đặt mua tài liệu quảng cáo",
+    "ipa": "/ordering prəˈməʊ.ʃən.əl məˈtɪə.ri.əlz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 604,
+    "slide": 2070
+  },
+  {
+    "en": "Practicing a sales presentation",
+    "vi": "Luyện tập bài thuyết trình bán hàng",
+    "ipa": "/practicing ə seɪlz ˌprez.ənˈteɪ.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 605,
+    "slide": 2071
+  },
+  {
+    "en": "goalkeeper",
+    "vi": "thủ môn",
+    "ipa": "/ˈɡəʊlˌkiː.pər/",
+    "pos": "n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 606,
+    "slide": 2072
+  },
+  {
+    "en": "semiannual sale",
+    "vi": "đợt giảm giá nửa năm một lần",
+    "ipa": "/ˌsem.iˈæn.ju.əl seɪl/",
+    "pos": "compound n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 607,
+    "slide": 2073
+  },
+  {
+    "en": "soccer match",
+    "vi": "trận đấu bóng đá",
+    "ipa": "/ˈsɒk.ər mætʃ/",
+    "pos": "compound n",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 608,
+    "slide": 2074
+  },
+  {
+    "en": "wet and slippery",
+    "vi": "ẩm ướt và trơn trượt",
+    "ipa": "/wet ænd ˈslɪp.ər.i/",
+    "pos": "adj",
+    "sectionId": "dang_01_topic",
+    "sectionTitle": "Dạng 1.I - Câu hỏi về Chủ đề bài nghe",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 609,
+    "slide": 2075
+  },
+  {
+    "en": "train station",
+    "vi": "nhà ga xe lửa",
+    "ipa": "/treɪn ˈsteɪ.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 610,
+    "slide": 2076
+  },
+  {
+    "en": "electronics repair shop",
+    "vi": "tiệm sửa chữa đồ điện tử",
+    "ipa": "/ɪˌlekˈtrɒn.ɪks rɪˈpeər ʃɒp/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 611,
+    "slide": 2077
+  },
+  {
+    "en": "furniture store",
+    "vi": "cửa hàng nội thất",
+    "ipa": "/ˈfɜː.nɪ.tʃər stɔːr/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 612,
+    "slide": 2078
+  },
+  {
+    "en": "coffee shop",
+    "vi": "quán cà phê",
+    "ipa": "/ˈkɒf.i ʃɒp/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 613,
+    "slide": 2079
+  },
+  {
+    "en": "medical office",
+    "vi": "phòng khám / văn phòng y tế",
+    "ipa": "/ˈmed.ɪ.kəl ˈɒf.ɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 614,
+    "slide": 2080
+  },
+  {
+    "en": "bank",
+    "vi": "ngân hàng",
+    "ipa": "/bæŋk/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 615,
+    "slide": 2081
+  },
+  {
+    "en": "electronics store",
+    "vi": "cửa hàng điện tử",
+    "ipa": "/ɪˌlekˈtrɒn.ɪks stɔːr/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 616,
+    "slide": 2082
+  },
+  {
+    "en": "library",
+    "vi": "thư viện",
+    "ipa": "/ˈlaɪ.brər.i/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 617,
+    "slide": 2083
+  },
+  {
+    "en": "Accounting",
+    "vi": "Kế toán",
+    "ipa": "/əˈkaʊn.tɪŋ/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 618,
+    "slide": 2084
+  },
+  {
+    "en": "Legal",
+    "vi": "Pháp chế",
+    "ipa": "/ˈliː.ɡəl/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 619,
+    "slide": 2085
+  },
+  {
+    "en": "Human resources",
+    "vi": "Nhân sự",
+    "ipa": "/ˈhjuː.mən rɪˈzɔː.sɪz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 620,
+    "slide": 2086
+  },
+  {
+    "en": "Security",
+    "vi": "An ninh",
+    "ipa": "/sɪˈkjʊə.rə.ti/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 621,
+    "slide": 2087
+  },
+  {
+    "en": "shopping mall",
+    "vi": "trung tâm thương mại",
+    "ipa": "/shopping mɔːl/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 622,
+    "slide": 2088
+  },
+  {
+    "en": "theater",
+    "vi": "rạp hát",
+    "ipa": "/ˈθɪə.tər/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 623,
+    "slide": 2089
+  },
+  {
+    "en": "sports stadium",
+    "vi": "Trong sân vận động",
+    "ipa": "/spɔːts ˈsteɪ.di.əm/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 624,
+    "slide": 2090
+  },
+  {
+    "en": "law office",
+    "vi": "văn phòng luật",
+    "ipa": "/lɔː ˈɒf.ɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 625,
+    "slide": 2091
+  },
+  {
+    "en": "supermarket",
+    "vi": "siêu thị",
+    "ipa": "/ˈsuː.pəˌmɑː.kɪt/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 626,
+    "slide": 2092
+  },
+  {
+    "en": "medical clinic",
+    "vi": "phòng khám y tế",
+    "ipa": "/ˈmed.ɪ.kəl ˈklɪn.ɪk/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 627,
+    "slide": 2093
+  },
+  {
+    "en": "recreation center",
+    "vi": "trung tâm giải trí",
+    "ipa": "/ˌrek.riˈeɪ.ʃən ˈsen.tər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 628,
+    "slide": 2094
+  },
+  {
+    "en": "parking garage",
+    "vi": "Trong nhà để xe",
+    "ipa": "/ˈpɑː.kɪŋ ˈɡær.ɑːʒ/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 629,
+    "slide": 2095
+  },
+  {
+    "en": "car rental agency",
+    "vi": "đại lý cho thuê xe",
+    "ipa": "/kɑːr ˈren.təl ˈeɪ.dʒən.si/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 630,
+    "slide": 2096
+  },
+  {
+    "en": "baggage claim area",
+    "vi": "khu vực nhận hành lý",
+    "ipa": "/ˈbæɡ.ɪdʒ kleɪm ˈeə.ri.ə/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 631,
+    "slide": 2097
+  },
+  {
+    "en": "phone company",
+    "vi": "công ty điện thoại",
+    "ipa": "/fəʊn ˈkʌm.pə.ni/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 632,
+    "slide": 2098
+  },
+  {
+    "en": "retail store",
+    "vi": "cửa hàng bán lẻ",
+    "ipa": "/ˈriː.teɪl stɔːr/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 633,
+    "slide": 2099
+  },
+  {
+    "en": "hotel",
+    "vi": "khách sạn",
+    "ipa": "/həʊˈtel/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 634,
+    "slide": 2100
+  },
+  {
+    "en": "catering company",
+    "vi": "công ty dịch vụ ăn uống tiệc",
+    "ipa": "/ˈkeɪ.tər.ɪŋ ˈkʌm.pə.ni/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 635,
+    "slide": 2101
+  },
+  {
+    "en": "convenience store",
+    "vi": "cửa hàng tiện lợi",
+    "ipa": "/kənˈviː.ni.əns stɔːr/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 636,
+    "slide": 2102
+  },
+  {
+    "en": "manufacturing plant",
+    "vi": "nhà máy sản xuất",
+    "ipa": "/ˌmæn.jəˈfæk.tʃər.ɪŋ plɑːnt/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 637,
+    "slide": 2103
+  },
+  {
+    "en": "movie theater",
+    "vi": "rạp chiếu phim",
+    "ipa": "/ˈmuː.vi ˈθɪə.tər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 638,
+    "slide": 2104
+  },
+  {
+    "en": "construction firm",
+    "vi": "công ty xây dựng",
+    "ipa": "/kənˈstrʌk.ʃən fɜːm/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 639,
+    "slide": 2105
+  },
+  {
+    "en": "art gallery",
+    "vi": "phòng trưng bày nghệ thuật",
+    "ipa": "/ɑːt ˈɡæl.ər.i/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 640,
+    "slide": 2106
+  },
+  {
+    "en": "cafe",
+    "vi": "quán cà phê",
+    "ipa": "/cafe/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 641,
+    "slide": 2107
+  },
+  {
+    "en": "airport",
+    "vi": "sân bay",
+    "ipa": "/ˈeə.pɔːt/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 642,
+    "slide": 2108
+  },
+  {
+    "en": "bookstore",
+    "vi": "hiệu sách",
+    "ipa": "/ˈbʊk.stɔːr/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 643,
+    "slide": 2109
+  },
+  {
+    "en": "art supply store",
+    "vi": "cửa hàng họa phẩm",
+    "ipa": "/ɑːt səˈplaɪ stɔːr/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 644,
+    "slide": 2110
+  },
+  {
+    "en": "clothing retailer",
+    "vi": "cửa hàng bán lẻ quần áo",
+    "ipa": "/ˈkləʊ.ðɪŋ ˈriː.teɪ.lər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 645,
+    "slide": 2111
+  },
+  {
+    "en": "museum",
+    "vi": "viện bảo tàng",
+    "ipa": "/mjuːˈziː.əm/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 646,
+    "slide": 2112
+  },
+  {
+    "en": "restaurant",
+    "vi": "nhà hàng",
+    "ipa": "/ˈres.trɒnt/",
+    "pos": "n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 647,
+    "slide": 2113
+  },
+  {
+    "en": "crowded train",
+    "vi": "chuyến tàu đông đúc",
+    "ipa": "/ˈkraʊ.dɪd treɪn/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 648,
+    "slide": 2114
+  },
+  {
+    "en": "empty seats",
+    "vi": "chỗ ngồi còn trống",
+    "ipa": "/ˈemp.ti siːts/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 649,
+    "slide": 2115
+  },
+  {
+    "en": "wall socket",
+    "vi": "ổ cắm điện trên tường",
+    "ipa": "/wɔːl ˈsɒk.ɪt/",
+    "pos": "compound n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 650,
+    "slide": 2116
+  },
+  {
+    "en": "health clinic",
+    "vi": "phòng khám sức khỏe",
+    "ipa": "/helθ ˈklɪn.ɪk/",
+    "pos": "compound n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 651,
+    "slide": 2117
+  },
+  {
+    "en": "rate the experience",
+    "vi": "đánh giá trải nghiệm",
+    "ipa": "/reɪt ðə ɪkˈspɪə.ri.əns/",
+    "pos": "v phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 652,
+    "slide": 2118
+  },
+  {
+    "en": "out of power",
+    "vi": "hết pin / cạn năng lượng",
+    "ipa": "/aʊt əv ˈpaʊ.ər/",
+    "pos": "idiom",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 653,
+    "slide": 2119
+  },
+  {
+    "en": "artwork display",
+    "vi": "khu trưng bày tác phẩm nghệ thuật",
+    "ipa": "/ˈɑːt.wɜːk dɪˈspleɪ/",
+    "pos": "compound n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 654,
+    "slide": 2120
+  },
+  {
+    "en": "display area",
+    "vi": "khu trưng bày",
+    "ipa": "/dɪˈspleɪ ˈeə.ri.ə/",
+    "pos": "compound n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 655,
+    "slide": 2121
+  },
+  {
+    "en": "clothing store",
+    "vi": "cửa hàng quần áo",
+    "ipa": "/ˈkləʊ.ðɪŋ stɔːr/",
+    "pos": "compound n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 656,
+    "slide": 2122
+  },
+  {
+    "en": "view available times",
+    "vi": "xem các khung giờ còn trống",
+    "ipa": "/vjuː əˈveɪ.lə.bəl taɪmz/",
+    "pos": "v phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 657,
+    "slide": 2123
+  },
+  {
+    "en": "sculpture exhibit",
+    "vi": "triển lãm điêu khắc",
+    "ipa": "/ˈskʌlp.tʃər ɪɡˈzɪb.ɪt/",
+    "pos": "compound n",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 658,
+    "slide": 2124
+  },
+  {
+    "en": "completed displays",
+    "vi": "các gian trưng bày đã hoàn thành",
+    "ipa": "/kəmˈpliː.tɪd dɪˈspleɪz/",
+    "pos": "phrase",
+    "sectionId": "dang_01_location",
+    "sectionTitle": "Dạng 1.II - Câu hỏi về Địa điểm",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 659,
+    "slide": 2125
+  },
+  {
+    "en": "store cashier",
+    "vi": "Thu ngân cửa hàng",
+    "ipa": "/stɔːr kæʃˈɪər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 660,
+    "slide": 2126
+  },
+  {
+    "en": "restaurant server",
+    "vi": "Nhân viên phục vụ nhà hàng",
+    "ipa": "/ˈres.trɒnt ˈsɜː.vər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 661,
+    "slide": 2127
+  },
+  {
+    "en": "theater director",
+    "vi": "Đạo diễn sân khấu",
+    "ipa": "/ˈθɪə.tər daɪˈrek.tər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 662,
+    "slide": 2128
+  },
+  {
+    "en": "costume designer",
+    "vi": "Nhà thiết kế trang phục",
+    "ipa": "/ˈkɒs.tʃuːm dɪˈzaɪ.nər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 663,
+    "slide": 2129
+  },
+  {
+    "en": "maintenance worker",
+    "vi": "Nhân viên bảo trì",
+    "ipa": "/ˈmeɪn.tən.əns ˈwɜː.kər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 664,
+    "slide": 2130
+  },
+  {
+    "en": "engineer",
+    "vi": "Kỹ sư",
+    "ipa": "/ˌen.dʒɪˈnɪər/",
+    "pos": "n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 665,
+    "slide": 2131
+  },
+  {
+    "en": "plant supervisor",
+    "vi": "Quản đốc nhà máy",
+    "ipa": "/plɑːnt ˈsuː.pə.vaɪ.zər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 666,
+    "slide": 2132
+  },
+  {
+    "en": "Community organizers",
+    "vi": "Ban tổ chức lễ hội",
+    "ipa": "/kəˈmjuː.nə.ti organizers/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 667,
+    "slide": 2133
+  },
+  {
+    "en": "Weather reporters",
+    "vi": "Phóng viên thời tiết",
+    "ipa": "/ˈweð.ər reporters/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 668,
+    "slide": 2134
+  },
+  {
+    "en": "Jewelry designers",
+    "vi": "Nhà thiết kế trang sức",
+    "ipa": "/ˈdʒuː.əl.ri designers/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 669,
+    "slide": 2135
+  },
+  {
+    "en": "Restaurant staff",
+    "vi": "Nhân viên nhà hàng",
+    "ipa": "/ˈres.trɒnt stɑːf/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 670,
+    "slide": 2136
+  },
+  {
+    "en": "Web-site designer",
+    "vi": "Nhà thiết kế trang web",
+    "ipa": "/web site dɪˈzaɪ.nər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 671,
+    "slide": 2137
+  },
+  {
+    "en": "factory worker",
+    "vi": "Công nhân nhà máy",
+    "ipa": "/ˈfæk.tər.i ˈwɜː.kər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 672,
+    "slide": 2138
+  },
+  {
+    "en": "customer service representative",
+    "vi": "Đại diện chăm sóc khách hàng",
+    "ipa": "/ˈkʌs.tə.mər ˈsɜː.vɪs ˌrep.rɪˈzen.tə.tɪv/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 673,
+    "slide": 2139
+  },
+  {
+    "en": "workshop instructor",
+    "vi": "Người hướng dẫn hội thảo",
+    "ipa": "/ˈwɜːk.ʃɒp ɪnˈstrʌk.tər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 674,
+    "slide": 2140
+  },
+  {
+    "en": "product designer",
+    "vi": "Nhà thiết kế sản phẩm",
+    "ipa": "/ˈprɒd.ʌkt dɪˈzaɪ.nər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 675,
+    "slide": 2141
+  },
+  {
+    "en": "Custodian",
+    "vi": "Nhân viên tạp vụ",
+    "ipa": "/custodian/",
+    "pos": "n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 676,
+    "slide": 2142
+  },
+  {
+    "en": "Landscaper",
+    "vi": "Thợ làm vườn",
+    "ipa": "/landscaper/",
+    "pos": "n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 677,
+    "slide": 2143
+  },
+  {
+    "en": "Parking attendant",
+    "vi": "Nhân viên trông giữ xe",
+    "ipa": "/ˈpɑː.kɪŋ attendant/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 678,
+    "slide": 2144
+  },
+  {
+    "en": "interior decorator",
+    "vi": "Nhà trang trí nội thất",
+    "ipa": "/interior decorator/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 679,
+    "slide": 2145
+  },
+  {
+    "en": "property manager",
+    "vi": "Người quản lý bất động sản",
+    "ipa": "/property manager/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 680,
+    "slide": 2146
+  },
+  {
+    "en": "city official",
+    "vi": "Quan chức thành phố",
+    "ipa": "/city əˈfɪʃ.əl/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 681,
+    "slide": 2147
+  },
+  {
+    "en": "chef",
+    "vi": "đầu bếp",
+    "ipa": "/chef/",
+    "pos": "n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 682,
+    "slide": 2148
+  },
+  {
+    "en": "furniture designer",
+    "vi": "nhà thiết kế nội thất",
+    "ipa": "/ˈfɜː.nɪ.tʃər dɪˈzaɪ.nər/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 683,
+    "slide": 2149
+  },
+  {
+    "en": "theater owner",
+    "vi": "chủ rạp hát",
+    "ipa": "/ˈθɪə.tər owner/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 684,
+    "slide": 2150
+  },
+  {
+    "en": "financial adviser",
+    "vi": "Cố vấn tài chính",
+    "ipa": "/financial adviser/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 685,
+    "slide": 2151
+  },
+  {
+    "en": "art gallery owner",
+    "vi": "Chủ phòng tranh nghệ thuật",
+    "ipa": "/ɑːt ˈɡæl.ər.i owner/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 686,
+    "slide": 2152
+  },
+  {
+    "en": "apartment manager",
+    "vi": "Quản lý tòa nhà chung cư",
+    "ipa": "/əˈpɑːt.mənt manager/",
+    "pos": "phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 687,
+    "slide": 2153
+  },
+  {
+    "en": "stage arrangement",
+    "vi": "sự sắp xếp bài trí sân khấu",
+    "ipa": "/steɪdʒ əˈreɪndʒ.mənt/",
+    "pos": "compound n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 688,
+    "slide": 2154
+  },
+  {
+    "en": "accounting firm",
+    "vi": "công ty kế toán",
+    "ipa": "/əˈkaʊn.tɪŋ fɜːm/",
+    "pos": "compound n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 689,
+    "slide": 2155
+  },
+  {
+    "en": "new-hire training",
+    "vi": "đào tạo nhân viên mới tuyển",
+    "ipa": "/njuː haɪər ˈtreɪ.nɪŋ/",
+    "pos": "compound n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 690,
+    "slide": 2156
+  },
+  {
+    "en": "reschedule an appointment",
+    "vi": "dời lại lịch hẹn",
+    "ipa": "/ˌriːˈskedʒ.uːl ən əˈpɔɪnt.mənt/",
+    "pos": "v phrase",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 691,
+    "slide": 2157
+  },
+  {
+    "en": "sporting goods store",
+    "vi": "cửa hàng đồ thể thao",
+    "ipa": "/ˈspɔː.tɪŋ ɡʊdz stɔːr/",
+    "pos": "compound n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 692,
+    "slide": 2158
+  },
+  {
+    "en": "property management",
+    "vi": "quản lý bất động sản",
+    "ipa": "/ˈprɒp.ə.ti ˈmæn.ɪdʒ.mənt/",
+    "pos": "compound n",
+    "sectionId": "dang_01_identity",
+    "sectionTitle": "Dạng 1.III - Câu hỏi về Nghề nghiệp",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 693,
+    "slide": 2159
+  },
+  {
+    "en": "room is poorly lit",
+    "vi": "Căn phòng thiếu ánh sáng",
+    "ipa": "/ruːm ɪz ˈpɔː.li lɪt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 694,
+    "slide": 2160
+  },
+  {
+    "en": "machine is too noisy",
+    "vi": "Máy móc quá ồn ào",
+    "ipa": "/məˈʃiːn ɪz too ˈnɔɪ.zi/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 695,
+    "slide": 2161
+  },
+  {
+    "en": "space is too small",
+    "vi": "Không gian quá nhỏ",
+    "ipa": "/space ɪz too small/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 696,
+    "slide": 2162
+  },
+  {
+    "en": "location is inconvenient",
+    "vi": "Vị trí không thuận tiện",
+    "ipa": "/location ɪz inconvenient/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 697,
+    "slide": 2163
+  },
+  {
+    "en": "Some equipment is not working",
+    "vi": "số thiết bị không hoạt động",
+    "ipa": "/sʌm ɪˈkwɪp.mənt ɪz not ˈwɜː.kɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 698,
+    "slide": 2164
+  },
+  {
+    "en": "Some documents are missing",
+    "vi": "số tài liệu bị thất lạc",
+    "ipa": "/sʌm documents are missing/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 699,
+    "slide": 2165
+  },
+  {
+    "en": "agenda is incorrect",
+    "vi": "Lịch trình cuộc họp bị sai",
+    "ipa": "/agenda ɪz incorrect/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 700,
+    "slide": 2166
+  },
+  {
+    "en": "employee is absent",
+    "vi": "nhân viên vắng mặt",
+    "ipa": "/ɪmˈplɔɪ.iː ɪz absent/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 701,
+    "slide": 2167
+  },
+  {
+    "en": "Some presenters will be late",
+    "vi": "số người thuyết trình sẽ đến muộn",
+    "ipa": "/sʌm presenters will biː late/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 702,
+    "slide": 2168
+  },
+  {
+    "en": "event schedule is incorrect",
+    "vi": "Lịch trình sự kiện không chính xác",
+    "ipa": "/ɪˈvent ˈskedʒ.uːl ɪz incorrect/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 703,
+    "slide": 2169
+  },
+  {
+    "en": "meeting room is too small",
+    "vi": "Phòng họp quá nhỏ",
+    "ipa": "/ˈmiː.tɪŋ ruːm ɪz too small/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 704,
+    "slide": 2170
+  },
+  {
+    "en": "number of meeting rooms",
+    "vi": "Số lượng phòng họp",
+    "ipa": "/number əv ˈmiː.tɪŋ rooms/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 705,
+    "slide": 2171
+  },
+  {
+    "en": "amount of storage space",
+    "vi": "Không gian kho chứa đồ",
+    "ipa": "/amount əv storage space/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 706,
+    "slide": 2172
+  },
+  {
+    "en": "date of a deadline",
+    "vi": "Ngày hết hạn thời hạn",
+    "ipa": "/date əv ə ˈded.laɪn/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 707,
+    "slide": 2173
+  },
+  {
+    "en": "size of a budget",
+    "vi": "Quy mô ngân sách",
+    "ipa": "/size əv ə ˈbʌdʒ.ɪt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 708,
+    "slide": 2174
+  },
+  {
+    "en": "brochure contains an error",
+    "vi": "cuốn tài liệu có lỗi sai",
+    "ipa": "/brochure contains æn error/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 709,
+    "slide": 2175
+  },
+  {
+    "en": "shipment is late",
+    "vi": "chuyến hàng bị trễ",
+    "ipa": "/ˈʃɪp.mənt ɪz late/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 710,
+    "slide": 2176
+  },
+  {
+    "en": "guest list has been misplaced",
+    "vi": "Danh sách khách mời bị thất lạc",
+    "ipa": "/guest lɪst has been ˌmɪsˈpleɪst/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 711,
+    "slide": 2177
+  },
+  {
+    "en": "computer is not working",
+    "vi": "máy tính không hoạt động",
+    "ipa": "/computer ɪz not ˈwɜː.kɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 712,
+    "slide": 2178
+  },
+  {
+    "en": "Some paperwork has been lost",
+    "vi": "số giấy tờ bị thất lạc",
+    "ipa": "/sʌm paperwork has been lost/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 713,
+    "slide": 2179
+  },
+  {
+    "en": "Some equipment is broken",
+    "vi": "số thiết bị bị hỏng",
+    "ipa": "/sʌm ɪˈkwɪp.mənt ɪz ˈbrəʊ.kən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 714,
+    "slide": 2180
+  },
+  {
+    "en": "Some funding was not approved",
+    "vi": "số khoản kinh phí không được duyệt",
+    "ipa": "/sʌm funding wɒz not approved/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 715,
+    "slide": 2181
+  },
+  {
+    "en": "Some designs were rejected",
+    "vi": "số bản thiết kế đã bị từ chối",
+    "ipa": "/sʌm dɪˈzaɪnz were rejected/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 716,
+    "slide": 2182
+  },
+  {
+    "en": "power cord is missing",
+    "vi": "dây nguồn bị thiếu",
+    "ipa": "/ˈpaʊ.ər cord ɪz missing/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 717,
+    "slide": 2183
+  },
+  {
+    "en": "microphone is not functioning properly",
+    "vi": "micro hoạt động không bình thường",
+    "ipa": "/microphone ɪz not functioning properly/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 718,
+    "slide": 2184
+  },
+  {
+    "en": "screen is not displaying an image",
+    "vi": "màn hình không hiển thị hình ảnh",
+    "ipa": "/screen ɪz not displaying æn image/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 719,
+    "slide": 2185
+  },
+  {
+    "en": "battery is not charging",
+    "vi": "viên pin không sạc được",
+    "ipa": "/battery ɪz not charging/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 720,
+    "slide": 2186
+  },
+  {
+    "en": "display area is not clean",
+    "vi": "Khu vực trưng bày chưa sạch sẽ",
+    "ipa": "/dɪˈspleɪ ˈeə.ri.ə ɪz not clean/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 721,
+    "slide": 2187
+  },
+  {
+    "en": "appliance is broken",
+    "vi": "thiết bị gia dụng bị hỏng",
+    "ipa": "/appliance ɪz ˈbrəʊ.kən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 722,
+    "slide": 2188
+  },
+  {
+    "en": "Some bills are not paid",
+    "vi": "số hóa đơn chưa được thanh toán",
+    "ipa": "/sʌm bills are not paid/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 723,
+    "slide": 2189
+  },
+  {
+    "en": "Some materials are missing",
+    "vi": "số tài liệu bị thất lạc",
+    "ipa": "/sʌm məˈtɪə.ri.əlz are missing/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 724,
+    "slide": 2190
+  },
+  {
+    "en": "password does not work",
+    "vi": "Mật khẩu không hoạt động",
+    "ipa": "/password does not work/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 725,
+    "slide": 2191
+  },
+  {
+    "en": "calculation was incorrect",
+    "vi": "Phép tính bị sai",
+    "ipa": "/calculation wɒz incorrect/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 726,
+    "slide": 2192
+  },
+  {
+    "en": "Some interns are unavailable",
+    "vi": "số thực tập sinh không có mặt",
+    "ipa": "/sʌm interns are unavailable/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 727,
+    "slide": 2193
+  },
+  {
+    "en": "Staying under budget",
+    "vi": "Giữ đúng mức ngân sách",
+    "ipa": "/staying under ˈbʌdʒ.ɪt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 728,
+    "slide": 2194
+  },
+  {
+    "en": "Impressing a client",
+    "vi": "Tạo ấn tượng tốt với khách hàng",
+    "ipa": "/impressing ə ˈklaɪ.ənt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 729,
+    "slide": 2195
+  },
+  {
+    "en": "Arriving on time to a meeting",
+    "vi": "Đến cuộc họp đúng giờ",
+    "ipa": "/arriving ɒn taɪm tuː ə ˈmiː.tɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 730,
+    "slide": 2196
+  },
+  {
+    "en": "Satisfying a technical requirement",
+    "vi": "Đáp ứng yêu cầu kỹ thuật",
+    "ipa": "/satisfying ə technical requirement/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 731,
+    "slide": 2197
+  },
+  {
+    "en": "How to lower costs",
+    "vi": "Cách giảm chi phí",
+    "ipa": "/how tuː lower kɒsts/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 732,
+    "slide": 2198
+  },
+  {
+    "en": "When to hold an event",
+    "vi": "Khi nào tổ chức sự kiện",
+    "ipa": "/when tuː hold æn ɪˈvent/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 733,
+    "slide": 2199
+  },
+  {
+    "en": "Who will be in charge of training",
+    "vi": "Ai sẽ chịu trách nhiệm đào tạo",
+    "ipa": "/who will biː ɪn tʃɑːdʒ əv ˈtreɪ.nɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 734,
+    "slide": 2200
+  },
+  {
+    "en": "Where a room will be located",
+    "vi": "Căn phòng sẽ được đặt ở vị trí nào",
+    "ipa": "/where ə ruːm will biː located/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 735,
+    "slide": 2201
+  },
+  {
+    "en": "Not being qualified",
+    "vi": "Không đủ trình độ chuyên môn",
+    "ipa": "/not being qualified/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 736,
+    "slide": 2202
+  },
+  {
+    "en": "Not having enough time",
+    "vi": "Không có đủ thời gian",
+    "ipa": "/not having enough taɪm/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 737,
+    "slide": 2203
+  },
+  {
+    "en": "Losing a reserved seat",
+    "vi": "Mất chỗ ngồi đã đặt trước",
+    "ipa": "/losing ə reserved siːt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 738,
+    "slide": 2204
+  },
+  {
+    "en": "Missing a call",
+    "vi": "Bỏ lỡ một cuộc điện thoại",
+    "ipa": "/missing ə kɔːl/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 739,
+    "slide": 2205
+  },
+  {
+    "en": "invoice is incorrect",
+    "vi": "Hóa đơn bị sai sót",
+    "ipa": "/invoice ɪz incorrect/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 740,
+    "slide": 2206
+  },
+  {
+    "en": "window is broken",
+    "vi": "cửa sổ bị vỡ",
+    "ipa": "/ˈwɪn.dəʊ ɪz ˈbrəʊ.kən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 741,
+    "slide": 2207
+  },
+  {
+    "en": "job is incomplete",
+    "vi": "công việc chưa hoàn thành xong",
+    "ipa": "/dʒɒb ɪz incomplete/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 742,
+    "slide": 2208
+  },
+  {
+    "en": "water pipe is leaking",
+    "vi": "đường ống nước bị rò rỉ",
+    "ipa": "/water pipe ɪz ˈliː.kɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 743,
+    "slide": 2209
+  },
+  {
+    "en": "projector is broken",
+    "vi": "máy chiếu bị hỏng",
+    "ipa": "/prəˈdʒek.tər ɪz ˈbrəʊ.kən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 744,
+    "slide": 2210
+  },
+  {
+    "en": "rent a unit",
+    "vi": "thuê một căn hộ",
+    "ipa": "/rent ə ˈjuː.nɪt/",
+    "pos": "v phrase",
+    "sectionId": "dang_02_problem",
+    "sectionTitle": "Dạng 2.I - Câu hỏi về Vấn đề / Nguyên nhân",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 745,
+    "slide": 2211
+  },
+  {
+    "en": "make an appointment",
+    "vi": "đặt một cuộc hẹn",
+    "ipa": "/meɪk æn əˈpɔɪnt.mənt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 746,
+    "slide": 2212
+  },
+  {
+    "en": "rent a car",
+    "vi": "thuê một chiếc xe hơi",
+    "ipa": "/rent ə kɑːr/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 747,
+    "slide": 2213
+  },
+  {
+    "en": "ask about a fee",
+    "vi": "hỏi về một khoản phí",
+    "ipa": "/ɑːsk əˈbaʊt ə fiː/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 748,
+    "slide": 2214
+  },
+  {
+    "en": "apply for a position",
+    "vi": "ứng tuyển vào một vị trí",
+    "ipa": "/əˈplaɪ fɔːr ə pəˈzɪʃ.ən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 749,
+    "slide": 2215
+  },
+  {
+    "en": "He is moving into a different office",
+    "vi": "Anh ấy đang chuyển sang một văn phòng khác",
+    "ipa": "/he ɪz moving ˈɪn.tuː ə different ˈɒf.ɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 750,
+    "slide": 2216
+  },
+  {
+    "en": "He is meeting with some clients",
+    "vi": "Anh ấy đang gặp gỡ một số khách hàng",
+    "ipa": "/he ɪz ˈmiː.tɪŋ wɪð sʌm clients/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 751,
+    "slide": 2217
+  },
+  {
+    "en": "He has an upcoming business trip",
+    "vi": "Anh ấy sắp có một chuyến công tác",
+    "ipa": "/he has æn upcoming ˈbɪz.nɪs trɪp/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 752,
+    "slide": 2218
+  },
+  {
+    "en": "He has a project deadline",
+    "vi": "Anh ấy có thời hạn hoàn thành dự án",
+    "ipa": "/he has ə ˈprɒdʒ.ekt ˈded.laɪn/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 753,
+    "slide": 2219
+  },
+  {
+    "en": "He has to catch a flight",
+    "vi": "Anh ấy phải kịp chuyến bay",
+    "ipa": "/he has tuː catch ə flaɪt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 754,
+    "slide": 2220
+  },
+  {
+    "en": "He needs time to eat lunch",
+    "vi": "Anh ấy cần thời gian ăn trưa",
+    "ipa": "/he needs taɪm tuː eat lunch/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 755,
+    "slide": 2221
+  },
+  {
+    "en": "He is worried about traffic",
+    "vi": "Anh ấy lo ngại về tình hình giao thông tắc đường",
+    "ipa": "/he ɪz worried əˈbaʊt ˈtræf.ɪk/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 756,
+    "slide": 2222
+  },
+  {
+    "en": "He has to practice a presentation",
+    "vi": "Anh ấy phải luyện tập bài thuyết trình",
+    "ipa": "/he has tuː ˈpræk.tɪs ə ˌprez.ənˈteɪ.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 757,
+    "slide": 2223
+  },
+  {
+    "en": "She could not find a tool",
+    "vi": "Cô ấy không tìm thấy dụng cụ",
+    "ipa": "/she could not find ə tool/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 758,
+    "slide": 2224
+  },
+  {
+    "en": "She had to park far away",
+    "vi": "Cô ấy phải đỗ xe ở xa",
+    "ipa": "/she had tuː park far away/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 759,
+    "slide": 2225
+  },
+  {
+    "en": "She was waiting for an assistant",
+    "vi": "Cô ấy phải đợi một trợ lý",
+    "ipa": "/she wɒz waiting fɔːr æn assistant/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 760,
+    "slide": 2226
+  },
+  {
+    "en": "He has to take a fitness assessment",
+    "vi": "Anh ấy phải làm bài đánh giá thể lực",
+    "ipa": "/he has tuː take ə fitness assessment/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 761,
+    "slide": 2227
+  },
+  {
+    "en": "He has to complete some paperwork",
+    "vi": "Anh ấy phải hoàn thành một số giấy tờ thủ tục",
+    "ipa": "/he has tuː complete sʌm paperwork/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 762,
+    "slide": 2228
+  },
+  {
+    "en": "He wants to practice using some equipment",
+    "vi": "Anh ấy muốn tập thử thiết bị",
+    "ipa": "/he wants tuː ˈpræk.tɪs using sʌm ɪˈkwɪp.mənt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 763,
+    "slide": 2229
+  },
+  {
+    "en": "He wants to tour a fitness center",
+    "vi": "Anh ấy muốn tham quan trung tâm thể hình",
+    "ipa": "/he wants tuː tʊər ə fitness ˈsen.tər/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 764,
+    "slide": 2230
+  },
+  {
+    "en": "interview for a job",
+    "vi": "phỏng vấn xin việc",
+    "ipa": "/ˈɪn.tə.vjuː fɔːr ə dʒɒb/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 765,
+    "slide": 2231
+  },
+  {
+    "en": "make a delivery",
+    "vi": "giao hàng",
+    "ipa": "/meɪk ə delivery/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 766,
+    "slide": 2232
+  },
+  {
+    "en": "complain about a service",
+    "vi": "phàn nàn về một dịch vụ",
+    "ipa": "/complain əˈbaʊt ə ˈsɜː.vɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 767,
+    "slide": 2233
+  },
+  {
+    "en": "buy some merchandise",
+    "vi": "mua sắm một món đồ",
+    "ipa": "/buy sʌm merchandise/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 768,
+    "slide": 2234
+  },
+  {
+    "en": "She damaged an item",
+    "vi": "Cô ấy làm hỏng một món đồ",
+    "ipa": "/she ˈdæm.ɪdʒd æn ˈaɪ.təm/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 769,
+    "slide": 2235
+  },
+  {
+    "en": "She arrived late to work",
+    "vi": "Cô ấy đi làm muộn",
+    "ipa": "/she arrived late tuː work/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 770,
+    "slide": 2236
+  },
+  {
+    "en": "She missed a meeting",
+    "vi": "Cô ấy bỏ lỡ một cuộc họp",
+    "ipa": "/she missed ə ˈmiː.tɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 771,
+    "slide": 2237
+  },
+  {
+    "en": "She forgot to file a report",
+    "vi": "Cô ấy quên nộp một bản báo cáo",
+    "ipa": "/she forgot tuː file ə rɪˈpɔːt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 772,
+    "slide": 2238
+  },
+  {
+    "en": "He lost the woman's phone number",
+    "vi": "Anh ấy làm mất số điện thoại của người phụ nữ",
+    "ipa": "/he lost ðə woman s fəʊn number/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 773,
+    "slide": 2239
+  },
+  {
+    "en": "coupon has expired",
+    "vi": "phiếu giảm giá đã hết hạn",
+    "ipa": "/coupon has expired/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 774,
+    "slide": 2240
+  },
+  {
+    "en": "item is out of stock",
+    "vi": "món hàng đã hết",
+    "ipa": "/ˈaɪ.təm ɪz out əv stock/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 775,
+    "slide": 2241
+  },
+  {
+    "en": "delivery is delayed",
+    "vi": "chuyến giao hàng bị trì hoãn",
+    "ipa": "/delivery ɪz delayed/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 776,
+    "slide": 2242
+  },
+  {
+    "en": "complain about a delay",
+    "vi": "phàn nàn về sự chậm trễ",
+    "ipa": "/complain əˈbaʊt ə dɪˈleɪ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 777,
+    "slide": 2243
+  },
+  {
+    "en": "ask about a company program",
+    "vi": "hỏi về một chương trình của công ty",
+    "ipa": "/ɑːsk əˈbaʊt ə ˈkʌm.pə.ni program/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 778,
+    "slide": 2244
+  },
+  {
+    "en": "confirm a management decision",
+    "vi": "xác nhận quyết định của ban quản lý",
+    "ipa": "/kənˈfɜːm ə management decision/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 779,
+    "slide": 2245
+  },
+  {
+    "en": "compliment their work",
+    "vi": "khen ngợi công việc của họ",
+    "ipa": "/compliment their work/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 780,
+    "slide": 2246
+  },
+  {
+    "en": "ask for some advice",
+    "vi": "xin một số lời khuyên",
+    "ipa": "/ɑːsk fɔːr sʌm advice/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 781,
+    "slide": 2247
+  },
+  {
+    "en": "change an assignment",
+    "vi": "thay đổi phân công công việc",
+    "ipa": "/change æn əˈsaɪn.mənt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 782,
+    "slide": 2248
+  },
+  {
+    "en": "update an order",
+    "vi": "cập nhật thêm món vào đơn đặt hàng",
+    "ipa": "/update æn order/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 783,
+    "slide": 2249
+  },
+  {
+    "en": "She began university studies",
+    "vi": "Cô ấy bắt đầu học đại học",
+    "ipa": "/she began university studies/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 784,
+    "slide": 2250
+  },
+  {
+    "en": "Her commute was too long",
+    "vi": "Quãng đường đi làm quá dài",
+    "ipa": "/her kəˈmjuːt wɒz too long/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 785,
+    "slide": 2251
+  },
+  {
+    "en": "company closed",
+    "vi": "Công ty đã đóng cửa",
+    "ipa": "/ˈkʌm.pə.ni closed/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 786,
+    "slide": 2252
+  },
+  {
+    "en": "pay was low",
+    "vi": "Mức lương quá thấp",
+    "ipa": "/pay wɒz ləʊ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 787,
+    "slide": 2253
+  },
+  {
+    "en": "see a museum exhibit",
+    "vi": "xem một cuộc triển lãm bảo tàng",
+    "ipa": "/see ə mjuːˈziː.əm exhibit/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 788,
+    "slide": 2254
+  },
+  {
+    "en": "receive an award",
+    "vi": "nhận một giải thưởng",
+    "ipa": "/receive æn award/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 789,
+    "slide": 2255
+  },
+  {
+    "en": "look at some real estate",
+    "vi": "xem một số bất động sản",
+    "ipa": "/look æt sʌm ˈrɪəl ɪˌsteɪt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_why",
+    "sectionTitle": "Dạng 2.II - Câu hỏi Why",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 790,
+    "slide": 2256
+  },
+  {
+    "en": "Some feedback",
+    "vi": "số phản hồi / ý kiến đánh giá",
+    "ipa": "/sʌm ˈfiːd.bæk/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 791,
+    "slide": 2257
+  },
+  {
+    "en": "Some assistance",
+    "vi": "sự trợ giúp",
+    "ipa": "/sʌm əˈsɪs.təns/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 792,
+    "slide": 2258
+  },
+  {
+    "en": "Some references",
+    "vi": "số tài liệu tham khảo",
+    "ipa": "/sʌm ˈref.ər.ən.sɪz/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 793,
+    "slide": 2259
+  },
+  {
+    "en": "Some dates",
+    "vi": "vài ngày tháng",
+    "ipa": "/sʌm deɪts/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 794,
+    "slide": 2260
+  },
+  {
+    "en": "Additional office supplies",
+    "vi": "Thêm đồ dùng văn phòng",
+    "ipa": "/additional ˈɒf.ɪs supplies/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 795,
+    "slide": 2261
+  },
+  {
+    "en": "Extra team members",
+    "vi": "Thêm thành viên trong nhóm",
+    "ipa": "/extra team members/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 796,
+    "slide": 2262
+  },
+  {
+    "en": "different office",
+    "vi": "văn phòng khác",
+    "ipa": "/different ˈɒf.ɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 797,
+    "slide": 2263
+  },
+  {
+    "en": "sample document",
+    "vi": "tài liệu mẫu",
+    "ipa": "/sample document/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 798,
+    "slide": 2264
+  },
+  {
+    "en": "Comparing competitors' prices",
+    "vi": "So sánh giá cả của đối thủ cạnh tranh",
+    "ipa": "/comparing competitors prices/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 799,
+    "slide": 2265
+  },
+  {
+    "en": "Purchasing new software",
+    "vi": "Mua phần mềm mới",
+    "ipa": "/purchasing njuː ˈsɒft.weər/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 800,
+    "slide": 2266
+  },
+  {
+    "en": "Postponing a training session",
+    "vi": "Hoãn một buổi đào tạo",
+    "ipa": "/postponing ə ˈtreɪ.nɪŋ session/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 801,
+    "slide": 2267
+  },
+  {
+    "en": "Arranging a teleconference",
+    "vi": "Sắp xếp một cuộc họp từ xa qua điện thoại",
+    "ipa": "/arranging ə teleconference/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 802,
+    "slide": 2268
+  },
+  {
+    "en": "Attend a trade show",
+    "vi": "Tham dự triển lãm thương mại",
+    "ipa": "/attend ə treɪd ʃəʊ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 803,
+    "slide": 2269
+  },
+  {
+    "en": "Join a leadership council",
+    "vi": "Gia nhập hội đồng lãnh đạo",
+    "ipa": "/join ə leadership council/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 804,
+    "slide": 2270
+  },
+  {
+    "en": "Mentor a colleague",
+    "vi": "Hướng dẫn kèm cặp đồng nghiệp",
+    "ipa": "/mentor ə colleague/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 805,
+    "slide": 2271
+  },
+  {
+    "en": "Accept a new position",
+    "vi": "Nhận một vị trí công tác mới",
+    "ipa": "/accept ə njuː pəˈzɪʃ.ən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 806,
+    "slide": 2272
+  },
+  {
+    "en": "Place an order",
+    "vi": "Đặt một đơn hàng",
+    "ipa": "/place æn order/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 807,
+    "slide": 2273
+  },
+  {
+    "en": "Recommend a product",
+    "vi": "Gợi ý / tư vấn một sản phẩm",
+    "ipa": "/ˌrek.əˈmend ə ˈprɒd.ʌkt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 808,
+    "slide": 2274
+  },
+  {
+    "en": "Explain a feature",
+    "vi": "Giải thích một tính năng",
+    "ipa": "/explain ə feature/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 809,
+    "slide": 2275
+  },
+  {
+    "en": "Reduce a price",
+    "vi": "Giảm giá bán",
+    "ipa": "/reduce ə praɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_request",
+    "sectionTitle": "Dạng 2.III.1 - Câu hỏi Yêu cầu",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 810,
+    "slide": 2276
+  },
+  {
+    "en": "Invite a friend to join her",
+    "vi": "Mời một người bạn cùng tham gia",
+    "ipa": "/ɪnˈvaɪt ə frend tuː join her/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 811,
+    "slide": 2277
+  },
+  {
+    "en": "Try a free class",
+    "vi": "Thử một lớp học miễn phí",
+    "ipa": "/traɪ ə friː klɑːs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 812,
+    "slide": 2278
+  },
+  {
+    "en": "Return at a later time",
+    "vi": "Quay lại vào lúc khác",
+    "ipa": "/rɪˈtɜːn æt ə later taɪm/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 813,
+    "slide": 2279
+  },
+  {
+    "en": "Sign up for a membership",
+    "vi": "Đăng ký thẻ hội viên",
+    "ipa": "/saɪn up fɔːr ə ˈmem.bə.ʃɪp/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 814,
+    "slide": 2280
+  },
+  {
+    "en": "Wearing a jacket",
+    "vi": "Mặc áo khoác",
+    "ipa": "/wearing ə ˈdʒæk.ɪt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 815,
+    "slide": 2281
+  },
+  {
+    "en": "Using a credit card",
+    "vi": "Dùng thẻ tín dụng",
+    "ipa": "/using ə ˈkred.ɪt kɑːd/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 816,
+    "slide": 2282
+  },
+  {
+    "en": "Bringing a camera",
+    "vi": "Mang theo máy ảnh",
+    "ipa": "/bringing ə ˈkæm.rə/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 817,
+    "slide": 2283
+  },
+  {
+    "en": "Looking for a coupon",
+    "vi": "Tìm phiếu giảm giá",
+    "ipa": "/looking fɔːr ə coupon/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 818,
+    "slide": 2284
+  },
+  {
+    "en": "Check a Web site",
+    "vi": "Kiểm tra trang web",
+    "ipa": "/check ə web site/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 819,
+    "slide": 2285
+  },
+  {
+    "en": "Call a taxi",
+    "vi": "Gọi xe taxi",
+    "ipa": "/kɔːl ə ˈtæk.si/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 820,
+    "slide": 2286
+  },
+  {
+    "en": "Go to the library",
+    "vi": "Đi đến thư viện",
+    "ipa": "/go tuː ðə ˈlaɪ.brər.i/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 821,
+    "slide": 2287
+  },
+  {
+    "en": "Replacing a membership card",
+    "vi": "Cấp lại thẻ thành viên",
+    "ipa": "/replacing ə ˈmem.bə.ʃɪp kɑːd/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 822,
+    "slide": 2288
+  },
+  {
+    "en": "Calling back later",
+    "vi": "Gọi lại sau",
+    "ipa": "/calling back later/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 823,
+    "slide": 2289
+  },
+  {
+    "en": "Purchasing an online subscription",
+    "vi": "Mua gói đăng ký trực tuyến",
+    "ipa": "/purchasing æn ˈɒn.laɪn səbˈskrɪp.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 824,
+    "slide": 2290
+  },
+  {
+    "en": "Updating contact information",
+    "vi": "Cập nhật thông tin liên lạc",
+    "ipa": "/updating contact information/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 825,
+    "slide": 2291
+  },
+  {
+    "en": "Going to the train station together",
+    "vi": "Cùng nhau đi đến ga tàu",
+    "ipa": "/going tuː ðə treɪn ˈsteɪ.ʃən together/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 826,
+    "slide": 2292
+  },
+  {
+    "en": "Searching online for an address",
+    "vi": "Tìm kiếm địa chỉ trên mạng",
+    "ipa": "/searching ˈɒn.laɪn fɔːr æn address/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 827,
+    "slide": 2293
+  },
+  {
+    "en": "Inviting another colleague",
+    "vi": "Mời thêm một đồng nghiệp khác",
+    "ipa": "/inviting another colleague/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 828,
+    "slide": 2294
+  },
+  {
+    "en": "Submitting some travel receipts",
+    "vi": "Nộp một số biên lai chi phí đi lại",
+    "ipa": "/submitting sʌm ˈtræv.əl receipts/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_suggest",
+    "sectionTitle": "Dạng 2.III.2 - Câu hỏi Gợi ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 829,
+    "slide": 2295
+  },
+  {
+    "en": "Some employees will join a medical practice",
+    "vi": "số nhân viên sẽ gia nhập phòng khám",
+    "ipa": "/sʌm employees will join ə ˈmed.ɪ.kəl ˈpræk.tɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 830,
+    "slide": 2296
+  },
+  {
+    "en": "list will be available electronically",
+    "vi": "danh sách sẽ có sẵn dưới dạng điện tử",
+    "ipa": "/lɪst will biː əˈveɪ.lə.bəl ɪˌlekˈtrɒn.ɪ.kəl.i/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 831,
+    "slide": 2297
+  },
+  {
+    "en": "doctor will begin a medical procedure",
+    "vi": "bác sĩ sẽ bắt đầu một thủ thuật y tế",
+    "ipa": "/ˈdɒk.tər will begin ə ˈmed.ɪ.kəl prəˈsiː.dʒər/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 832,
+    "slide": 2298
+  },
+  {
+    "en": "Rent storage space",
+    "vi": "Thuê không gian kho lưu trữ",
+    "ipa": "/rent storage space/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 833,
+    "slide": 2299
+  },
+  {
+    "en": "Organize a fashion show",
+    "vi": "Tổ chức một buổi trình diễn thời trang",
+    "ipa": "/organize ə fashion ʃəʊ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 834,
+    "slide": 2300
+  },
+  {
+    "en": "Update some equipment",
+    "vi": "Cập nhật một số thiết bị",
+    "ipa": "/update sʌm ɪˈkwɪp.mənt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 835,
+    "slide": 2301
+  },
+  {
+    "en": "Complete a task at a later time",
+    "vi": "Hoàn thành công việc vào một lúc khác",
+    "ipa": "/complete ə task æt ə later taɪm/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 836,
+    "slide": 2302
+  },
+  {
+    "en": "Ask for a meal to be delivered",
+    "vi": "Yêu cầu giao một bữa ăn",
+    "ipa": "/ɑːsk fɔːr ə meal tuː biː delivered/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 837,
+    "slide": 2303
+  },
+  {
+    "en": "Speak with a manager",
+    "vi": "Nói chuyện với một người quản lý",
+    "ipa": "/speak wɪð ə manager/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 838,
+    "slide": 2304
+  },
+  {
+    "en": "Conduct some background research",
+    "vi": "Tiến hành một số nghiên cứu bối cảnh",
+    "ipa": "/kənˈdʌkt sʌm background research/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 839,
+    "slide": 2305
+  },
+  {
+    "en": "inconvenient location",
+    "vi": "Địa điểm không thuận tiện",
+    "ipa": "/inconvenient location/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 840,
+    "slide": 2306
+  },
+  {
+    "en": "missed deadline",
+    "vi": "Bỏ lỡ một thời hạn công việc",
+    "ipa": "/missed ˈded.laɪn/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 841,
+    "slide": 2307
+  },
+  {
+    "en": "parking fee",
+    "vi": "Phí đỗ xe",
+    "ipa": "/ˈpɑː.kɪŋ fiː/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 842,
+    "slide": 2308
+  },
+  {
+    "en": "canceled flight",
+    "vi": "chuyến bay bị hủy",
+    "ipa": "/ˈkæn.səld flaɪt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 843,
+    "slide": 2309
+  },
+  {
+    "en": "product launch",
+    "vi": "Lễ ra mắt sản phẩm",
+    "ipa": "/ˈprɒd.ʌkt launch/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 844,
+    "slide": 2310
+  },
+  {
+    "en": "inspection",
+    "vi": "đợt thanh tra an toàn",
+    "ipa": "/inspection/",
+    "pos": "n",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 845,
+    "slide": 2311
+  },
+  {
+    "en": "cooking class",
+    "vi": "lớp học nấu ăn",
+    "ipa": "/cooking klɑːs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 846,
+    "slide": 2312
+  },
+  {
+    "en": "interview",
+    "vi": "buổi phỏng vấn",
+    "ipa": "/ˈɪn.tə.vjuː/",
+    "pos": "n",
+    "sectionId": "dang_02_what_say",
+    "sectionTitle": "Dạng 2.III.3 - Câu hỏi 'What does the man/woman say?'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 847,
+    "slide": 2313
+  },
+  {
+    "en": "Office hours",
+    "vi": "Giờ làm việc văn phòng",
+    "ipa": "/ˈɒf.ɪs aʊəz/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 848,
+    "slide": 2314
+  },
+  {
+    "en": "Job requirements",
+    "vi": "Yêu cầu công việc",
+    "ipa": "/dʒɒb rɪˈkwaɪə.mənts/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 849,
+    "slide": 2315
+  },
+  {
+    "en": "computer system",
+    "vi": "Hệ thống máy tính",
+    "ipa": "/computer ˈsɪs.təm/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 850,
+    "slide": 2316
+  },
+  {
+    "en": "company policy",
+    "vi": "Chính sách của công ty",
+    "ipa": "/ˈkʌm.pə.ni ˈpɒl.ə.si/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 851,
+    "slide": 2317
+  },
+  {
+    "en": "corporate policy was updated",
+    "vi": "chính sách công ty đã được cập nhật",
+    "ipa": "/corporate ˈpɒl.ə.si wɒz updated/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 852,
+    "slide": 2318
+  },
+  {
+    "en": "supply order was mishandled",
+    "vi": "đơn đặt hàng vật tư bị xử lý sai",
+    "ipa": "/səˈplaɪ order wɒz mishandled/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 853,
+    "slide": 2319
+  },
+  {
+    "en": "Client contracts were renewed",
+    "vi": "Các hợp đồng của khách hàng đã được gia hạn",
+    "ipa": "/ˈklaɪ.ənt contracts were renewed/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 854,
+    "slide": 2320
+  },
+  {
+    "en": "New employees were hired",
+    "vi": "Nhân viên mới đã được tuyển dụng",
+    "ipa": "/njuː employees were hired/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 855,
+    "slide": 2321
+  },
+  {
+    "en": "office door would not lock",
+    "vi": "cánh cửa văn phòng không khóa được",
+    "ipa": "/ˈɒf.ɪs dɔːr would not lɒk/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 856,
+    "slide": 2322
+  },
+  {
+    "en": "sink was installed incorrectly",
+    "vi": "bồn rửa được lắp đặt không đúng cách",
+    "ipa": "/sɪŋk wɒz ɪnˈstɔːld ˌɪn.kəˈrekt.li/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 857,
+    "slide": 2323
+  },
+  {
+    "en": "elevator stopped working",
+    "vi": "thang máy đã ngừng hoạt động",
+    "ipa": "/ˈel.ɪ.veɪ.tər stɒpt ˈwɜː.kɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 858,
+    "slide": 2324
+  },
+  {
+    "en": "document was lost",
+    "vi": "tài liệu đã bị thất lạc",
+    "ipa": "/document wɒz lost/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 859,
+    "slide": 2325
+  },
+  {
+    "en": "Poor maintenance",
+    "vi": "Bảo trì kém",
+    "ipa": "/poor ˈmeɪn.tən.əns/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 860,
+    "slide": 2326
+  },
+  {
+    "en": "Weather conditions",
+    "vi": "Điều kiện thời tiết",
+    "ipa": "/ˈweð.ər kənˈdɪʃ.ənz/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 861,
+    "slide": 2327
+  },
+  {
+    "en": "Low-quality products",
+    "vi": "Sản phẩm chất lượng thấp",
+    "ipa": "/ləʊ quality products/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 862,
+    "slide": 2328
+  },
+  {
+    "en": "Inexperienced workers",
+    "vi": "Công nhân thiếu kinh nghiệm",
+    "ipa": "/inexperienced workers/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 863,
+    "slide": 2329
+  },
+  {
+    "en": "career fair",
+    "vi": "hội chợ việc làm",
+    "ipa": "/kəˈrɪər feər/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 864,
+    "slide": 2330
+  },
+  {
+    "en": "retirement celebration",
+    "vi": "buổi lễ mừng nghỉ hưu",
+    "ipa": "/rɪˈtaɪə.mənt ˌsel.əˈbreɪ.ʃən/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 865,
+    "slide": 2331
+  },
+  {
+    "en": "promotional event",
+    "vi": "sự kiện quảng bá khuyến mãi",
+    "ipa": "/prəˈməʊ.ʃən.əl ɪˈvent/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 866,
+    "slide": 2332
+  },
+  {
+    "en": "anniversary party",
+    "vi": "bữa tiệc kỷ niệm ngày thành lập",
+    "ipa": "/ˌæn.ɪˈvɜː.sər.i ˈpɑː.ti/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 867,
+    "slide": 2333
+  },
+  {
+    "en": "hire new employees",
+    "vi": "tuyển dụng nhân viên mới",
+    "ipa": "/haɪər njuː ɪmˈplɔɪ.iːz/",
+    "pos": "v phrase",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 868,
+    "slide": 2334
+  },
+  {
+    "en": "out of order",
+    "vi": "hỏng hóc, ngừng hoạt động",
+    "ipa": "/aʊt əv ˈɔː.dər/",
+    "pos": "idiom",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 869,
+    "slide": 2335
+  },
+  {
+    "en": "break down",
+    "vi": "bị hỏng hóc",
+    "ipa": "/breɪk daʊn/",
+    "pos": "phrasal verb",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 870,
+    "slide": 2336
+  },
+  {
+    "en": "maintenance crew",
+    "vi": "đội ngũ bảo trì",
+    "ipa": "/ˈmeɪn.tən.əns kruː/",
+    "pos": "compound n",
+    "sectionId": "dang_02_what_according",
+    "sectionTitle": "Dạng 2.III.4 - Câu hỏi 'According to...'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 871,
+    "slide": 2337
+  },
+  {
+    "en": "Give a tour",
+    "vi": "Dẫn một chuyến tham quan",
+    "ipa": "/ɡɪv ə tʊər/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 872,
+    "slide": 2338
+  },
+  {
+    "en": "Read a manual",
+    "vi": "Đọc một cuốn sách hướng dẫn",
+    "ipa": "/read ə ˈmæn.ju.əl/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 873,
+    "slide": 2339
+  },
+  {
+    "en": "Call a vendor",
+    "vi": "Gọi điện cho nhà cung cấp",
+    "ipa": "/kɔːl ə ˈven.dər/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 874,
+    "slide": 2340
+  },
+  {
+    "en": "Rearrange a display",
+    "vi": "Sắp xếp lại khu vực trưng bày",
+    "ipa": "/ˌriː.əˈreɪndʒ ə dɪˈspleɪ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 875,
+    "slide": 2341
+  },
+  {
+    "en": "Speak with a colleague",
+    "vi": "Nói chuyện với một đồng nghiệp",
+    "ipa": "/speak wɪð ə colleague/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 876,
+    "slide": 2342
+  },
+  {
+    "en": "Conduct an interview",
+    "vi": "Tiến hành một cuộc phỏng vấn",
+    "ipa": "/kənˈdʌkt æn ˈɪn.tə.vjuː/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 877,
+    "slide": 2343
+  },
+  {
+    "en": "Calculate a budget",
+    "vi": "Tính toán ngân sách",
+    "ipa": "/calculate ə ˈbʌdʒ.ɪt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 878,
+    "slide": 2344
+  },
+  {
+    "en": "Draft a travel itinerary",
+    "vi": "Lên lịch trình chuyến đi",
+    "ipa": "/draft ə ˈtræv.əl aɪˈtɪn.ər.ər.i/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 879,
+    "slide": 2345
+  },
+  {
+    "en": "Check some equipment",
+    "vi": "Kiểm tra một số thiết bị",
+    "ipa": "/check sʌm ɪˈkwɪp.mənt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 880,
+    "slide": 2346
+  },
+  {
+    "en": "Speak with a manager",
+    "vi": "Nói chuyện với một người quản lý",
+    "ipa": "/speak wɪð ə manager/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 881,
+    "slide": 2347
+  },
+  {
+    "en": "Load a vehicle",
+    "vi": "Chất đồ lên một chiếc xe",
+    "ipa": "/ləʊd ə ˈvɪə.kəl/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 882,
+    "slide": 2348
+  },
+  {
+    "en": "Go to a store",
+    "vi": "Đi đến một cửa hàng",
+    "ipa": "/go tuː ə stɔːr/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 883,
+    "slide": 2349
+  },
+  {
+    "en": "Postpone a meeting",
+    "vi": "Hoãn một cuộc họp",
+    "ipa": "/pəʊstˈpəʊn ə ˈmiː.tɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 884,
+    "slide": 2350
+  },
+  {
+    "en": "Follow up on a request",
+    "vi": "Theo dõi / kiểm tra tiến độ một yêu cầu",
+    "ipa": "/follow up ɒn ə rɪˈkwest/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 885,
+    "slide": 2351
+  },
+  {
+    "en": "Check a piece of equipment",
+    "vi": "Kiểm tra một món trang thiết bị",
+    "ipa": "/check ə piece əv ɪˈkwɪp.mənt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 886,
+    "slide": 2352
+  },
+  {
+    "en": "Review a policy",
+    "vi": "Xem xét lại một chính sách",
+    "ipa": "/review ə ˈpɒl.ə.si/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 887,
+    "slide": 2353
+  },
+  {
+    "en": "Taste some samples",
+    "vi": "Nếm thử một số mẫu thức ăn",
+    "ipa": "/teɪst sʌm ˈsɑːm.pəlz/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 888,
+    "slide": 2354
+  },
+  {
+    "en": "Request some maintenance",
+    "vi": "Yêu cầu bảo trì / sửa chữa máy móc",
+    "ipa": "/rɪˈkwest sʌm ˈmeɪn.tən.əns/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 889,
+    "slide": 2355
+  },
+  {
+    "en": "Print another report",
+    "vi": "In một bản báo cáo khác",
+    "ipa": "/prɪnt another rɪˈpɔːt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 890,
+    "slide": 2356
+  },
+  {
+    "en": "Check some specifications",
+    "vi": "Kiểm tra một số thông số kỹ thuật",
+    "ipa": "/check sʌm ˌspes.ɪ.fɪˈkeɪ.ʃənz/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 891,
+    "slide": 2357
+  },
+  {
+    "en": "lead a tour",
+    "vi": "dẫn dắt một đoàn tham quan",
+    "ipa": "/liːd ə tʊər/",
+    "pos": "v phrase",
+    "sectionId": "dang_02_what_do_next",
+    "sectionTitle": "Dạng 2.III.5 - Câu hỏi 'Do next...'",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 892,
+    "slide": 2358
+  },
+  {
+    "en": "recommend that the woman take the bus",
+    "vi": "gợi ý người phụ nữ đi xe buýt",
+    "ipa": "/ˌrek.əˈmend that ðə woman take ðə bʌs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 893,
+    "slide": 2359
+  },
+  {
+    "en": "request that a bus route be extended",
+    "vi": "yêu cầu kéo dài tuyến xe buýt",
+    "ipa": "/rɪˈkwest that ə bʌs ruːt biː ɪkˈstend.ɪd/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 894,
+    "slide": 2360
+  },
+  {
+    "en": "correct an error on a map",
+    "vi": "sửa một lỗi trên bản đồ",
+    "ipa": "/correct æn error ɒn ə map/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 895,
+    "slide": 2361
+  },
+  {
+    "en": "complain about traffic noise",
+    "vi": "phàn nàn về tiếng ồn giao thông",
+    "ipa": "/complain əˈbaʊt ˈtræf.ɪk nɔɪz/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 896,
+    "slide": 2362
+  },
+  {
+    "en": "compliment a colleague",
+    "vi": "khen ngợi một đồng nghiệp",
+    "ipa": "/compliment ə colleague/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 897,
+    "slide": 2363
+  },
+  {
+    "en": "reassure a client",
+    "vi": "trấn an một khách hàng",
+    "ipa": "/reassure ə ˈklaɪ.ənt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 898,
+    "slide": 2364
+  },
+  {
+    "en": "request an update to an order",
+    "vi": "yêu cầu cập nhật lại đơn hàng",
+    "ipa": "/rɪˈkwest æn update tuː æn order/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 899,
+    "slide": 2365
+  },
+  {
+    "en": "express surprise at a decision",
+    "vi": "bày tỏ sự ngạc nhiên trước một quyết định",
+    "ipa": "/express surprise æt ə decision/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 900,
+    "slide": 2366
+  },
+  {
+    "en": "He can fix a problem",
+    "vi": "Anh ấy có thể tự sửa được vấn đề đó",
+    "ipa": "/he can fɪks ə ˈprɒb.ləm/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 901,
+    "slide": 2367
+  },
+  {
+    "en": "He has experience in customer service",
+    "vi": "Anh ấy có kinh nghiệm trong việc chăm sóc khách hàng",
+    "ipa": "/he has ɪkˈspɪə.ri.əns ɪn ˈkʌs.tə.mər ˈsɜː.vɪs/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 902,
+    "slide": 2368
+  },
+  {
+    "en": "He is not interested in an offer",
+    "vi": "Anh ấy không quan tâm đến một lời mời",
+    "ipa": "/he ɪz not interested ɪn æn offer/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 903,
+    "slide": 2369
+  },
+  {
+    "en": "candidate should decide quickly",
+    "vi": "Ứng viên nên đưa ra quyết định nhanh chóng",
+    "ipa": "/candidate should decide ˈkwɪk.li/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 904,
+    "slide": 2370
+  },
+  {
+    "en": "alternative plan needs to be approved",
+    "vi": "kế hoạch thay thế cần phải được phê duyệt",
+    "ipa": "/alternative plæn needs tuː biː approved/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 905,
+    "slide": 2371
+  },
+  {
+    "en": "Additional funding will be required",
+    "vi": "Sẽ cần bổ sung thêm nguồn kinh phí",
+    "ipa": "/additional funding will biː required/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 906,
+    "slide": 2372
+  },
+  {
+    "en": "manager will change a timeline",
+    "vi": "Người quản lý sẽ thay đổi tiến độ thời gian",
+    "ipa": "/manager will change ə timeline/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 907,
+    "slide": 2373
+  },
+  {
+    "en": "She thinks an activity has been popular",
+    "vi": "Cô ấy nghĩ hoạt động đó rất được ưa chuộng",
+    "ipa": "/she thinks æn ækˈtɪv.ə.ti has been ˈpɒp.jə.lər/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 908,
+    "slide": 2374
+  },
+  {
+    "en": "under construction",
+    "vi": "đang trong quá trình thi công xây dựng",
+    "ipa": "/ˈʌn.dər kənˈstrʌk.ʃən/",
+    "pos": "idiom",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 909,
+    "slide": 2375
+  },
+  {
+    "en": "all booked",
+    "vi": "đã kín lịch / hết chỗ",
+    "ipa": "/ɔːl bʊkt/",
+    "pos": "phrase",
+    "sectionId": "dang_02_what_imply",
+    "sectionTitle": "Dạng 2.III.6 - Câu hỏi Ngụ ý",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 910,
+    "slide": 2376
+  },
+  {
+    "en": "March",
+    "vi": "Tháng 3",
+    "ipa": "/march/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 911,
+    "slide": 2377
+  },
+  {
+    "en": "April",
+    "vi": "Tháng 4",
+    "ipa": "/april/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 912,
+    "slide": 2378
+  },
+  {
+    "en": "May",
+    "vi": "Tháng 5",
+    "ipa": "/may/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 913,
+    "slide": 2379
+  },
+  {
+    "en": "June",
+    "vi": "Tháng 6",
+    "ipa": "/june/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 914,
+    "slide": 2380
+  },
+  {
+    "en": "At Nico's Italian Trattoria",
+    "vi": "Quán Ý Nico",
+    "ipa": "/æt nico s italian ˌtræt.əˈriː.ə/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 915,
+    "slide": 2381
+  },
+  {
+    "en": "At Kim's Korean Grill",
+    "vi": "Quán Nướng Hàn Quốc Kim",
+    "ipa": "/æt kim s korean grill/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 916,
+    "slide": 2382
+  },
+  {
+    "en": "At Ana's Steakhouse",
+    "vi": "Nhà hàng Bít tết Ana",
+    "ipa": "/æt ana s ˈsteɪk.haʊs/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 917,
+    "slide": 2383
+  },
+  {
+    "en": "At Aruna's Indian Buffet",
+    "vi": "Nhà hàng Buffet Ấn Độ Aruna",
+    "ipa": "/æt aruna s indian ˈbʊf.eɪ/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 918,
+    "slide": 2384
+  },
+  {
+    "en": "26D",
+    "vi": "Ghế 26D",
+    "ipa": "/d/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 919,
+    "slide": 2385
+  },
+  {
+    "en": "26F",
+    "vi": "Ghế 26F",
+    "ipa": "/f/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 920,
+    "slide": 2386
+  },
+  {
+    "en": "27D",
+    "vi": "Ghế 27D",
+    "ipa": "/d/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 921,
+    "slide": 2387
+  },
+  {
+    "en": "27E",
+    "vi": "Ghế 27E",
+    "ipa": "/e/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 922,
+    "slide": 2388
+  },
+  {
+    "en": "Los Angeles",
+    "vi": "Đến Los Angeles",
+    "ipa": "/los angeles/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 923,
+    "slide": 2389
+  },
+  {
+    "en": "San Antonio",
+    "vi": "Đến San Antonio",
+    "ipa": "/san antonio/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 924,
+    "slide": 2390
+  },
+  {
+    "en": "San Jose",
+    "vi": "Đến San Jose",
+    "ipa": "/san jose/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 925,
+    "slide": 2391
+  },
+  {
+    "en": "Las Vegas",
+    "vi": "Đến Las Vegas",
+    "ipa": "/las vegas/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 926,
+    "slide": 2392
+  },
+  {
+    "en": "F-12",
+    "vi": "Mẫu F-12",
+    "ipa": "/f/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 927,
+    "slide": 2393
+  },
+  {
+    "en": "A-66",
+    "vi": "Mẫu A-66",
+    "ipa": "/ə/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 928,
+    "slide": 2394
+  },
+  {
+    "en": "N-48",
+    "vi": "Mẫu N-48",
+    "ipa": "/n/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 929,
+    "slide": 2395
+  },
+  {
+    "en": "C-94",
+    "vi": "Mẫu C-94",
+    "ipa": "/c/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 930,
+    "slide": 2396
+  },
+  {
+    "en": "jacket",
+    "vi": "Áo khoác",
+    "ipa": "/ˈdʒæk.ɪt/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 931,
+    "slide": 2397
+  },
+  {
+    "en": "sweater",
+    "vi": "Áo len",
+    "ipa": "/ˈswet.ər/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 932,
+    "slide": 2398
+  },
+  {
+    "en": "scarf",
+    "vi": "Khăn quàng cổ",
+    "ipa": "/skɑːf/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 933,
+    "slide": 2399
+  },
+  {
+    "en": "T-shirt",
+    "vi": "Áo thun",
+    "ipa": "/t ʃɜːt/",
+    "pos": "n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 934,
+    "slide": 2400
+  },
+  {
+    "en": "Building 1",
+    "vi": "Đến Tòa nhà 1",
+    "ipa": "/ˈbɪl.dɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 935,
+    "slide": 2401
+  },
+  {
+    "en": "Building 2",
+    "vi": "Đến Tòa nhà 2",
+    "ipa": "/ˈbɪl.dɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 936,
+    "slide": 2402
+  },
+  {
+    "en": "Building 3",
+    "vi": "Đến Tòa nhà 3",
+    "ipa": "/ˈbɪl.dɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 937,
+    "slide": 2403
+  },
+  {
+    "en": "Building 4",
+    "vi": "Đến Tòa nhà 4",
+    "ipa": "/ˈbɪl.dɪŋ/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 938,
+    "slide": 2404
+  },
+  {
+    "en": "It is a Monday",
+    "vi": "Hôm nay là thứ Hai",
+    "ipa": "/it ɪz ə monday/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 939,
+    "slide": 2405
+  },
+  {
+    "en": "It is after 5 P.M",
+    "vi": "Lúc này đã sau 5 giờ chiều",
+    "ipa": "/it ɪz ˈɑːf.tər p m/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 940,
+    "slide": 2406
+  },
+  {
+    "en": "She is a student",
+    "vi": "Cô ấy là sinh viên",
+    "ipa": "/she ɪz ə student/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 941,
+    "slide": 2407
+  },
+  {
+    "en": "She is a member",
+    "vi": "Cô ấy là thành viên bảo tàng",
+    "ipa": "/she ɪz ə ˈmem.bər/",
+    "pos": "phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Câu hỏi & 4 Phương án",
+    "source": "Câu hỏi & 4 Phương án",
+    "id": 942,
+    "slide": 2408
+  },
+  {
+    "en": "bus route",
+    "vi": "tuyến đường xe buýt",
+    "ipa": "/bʌs ruːt/",
+    "pos": "compound n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 943,
+    "slide": 2409
+  },
+  {
+    "en": "across from the park",
+    "vi": "đối diện công viên",
+    "ipa": "/əˈkrɒs frɒm ðə pɑːk/",
+    "pos": "prep phrase",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 944,
+    "slide": 2410
+  },
+  {
+    "en": "regular ticket",
+    "vi": "vé phổ thông / vé thường",
+    "ipa": "/ˈreɡ.jə.lər ˈtɪk.ɪt/",
+    "pos": "compound n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 945,
+    "slide": 2411
+  },
+  {
+    "en": "bus fare",
+    "vi": "tiền vé xe buýt",
+    "ipa": "/bʌs feər/",
+    "pos": "compound n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 946,
+    "slide": 2412
+  },
+  {
+    "en": "inexpensive",
+    "vi": "không đắt / giá phải chăng",
+    "ipa": "/ˌɪn.ɪkˈspen.sɪv/",
+    "pos": "adj",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 947,
+    "slide": 2413
+  },
+  {
+    "en": "discount ticket",
+    "vi": "vé giảm giá",
+    "ipa": "/ˈdɪs.kaʊnt ˈtɪk.ɪt/",
+    "pos": "compound n",
+    "sectionId": "dang_visual_questions",
+    "sectionTitle": "V. KẾT HỢP HÌNH ẢNH - Luyện tập",
+    "category": "Transcript bài nghe",
+    "source": "Transcript bài nghe",
+    "id": 948,
+    "slide": 2414
   }
 ];
