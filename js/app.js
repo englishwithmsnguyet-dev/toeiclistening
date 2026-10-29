@@ -651,6 +651,11 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Chiến thuật làm bài"
         },
         {
+            type: "item",
+            id: "part03_trabai_all",
+            title: "🎯 TRẢ BÀI TỪ VỰNG PART 03"
+        },
+        {
             type: "group",
             title: "I. Câu hỏi bối cảnh",
             items: [
@@ -1883,9 +1888,32 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         
         const isGeneral = id === "overview" || id === "tips";
+        const isAllTrabai = id === "part03_trabai_all";
         const panelSectionsBar = document.getElementById("panel-sections-bar");
         if (panelSectionsBar) {
             panelSectionsBar.style.display = isGeneral ? "none" : "flex";
+        }
+
+        if (isAllTrabai) {
+            breadParent.textContent = "Luyện tập Từ vựng";
+            breadCurrent.textContent = "🎯 TRẢ BÀI TỪ VỰNG PART 03";
+            panelTitle.textContent = "🎯 TRẢ BÀI TỪ VỰNG PART 03 (533 TỪ)";
+
+            const theoryTabBtn = document.getElementById("sec-btn-theory");
+            const vocabularyTabBtn = document.getElementById("sec-btn-vocabulary");
+            const examplesTabBtn = document.getElementById("sec-btn-examples");
+            const practiceTabBtn = document.getElementById("sec-btn-practice");
+            const trabaiTabBtn = document.getElementById("sec-btn-trabai");
+
+            if (theoryTabBtn) theoryTabBtn.classList.add("hidden");
+            if (vocabularyTabBtn) vocabularyTabBtn.classList.add("hidden");
+            if (examplesTabBtn) examplesTabBtn.classList.add("hidden");
+            if (practiceTabBtn) practiceTabBtn.classList.add("hidden");
+            if (trabaiTabBtn) trabaiTabBtn.classList.remove("hidden");
+
+            state.part03ActiveTab = "trabai";
+            renderPanelTab("trabai");
+            return;
         }
         
         const section = state.part03Data.find(item => item.id === id);
@@ -1960,6 +1988,16 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
+        const hasTrabai = (section.vocabulary && section.vocabulary.length > 0) || (window.part03TraBaiData && window.part03TraBaiData.some(item => item.sectionId === id));
+        const trabaiTabBtn = document.getElementById("sec-btn-trabai");
+        if (trabaiTabBtn) {
+            if (hasTrabai) {
+                trabaiTabBtn.classList.remove("hidden");
+            } else {
+                trabaiTabBtn.classList.add("hidden");
+            }
+        }
+
         // Auto-switch to the first tab that has content
         let targetTab = "theory";
         if (section.theory && section.theory.length > 0) {
@@ -2003,13 +2041,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
         
-        const section = state.part03Data.find(item => item.id === state.part03ActiveSection);
+        const section = state.part03Data.find(item => item.id === state.part03ActiveSection) || { id: state.part03ActiveSection, title: "TRẢ BÀI TỪ VỰNG PART 03" };
         if (!section) return;
         
         if (tabName === "theory") {
             renderTheory(section);
         } else if (tabName === "vocabulary") {
             renderVocabulary(section);
+        } else if (tabName === "trabai") {
+            renderTraBaiP3(section);
         } else if (tabName === "examples") {
             renderExamples(section);
         } else if (tabName === "practice") {
@@ -2417,6 +2457,11 @@ document.addEventListener("DOMContentLoaded", () => {
         theoryContentArea.appendChild(docContainer);
     }
      
+    window.switchPart03Tab = function(tabName) {
+        state.part03ActiveTab = tabName;
+        renderPanelTab(tabName);
+    };
+
     // B. VOCABULARY
     function renderVocabulary(section) {
         vocabularyContentArea.innerHTML = "";
@@ -2425,6 +2470,23 @@ document.addEventListener("DOMContentLoaded", () => {
             vocabularyContentArea.innerHTML = "<p style='color: var(--text-muted); font-weight: 700; padding: 20px;'>Không có từ vựng cho phần này.</p>";
             return;
         }
+
+        // Invitation Banner leading to Tra Bai Tu Vung
+        const trabaiBanner = document.createElement("div");
+        trabaiBanner.style.cssText = "background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); border: 1.5px solid #bfdbfe; border-radius: 14px; padding: 16px 20px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);";
+        trabaiBanner.innerHTML = `
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 2rem;">🎯</span>
+                <div>
+                    <h4 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #1e3a8a;">TRẢ BÀI TỪ VỰNG TƯƠNG TÁC</h4>
+                    <p style="margin: 4px 0 0 0; color: #475569; font-size: 0.92rem;">Lật thẻ flashcard 3D, làm trắc nghiệm phản xạ, nghe gõ chữ chính tả (Dictation) để thuộc 100% từ vựng.</p>
+                </div>
+            </div>
+            <button type="button" onclick="window.switchPart03Tab('trabai')" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 10px 22px; border-radius: 10px; font-weight: 800; font-size: 0.95rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+                <span>🚀 VÀO TRẢ BÀI NGAY</span>
+            </button>
+        `;
+        vocabularyContentArea.appendChild(trabaiBanner);
         
         section.vocabulary.forEach((slide, sIdx) => {
             const card = document.createElement("div");
@@ -2521,6 +2583,1452 @@ document.addEventListener("DOMContentLoaded", () => {
             vocabularyContentArea.appendChild(card);
         });
     }
+
+    /* =============================================================
+       PART 03 - TRẢ BÀI TỪ VỰNG TƯƠNG TÁC (FLASHCARD, QUIZ, DICTATION, LIST)
+       533 Core TOEIC Listening Vocabulary Items across 12 Question Types
+       ============================================================= */
+
+    function getTraBaiP3FilteredItems() {
+        const allData = window.part03TraBaiData || [];
+        const tbs = window.traBaiP3State;
+        if (!tbs || tbs.scope === "all") return allData;
+        return allData.filter(item => item.sectionId === tbs.scope);
+    }
+
+    function saveTraBaiP3Learned() {
+        if (!window.traBaiP3State) return;
+        try {
+            localStorage.setItem("p3_trabai_learned_ids", JSON.stringify(Array.from(window.traBaiP3State.learnedIds)));
+        } catch (e) {
+            console.error("Error saving p3 learned ids:", e);
+        }
+    }
+
+    function renderTraBaiP3(section) {
+        const container = document.getElementById("trabai-content-area-p3");
+        if (!container) return;
+
+        if (!window.part03TraBaiData || window.part03TraBaiData.length === 0) {
+            container.innerHTML = `<div style="text-align: center; padding: 50px; color: #64748b; font-size: 1.1rem;">Đang tải dữ liệu trả bài từ vựng Part 03...</div>`;
+            return;
+        }
+
+        const allData = window.part03TraBaiData;
+
+        // Initialize state if not present
+        if (!window.traBaiP3State) {
+            let savedLearned = [];
+            try {
+                savedLearned = JSON.parse(localStorage.getItem("p3_trabai_learned_ids") || "[]");
+            } catch (e) { savedLearned = []; }
+
+            window.traBaiP3State = {
+                mode: 'flashcard',
+                scope: (section && section.id && section.id !== 'part03_trabai_all' && section.id !== 'overview' && section.id !== 'tips') ? section.id : 'all',
+                cardIndex: 0,
+                isFlipped: false,
+                learnedIds: new Set(savedLearned),
+                // Quiz state
+                quizBatch: 'all',
+                quizQuestions: [],
+                quizIndex: 0,
+                quizAnswered: false,
+                quizScore: 0,
+                quizFinished: false,
+                quizReview: [],
+                // Dictation state
+                dictBatch: 'all',
+                dictQuestions: [],
+                dictIndex: 0,
+                dictScore: 0,
+                dictAnswered: false,
+                dictFinished: false,
+                dictReview: [],
+                dictAutoPlay: true,
+                // List state
+                searchQuery: '',
+                categoryFilter: 'all',
+                statusFilter: 'all'
+            };
+        } else {
+            // Align scope if student navigated to a specific section and hasn't chosen "all"
+            if (section && section.id && section.id !== 'part03_trabai_all' && section.id !== 'overview' && section.id !== 'tips') {
+                if (window.traBaiP3State.scope !== 'all' && window.traBaiP3State.scope !== section.id) {
+                    window.traBaiP3State.scope = section.id;
+                    window.traBaiP3State.cardIndex = 0;
+                }
+            }
+        }
+
+        // Attach Part 3 global keydown listener once
+        if (!window.tb3KeyHandlerAttached) {
+            window.tb3KeyHandlerAttached = true;
+            document.addEventListener("keydown", (e) => {
+                const viewP3 = document.getElementById("view-part3");
+                if (!viewP3 || !viewP3.classList.contains("active")) return;
+                if (state.part03ActiveTab !== "trabai") return;
+                if (!window.traBaiP3State) return;
+                const mode = window.traBaiP3State.mode;
+
+                // Flashcard shortcuts (when not typing in an input)
+                if (mode === "flashcard" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+                    if (e.code === "Space") {
+                        e.preventDefault();
+                        window.tb3FlipCard();
+                    } else if (e.key === "ArrowLeft") {
+                        e.preventDefault();
+                        window.tb3PrevCard();
+                    } else if (e.key === "ArrowRight") {
+                        e.preventDefault();
+                        window.tb3NextCard();
+                    } else if (e.key === "1") {
+                        window.tb3MarkCard(false);
+                    } else if (e.key === "2") {
+                        window.tb3MarkCard(true);
+                    }
+                }
+
+                // Quiz shortcuts
+                if (mode === "quiz" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+                    const tbs = window.traBaiP3State;
+                    if (tbs.quizAnswered) {
+                        if (e.key === "Enter" || e.code === "Space") {
+                            e.preventDefault();
+                            window.tb3NextQuizQuestion();
+                        }
+                    } else if (tbs.quizQuestions && tbs.quizQuestions.length > 0) {
+                        const key = e.key.toUpperCase();
+                        let choiceIdx = -1;
+                        if (['1', 'A'].includes(key)) choiceIdx = 0;
+                        else if (['2', 'B'].includes(key)) choiceIdx = 1;
+                        else if (['3', 'C'].includes(key)) choiceIdx = 2;
+                        else if (['4', 'D'].includes(key)) choiceIdx = 3;
+
+                        if (choiceIdx !== -1) {
+                            const optBox = document.getElementById("tb3-quiz-options-box");
+                            if (optBox) {
+                                const btns = optBox.querySelectorAll(".tb-quiz-opt");
+                                if (btns[choiceIdx]) btns[choiceIdx].click();
+                            }
+                        }
+                    }
+                }
+
+                // Dictation shortcuts
+                if (mode === "dictation") {
+                    const tbs = window.traBaiP3State;
+                    if ((e.ctrlKey || e.altKey) && e.code === "Space") {
+                        e.preventDefault();
+                        if (tbs.dictQuestions && tbs.dictQuestions[tbs.dictIndex]) {
+                            playTTS(tbs.dictQuestions[tbs.dictIndex].en);
+                        }
+                    }
+                }
+            });
+        }
+
+        const tbs = window.traBaiP3State;
+        const currentItems = getTraBaiP3FilteredItems();
+        const totalItemsCount = currentItems.length;
+        const learnedInScope = currentItems.filter(item => tbs.learnedIds.has(item.id)).length;
+        const percentLearned = totalItemsCount > 0 ? Math.min(100, Math.round((learnedInScope / totalItemsCount) * 100)) : 0;
+
+        const scopeOptions = [
+            { id: "all", title: "🌟 Toàn bộ Part 03 (533 từ vựng)" },
+            { id: "dang_01_topic", title: "1.I - Chủ đề bài nghe (56 từ)" },
+            { id: "dang_01_location", title: "1.II - Địa điểm bài nghe (195 từ)" },
+            { id: "dang_01_identity", title: "1.III - Danh tính / Nghề nghiệp (130 từ)" },
+            { id: "dang_02_problem", title: "2.I - Vấn đề / Rắc rối (24 từ)" },
+            { id: "dang_02_why", title: "2.II - Lý do / Mục đích (16 từ)" },
+            { id: "dang_02_what_request", title: "2.III - Yêu cầu / Đề nghị (16 từ)" },
+            { id: "dang_02_what_suggest", title: "2.IV - Gợi ý / Khuyên bảo (16 từ)" },
+            { id: "dang_02_what_say", title: "2.V - Thông tin người nói đề cập (16 từ)" },
+            { id: "dang_02_what_according", title: "2.VI - According to... (16 từ)" },
+            { id: "dang_02_what_do_next", title: "2.VII - Hành động tiếp theo (16 từ)" },
+            { id: "dang_02_what_imply", title: "2.VIII - Câu hỏi ngụ ý (16 từ)" },
+            { id: "dang_visual_questions", title: "3 - Câu hỏi kết hợp Hình ảnh / Biểu đồ (16 từ)" }
+        ];
+
+        container.innerHTML = `
+            <div class="tb-main-container">
+                <!-- TOP HEADER CARD: STATS & CLEAN SCOPE SELECTION -->
+                <div class="tb-header-card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
+                        <div>
+                            <div style="display: flex; align-items: center; gap: 8px;">
+                                <span style="font-size: 1.5rem;">🎯</span>
+                                <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--text-main); margin: 0;">
+                                    TRẢ BÀI TỪ VỰNG: PART 03 - SHORT CONVERSATIONS
+                                </h2>
+                            </div>
+                            <p style="color: #64748b; font-size: 0.95rem; margin-top: 6px; margin-bottom: 0;">
+                                Hệ thống <strong>533 từ vựng cốt lõi</strong> qua 12 dạng câu hỏi TOEIC Listening Part 3.
+                            </p>
+                        </div>
+
+                        <!-- Progress stat pill -->
+                        <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 12px; padding: 10px 18px; text-align: right; min-width: 180px;">
+                            <div style="font-size: 0.8rem; font-weight: 700; color: #166534; text-transform: uppercase; letter-spacing: 0.05em;">TIẾN ĐỘ THUỘC TỪ</div>
+                            <div style="font-size: 1.4rem; font-weight: 800; color: #15803d; line-height: 1.2;">
+                                <span id="tb3-learned-count">${learnedInScope}</span> / <span id="tb3-total-count">${totalItemsCount}</span> <span id="tb3-percent-label" style="font-size: 0.95rem; font-weight: 700;">(${percentLearned}%)</span>
+                            </div>
+                            <div style="width: 100%; background: #dcfce7; height: 6px; border-radius: 4px; margin-top: 6px; overflow: hidden;">
+                                <div id="tb3-progress-fill" style="width: ${percentLearned}%; height: 100%; background: linear-gradient(90deg, #22c55e, #16a34a); transition: width 0.3s ease;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Scope Selection Dropdown -->
+                    <div style="margin-top: 18px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #f8fafc; border: 1px solid #e2e8f0; padding: 10px 16px; border-radius: 12px;">
+                        <div style="display: flex; align-items: center; gap: 6px; font-weight: 700; color: #334155; font-size: 0.9rem;">
+                            <span>🔍</span> PHẠM VI ÔN TẬP:
+                        </div>
+                        <select id="tb3-scope-select" onchange="window.tb3ChangeScope(this.value)" style="flex: 1; min-width: 260px; max-width: 480px; padding: 8px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-weight: 700; font-size: 0.92rem; color: #1e293b; background: #ffffff; cursor: pointer; outline: none;">
+                            ${scopeOptions.map(opt => `<option value="${opt.id}" ${tbs.scope === opt.id ? 'selected' : ''}>${opt.title}</option>`).join('')}
+                        </select>
+                    </div>
+
+                    <!-- Mode Switcher Nav (4 modes: Flashcard, Quiz, Dictation, List) -->
+                    <div class="tb-modes-nav" style="max-width: 720px; margin-top: 18px;">
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'flashcard' ? 'active' : ''}" onclick="window.tb3SetMode('flashcard')">
+                            <span>🗂️</span> Lật thẻ Flashcard
+                        </button>
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'quiz' ? 'active' : ''}" onclick="window.tb3SetMode('quiz')">
+                            <span>⚡</span> Trắc nghiệm phản xạ
+                        </button>
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'dictation' ? 'active' : ''}" onclick="window.tb3SetMode('dictation')">
+                            <span>✍️</span> Nghe & Gõ chữ
+                        </button>
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'list' ? 'active' : ''}" onclick="window.tb3SetMode('list')">
+                            <span>📋</span> Tra cứu toàn bộ
+                        </button>
+                    </div>
+                </div>
+
+                <!-- MAIN WORKSPACE ACCORDING TO ACTIVE MODE -->
+                <div id="tb3-active-workspace"></div>
+            </div>
+        `;
+
+        window.tb3RenderActiveMode();
+    }
+
+    window.tb3ChangeScope = function(newScope) {
+        if (!window.traBaiP3State) return;
+        window.traBaiP3State.scope = newScope;
+        window.traBaiP3State.cardIndex = 0;
+        window.traBaiP3State.isFlipped = false;
+        window.traBaiP3State.quizQuestions = [];
+        window.traBaiP3State.quizFinished = false;
+        window.traBaiP3State.dictQuestions = [];
+        window.traBaiP3State.dictFinished = false;
+
+        window.tb3UpdateHeaderProgress();
+        window.tb3RenderActiveMode();
+    };
+
+    window.tb3UpdateHeaderProgress = function() {
+        const tbs = window.traBaiP3State;
+        if (!tbs) return;
+        const items = getTraBaiP3FilteredItems();
+        const total = items.length;
+        const learned = items.filter(it => tbs.learnedIds.has(it.id)).length;
+        const percent = total > 0 ? Math.min(100, Math.round((learned / total) * 100)) : 0;
+
+        const learnedEl = document.getElementById("tb3-learned-count");
+        const totalEl = document.getElementById("tb3-total-count");
+        const percentEl = document.getElementById("tb3-percent-label");
+        const fillEl = document.getElementById("tb3-progress-fill");
+
+        if (learnedEl) learnedEl.textContent = learned;
+        if (totalEl) totalEl.textContent = total;
+        if (percentEl) percentEl.textContent = `(${percent}%)`;
+        if (fillEl) fillEl.style.width = `${percent}%`;
+    };
+
+    window.tb3SetMode = function(mode) {
+        if (!window.traBaiP3State) return;
+        window.traBaiP3State.mode = mode;
+        window.traBaiP3State.isFlipped = false;
+        document.querySelectorAll(".tb-modes-nav .tb-mode-btn").forEach(btn => {
+            btn.classList.remove("active");
+        });
+        if (typeof event !== "undefined" && event && event.currentTarget) {
+            event.currentTarget.classList.add("active");
+        }
+        window.tb3RenderActiveMode();
+    };
+
+    window.tb3RenderActiveMode = function() {
+        const workspace = document.getElementById("tb3-active-workspace");
+        if (!workspace) return;
+        const mode = window.traBaiP3State.mode;
+
+        if (mode === "flashcard") {
+            window.tb3RenderFlashcardView(workspace);
+        } else if (mode === "quiz") {
+            window.tb3RenderQuizView(workspace);
+        } else if (mode === "dictation") {
+            window.tb3RenderDictationView(workspace);
+        } else if (mode === "list") {
+            window.tb3RenderListView(workspace);
+        }
+    };
+
+    // ================= FLASHCARD MODE =================
+    window.tb3RenderFlashcardView = function(workspace) {
+        const items = getTraBaiP3FilteredItems();
+        if (items.length === 0) {
+            workspace.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 40px; text-align: center;">
+                    <p style="color: #64748b;">Chưa có dữ liệu từ vựng cho phạm vi này.</p>
+                </div>
+            `;
+            return;
+        }
+
+        const tbs = window.traBaiP3State;
+        if (tbs.cardIndex >= items.length) tbs.cardIndex = 0;
+        if (tbs.cardIndex < 0) tbs.cardIndex = items.length - 1;
+
+        workspace.innerHTML = `
+            <div style="display: flex; flex-direction: column; align-items: center; width: 100%;">
+                <!-- 3D FLIP CARD CONTAINER -->
+                <div id="tb3-card-wrapper" class="tb-card-wrapper" onclick="window.tb3FlipCard()">
+                    <div id="tb3-active-card-inner" class="tb-card-inner ${tbs.isFlipped ? 'flipped' : ''}">
+                        <!-- FRONT OF CARD -->
+                        <div class="tb-card-front" id="tb3-card-front-content"></div>
+                        <!-- BACK OF CARD -->
+                        <div class="tb-card-back" id="tb3-card-back-content"></div>
+                    </div>
+                </div>
+
+                <!-- ACTION BUTTONS: MARK LEARNED & NAVIGATION -->
+                <div style="width: 100%; max-width: 660px; margin-top: 20px; display: flex; flex-direction: column; gap: 14px;">
+                    <!-- Row 1: Learned Status Buttons -->
+                    <div style="display: flex; justify-content: center; gap: 16px;">
+                        <button type="button" class="tb-ctrl-btn tb-btn-unlearned" onclick="window.tb3MarkCard(false)" title="Chưa nhớ (Phím 1)">
+                            <span>❌ Chưa nhớ (Phím 1)</span>
+                        </button>
+                        <button type="button" class="tb-ctrl-btn tb-btn-learned" onclick="window.tb3MarkCard(true)" title="Đã thuộc (Phím 2)">
+                            <span>✔️ Đã thuộc (Phím 2)</span>
+                        </button>
+                    </div>
+
+                    <!-- Row 2: Nav Controls -->
+                    <div class="tb-controls-bar">
+                        <button type="button" class="tb-ctrl-btn" onclick="window.tb3PrevCard()" title="Thẻ trước (Phím ←)">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                            Trước
+                        </button>
+                        
+                        <div style="font-weight: 800; color: #475569; font-size: 1.05rem; padding: 6px 14px; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+                            Thẻ <span id="tb3-card-curr-num">${tbs.cardIndex + 1}</span> / <span id="tb3-card-total-num">${items.length}</span>
+                        </div>
+
+                        <button type="button" class="tb-ctrl-btn" onclick="window.tb3NextCard()" title="Thẻ tiếp (Phím →)">
+                            Tiếp
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                        </button>
+
+                        <button type="button" class="tb-ctrl-btn" onclick="window.tb3ShuffleCards()" title="Xáo trộn thứ tự các thẻ">
+                            <span>🔀 Xáo trộn</span>
+                        </button>
+                    </div>
+
+                    <!-- Keyboard navigation guide -->
+                    <div style="text-align: center; color: #94a3b8; font-size: 0.85rem; margin-top: 4px;">
+                        💡 <strong>Phím tắt:</strong> [← / →]: Chuyển thẻ &nbsp;•&nbsp; [Phím Cách / Click]: Lật thẻ &nbsp;•&nbsp; [Phím 1]: Chưa nhớ &nbsp;•&nbsp; [Phím 2]: Đã thuộc
+                    </div>
+                </div>
+            </div>
+        `;
+
+        window.tb3UpdateCardContentOnly();
+    };
+
+    window.tb3UpdateCardContentOnly = function() {
+        const items = getTraBaiP3FilteredItems();
+        const tbs = window.traBaiP3State;
+        if (!items || items.length === 0) return;
+        if (tbs.cardIndex >= items.length) tbs.cardIndex = 0;
+        const item = items[tbs.cardIndex];
+
+        const frontEl = document.getElementById("tb3-card-front-content");
+        const backEl = document.getElementById("tb3-card-back-content");
+        const currNumEl = document.getElementById("tb3-card-curr-num");
+        const totalNumEl = document.getElementById("tb3-card-total-num");
+        if (currNumEl) currNumEl.textContent = tbs.cardIndex + 1;
+        if (totalNumEl) totalNumEl.textContent = items.length;
+
+        const isLearned = tbs.learnedIds.has(item.id);
+
+        if (frontEl) {
+            frontEl.innerHTML = `
+                <!-- Top Header on Front -->
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                        <span style="background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; padding: 4px 12px; border-radius: 20px; font-size: 0.82rem; font-weight: 800;">
+                            ${item.sectionTitle || 'Part 03'}
+                        </span>
+                        <span style="background: #f1f5f9; color: #475569; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 700;">
+                            ${item.category}
+                        </span>
+                    </div>
+                    ${isLearned ? `
+                        <span style="background: #dcfce7; color: #15803d; border: 1px solid #86efac; padding: 4px 10px; border-radius: 20px; font-size: 0.8rem; font-weight: 800; display: inline-flex; align-items: center; gap: 4px;">
+                            ✔️ Đã thuộc
+                        </span>
+                    ` : ''}
+                </div>
+
+                <!-- Center Content on Front -->
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 12px; margin: auto 0; text-align: center;">
+                    <div style="font-size: ${item.en.length > 25 ? '1.8rem' : '2.3rem'}; font-weight: 800; color: #0284c7; line-height: 1.35; max-width: 540px;">
+                        ${item.en}
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap; justify-content: center;">
+                        ${item.ipa ? `<span style="font-family: 'Consolas', 'Courier New', monospace; font-size: 1.15rem; color: #64748b; font-weight: 600;">${item.ipa}</span>` : ''}
+                        ${item.pos ? `<span style="font-style: italic; background: #e0f2fe; color: #0369a1; padding: 2px 8px; border-radius: 6px; font-size: 0.85rem; font-weight: 700;">(${item.pos})</span>` : ''}
+                    </div>
+                    <button type="button" onclick="event.stopPropagation(); playTTS('${item.en.replace(/'/g, "\'")}', event)" style="background: #f0f9ff; border: 1.5px solid #bae6fd; color: #0284c7; padding: 8px 20px; border-radius: 24px; font-size: 0.95rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(2,132,199,0.1); transition: all 0.2s;" onmouseover="this.style.background='#e0f2fe'" onmouseout="this.style.background='#f0f9ff'">
+                        <span>🔊</span> Nghe phát âm
+                    </button>
+                </div>
+
+                <!-- Bottom Hint on Front -->
+                <div style="font-size: 0.88rem; color: #94a3b8; display: flex; align-items: center; gap: 6px;">
+                    <span>💡 Click vào thẻ hoặc bấm phím Cách để lật xem nghĩa tiếng Việt</span>
+                </div>
+            `;
+        }
+
+        if (backEl) {
+            backEl.innerHTML = `
+                <!-- Top Header on Back -->
+                <div style="width: 100%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                    <span style="font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: #166534;">
+                        🇻🇳 NGHĨA TIẾNG VIỆT
+                    </span>
+                    <span style="font-size: 0.82rem; font-weight: 700; color: #15803d; background: #dcfce7; padding: 4px 12px; border-radius: 20px;">
+                        ${item.category}
+                    </span>
+                </div>
+
+                <!-- Center Content on Back -->
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 14px; margin: auto 0; text-align: center;">
+                    <div style="font-size: ${item.vi.length > 30 ? '1.8rem' : '2.2rem'}; font-weight: 800; color: #15803d; line-height: 1.35; max-width: 540px;">
+                        ${item.vi}
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; font-size: 1.25rem; font-weight: 600; color: #0369a1; flex-wrap: wrap; justify-content: center;">
+                        <span>${item.en}</span>
+                        ${item.ipa ? `<span style="font-family: monospace; font-size: 1.05rem; color: #64748b;">${item.ipa}</span>` : ''}
+                        <span onclick="event.stopPropagation(); playTTS('${item.en.replace(/'/g, "\'")}', event)" style="cursor: pointer; opacity: 0.8; font-size: 1.15rem;" title="Nghe lại">🔊</span>
+                    </div>
+                </div>
+
+                <!-- Bottom Hint on Back -->
+                <div style="font-size: 0.88rem; color: #166534; display: flex; align-items: center; gap: 6px;">
+                    <span>💡 Click vào thẻ để lật lại mặt tiếng Anh</span>
+                </div>
+            `;
+        }
+    };
+
+    window.tb3FlipCard = function() {
+        const tbs = window.traBaiP3State;
+        if (!tbs) return;
+        tbs.isFlipped = !tbs.isFlipped;
+        const inner = document.getElementById("tb3-active-card-inner");
+        if (inner) {
+            if (tbs.isFlipped) inner.classList.add("flipped");
+            else inner.classList.remove("flipped");
+        }
+    };
+
+    window.tb3PrevCard = function() {
+        const items = getTraBaiP3FilteredItems();
+        if (items.length === 0) return;
+        const tbs = window.traBaiP3State;
+        tbs.isFlipped = false;
+        const inner = document.getElementById("tb3-active-card-inner");
+        if (inner) inner.classList.remove("flipped");
+        tbs.cardIndex = (tbs.cardIndex - 1 + items.length) % items.length;
+        window.tb3UpdateCardContentOnly();
+    };
+
+    window.tb3NextCard = function() {
+        const items = getTraBaiP3FilteredItems();
+        if (items.length === 0) return;
+        const tbs = window.traBaiP3State;
+        tbs.isFlipped = false;
+        const inner = document.getElementById("tb3-active-card-inner");
+        if (inner) inner.classList.remove("flipped");
+        tbs.cardIndex = (tbs.cardIndex + 1) % items.length;
+        window.tb3UpdateCardContentOnly();
+    };
+
+    window.tb3ShuffleCards = function() {
+        const items = getTraBaiP3FilteredItems();
+        if (items.length === 0) return;
+        const tbs = window.traBaiP3State;
+        tbs.cardIndex = Math.floor(Math.random() * items.length);
+        tbs.isFlipped = false;
+        const inner = document.getElementById("tb3-active-card-inner");
+        if (inner) inner.classList.remove("flipped");
+        window.tb3UpdateCardContentOnly();
+    };
+
+    window.tb3MarkCard = function(isLearned) {
+        const items = getTraBaiP3FilteredItems();
+        if (items.length === 0) return;
+        const tbs = window.traBaiP3State;
+        const item = items[tbs.cardIndex];
+        if (!item) return;
+
+        if (isLearned) {
+            tbs.learnedIds.add(item.id);
+        } else {
+            tbs.learnedIds.delete(item.id);
+        }
+        saveTraBaiP3Learned();
+        window.tb3UpdateHeaderProgress();
+        window.tb3NextCard();
+    };
+
+    // ================= QUIZ MODE =================
+    window.tb3RenderQuizView = function(workspace) {
+        const tbs = window.traBaiP3State;
+        const items = getTraBaiP3FilteredItems();
+
+        if (tbs.quizFinished && tbs.quizQuestions.length > 0) {
+            window.tb3RenderQuizResults(workspace);
+            return;
+        }
+
+        if (!tbs.quizQuestions || tbs.quizQuestions.length === 0) {
+            let batchChipsHtml = '';
+            if (items.length > 50) {
+                batchChipsHtml = `
+                    <button type="button" class="tb-scope-chip ${(tbs.quizBatch || 'all') === 'all' ? 'active' : ''}" onclick="window.tb3SelectQuizBatch('all', this)">
+                        🌟 Tất cả (${items.length} câu)
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.quizBatch === 'b1' ? 'active' : ''}" onclick="window.tb3SelectQuizBatch('b1', this)">
+                        Chặng 1: Câu 1 - 25
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.quizBatch === 'b2' ? 'active' : ''}" onclick="window.tb3SelectQuizBatch('b2', this)">
+                        Chặng 2: Câu 26 - 50
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.quizBatch === 'b3' ? 'active' : ''}" onclick="window.tb3SelectQuizBatch('b3', this)">
+                        Chặng 3: Câu 51 - 100
+                    </button>
+                `;
+            } else if (items.length > 20) {
+                batchChipsHtml = `
+                    <button type="button" class="tb-scope-chip ${(tbs.quizBatch || 'all') === 'all' ? 'active' : ''}" onclick="window.tb3SelectQuizBatch('all', this)">
+                        🌟 Tất cả (${items.length} câu)
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.quizBatch === 'b1' ? 'active' : ''}" onclick="window.tb3SelectQuizBatch('b1', this)">
+                        Đợt 10 câu
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.quizBatch === 'b2' ? 'active' : ''}" onclick="window.tb3SelectQuizBatch('b2', this)">
+                        Đợt 20 câu
+                    </button>
+                `;
+            } else {
+                batchChipsHtml = `
+                    <button type="button" class="tb-scope-chip active" onclick="window.tb3SelectQuizBatch('all', this)">
+                        🌟 Tất cả (${items.length} câu)
+                    </button>
+                `;
+            }
+
+            workspace.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+                    <div style="font-size: 3.2rem; margin-bottom: 12px;">⚡</div>
+                    <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                        TRẮC NGHIỆM PHẢN XẠ TỪ VỰNG PART 03
+                    </h3>
+                    <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
+                        Đọc nghĩa tiếng Việt ➔ Chọn từ vựng tiếng Anh tương ứng. Hệ thống chấm điểm tức thì, phát âm chuẩn và tự động theo dõi tiến độ toàn bài.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
+                        <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn số lượng câu làm bài:</div>
+                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                            ${batchChipsHtml}
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="window.tb3StartQuiz()" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 14px 38px; border-radius: 12px; font-size: 1.15rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(37,99,235,0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                        🚀 BẮT ĐẦU TRẢ BÀI NGAY
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        const qIndex = tbs.quizIndex;
+        const q = tbs.quizQuestions[qIndex];
+        if (!q) {
+            tbs.quizFinished = true;
+            window.tb3RenderQuizView(workspace);
+            return;
+        }
+
+        const labels = ['A', 'B', 'C', 'D'];
+        let optionsHtml = '';
+        q.options.forEach((opt, idx) => {
+            const letter = labels[idx];
+            optionsHtml += `
+                <button type="button" class="tb-quiz-opt" data-id="${opt.id}" onclick="window.tb3AnswerQuiz(${opt.id}, ${q.item.id}, this)">
+                    <span class="tb-quiz-letter">${letter}</span>
+                    <span style="flex: 1;">${opt.en}</span>
+                    ${opt.pos ? `<span style="font-size: 0.8rem; color: #64748b; font-style: italic;">(${opt.pos})</span>` : ''}
+                </button>
+            `;
+        });
+
+        const progressPercent = Math.round(((qIndex + 1) / tbs.quizQuestions.length) * 100);
+
+        workspace.innerHTML = `
+            <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <!-- Quiz Progress Bar & Header -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px 22px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="font-weight: 800; color: #2563eb; font-size: 1.15rem;">CÂU ${qIndex + 1} / ${tbs.quizQuestions.length}</span>
+                            <span style="background: #f1f5f9; color: #64748b; padding: 3px 10px; border-radius: 20px; font-size: 0.82rem; font-weight: 700;">
+                                ${q.item.category}
+                            </span>
+                        </div>
+                        <div style="font-weight: 800; color: #16a34a; font-size: 1.1rem; display: flex; align-items: center; gap: 6px;">
+                            <span>Điểm:</span> <span id="tb3-quiz-score-val" style="background: #dcfce7; padding: 2px 10px; border-radius: 8px;">${tbs.quizScore}</span>
+                        </div>
+                    </div>
+                    <div style="width: 100%; background: #e2e8f0; height: 6px; border-radius: 4px; overflow: hidden;">
+                        <div style="width: ${progressPercent}%; height: 100%; background: linear-gradient(90deg, #2563eb, #3b82f6); transition: width 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <!-- Prompt Card -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 30px; box-shadow: 0 4px 16px rgba(0,0,0,0.04); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px;">
+                    <div style="font-size: 0.88rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.05em;">
+                        Từ / Cụm từ tiếng Anh tương ứng với nghĩa:
+                    </div>
+                    <div style="font-size: 2.1rem; font-weight: 800; color: #0f172a; line-height: 1.35;">
+                        "${q.item.vi}"
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 8px; font-size: 0.88rem; color: #94a3b8;">
+                        ${q.item.pos ? `<span>Từ loại: <em>${q.item.pos}</em></span> • ` : ''}
+                        <span>${q.item.sectionTitle || 'Part 03'}</span>
+                    </div>
+                </div>
+
+                <!-- 4 Options -->
+                <div id="tb3-quiz-options-box" style="display: flex; flex-direction: column; gap: 12px;">
+                    ${optionsHtml}
+                </div>
+
+                <!-- Evaluation & Next Button -->
+                <div id="tb3-quiz-feedback-box" style="display: none; flex-direction: column; gap: 12px;">
+                    <div id="tb3-quiz-result-banner" style="padding: 14px 20px; border-radius: 12px; font-weight: 700; font-size: 1.05rem; display: flex; align-items: center; justify-content: space-between;"></div>
+                    <button type="button" id="tb3-quiz-next-btn" onclick="window.tb3NextQuizQuestion()" style="background: #2563eb; color: white; border: none; padding: 14px 24px; border-radius: 12px; font-size: 1.05rem; font-weight: 800; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+                        <span>${qIndex + 1 === tbs.quizQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO (Enter)'}</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                    </button>
+                </div>
+            </div>
+        `;
+    };
+
+    window.tb3SelectQuizBatch = function(batch, btnEl) {
+        window.traBaiP3State.quizBatch = batch;
+        const siblings = btnEl.parentElement.querySelectorAll(".tb-scope-chip");
+        siblings.forEach(s => s.classList.remove("active"));
+        btnEl.classList.add("active");
+    };
+
+    window.tb3StartQuiz = function(customItems = null) {
+        const allData = window.part03TraBaiData || [];
+        const tbs = window.traBaiP3State;
+        const scopeItems = getTraBaiP3FilteredItems();
+        let pool = customItems;
+        if (!pool) {
+            const batch = tbs.quizBatch || 'all';
+            if (batch === 'b1') pool = scopeItems.slice(0, 25);
+            else if (batch === 'b2') pool = scopeItems.slice(25, 50);
+            else if (batch === 'b3') pool = scopeItems.slice(50, 100);
+            else pool = scopeItems;
+        }
+        if (!pool || pool.length === 0) return;
+
+        const shuffled = shuffleTraBaiArray(pool);
+
+        const questions = shuffled.map(item => {
+            const otherItems = allData.filter(d => d.id !== item.id);
+            const distractors = shuffleTraBaiArray(otherItems).slice(0, 3);
+            const options = shuffleTraBaiArray([item, ...distractors]);
+            return {
+                item: item,
+                options: options
+            };
+        });
+
+        tbs.quizQuestions = questions;
+        tbs.quizIndex = 0;
+        tbs.quizScore = 0;
+        tbs.quizAnswered = false;
+        tbs.quizFinished = false;
+        tbs.quizReview = [];
+
+        window.tb3RenderQuizView(document.getElementById("tb3-active-workspace"));
+    };
+
+    window.tb3AnswerQuiz = function(chosenId, correctId, btnEl) {
+        const tbs = window.traBaiP3State;
+        if (tbs.quizAnswered) return;
+        tbs.quizAnswered = true;
+
+        const container = document.getElementById("tb3-quiz-options-box");
+        if (!container) return;
+        const optionsBtns = container.querySelectorAll(".tb-quiz-opt");
+        const isCorrect = chosenId === correctId;
+        const currentQ = tbs.quizQuestions[tbs.quizIndex];
+
+        optionsBtns.forEach(btn => {
+            btn.style.pointerEvents = 'none';
+            const optId = parseInt(btn.getAttribute("data-id"));
+            if (optId === correctId) {
+                btn.classList.add("correct");
+            } else if (optId === chosenId && !isCorrect) {
+                btn.classList.add("incorrect");
+            } else {
+                btn.style.opacity = '0.5';
+            }
+        });
+
+        if (isCorrect) {
+            tbs.quizScore++;
+            const scoreValEl = document.getElementById("tb3-quiz-score-val");
+            if (scoreValEl) scoreValEl.textContent = tbs.quizScore;
+            tbs.learnedIds.add(currentQ.item.id);
+            saveTraBaiP3Learned();
+            window.tb3UpdateHeaderProgress();
+        }
+
+        tbs.quizReview.push({
+            q: currentQ,
+            chosenId: chosenId,
+            isCorrect: isCorrect
+        });
+
+        playTTS(currentQ.item.en);
+
+        const feedbackBox = document.getElementById("tb3-quiz-feedback-box");
+        const banner = document.getElementById("tb3-quiz-result-banner");
+        if (feedbackBox && banner) {
+            if (isCorrect) {
+                banner.style.background = "#dcfce7";
+                banner.style.color = "#15803d";
+                banner.style.border = "1.5px solid #86efac";
+                banner.innerHTML = `
+                    <span>🎉 <strong>Chính xác!</strong> +1 điểm</span>
+                    <button type="button" onclick="playTTS('${currentQ.item.en.replace(/'/g, "\'")}', event)" style="background: white; border: 1px solid #86efac; border-radius: 8px; padding: 4px 10px; cursor: pointer; color: #15803d; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe lại
+                    </button>
+                `;
+            } else {
+                banner.style.background = "#fee2e2";
+                banner.style.color = "#b91c1c";
+                banner.style.border = "1.5px solid #fca5a5";
+                banner.innerHTML = `
+                    <span>❌ <strong>Chưa chính xác!</strong> Đáp án đúng: <em>${currentQ.item.en}</em></span>
+                    <button type="button" onclick="playTTS('${currentQ.item.en.replace(/'/g, "\'")}', event)" style="background: white; border: 1px solid #fca5a5; border-radius: 8px; padding: 4px 10px; cursor: pointer; color: #b91c1c; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe phát âm
+                    </button>
+                `;
+            }
+            feedbackBox.style.display = "flex";
+
+            setTimeout(() => {
+                const nextBtn = document.getElementById("tb3-quiz-next-btn");
+                if (nextBtn) nextBtn.focus();
+            }, 100);
+        }
+    };
+
+    window.tb3NextQuizQuestion = function() {
+        const tbs = window.traBaiP3State;
+        tbs.quizAnswered = false;
+        tbs.quizIndex++;
+        if (tbs.quizIndex >= tbs.quizQuestions.length) {
+            tbs.quizFinished = true;
+        }
+        window.tb3RenderQuizView(document.getElementById("tb3-active-workspace"));
+    };
+
+    window.tb3RenderQuizResults = function(workspace) {
+        const tbs = window.traBaiP3State;
+        const total = tbs.quizQuestions.length;
+        const score = tbs.quizScore;
+        const percent = total > 0 ? Math.round((score / total) * 100) : 0;
+
+        let icon = "🏆";
+        let message = "Xuất sắc! Bạn đã làm chủ hoàn hảo các từ vựng này!";
+        let color = "#15803d";
+        if (percent < 50) {
+            icon = "💪";
+            message = "Cần ôn tập thêm! Hãy dùng chế độ Flashcard hoặc Nghe gõ chữ để củng cố nhé!";
+            color = "#dc2626";
+        } else if (percent < 80) {
+            icon = "👏";
+            message = "Rất tốt! Bạn nắm khá vững từ vựng bài học!";
+            color = "#2563eb";
+        }
+
+        const wrongQuestions = tbs.quizReview.filter(r => !r.isCorrect);
+
+        let reviewListHtml = '';
+        tbs.quizReview.forEach((r, idx) => {
+            const correctOpt = r.q.item;
+            const chosenOpt = r.q.options.find(o => o.id === r.chosenId);
+            reviewListHtml += `
+                <div style="background: #ffffff; border: 1.5px solid ${r.isCorrect ? '#86efac' : '#fca5a5'}; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <div style="font-weight: 700; color: #0f172a; font-size: 1.05rem;">
+                            Câu ${idx + 1}: "${r.q.item.vi}"
+                        </div>
+                        <div style="font-size: 0.95rem; color: #166534; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+                            ✔ Đáp án đúng: <strong>${correctOpt.en}</strong>
+                            ${correctOpt.ipa ? `<span style="font-family: monospace; font-size: 0.9rem; color: #64748b;">${correctOpt.ipa}</span>` : ''}
+                        </div>
+                        ${!r.isCorrect ? `
+                            <div style="font-size: 0.9rem; color: #dc2626;">
+                                ✖ Bạn đã chọn: ${chosenOpt ? chosenOpt.en : 'Không chọn'}
+                            </div>
+                        ` : ''}
+                    </div>
+                    <button type="button" onclick="playTTS('${correctOpt.en.replace(/'/g, "\'")}', event)" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-weight: 700; color: #0284c7; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe
+                    </button>
+                </div>
+            `;
+        });
+
+        workspace.innerHTML = `
+            <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 36px 30px; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+                    <div style="font-size: 3.5rem; margin-bottom: 8px;">${icon}</div>
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">KẾT QUẢ TRẢ BÀI TRẮC NGHIỆM</h2>
+                    <div style="font-size: 2.8rem; font-weight: 900; color: ${color}; line-height: 1.2; margin-bottom: 8px;">
+                        ${score} / ${total}
+                    </div>
+                    <div style="font-size: 1.15rem; font-weight: 700; color: #475569; margin-bottom: 12px;">
+                        Độ chính xác: <strong>${percent}%</strong>
+                    </div>
+                    <p style="color: #64748b; font-size: 1.05rem; max-width: 480px; margin: 0 auto 24px auto;">
+                        ${message}
+                    </p>
+
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                        <button type="button" onclick="window.tb3StartQuiz()" style="background: #2563eb; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🔄 Làm lại đề mới
+                        </button>
+                        ${wrongQuestions.length > 0 ? `
+                        <button type="button" onclick="window.tb3RetryWrongQuiz()" style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🎯 Ôn lại ${wrongQuestions.length} câu làm sai
+                        </button>
+                        ` : ''}
+                        <button type="button" onclick="window.tb3SetMode('dictation')" style="background: #0284c7; color: white; border: none; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer;">
+                            ✍️ Chuyển sang Nghe & Gõ chữ
+                        </button>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #334155; padding-left: 4px;">
+                        CHI TIẾT BÀI LÀM:
+                    </div>
+                    ${reviewListHtml}
+                </div>
+            </div>
+        `;
+    };
+
+    window.tb3RetryWrongQuiz = function() {
+        const tbs = window.traBaiP3State;
+        const wrongItems = tbs.quizReview.filter(r => !r.isCorrect).map(r => r.q.item);
+        if (wrongItems.length > 0) {
+            window.tb3StartQuiz(wrongItems);
+        }
+    };
+
+    // ================= DICTATION MODE (NGHE & GÕ CHỮ) =================
+    window.tb3SelectDictBatch = function(batch, btnEl) {
+        window.traBaiP3State.dictBatch = batch;
+        const siblings = btnEl.parentElement.querySelectorAll(".tb-scope-chip");
+        siblings.forEach(s => s.classList.remove("active"));
+        btnEl.classList.add("active");
+    };
+
+    window.tb3StartDictation = function(customItems = null) {
+        const tbs = window.traBaiP3State;
+        const scopeItems = getTraBaiP3FilteredItems();
+        let pool = customItems;
+        if (!pool) {
+            const batch = tbs.dictBatch || 'all';
+            if (batch === 'b1') pool = scopeItems.slice(0, 25);
+            else if (batch === 'b2') pool = scopeItems.slice(25, 50);
+            else if (batch === 'b3') pool = scopeItems.slice(50, 100);
+            else pool = scopeItems;
+        }
+        if (!pool || pool.length === 0) return;
+
+        tbs.dictQuestions = shuffleTraBaiArray(pool);
+        tbs.dictIndex = 0;
+        tbs.dictScore = 0;
+        tbs.dictAnswered = false;
+        tbs.dictFinished = false;
+        tbs.dictReview = [];
+
+        window.tb3RenderDictationView(document.getElementById("tb3-active-workspace"));
+    };
+
+    window.tb3RenderDictationView = function(workspace) {
+        const tbs = window.traBaiP3State;
+        const items = getTraBaiP3FilteredItems();
+
+        if (tbs.dictFinished && tbs.dictQuestions.length > 0) {
+            window.tb3RenderDictResults(workspace);
+            return;
+        }
+
+        if (!tbs.dictQuestions || tbs.dictQuestions.length === 0) {
+            let batchChipsHtml = '';
+            if (items.length > 50) {
+                batchChipsHtml = `
+                    <button type="button" class="tb-scope-chip ${(tbs.dictBatch || 'all') === 'all' ? 'active' : ''}" onclick="window.tb3SelectDictBatch('all', this)">
+                        🌟 Tất cả (${items.length} từ)
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.dictBatch === 'b1' ? 'active' : ''}" onclick="window.tb3SelectDictBatch('b1', this)">
+                        Chặng 1: 1 - 25
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.dictBatch === 'b2' ? 'active' : ''}" onclick="window.tb3SelectDictBatch('b2', this)">
+                        Chặng 2: 26 - 50
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.dictBatch === 'b3' ? 'active' : ''}" onclick="window.tb3SelectDictBatch('b3', this)">
+                        Chặng 3: 51 - 100
+                    </button>
+                `;
+            } else if (items.length > 20) {
+                batchChipsHtml = `
+                    <button type="button" class="tb-scope-chip ${(tbs.dictBatch || 'all') === 'all' ? 'active' : ''}" onclick="window.tb3SelectDictBatch('all', this)">
+                        🌟 Tất cả (${items.length} từ)
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.dictBatch === 'b1' ? 'active' : ''}" onclick="window.tb3SelectDictBatch('b1', this)">
+                        10 từ
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.dictBatch === 'b2' ? 'active' : ''}" onclick="window.tb3SelectDictBatch('b2', this)">
+                        20 từ
+                    </button>
+                `;
+            } else {
+                batchChipsHtml = `
+                    <button type="button" class="tb-scope-chip active" onclick="window.tb3SelectDictBatch('all', this)">
+                        🌟 Tất cả (${items.length} từ)
+                    </button>
+                `;
+            }
+
+            workspace.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+                    <div style="font-size: 3.2rem; margin-bottom: 12px;">✍️</div>
+                    <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                        NGHE VÀ GÕ CHỮ (DICTATION PART 03)
+                    </h3>
+                    <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
+                        Luyện tập nghe phát âm và gõ lại chính xác từng từ / cụm từ tiếng Anh. Phương pháp này giúp khắc phục triệt để lỗi nghe thiếu âm cuối (ending sounds) và nhớ mặt chữ chuẩn xác.
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
+                        <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn phạm vi luyện gõ:</div>
+                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                            ${batchChipsHtml}
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="window.tb3StartDictation()" style="background: linear-gradient(135deg, #0284c7, #0369a1); color: white; border: none; padding: 14px 38px; border-radius: 12px; font-size: 1.15rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(2,132,199,0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                        🚀 BẮT ĐẦU NGHE & GÕ CHỮ
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        const dIndex = tbs.dictIndex;
+        const currentItem = tbs.dictQuestions[dIndex];
+        if (!currentItem) {
+            tbs.dictFinished = true;
+            window.tb3RenderDictationView(workspace);
+            return;
+        }
+
+        const progressPercent = Math.round(((dIndex + 1) / tbs.dictQuestions.length) * 100);
+
+        workspace.innerHTML = `
+            <div class="tb-dict-container">
+                <!-- Header with Progress -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px 22px; display: flex; flex-direction: column; gap: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span style="font-weight: 800; color: #0284c7; font-size: 1.15rem;">CÂU ${dIndex + 1} / ${tbs.dictQuestions.length}</span>
+                            <span style="background: #f1f5f9; color: #64748b; padding: 3px 10px; border-radius: 20px; font-size: 0.82rem; font-weight: 700;">
+                                ${currentItem.category}
+                            </span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 16px;">
+                            <label style="display: inline-flex; align-items: center; gap: 6px; font-size: 0.88rem; font-weight: 600; color: #475569; cursor: pointer; user-select: none;">
+                                <input type="checkbox" id="tb3-dict-autoplay-cb" ${tbs.dictAutoPlay ? 'checked' : ''} onchange="window.tb3ToggleDictAutoPlay(this.checked)" style="cursor: pointer; width: 16px; height: 16px;">
+                                <span>Tự động phát âm</span>
+                            </label>
+                            <div style="font-weight: 800; color: #16a34a; font-size: 1.05rem; display: flex; align-items: center; gap: 6px;">
+                                <span>Đúng:</span> <span id="tb3-dict-score-val" style="background: #dcfce7; padding: 2px 10px; border-radius: 8px;">${tbs.dictScore}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 100%; background: #e2e8f0; height: 6px; border-radius: 4px; overflow: hidden;">
+                        <div style="width: ${progressPercent}%; height: 100%; background: linear-gradient(90deg, #0284c7, #38bdf8); transition: width 0.3s ease;"></div>
+                    </div>
+                </div>
+
+                <!-- Main Dictation Card -->
+                <div class="tb-dict-card">
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 12px;">
+                        <button type="button" class="tb-dict-audio-btn" onclick="playTTS('${currentItem.en.replace(/'/g, "\'")}', event)">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+                            <span>Bấm để nghe phát âm</span>
+                        </button>
+                        <div style="display: flex; gap: 10px; align-items: center;">
+                            <button type="button" class="tb-dict-slow-btn" onclick="playTTS('${currentItem.en.replace(/'/g, "\'")}', event, 0.78)" title="Nghe với tốc độ chậm hơn">
+                                <span>🐢</span> Nghe chậm (0.8x)
+                            </button>
+                            <span style="font-size: 0.8rem; color: #94a3b8;">Phím tắt: Ctrl + Space để nghe lại</span>
+                        </div>
+                    </div>
+
+                    <!-- Meaning Hint -->
+                    <div style="background: #f8fafc; border: 1px dashed #cbd5e1; border-radius: 12px; padding: 12px 20px; max-width: 560px; width: 100%;">
+                        <div style="font-size: 0.85rem; font-weight: 700; color: #64748b; text-transform: uppercase; margin-bottom: 4px;">
+                            💡 Gợi ý nghĩa tiếng Việt:
+                        </div>
+                        <div style="font-size: 1.35rem; font-weight: 800; color: #166534;">
+                            "${currentItem.vi}"
+                        </div>
+                        <div style="display: flex; gap: 8px; font-size: 0.82rem; color: #94a3b8; margin-top: 4px;">
+                            ${currentItem.pos ? `<span>Từ loại: <em>${currentItem.pos}</em></span> • ` : ''}
+                            <span>${currentItem.sectionTitle || 'Part 03'}</span>
+                        </div>
+                    </div>
+
+                    <!-- Typing Input Field -->
+                    <div style="width: 100%; max-width: 620px; display: flex; flex-direction: column; gap: 12px;">
+                        <input type="text" id="tb3-dict-input" class="tb-dict-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Gõ từ hoặc cụm từ bạn nghe được tại đây... (Nhấn Enter)" onkeydown="window.tb3HandleDictInputKeydown(event)">
+                        
+                        <div id="tb3-dict-action-buttons" style="display: flex; justify-content: center; gap: 12px;">
+                            <button type="button" id="tb3-dict-submit-btn" onclick="window.tb3CheckDictation()" style="background: #2563eb; color: white; border: none; padding: 12px 28px; border-radius: 10px; font-weight: 800; font-size: 1rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+                                <span>Kiểm tra (Enter)</span>
+                            </button>
+                            <button type="button" onclick="window.tb3SkipDictation()" style="background: #ffffff; color: #64748b; border: 1.5px solid #cbd5e1; padding: 12px 20px; border-radius: 10px; font-weight: 700; font-size: 0.95rem; cursor: pointer;">
+                                <span>Xem đáp án</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Result Feedback Area -->
+                    <div id="tb3-dict-feedback-area" style="display: none; width: 100%; max-width: 620px;"></div>
+                </div>
+            </div>
+        `;
+
+        setTimeout(() => {
+            const input = document.getElementById("tb3-dict-input");
+            if (input) input.focus();
+        }, 100);
+
+        if (tbs.dictAutoPlay) {
+            setTimeout(() => {
+                playTTS(currentItem.en);
+            }, 250);
+        }
+    };
+
+    window.tb3CheckDictation = function() {
+        const tbs = window.traBaiP3State;
+        if (tbs.dictAnswered) return;
+
+        const inputEl = document.getElementById("tb3-dict-input");
+        if (!inputEl) return;
+        const userInput = inputEl.value.trim();
+        const currentItem = tbs.dictQuestions[tbs.dictIndex];
+        if (!currentItem) return;
+
+        tbs.dictAnswered = true;
+        inputEl.disabled = true;
+
+        const normUser = normalizeDictationText(userInput);
+        const normTarget = normalizeDictationText(currentItem.en);
+        const isMatch = normUser === normTarget;
+
+        if (isMatch) {
+            tbs.dictScore++;
+            const scoreEl = document.getElementById("tb3-dict-score-val");
+            if (scoreEl) scoreEl.textContent = tbs.dictScore;
+            tbs.learnedIds.add(currentItem.id);
+            saveTraBaiP3Learned();
+            window.tb3UpdateHeaderProgress();
+        }
+
+        tbs.dictReview.push({
+            item: currentItem,
+            userInput: userInput,
+            isCorrect: isMatch
+        });
+
+        const actionBtns = document.getElementById("tb3-dict-action-buttons");
+        if (actionBtns) actionBtns.style.display = "none";
+
+        const fbArea = document.getElementById("tb3-dict-feedback-area");
+        if (fbArea) {
+            if (isMatch) {
+                fbArea.innerHTML = `
+                    <div class="tb-dict-result-box tb-dict-result-correct">
+                        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                            <div style="font-size: 1.15rem; font-weight: 800;">
+                                🎉 Chính xác 100%! Xuất sắc!
+                            </div>
+                            <button type="button" onclick="playTTS('${currentItem.en.replace(/'/g, "\'")}', event)" style="background: white; border: 1px solid #86efac; border-radius: 8px; padding: 4px 10px; cursor: pointer; color: #166534; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                                🔊 Nghe lại
+                            </button>
+                        </div>
+                        <div style="font-size: 1.35rem; font-weight: 800; color: #15803d; margin: 4px 0;">
+                            "${currentItem.en}" ${currentItem.ipa ? `<span style="font-family: monospace; font-size: 1.05rem; color: #64748b;">${currentItem.ipa}</span>` : ''}
+                        </div>
+                        <button type="button" id="tb3-dict-next-btn" onclick="window.tb3NextDictQuestion()" style="background: #16a34a; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 6px; box-shadow: 0 4px 12px rgba(22,163,74,0.3);">
+                            <span>${tbs.dictIndex + 1 === tbs.dictQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO (Enter)'}</span>
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                        </button>
+                    </div>
+                `;
+            } else {
+                playTTS(currentItem.en);
+                fbArea.innerHTML = `
+                    <div class="tb-dict-result-box tb-dict-result-wrong">
+                        <div style="font-size: 1.15rem; font-weight: 800;">
+                            ❌ Chưa chính xác!
+                        </div>
+                        <div style="font-size: 1.05rem; margin-top: 4px;">
+                            Bạn đã gõ: <strong style="color: #b91c1c; text-decoration: line-through;">${userInput || '(Chưa nhập)'}</strong>
+                        </div>
+                        <div style="font-size: 1.1rem; margin-top: 4px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                            Đáp án đúng: <strong style="color: #166534; font-size: 1.35rem; background: #dcfce7; padding: 2px 8px; border-radius: 6px;">${currentItem.en}</strong>
+                            ${currentItem.ipa ? `<span style="font-family: monospace; font-size: 1rem; color: #64748b;">${currentItem.ipa}</span>` : ''}
+                            <button type="button" onclick="playTTS('${currentItem.en.replace(/'/g, "\'")}', event)" style="background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 4px 8px; cursor: pointer;">🔊</button>
+                        </div>
+                        <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+                            <button type="button" onclick="window.tb3RetryCurrentDictQuestion()" style="background: #ffffff; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 10px 18px; border-radius: 8px; font-weight: 800; font-size: 0.95rem; cursor: pointer;">
+                                🔄 Gõ lại từ này
+                            </button>
+                            <button type="button" id="tb3-dict-next-btn" onclick="window.tb3NextDictQuestion()" style="background: #2563eb; color: white; border: none; padding: 10px 22px; border-radius: 8px; font-weight: 800; font-size: 0.95rem; cursor: pointer; display: flex; align-items: center; gap: 6px;">
+                                <span>${tbs.dictIndex + 1 === tbs.dictQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO (Enter)'}</span>
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                            </button>
+                        </div>
+                    </div>
+                `;
+            }
+            fbArea.style.display = "block";
+
+            setTimeout(() => {
+                const nextBtn = document.getElementById("tb3-dict-next-btn");
+                if (nextBtn) nextBtn.focus();
+            }, 100);
+        }
+    };
+
+    window.tb3SkipDictation = function() {
+        const inputEl = document.getElementById("tb3-dict-input");
+        if (inputEl) inputEl.value = "";
+        window.tb3CheckDictation();
+    };
+
+    window.tb3RetryCurrentDictQuestion = function() {
+        const tbs = window.traBaiP3State;
+        tbs.dictAnswered = false;
+        if (tbs.dictReview.length > 0 && tbs.dictReview[tbs.dictReview.length - 1].item.id === tbs.dictQuestions[tbs.dictIndex].id) {
+            tbs.dictReview.pop();
+        }
+        window.tb3RenderDictationView(document.getElementById("tb3-active-workspace"));
+    };
+
+    window.tb3NextDictQuestion = function() {
+        const tbs = window.traBaiP3State;
+        tbs.dictAnswered = false;
+        tbs.dictIndex++;
+        if (tbs.dictIndex >= tbs.dictQuestions.length) {
+            tbs.dictFinished = true;
+        }
+        window.tb3RenderDictationView(document.getElementById("tb3-active-workspace"));
+    };
+
+    window.tb3ToggleDictAutoPlay = function(checked) {
+        window.traBaiP3State.dictAutoPlay = checked;
+    };
+
+    window.tb3HandleDictInputKeydown = function(e) {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            const tbs = window.traBaiP3State;
+            if (!tbs.dictAnswered) {
+                window.tb3CheckDictation();
+            } else {
+                window.tb3NextDictQuestion();
+            }
+        }
+    };
+
+    window.tb3RenderDictResults = function(workspace) {
+        const tbs = window.traBaiP3State;
+        const total = tbs.dictQuestions.length;
+        const score = tbs.dictScore;
+        const percent = total > 0 ? Math.round((score / total) * 100) : 0;
+
+        let icon = "🏆";
+        let message = "Xuất sắc! Bạn đã gõ chính xác gần như toàn bộ từ vựng!";
+        let color = "#15803d";
+        if (percent < 50) {
+            icon = "💪";
+            message = "Cần luyện tập thêm! Hãy nghe kỹ các âm cuối (ending sounds) và luyện lại nhé!";
+            color = "#dc2626";
+        } else if (percent < 80) {
+            icon = "👏";
+            message = "Rất tốt! Khả năng nghe và phản xạ chữ viết của bạn rất ấn tượng!";
+            color = "#2563eb";
+        }
+
+        const wrongQuestions = tbs.dictReview.filter(r => !r.isCorrect);
+
+        let reviewListHtml = '';
+        tbs.dictReview.forEach((r, idx) => {
+            reviewListHtml += `
+                <div style="background: #ffffff; border: 1.5px solid ${r.isCorrect ? '#86efac' : '#fca5a5'}; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <div style="font-weight: 700; color: #0f172a; font-size: 1.05rem;">
+                            Câu ${idx + 1}: "${r.item.vi}"
+                        </div>
+                        <div style="font-size: 0.95rem; color: #166534; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+                            ✔ Từ chuẩn: <strong>${r.item.en}</strong>
+                            ${r.item.ipa ? `<span style="font-family: monospace; font-size: 0.9rem; color: #64748b;">${r.item.ipa}</span>` : ''}
+                        </div>
+                        ${!r.isCorrect ? `
+                            <div style="font-size: 0.9rem; color: #dc2626;">
+                                ✖ Bạn đã gõ: ${r.userInput || '(Bỏ qua)'}
+                            </div>
+                        ` : ''}
+                    </div>
+                    <button type="button" onclick="playTTS('${r.item.en.replace(/'/g, "\'")}', event)" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-weight: 700; color: #0284c7; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe
+                    </button>
+                </div>
+            `;
+        });
+
+        workspace.innerHTML = `
+            <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 36px 30px; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+                    <div style="font-size: 3.5rem; margin-bottom: 8px;">${icon}</div>
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">KẾT QUẢ NGHE & GÕ CHỮ</h2>
+                    <div style="font-size: 2.8rem; font-weight: 900; color: ${color}; line-height: 1.2; margin-bottom: 8px;">
+                        ${score} / ${total}
+                    </div>
+                    <div style="font-size: 1.15rem; font-weight: 700; color: #475569; margin-bottom: 12px;">
+                        Độ chính xác: <strong>${percent}%</strong>
+                    </div>
+                    <p style="color: #64748b; font-size: 1.05rem; max-width: 480px; margin: 0 auto 24px auto;">
+                        ${message}
+                    </p>
+
+                    <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap;">
+                        <button type="button" onclick="window.tb3StartDictation()" style="background: #0284c7; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🔄 Luyện lại toàn bộ đề mới
+                        </button>
+                        ${wrongQuestions.length > 0 ? `
+                        <button type="button" onclick="window.tb3RetryWrongDictation()" style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🎯 Luyện lại ${wrongQuestions.length} từ đã gõ sai
+                        </button>
+                        ` : ''}
+                        <button type="button" onclick="window.tb3SetMode('quiz')" style="background: #f1f5f9; color: #334155; border: 1.5px solid #cbd5e1; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer;">
+                            ⚡ Sang Trắc nghiệm phản xạ
+                        </button>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #334155; padding-left: 4px;">
+                        CHI TIẾT BÀI LÀM:
+                    </div>
+                    ${reviewListHtml}
+                </div>
+            </div>
+        `;
+    };
+
+    window.tb3RetryWrongDictation = function() {
+        const tbs = window.traBaiP3State;
+        const wrongItems = tbs.dictReview.filter(r => !r.isCorrect).map(r => r.item);
+        if (wrongItems.length > 0) {
+            window.tb3StartDictation(wrongItems);
+        }
+    };
+
+    // ================= LIST MODE =================
+    window.tb3RenderListView = function(workspace) {
+        const items = getTraBaiP3FilteredItems();
+        const tbs = window.traBaiP3State;
+
+        const categories = Array.from(new Set(items.map(d => d.category)));
+
+        workspace.innerHTML = `
+            <div style="display: flex; flex-direction: column; gap: 16px;">
+                <!-- Filter & Search Bar -->
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px 20px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
+                    <div style="flex: 1; min-width: 240px; position: relative;">
+                        <input type="text" id="tb3-list-search" placeholder="🔍 Tìm kiếm từ vựng tiếng Anh hoặc tiếng Việt..." value="${tbs.searchQuery || ''}" oninput="window.tb3FilterList(this.value)" style="width: 100%; padding: 10px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 0.95rem; outline: none;">
+                    </div>
+                    <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                        <select id="tb3-list-cat-select" onchange="window.tb3FilterListCat(this.value)" style="padding: 10px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 0.95rem; font-weight: 600; color: #334155; outline: none; background: white;">
+                            <option value="all" ${tbs.categoryFilter === 'all' ? 'selected' : ''}>Tất cả chủ đề</option>
+                            ${categories.map(c => `<option value="${c}" ${tbs.categoryFilter === c ? 'selected' : ''}>${c}</option>`).join('')}
+                        </select>
+
+                        <select id="tb3-list-status-select" onchange="window.tb3FilterListStatus(this.value)" style="padding: 10px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 0.95rem; font-weight: 600; color: #334155; outline: none; background: white;">
+                            <option value="all" ${(tbs.statusFilter || 'all') === 'all' ? 'selected' : ''}>Tất cả trạng thái</option>
+                            <option value="learned" ${tbs.statusFilter === 'learned' ? 'selected' : ''}>Đã thuộc</option>
+                            <option value="unlearned" ${tbs.statusFilter === 'unlearned' ? 'selected' : ''}>Chưa nhớ</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Table Container -->
+                <div id="tb3-list-results-box" style="display: flex; flex-direction: column; gap: 8px;"></div>
+            </div>
+        `;
+
+        window.tb3UpdateListResultsOnly();
+    };
+
+    window.tb3FilterList = function(query) {
+        window.traBaiP3State.searchQuery = query.trim().toLowerCase();
+        window.tb3UpdateListResultsOnly();
+    };
+
+    window.tb3FilterListCat = function(cat) {
+        window.traBaiP3State.categoryFilter = cat;
+        window.tb3UpdateListResultsOnly();
+    };
+
+    window.tb3FilterListStatus = function(status) {
+        window.traBaiP3State.statusFilter = status;
+        window.tb3UpdateListResultsOnly();
+    };
+
+    window.tb3UpdateListResultsOnly = function() {
+        const box = document.getElementById("tb3-list-results-box");
+        if (!box) return;
+
+        const items = getTraBaiP3FilteredItems();
+        const tbs = window.traBaiP3State;
+        const q = tbs.searchQuery || '';
+        const cat = tbs.categoryFilter || 'all';
+        const status = tbs.statusFilter || 'all';
+
+        let filtered = items;
+        if (cat !== 'all') {
+            filtered = filtered.filter(d => d.category === cat);
+        }
+        if (status === 'learned') {
+            filtered = filtered.filter(d => tbs.learnedIds.has(d.id));
+        } else if (status === 'unlearned') {
+            filtered = filtered.filter(d => !tbs.learnedIds.has(d.id));
+        }
+        if (q) {
+            filtered = filtered.filter(d => d.en.toLowerCase().includes(q) || d.vi.toLowerCase().includes(q));
+        }
+
+        if (filtered.length === 0) {
+            box.innerHTML = `<div style="text-align: center; padding: 40px; color: #94a3b8; font-size: 1.05rem;">Không tìm thấy từ vựng nào phù hợp với bộ lọc hiện tại.</div>`;
+            return;
+        }
+
+        let rowsHtml = '';
+        filtered.forEach((item, index) => {
+            const isLearned = tbs.learnedIds.has(item.id);
+            rowsHtml += `
+                <div class="tb-list-row" style="padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+                    <div style="display: flex; align-items: center; gap: 14px; flex: 1; min-width: 280px;">
+                        <span style="font-weight: 800; color: #94a3b8; font-size: 0.9rem; min-width: 32px;">#${item.id}</span>
+                        <div style="display: flex; flex-direction: column; gap: 2px;">
+                            <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                                <span style="font-weight: 800; color: #0284c7; font-size: 1.15rem;">${item.en}</span>
+                                ${item.ipa ? `<span style="font-family: monospace; font-size: 0.95rem; color: #64748b;">${item.ipa}</span>` : ''}
+                                ${item.pos ? `<span style="font-style: italic; background: #e0f2fe; color: #0369a1; padding: 1px 6px; border-radius: 4px; font-size: 0.8rem; font-weight: 700;">(${item.pos})</span>` : ''}
+                                <span onclick="playTTS('${item.en.replace(/'/g, "\'")}', event)" style="cursor: pointer; opacity: 0.6; font-size: 1.05rem;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.6'" title="Nghe phát âm">🔊</span>
+                            </div>
+                            <div style="color: #334155; font-size: 1.02rem; font-weight: 500;">
+                                ${item.vi}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+                        <span style="background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; padding: 4px 10px; border-radius: 14px; font-size: 0.8rem; font-weight: 700;">
+                            ${item.sectionTitle || 'Part 03'}
+                        </span>
+                        <span style="background: #f8fafc; color: #64748b; border: 1px solid #cbd5e1; padding: 4px 10px; border-radius: 14px; font-size: 0.8rem; font-weight: 600;">
+                            ${item.category}
+                        </span>
+                        <button type="button" onclick="window.tb3ToggleLearnItem(${item.id}, this)" style="border: 1.5px solid ${isLearned ? '#86efac' : '#cbd5e1'}; background: ${isLearned ? '#dcfce7' : '#ffffff'}; color: ${isLearned ? '#15803d' : '#64748b'}; padding: 6px 14px; border-radius: 8px; font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: all 0.2s;" title="Đánh dấu đã thuộc / chưa nhớ">
+                            ${isLearned ? '✔️ Đã thuộc' : '○ Chưa nhớ'}
+                        </button>
+                    </div>
+                </div>
+            `;
+        });
+
+        box.innerHTML = rowsHtml;
+    };
+
+    window.tb3ToggleLearnItem = function(id, btnEl) {
+        const tbs = window.traBaiP3State;
+        if (!tbs) return;
+        const isLearned = tbs.learnedIds.has(id);
+        if (isLearned) {
+            tbs.learnedIds.delete(id);
+            btnEl.style.background = '#ffffff';
+            btnEl.style.color = '#64748b';
+            btnEl.style.borderColor = '#cbd5e1';
+            btnEl.textContent = '○ Chưa nhớ';
+        } else {
+            tbs.learnedIds.add(id);
+            btnEl.style.background = '#dcfce7';
+            btnEl.style.color = '#15803d';
+            btnEl.style.borderColor = '#86efac';
+            btnEl.textContent = '✔️ Đã thuộc';
+        }
+        saveTraBaiP3Learned();
+        window.tb3UpdateHeaderProgress();
+    };
     
     // C. EXAMPLES
     function renderExamples(section) {
