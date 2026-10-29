@@ -2461,14 +2461,31 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 
                 let ipa = "";
-                const ipaMatch = head.match(/(\/[^\/]+\/(?:\s*\/\s*\/[^\/]+\/)?)/);
                 let term = head;
-                if (ipaMatch) {
-                    ipa = ipaMatch[1].trim();
-                    term = head.substring(0, ipaMatch.index).trim();
+
+                // Priority 1: Check if term was explicitly tagged with <span...> (e.g. green highlight)
+                const spanTermMatch = b.match(/<span[^>]*>(.*?)<\/span>/i);
+                if (spanTermMatch) {
+                    const spanTerm = spanTermMatch[1].replace(/<[^>]+>/g, "").trim();
+                    if (spanTerm && head.startsWith(spanTerm)) {
+                        term = spanTerm;
+                        const restAfterTerm = head.substring(spanTerm.length).trim();
+                        if (restAfterTerm.startsWith("/")) {
+                            ipa = restAfterTerm;
+                        }
+                    }
+                }
+
+                // Priority 2: Fallback regex matching IPA at the end of head
+                if (!ipa) {
+                    const ipaMatch = head.match(/(\/[^\s\/][^\/]*\/(?:\s*[-/,\u2022]?\s*\/?\s*\/[^\s\/][^\/]*\/)?)\s*$/);
+                    if (ipaMatch) {
+                        ipa = ipaMatch[1].trim();
+                        term = head.substring(0, ipaMatch.index).trim();
+                    }
                 }
                 
-                const spokenTerm = term.split("/")[0].trim().replace(/"/g, "&quot;");
+                const spokenTerm = term.replace(/\s*\/\s*/g, ", ").trim().replace(/"/g, "&quot;");
                 
                 bulletsHtml += `
                     <div class="vocab-row">

@@ -1935,7 +1935,7 @@ window.part03Data = [
           "<span style=\"color: #00B050;\">plumber</span> /ˈplʌm.ər/ (n): thợ sửa ống nước",
           "<span style=\"color: #00B050;\">electrician</span> /ɪˌlekˈtrɪʃ.ən/ (n): thợ điện",
           "<span style=\"color: #00B050;\">welder</span> /ˈwel.dər/ (n): thợ hàn",
-          "<span style=\"color: #00B050;\">bricklayer</span> /ˈbɪkˌleɪ.ər/ (n): thợ xây",
+          "<span style=\"color: #00B050;\">bricklayer</span> /ˈbrɪkˌleɪ.ər/ (n): thợ xây",
           "<span style=\"color: #00B050;\">truck driver</span> /trʌk ˈdraɪ.vər/ (n): tài xế xe tải",
           "<span style=\"color: #00B050;\">delivery driver</span> /dɪˈlɪv.ər.i ˈdraɪ.vər/ (n): tài xế giao hàng",
           "<span style=\"color: #00B050;\">bus driver</span> /bʌs ˈdraɪ.vər/ (n): tài xế xe buýt",
@@ -1945,7 +1945,7 @@ window.part03Data = [
           "<span style=\"color: #00B050;\">mechanic</span> /məˈkæn.ɪk/ (n): thợ máy",
           "<span style=\"color: #00B050;\">road maintenance worker</span> /rəʊd ˈmeɪn.tə.nəns ˌwɜː.kər/ (n): công nhân bảo trì đường",
           "<span style=\"color: #00B050;\">traffic controller</span> /ˈtræf.ɪk kənˌtrəʊ.lər/ (n): nhân viên điều phối giao thông",
-          "<span style=\"color: #00B050;\">forklift operator</span> /'fɔː.klɪft ˈɒp.ər.eɪ.tər/ (n): người lái xe nâng",
+          "<span style=\"color: #00B050;\">forklift operator</span> /ˈfɔː.klɪft ˈɒp.ər.eɪ.tər/ (n): người lái xe nâng",
           "<span style=\"color: #00B050;\">building contractor</span> /ˈbɪl.dɪŋ kənˈtræk.tər/ (n): nhà thầu xây dựng",
           "<span style=\"color: #00B050;\">building inspector</span> /ˈbɪl.dɪŋ ɪnˈspek.tər/ (n): thanh tra xây dựng"
         ],
@@ -1961,7 +1961,7 @@ window.part03Data = [
           "thợ sửa ống nước /ˈplʌm.ər/ (n)",
           "thợ điện /ɪˌlekˈtrɪʃ.ən/ (n)",
           "thợ hàn /ˈwel.dər/ (n)",
-          "thợ xây /ˈbɪkˌleɪ.ər/ (n)",
+          "thợ xây /ˈbrɪkˌleɪ.ər/ (n)",
           "tài xế xe tải /trʌk ˈdraɪ.vər/ (n)",
           "tài xế giao hàng /dɪˈlɪv.ər.i ˈdraɪ.vər/ (n)",
           "tài xế xe buýt /bʌs ˈdraɪ.vər/ (n)",
@@ -1971,7 +1971,7 @@ window.part03Data = [
           "thợ máy /məˈkæn.ɪk/ (n)",
           "công nhân bảo trì đường /rəʊd ˈmeɪn.tə.nəns ˌwɜː.kər/ (n)",
           "nhân viên điều phối giao thông /ˈtræf.ɪk kənˌtrəʊ.lər/ (n)",
-          "người lái xe nâng /'fɔː.klɪft ˈɒp.ər.eɪ.tər/ (n)",
+          "người lái xe nâng /ˈfɔː.klɪft ˈɒp.ər.eɪ.tər/ (n)",
           "nhà thầu xây dựng /ˈbɪl.dɪŋ kənˈtræk.tər/ (n)",
           "thanh tra xây dựng /ˈbɪl.dɪŋ ɪnˈspek.tər/ (n)"
         ]
