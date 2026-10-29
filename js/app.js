@@ -651,11 +651,6 @@ document.addEventListener("DOMContentLoaded", () => {
             title: "Chiến thuật làm bài"
         },
         {
-            type: "item",
-            id: "part03_trabai_all",
-            title: "🎯 TRẢ BÀI TỪ VỰNG PART 03"
-        },
-        {
             type: "group",
             title: "I. Câu hỏi bối cảnh",
             items: [
@@ -1603,6 +1598,22 @@ document.addEventListener("DOMContentLoaded", () => {
                         loadSection(item.id);
                     });
                     conceptsNavList.appendChild(submenuItem);
+
+                    // Add indented TRẢ BÀI TỪ VỰNG sub-item under each question type
+                    const trabaiSubItem = document.createElement("div");
+                    trabaiSubItem.className = "submenu-item group-item trabai-sub-item";
+                    trabaiSubItem.setAttribute("data-id", item.id + "_trabai");
+                    trabaiSubItem.style.paddingLeft = "26px";
+                    trabaiSubItem.innerHTML = `<span class="submenu-dot" style="background: #f59e0b;"></span><span class="submenu-text" style="color: #f59e0b; font-weight: 700; font-size: 0.88rem;">🎯 TRẢ BÀI TỪ VỰNG${locked ? " 🔒" : ""}</span>`;
+                    trabaiSubItem.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        if (isContentLocked(3, item.id)) {
+                            window.showPaywallModal(() => loadSection(item.id, "trabai"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            return;
+                        }
+                        loadSection(item.id, "trabai");
+                    });
+                    conceptsNavList.appendChild(trabaiSubItem);
                 });
             }
         });
@@ -1845,9 +1856,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    function loadSection(id) {
+    function loadSection(id, requestedTab = null) {
         if (isContentLocked(3, id)) {
-            window.showPaywallModal(() => loadSection(id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => loadSection(id, requestedTab), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
             return;
             if (false) {
                 sessionStorage.setItem("portal_unlocked_v2", "true");
@@ -1880,40 +1891,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         
         document.querySelectorAll(".submenu-item").forEach(item => {
-            if (item.getAttribute("data-id") === id) {
-                item.classList.add("active");
+            const dataId = item.getAttribute("data-id");
+            if (requestedTab === "trabai") {
+                if (dataId === id + "_trabai") {
+                    item.classList.add("active");
+                } else {
+                    item.classList.remove("active");
+                }
             } else {
-                item.classList.remove("active");
+                if (dataId === id) {
+                    item.classList.add("active");
+                } else {
+                    item.classList.remove("active");
+                }
             }
         });
         
         const isGeneral = id === "overview" || id === "tips";
-        const isAllTrabai = id === "part03_trabai_all";
         const panelSectionsBar = document.getElementById("panel-sections-bar");
         if (panelSectionsBar) {
             panelSectionsBar.style.display = isGeneral ? "none" : "flex";
-        }
-
-        if (isAllTrabai) {
-            breadParent.textContent = "Luyện tập Từ vựng";
-            breadCurrent.textContent = "🎯 TRẢ BÀI TỪ VỰNG PART 03";
-            panelTitle.textContent = "🎯 TRẢ BÀI TỪ VỰNG PART 03 (533 TỪ)";
-
-            const theoryTabBtn = document.getElementById("sec-btn-theory");
-            const vocabularyTabBtn = document.getElementById("sec-btn-vocabulary");
-            const examplesTabBtn = document.getElementById("sec-btn-examples");
-            const practiceTabBtn = document.getElementById("sec-btn-practice");
-            const trabaiTabBtn = document.getElementById("sec-btn-trabai");
-
-            if (theoryTabBtn) theoryTabBtn.classList.add("hidden");
-            if (vocabularyTabBtn) vocabularyTabBtn.classList.add("hidden");
-            if (examplesTabBtn) examplesTabBtn.classList.add("hidden");
-            if (practiceTabBtn) practiceTabBtn.classList.add("hidden");
-            if (trabaiTabBtn) trabaiTabBtn.classList.remove("hidden");
-
-            state.part03ActiveTab = "trabai";
-            renderPanelTab("trabai");
-            return;
         }
         
         const section = state.part03Data.find(item => item.id === id);
@@ -1998,16 +1995,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
-        // Auto-switch to the first tab that has content
-        let targetTab = "theory";
-        if (section.theory && section.theory.length > 0) {
-            targetTab = "theory";
-        } else if (section.vocabulary && section.vocabulary.length > 0) {
-            targetTab = "vocabulary";
-        } else if (section.examples && section.examples.length > 0) {
-            targetTab = "examples";
-        } else if ((section.practice && section.practice.length > 0) || (section.practice_sets && section.practice_sets.length > 0)) {
-            targetTab = "practice";
+        // Auto-switch to requestedTab or the first tab that has content
+        let targetTab = requestedTab || "theory";
+        if (!requestedTab) {
+            if (section.theory && section.theory.length > 0) {
+                targetTab = "theory";
+            } else if (section.vocabulary && section.vocabulary.length > 0) {
+                targetTab = "vocabulary";
+            } else if (section.examples && section.examples.length > 0) {
+                targetTab = "examples";
+            } else if ((section.practice && section.practice.length > 0) || (section.practice_sets && section.practice_sets.length > 0)) {
+                targetTab = "practice";
+            }
         }
         state.part03ActiveTab = targetTab;
         
@@ -2040,8 +2039,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 b.classList.remove("active");
             }
         });
+
+        // Sync active state in sidebar (highlighting question item vs its trabai sub-item)
+        if (conceptsNavList) {
+            const secId = state.part03ActiveSection;
+            const mainItem = conceptsNavList.querySelector(`.submenu-item[data-id="${secId}"]`);
+            const trabaiItem = conceptsNavList.querySelector(`.submenu-item[data-id="${secId}_trabai"]`);
+            if (tabName === "trabai") {
+                if (trabaiItem) trabaiItem.classList.add("active");
+                if (mainItem) mainItem.classList.remove("active");
+            } else {
+                if (mainItem) mainItem.classList.add("active");
+                if (trabaiItem) trabaiItem.classList.remove("active");
+            }
+        }
         
-        const section = state.part03Data.find(item => item.id === state.part03ActiveSection) || { id: state.part03ActiveSection, title: "TRẢ BÀI TỪ VỰNG PART 03" };
+        const section = state.part03Data.find(item => item.id === state.part03ActiveSection);
         if (!section) return;
         
         if (tabName === "theory") {
@@ -2471,19 +2484,20 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Invitation Banner leading to Tra Bai Tu Vung
+        // Invitation Banner leading to Tra Bai Tu Vung for THIS specific question type
+        const cleanSectionTitle = (section.title || "dạng bài này").replace(/<[^>]+>/g, '').trim();
         const trabaiBanner = document.createElement("div");
         trabaiBanner.style.cssText = "background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%); border: 1.5px solid #bfdbfe; border-radius: 14px; padding: 16px 20px; margin-bottom: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 14px; box-shadow: 0 2px 10px rgba(0,0,0,0.03);";
         trabaiBanner.innerHTML = `
             <div style="display: flex; align-items: center; gap: 12px;">
                 <span style="font-size: 2rem;">🎯</span>
                 <div>
-                    <h4 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #1e3a8a;">TRẢ BÀI TỪ VỰNG TƯƠNG TÁC</h4>
-                    <p style="margin: 4px 0 0 0; color: #475569; font-size: 0.92rem;">Lật thẻ flashcard 3D, làm trắc nghiệm phản xạ, nghe gõ chữ chính tả (Dictation) để thuộc 100% từ vựng.</p>
+                    <h4 style="margin: 0; font-size: 1.15rem; font-weight: 800; color: #1e3a8a;">TRẢ BÀI TỪ VỰNG: ${cleanSectionTitle.toUpperCase()}</h4>
+                    <p style="margin: 4px 0 0 0; color: #475569; font-size: 0.92rem;">Lật thẻ flashcard 3D, làm trắc nghiệm phản xạ, nghe gõ chữ chính tả (Dictation) riêng cho dạng câu hỏi này.</p>
                 </div>
             </div>
             <button type="button" onclick="window.switchPart03Tab('trabai')" style="background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; border: none; padding: 10px 22px; border-radius: 10px; font-weight: 800; font-size: 0.95rem; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
-                <span>🚀 VÀO TRẢ BÀI NGAY</span>
+                <span>🚀 VÀO TRẢ BÀI DẠNG NÀY</span>
             </button>
         `;
         vocabularyContentArea.appendChild(trabaiBanner);
@@ -2586,14 +2600,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     /* =============================================================
        PART 03 - TRẢ BÀI TỪ VỰNG TƯƠNG TÁC (FLASHCARD, QUIZ, DICTATION, LIST)
-       533 Core TOEIC Listening Vocabulary Items across 12 Question Types
+       Đi theo từng Dạng câu hỏi (Per Question Type)
        ============================================================= */
 
     function getTraBaiP3FilteredItems() {
         const allData = window.part03TraBaiData || [];
-        const tbs = window.traBaiP3State;
-        if (!tbs || tbs.scope === "all") return allData;
-        return allData.filter(item => item.sectionId === tbs.scope);
+        const secId = (window.traBaiP3State && window.traBaiP3State.currentSectionId) 
+            ? window.traBaiP3State.currentSectionId 
+            : state.part03ActiveSection;
+        return allData.filter(item => item.sectionId === secId);
     }
 
     function saveTraBaiP3Learned() {
@@ -2609,14 +2624,22 @@ document.addEventListener("DOMContentLoaded", () => {
         const container = document.getElementById("trabai-content-area-p3");
         if (!container) return;
 
-        if (!window.part03TraBaiData || window.part03TraBaiData.length === 0) {
-            container.innerHTML = `<div style="text-align: center; padding: 50px; color: #64748b; font-size: 1.1rem;">Đang tải dữ liệu trả bài từ vựng Part 03...</div>`;
+        const currentSectionId = (section && section.id) ? section.id : state.part03ActiveSection;
+        const allData = window.part03TraBaiData || [];
+        const currentItems = allData.filter(item => item.sectionId === currentSectionId);
+
+        if (currentItems.length === 0) {
+            container.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 40px; text-align: center; margin: 20px auto; max-width: 600px;">
+                    <span style="font-size: 2.5rem;">📚</span>
+                    <h3 style="margin-top: 12px; color: #1e293b;">Chưa có dữ liệu từ vựng cho dạng bài này</h3>
+                    <p style="color: #64748b; font-size: 0.95rem;">Hệ thống đang được cập nhật thêm từ vựng cho dạng câu hỏi này.</p>
+                </div>
+            `;
             return;
         }
 
-        const allData = window.part03TraBaiData;
-
-        // Initialize state if not present
+        // Initialize state or re-scope if question type changed
         if (!window.traBaiP3State) {
             let savedLearned = [];
             try {
@@ -2624,8 +2647,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } catch (e) { savedLearned = []; }
 
             window.traBaiP3State = {
+                currentSectionId: currentSectionId,
                 mode: 'flashcard',
-                scope: (section && section.id && section.id !== 'part03_trabai_all' && section.id !== 'overview' && section.id !== 'tips') ? section.id : 'all',
                 cardIndex: 0,
                 isFlipped: false,
                 learnedIds: new Set(savedLearned),
@@ -2651,14 +2674,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 categoryFilter: 'all',
                 statusFilter: 'all'
             };
-        } else {
-            // Align scope if student navigated to a specific section and hasn't chosen "all"
-            if (section && section.id && section.id !== 'part03_trabai_all' && section.id !== 'overview' && section.id !== 'tips') {
-                if (window.traBaiP3State.scope !== 'all' && window.traBaiP3State.scope !== section.id) {
-                    window.traBaiP3State.scope = section.id;
-                    window.traBaiP3State.cardIndex = 0;
-                }
-            }
+        } else if (window.traBaiP3State.currentSectionId !== currentSectionId) {
+            window.traBaiP3State.currentSectionId = currentSectionId;
+            window.traBaiP3State.cardIndex = 0;
+            window.traBaiP3State.isFlipped = false;
+            window.traBaiP3State.quizQuestions = [];
+            window.traBaiP3State.quizFinished = false;
+            window.traBaiP3State.dictQuestions = [];
+            window.traBaiP3State.dictFinished = false;
+            window.traBaiP3State.searchQuery = '';
+            window.traBaiP3State.categoryFilter = 'all';
+            window.traBaiP3State.statusFilter = 'all';
         }
 
         // Attach Part 3 global keydown listener once
@@ -2671,7 +2697,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (!window.traBaiP3State) return;
                 const mode = window.traBaiP3State.mode;
 
-                // Flashcard shortcuts (when not typing in an input)
+                // Flashcard shortcuts
                 if (mode === "flashcard" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
                     if (e.code === "Space") {
                         e.preventDefault();
@@ -2729,41 +2755,27 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         const tbs = window.traBaiP3State;
-        const currentItems = getTraBaiP3FilteredItems();
         const totalItemsCount = currentItems.length;
         const learnedInScope = currentItems.filter(item => tbs.learnedIds.has(item.id)).length;
         const percentLearned = totalItemsCount > 0 ? Math.min(100, Math.round((learnedInScope / totalItemsCount) * 100)) : 0;
 
-        const scopeOptions = [
-            { id: "all", title: "🌟 Toàn bộ Part 03 (533 từ vựng)" },
-            { id: "dang_01_topic", title: "1.I - Chủ đề bài nghe (56 từ)" },
-            { id: "dang_01_location", title: "1.II - Địa điểm bài nghe (195 từ)" },
-            { id: "dang_01_identity", title: "1.III - Danh tính / Nghề nghiệp (130 từ)" },
-            { id: "dang_02_problem", title: "2.I - Vấn đề / Rắc rối (24 từ)" },
-            { id: "dang_02_why", title: "2.II - Lý do / Mục đích (16 từ)" },
-            { id: "dang_02_what_request", title: "2.III - Yêu cầu / Đề nghị (16 từ)" },
-            { id: "dang_02_what_suggest", title: "2.IV - Gợi ý / Khuyên bảo (16 từ)" },
-            { id: "dang_02_what_say", title: "2.V - Thông tin người nói đề cập (16 từ)" },
-            { id: "dang_02_what_according", title: "2.VI - According to... (16 từ)" },
-            { id: "dang_02_what_do_next", title: "2.VII - Hành động tiếp theo (16 từ)" },
-            { id: "dang_02_what_imply", title: "2.VIII - Câu hỏi ngụ ý (16 từ)" },
-            { id: "dang_visual_questions", title: "3 - Câu hỏi kết hợp Hình ảnh / Biểu đồ (16 từ)" }
-        ];
+        let displaySectionTitle = (section && section.title) ? section.title : "DẠNG CÂU HỎI";
+        displaySectionTitle = displaySectionTitle.replace(/<[^>]+>/g, "").trim();
 
         container.innerHTML = `
             <div class="tb-main-container">
-                <!-- TOP HEADER CARD: STATS & CLEAN SCOPE SELECTION -->
+                <!-- TOP HEADER CARD: FOCUSED EXCLUSIVELY ON CURRENT QUESTION TYPE -->
                 <div class="tb-header-card">
                     <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px;">
                         <div>
                             <div style="display: flex; align-items: center; gap: 8px;">
                                 <span style="font-size: 1.5rem;">🎯</span>
                                 <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--text-main); margin: 0;">
-                                    TRẢ BÀI TỪ VỰNG: PART 03 - SHORT CONVERSATIONS
+                                    TRẢ BÀI TỪ VỰNG: ${displaySectionTitle.toUpperCase()}
                                 </h2>
                             </div>
                             <p style="color: #64748b; font-size: 0.95rem; margin-top: 6px; margin-bottom: 0;">
-                                Hệ thống <strong>533 từ vựng cốt lõi</strong> qua 12 dạng câu hỏi TOEIC Listening Part 3.
+                                Đầy đủ <strong>${totalItemsCount} từ vựng cốt lõi</strong> của dạng câu hỏi này.
                             </p>
                         </div>
 
@@ -2779,29 +2791,19 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
 
-                    <!-- Scope Selection Dropdown -->
-                    <div style="margin-top: 18px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; background: #f8fafc; border: 1px solid #e2e8f0; padding: 10px 16px; border-radius: 12px;">
-                        <div style="display: flex; align-items: center; gap: 6px; font-weight: 700; color: #334155; font-size: 0.9rem;">
-                            <span>🔍</span> PHẠM VI ÔN TẬP:
-                        </div>
-                        <select id="tb3-scope-select" onchange="window.tb3ChangeScope(this.value)" style="flex: 1; min-width: 260px; max-width: 480px; padding: 8px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-weight: 700; font-size: 0.92rem; color: #1e293b; background: #ffffff; cursor: pointer; outline: none;">
-                            ${scopeOptions.map(opt => `<option value="${opt.id}" ${tbs.scope === opt.id ? 'selected' : ''}>${opt.title}</option>`).join('')}
-                        </select>
-                    </div>
-
                     <!-- Mode Switcher Nav (4 modes: Flashcard, Quiz, Dictation, List) -->
                     <div class="tb-modes-nav" style="max-width: 720px; margin-top: 18px;">
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'flashcard' ? 'active' : ''}" onclick="window.tb3SetMode('flashcard')">
                             <span>🗂️</span> Lật thẻ Flashcard
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'quiz' ? 'active' : ''}" onclick="window.tb3SetMode('quiz')">
-                            <span>⚡</span> Trắc nghiệm phản xạ
+                            <span>⚡</span> Trắc nghiệm (${totalItemsCount} câu)
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'dictation' ? 'active' : ''}" onclick="window.tb3SetMode('dictation')">
                             <span>✍️</span> Nghe & Gõ chữ
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'list' ? 'active' : ''}" onclick="window.tb3SetMode('list')">
-                            <span>📋</span> Tra cứu toàn bộ
+                            <span>📋</span> Tra cứu (${totalItemsCount} từ)
                         </button>
                     </div>
                 </div>
@@ -2813,20 +2815,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         window.tb3RenderActiveMode();
     }
-
-    window.tb3ChangeScope = function(newScope) {
-        if (!window.traBaiP3State) return;
-        window.traBaiP3State.scope = newScope;
-        window.traBaiP3State.cardIndex = 0;
-        window.traBaiP3State.isFlipped = false;
-        window.traBaiP3State.quizQuestions = [];
-        window.traBaiP3State.quizFinished = false;
-        window.traBaiP3State.dictQuestions = [];
-        window.traBaiP3State.dictFinished = false;
-
-        window.tb3UpdateHeaderProgress();
-        window.tb3RenderActiveMode();
-    };
 
     window.tb3UpdateHeaderProgress = function() {
         const tbs = window.traBaiP3State;
@@ -2882,7 +2870,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (items.length === 0) {
             workspace.innerHTML = `
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 40px; text-align: center;">
-                    <p style="color: #64748b;">Chưa có dữ liệu từ vựng cho phạm vi này.</p>
+                    <p style="color: #64748b;">Chưa có dữ liệu từ vựng cho dạng bài này.</p>
                 </div>
             `;
             return;
@@ -3144,14 +3132,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
             }
 
+            const currentSec = state.part03Data ? state.part03Data.find(s => s.id === tbs.currentSectionId) : null;
+            let sectionName = currentSec ? currentSec.title.replace(/<[^>]+>/g, '').trim() : "dạng câu hỏi này";
+
             workspace.innerHTML = `
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
                     <div style="font-size: 3.2rem; margin-bottom: 12px;">⚡</div>
-                    <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
-                        TRẮC NGHIỆM PHẢN XẠ TỪ VỰNG PART 03
+                    <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                        TRẮC NGHIỆM PHẢN XẠ: ${sectionName.toUpperCase()}
                     </h3>
                     <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
-                        Đọc nghĩa tiếng Việt ➔ Chọn từ vựng tiếng Anh tương ứng. Hệ thống chấm điểm tức thì, phát âm chuẩn và tự động theo dõi tiến độ toàn bài.
+                        Đọc nghĩa tiếng Việt ➔ Chọn từ vựng tiếng Anh tương ứng. Hệ thống chấm điểm tức thì, phát âm chuẩn và tự động theo dõi tiến độ của dạng bài.
                     </p>
 
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
@@ -3267,7 +3258,10 @@ document.addEventListener("DOMContentLoaded", () => {
         const shuffled = shuffleTraBaiArray(pool);
 
         const questions = shuffled.map(item => {
-            const otherItems = allData.filter(d => d.id !== item.id);
+            let otherItems = scopeItems.filter(d => d.id !== item.id);
+            if (otherItems.length < 3) {
+                otherItems = allData.filter(d => d.id !== item.id);
+            }
             const distractors = shuffleTraBaiArray(otherItems).slice(0, 3);
             const options = shuffleTraBaiArray([item, ...distractors]);
             return {
@@ -3542,14 +3536,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
             }
 
+            const currentSec = state.part03Data ? state.part03Data.find(s => s.id === tbs.currentSectionId) : null;
+            let sectionName = currentSec ? currentSec.title.replace(/<[^>]+>/g, '').trim() : "dạng câu hỏi này";
+
             workspace.innerHTML = `
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
                     <div style="font-size: 3.2rem; margin-bottom: 12px;">✍️</div>
-                    <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
-                        NGHE VÀ GÕ CHỮ (DICTATION PART 03)
+                    <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                        NGHE VÀ GÕ CHỮ: ${sectionName.toUpperCase()}
                     </h3>
                     <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
-                        Luyện tập nghe phát âm và gõ lại chính xác từng từ / cụm từ tiếng Anh. Phương pháp này giúp khắc phục triệt để lỗi nghe thiếu âm cuối (ending sounds) và nhớ mặt chữ chuẩn xác.
+                        Luyện tập nghe phát âm và gõ lại chính xác từng từ / cụm từ tiếng Anh của dạng câu hỏi này. Phương pháp này giúp khắc phục triệt để lỗi nghe thiếu âm cuối (ending sounds) và nhớ mặt chữ chuẩn xác.
                     </p>
 
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
@@ -3904,11 +3901,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 <!-- Filter & Search Bar -->
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 16px 20px; display: flex; gap: 14px; flex-wrap: wrap; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.03);">
                     <div style="flex: 1; min-width: 240px; position: relative;">
-                        <input type="text" id="tb3-list-search" placeholder="🔍 Tìm kiếm từ vựng tiếng Anh hoặc tiếng Việt..." value="${tbs.searchQuery || ''}" oninput="window.tb3FilterList(this.value)" style="width: 100%; padding: 10px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 0.95rem; outline: none;">
+                        <input type="text" id="tb3-list-search" placeholder="🔍 Tìm kiếm từ vựng trong dạng này..." value="${tbs.searchQuery || ''}" oninput="window.tb3FilterList(this.value)" style="width: 100%; padding: 10px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 0.95rem; outline: none;">
                     </div>
                     <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
                         <select id="tb3-list-cat-select" onchange="window.tb3FilterListCat(this.value)" style="padding: 10px 14px; border-radius: 8px; border: 1.5px solid #cbd5e1; font-size: 0.95rem; font-weight: 600; color: #334155; outline: none; background: white;">
-                            <option value="all" ${tbs.categoryFilter === 'all' ? 'selected' : ''}>Tất cả chủ đề</option>
+                            <option value="all" ${tbs.categoryFilter === 'all' ? 'selected' : ''}>Tất cả chủ đề (${categories.length})</option>
                             ${categories.map(c => `<option value="${c}" ${tbs.categoryFilter === c ? 'selected' : ''}>${c}</option>`).join('')}
                         </select>
 
@@ -4029,7 +4026,19 @@ document.addEventListener("DOMContentLoaded", () => {
         saveTraBaiP3Learned();
         window.tb3UpdateHeaderProgress();
     };
-    
+
+    window.tb3ChangeScope = function(newScope) {
+        if (!window.traBaiP3State) return;
+        window.traBaiP3State.currentSectionId = newScope;
+        window.traBaiP3State.cardIndex = 0;
+        window.traBaiP3State.isFlipped = false;
+        window.traBaiP3State.quizQuestions = [];
+        window.traBaiP3State.quizFinished = false;
+        window.traBaiP3State.dictQuestions = [];
+        window.traBaiP3State.dictFinished = false;
+        window.tb3UpdateHeaderProgress();
+        window.tb3RenderActiveMode();
+    };
     // C. EXAMPLES
     function renderExamples(section) {
         examplesContentArea.innerHTML = "";
