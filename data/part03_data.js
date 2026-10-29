@@ -2521,7 +2521,89 @@ window.part03Data = [
         ]
       }
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ VẤN ĐỀ VÀ SỰ CỐ</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)</span></strong>",
+          "<span style=\"color: #00B050;\">malfunction</span> /ˈmæl.fʌŋk.ʃən/ (n): sự cố, trục trặc máy móc",
+          "<span style=\"color: #00B050;\">out of order</span> /ˌaʊt əv ˈɔː.dər/ (adj): bị hỏng (máy móc)",
+          "<span style=\"color: #00B050;\">break down</span> /breɪk daʊn/ (v): bị hỏng hóc, ngừng hoạt động",
+          "<span style=\"color: #00B050;\">paper jam</span> /ˈpeɪ.pər dʒæm/ (n): kẹt giấy (máy in/photo)",
+          "<span style=\"color: #00B050;\">power outage</span> /ˈpaʊ.ər ˌaʊ.tɪdʒ/ (n): sự cố mất điện",
+          "<span style=\"color: #00B050;\">system glitch</span> /ˈsɪs.təm ɡlɪtʃ/ (n): lỗi trục trặc hệ thống",
+          "<span style=\"color: #00B050;\">leak</span> /liːk/ (n): vết rò rỉ, chảy nước",
+          "<span style=\"color: #00B050;\">defect</span> /ˈdiː.fekt/ (n): lỗi, khiếm khuyết sản phẩm"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ VẤN ĐỀ VÀ SỰ CỐ",
+          "• Sự cố thiết bị & kỹ thuật (Equipment & Technical Failures)",
+          "sự cố, trục trặc máy móc /ˈmæl.fʌŋk.ʃən/ (n)",
+          "bị hỏng (máy móc) /ˌaʊt əv ˈɔː.dər/ (adj)",
+          "bị hỏng hóc, ngừng hoạt động /breɪk daʊn/ (v)",
+          "kẹt giấy (máy in/photo) /ˈpeɪ.pər dʒæm/ (n)",
+          "sự cố mất điện /ˈpaʊ.ər ˌaʊ.tɪdʒ/ (n)",
+          "lỗi trục trặc hệ thống /ˈsɪs.təm ɡlɪtʃ/ (n)",
+          "vết rò rỉ, chảy nước /liːk/ (n)",
+          "lỗi, khiếm khuyết sản phẩm /ˈdiː.fekt/ (n)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ VẤN ĐỀ VÀ SỰ CỐ</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)</span></strong>",
+          "<span style=\"color: #00B050;\">damaged shipment</span> /ˈdæm.ɪdʒd ˈʃɪp.mənt/ (n): kiện hàng bị hư hỏng",
+          "<span style=\"color: #00B050;\">delayed delivery</span> /dɪˈleɪd dɪˈlɪv.ər.i/ (n): việc giao hàng bị chậm trễ",
+          "<span style=\"color: #00B050;\">missing item</span> /ˈmɪs.ɪŋ ˈaɪ.təm/ (n): món hàng bị thiếu/thất lạc",
+          "<span style=\"color: #00B050;\">wrong order</span> /rɒŋ ˈɔː.dər/ (n): đơn hàng bị giao sai",
+          "<span style=\"color: #00B050;\">out of stock</span> /ˌaʊt əv ˈstɒk/ (adj): hết hàng trong kho",
+          "<span style=\"color: #00B050;\">backorder</span> /ˈbækˌɔː.dər/ (n): đơn hàng tạm hoãn do hết hàng",
+          "<span style=\"color: #00B050;\">transit damage</span> /ˈtræn.zɪt ˈdæm.ɪdʒ/ (n): thiệt hại trong khi vận chuyển",
+          "<span style=\"color: #00B050;\">misplaced package</span> /ˌmɪsˈpleɪst ˈpæk.ɪdʒ/ (n): bưu kiện bị để nhầm chỗ"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ VẤN ĐỀ VÀ SỰ CỐ",
+          "• Sự cố vận chuyển & giao hàng (Shipping & Delivery Issues)",
+          "kiện hàng bị hư hỏng /ˈdæm.ɪdʒd ˈʃɪp.mənt/ (n)",
+          "việc giao hàng bị chậm trễ /dɪˈleɪd dɪˈlɪv.ər.i/ (n)",
+          "món hàng bị thiếu/thất lạc /ˈmɪs.ɪŋ ˈaɪ.təm/ (n)",
+          "đơn hàng bị giao sai /rɒŋ ˈɔː.dər/ (n)",
+          "hết hàng trong kho /ˌaʊt əv ˈstɒk/ (adj)",
+          "đơn hàng tạm hoãn do hết hàng /ˈbækˌɔː.dər/ (n)",
+          "thiệt hại trong khi vận chuyển /ˈtræn.zɪt ˈdæm.ɪdʒ/ (n)",
+          "bưu kiện bị để nhầm chỗ /ˌmɪsˈpleɪst ˈpæk.ɪdʒ/ (n)"
+        ]
+      },
+      {
+        "slide_index": 1003,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ VẤN ĐỀ VÀ SỰ CỐ</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Xung đột lịch trình & chi phí (Scheduling & Budget Issues)</span></strong>",
+          "<span style=\"color: #00B050;\">scheduling conflict</span> /ˈʃedʒ.uːl.ɪŋ ˈkɒn.flɪkt/ (n): sự trùng lặp, xung đột lịch",
+          "<span style=\"color: #00B050;\">double-booked</span> /ˈdʌb.əl bʊkt/ (adj): bị đặt trùng lặp chỗ hai lần",
+          "<span style=\"color: #00B050;\">behind schedule</span> /bɪˈhaɪnd ˈʃedʒ.uːl/ (adj): bị chậm hơn so với tiến độ",
+          "<span style=\"color: #00B050;\">budget deficit</span> /ˈbʌdʒ.ɪt ˈdef.ɪ.sɪt/ (n): sự thiếu hụt ngân sách",
+          "<span style=\"color: #00B050;\">billing error</span> /ˈbɪl.ɪŋ ˈer.ər/ (n): lỗi hóa đơn, tính sai tiền",
+          "<span style=\"color: #00B050;\">overcharge</span> /ˌəʊ.vəˈtʃɑːdʒ/ (v): tính giá quá đắt, thu thừa tiền",
+          "<span style=\"color: #00B050;\">unexpected expense</span> /ˌʌn.ɪkˈspek.tɪd ɪkˈspens/ (n): chi phí phát sinh bất ngờ",
+          "<span style=\"color: #00B050;\">understaffed</span> /ˌʌn.dəˈstɑːft/ (adj): thiếu nhân sự, thiếu người làm"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ VẤN ĐỀ VÀ SỰ CỐ",
+          "• Xung đột lịch trình & chi phí (Scheduling & Budget Issues)",
+          "sự trùng lặp, xung đột lịch /ˈʃedʒ.uːl.ɪŋ ˈkɒn.flɪkt/ (n)",
+          "bị đặt trùng lặp chỗ hai lần /ˈdʌb.əl bʊkt/ (adj)",
+          "bị chậm hơn so với tiến độ /bɪˈhaɪnd ˈʃedʒ.uːl/ (adj)",
+          "sự thiếu hụt ngân sách /ˈbʌdʒ.ɪt ˈdef.ɪ.sɪt/ (n)",
+          "lỗi hóa đơn, tính sai tiền /ˈbɪl.ɪŋ ˈer.ər/ (n)",
+          "tính giá quá đắt, thu thừa tiền /ˌəʊ.vəˈtʃɑːdʒ/ (v)",
+          "chi phí phát sinh bất ngờ /ˌʌn.ɪkˈspek.tɪd ɪkˈspens/ (n)",
+          "thiếu nhân sự, thiếu người làm /ˌʌn.dəˈstɑːft/ (adj)"
+        ]
+      }
+    ],
     "examples": [
       {
         "slide_index": 106,
@@ -2947,7 +3029,62 @@ window.part03Data = [
         ]
       }
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ LÝ DO VÀ MỤC ĐÍCH</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)</span></strong>",
+          "<span style=\"color: #00B050;\">inquire about</span> /ɪnˈkwaɪər əˈbaʊt/ (v): hỏi về, tìm hiểu thông tin",
+          "<span style=\"color: #00B050;\">confirm a reservation</span> /kənˈfɜːm ə ˌrez.əˈveɪ.ʃən/ (v): xác nhận đặt chỗ/phòng",
+          "<span style=\"color: #00B050;\">file a complaint</span> /faɪl ə kəmˈpleɪnt/ (v): nộp đơn khiếu nại, phản ánh",
+          "<span style=\"color: #00B050;\">request a refund</span> /rɪˈkwest ə ˈriː.fʌnd/ (v): yêu cầu hoàn tiền",
+          "<span style=\"color: #00B050;\">follow up on</span> /ˈfɒl.əʊ ʌp ɒn/ (v): theo dõi, kiểm tra tiến độ",
+          "<span style=\"color: #00B050;\">notify</span> /ˈnəʊ.tɪ.faɪ/ (v): thông báo cho ai biết",
+          "<span style=\"color: #00B050;\">seek approval</span> /siːk əˈpruː.vəl/ (v): xin ý kiến phê duyệt",
+          "<span style=\"color: #00B050;\">renew a subscription</span> /rɪˈnjuː ə səbˈskrɪp.ʃən/ (v): gia hạn gói đăng ký"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ LÝ DO VÀ MỤC ĐÍCH",
+          "• Mục đích liên lạc & gọi điện (Reasons for Calling/Contacting)",
+          "hỏi về, tìm hiểu thông tin /ɪnˈkwaɪər əˈbaʊt/ (v)",
+          "xác nhận đặt chỗ/phòng /kənˈfɜːm ə ˌrez.əˈveɪ.ʃən/ (v)",
+          "nộp đơn khiếu nại, phản ánh /faɪl ə kəmˈpleɪnt/ (v)",
+          "yêu cầu hoàn tiền /rɪˈkwest ə ˈriː.fʌnd/ (v)",
+          "theo dõi, kiểm tra tiến độ /ˈfɒl.əʊ ʌp ɒn/ (v)",
+          "thông báo cho ai biết /ˈnəʊ.tɪ.faɪ/ (v)",
+          "xin ý kiến phê duyệt /siːk əˈpruː.vəl/ (v)",
+          "gia hạn gói đăng ký /rɪˈnjuː ə səbˈskrɪp.ʃən/ (v)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ LÝ DO VÀ MỤC ĐÍCH</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)</span></strong>",
+          "<span style=\"color: #00B050;\">attend a conference</span> /əˈtend ə ˈkɒn.fər.əns/ (v): tham dự hội nghị",
+          "<span style=\"color: #00B050;\">be tied up</span> /biː taɪd ʌp/ (adj): bận rộn nhiều việc, bị kẹt lịch",
+          "<span style=\"color: #00B050;\">prior engagement</span> /ˈpraɪ.ər ɪnˈɡeɪdʒ.mənt/ (n): cuộc hẹn/công việc bận từ trước",
+          "<span style=\"color: #00B050;\">business trip</span> /ˈbɪz.nəs trɪp/ (n): chuyến đi công tác",
+          "<span style=\"color: #00B050;\">take a day off</span> /teɪk ə deɪ ɒf/ (v): nghỉ phép một ngày",
+          "<span style=\"color: #00B050;\">inclement weather</span> /ɪnˈklem.ənt ˈweð.ər/ (n): thời tiết xấu, khắc nghiệt",
+          "<span style=\"color: #00B050;\">flight cancellation</span> /flaɪt ˌkæn.səlˈeɪ.ʃən/ (n): việc hủy chuyến bay",
+          "<span style=\"color: #00B050;\">annual checkup</span> /ˈæn.ju.əl ˈtʃek.ʌp/ (n): cuộc khám sức khỏe định kỳ"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ LÝ DO VÀ MỤC ĐÍCH",
+          "• Lý do vắng mặt & thay đổi kế hoạch (Reasons for Absence & Changes)",
+          "tham dự hội nghị /əˈtend ə ˈkɒn.fər.əns/ (v)",
+          "bận rộn nhiều việc, bị kẹt lịch /biː taɪd ʌp/ (adj)",
+          "cuộc hẹn/công việc bận từ trước /ˈpraɪ.ər ɪnˈɡeɪdʒ.mənt/ (n)",
+          "chuyến đi công tác /ˈbɪz.nəs trɪp/ (n)",
+          "nghỉ phép một ngày /teɪk ə deɪ ɒf/ (v)",
+          "thời tiết xấu, khắc nghiệt /ɪnˈklem.ənt ˈweð.ər/ (n)",
+          "việc hủy chuyến bay /flaɪt ˌkæn.səlˈeɪ.ʃən/ (n)",
+          "cuộc khám sức khỏe định kỳ /ˈæn.ju.əl ˈtʃek.ʌp/ (n)"
+        ]
+      }
+    ],
     "examples": [
       {
         "slide_index": 136,
@@ -3335,7 +3472,62 @@ window.part03Data = [
         ]
       }
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NỘI DUNG YÊU CẦU (REQUEST)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)</span></strong>",
+          "<span style=\"color: #00B050;\">fill out a form</span> /fɪl aʊt ə fɔːm/ (v): điền vào mẫu đơn",
+          "<span style=\"color: #00B050;\">submit an invoice</span> /səbˈmɪt ən ˈɪn.vɔɪs/ (v): nộp hóa đơn thanh toán",
+          "<span style=\"color: #00B050;\">provide a reference</span> /prəˈvaɪd ə ˈref.ər.əns/ (v): cung cấp người tham chiếu",
+          "<span style=\"color: #00B050;\">forward an email</span> /ˈfɔː.wəd ən ˈiː.meɪl/ (v): chuyển tiếp thư điện tử",
+          "<span style=\"color: #00B050;\">send a portfolio</span> /send ə pɔːtˈfəʊ.li.əʊ/ (v): gửi hồ sơ năng lực/tác phẩm",
+          "<span style=\"color: #00B050;\">verify details</span> /ˈver.ɪ.faɪ ˈdiː.teɪlz/ (v): xác minh các chi tiết thông tin",
+          "<span style=\"color: #00B050;\">sign the contract</span> /saɪn ðə ˈkɒn.trækt/ (v): ký tên vào hợp đồng",
+          "<span style=\"color: #00B050;\">attach a resume</span> /əˈtætʃ ə ˈrez.juː.meɪ/ (v): đính kèm sơ yếu lý lịch"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ NỘI DUNG YÊU CẦU (REQUEST)",
+          "• Yêu cầu giấy tờ & thủ tục (Documents & Administrative Requests)",
+          "điền vào mẫu đơn /fɪl aʊt ə fɔːm/ (v)",
+          "nộp hóa đơn thanh toán /səbˈmɪt ən ˈɪn.vɔɪs/ (v)",
+          "cung cấp người tham chiếu /prəˈvaɪd ə ˈref.ər.əns/ (v)",
+          "chuyển tiếp thư điện tử /ˈfɔː.wəd ən ˈiː.meɪl/ (v)",
+          "gửi hồ sơ năng lực/tác phẩm /send ə pɔːtˈfəʊ.li.əʊ/ (v)",
+          "xác minh các chi tiết thông tin /ˈver.ɪ.faɪ ˈdiː.teɪlz/ (v)",
+          "ký tên vào hợp đồng /saɪn ðə ˈkɒn.trækt/ (v)",
+          "đính kèm sơ yếu lý lịch /əˈtætʃ ə ˈrez.juː.meɪ/ (v)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ NỘI DUNG YÊU CẦU (REQUEST)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)</span></strong>",
+          "<span style=\"color: #00B050;\">give a hand</span> /ɡɪv ə hænd/ (v): giúp một tay, hỗ trợ",
+          "<span style=\"color: #00B050;\">cover a shift</span> /ˈkʌv.ər ə ʃɪft/ (v): trực ca thay cho đồng nghiệp",
+          "<span style=\"color: #00B050;\">show someone around</span> /ʃəʊ ˈsʌm.wʌn əˈraʊnd/ (v): dẫn ai đi tham quan công ty",
+          "<span style=\"color: #00B050;\">expedite shipping</span> /ˈek.spə.daɪt ˈʃɪp.ɪŋ/ (v): đẩy nhanh tiến độ giao hàng",
+          "<span style=\"color: #00B050;\">double-check</span> /ˌdʌb.əl ˈtʃek/ (v): kiểm tra lại cẩn thận lần hai",
+          "<span style=\"color: #00B050;\">extend a deadline</span> /ɪkˈstend ə ˈded.laɪn/ (v): gia hạn thời hạn nộp/làm",
+          "<span style=\"color: #00B050;\">grant access</span> /ɡrɑːnt ˈæk.ses/ (v): cấp quyền truy cập vào hệ thống",
+          "<span style=\"color: #00B050;\">keep someone updated</span> /kiːp ˈsʌm.wʌn ʌpˈdeɪ.tɪd/ (v): liên tục cập nhật thông tin cho ai"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ NỘI DUNG YÊU CẦU (REQUEST)",
+          "• Yêu cầu hỗ trợ & phối hợp (Assistance & Cooperation Requests)",
+          "giúp một tay, hỗ trợ /ɡɪv ə hænd/ (v)",
+          "trực ca thay cho đồng nghiệp /ˈkʌv.ər ə ʃɪft/ (v)",
+          "dẫn ai đi tham quan công ty /ʃəʊ ˈsʌm.wʌn əˈraʊnd/ (v)",
+          "đẩy nhanh tiến độ giao hàng /ˈek.spə.daɪt ˈʃɪp.ɪŋ/ (v)",
+          "kiểm tra lại cẩn thận lần hai /ˌdʌb.əl ˈtʃek/ (v)",
+          "gia hạn thời hạn nộp/làm /ɪkˈstend ə ˈded.laɪn/ (v)",
+          "cấp quyền truy cập vào hệ thống /ɡrɑːnt ˈæk.ses/ (v)",
+          "liên tục cập nhật thông tin cho ai /kiːp ˈsʌm.wʌn ʌpˈdeɪ.tɪd/ (v)"
+        ]
+      }
+    ],
     "examples": [
       {
         "slide_index": 163,
@@ -3517,7 +3709,62 @@ window.part03Data = [
         ]
       }
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ GỢI Ý VÀ ĐỀ XUẤT (SUGGEST / OFFER)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)</span></strong>",
+          "<span style=\"color: #00B050;\">opt for</span> /ɒpt fɔːr/ (v): lựa chọn phương án nào đó",
+          "<span style=\"color: #00B050;\">reschedule an appointment</span> /ˌriːˈʃedʒ.uːl ən əˈpɔɪnt.mənt/ (v): đổi lại lịch hẹn",
+          "<span style=\"color: #00B050;\">hire a consultant</span> /ˈhaɪər ə kənˈsʌl.tənt/ (v): thuê chuyên gia tư vấn",
+          "<span style=\"color: #00B050;\">outsource</span> /ˈaʊt.sɔːs/ (v): thuê ngoài dịch vụ",
+          "<span style=\"color: #00B050;\">split the cost</span> /splɪt ðə kɒst/ (v): chia đôi chi phí",
+          "<span style=\"color: #00B050;\">carpool</span> /ˈkɑː.puːl/ (v): đi chung xe với đồng nghiệp",
+          "<span style=\"color: #00B050;\">negotiate a discount</span> /nəˈɡəʊ.ʃi.eɪt ə ˈdɪs.kaʊnt/ (v): đàm phán mức giảm giá",
+          "<span style=\"color: #00B050;\">upgrade facilities</span> /ʌpˈɡreɪd fəˈsɪl.ə.tiz/ (v): nâng cấp cơ sở vật chất"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ GỢI Ý VÀ ĐỀ XUẤT (SUGGEST / OFFER)",
+          "• Đề xuất phương án & giải pháp (Proposing Alternatives & Solutions)",
+          "lựa chọn phương án nào đó /ɒpt fɔːr/ (v)",
+          "đổi lại lịch hẹn /ˌriːˈʃedʒ.uːl ən əˈpɔɪnt.mənt/ (v)",
+          "thuê chuyên gia tư vấn /ˈhaɪər ə kənˈsʌl.tənt/ (v)",
+          "thuê ngoài dịch vụ /ˈaʊt.sɔːs/ (v)",
+          "chia đôi chi phí /splɪt ðə kɒst/ (v)",
+          "đi chung xe với đồng nghiệp /ˈkɑː.puːl/ (v)",
+          "đàm phán mức giảm giá /nəˈɡəʊ.ʃi.eɪt ə ˈdɪs.kaʊnt/ (v)",
+          "nâng cấp cơ sở vật chất /ʌpˈɡreɪd fəˈsɪl.ə.tiz/ (v)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ GỢI Ý VÀ ĐỀ XUẤT (SUGGEST / OFFER)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)</span></strong>",
+          "<span style=\"color: #00B050;\">give someone a lift</span> /ɡɪv ˈsʌm.wʌn ə lɪft/ (v): cho ai đó đi nhờ xe",
+          "<span style=\"color: #00B050;\">look into the matter</span> /lʊk ˈɪn.tuː ðə ˈmæt.ər/ (v): xem xét, tìm hiểu vấn đề",
+          "<span style=\"color: #00B050;\">take care of</span> /teɪk keər əv/ (v): chịu trách nhiệm lo liệu/giải quyết",
+          "<span style=\"color: #00B050;\">waive the fee</span> /weɪv ðə fiː/ (v): miễn thu khoản phí dịch vụ",
+          "<span style=\"color: #00B050;\">reach out to</span> /riːtʃ aʊt tuː/ (v): chủ động liên hệ với ai",
+          "<span style=\"color: #00B050;\">handle the paperwork</span> /ˈhæn.dəl ðə ˈpeɪ.pə.wɜːk/ (v): xử lý giấy tờ hồ sơ",
+          "<span style=\"color: #00B050;\">lend a copy</span> /lend ə ˈkɒp.i/ (v): cho mượn một bản sao tài liệu",
+          "<span style=\"color: #00B050;\">recommend a vendor</span> /ˌrek.əˈmend ə ˈven.dər/ (v): giới thiệu nhà cung cấp uy tín"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ GỢI Ý VÀ ĐỀ XUẤT (SUGGEST / OFFER)",
+          "• Đề nghị hỗ trợ chủ động (Offering Helpful Assistance)",
+          "cho ai đó đi nhờ xe /ɡɪv ˈsʌm.wʌn ə lɪft/ (v)",
+          "xem xét, tìm hiểu vấn đề /lʊk ˈɪn.tuː ðə ˈmæt.ər/ (v)",
+          "chịu trách nhiệm lo liệu/giải quyết /teɪk keər əv/ (v)",
+          "miễn thu khoản phí dịch vụ /weɪv ðə fiː/ (v)",
+          "chủ động liên hệ với ai /riːtʃ aʊt tuː/ (v)",
+          "xử lý giấy tờ hồ sơ /ˈhæn.dəl ðə ˈpeɪ.pə.wɜːk/ (v)",
+          "cho mượn một bản sao tài liệu /lend ə ˈkɒp.i/ (v)",
+          "giới thiệu nhà cung cấp uy tín /ˌrek.əˈmend ə ˈven.dər/ (v)"
+        ]
+      }
+    ],
     "examples": [
       {
         "slide_index": 176,
@@ -3708,7 +3955,62 @@ window.part03Data = [
         ]
       }
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ THÔNG TIN ĐƯỢC ĐỀ CẬP</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Đặc tính sản phẩm & công nghệ (Product Features & Technology)</span></strong>",
+          "<span style=\"color: #00B050;\">user-friendly</span> /ˌjuː.zəˈfrend.li/ (adj): dễ sử dụng, thân thiện người dùng",
+          "<span style=\"color: #00B050;\">compatible with</span> /kəmˈpæt.ə.bəl wɪð/ (adj): tương thích với thiết bị/phần mềm",
+          "<span style=\"color: #00B050;\">energy-efficient</span> /ˌen.ə.dʒi.ɪˈfɪʃ.ənt/ (adj): tiết kiệm năng lượng, tiết kiệm điện",
+          "<span style=\"color: #00B050;\">state-of-the-art</span> /ˌsteɪt.əv.ðiːˈɑːt/ (adj): tối tân, hiện đại nhất",
+          "<span style=\"color: #00B050;\">upgraded version</span> /ʌpˈɡreɪ.dɪd ˈvɜː.ʃən/ (n): phiên bản nâng cấp mới",
+          "<span style=\"color: #00B050;\">warranty period</span> /ˈwɒr.ən.ti ˌpɪə.ri.əd/ (n): thời hạn bảo hành",
+          "<span style=\"color: #00B050;\">durable</span> /ˈdʒʊə.rə.bəl/ (adj): bền đẹp, dùng được lâu dài",
+          "<span style=\"color: #00B050;\">cost-effective</span> /ˌkɒst.ɪˈfek.tɪv/ (adj): hiệu quả về chi phí, kinh tế"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ THÔNG TIN ĐƯỢC ĐỀ CẬP",
+          "• Đặc tính sản phẩm & công nghệ (Product Features & Technology)",
+          "dễ sử dụng, thân thiện người dùng /ˌjuː.zəˈfrend.li/ (adj)",
+          "tương thích với thiết bị/phần mềm /kəmˈpæt.ə.bəl wɪð/ (adj)",
+          "tiết kiệm năng lượng, tiết kiệm điện /ˌen.ə.dʒi.ɪˈfɪʃ.ənt/ (adj)",
+          "tối tân, hiện đại nhất /ˌsteɪt.əv.ðiːˈɑːt/ (adj)",
+          "phiên bản nâng cấp mới /ʌpˈɡreɪ.dɪd ˈvɜː.ʃən/ (n)",
+          "thời hạn bảo hành /ˈwɒr.ən.ti ˌpɪə.ri.əd/ (n)",
+          "bền đẹp, dùng được lâu dài /ˈdʒʊə.rə.bəl/ (adj)",
+          "hiệu quả về chi phí, kinh tế /ˌkɒst.ɪˈfek.tɪv/ (adj)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ THÔNG TIN ĐƯỢC ĐỀ CẬP</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Chính sách & Kết quả kinh doanh (Policies & Business Results)</span></strong>",
+          "<span style=\"color: #00B050;\">flexible hours</span> /ˈflek.sə.bəl ˈaʊəz/ (n): giờ làm việc linh hoạt",
+          "<span style=\"color: #00B050;\">reimbursement</span> /ˌriː.ɪmˈbɜːs.mənt/ (n): sự bồi hoàn, hoàn trả chi phí",
+          "<span style=\"color: #00B050;\">mandatory attendance</span> /ˈmæn.də.tər.i əˈten.dəns/ (n): sự tham dự bắt buộc",
+          "<span style=\"color: #00B050;\">sales target</span> /ˈseɪlz ˌtɑː.ɡɪt/ (n): chỉ tiêu doanh số",
+          "<span style=\"color: #00B050;\">customer feedback</span> /ˈkʌs.tə.mər ˈfiːd.bæk/ (n): phản hồi của khách hàng",
+          "<span style=\"color: #00B050;\">market share</span> /ˈmɑː.kɪt ʃeər/ (n): thị phần trên thị trường",
+          "<span style=\"color: #00B050;\">breakthrough</span> /ˈbreɪk.θruː/ (n): bước đột phá quan trọng",
+          "<span style=\"color: #00B050;\">positive review</span> /ˈpɒz.ə.tɪv rɪˈvjuː/ (n): lời đánh giá, nhận xét tích cực"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ THÔNG TIN ĐƯỢC ĐỀ CẬP",
+          "• Chính sách & Kết quả kinh doanh (Policies & Business Results)",
+          "giờ làm việc linh hoạt /ˈflek.sə.bəl ˈaʊəz/ (n)",
+          "sự bồi hoàn, hoàn trả chi phí /ˌriː.ɪmˈbɜːs.mənt/ (n)",
+          "sự tham dự bắt buộc /ˈmæn.də.tər.i əˈten.dəns/ (n)",
+          "chỉ tiêu doanh số /ˈseɪlz ˌtɑː.ɡɪt/ (n)",
+          "phản hồi của khách hàng /ˈkʌs.tə.mər ˈfiːd.bæk/ (n)",
+          "thị phần trên thị trường /ˈmɑː.kɪt ʃeər/ (n)",
+          "bước đột phá quan trọng /ˈbreɪk.θruː/ (n)",
+          "lời đánh giá, nhận xét tích cực /ˈpɒz.ə.tɪv rɪˈvjuː/ (n)"
+        ]
+      }
+    ],
     "examples": [
       {
         "slide_index": 188,
@@ -3897,7 +4199,62 @@ window.part03Data = [
         ]
       }
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG THEO THÔNG TIN NGƯỜI NÓI (ACCORDING TO)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)</span></strong>",
+          "<span style=\"color: #00B050;\">deadline</span> /ˈded.laɪn/ (n): hạn chót, thời hạn hoàn thành",
+          "<span style=\"color: #00B050;\">milestone</span> /ˈmaɪl.stəʊn/ (n): cột mốc quan trọng của dự án",
+          "<span style=\"color: #00B050;\">ahead of schedule</span> /əˈhed əv ˈʃedʒ.uːl/ (adj): vượt trước tiến độ kế hoạch",
+          "<span style=\"color: #00B050;\">completion date</span> /kəmˈpliː.ʃən deɪt/ (n): ngày hoàn thành dự kiến",
+          "<span style=\"color: #00B050;\">target launch</span> /ˈtɑː.ɡɪt lɔːntʃ/ (n): thời điểm dự kiến ra mắt",
+          "<span style=\"color: #00B050;\">inspection</span> /ɪnˈspek.ʃən/ (n): đợt kiểm tra, nghiệm thu",
+          "<span style=\"color: #00B050;\">annual banquet</span> /ˈæn.ju.əl ˈbæŋ.kwɪt/ (n): tiệc chiêu đãi thường niên",
+          "<span style=\"color: #00B050;\">orientation session</span> /ˌɔː.ri.enˈteɪ.ʃən ˈseʃ.ən/ (n): buổi định hướng, giới thiệu"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG THEO THÔNG TIN NGƯỜI NÓI (ACCORDING TO)",
+          "• Tiến độ, mốc thời gian & sự kiện (Timelines, Milestones & Events)",
+          "hạn chót, thời hạn hoàn thành /ˈded.laɪn/ (n)",
+          "cột mốc quan trọng của dự án /ˈmaɪl.stəʊn/ (n)",
+          "vượt trước tiến độ kế hoạch /əˈhed əv ˈʃedʒ.uːl/ (adj)",
+          "ngày hoàn thành dự kiến /kəmˈpliː.ʃən deɪt/ (n)",
+          "thời điểm dự kiến ra mắt /ˈtɑː.ɡɪt lɔːntʃ/ (n)",
+          "đợt kiểm tra, nghiệm thu /ɪnˈspek.ʃən/ (n)",
+          "tiệc chiêu đãi thường niên /ˈæn.ju.əl ˈbæŋ.kwɪt/ (n)",
+          "buổi định hướng, giới thiệu /ˌɔː.ri.enˈteɪ.ʃən ˈseʃ.ən/ (n)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG THEO THÔNG TIN NGƯỜI NÓI (ACCORDING TO)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)</span></strong>",
+          "<span style=\"color: #00B050;\">prerequisite</span> /ˌpriːˈrek.wɪ.zɪt/ (n): điều kiện tiên quyết cần có",
+          "<span style=\"color: #00B050;\">qualification</span> /ˌkwɒl.ɪ.fɪˈkeɪ.ʃən/ (n): bằng cấp, năng lực đạt chuẩn",
+          "<span style=\"color: #00B050;\">proof of purchase</span> /pruːf əv ˈpɜː.tʃəs/ (n): hóa đơn, bằng chứng mua hàng",
+          "<span style=\"color: #00B050;\">valid ID</span> /ˈvæl.ɪd aɪˈdiː/ (n): giấy tờ tùy thân còn hiệu lực",
+          "<span style=\"color: #00B050;\">terms of the contract</span> /tɜːmz əv ðə ˈkɒn.trækt/ (n): các điều khoản trong hợp đồng",
+          "<span style=\"color: #00B050;\">parking permit</span> /ˈpɑː.kɪŋ ˈpɜː.mɪt/ (n): giấy phép đỗ xe",
+          "<span style=\"color: #00B050;\">safety guideline</span> /ˈseɪf.ti ˈɡaɪd.laɪn/ (n): hướng dẫn an toàn lao động",
+          "<span style=\"color: #00B050;\">minimum order</span> /ˈmɪn.ɪ.məm ˈɔː.dər/ (n): số lượng đặt hàng tối thiểu"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG THEO THÔNG TIN NGƯỜI NÓI (ACCORDING TO)",
+          "• Điều kiện, quy định & tiêu chuẩn (Conditions & Qualifications)",
+          "điều kiện tiên quyết cần có /ˌpriːˈrek.wɪ.zɪt/ (n)",
+          "bằng cấp, năng lực đạt chuẩn /ˌkwɒl.ɪ.fɪˈkeɪ.ʃən/ (n)",
+          "hóa đơn, bằng chứng mua hàng /pruːf əv ˈpɜː.tʃəs/ (n)",
+          "giấy tờ tùy thân còn hiệu lực /ˈvæl.ɪd aɪˈdiː/ (n)",
+          "các điều khoản trong hợp đồng /tɜːmz əv ðə ˈkɒn.trækt/ (n)",
+          "giấy phép đỗ xe /ˈpɑː.kɪŋ ˈpɜː.mɪt/ (n)",
+          "hướng dẫn an toàn lao động /ˈseɪf.ti ˈɡaɪd.laɪn/ (n)",
+          "số lượng đặt hàng tối thiểu /ˈmɪn.ɪ.məm ˈɔː.dər/ (n)"
+        ]
+      }
+    ],
     "examples": [
       {
         "slide_index": 201,
@@ -4078,7 +4435,62 @@ window.part03Data = [
         ]
       }
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ HÀNH ĐỘNG TIẾP THEO (DO NEXT)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Hành động tiến hành ngay (Immediate Follow-up Tasks)</span></strong>",
+          "<span style=\"color: #00B050;\">consult a supervisor</span> /kənˈsʌlt ə ˈsuː.pə.vaɪ.zər/ (v): tham vấn ý kiến cấp trên",
+          "<span style=\"color: #00B050;\">check the inventory</span> /tʃek ðiː ˈɪn.vən.tər.i/ (v): kiểm tra hàng tồn kho",
+          "<span style=\"color: #00B050;\">draft a proposal</span> /drɑːft ə prəˈpəʊ.zəl/ (v): soạn thảo bản đề xuất",
+          "<span style=\"color: #00B050;\">make a phone call</span> /meɪk ə fəʊn kɔːl/ (v): gọi một cuộc điện thoại",
+          "<span style=\"color: #00B050;\">print out handouts</span> /prɪnt aʊt ˈhænd.aʊts/ (v): in tài liệu phát tay",
+          "<span style=\"color: #00B050;\">inspect the premises</span> /ɪnˈspekt ðə ˈprem.ɪ.sɪz/ (v): kiểm tra cơ sở mặt bằng",
+          "<span style=\"color: #00B050;\">place an order</span> /pleɪs ən ˈɔː.dər/ (v): đặt một đơn hàng mới",
+          "<span style=\"color: #00B050;\">contact tech support</span> /ˈkɒn.tækt tek səˈpɔːt/ (v): liên hệ hỗ trợ kỹ thuật"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ HÀNH ĐỘNG TIẾP THEO (DO NEXT)",
+          "• Hành động tiến hành ngay (Immediate Follow-up Tasks)",
+          "tham vấn ý kiến cấp trên /kənˈsʌlt ə ˈsuː.pə.vaɪ.zər/ (v)",
+          "kiểm tra hàng tồn kho /tʃek ðiː ˈɪn.vən.tər.i/ (v)",
+          "soạn thảo bản đề xuất /drɑːft ə prəˈpəʊ.zəl/ (v)",
+          "gọi một cuộc điện thoại /meɪk ə fəʊn kɔːl/ (v)",
+          "in tài liệu phát tay /prɪnt aʊt ˈhænd.aʊts/ (v)",
+          "kiểm tra cơ sở mặt bằng /ɪnˈspekt ðə ˈprem.ɪ.sɪz/ (v)",
+          "đặt một đơn hàng mới /pleɪs ən ˈɔː.dər/ (v)",
+          "liên hệ hỗ trợ kỹ thuật /ˈkɒn.tækt tek səˈpɔːt/ (v)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ HÀNH ĐỘNG TIẾP THEO (DO NEXT)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Hành động phối hợp & điều chỉnh (Coordination & Revisions)</span></strong>",
+          "<span style=\"color: #00B050;\">set up a meeting</span> /set ʌp ə ˈmiː.tɪŋ/ (v): sắp xếp, lên lịch cuộc họp",
+          "<span style=\"color: #00B050;\">gather feedback</span> /ˈɡæð.ər ˈfiːd.bæk/ (v): thu thập phản hồi, nhận xét",
+          "<span style=\"color: #00B050;\">send out invitations</span> /send aʊt ˌɪn.vɪˈteɪ.ʃənz/ (v): gửi đi các thư mời",
+          "<span style=\"color: #00B050;\">revise the itinerary</span> /rɪˈvaɪz ðiː aɪˈtɪn.ər.ər.i/ (v): sửa đổi lại lịch trình",
+          "<span style=\"color: #00B050;\">delegate tasks</span> /ˈdel.ɪ.ɡeɪt tɑːsks/ (v): giao phó, phân chia nhiệm vụ",
+          "<span style=\"color: #00B050;\">finalize the budget</span> /ˈfaɪ.nəl.aɪz ðə ˈbʌdʒ.ɪt/ (v): chốt dự toán ngân sách",
+          "<span style=\"color: #00B050;\">book a flight</span> /bʊk ə flaɪt/ (v): đặt vé chuyến bay",
+          "<span style=\"color: #00B050;\">review a contract</span> /rɪˈvjuː ə ˈkɒn.trækt/ (v): xem xét, rà soát hợp đồng"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ HÀNH ĐỘNG TIẾP THEO (DO NEXT)",
+          "• Hành động phối hợp & điều chỉnh (Coordination & Revisions)",
+          "sắp xếp, lên lịch cuộc họp /set ʌp ə ˈmiː.tɪŋ/ (v)",
+          "thu thập phản hồi, nhận xét /ˈɡæð.ər ˈfiːd.bæk/ (v)",
+          "gửi đi các thư mời /send aʊt ˌɪn.vɪˈteɪ.ʃənz/ (v)",
+          "sửa đổi lại lịch trình /rɪˈvaɪz ðiː aɪˈtɪn.ər.ər.i/ (v)",
+          "giao phó, phân chia nhiệm vụ /ˈdel.ɪ.ɡeɪt tɑːsks/ (v)",
+          "chốt dự toán ngân sách /ˈfaɪ.nəl.aɪz ðə ˈbʌdʒ.ɪt/ (v)",
+          "đặt vé chuyến bay /bʊk ə flaɪt/ (v)",
+          "xem xét, rà soát hợp đồng /rɪˈvjuː ə ˈkɒn.trækt/ (v)"
+        ]
+      }
+    ],
     "examples": [
       {
         "slide_index": 214,
@@ -4269,7 +4681,62 @@ window.part03Data = [
         ]
       }
     ],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ HÀM Ý VÀ NGỤ Ý (IMPLIED MEANINGS)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)</span></strong>",
+          "<span style=\"color: #00B050;\">tight schedule</span> /taɪt ˈʃedʒ.uːl/ (n): lịch trình rất bận rộn/khít khao",
+          "<span style=\"color: #00B050;\">on short notice</span> /ɒn ʃɔːt ˈnəʊ.tɪs/ (phrase): báo quá gấp, trong thời gian ngắn",
+          "<span style=\"color: #00B050;\">under the weather</span> /ˈʌn.dər ðə ˈweð.ər/ (adj): mệt mỏi, không khỏe trong người",
+          "<span style=\"color: #00B050;\">out of the question</span> /ˌaʊt əv ðə ˈkwes.tʃən/ (phrase): hoàn toàn không thể được",
+          "<span style=\"color: #00B050;\">hands are tied</span> /hændz ɑːr taɪd/ (phrase): bó tay vì không có thẩm quyền",
+          "<span style=\"color: #00B050;\">run out of time</span> /rʌn aʊt əv taɪm/ (v): cạn kiệt thời gian",
+          "<span style=\"color: #00B050;\">on the same page</span> /ɒn ðə seɪm peɪdʒ/ (phrase): cùng chung quan điểm, đồng thuận",
+          "<span style=\"color: #00B050;\">take a rain check</span> /teɪk ə reɪn tʃek/ (phrase): xin hẹn lại vào dịp khác"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ HÀM Ý VÀ NGỤ Ý (IMPLIED MEANINGS)",
+          "• Thành ngữ & cách diễn đạt giao tiếp (Conversational Idioms & Expressions)",
+          "lịch trình rất bận rộn/khít khao /taɪt ˈʃedʒ.uːl/ (n)",
+          "báo quá gấp, trong thời gian ngắn /ɒn ʃɔːt ˈnəʊ.tɪs/ (phrase)",
+          "mệt mỏi, không khỏe trong người /ˈʌn.dər ðə ˈweð.ər/ (adj)",
+          "hoàn toàn không thể được /ˌaʊt əv ðə ˈkwes.tʃən/ (phrase)",
+          "bó tay vì không có thẩm quyền /hændz ɑːr taɪd/ (phrase)",
+          "cạn kiệt thời gian /rʌn aʊt əv taɪm/ (v)",
+          "cùng chung quan điểm, đồng thuận /ɒn ðə seɪm peɪdʒ/ (phrase)",
+          "xin hẹn lại vào dịp khác /teɪk ə reɪn tʃek/ (phrase)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG VỀ HÀM Ý VÀ NGỤ Ý (IMPLIED MEANINGS)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)</span></strong>",
+          "<span style=\"color: #00B050;\">hesitant</span> /ˈhez.ɪ.tənt/ (adj): ngập ngừng, lưỡng lự",
+          "<span style=\"color: #00B050;\">reluctant</span> /rɪˈlʌk.tənt/ (adj): miễn cưỡng, không sẵn lòng",
+          "<span style=\"color: #00B050;\">enthusiastic</span> /ɪnˌθjuː.ziˈæs.tɪk/ (adj): hăng hái, nhiệt tình",
+          "<span style=\"color: #00B050;\">skeptical</span> /ˈskep.tɪ.kəl/ (adj): hoài nghi, chưa tin cậy",
+          "<span style=\"color: #00B050;\">reassure</span> /ˌriː.əˈʃɔːr/ (v): trấn an, làm cho yên tâm",
+          "<span style=\"color: #00B050;\">express regret</span> /ɪkˈspres rɪˈɡret/ (v): bày tỏ sự hối tiếc",
+          "<span style=\"color: #00B050;\">decline an invitation</span> /dɪˈklaɪn ən ˌɪn.vɪˈteɪ.ʃən/ (v): lịch sự từ chối lời mời",
+          "<span style=\"color: #00B050;\">show appreciation</span> /ʃəʊ əˌpriː.ʃiˈeɪ.ʃən/ (v): thể hiện sự cảm kích, tri ân"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG VỀ HÀM Ý VÀ NGỤ Ý (IMPLIED MEANINGS)",
+          "• Từ chỉ thái độ & cảm xúc người nói (Speaker's Attitude & Emotion)",
+          "ngập ngừng, lưỡng lự /ˈhez.ɪ.tənt/ (adj)",
+          "miễn cưỡng, không sẵn lòng /rɪˈlʌk.tənt/ (adj)",
+          "hăng hái, nhiệt tình /ɪnˌθjuː.ziˈæs.tɪk/ (adj)",
+          "hoài nghi, chưa tin cậy /ˈskep.tɪ.kəl/ (adj)",
+          "trấn an, làm cho yên tâm /ˌriː.əˈʃɔːr/ (v)",
+          "bày tỏ sự hối tiếc /ɪkˈspres rɪˈɡret/ (v)",
+          "lịch sự từ chối lời mời /dɪˈklaɪn ən ˌɪn.vɪˈteɪ.ʃən/ (v)",
+          "thể hiện sự cảm kích, tri ân /ʃəʊ əˌpriː.ʃiˈeɪ.ʃən/ (v)"
+        ]
+      }
+    ],
     "examples": [
       {
         "slide_index": 227,
@@ -4447,7 +4914,62 @@ window.part03Data = [
     "parent_title": "CÂU HỎI KẾT HỢP HÌNH ẢNH",
     "type": "subsection",
     "theory": [],
-    "vocabulary": [],
+    "vocabulary": [
+      {
+        "slide_index": 1001,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG CHO DẠNG CÂU HỎI KẾT HỢP HÌNH ẢNH (GRAPHICS)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)</span></strong>",
+          "<span style=\"color: #00B050;\">floor plan</span> /ˈflɔː ˌplæn/ (n): sơ đồ mặt bằng các phòng",
+          "<span style=\"color: #00B050;\">seating chart</span> /ˈsiː.tɪŋ ˌtʃɑːt/ (n): sơ đồ vị trí chỗ ngồi",
+          "<span style=\"color: #00B050;\">price list</span> /ˈpraɪs ˌlɪst/ (n): bảng báo giá sản phẩm/dịch vụ",
+          "<span style=\"color: #00B050;\">flight schedule</span> /ˈflaɪt ˌʃedʒ.uːl/ (n): bảng lịch trình chuyến bay",
+          "<span style=\"color: #00B050;\">coupon code</span> /ˈkuː.pɒn ˌkəʊd/ (n): mã giảm giá, phiếu mua hàng",
+          "<span style=\"color: #00B050;\">building directory</span> /ˈbɪl.dɪŋ daɪˌrek.tər.i/ (n): danh bạ, bảng chỉ dẫn tòa nhà",
+          "<span style=\"color: #00B050;\">bar graph</span> /ˈbɑː ˌɡrɑːf/ (n): biểu đồ hình cột",
+          "<span style=\"color: #00B050;\">pie chart</span> /ˈpaɪ ˌtʃɑːt/ (n): biểu đồ hình tròn"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG CHO DẠNG CÂU HỎI KẾT HỢP HÌNH ẢNH (GRAPHICS)",
+          "• Các loại bảng biểu & sơ đồ thường gặp (Types of Graphics)",
+          "sơ đồ mặt bằng các phòng /ˈflɔː ˌplæn/ (n)",
+          "sơ đồ vị trí chỗ ngồi /ˈsiː.tɪŋ ˌtʃɑːt/ (n)",
+          "bảng báo giá sản phẩm/dịch vụ /ˈpraɪs ˌlɪst/ (n)",
+          "bảng lịch trình chuyến bay /ˈflaɪt ˌʃedʒ.uːl/ (n)",
+          "mã giảm giá, phiếu mua hàng /ˈkuː.pɒn ˌkəʊd/ (n)",
+          "danh bạ, bảng chỉ dẫn tòa nhà /ˈbɪl.dɪŋ daɪˌrek.tər.i/ (n)",
+          "biểu đồ hình cột /ˈbɑː ˌɡrɑːf/ (n)",
+          "biểu đồ hình tròn /ˈpaɪ ˌtʃɑːt/ (n)"
+        ]
+      },
+      {
+        "slide_index": 1002,
+        "text": [
+          "<strong><span style=\"color: #00B0F0;\">TỪ VỰNG CHO DẠNG CÂU HỎI KẾT HỢP HÌNH ẢNH (GRAPHICS)</span></strong>",
+          "• <strong><span style=\"color: #FF0000;\">Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)</span></strong>",
+          "<span style=\"color: #00B050;\">adjacent to</span> /əˈdʒeɪ.sənt tuː/ (prep): nằm liền kề, sát ngay bên cạnh",
+          "<span style=\"color: #00B050;\">across from</span> /əˈkrɒs frɒm/ (prep): ở đối diện với",
+          "<span style=\"color: #00B050;\">intersection</span> /ˌɪn.təˈsek.ʃən/ (n): ngã tư, điểm giao cắt đường",
+          "<span style=\"color: #00B050;\">in descending order</span> /ɪn dɪˈsen.dɪŋ ˈɔː.dər/ (phrase): theo thứ tự giảm dần",
+          "<span style=\"color: #00B050;\">highest rating</span> /ˈhaɪ.ɪst ˈreɪ.tɪŋ/ (n): mức xếp hạng, đánh giá cao nhất",
+          "<span style=\"color: #00B050;\">grand total</span> /ˌɡrænd ˈtəʊ.təl/ (n): tổng số tiền thanh toán cuối cùng",
+          "<span style=\"color: #00B050;\">discount rate</span> /ˈdɪs.kaʊnt reɪt/ (n): tỷ lệ phần trăm giảm giá",
+          "<span style=\"color: #00B050;\">row and aisle</span> /rəʊ ænd aɪl/ (n): hàng ghế và lối đi giữa các hàng"
+        ],
+        "vietnamese_text": [
+          "TỪ VỰNG CHO DẠNG CÂU HỎI KẾT HỢP HÌNH ẢNH (GRAPHICS)",
+          "• Từ vựng định vị & so sánh số liệu (Locations & Data Comparison)",
+          "nằm liền kề, sát ngay bên cạnh /əˈdʒeɪ.sənt tuː/ (prep)",
+          "ở đối diện với /əˈkrɒs frɒm/ (prep)",
+          "ngã tư, điểm giao cắt đường /ˌɪn.təˈsek.ʃən/ (n)",
+          "theo thứ tự giảm dần /ɪn dɪˈsen.dɪŋ ˈɔː.dər/ (phrase)",
+          "mức xếp hạng, đánh giá cao nhất /ˈhaɪ.ɪst ˈreɪ.tɪŋ/ (n)",
+          "tổng số tiền thanh toán cuối cùng /ˌɡrænd ˈtəʊ.təl/ (n)",
+          "tỷ lệ phần trăm giảm giá /ˈdɪs.kaʊnt reɪt/ (n)",
+          "hàng ghế và lối đi giữa các hàng /rəʊ ænd aɪl/ (n)"
+        ]
+      }
+    ],
     "examples": [],
     "practice": [
       {
