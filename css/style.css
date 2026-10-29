@@ -2056,11 +2056,12 @@ body:not(.light-mode) .tb-header-card {
 
 .tb-modes-nav {
     display: flex;
+    flex-wrap: wrap;
     border-radius: 12px;
     background: #f1f5f9;
     padding: 4px;
     gap: 4px;
-    max-width: 540px;
+    max-width: 860px;
     margin: 0 auto;
     width: 100%;
 }
@@ -2468,6 +2469,178 @@ body:not(.light-mode) .tb-dict-result-wrong {
     border-color: #ef4444;
     color: #f87171;
 }
+
+/* =============================================================
+   THEO ÂM THANH CHỌN ĐÚNG / SAI (AUDIO TRUE / FALSE REFLEX MODE)
+   ============================================================= */
+.tb-tf-card {
+    background: #ffffff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 32px 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+body:not(.light-mode) .tb-tf-card {
+    background: #1e293b;
+    border-color: #334155;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+}
+
+.tb-tf-audio-btn {
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+    border: 2px solid #93c5fd;
+    color: #1d4ed8;
+    border-radius: 50px;
+    padding: 14px 28px;
+    font-size: 1.05rem;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 14px rgba(37,99,235,0.15);
+}
+
+.tb-tf-audio-btn:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    box-shadow: 0 6px 18px rgba(37,99,235,0.25);
+}
+
+body:not(.light-mode) .tb-tf-audio-btn {
+    background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+    border-color: #3b82f6;
+    color: #93c5fd;
+}
+
+.tb-tf-meaning-box {
+    background: #f8fafc;
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    padding: 18px 24px;
+    margin: 18px 0;
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1.4;
+    transition: all 0.2s ease;
+}
+
+body:not(.light-mode) .tb-tf-meaning-box {
+    background: #0f172a;
+    border-color: #475569;
+    color: #f8fafc;
+}
+
+.tb-tf-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+@media (max-width: 520px) {
+    .tb-tf-actions {
+        grid-template-columns: 1fr;
+    }
+}
+
+.tb-tf-btn {
+    border-radius: 14px;
+    padding: 16px 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.tb-tf-btn:active {
+    transform: scale(0.98);
+}
+
+.tb-tf-btn-true {
+    background: #f0fdf4;
+    border-color: #86efac;
+    color: #15803d;
+    box-shadow: 0 4px 14px rgba(34,197,94,0.15);
+}
+
+.tb-tf-btn-true:hover {
+    background: #dcfce7;
+    border-color: #22c55e;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(34,197,94,0.25);
+}
+
+body:not(.light-mode) .tb-tf-btn-true {
+    background: rgba(34,197,94,0.15);
+    border-color: #22c55e;
+    color: #4ade80;
+}
+
+.tb-tf-btn-false {
+    background: #fef2f2;
+    border-color: #fca5a5;
+    color: #b91c1c;
+    box-shadow: 0 4px 14px rgba(239,68,68,0.15);
+}
+
+.tb-tf-btn-false:hover {
+    background: #fee2e2;
+    border-color: #ef4444;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(239,68,68,0.25);
+}
+
+body:not(.light-mode) .tb-tf-btn-false {
+    background: rgba(239,68,68,0.15);
+    border-color: #ef4444;
+    color: #f87171;
+}
+
+.tb-tf-feedback {
+    border-radius: 16px;
+    padding: 18px 22px;
+    margin-top: 20px;
+    text-align: left;
+    animation: fadeInDown 0.25s ease;
+}
+
+.tb-tf-feedback-correct {
+    background: #f0fdf4;
+    border: 2px solid #86efac;
+    color: #15803d;
+}
+
+body:not(.light-mode) .tb-tf-feedback-correct {
+    background: rgba(34,197,94,0.15);
+    border-color: #22c55e;
+    color: #4ade80;
+}
+
+.tb-tf-feedback-wrong {
+    background: #fef2f2;
+    border: 2px solid #fca5a5;
+    color: #991b1b;
+}
+
+body:not(.light-mode) .tb-tf-feedback-wrong {
+    background: rgba(239,68,68,0.15);
+    border-color: #ef4444;
+    color: #f87171;
+}
+
 
 
 

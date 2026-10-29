@@ -1,3 +1,75 @@
+// Web Audio API Sound Effects Helper
+window.SoundEffects = {
+    audioCtx: null,
+
+    init() {
+        if (!this.audioCtx) {
+            this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+    },
+
+    playCorrect() {
+        try {
+            this.init();
+            if (this.audioCtx.state === 'suspended') {
+                this.audioCtx.resume();
+            }
+            const now = this.audioCtx.currentTime;
+            const osc1 = this.audioCtx.createOscillator();
+            const gain1 = this.audioCtx.createGain();
+            osc1.type = 'sine';
+            osc1.frequency.setValueAtTime(523.25, now); // C5
+            gain1.gain.setValueAtTime(0, now);
+            gain1.gain.linearRampToValueAtTime(0.18, now + 0.05);
+            gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+            osc1.connect(gain1);
+            gain1.connect(this.audioCtx.destination);
+
+            const osc2 = this.audioCtx.createOscillator();
+            const gain2 = this.audioCtx.createGain();
+            osc2.type = 'sine';
+            osc2.frequency.setValueAtTime(659.25, now + 0.08); // E5
+            gain2.gain.setValueAtTime(0, now + 0.08);
+            gain2.gain.linearRampToValueAtTime(0.18, now + 0.12);
+            gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
+            osc2.connect(gain2);
+            gain2.connect(this.audioCtx.destination);
+
+            osc1.start(now);
+            osc1.stop(now + 0.3);
+            osc2.start(now + 0.08);
+            osc2.stop(now + 0.45);
+        } catch (e) {
+            console.log("SFX playCorrect error:", e);
+        }
+    },
+
+    playWrong() {
+        try {
+            this.init();
+            if (this.audioCtx.state === 'suspended') {
+                this.audioCtx.resume();
+            }
+            const now = this.audioCtx.currentTime;
+            const osc = this.audioCtx.createOscillator();
+            const gain = this.audioCtx.createGain();
+            osc.type = 'triangle';
+            osc.frequency.setValueAtTime(160, now);
+            osc.frequency.linearRampToValueAtTime(90, now + 0.25);
+            gain.gain.setValueAtTime(0, now);
+            gain.gain.linearRampToValueAtTime(0.2, now + 0.04);
+            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
+            osc.connect(gain);
+            gain.connect(this.audioCtx.destination);
+            osc.start(now);
+            osc.stop(now + 0.3);
+        } catch (e) {
+            console.log("SFX playWrong error:", e);
+        }
+    }
+};
+var SoundEffects = window.SoundEffects;
+
 
 
 // Helper to play an authentic audio file (e.g., TOEIC studio recordings)
@@ -156,6 +228,13 @@ window.evaluatePracticeContainer = function(container, selectedEl) {
     const chosenOpt = selectedEl.getAttribute('data-option');
     const isChosenCorrect = selectedEl.getAttribute('data-correct') === 'true';
     
+    // Play Sound Effect
+    if (isChosenCorrect) {
+        if (window.SoundEffects) window.SoundEffects.playCorrect();
+    } else {
+        if (window.SoundEffects) window.SoundEffects.playWrong();
+    }
+    
     // Update circle buttons
     const circles = container.querySelectorAll('.practice-circle-opt');
     let correctOpt = '';
@@ -283,83 +362,8 @@ window.checkPracticeAnswer = function(btn) {
 // -------------------------------------------------------------
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Web Audio API Sound Effects Helper
-    const SoundEffects = {
-        audioCtx: null,
-
-        init() {
-            if (!this.audioCtx) {
-                this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            }
-        },
-
-        playCorrect() {
-            this.init();
-            if (this.audioCtx.state === 'suspended') {
-                this.audioCtx.resume();
-            }
-            
-            const now = this.audioCtx.currentTime;
-            
-            // Osc 1: First high note
-            const osc1 = this.audioCtx.createOscillator();
-            const gain1 = this.audioCtx.createGain();
-            osc1.type = 'sine';
-            osc1.frequency.setValueAtTime(523.25, now); // C5
-            
-            gain1.gain.setValueAtTime(0, now);
-            gain1.gain.linearRampToValueAtTime(0.15, now + 0.05);
-            gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
-            
-            osc1.connect(gain1);
-            gain1.connect(this.audioCtx.destination);
-            
-            // Osc 2: Second higher note (chime effect)
-            const osc2 = this.audioCtx.createOscillator();
-            const gain2 = this.audioCtx.createGain();
-            osc2.type = 'sine';
-            osc2.frequency.setValueAtTime(659.25, now + 0.08); // E5
-            
-            gain2.gain.setValueAtTime(0, now + 0.08);
-            gain2.gain.linearRampToValueAtTime(0.15, now + 0.12);
-            gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
-            
-            osc2.connect(gain2);
-            gain2.connect(this.audioCtx.destination);
-            
-            osc1.start(now);
-            osc1.stop(now + 0.3);
-            osc2.start(now + 0.08);
-            osc2.stop(now + 0.45);
-        },
-
-        playWrong() {
-            this.init();
-            if (this.audioCtx.state === 'suspended') {
-                this.audioCtx.resume();
-            }
-            
-            const now = this.audioCtx.currentTime;
-            
-            const osc = this.audioCtx.createOscillator();
-            const gain = this.audioCtx.createGain();
-            osc.type = 'triangle';
-            
-            // Descending frequency for a soft buzzer/thud
-            osc.frequency.setValueAtTime(150, now);
-            osc.frequency.linearRampToValueAtTime(100, now + 0.25);
-            
-            gain.gain.setValueAtTime(0, now);
-            gain.gain.linearRampToValueAtTime(0.2, now + 0.05);
-            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
-            
-            osc.connect(gain);
-            gain.connect(this.audioCtx.destination);
-            
-            osc.start(now);
-            osc.stop(now + 0.3);
-        }
-    };
+    // Web Audio API Sound Effects Helper (Uses global window.SoundEffects)
+    const SoundEffects = window.SoundEffects;
     const LOCKED_SECTIONS = [
         "topic_01", "topic_02", "topic_03", "topic_04", "topic_05", "topic_06"
     ];
@@ -2660,6 +2664,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 quizScore: 0,
                 quizFinished: false,
                 quizReview: [],
+                // True/False state
+                tfBatch: 'all',
+                tfQuestions: [],
+                tfIndex: 0,
+                tfScore: 0,
+                tfAnswered: false,
+                tfFinished: false,
+                tfReview: [],
                 // Dictation state
                 dictBatch: 'all',
                 dictQuestions: [],
@@ -2680,6 +2692,8 @@ document.addEventListener("DOMContentLoaded", () => {
             window.traBaiP3State.isFlipped = false;
             window.traBaiP3State.quizQuestions = [];
             window.traBaiP3State.quizFinished = false;
+            window.traBaiP3State.tfQuestions = [];
+            window.traBaiP3State.tfFinished = false;
             window.traBaiP3State.dictQuestions = [];
             window.traBaiP3State.dictFinished = false;
             window.traBaiP3State.searchQuery = '';
@@ -2741,6 +2755,54 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 }
 
+                // True/False (Nghe chọn Đúng / Sai) shortcuts
+                if (mode === "truefalse" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+                    const tbs = window.traBaiP3State;
+                    if (tbs.tfAnswered) {
+                        if (e.key === "Enter" || e.code === "Space") {
+                            e.preventDefault();
+                            window.tb3NextTFQuestion();
+                        }
+                    } else if (tbs.tfQuestions && tbs.tfQuestions.length > 0) {
+                        if (e.key === "1" || e.key === "ArrowLeft" || e.key.toLowerCase() === "t") {
+                            e.preventDefault();
+                            window.tb3AnswerTF(true);
+                        } else if (e.key === "2" || e.key === "ArrowRight" || e.key.toLowerCase() === "f") {
+                            e.preventDefault();
+                            window.tb3AnswerTF(false);
+                        } else if (e.code === "Space") {
+                            e.preventDefault();
+                            if (tbs.tfQuestions[tbs.tfIndex]) {
+                                playTTS(tbs.tfQuestions[tbs.tfIndex].item.en);
+                            }
+                        }
+                    }
+                }
+
+                // True/False (Nghe chọn Đúng / Sai) shortcuts
+                if (mode === "truefalse" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+                    const tbs = window.traBaiState;
+                    if (tbs.tfAnswered) {
+                        if (e.key === "Enter" || e.code === "Space") {
+                            e.preventDefault();
+                            window.tbNextTFQuestion();
+                        }
+                    } else if (tbs.tfQuestions && tbs.tfQuestions.length > 0) {
+                        if (e.key === "1" || e.key === "ArrowLeft" || e.key.toLowerCase() === "t") {
+                            e.preventDefault();
+                            window.tbAnswerTF(true);
+                        } else if (e.key === "2" || e.key === "ArrowRight" || e.key.toLowerCase() === "f") {
+                            e.preventDefault();
+                            window.tbAnswerTF(false);
+                        } else if (e.code === "Space") {
+                            e.preventDefault();
+                            if (tbs.tfQuestions[tbs.tfIndex]) {
+                                playTTS(tbs.tfQuestions[tbs.tfIndex].item.en);
+                            }
+                        }
+                    }
+                }
+
                 // Dictation shortcuts
                 if (mode === "dictation") {
                     const tbs = window.traBaiP3State;
@@ -2791,13 +2853,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
 
-                    <!-- Mode Switcher Nav (4 modes: Flashcard, Quiz, Dictation, List) -->
-                    <div class="tb-modes-nav" style="max-width: 720px; margin-top: 18px;">
+                    <!-- Mode Switcher Nav (5 modes: Flashcard, Quiz, True/False, Dictation, List) -->
+                    <div class="tb-modes-nav" style="max-width: 860px; margin-top: 18px;">
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'flashcard' ? 'active' : ''}" onclick="window.tb3SetMode('flashcard')">
                             <span>🗂️</span> Lật thẻ Flashcard
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'quiz' ? 'active' : ''}" onclick="window.tb3SetMode('quiz')">
                             <span>⚡</span> Trắc nghiệm (${totalItemsCount} câu)
+                        </button>
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'truefalse' ? 'active' : ''}" onclick="window.tb3SetMode('truefalse')">
+                            <span>🎧</span> Nghe Đúng / Sai
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'dictation' ? 'active' : ''}" onclick="window.tb3SetMode('dictation')">
                             <span>✍️</span> Nghe & Gõ chữ
@@ -2857,6 +2922,8 @@ document.addEventListener("DOMContentLoaded", () => {
             window.tb3RenderFlashcardView(workspace);
         } else if (mode === "quiz") {
             window.tb3RenderQuizView(workspace);
+        } else if (mode === "truefalse") {
+            window.tb3RenderTrueFalseView(workspace);
         } else if (mode === "dictation") {
             window.tb3RenderDictationView(workspace);
         } else if (mode === "list") {
@@ -3304,12 +3371,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (isCorrect) {
+            if (window.SoundEffects) window.SoundEffects.playCorrect();
             tbs.quizScore++;
             const scoreValEl = document.getElementById("tb3-quiz-score-val");
             if (scoreValEl) scoreValEl.textContent = tbs.quizScore;
             tbs.learnedIds.add(currentQ.item.id);
             saveTraBaiP3Learned();
             window.tb3UpdateHeaderProgress();
+        } else {
+            if (window.SoundEffects) window.SoundEffects.playWrong();
         }
 
         tbs.quizReview.push({
@@ -3456,6 +3526,776 @@ document.addEventListener("DOMContentLoaded", () => {
         const wrongItems = tbs.quizReview.filter(r => !r.isCorrect).map(r => r.q.item);
         if (wrongItems.length > 0) {
             window.tb3StartQuiz(wrongItems);
+        }
+    };
+
+    // ================= PART 03: TRUE / FALSE REFLEX MODE (NGHE ÂM THANH CHỌN ĐÚNG / SAI) =================
+    window.tb3SelectTFBatch = function(batch, btnEl) {
+        window.traBaiP3State.tfBatch = batch;
+        const siblings = btnEl.parentElement.querySelectorAll(".tb-scope-chip");
+        siblings.forEach(s => s.classList.remove("active"));
+        btnEl.classList.add("active");
+    };
+
+    window.tb3StartTrueFalse = function(customItems = null) {
+        const tbs = window.traBaiP3State;
+        const scopeItems = getTraBaiP3FilteredItems();
+        let pool = customItems;
+        if (!pool) {
+            const batch = tbs.tfBatch || 'all';
+            if (batch === 'b1') pool = scopeItems.slice(0, 10);
+            else if (batch === 'b2') pool = scopeItems.slice(0, 20);
+            else if (batch === 'b3') pool = scopeItems.slice(0, 30);
+            else pool = scopeItems;
+        }
+        if (!pool || pool.length === 0) return;
+
+        const allItems = window.part03TraBaiData || scopeItems;
+        const shuffled = shuffleTraBaiArray([...pool]);
+        const questions = [];
+
+        shuffled.forEach(item => {
+            // 50% probability match vs mismatch
+            const isMatch = Math.random() >= 0.5;
+            let displayedVi = item.vi;
+            if (!isMatch && allItems.length > 1) {
+                const distractors = allItems.filter(d => d.vi !== item.vi);
+                if (distractors.length > 0) {
+                    const pick = distractors[Math.floor(Math.random() * distractors.length)];
+                    displayedVi = pick.vi;
+                }
+            }
+            questions.push({
+                item: item,
+                displayedVi: displayedVi,
+                isMatch: (displayedVi === item.vi)
+            });
+        });
+
+        tbs.tfQuestions = questions;
+        tbs.tfIndex = 0;
+        tbs.tfScore = 0;
+        tbs.tfAnswered = false;
+        tbs.tfFinished = false;
+        tbs.tfReview = [];
+
+        window.tb3RenderTrueFalseView(document.getElementById("tb3-active-workspace"));
+    };
+
+    window.tb3RenderTrueFalseView = function(workspace) {
+        const tbs = window.traBaiP3State;
+        const items = getTraBaiP3FilteredItems();
+
+        if (tbs.tfFinished && tbs.tfQuestions.length > 0) {
+            window.tb3RenderTFResults(workspace);
+            return;
+        }
+
+        // Show intro screen if no questions loaded yet
+        if (!tbs.tfQuestions || tbs.tfQuestions.length === 0) {
+            let batchChipsHtml = '';
+            if (items.length > 20) {
+                batchChipsHtml = `
+                    <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'all' ? 'active' : ''}" onclick="window.tb3SelectTFBatch('all', this)">
+                        🌟 Tất cả (${items.length} từ)
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b1' ? 'active' : ''}" onclick="window.tb3SelectTFBatch('b1', this)">
+                        Đợt 10 từ
+                    </button>
+                    <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b2' ? 'active' : ''}" onclick="window.tb3SelectTFBatch('b2', this)">
+                        Đợt 20 từ
+                    </button>
+                `;
+            } else {
+                batchChipsHtml = `
+                    <button type="button" class="tb-scope-chip active" onclick="window.tb3SelectTFBatch('all', this)">
+                        🌟 Tất cả (${items.length} từ)
+                    </button>
+                `;
+            }
+
+            const currentSec = state.part03Data ? state.part03Data.find(s => s.id === tbs.currentSectionId) : null;
+            let sectionName = currentSec ? currentSec.title.replace(/<[^>]+>/g, '').trim() : "dạng câu hỏi này";
+
+            workspace.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+                    <div style="font-size: 3.2rem; margin-bottom: 12px;">🎧</div>
+                    <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                        NGHE ÂM THANH CHỌN ĐÚNG / SAI: ${sectionName.toUpperCase()}
+                    </h3>
+                    <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
+                        Lắng nghe phát âm chuẩn của từ vựng tiếng Anh ➔ Đối chiếu nhanh với nghĩa tiếng Việt hiển thị trên màn hình ➔ Chọn <strong>ĐÚNG</strong> hoặc <strong>SAI</strong>. Luyện phản xạ tai nghe cực kỳ hiệu quả!
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
+                        <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn số lượng từ làm bài:</div>
+                        <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                            ${batchChipsHtml}
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="window.tb3StartTrueFalse()" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; padding: 14px 38px; border-radius: 12px; font-size: 1.15rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(16,185,129,0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                        🚀 BẮT ĐẦU NGHE PHẢN XẠ
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        const qIndex = tbs.tfIndex;
+        const q = tbs.tfQuestions[qIndex];
+        if (!q) {
+            tbs.tfFinished = true;
+            window.tb3RenderTrueFalseView(workspace);
+            return;
+        }
+
+        // Auto-play audio on question load
+        setTimeout(() => {
+            if (!tbs.tfAnswered && tbs.tfQuestions[tbs.tfIndex] === q) {
+                playTTS(q.item.en);
+            }
+        }, 180);
+
+        const totalQ = tbs.tfQuestions.length;
+        const progressPct = Math.round(((qIndex + 1) / totalQ) * 100);
+
+        workspace.innerHTML = `
+            <div style="max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <!-- Top Progress Bar -->
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 4px;">
+                    <div style="font-weight: 800; color: #475569; font-size: 0.95rem; letter-spacing: 0.05em;">
+                        CÂU ${qIndex + 1} / ${totalQ}
+                    </div>
+                    <div style="font-weight: 800; color: #15803d; font-size: 0.95rem; background: #dcfce7; padding: 4px 12px; border-radius: 20px;">
+                        🎯 ĐIỂM: <span id="tb3-tf-score-val">${tbs.tfScore}</span>
+                    </div>
+                </div>
+                <div style="width: 100%; background: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden;">
+                    <div style="width: ${progressPct}%; height: 100%; background: linear-gradient(90deg, #10b981, #059669); transition: width 0.3s ease;"></div>
+                </div>
+
+                <!-- True / False Card -->
+                <div class="tb-tf-card" id="tb3-tf-card">
+                    <div style="font-size: 0.85rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px;">
+                        🎧 NGHE ÂM THANH & KIỂM TRA NGHĨA
+                    </div>
+
+                    <!-- Audio Replay Button -->
+                    <button type="button" class="tb-tf-audio-btn" onclick="playTTS('${q.item.en.replace(/'/g, "\'")}', event)">
+                        <span style="font-size: 1.4rem;">🔊</span>
+                        <span>BẤM ĐỂ NGHE PHÁT ÂM (Phím Space)</span>
+                    </button>
+
+                    <div style="font-size: 0.95rem; font-weight: 700; color: #64748b; margin-top: 24px; text-transform: uppercase; letter-spacing: 0.04em;">
+                        Từ bạn vừa nghe có nghĩa tiếng Việt là:
+                    </div>
+
+                    <!-- Displayed Meaning -->
+                    <div class="tb-tf-meaning-box">
+                        "${q.displayedVi}"
+                    </div>
+
+                    <div style="font-size: 0.92rem; color: #64748b; font-style: italic; margin-bottom: 10px;">
+                        Nghĩa trên là <strong>ĐÚNG</strong> hay <strong>SAI</strong> so với từ bạn vừa nghe?
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="tb-tf-actions" id="tb3-tf-actions-box">
+                        <button type="button" class="tb-tf-btn tb-tf-btn-true" onclick="window.tb3AnswerTF(true)">
+                            <span style="font-size: 2rem;">✔️</span>
+                            <div>
+                                <div style="font-size: 1.25rem; font-weight: 800;">ĐÚNG (TRUE)</div>
+                                <div style="font-size: 0.85rem; opacity: 0.85;">Phím 1 hoặc ←</div>
+                            </div>
+                        </button>
+                        <button type="button" class="tb-tf-btn tb-tf-btn-false" onclick="window.tb3AnswerTF(false)">
+                            <span style="font-size: 2rem;">❌</span>
+                            <div>
+                                <div style="font-size: 1.25rem; font-weight: 800;">SAI (FALSE)</div>
+                                <div style="font-size: 0.85rem; opacity: 0.85;">Phím 2 hoặc →</div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Feedback Area (Hidden initially) -->
+                    <div id="tb3-tf-feedback-box" style="display: none;"></div>
+                </div>
+            </div>
+        `;
+    };
+
+    window.tb3AnswerTF = function(userPickTrue) {
+        const tbs = window.traBaiP3State;
+        if (tbs.tfAnswered) return;
+        tbs.tfAnswered = true;
+
+        const currentQ = tbs.tfQuestions[tbs.tfIndex];
+        if (!currentQ) return;
+
+        const isUserCorrect = (userPickTrue === currentQ.isMatch);
+
+        if (isUserCorrect) {
+            if (window.SoundEffects) window.SoundEffects.playCorrect();
+            tbs.tfScore++;
+            const scoreValEl = document.getElementById("tb3-tf-score-val");
+            if (scoreValEl) scoreValEl.textContent = tbs.tfScore;
+            tbs.learnedIds.add(currentQ.item.id);
+            saveTraBaiP3Learned();
+            window.tb3UpdateHeaderProgress();
+        } else {
+            if (window.SoundEffects) window.SoundEffects.playWrong();
+        }
+
+        tbs.tfReview.push({
+            q: currentQ,
+            userPickTrue: userPickTrue,
+            isUserCorrect: isUserCorrect
+        });
+
+        // Hide action buttons
+        const actionsBox = document.getElementById("tb3-tf-actions-box");
+        if (actionsBox) actionsBox.style.display = "none";
+
+        // Show feedback
+        const fbBox = document.getElementById("tb3-tf-feedback-box");
+        if (fbBox) {
+            let explanation = '';
+            if (currentQ.isMatch) {
+                explanation = isUserCorrect
+                    ? `Chính xác! Từ vừa nghe là "<strong>${currentQ.item.en}</strong>", đúng nghĩa là "<strong>${currentQ.item.vi}</strong>".`
+                    : `Đáp án là <strong>ĐÚNG</strong>! Từ vừa nghe là "<strong>${currentQ.item.en}</strong>", có nghĩa là "<strong>${currentQ.item.vi}</strong>".`;
+            } else {
+                explanation = isUserCorrect
+                    ? `Rất tinh mắt! Từ vừa nghe là "<strong>${currentQ.item.en}</strong>" (<em>${currentQ.item.vi}</em>), KHÔNG PHẢI "<em>${currentQ.displayedVi}</em>".`
+                    : `Đáp án là <strong>SAI</strong>! Từ vừa phát âm là "<strong>${currentQ.item.en}</strong>" (<em>${currentQ.item.vi}</em>), trong khi màn hình ghi "<em>${currentQ.displayedVi}</em>".`;
+            }
+
+            fbBox.innerHTML = `
+                <div class="tb-tf-feedback ${isUserCorrect ? 'tb-tf-feedback-correct' : 'tb-tf-feedback-wrong'}">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                        <div style="font-size: 1.2rem; font-weight: 800;">
+                            ${isUserCorrect ? '🎉 CHÍNH XÁC! (+1 điểm)' : '❌ CHƯA CHÍNH XÁC!'}
+                        </div>
+                        <button type="button" onclick="playTTS('${currentQ.item.en.replace(/'/g, "\'")}', event)" style="background: white; border: 1px solid currentColor; border-radius: 8px; padding: 4px 10px; cursor: pointer; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                            🔊 Nghe lại
+                        </button>
+                    </div>
+
+                    <div style="font-size: 1rem; margin-top: 8px; line-height: 1.5;">
+                        ${explanation}
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.7); border-radius: 10px; padding: 10px 14px; margin-top: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                        <div>
+                            <span style="font-weight: 800; font-size: 1.15rem; color: #0f172a;">${currentQ.item.en}</span>
+                            ${currentQ.item.ipa ? `<span style="font-family: monospace; font-size: 0.95rem; color: #64748b; margin-left: 6px;">${currentQ.item.ipa}</span>` : ''}
+                            <div style="font-size: 0.95rem; color: #334155; font-weight: 600; margin-top: 2px;">➔ ${currentQ.item.vi}</div>
+                        </div>
+                    </div>
+
+                    <button type="button" id="tb3-tf-next-btn" onclick="window.tb3NextTFQuestion()" style="background: ${isUserCorrect ? '#16a34a' : '#2563eb'}; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 14px; width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <span>${tbs.tfIndex + 1 === tbs.tfQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO (Enter)'}</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                    </button>
+                </div>
+            `;
+            fbBox.style.display = "block";
+
+            setTimeout(() => {
+                const nextBtn = document.getElementById("tb3-tf-next-btn");
+                if (nextBtn) nextBtn.focus();
+            }, 80);
+        }
+    };
+
+    window.tb3NextTFQuestion = function() {
+        const tbs = window.traBaiP3State;
+        tbs.tfAnswered = false;
+        tbs.tfIndex++;
+        if (tbs.tfIndex >= tbs.tfQuestions.length) {
+            tbs.tfFinished = true;
+        }
+        window.tb3RenderTrueFalseView(document.getElementById("tb3-active-workspace"));
+    };
+
+    window.tb3RenderTFResults = function(workspace) {
+        const tbs = window.traBaiP3State;
+        const total = tbs.tfQuestions.length;
+        const score = tbs.tfScore;
+        const percent = total > 0 ? Math.round((score / total) * 100) : 0;
+
+        let icon = "🏆";
+        let message = "Xuất sắc! Khả năng phản xạ âm thanh của bạn cực kỳ nhạy bén!";
+        let color = "#15803d";
+        if (percent < 50) {
+            icon = "💪";
+            message = "Cần luyện tập thêm! Hãy nghe lại nhiều lần để bắt kịp âm thanh từ vựng nhé!";
+            color = "#dc2626";
+        } else if (percent < 80) {
+            icon = "👏";
+            message = "Rất tốt! Bạn nhận diện âm thanh khá chính xác!";
+            color = "#2563eb";
+        }
+
+        const wrongQuestions = tbs.tfReview.filter(r => !r.isUserCorrect);
+
+        let reviewListHtml = '';
+        tbs.tfReview.forEach((r, idx) => {
+            const item = r.q.item;
+            reviewListHtml += `
+                <div style="background: #ffffff; border: 1.5px solid ${r.isUserCorrect ? '#86efac' : '#fca5a5'}; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <div style="font-weight: 700; color: #0f172a; font-size: 1.05rem;">
+                            Câu ${idx + 1}: ${r.isUserCorrect ? '✔ ĐÚNG' : '✖ SAI'} — Từ phát âm: <strong>"${item.en}"</strong>
+                        </div>
+                        <div style="font-size: 0.95rem; color: #334155;">
+                            Màn hình ghi: "<em>${r.q.displayedVi}</em>" ➔ Đáp án thực tế là: <strong>${r.q.isMatch ? 'ĐÚNG' : 'SAI'}</strong> (Bạn đã chọn: <strong>${r.userPickTrue ? 'ĐÚNG' : 'SAI'}</strong>)
+                        </div>
+                        <div style="font-size: 0.9rem; color: #166534; font-weight: 600;">
+                            Nghĩa chính xác: <strong>${item.vi}</strong> ${item.ipa ? `<span style="font-family: monospace; font-size: 0.85rem; color: #64748b;">${item.ipa}</span>` : ''}
+                        </div>
+                    </div>
+                    <button type="button" onclick="playTTS('${item.en.replace(/'/g, "\'")}', event)" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-weight: 700; color: #0284c7; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe
+                    </button>
+                </div>
+            `;
+        });
+
+        workspace.innerHTML = `
+            <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 36px 30px; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+                    <div style="font-size: 3.5rem; margin-bottom: 8px;">${icon}</div>
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">KẾT QUẢ PHẢN XẠ ÂM THANH</h2>
+                    <div style="font-size: 2.8rem; font-weight: 900; color: ${color}; line-height: 1.2; margin-bottom: 8px;">
+                        ${score} / ${total}
+                    </div>
+                    <div style="font-size: 1.15rem; font-weight: 700; color: #64748b; margin-bottom: 14px;">
+                        Độ chính xác: <strong>${percent}%</strong>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.6; max-width: 520px; margin: 0 auto 24px auto;">
+                        ${message}
+                    </p>
+
+                    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                        <button type="button" onclick="window.tb3StartTrueFalse()" style="background: #10b981; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🔄 Làm lại đề mới
+                        </button>
+                        ${wrongQuestions.length > 0 ? `
+                        <button type="button" onclick="window.tb3RetryWrongTF()" style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🎯 Ôn lại ${wrongQuestions.length} câu làm sai
+                        </button>
+                        ` : ''}
+                        <button type="button" onclick="window.tb3SetMode('quiz')" style="background: #2563eb; color: white; border: none; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer;">
+                            ⚡ Chuyển sang Trắc nghiệm 4 đáp án
+                        </button>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #334155; padding-left: 4px;">
+                        CHI TIẾT BÀI LÀM:
+                    </div>
+                    ${reviewListHtml}
+                </div>
+            </div>
+        `;
+    };
+
+    window.tb3RetryWrongTF = function() {
+        const tbs = window.traBaiP3State;
+        const wrongItems = tbs.tfReview.filter(r => !r.isUserCorrect).map(r => r.q.item);
+        if (wrongItems.length > 0) {
+            window.tb3StartTrueFalse(wrongItems);
+        }
+    };
+
+    // ================= PART 01: TRUE / FALSE REFLEX MODE (NGHE ÂM THANH CHỌN ĐÚNG / SAI) =================
+    window.tbSelectTFBatch = function(batch, btnEl) {
+        window.traBaiState.tfBatch = batch;
+        const siblings = btnEl.parentElement.querySelectorAll(".tb-scope-chip");
+        siblings.forEach(s => s.classList.remove("active"));
+        btnEl.classList.add("active");
+    };
+
+    window.tbStartTrueFalse = function(customItems = null) {
+        const tbs = window.traBaiState;
+        const scopeItems = getTraBaiFilteredItems();
+        let pool = customItems;
+        if (!pool) {
+            const batch = tbs.tfBatch || 'all';
+            if (batch === 'b1') pool = scopeItems.slice(0, 25);
+            else if (batch === 'b2') pool = scopeItems.slice(25, 50);
+            else if (batch === 'b3') pool = scopeItems.slice(50, 75);
+            else if (batch === 'b4') pool = scopeItems.slice(75, 100);
+            else if (batch === 'b5') pool = scopeItems.slice(100, 125);
+            else if (batch === 'b6') pool = scopeItems.slice(125, 150);
+            else if (batch === 'b7') pool = scopeItems.slice(150, 164);
+            else pool = scopeItems;
+        }
+        if (!pool || pool.length === 0) return;
+
+        const allItems = window.traBaiData || scopeItems;
+        const shuffled = shuffleTraBaiArray([...pool]);
+        const questions = [];
+
+        shuffled.forEach(item => {
+            const isMatch = Math.random() >= 0.5;
+            let displayedVi = item.vi;
+            if (!isMatch && allItems.length > 1) {
+                const distractors = allItems.filter(d => d.vi !== item.vi);
+                if (distractors.length > 0) {
+                    const pick = distractors[Math.floor(Math.random() * distractors.length)];
+                    displayedVi = pick.vi;
+                }
+            }
+            questions.push({
+                item: item,
+                displayedVi: displayedVi,
+                isMatch: (displayedVi === item.vi)
+            });
+        });
+
+        tbs.tfQuestions = questions;
+        tbs.tfIndex = 0;
+        tbs.tfScore = 0;
+        tbs.tfAnswered = false;
+        tbs.tfFinished = false;
+        tbs.tfReview = [];
+
+        window.tbRenderTrueFalseView(document.getElementById("tb-active-workspace"));
+    };
+
+    window.tbRenderTrueFalseView = function(workspace) {
+        const tbs = window.traBaiState;
+        const items = getTraBaiFilteredItems();
+
+        if (tbs.tfFinished && tbs.tfQuestions.length > 0) {
+            window.tbRenderTFResults(workspace);
+            return;
+        }
+
+        // Show intro screen if no questions loaded yet
+        if (!tbs.tfQuestions || tbs.tfQuestions.length === 0) {
+            let batchChipsHtml = `
+                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'all' ? 'active' : ''}" onclick="window.tbSelectTFBatch('all', this)">
+                    🌟 Tất cả (164 từ)
+                </button>
+                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b1' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b1', this)">
+                    Đợt 1 (1 - 25)
+                </button>
+                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b2' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b2', this)">
+                    Đợt 2 (26 - 50)
+                </button>
+                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b3' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b3', this)">
+                    Đợt 3 (51 - 75)
+                </button>
+                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b4' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b4', this)">
+                    Đợt 4 (76 - 100)
+                </button>
+                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b5' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b5', this)">
+                    Đợt 5 (101 - 125)
+                </button>
+                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b6' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b6', this)">
+                    Đợt 6 (126 - 150)
+                </button>
+                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b7' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b7', this)">
+                    Đợt 7 (151 - 164)
+                </button>
+            `;
+
+            workspace.innerHTML = `
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
+                    <div style="font-size: 3.2rem; margin-bottom: 12px;">🎧</div>
+                    <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
+                        NGHE ÂM THANH CHỌN ĐÚNG / SAI: TRANH 1 NGƯỜI
+                    </h3>
+                    <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
+                        Lắng nghe phát âm chuẩn của từ vựng tiếng Anh ➔ Đối chiếu nhanh với nghĩa tiếng Việt hiển thị trên màn hình ➔ Chọn <strong>ĐÚNG</strong> hoặc <strong>SAI</strong>. Rèn luyện phản xạ nghe tức thì!
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
+                        <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn đợt từ muốn luyện tập:</div>
+                        <div style="display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; max-width: 560px;">
+                            ${batchChipsHtml}
+                        </div>
+                    </div>
+
+                    <button type="button" onclick="window.tbStartTrueFalse()" style="background: linear-gradient(135deg, #10b981, #059669); color: white; border: none; padding: 14px 38px; border-radius: 12px; font-size: 1.15rem; font-weight: 800; cursor: pointer; box-shadow: 0 4px 16px rgba(16,185,129,0.3); transition: all 0.2s;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+                        🚀 BẮT ĐẦU NGHE PHẢN XẠ
+                    </button>
+                </div>
+            `;
+            return;
+        }
+
+        const qIndex = tbs.tfIndex;
+        const q = tbs.tfQuestions[qIndex];
+        if (!q) {
+            tbs.tfFinished = true;
+            window.tbRenderTrueFalseView(workspace);
+            return;
+        }
+
+        // Auto-play audio on question load
+        setTimeout(() => {
+            if (!tbs.tfAnswered && tbs.tfQuestions[tbs.tfIndex] === q) {
+                playTTS(q.item.en);
+            }
+        }, 180);
+
+        const totalQ = tbs.tfQuestions.length;
+        const progressPct = Math.round(((qIndex + 1) / totalQ) * 100);
+
+        workspace.innerHTML = `
+            <div style="max-width: 700px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <!-- Top Progress Bar -->
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 4px;">
+                    <div style="font-weight: 800; color: #475569; font-size: 0.95rem; letter-spacing: 0.05em;">
+                        CÂU ${qIndex + 1} / ${totalQ}
+                    </div>
+                    <div style="font-weight: 800; color: #15803d; font-size: 0.95rem; background: #dcfce7; padding: 4px 12px; border-radius: 20px;">
+                        🎯 ĐIỂM: <span id="tb-tf-score-val">${tbs.tfScore}</span>
+                    </div>
+                </div>
+                <div style="width: 100%; background: #e2e8f0; height: 8px; border-radius: 4px; overflow: hidden;">
+                    <div style="width: ${progressPct}%; height: 100%; background: linear-gradient(90deg, #10b981, #059669); transition: width 0.3s ease;"></div>
+                </div>
+
+                <!-- True / False Card -->
+                <div class="tb-tf-card" id="tb-tf-card">
+                    <div style="font-size: 0.85rem; font-weight: 800; color: #0284c7; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px;">
+                        🎧 NGHE ÂM THANH & KIỂM TRA NGHĨA
+                    </div>
+
+                    <!-- Audio Replay Button -->
+                    <button type="button" class="tb-tf-audio-btn" onclick="playTTS('${q.item.en.replace(/'/g, "\'")}', event)">
+                        <span style="font-size: 1.4rem;">🔊</span>
+                        <span>BẤM ĐỂ NGHE PHÁT ÂM (Phím Space)</span>
+                    </button>
+
+                    <div style="font-size: 0.95rem; font-weight: 700; color: #64748b; margin-top: 24px; text-transform: uppercase; letter-spacing: 0.04em;">
+                        Từ bạn vừa nghe có nghĩa tiếng Việt là:
+                    </div>
+
+                    <!-- Displayed Meaning -->
+                    <div class="tb-tf-meaning-box">
+                        "${q.displayedVi}"
+                    </div>
+
+                    <div style="font-size: 0.92rem; color: #64748b; font-style: italic; margin-bottom: 10px;">
+                        Nghĩa trên là <strong>ĐÚNG</strong> hay <strong>SAI</strong> so với từ bạn vừa nghe?
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="tb-tf-actions" id="tb-tf-actions-box">
+                        <button type="button" class="tb-tf-btn tb-tf-btn-true" onclick="window.tbAnswerTF(true)">
+                            <span style="font-size: 2rem;">✔️</span>
+                            <div>
+                                <div style="font-size: 1.25rem; font-weight: 800;">ĐÚNG (TRUE)</div>
+                                <div style="font-size: 0.85rem; opacity: 0.85;">Phím 1 hoặc ←</div>
+                            </div>
+                        </button>
+                        <button type="button" class="tb-tf-btn tb-tf-btn-false" onclick="window.tbAnswerTF(false)">
+                            <span style="font-size: 2rem;">❌</span>
+                            <div>
+                                <div style="font-size: 1.25rem; font-weight: 800;">SAI (FALSE)</div>
+                                <div style="font-size: 0.85rem; opacity: 0.85;">Phím 2 hoặc →</div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <!-- Feedback Area (Hidden initially) -->
+                    <div id="tb-tf-feedback-box" style="display: none;"></div>
+                </div>
+            </div>
+        `;
+    };
+
+    window.tbAnswerTF = function(userPickTrue) {
+        const tbs = window.traBaiState;
+        if (tbs.tfAnswered) return;
+        tbs.tfAnswered = true;
+
+        const currentQ = tbs.tfQuestions[tbs.tfIndex];
+        if (!currentQ) return;
+
+        const isUserCorrect = (userPickTrue === currentQ.isMatch);
+
+        if (isUserCorrect) {
+            if (window.SoundEffects) window.SoundEffects.playCorrect();
+            tbs.tfScore++;
+            const scoreValEl = document.getElementById("tb-tf-score-val");
+            if (scoreValEl) scoreValEl.textContent = tbs.tfScore;
+            tbs.learnedIds.add(currentQ.item.id);
+            saveTraBaiLearned();
+            window.tbUpdateHeaderProgress();
+        } else {
+            if (window.SoundEffects) window.SoundEffects.playWrong();
+        }
+
+        tbs.tfReview.push({
+            q: currentQ,
+            userPickTrue: userPickTrue,
+            isUserCorrect: isUserCorrect
+        });
+
+        // Hide action buttons
+        const actionsBox = document.getElementById("tb-tf-actions-box");
+        if (actionsBox) actionsBox.style.display = "none";
+
+        // Show feedback
+        const fbBox = document.getElementById("tb-tf-feedback-box");
+        if (fbBox) {
+            let explanation = '';
+            if (currentQ.isMatch) {
+                explanation = isUserCorrect
+                    ? `Chính xác! Từ vừa nghe là "<strong>${currentQ.item.en}</strong>", đúng nghĩa là "<strong>${currentQ.item.vi}</strong>".`
+                    : `Đáp án là <strong>ĐÚNG</strong>! Từ vừa nghe là "<strong>${currentQ.item.en}</strong>", có nghĩa là "<strong>${currentQ.item.vi}</strong>".`;
+            } else {
+                explanation = isUserCorrect
+                    ? `Rất tinh mắt! Từ vừa nghe là "<strong>${currentQ.item.en}</strong>" (<em>${currentQ.item.vi}</em>), KHÔNG PHẢI "<em>${currentQ.displayedVi}</em>".`
+                    : `Đáp án là <strong>SAI</strong>! Từ vừa phát âm là "<strong>${currentQ.item.en}</strong>" (<em>${currentQ.item.vi}</em>), trong khi màn hình ghi "<em>${currentQ.displayedVi}</em>".`;
+            }
+
+            fbBox.innerHTML = `
+                <div class="tb-tf-feedback ${isUserCorrect ? 'tb-tf-feedback-correct' : 'tb-tf-feedback-wrong'}">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
+                        <div style="font-size: 1.2rem; font-weight: 800;">
+                            ${isUserCorrect ? '🎉 CHÍNH XÁC! (+1 điểm)' : '❌ CHƯA CHÍNH XÁC!'}
+                        </div>
+                        <button type="button" onclick="playTTS('${currentQ.item.en.replace(/'/g, "\'")}', event)" style="background: white; border: 1px solid currentColor; border-radius: 8px; padding: 4px 10px; cursor: pointer; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                            🔊 Nghe lại
+                        </button>
+                    </div>
+
+                    <div style="font-size: 1rem; margin-top: 8px; line-height: 1.5;">
+                        ${explanation}
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.7); border-radius: 10px; padding: 10px 14px; margin-top: 12px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px;">
+                        <div>
+                            <span style="font-weight: 800; font-size: 1.15rem; color: #0f172a;">${currentQ.item.en}</span>
+                            ${currentQ.item.ipa ? `<span style="font-family: monospace; font-size: 0.95rem; color: #64748b; margin-left: 6px;">${currentQ.item.ipa}</span>` : ''}
+                            <div style="font-size: 0.95rem; color: #334155; font-weight: 600; margin-top: 2px;">➔ ${currentQ.item.vi}</div>
+                        </div>
+                    </div>
+
+                    <button type="button" id="tb-tf-next-btn" onclick="window.tbNextTFQuestion()" style="background: ${isUserCorrect ? '#16a34a' : '#2563eb'}; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 1.05rem; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 14px; width: 100%; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                        <span>${tbs.tfIndex + 1 === tbs.tfQuestions.length ? 'XEM KẾT QUẢ' : 'CÂU TIẾP THEO (Enter)'}</span>
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6 6 6"/></svg>
+                    </button>
+                </div>
+            `;
+            fbBox.style.display = "block";
+
+            setTimeout(() => {
+                const nextBtn = document.getElementById("tb-tf-next-btn");
+                if (nextBtn) nextBtn.focus();
+            }, 80);
+        }
+    };
+
+    window.tbNextTFQuestion = function() {
+        const tbs = window.traBaiState;
+        tbs.tfAnswered = false;
+        tbs.tfIndex++;
+        if (tbs.tfIndex >= tbs.tfQuestions.length) {
+            tbs.tfFinished = true;
+        }
+        window.tbRenderTrueFalseView(document.getElementById("tb-active-workspace"));
+    };
+
+    window.tbRenderTFResults = function(workspace) {
+        const tbs = window.traBaiState;
+        const total = tbs.tfQuestions.length;
+        const score = tbs.tfScore;
+        const percent = total > 0 ? Math.round((score / total) * 100) : 0;
+
+        let icon = "🏆";
+        let message = "Xuất sắc! Khả năng phản xạ âm thanh của bạn cực kỳ nhạy bén!";
+        let color = "#15803d";
+        if (percent < 50) {
+            icon = "💪";
+            message = "Cần luyện tập thêm! Hãy nghe lại nhiều lần để bắt kịp âm thanh từ vựng nhé!";
+            color = "#dc2626";
+        } else if (percent < 80) {
+            icon = "👏";
+            message = "Rất tốt! Bạn nhận diện âm thanh khá chính xác!";
+            color = "#2563eb";
+        }
+
+        const wrongQuestions = tbs.tfReview.filter(r => !r.isUserCorrect);
+
+        let reviewListHtml = '';
+        tbs.tfReview.forEach((r, idx) => {
+            const item = r.q.item;
+            reviewListHtml += `
+                <div style="background: #ffffff; border: 1.5px solid ${r.isUserCorrect ? '#86efac' : '#fca5a5'}; border-radius: 12px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;">
+                    <div style="display: flex; flex-direction: column; gap: 4px;">
+                        <div style="font-weight: 700; color: #0f172a; font-size: 1.05rem;">
+                            Câu ${idx + 1}: ${r.isUserCorrect ? '✔ ĐÚNG' : '✖ SAI'} — Từ phát âm: <strong>"${item.en}"</strong>
+                        </div>
+                        <div style="font-size: 0.95rem; color: #334155;">
+                            Màn hình ghi: "<em>${r.q.displayedVi}</em>" ➔ Đáp án thực tế là: <strong>${r.q.isMatch ? 'ĐÚNG' : 'SAI'}</strong> (Bạn đã chọn: <strong>${r.userPickTrue ? 'ĐÚNG' : 'SAI'}</strong>)
+                        </div>
+                        <div style="font-size: 0.9rem; color: #166534; font-weight: 600;">
+                            Nghĩa chính xác: <strong>${item.vi}</strong> ${item.ipa ? `<span style="font-family: monospace; font-size: 0.85rem; color: #64748b;">${item.ipa}</span>` : ''}
+                        </div>
+                    </div>
+                    <button type="button" onclick="playTTS('${item.en.replace(/'/g, "\'")}', event)" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-weight: 700; color: #0284c7; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                        🔊 Nghe
+                    </button>
+                </div>
+            `;
+        });
+
+        workspace.innerHTML = `
+            <div style="max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 24px;">
+                <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 36px 30px; text-align: center; box-shadow: 0 8px 30px rgba(0,0,0,0.06);">
+                    <div style="font-size: 3.5rem; margin-bottom: 8px;">${icon}</div>
+                    <h2 style="font-size: 1.8rem; font-weight: 800; color: #0f172a; margin-bottom: 8px;">KẾT QUẢ PHẢN XẠ ÂM THANH</h2>
+                    <div style="font-size: 2.8rem; font-weight: 900; color: ${color}; line-height: 1.2; margin-bottom: 8px;">
+                        ${score} / ${total}
+                    </div>
+                    <div style="font-size: 1.15rem; font-weight: 700; color: #64748b; margin-bottom: 14px;">
+                        Độ chính xác: <strong>${percent}%</strong>
+                    </div>
+                    <p style="color: #475569; font-size: 1.05rem; line-height: 1.6; max-width: 520px; margin: 0 auto 24px auto;">
+                        ${message}
+                    </p>
+
+                    <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                        <button type="button" onclick="window.tbStartTrueFalse()" style="background: #10b981; color: white; border: none; padding: 12px 24px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🔄 Làm lại đề mới
+                        </button>
+                        ${wrongQuestions.length > 0 ? `
+                        <button type="button" onclick="window.tbRetryWrongTF()" style="background: #fee2e2; color: #b91c1c; border: 1.5px solid #fca5a5; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;">
+                            🎯 Ôn lại ${wrongQuestions.length} câu làm sai
+                        </button>
+                        ` : ''}
+                        <button type="button" onclick="window.tbSetMode('quiz')" style="background: #2563eb; color: white; border: none; padding: 12px 22px; border-radius: 10px; font-weight: 800; font-size: 0.98rem; cursor: pointer;">
+                            ⚡ Chuyển sang Trắc nghiệm 4 đáp án
+                        </button>
+                    </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <div style="font-size: 1.1rem; font-weight: 800; color: #334155; padding-left: 4px;">
+                        CHI TIẾT BÀI LÀM:
+                    </div>
+                    ${reviewListHtml}
+                </div>
+            </div>
+        `;
+    };
+
+    window.tbRetryWrongTF = function() {
+        const tbs = window.traBaiState;
+        const wrongItems = tbs.tfReview.filter(r => !r.isUserCorrect).map(r => r.q.item);
+        if (wrongItems.length > 0) {
+            window.tbStartTrueFalse(wrongItems);
         }
     };
 
@@ -3679,12 +4519,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const isMatch = normUser === normTarget;
 
         if (isMatch) {
+            if (window.SoundEffects) window.SoundEffects.playCorrect();
             tbs.dictScore++;
             const scoreEl = document.getElementById("tb3-dict-score-val");
             if (scoreEl) scoreEl.textContent = tbs.dictScore;
             tbs.learnedIds.add(currentItem.id);
             saveTraBaiP3Learned();
             window.tb3UpdateHeaderProgress();
+        } else {
+            if (window.SoundEffects) window.SoundEffects.playWrong();
         }
 
         tbs.dictReview.push({
@@ -7443,6 +8286,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 quizScore: 0,
                 quizFinished: false,
                 quizReview: [],
+                // True/False state
+                tfBatch: 'all',
+                tfQuestions: [],
+                tfIndex: 0,
+                tfScore: 0,
+                tfAnswered: false,
+                tfFinished: false,
+                tfReview: [],
                 // Dictation state
                 dictBatch: 'all',
                 dictQuestions: [],
@@ -7557,13 +8408,16 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
 
-                    <!-- Mode Switcher Nav (4 modes: Flashcard, Quiz 164 câu, Dictation Gõ chữ, Tra cứu) -->
-                    <div class="tb-modes-nav" style="max-width: 720px;">
+                    <!-- Mode Switcher Nav (5 modes: Flashcard, Quiz 164 câu, Nghe Đúng / Sai, Dictation Gõ chữ, Tra cứu) -->
+                    <div class="tb-modes-nav" style="max-width: 860px;">
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'flashcard' ? 'active' : ''}" onclick="window.tbSetMode('flashcard')">
                             <span>🗂️</span> Lật thẻ Flashcard
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'quiz' ? 'active' : ''}" onclick="window.tbSetMode('quiz')">
                             <span>⚡</span> Trắc nghiệm (164 câu)
+                        </button>
+                        <button type="button" class="tb-mode-btn ${tbs.mode === 'truefalse' ? 'active' : ''}" onclick="window.tbSetMode('truefalse')">
+                            <span>🎧</span> Nghe Đúng / Sai
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'dictation' ? 'active' : ''}" onclick="window.tbSetMode('dictation')">
                             <span>✍️</span> Nghe & Gõ chữ
@@ -7591,6 +8445,8 @@ document.addEventListener("DOMContentLoaded", () => {
             window.tbRenderFlashcardView(workspace);
         } else if (mode === "quiz") {
             window.tbRenderQuizView(workspace);
+        } else if (mode === "truefalse") {
+            window.tbRenderTrueFalseView(workspace);
         } else if (mode === "dictation") {
             window.tbRenderDictationView(workspace);
         } else if (mode === "list") {
@@ -8026,12 +8882,15 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (isCorrect) {
+            if (window.SoundEffects) window.SoundEffects.playCorrect();
             tbs.quizScore++;
             const scoreValEl = document.getElementById("tb-quiz-score-val");
             if (scoreValEl) scoreValEl.textContent = tbs.quizScore;
             // Mark learned
             tbs.learnedIds.add(currentQ.item.id);
             saveTraBaiLearned();
+        } else {
+            if (window.SoundEffects) window.SoundEffects.playWrong();
         }
 
         // Save to review history
@@ -8383,12 +9242,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const isMatch = normUser === normTarget;
 
         if (isMatch) {
+            if (window.SoundEffects) window.SoundEffects.playCorrect();
             tbs.dictScore++;
             const scoreEl = document.getElementById("tb-dict-score-val");
             if (scoreEl) scoreEl.textContent = tbs.dictScore;
             // Mark learned
             tbs.learnedIds.add(currentItem.id);
             saveTraBaiLearned();
+        } else {
+            if (window.SoundEffects) window.SoundEffects.playWrong();
         }
 
         tbs.dictReview.push({
