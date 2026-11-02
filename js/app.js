@@ -93,14 +93,16 @@ window.playTTS = function(text, event, customRate = null) {
         .replace(/<[^>]+>/g, '')
         .replace(/\/[^\/]+\//g, '')
         .replace(/\([^)]*\)/g, '')
+        .replace(/\//g, ', ')
         .replace(/[:\-–—\.]/g, ' ')
+        .replace(/\s+/g, ' ')
         .trim();
         
     if (!cleanText) return;
 
-    const rateVal = customRate || 0.96;
+    const rateVal = customRate || 0.95;
 
-    // Helper: speech synthesis with best natural voice
+    // Helper: speech synthesis with best natural English voice
     const speakWithNaturalTTS = (phrase) => {
         if (!('speechSynthesis' in window)) return;
         window.speechSynthesis.cancel();
@@ -117,8 +119,9 @@ window.playTTS = function(text, event, customRate = null) {
                     const lang = (v.lang || '').toLowerCase();
                     let score = 0;
                     
-                    if (lang === 'en-us') score += 15;
-                    else if (lang.startsWith('en')) score += 5;
+                    if (lang === 'en-us') score += 50;
+                    else if (lang.startsWith('en')) score += 20;
+                    else score -= 200; // Strictly penalize non-English voices
                     
                     // Prioritize Premium / Enhanced / Natural / Neural voices
                     if (name.includes('premium')) score += 120;
@@ -134,74 +137,41 @@ window.playTTS = function(text, event, customRate = null) {
                     if (name.includes('jenny') || name.includes('guy') || name.includes('aria')) score += 35;
                     if (name.includes('tom') || name.includes('oliver') || name.includes('allison') || name.includes('serena')) score += 25;
                     
-                    // Deprioritize older robotic synthesizers
-                    if (name === 'samantha' || name === 'samantha (compact)') score -= 40;
-                    if (name.includes('alex')) score -= 25;
-                    if (name.includes('fred') || name.includes('victoria') || name.includes('albert') || name.includes('junior')) score -= 60;
-                    if (name.includes('compact')) score -= 50;
+                    // Deprioritize older robotic synthesizers but keep positive
+                    if (name.includes('samantha')) score += 15;
+                    if (name.includes('alex')) score += 10;
+                    if (name.includes('compact')) score -= 10;
                     
                     return score;
                 };
                 
-                const sortedVoices = [...voices].filter(v => v.lang && v.lang.startsWith('en')).sort((a, b) => scoreVoice(b) - scoreVoice(a));
-                if (sortedVoices.length > 0 && scoreVoice(sortedVoices[0]) > -30) {
-                    utterance.voice = sortedVoices[0];
+                // Strictly select English voices only
+                const enVoices = [...voices].filter(v => v.lang && v.lang.toLowerCase().startsWith('en')).sort((a, b) => scoreVoice(b) - scoreVoice(a));
+                if (enVoices.length > 0) {
+                    utterance.voice = enVoices[0];
+                    utterance.lang = enVoices[0].lang || 'en-US';
                 }
             }
             
-            // Natural human speed and cadence (0.96 natural tempo, 0.9 was robotic)
             utterance.rate = rateVal;
             utterance.pitch = 1.0;
+
+            if (window.speechSynthesis.paused) {
+                window.speechSynthesis.resume();
+            }
             window.speechSynthesis.speak(utterance);
         };
 
         if (window.speechSynthesis.getVoices().length === 0) {
             window.speechSynthesis.addEventListener('voiceschanged', applyVoiceAndSpeak, { once: true });
+            setTimeout(() => {
+                applyVoiceAndSpeak();
+            }, 100);
         } else {
             applyVoiceAndSpeak();
         }
     };
 
-    // If single word and not slow rate: try native studio human audio from Google/Oxford dictionary CDN first
-    const words = cleanText.split(/\s+/).filter(Boolean);
-    if (words.length === 1 && !customRate) {
-        const word = words[0].toLowerCase().replace(/[^a-z]/g, '');
-        if (word.length >= 2) {
-            const studioAudioUrl = `https://ssl.gstatic.com/dictionary/static/sounds/20200429/${encodeURIComponent(word)}--_us_1.mp3`;
-            const audio = new Audio();
-            let played = false;
-            
-            audio.oncanplaythrough = function() {
-                if (!played) {
-                    played = true;
-                    audio.play().catch(() => {
-                        speakWithNaturalTTS(cleanText);
-                    });
-                }
-            };
-            
-            audio.onerror = function() {
-                if (!played) {
-                    played = true;
-                    speakWithNaturalTTS(cleanText);
-                }
-            };
-            
-            // Timeout fallback if network is slow
-            setTimeout(() => {
-                if (!played) {
-                    played = true;
-                    speakWithNaturalTTS(cleanText);
-                }
-            }, 800);
-            
-            audio.src = studioAudioUrl;
-            audio.load();
-            return;
-        }
-    }
-    
-    // For phrases or compound words: use natural neural TTS
     speakWithNaturalTTS(cleanText);
 };
 
@@ -4193,13 +4163,13 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
 
                     <!-- Audio Replay Button -->
-                    <button type="button" class="tb-tf-audio-btn" onclick="playTTS('${q.item.en.replace(/'/g, "\'")}', event)">
+                    <button type="button" class="tb-tf-audio-btn" onclick="window.tbReplayTFCurrentAudio(event)">
                         <span style="font-size: 1.4rem;">🔊</span>
                         <span>BẤM ĐỂ NGHE PHÁT ÂM (Phím Space)</span>
                     </button>
 
-                    <div style="font-size: 0.95rem; font-weight: 700; color: #64748b; margin-top: 24px; text-transform: uppercase; letter-spacing: 0.04em;">
-                        Từ bạn vừa nghe có nghĩa tiếng Việt là:
+                    <div style="font-size: 0.95rem; font-weight: 700; color: #475569; margin-top: 22px; text-transform: uppercase; letter-spacing: 0.04em;">
+                        Nghĩa tiếng Việt đang hiển thị:
                     </div>
 
                     <!-- Displayed Meaning -->
@@ -4207,8 +4177,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         "${q.displayedVi}"
                     </div>
 
-                    <div style="font-size: 0.92rem; color: #64748b; font-style: italic; margin-bottom: 10px;">
-                        Nghĩa trên là <strong>ĐÚNG</strong> hay <strong>SAI</strong> so với từ bạn vừa nghe?
+                    <div style="font-size: 0.95rem; color: #334155; margin-bottom: 12px; font-weight: 600;">
+                        Nghĩa trên là <strong style="color: #16a34a;">ĐÚNG</strong> hay <strong style="color: #dc2626;">SAI</strong> so với từ tiếng Anh vừa phát âm?
                     </div>
 
                     <!-- Action Buttons -->
@@ -4236,6 +4206,14 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     };
 
+    window.tbReplayTFCurrentAudio = function(e) {
+        if (e && e.stopPropagation) e.stopPropagation();
+        const tbs = window.traBaiState;
+        if (tbs && tbs.tfQuestions && tbs.tfQuestions[tbs.tfIndex]) {
+            playTTS(tbs.tfQuestions[tbs.tfIndex].item.en);
+        }
+    };
+
     window.tbAnswerTF = function(userPickTrue) {
         const tbs = window.traBaiState;
         if (tbs.tfAnswered) return;
@@ -4253,7 +4231,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (scoreValEl) scoreValEl.textContent = tbs.tfScore;
             tbs.learnedIds.add(currentQ.item.id);
             saveTraBaiLearned();
-            window.tbUpdateHeaderProgress();
+            if (typeof window.tbUpdateHeaderProgress === "function") {
+                window.tbUpdateHeaderProgress();
+            }
         } else {
             if (window.SoundEffects) window.SoundEffects.playWrong();
         }
@@ -4288,7 +4268,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div style="font-size: 1.2rem; font-weight: 800;">
                             ${isUserCorrect ? '🎉 CHÍNH XÁC! (+1 điểm)' : '❌ CHƯA CHÍNH XÁC!'}
                         </div>
-                        <button type="button" onclick="playTTS('${currentQ.item.en.replace(/'/g, "\'")}', event)" style="background: white; border: 1px solid currentColor; border-radius: 8px; padding: 4px 10px; cursor: pointer; font-weight: 700; display: inline-flex; align-items: center; gap: 4px;">
+                        <button type="button" onclick="window.tbReplayTFCurrentAudio(event)" style="background: white; border: 1.5px solid currentColor; border-radius: 8px; padding: 6px 12px; cursor: pointer; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
                             🔊 Nghe lại
                         </button>
                     </div>
@@ -4367,7 +4347,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             Nghĩa chính xác: <strong>${item.vi}</strong> ${item.ipa ? `<span style="font-family: monospace; font-size: 0.85rem; color: #64748b;">${item.ipa}</span>` : ''}
                         </div>
                     </div>
-                    <button type="button" onclick="playTTS('${item.en.replace(/'/g, "\'")}', event)" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-weight: 700; color: #0284c7; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+                    <button type="button" onclick="playTTS(this.dataset.en, event)" data-en="${item.en.replace(/"/g, '&quot;')}" style="background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 8px; padding: 6px 12px; font-weight: 700; color: #0284c7; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
                         🔊 Nghe
                     </button>
                 </div>
@@ -8709,6 +8689,28 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 }
 
+                // True/False (Nghe chọn Đúng / Sai) shortcuts
+                if (mode === "truefalse" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
+                    const tbs = window.traBaiState;
+                    if (tbs.tfAnswered) {
+                        if (e.key === "Enter" || e.code === "Space") {
+                            e.preventDefault();
+                            window.tbNextTFQuestion();
+                        }
+                    } else if (tbs.tfQuestions && tbs.tfQuestions.length > 0) {
+                        if (e.key === "1" || e.key === "ArrowLeft" || e.key.toLowerCase() === "t") {
+                            e.preventDefault();
+                            window.tbAnswerTF(true);
+                        } else if (e.key === "2" || e.key === "ArrowRight" || e.key.toLowerCase() === "f") {
+                            e.preventDefault();
+                            window.tbAnswerTF(false);
+                        } else if (e.code === "Space") {
+                            e.preventDefault();
+                            window.tbReplayTFCurrentAudio(e);
+                        }
+                    }
+                }
+
                 // Dictation shortcuts
                 if (mode === "dictation") {
                     const tbs = window.traBaiState;
@@ -8722,6 +8724,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         }
+
+        window.tbUpdateHeaderProgress = function() {
+            const tbs = window.traBaiState;
+            if (!tbs) return;
+            const totalCount = (getTraBaiFilteredItems() || []).length;
+            const learnedCount = tbs.learnedIds ? tbs.learnedIds.size : 0;
+            const percent = totalCount > 0 ? Math.min(100, Math.round((learnedCount / totalCount) * 100)) : 0;
+
+            const learnedCountEl = document.getElementById("tb-learned-count");
+            const progressFillEl = document.getElementById("tb-progress-fill");
+            if (learnedCountEl) learnedCountEl.textContent = learnedCount;
+            if (progressFillEl) progressFillEl.style.width = `${percent}%`;
+        };
 
         const tbs = window.traBaiState;
         const totalItemsCount = allData.length;
