@@ -2400,44 +2400,97 @@ document.addEventListener("DOMContentLoaded", () => {
         let docHtml = "";
         
         section.theory.forEach((slide, sIdx) => {
-            const lines = slide.text;
-            if (!lines || lines.length === 0) return;
+            const rawLines = slide.text;
+            if (!rawLines || rawLines.length === 0) return;
             
-            const firstLine = lines[0].trim();
-            const restLines = lines.slice(1);
-            
-            // Clean HTML tags to evaluate textual structure
-            const cleanFirst = firstLine.replace(/<[^>]*>/g, "").trim();
-            
-            // Evaluates if the line acts as a divider or main section header
-            const isMainHeader = cleanFirst.toUpperCase() === cleanFirst || /^\d+\.\s+/.test(cleanFirst) || cleanFirst.includes("CÂU HỎI") || cleanFirst.includes("LƯU Ý");
-            
-            if (isMainHeader) {
-                // If it's a section header, draw a horizontal spacer above it (except for the first one)
-                if (sIdx > 0) {
-                    docHtml += `<hr style="border: none; border-top: 1px solid var(--border); margin: 40px 0 30px 0;">`;
+            // Normalize lines:
+            // 1. Separate merged headers
+            // 2. Separate embedded bullets
+            // 3. Separate notes from questions
+            const lines = [];
+            rawLines.forEach(l => {
+                let text = l.trim();
+                if (!text) return;
+
+                // Check for glued header + subheader
+                const mergedHeaderMatch = text.match(/^(<strong><span[^>]*>[^<]+<\/span><\/strong>)(<strong><span[^>]*>[^<]+<\/span><\/strong>)$/i);
+                if (mergedHeaderMatch) {
+                    lines.push(mergedHeaderMatch[1]);
+                    lines.push(mergedHeaderMatch[2]);
+                    return;
                 }
-                
-                docHtml += `
-                    <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--color-blue); margin: 0 0 24px 0; text-transform: uppercase; border-left: 4px solid var(--color-purple); padding-left: 14px; line-height: 1.4;">
-                        ${firstLine}
-                    </h3>
-                `;
-            } else {
-                docHtml += `
-                    <p style="font-size: 1.08rem; line-height: 1.7; color: var(--text-main); margin: 0 0 16px 0;">
-                        ${firstLine}
-                    </p>
-                `;
-            }
+
+                // Check for embedded bullets with tab or multiple 'o'
+                if (text.includes("\t") || /<\/em>\s*o\s+<em>/i.test(text) || /\?\s*o\s+<em>/i.test(text)) {
+                    const parts = text.split(/(?:<em>\s*)?\t+(?:<\/em>\s*)?(?:o\s+)?|(?:<\/em>\s*o\s+<em>)|(?:<em>\s*o\s+)/i);
+                    parts.forEach(p => {
+                        let pt = p.trim();
+                        if (pt) {
+                            if (!pt.startsWith("•") && !pt.startsWith("o") && !pt.startsWith("-")) {
+                                pt = "• " + pt;
+                            }
+                            lines.push(pt);
+                        }
+                    });
+                    return;
+                }
+
+                // Check if a question has a note glued to its end
+                const gluedNoteMatch = text.match(/^(.*?<\/em>)(<strong>(?:Chú ý|Lưu ý)[^<]*:?\s*<\/strong>.*)$/i);
+                if (gluedNoteMatch) {
+                    lines.push(gluedNoteMatch[1]);
+                    lines.push(gluedNoteMatch[2]);
+                    return;
+                }
+
+                lines.push(text);
+            });
             
-            restLines.forEach(line => {
+            lines.forEach((line, lIdx) => {
                 let cleanLine = line.trim();
                 if (!cleanLine) return;
                 
-                // Match bullets, potentially preceded by leading HTML tags (e.g. <em>, <strong>)
+                cleanLine = cleanLine.replace(/\\t|\t/g, "").trim();
+                const rawText = cleanLine.replace(/<[^>]*>/g, "").trim();
+
+                // 1. Callout / Note / Tip check
+                const isCallout = /^(?:💡|⚠️|LƯU Ý|Lưu ý|CHÚ Ý|Chú ý|Ghi nhớ)/i.test(rawText) ||
+                    /^<strong>\s*(?:LƯU Ý|Lưu ý|CHÚ Ý|Chú ý|Ghi nhớ)/i.test(cleanLine) ||
+                    cleanLine.includes("<strong>Chú ý:") || cleanLine.includes("<strong>Lưu ý:");
+
+                if (isCallout) {
+                    let icon = "💡";
+                    if (/^(?:⚠️|CHÚ Ý|Chú ý)/i.test(rawText) || cleanLine.includes("Chú ý")) {
+                        icon = "⚠️";
+                    }
+                    docHtml += `
+                        <div class="theory-callout-card">
+                            <span class="callout-icon">${icon}</span>
+                            <div class="callout-body">${cleanLine}</div>
+                        </div>
+                    `;
+                    return;
+                }
+
+                // 2. Main Header check (e.g. "5. CÂU HỎI LÝ DO/NGUYÊN NHÂN")
+                const isMainHeader = (sIdx === 0 && lIdx === 0) || 
+                    (/^\d+\.\s+CÂU HỎI/i.test(rawText) || /^[IVXLCDM]+\.\s+/i.test(rawText) || 
+                    (rawText.toUpperCase() === rawText && rawText.length > 5 && rawText.length < 80 && !rawText.includes("LƯU Ý") && !rawText.includes("CHÚ Ý") && !rawText.includes("CÁCH LÀM")));
+
+                if (isMainHeader) {
+                    if (sIdx > 0 || lIdx > 0) {
+                        docHtml += `<hr style="border: none; border-top: 1px solid var(--border); margin: 40px 0 30px 0;">`;
+                    }
+                    docHtml += `
+                        <h3 class="theory-main-header">
+                            ${cleanLine}
+                        </h3>
+                    `;
+                    return;
+                }
+
+                // 3. Bullet list check
                 const htmlBulletRegex = /^((?:<[^>]+>\s*)*)(•|o|-|\*|◦)\s+/i;
-                
                 const bulletMatch = cleanLine.match(htmlBulletRegex);
                 if (bulletMatch) {
                     const bulletChar = bulletMatch[2];
@@ -2446,27 +2499,33 @@ document.addEventListener("DOMContentLoaded", () => {
                     const bulletClass = isExample ? "theory-bullet example-bullet" : "theory-bullet main-bullet";
                     
                     docHtml += `
-                        <div class="${bulletClass}" style="margin-bottom: 12px;">
+                        <div class="${bulletClass}">
                             <span>${cleanedHtml}</span>
                         </div>
                     `;
-                } else {
-                    const rawText = cleanLine.replace(/<[^>]*>/g, "").trim();
-                    const isSubHeader = ((cleanLine.startsWith("<strong>") && cleanLine.endsWith("</strong>")) || /^\d+(\.\d+)*\./.test(rawText)) && rawText.length < 120;
-                    if (isSubHeader) {
-                        docHtml += `
-                            <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin: 24px 0 12px 0; line-height: 1.4;">
-                                ${cleanLine}
-                            </h4>
-                        `;
-                    } else {
-                        docHtml += `
-                            <p style="font-size: 1.08rem; line-height: 1.7; color: var(--text-main); margin: 0 0 14px 0;">
-                                ${cleanLine}
-                            </p>
-                        `;
-                    }
+                    return;
                 }
+
+                // 4. Sub-header check
+                const isSubHeader = ((cleanLine.startsWith("<strong>") && cleanLine.endsWith("</strong>")) || 
+                    /^\d+(\.\d+)*\./.test(rawText) || 
+                    /^(Một số|Dấu hiệu|Các dạng|Cách làm|Chiến thuật|Nhận biết|Thông tin)/i.test(rawText)) && rawText.length < 130;
+
+                if (isSubHeader) {
+                    docHtml += `
+                        <h4 class="theory-sub-header">
+                            ${cleanLine}
+                        </h4>
+                    `;
+                    return;
+                }
+
+                // 5. Default paragraph
+                docHtml += `
+                    <p class="theory-para">
+                        ${cleanLine}
+                    </p>
+                `;
             });
         });
         
@@ -10015,44 +10074,97 @@ document.addEventListener("DOMContentLoaded", () => {
         let docHtml = "";
         
         section.theory.forEach((slide, sIdx) => {
-            const lines = slide.text;
-            if (!lines || lines.length === 0) return;
+            const rawLines = slide.text;
+            if (!rawLines || rawLines.length === 0) return;
             
-            const firstLine = lines[0].trim();
-            const restLines = lines.slice(1);
-            
-            // Clean HTML tags to evaluate textual structure
-            const cleanFirst = firstLine.replace(/<[^>]*>/g, "").trim();
-            
-            // Evaluates if the line acts as a divider or main section header
-            const isMainHeader = cleanFirst.toUpperCase() === cleanFirst || /^\d+\.\s+/.test(cleanFirst) || cleanFirst.includes("CÂU HỎI") || cleanFirst.includes("LƯU Ý");
-            
-            if (isMainHeader) {
-                // If it's a section header, draw a horizontal spacer above it (except for the first one)
-                if (sIdx > 0) {
-                    docHtml += `<hr style="border: none; border-top: 1px solid var(--border); margin: 40px 0 30px 0;">`;
+            // Normalize lines:
+            // 1. Separate merged headers
+            // 2. Separate embedded bullets
+            // 3. Separate notes from questions
+            const lines = [];
+            rawLines.forEach(l => {
+                let text = l.trim();
+                if (!text) return;
+
+                // Check for glued header + subheader
+                const mergedHeaderMatch = text.match(/^(<strong><span[^>]*>[^<]+<\/span><\/strong>)(<strong><span[^>]*>[^<]+<\/span><\/strong>)$/i);
+                if (mergedHeaderMatch) {
+                    lines.push(mergedHeaderMatch[1]);
+                    lines.push(mergedHeaderMatch[2]);
+                    return;
                 }
-                
-                docHtml += `
-                    <h3 style="font-size: 1.35rem; font-weight: 700; color: var(--color-blue); margin: 0 0 24px 0; text-transform: uppercase; border-left: 4px solid var(--color-purple); padding-left: 14px; line-height: 1.4;">
-                        ${firstLine}
-                    </h3>
-                `;
-            } else {
-                docHtml += `
-                    <p style="font-size: 1.08rem; line-height: 1.7; color: var(--text-main); margin: 0 0 16px 0;">
-                        ${firstLine}
-                    </p>
-                `;
-            }
+
+                // Check for embedded bullets with tab or multiple 'o'
+                if (text.includes("\t") || /<\/em>\s*o\s+<em>/i.test(text) || /\?\s*o\s+<em>/i.test(text)) {
+                    const parts = text.split(/(?:<em>\s*)?\t+(?:<\/em>\s*)?(?:o\s+)?|(?:<\/em>\s*o\s+<em>)|(?:<em>\s*o\s+)/i);
+                    parts.forEach(p => {
+                        let pt = p.trim();
+                        if (pt) {
+                            if (!pt.startsWith("•") && !pt.startsWith("o") && !pt.startsWith("-")) {
+                                pt = "• " + pt;
+                            }
+                            lines.push(pt);
+                        }
+                    });
+                    return;
+                }
+
+                // Check if a question has a note glued to its end
+                const gluedNoteMatch = text.match(/^(.*?<\/em>)(<strong>(?:Chú ý|Lưu ý)[^<]*:?\s*<\/strong>.*)$/i);
+                if (gluedNoteMatch) {
+                    lines.push(gluedNoteMatch[1]);
+                    lines.push(gluedNoteMatch[2]);
+                    return;
+                }
+
+                lines.push(text);
+            });
             
-            restLines.forEach(line => {
+            lines.forEach((line, lIdx) => {
                 let cleanLine = line.trim();
                 if (!cleanLine) return;
                 
-                // Match bullets, potentially preceded by leading HTML tags (e.g. <em>, <strong>)
+                cleanLine = cleanLine.replace(/\\t|\t/g, "").trim();
+                const rawText = cleanLine.replace(/<[^>]*>/g, "").trim();
+
+                // 1. Callout / Note / Tip check
+                const isCallout = /^(?:💡|⚠️|LƯU Ý|Lưu ý|CHÚ Ý|Chú ý|Ghi nhớ)/i.test(rawText) ||
+                    /^<strong>\s*(?:LƯU Ý|Lưu ý|CHÚ Ý|Chú ý|Ghi nhớ)/i.test(cleanLine) ||
+                    cleanLine.includes("<strong>Chú ý:") || cleanLine.includes("<strong>Lưu ý:");
+
+                if (isCallout) {
+                    let icon = "💡";
+                    if (/^(?:⚠️|CHÚ Ý|Chú ý)/i.test(rawText) || cleanLine.includes("Chú ý")) {
+                        icon = "⚠️";
+                    }
+                    docHtml += `
+                        <div class="theory-callout-card">
+                            <span class="callout-icon">${icon}</span>
+                            <div class="callout-body">${cleanLine}</div>
+                        </div>
+                    `;
+                    return;
+                }
+
+                // 2. Main Header check (e.g. "5. CÂU HỎI LÝ DO/NGUYÊN NHÂN")
+                const isMainHeader = (sIdx === 0 && lIdx === 0) || 
+                    (/^\d+\.\s+CÂU HỎI/i.test(rawText) || /^[IVXLCDM]+\.\s+/i.test(rawText) || 
+                    (rawText.toUpperCase() === rawText && rawText.length > 5 && rawText.length < 80 && !rawText.includes("LƯU Ý") && !rawText.includes("CHÚ Ý") && !rawText.includes("CÁCH LÀM")));
+
+                if (isMainHeader) {
+                    if (sIdx > 0 || lIdx > 0) {
+                        docHtml += `<hr style="border: none; border-top: 1px solid var(--border); margin: 40px 0 30px 0;">`;
+                    }
+                    docHtml += `
+                        <h3 class="theory-main-header">
+                            ${cleanLine}
+                        </h3>
+                    `;
+                    return;
+                }
+
+                // 3. Bullet list check
                 const htmlBulletRegex = /^((?:<[^>]+>\s*)*)(•|o|-|\*|◦)\s+/i;
-                
                 const bulletMatch = cleanLine.match(htmlBulletRegex);
                 if (bulletMatch) {
                     const bulletChar = bulletMatch[2];
@@ -10061,27 +10173,33 @@ document.addEventListener("DOMContentLoaded", () => {
                     const bulletClass = isExample ? "theory-bullet example-bullet" : "theory-bullet main-bullet";
                     
                     docHtml += `
-                        <div class="${bulletClass}" style="margin-bottom: 12px;">
+                        <div class="${bulletClass}">
                             <span>${cleanedHtml}</span>
                         </div>
                     `;
-                } else {
-                    const rawText = cleanLine.replace(/<[^>]*>/g, "").trim();
-                    const isSubHeader = ((cleanLine.startsWith("<strong>") && cleanLine.endsWith("</strong>")) || /^\d+(\.\d+)*\./.test(rawText)) && rawText.length < 120;
-                    if (isSubHeader) {
-                        docHtml += `
-                            <h4 style="font-size: 1.15rem; font-weight: 700; color: var(--text-main); margin: 24px 0 12px 0; line-height: 1.4;">
-                                ${cleanLine}
-                            </h4>
-                        `;
-                    } else {
-                        docHtml += `
-                            <p style="font-size: 1.08rem; line-height: 1.7; color: var(--text-main); margin: 0 0 14px 0;">
-                                ${cleanLine}
-                            </p>
-                        `;
-                    }
+                    return;
                 }
+
+                // 4. Sub-header check
+                const isSubHeader = ((cleanLine.startsWith("<strong>") && cleanLine.endsWith("</strong>")) || 
+                    /^\d+(\.\d+)*\./.test(rawText) || 
+                    /^(Một số|Dấu hiệu|Các dạng|Cách làm|Chiến thuật|Nhận biết|Thông tin)/i.test(rawText)) && rawText.length < 130;
+
+                if (isSubHeader) {
+                    docHtml += `
+                        <h4 class="theory-sub-header">
+                            ${cleanLine}
+                        </h4>
+                    `;
+                    return;
+                }
+
+                // 5. Default paragraph
+                docHtml += `
+                    <p class="theory-para">
+                        ${cleanLine}
+                    </p>
+                `;
             });
         });
         

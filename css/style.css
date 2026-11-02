@@ -964,42 +964,133 @@ body.light-mode .theory-card-title {
     gap: 12px;
 }
 
+.theory-document {
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.theory-main-header {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: var(--color-blue);
+    margin: 0 0 22px 0;
+    text-transform: uppercase;
+    border-left: 5px solid var(--color-purple);
+    padding-left: 14px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+}
+
+body.light-mode .theory-main-header {
+    color: #1e3a8a;
+    border-left-color: #6366f1;
+}
+
+.theory-sub-header {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--color-cyan);
+    margin: 26px 0 14px 0;
+    line-height: 1.45;
+}
+
+body.light-mode .theory-sub-header {
+    color: #0369a1;
+}
+
+.theory-para {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-main);
+    margin: 0 0 14px 0;
+}
+
+body.light-mode .theory-para {
+    color: #334155;
+}
+
+.theory-callout-card {
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.22);
+    border-left: 5px solid var(--color-purple);
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 20px 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+body.light-mode .theory-callout-card {
+    background: #f0f7ff;
+    border: 1px solid #bfdbfe;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 2px 8px rgba(37, 99, 235, 0.06);
+}
+
+.theory-callout-card .callout-icon {
+    font-size: 1.35rem;
+    line-height: 1.3;
+    flex-shrink: 0;
+}
+
+.theory-callout-card .callout-body {
+    font-size: 1.02rem;
+    line-height: 1.65;
+    color: var(--text-main);
+    flex: 1;
+}
+
+body.light-mode .theory-callout-card .callout-body {
+    color: #1e293b;
+}
+
 .theory-bullet {
     position: relative;
-    padding-left: 20px;
+    padding-left: 22px;
     font-size: 1.05rem;
-    line-height: 1.6;
+    line-height: 1.65;
     color: var(--text-main);
+    margin-bottom: 12px;
+}
+
+body.light-mode .theory-bullet {
+    color: #1e293b;
 }
 
 .theory-bullet.main-bullet::before {
     content: "•";
     position: absolute;
-    left: 0;
+    left: 2px;
     top: -2px;
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     color: var(--color-cyan);
-    font-weight: bold;
+    font-weight: 800;
     line-height: 1.3;
 }
 
 body.light-mode .theory-bullet.main-bullet::before {
-    color: var(--color-blue);
+    color: #0284c7;
 }
 
 .theory-bullet.example-bullet {
-    margin-left: 25px;
+    margin-left: 20px;
 }
 
 .theory-bullet.example-bullet::before {
     content: "◦";
     position: absolute;
-    left: 0;
+    left: 2px;
     top: -2px;
-    font-size: 1.4rem;
-    color: var(--text-muted);
+    font-size: 1.45rem;
+    color: var(--color-purple);
     font-weight: bold;
     line-height: 1.3;
+}
+
+body.light-mode .theory-bullet.example-bullet::before {
+    color: #6366f1;
 }
 
 /* Theme-aware Vocabulary Styles with high contrast */
