@@ -8177,6 +8177,99 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
+        if (!window.toggleP1TestAudio) {
+            window.toggleP1TestAudio = function(globalQId, audioSrc) {
+                const audio = document.getElementById(`audio-${globalQId}`);
+                const icon = document.getElementById(`icon-${globalQId}`);
+                if (!audio) return;
+
+                // Stop other playing test audios
+                document.querySelectorAll("audio[id^='audio-p1_']").forEach(other => {
+                    if (other !== audio && !other.paused) {
+                        other.pause();
+                        const otherId = other.id.replace("audio-", "");
+                        const otherIcon = document.getElementById(`icon-${otherId}`);
+                        if (otherIcon) otherIcon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+                    }
+                });
+
+                if (audio.paused) {
+                    if (!audio.src || audio.src === window.location.href) {
+                        audio.src = audioSrc;
+                    }
+                    const playPromise = audio.play();
+                    if (playPromise !== undefined) {
+                        playPromise.then(() => {
+                            if (icon) icon.innerHTML = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+                            window.initP1TestAudioMeta(globalQId);
+                        }).catch(err => {
+                            console.warn("Retrying audio play directly:", err);
+                            audio.src = audioSrc;
+                            audio.load();
+                            audio.play().then(() => {
+                                if (icon) icon.innerHTML = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
+                            }).catch(e => console.error("Play failed:", e));
+                        });
+                    }
+                } else {
+                    audio.pause();
+                    if (icon) icon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+                }
+            };
+
+            window.initP1TestAudioMeta = function(globalQId) {
+                const audio = document.getElementById(`audio-${globalQId}`);
+                const dur = document.getElementById(`dur-${globalQId}`);
+                const seek = document.getElementById(`seek-${globalQId}`);
+                if (audio && dur && !isNaN(audio.duration) && audio.duration > 0) {
+                    const m = Math.floor(audio.duration / 60).toString().padStart(2, "0");
+                    const s = Math.floor(audio.duration % 60).toString().padStart(2, "0");
+                    dur.textContent = `${m}:${s}`;
+                    if (seek) seek.max = audio.duration;
+                }
+            };
+
+            window.syncP1TestAudioTime = function(globalQId) {
+                const audio = document.getElementById(`audio-${globalQId}`);
+                const cur = document.getElementById(`cur-${globalQId}`);
+                const dur = document.getElementById(`dur-${globalQId}`);
+                const seek = document.getElementById(`seek-${globalQId}`);
+                if (audio && cur) {
+                    const m = Math.floor(audio.currentTime / 60).toString().padStart(2, "0");
+                    const s = Math.floor(audio.currentTime % 60).toString().padStart(2, "0");
+                    cur.textContent = `${m}:${s}`;
+                    if (dur && (dur.textContent === "00:00" || dur.textContent === "--:--") && !isNaN(audio.duration) && audio.duration > 0) {
+                        const dm = Math.floor(audio.duration / 60).toString().padStart(2, "0");
+                        const ds = Math.floor(audio.duration % 60).toString().padStart(2, "0");
+                        dur.textContent = `${dm}:${ds}`;
+                        if (seek) seek.max = audio.duration;
+                    }
+                    if (seek && !seek.dataset.isSeeking) {
+                        seek.value = audio.currentTime;
+                    }
+                }
+            };
+
+            window.seekP1TestAudio = function(globalQId, val) {
+                const audio = document.getElementById(`audio-${globalQId}`);
+                if (audio) audio.currentTime = parseFloat(val);
+            };
+
+            window.setSpeedP1TestAudio = function(globalQId, speed) {
+                const audio = document.getElementById(`audio-${globalQId}`);
+                if (audio) audio.playbackRate = parseFloat(speed);
+            };
+
+            window.onP1TestAudioEnded = function(globalQId) {
+                const icon = document.getElementById(`icon-${globalQId}`);
+                const seek = document.getElementById(`seek-${globalQId}`);
+                const cur = document.getElementById(`cur-${globalQId}`);
+                if (icon) icon.innerHTML = '<path d="M8 5v14l11-7z"/>';
+                if (seek) seek.value = 0;
+                if (cur) cur.textContent = "00:00";
+            };
+        }
+
         if (!window.checkP1TestAnswer) {
             window.checkP1TestAnswer = function(globalQId, selectedKey, correctKey) {
                 const card = document.getElementById(`p1-test-card-${globalQId}`);
@@ -8224,6 +8317,42 @@ document.addEventListener("DOMContentLoaded", () => {
                 .p1-image-container img { width: 100%; height: auto; display: block; object-fit: cover; }
                 
                 .p1-audio-player { text-align: center; margin-bottom: 25px; width: 100%; }
+                .p1-custom-audio-bar {
+                    display: flex;
+                    align-items: center;
+                    gap: 14px;
+                    background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.95));
+                    border: 1.5px solid rgba(99, 102, 241, 0.35);
+                    border-radius: 50px;
+                    padding: 8px 18px;
+                    width: 100%;
+                    max-width: 440px;
+                    box-shadow: 0 4px 18px rgba(0,0,0,0.18);
+                    margin: 0 auto;
+                }
+                .p1-custom-play-btn {
+                    width: 44px;
+                    height: 44px;
+                    border-radius: 50%;
+                    background: linear-gradient(135deg, #6366f1, #4f46e5);
+                    color: white;
+                    border: none;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-shrink: 0;
+                    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+                    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+                    outline: none;
+                }
+                .p1-custom-play-btn:hover {
+                    transform: scale(1.08);
+                    box-shadow: 0 6px 18px rgba(99, 102, 241, 0.6);
+                }
+                .p1-custom-play-btn:active {
+                    transform: scale(0.95);
+                }
                 
                 .p1-interactive-buttons { display: flex; justify-content: center; gap: 20px; margin-bottom: 10px; flex-wrap: wrap; }
                 .p1-interactive-btn {
@@ -8276,7 +8405,38 @@ document.addEventListener("DOMContentLoaded", () => {
             
             const audioHtml = set.audio ? `
                 <div class="p1-audio-player">
-                    <audio id="audio-${globalQId}" src="media/${set.audio}" controls style="width: 100%; max-width: 400px; border-radius: 50px; outline: none;"></audio>
+                    <div class="p1-custom-audio-bar">
+                        <button type="button" class="p1-custom-play-btn" id="play-btn-${globalQId}" onclick="window.toggleP1TestAudio('${globalQId}', 'media/${set.audio}')" title="Phát / Dừng Audio">
+                            <svg id="icon-${globalQId}" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <div style="flex: 1; display: flex; flex-direction: column; gap: 3px;">
+                            <div style="display: flex; justify-content: space-between; font-size: 0.8rem; font-weight: 700; color: #94a3b8; font-family: monospace;">
+                                <span id="cur-${globalQId}">00:00</span>
+                                <span id="dur-${globalQId}">00:21</span>
+                            </div>
+                            <input type="range" id="seek-${globalQId}" min="0" max="100" value="0" step="0.1" 
+                                   style="width: 100%; height: 5px; border-radius: 3px; accent-color: #6366f1; cursor: pointer; outline: none;"
+                                   onmousedown="this.dataset.isSeeking='true'"
+                                   onmouseup="delete this.dataset.isSeeking"
+                                   ontouchstart="this.dataset.isSeeking='true'"
+                                   ontouchend="delete this.dataset.isSeeking"
+                                   oninput="window.seekP1TestAudio('${globalQId}', this.value)">
+                        </div>
+                        <select id="speed-${globalQId}" onchange="window.setSpeedP1TestAudio('${globalQId}', this.value)" style="background: rgba(15, 23, 42, 0.9); color: #cbd5e1; border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; padding: 4px 6px; font-size: 0.8rem; font-weight: 700; outline: none; cursor: pointer;">
+                            <option value="0.75">0.75x</option>
+                            <option value="1.0" selected>1.0x</option>
+                            <option value="1.2">1.2x</option>
+                        </select>
+                    </div>
+                    <audio id="audio-${globalQId}" src="media/${set.audio}" preload="auto" playsinline style="display: none;"
+                           onloadedmetadata="window.initP1TestAudioMeta('${globalQId}')"
+                           ontimeupdate="window.syncP1TestAudioTime('${globalQId}')"
+                           onended="window.onP1TestAudioEnded('${globalQId}')">
+                        <source src="media/${set.audio}" type="audio/mpeg">
+                        <source src="./media/${set.audio}" type="audio/mpeg">
+                    </audio>
                 </div>
             ` : `<div class="p1-audio-player"><p style="color:#ef4444;">[Thiếu Audio]</p></div>`;
             
