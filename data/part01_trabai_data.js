@@ -1314,6 +1314,1450 @@ window.part01Dang01TraBaiData = [
     }
 ];
 
+// Dữ liệu cụm từ trả bài Dạng 02: Tranh nhiều người (Bài giảng + Bài tập thực hành)
+window.part01Dang02TraBaiData = [
+    {
+        "id": 1,
+        "en": "the men",
+        "vi": "những người đàn ông",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 3
+    },
+    {
+        "id": 2,
+        "en": "the women",
+        "vi": "những người phụ nữ",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 3
+    },
+    {
+        "id": 3,
+        "en": "the people",
+        "vi": "mọi người, những người",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 4
+    },
+    {
+        "id": 4,
+        "en": "one of the ...",
+        "vi": "một trong những ...",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 4
+    },
+    {
+        "id": 5,
+        "en": "one of the men",
+        "vi": "một trong những người đàn ông",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 5
+    },
+    {
+        "id": 6,
+        "en": "one of the women",
+        "vi": "một trong những người phụ nữ",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 5
+    },
+    {
+        "id": 7,
+        "en": "some workers",
+        "vi": "một vài công nhân",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 6
+    },
+    {
+        "id": 8,
+        "en": "some travelers",
+        "vi": "một vài du khách, hành khách",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 6
+    },
+    {
+        "id": 9,
+        "en": "some employees",
+        "vi": "một vài nhân viên",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 7
+    },
+    {
+        "id": 10,
+        "en": "some customers",
+        "vi": "một vài khách hàng",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 7
+    },
+    {
+        "id": 11,
+        "en": "some vendors",
+        "vi": "một vài người bán dạo, người bán hàng",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 8
+    },
+    {
+        "id": 12,
+        "en": "some passengers",
+        "vi": "một vài hành khách",
+        "source": "Bài giảng",
+        "category": "Chủ từ & lượng từ",
+        "slide": 8
+    },
+    {
+        "id": 13,
+        "en": "chat",
+        "vi": "trò chuyện, tán gẫu",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 9
+    },
+    {
+        "id": 14,
+        "en": "talk",
+        "vi": "nói chuyện, trò chuyện",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 9
+    },
+    {
+        "id": 15,
+        "en": "chatting with each other",
+        "vi": "trò chuyện với nhau",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 9
+    },
+    {
+        "id": 16,
+        "en": "talking to each other",
+        "vi": "nói chuyện với nhau",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 9
+    },
+    {
+        "id": 17,
+        "en": "face",
+        "vi": "đối mặt, quay mặt về phía",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 10
+    },
+    {
+        "id": 18,
+        "en": "facing each other",
+        "vi": "đối mặt nhau, quay mặt vào nhau",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 10
+    },
+    {
+        "id": 19,
+        "en": "work",
+        "vi": "làm việc",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 11
+    },
+    {
+        "id": 20,
+        "en": "working near each other",
+        "vi": "làm việc gần nhau",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 11
+    },
+    {
+        "id": 21,
+        "en": "stand",
+        "vi": "đứng",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 12
+    },
+    {
+        "id": 22,
+        "en": "standing in line",
+        "vi": "đứng xếp hàng",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 12
+    },
+    {
+        "id": 23,
+        "en": "wait",
+        "vi": "chờ, đợi",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 13
+    },
+    {
+        "id": 24,
+        "en": "waiting in line",
+        "vi": "đợi xếp hàng",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 13
+    },
+    {
+        "id": 25,
+        "en": "pay for",
+        "vi": "thanh toán cho, trả tiền cho",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 14
+    },
+    {
+        "id": 26,
+        "en": "paying for some merchandise",
+        "vi": "thanh toán tiền hàng hóa",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 14
+    },
+    {
+        "id": 27,
+        "en": "move",
+        "vi": "di chuyển",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 15
+    },
+    {
+        "id": 28,
+        "en": "moving some equipment",
+        "vi": "di chuyển một số thiết bị",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 15
+    },
+    {
+        "id": 29,
+        "en": "board",
+        "vi": "lên (tàu, xe buýt, máy bay)",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 16
+    },
+    {
+        "id": 30,
+        "en": "boarding a bus",
+        "vi": "lên xe buýt",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 16
+    },
+    {
+        "id": 31,
+        "en": "attend",
+        "vi": "tham dự",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 17
+    },
+    {
+        "id": 32,
+        "en": "attending a meeting",
+        "vi": "tham dự một cuộc họp",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 17
+    },
+    {
+        "id": 33,
+        "en": "descend",
+        "vi": "đi xuống",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 18
+    },
+    {
+        "id": 34,
+        "en": "descending downstairs",
+        "vi": "đi xuống cầu thang",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 18
+    },
+    {
+        "id": 35,
+        "en": "gather",
+        "vi": "tụ tập, tụ họp lại",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 19
+    },
+    {
+        "id": 36,
+        "en": "gathering around a market stand",
+        "vi": "tụ tập quanh một quầy hàng",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 19
+    },
+    {
+        "id": 37,
+        "en": "unload",
+        "vi": "bốc dỡ hàng, dỡ hàng xuống",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 20
+    },
+    {
+        "id": 38,
+        "en": "unloading a truck",
+        "vi": "bốc dỡ hàng khỏi xe tải",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 20
+    },
+    {
+        "id": 39,
+        "en": "be seated",
+        "vi": "ngồi ở, đang ngồi",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 21
+    },
+    {
+        "id": 40,
+        "en": "be seated at a café",
+        "vi": "ngồi ở quán cà phê",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 21
+    },
+    {
+        "id": 41,
+        "en": "enter",
+        "vi": "tiến vào, bước vào",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 22
+    },
+    {
+        "id": 42,
+        "en": "entering a supermarket",
+        "vi": "bước vào một siêu thị",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 22
+    },
+    {
+        "id": 43,
+        "en": "look into",
+        "vi": "nhìn vào bên trong",
+        "source": "Bài giảng",
+        "category": "Động từ chính",
+        "slide": 23
+    },
+    {
+        "id": 44,
+        "en": "looking into a copy machine",
+        "vi": "nhìn vào máy photocopy",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 23
+    },
+    {
+        "id": 45,
+        "en": "shake hands",
+        "vi": "bắt tay nhau",
+        "source": "Bài giảng",
+        "category": "Cụm hành động bài giảng",
+        "slide": 24
+    },
+    {
+        "id": 46,
+        "en": "repair a motorcycle",
+        "vi": "sửa xe máy",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 25
+    },
+    {
+        "id": 47,
+        "en": "board a boat",
+        "vi": "lên tàu, bước lên thuyền",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 25
+    },
+    {
+        "id": 48,
+        "en": "drive a car",
+        "vi": "lái xe ô tô",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 25
+    },
+    {
+        "id": 49,
+        "en": "walk along the water",
+        "vi": "đi bộ dọc theo mép nước",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 25
+    },
+    {
+        "id": 50,
+        "en": "waiting area",
+        "vi": "khu vực chờ, phòng đợi",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 26
+    },
+    {
+        "id": 51,
+        "en": "place books on a table",
+        "vi": "đặt sách lên bàn",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 26
+    },
+    {
+        "id": 52,
+        "en": "move a chair",
+        "vi": "di chuyển một chiếc ghế",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 26
+    },
+    {
+        "id": 53,
+        "en": "water a plant",
+        "vi": "tưới cây cảnh",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 26
+    },
+    {
+        "id": 54,
+        "en": "wear a scarf",
+        "vi": "quàng khăn, đeo khăn quàng cổ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 28
+    },
+    {
+        "id": 55,
+        "en": "pour coffee into a cup",
+        "vi": "rót cà phê vào tách",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 28
+    },
+    {
+        "id": 56,
+        "en": "close menus",
+        "vi": "gấp các cuốn thực đơn lại",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 28
+    },
+    {
+        "id": 57,
+        "en": "hang a notice on a post",
+        "vi": "treo bảng thông báo lên cột",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 29
+    },
+    {
+        "id": 58,
+        "en": "walk toward a doorway",
+        "vi": "đi về phía cửa / lối ra vào",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 29
+    },
+    {
+        "id": 59,
+        "en": "change a bicycle tire",
+        "vi": "thay lốp xe đạp",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 29
+    },
+    {
+        "id": 60,
+        "en": "remove a basket from a cart",
+        "vi": "lấy giỏ ra khỏi xe đẩy",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 29
+    },
+    {
+        "id": 61,
+        "en": "write on a notepad",
+        "vi": "viết vào sổ tay",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 30
+    },
+    {
+        "id": 62,
+        "en": "look at some files",
+        "vi": "xem một số tài liệu / hồ sơ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 30
+    },
+    {
+        "id": 63,
+        "en": "sit at a desk",
+        "vi": "ngồi ở bàn làm việc",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 30
+    },
+    {
+        "id": 64,
+        "en": "set up partition",
+        "vi": "dựng vách ngăn",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 31
+    },
+    {
+        "id": 65,
+        "en": "hand out tickets",
+        "vi": "phát vé, đưa vé cho người khác",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 31
+    },
+    {
+        "id": 66,
+        "en": "approach a counter",
+        "vi": "tiến lại gần quầy",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 31
+    },
+    {
+        "id": 67,
+        "en": "sit in a car",
+        "vi": "ngồi trong xe ô tô",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 32
+    },
+    {
+        "id": 68,
+        "en": "open a handbag",
+        "vi": "mở túi xách",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 32
+    },
+    {
+        "id": 69,
+        "en": "remove a jacket",
+        "vi": "cởi áo khoác ngoài",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 32
+    },
+    {
+        "id": 70,
+        "en": "post notices on a board",
+        "vi": "dán thông báo lên bảng tin",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 33
+    },
+    {
+        "id": 71,
+        "en": "put papers in a file",
+        "vi": "kẹp giấy tờ vào tập hồ sơ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 33
+    },
+    {
+        "id": 72,
+        "en": "move equipment out of the room",
+        "vi": "chuyển thiết bị ra khỏi phòng",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 33
+    }
+];
+
+// Dữ liệu cụm từ trả bài Dạng 03: Tranh mô tả vật (Bài giảng + Bài tập thực hành)
+window.part01Dang03TraBaiData = [
+    {
+        "id": 1,
+        "en": "on",
+        "vi": "ở bên trên, trên bề mặt",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 3
+    },
+    {
+        "id": 2,
+        "en": "in",
+        "vi": "ở bên trong",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 4
+    },
+    {
+        "id": 3,
+        "en": "inside",
+        "vi": "ở bên trong",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 4
+    },
+    {
+        "id": 4,
+        "en": "out / outside",
+        "vi": "ở bên ngoài",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 5
+    },
+    {
+        "id": 5,
+        "en": "in front of",
+        "vi": "ở phía trước",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 6
+    },
+    {
+        "id": 6,
+        "en": "behind",
+        "vi": "ở phía sau",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 7
+    },
+    {
+        "id": 7,
+        "en": "in back of",
+        "vi": "ở phía sau",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 7
+    },
+    {
+        "id": 8,
+        "en": "near",
+        "vi": "ở gần",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 8
+    },
+    {
+        "id": 9,
+        "en": "close to",
+        "vi": "ở gần, sát cạnh",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 8
+    },
+    {
+        "id": 10,
+        "en": "next to",
+        "vi": "kế bên, sát bên cạnh",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 9
+    },
+    {
+        "id": 11,
+        "en": "around",
+        "vi": "xung quanh, quanh",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 10
+    },
+    {
+        "id": 12,
+        "en": "between",
+        "vi": "ở giữa (hai người hoặc hai vật)",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 11
+    },
+    {
+        "id": 13,
+        "en": "among",
+        "vi": "ở giữa (nhiều người hoặc nhiều vật)",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 12
+    },
+    {
+        "id": 14,
+        "en": "under",
+        "vi": "ở phía dưới, dưới",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 13
+    },
+    {
+        "id": 15,
+        "en": "above",
+        "vi": "ở phía trên, bên trên (không chạm bề mặt)",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 14
+    },
+    {
+        "id": 16,
+        "en": "into",
+        "vi": "vào trong, hướng vào bên trong",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 15
+    },
+    {
+        "id": 17,
+        "en": "out of",
+        "vi": "ra khỏi, đi ra khỏi",
+        "source": "Bài giảng",
+        "category": "Giới từ chỉ vị trí",
+        "slide": 16
+    },
+    {
+        "id": 18,
+        "en": "on the floor",
+        "vi": "ở trên sàn nhà",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 18
+    },
+    {
+        "id": 19,
+        "en": "on the ground",
+        "vi": "ở trên mặt đất",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 18
+    },
+    {
+        "id": 20,
+        "en": "on a table",
+        "vi": "ở trên một chiếc bàn",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 19
+    },
+    {
+        "id": 21,
+        "en": "on the desk",
+        "vi": "ở trên bàn làm việc",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 20
+    },
+    {
+        "id": 22,
+        "en": "on a counter",
+        "vi": "ở trên quầy (thu ngân, bếp, lễ tân)",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 21
+    },
+    {
+        "id": 23,
+        "en": "on shelves",
+        "vi": "ở trên các giá kệ",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 22
+    },
+    {
+        "id": 24,
+        "en": "on a shelf",
+        "vi": "ở trên một chiếc giá kệ",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 22
+    },
+    {
+        "id": 25,
+        "en": "in a row",
+        "vi": "xếp thành một hàng",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 23
+    },
+    {
+        "id": 26,
+        "en": "in a line",
+        "vi": "xếp thành hàng, theo một đường thẳng",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 23
+    },
+    {
+        "id": 27,
+        "en": "on the wall",
+        "vi": "ở trên bức tường",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 24
+    },
+    {
+        "id": 28,
+        "en": "in a display case",
+        "vi": "ở trong tủ kính trưng bày",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 25
+    },
+    {
+        "id": 29,
+        "en": "on a rack",
+        "vi": "ở trên giá treo, giá để đồ",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 26
+    },
+    {
+        "id": 30,
+        "en": "on racks",
+        "vi": "ở trên các giá treo",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 26
+    },
+    {
+        "id": 31,
+        "en": "in a drawer",
+        "vi": "ở trong ngăn kéo",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 27
+    },
+    {
+        "id": 32,
+        "en": "in a cabinet",
+        "vi": "ở trong tủ có nhiều ngăn",
+        "source": "Bài giảng",
+        "category": "Cụm từ chỉ vị trí",
+        "slide": 28
+    },
+    {
+        "id": 33,
+        "en": "be stacked on a table",
+        "vi": "được xếp chồng trên bàn",
+        "source": "Bài giảng",
+        "category": "Cấu trúc tả vật",
+        "slide": 33
+    },
+    {
+        "id": 34,
+        "en": "be being stacked",
+        "vi": "đang được ai đó xếp chồng lên",
+        "source": "Bài giảng",
+        "category": "Cấu trúc tả vật",
+        "slide": 33
+    },
+    {
+        "id": 35,
+        "en": "be arranged on the shelf",
+        "vi": "được sắp xếp trên giá kệ",
+        "source": "Bài giảng",
+        "category": "Cấu trúc tả vật",
+        "slide": 35
+    },
+    {
+        "id": 36,
+        "en": "be placed on the table",
+        "vi": "được đặt trên bàn",
+        "source": "Bài giảng",
+        "category": "Cấu trúc tả vật",
+        "slide": 35
+    },
+    {
+        "id": 37,
+        "en": "empty",
+        "vi": "trống rỗng, không có người/vật",
+        "source": "Bài giảng",
+        "category": "Tính từ tả vật",
+        "slide": 34
+    },
+    {
+        "id": 38,
+        "en": "closed",
+        "vi": "đóng kín, đã được đóng lại",
+        "source": "Bài giảng",
+        "category": "Tính từ tả vật",
+        "slide": 34
+    },
+    {
+        "id": 39,
+        "en": "open",
+        "vi": "mở, đang mở",
+        "source": "Bài giảng",
+        "category": "Tính từ tả vật",
+        "slide": 34
+    },
+    {
+        "id": 40,
+        "en": "full",
+        "vi": "đầy, chứa đầy",
+        "source": "Bài giảng",
+        "category": "Tính từ tả vật",
+        "slide": 34
+    },
+    {
+        "id": 41,
+        "en": "crowded",
+        "vi": "đông đúc, chật ních người",
+        "source": "Bài giảng",
+        "category": "Tính từ tả vật",
+        "slide": 34
+    },
+    {
+        "id": 42,
+        "en": "occupied",
+        "vi": "có người sử dụng, có người ngồi",
+        "source": "Bài giảng",
+        "category": "Tính từ tả vật",
+        "slide": 34
+    },
+    {
+        "id": 43,
+        "en": "unoccupied",
+        "vi": "trống, không có người sử dụng",
+        "source": "Bài giảng",
+        "category": "Tính từ tả vật",
+        "slide": 41
+    },
+    {
+        "id": 44,
+        "en": "transport in a truck",
+        "vi": "vận chuyển bằng xe tải",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 37
+    },
+    {
+        "id": 45,
+        "en": "fix / repair",
+        "vi": "sửa chữa, bảo trì",
+        "source": "Bài tập thực hành",
+        "category": "Động từ bài tập",
+        "slide": 37
+    },
+    {
+        "id": 46,
+        "en": "top level of the truck",
+        "vi": "tầng trên của xe tải chở ô tô",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 37
+    },
+    {
+        "id": 47,
+        "en": "pour a beverage into a glass",
+        "vi": "rót đồ uống vào ly",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 38
+    },
+    {
+        "id": 48,
+        "en": "arrange flowers in a vase",
+        "vi": "cắm hoa, sắp xếp hoa trong bình",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 38
+    },
+    {
+        "id": 49,
+        "en": "fold a napkin",
+        "vi": "gấp khăn ăn",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 38
+    },
+    {
+        "id": 50,
+        "en": "wipe off a table",
+        "vi": "lau sạch bàn",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 38
+    },
+    {
+        "id": 51,
+        "en": "leave a shop",
+        "vi": "rời khỏi cửa hàng",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 39
+    },
+    {
+        "id": 52,
+        "en": "decorate with plants",
+        "vi": "trang trí bằng cây cảnh",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 39
+    },
+    {
+        "id": 53,
+        "en": "seating area",
+        "vi": "khu vực chỗ ngồi",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 39
+    },
+    {
+        "id": 54,
+        "en": "light fixture",
+        "vi": "thiết bị chiếu sáng, bộ đèn chùm/đèn trần",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 39
+    },
+    {
+        "id": 55,
+        "en": "move into a corner",
+        "vi": "di chuyển vào một góc",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 39
+    },
+    {
+        "id": 56,
+        "en": "dock at the airport",
+        "vi": "đỗ tại nhà ga sân bay, cập cổng đón",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 40
+    },
+    {
+        "id": 57,
+        "en": "put luggage onto the plane",
+        "vi": "xếp hành lý lên máy bay",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 40
+    },
+    {
+        "id": 58,
+        "en": "board the plane",
+        "vi": "lên máy bay",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 40
+    },
+    {
+        "id": 59,
+        "en": "maintenance worker",
+        "vi": "nhân viên bảo trì, công nhân bảo dưỡng",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 40
+    },
+    {
+        "id": 60,
+        "en": "presentation",
+        "vi": "bài thuyết trình",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 41
+    },
+    {
+        "id": 61,
+        "en": "lecture hall",
+        "vi": "giảng đường, hội trường lớn",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 41
+    },
+    {
+        "id": 62,
+        "en": "auditorium",
+        "vi": "khán phòng, thính phòng",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 41
+    },
+    {
+        "id": 63,
+        "en": "reflection in the mirror",
+        "vi": "hình ảnh phản chiếu trong gương",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 42
+    },
+    {
+        "id": 64,
+        "en": "be visible",
+        "vi": "có thể nhìn thấy được, hiện rõ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm từ bài tập",
+        "slide": 42
+    },
+    {
+        "id": 65,
+        "en": "pay the bill",
+        "vi": "thanh toán hóa đơn",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 42
+    },
+    {
+        "id": 66,
+        "en": "look at merchandise",
+        "vi": "nhìn vào hàng hóa",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 42
+    },
+    {
+        "id": 67,
+        "en": "hang on the wall",
+        "vi": "treo trên tường",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 43
+    },
+    {
+        "id": 68,
+        "en": "talk on the phone",
+        "vi": "nói chuyện qua điện thoại",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 43
+    },
+    {
+        "id": 69,
+        "en": "spread out on the desk",
+        "vi": "trải rộng, rải đều trên bàn làm việc",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 43
+    },
+    {
+        "id": 70,
+        "en": "point at a monitor",
+        "vi": "chỉ vào màn hình máy tính",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 43
+    },
+    {
+        "id": 71,
+        "en": "place on the floor",
+        "vi": "đặt ở trên sàn nhà",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 44
+    },
+    {
+        "id": 72,
+        "en": "bulletin board",
+        "vi": "bảng thông báo, bảng tin",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 44
+    },
+    {
+        "id": 73,
+        "en": "blueprint",
+        "vi": "bản vẽ thiết kế kỹ thuật",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 44
+    },
+    {
+        "id": 74,
+        "en": "spread out on the carpet",
+        "vi": "trải ra trên tấm thảm",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 44
+    },
+    {
+        "id": 75,
+        "en": "arrange pillows on a sofa",
+        "vi": "sắp xếp gối tựa trên ghế sofa",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 44
+    },
+    {
+        "id": 76,
+        "en": "papers piled on a chair",
+        "vi": "giấy tờ chất thành đống trên ghế",
+        "source": "Bài tập thực hành",
+        "category": "Cụm từ bài tập",
+        "slide": 45
+    },
+    {
+        "id": 77,
+        "en": "cabinets mounted above a monitor",
+        "vi": "tủ gắn cố định phía trên màn hình",
+        "source": "Bài tập thực hành",
+        "category": "Cụm từ bài tập",
+        "slide": 45
+    },
+    {
+        "id": 78,
+        "en": "open a window",
+        "vi": "mở cửa sổ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 45
+    },
+    {
+        "id": 79,
+        "en": "reach for a telephone",
+        "vi": "với tay lấy chiếc điện thoại",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 45
+    },
+    {
+        "id": 80,
+        "en": "tables and chairs outdoors",
+        "vi": "bàn và ghế ở ngoài trời",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 46
+    },
+    {
+        "id": 81,
+        "en": "set up outdoors",
+        "vi": "bố trí, dựng ở ngoài trời",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 46
+    },
+    {
+        "id": 82,
+        "en": "sit at the table",
+        "vi": "ngồi ở bàn",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 46
+    },
+    {
+        "id": 83,
+        "en": "carry an umbrella",
+        "vi": "mang, cầm theo một chiếc ô",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 46
+    },
+    {
+        "id": 84,
+        "en": "paddle a kayak down a river",
+        "vi": "chèo thuyền kayak xuôi dòng sông",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 48
+    },
+    {
+        "id": 85,
+        "en": "a pile of bricks",
+        "vi": "một đống gạch, một chồng gạch",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 48
+    },
+    {
+        "id": 86,
+        "en": "repair a roof",
+        "vi": "sửa chữa mái nhà",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 48
+    },
+    {
+        "id": 87,
+        "en": "place chairs along a canal",
+        "vi": "đặt ghế dọc theo con kênh",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 48
+    },
+    {
+        "id": 88,
+        "en": "canal",
+        "vi": "con kênh, dòng kênh đào",
+        "source": "Bài tập thực hành",
+        "category": "Từ vựng bài tập",
+        "slide": 48
+    },
+    {
+        "id": 89,
+        "en": "line up at a toll booth",
+        "vi": "xếp hàng tại trạm thu phí",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 50
+    },
+    {
+        "id": 90,
+        "en": "road sign",
+        "vi": "biển báo giao thông đường bộ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm danh từ bài tập",
+        "slide": 50
+    },
+    {
+        "id": 91,
+        "en": "hang from the ceiling",
+        "vi": "treo từ trên trần nhà / trần hầm",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 50
+    },
+    {
+        "id": 92,
+        "en": "close a tunnel for construction",
+        "vi": "đóng cửa đường hầm để thi công",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 50
+    },
+    {
+        "id": 93,
+        "en": "stand on the side of a street",
+        "vi": "đứng ở bên lề đường",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 50
+    },
+    {
+        "id": 94,
+        "en": "cross the street",
+        "vi": "băng qua đường",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 52
+    },
+    {
+        "id": 95,
+        "en": "pay for clothing",
+        "vi": "thanh toán tiền mua quần áo",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 52
+    },
+    {
+        "id": 96,
+        "en": "fold clothing",
+        "vi": "gấp quần áo",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 52
+    },
+    {
+        "id": 97,
+        "en": "display coats",
+        "vi": "trưng bày áo khoác",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 52
+    },
+    {
+        "id": 98,
+        "en": "lay out on the floor",
+        "vi": "trải ra ở trên sàn nhà",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 54
+    },
+    {
+        "id": 99,
+        "en": "place plants outside",
+        "vi": "đặt cây cảnh ở ngoài trời",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 54
+    },
+    {
+        "id": 100,
+        "en": "hang artwork on a wall",
+        "vi": "treo tác phẩm tranh nghệ thuật trên tường",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 54
+    },
+    {
+        "id": 101,
+        "en": "artwork",
+        "vi": "tác phẩm nghệ thuật, tranh ảnh đóng khung",
+        "source": "Bài tập thực hành",
+        "category": "Từ vựng bài tập",
+        "slide": 54
+    },
+    {
+        "id": 102,
+        "en": "store chairs in a closet",
+        "vi": "cất ghế vào trong buồng chứa đồ / tủ đồ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 54
+    },
+    {
+        "id": 103,
+        "en": "hang on a door",
+        "vi": "treo ở trên cánh cửa",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 56
+    },
+    {
+        "id": 104,
+        "en": "stock a cabinet with supplies",
+        "vi": "xếp đầy vật dụng, đồ dùng vào tủ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 56
+    },
+    {
+        "id": 105,
+        "en": "assemble shelves",
+        "vi": "lắp ráp các giá kệ",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 56
+    },
+    {
+        "id": 106,
+        "en": "scatter on the ground",
+        "vi": "nằm rải rác, vương vãi trên mặt đất",
+        "source": "Bài tập thực hành",
+        "category": "Cụm hành động bài tập",
+        "slide": 56
+    }
+];
+
+// Helper to access Part 1 Trả Bài data for any section
+window.getPart01TraBaiData = function(sectionId) {
+    if (sectionId === "dang_02") return window.part01Dang02TraBaiData || [];
+    if (sectionId === "dang_03") return window.part01Dang03TraBaiData || [];
+    return window.part01Dang01TraBaiData || [];
+};
+
 if (typeof module !== "undefined" && module.exports) {
-    module.exports = window.part01Dang01TraBaiData;
+    module.exports = {
+        dang01: window.part01Dang01TraBaiData,
+        dang02: window.part01Dang02TraBaiData,
+        dang03: window.part01Dang03TraBaiData,
+        getData: window.getPart01TraBaiData
+    };
 }

@@ -1755,11 +1755,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 part1ConceptsNavList.appendChild(submenuItem);
 
-                if (node.id === "dang_01") {
+                if (node.id === "dang_01" || node.id === "dang_02" || node.id === "dang_03") {
+                    const trabaiId = node.id + "_trabai";
                     const trabaiItem = document.createElement("div");
                     trabaiItem.className = "submenu-item group-item";
-                    trabaiItem.setAttribute("data-id", "dang_01_trabai");
-                    const trabaiLocked = isContentLocked(1, "dang_01_trabai");
+                    trabaiItem.setAttribute("data-id", trabaiId);
+                    const trabaiLocked = isContentLocked(1, trabaiId);
                     const trabaiLockIcon = trabaiLocked ? " 🔒" : "";
                     trabaiItem.innerHTML = `<span class="submenu-dot" style="background: #f59e0b;"></span><span class="submenu-text" style="color: #f59e0b; font-weight: 700;">🎯 TRẢ BÀI TỪ VỰNG${trabaiLockIcon}</span>`;
                     trabaiItem.addEventListener("click", (e) => {
@@ -1768,7 +1769,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             window.showPaywallModal(() => loadSectionP1(node.id, "trabai"), "Phần Trả bài hiện đang tạm khoá cho tài khoản của bạn.");
                             return;
                         }
-                        loadSectionP1("dang_01", "trabai");
+                        loadSectionP1(node.id, "trabai");
                     });
                     part1ConceptsNavList.appendChild(trabaiItem);
                 }
@@ -4056,19 +4057,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const scopeItems = getTraBaiFilteredItems();
         let pool = customItems;
         if (!pool) {
-            const batch = tbs.tfBatch || 'all';
-            if (batch === 'b1') pool = scopeItems.slice(0, 25);
-            else if (batch === 'b2') pool = scopeItems.slice(25, 50);
-            else if (batch === 'b3') pool = scopeItems.slice(50, 75);
-            else if (batch === 'b4') pool = scopeItems.slice(75, 100);
-            else if (batch === 'b5') pool = scopeItems.slice(100, 125);
-            else if (batch === 'b6') pool = scopeItems.slice(125, 150);
-            else if (batch === 'b7') pool = scopeItems.slice(150, 164);
-            else pool = scopeItems;
+            pool = slicePart1Batch(scopeItems, tbs.tfBatch);
         }
         if (!pool || pool.length === 0) return;
 
-        const allItems = window.traBaiData || scopeItems;
+        const allItems = scopeItems;
         const shuffled = shuffleTraBaiArray([...pool]);
         const questions = [];
 
@@ -4110,38 +4103,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Show intro screen if no questions loaded yet
         if (!tbs.tfQuestions || tbs.tfQuestions.length === 0) {
-            let batchChipsHtml = `
-                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'all' ? 'active' : ''}" onclick="window.tbSelectTFBatch('all', this)">
-                    🌟 Tất cả (164 từ)
-                </button>
-                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b1' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b1', this)">
-                    Đợt 1 (1 - 25)
-                </button>
-                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b2' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b2', this)">
-                    Đợt 2 (26 - 50)
-                </button>
-                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b3' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b3', this)">
-                    Đợt 3 (51 - 75)
-                </button>
-                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b4' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b4', this)">
-                    Đợt 4 (76 - 100)
-                </button>
-                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b5' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b5', this)">
-                    Đợt 5 (101 - 125)
-                </button>
-                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b6' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b6', this)">
-                    Đợt 6 (126 - 150)
-                </button>
-                <button type="button" class="tb-scope-chip ${tbs.tfBatch === 'b7' ? 'active' : ''}" onclick="window.tbSelectTFBatch('b7', this)">
-                    Đợt 7 (151 - 164)
-                </button>
-            `;
+            let secTitleText = "TRANH 1 NGƯỜI";
+            if (state.part01ActiveSection === "dang_02") secTitleText = "TRANH NHIỀU NGƯỜI";
+            else if (state.part01ActiveSection === "dang_03") secTitleText = "TRANH MÔ TẢ VẬT";
+
+            const batchChipsHtml = generatePart1BatchChips(items.length, tbs.tfBatch, 'window.tbSelectTFBatch');
 
             workspace.innerHTML = `
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
                     <div style="font-size: 3.2rem; margin-bottom: 12px;">🎧</div>
                     <h3 style="font-size: 1.45rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
-                        NGHE ÂM THANH CHỌN ĐÚNG / SAI: TRANH 1 NGƯỜI
+                        NGHE ÂM THANH CHỌN ĐÚNG / SAI: ${secTitleText}
                     </h3>
                     <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
                         Lắng nghe phát âm chuẩn của từ vựng tiếng Anh ➔ Đối chiếu nhanh với nghĩa tiếng Việt hiển thị trên màn hình ➔ Chọn <strong>ĐÚNG</strong> hoặc <strong>SAI</strong>. Rèn luyện phản xạ nghe tức thì!
@@ -7678,15 +7650,19 @@ document.addEventListener("DOMContentLoaded", () => {
         state.part01ActiveSection = sectionId;
         state.part01ActiveTab = targetTab;
         
+        const supportedTraBaiSections = ['dang_01', 'dang_02', 'dang_03'];
+        const hasTraBai = supportedTraBaiSections.includes(sectionId);
+
         // Update active in submenu
         document.querySelectorAll(".submenu-item").forEach(item => {
             const dataId = item.getAttribute("data-id");
-            if (sectionId === "dang_01") {
+            if (hasTraBai) {
+                const trabaiId = sectionId + "_trabai";
                 if (targetTab === "trabai") {
-                    if (dataId === "dang_01_trabai") item.classList.add("active");
+                    if (dataId === trabaiId) item.classList.add("active");
                     else item.classList.remove("active");
                 } else {
-                    if (dataId === "dang_01") item.classList.add("active");
+                    if (dataId === sectionId) item.classList.add("active");
                     else item.classList.remove("active");
                 }
             } else {
@@ -7705,16 +7681,19 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Tabs HTML for dang_01
+        // Tabs HTML for sections with Trả bài
         let tabsHtml = '';
-        if (sectionId === 'dang_01') {
+        if (hasTraBai) {
+            const vocabData = window.getPart01TraBaiData ? window.getPart01TraBaiData(sectionId) : [];
+            const vocabCount = vocabData.length;
+            const slidesCount = sectionData.theory ? sectionData.theory.length : 0;
             tabsHtml = `
                 <div class="p1-nav-tabs">
                     <button type="button" id="p1-tab-btn-theory" class="p1-tab-nav-btn ${targetTab === 'theory' ? 'active' : ''}" onclick="window.switchPart01Tab('theory')">
-                        <span style="font-size: 1.15rem;">📑</span> BÀI GIẢNG & THỰC HÀNH (101 SLIDES)
+                        <span style="font-size: 1.15rem;">📑</span> BÀI GIẢNG & THỰC HÀNH (${slidesCount} SLIDES)
                     </button>
                     <button type="button" id="p1-tab-btn-trabai" class="p1-tab-nav-btn ${targetTab === 'trabai' ? 'active' : ''}" onclick="window.switchPart01Tab('trabai')">
-                        <span style="font-size: 1.15rem;">🎯</span> TRẢ BÀI TỪ VỰNG (164 CỤM)
+                        <span style="font-size: 1.15rem;">🎯</span> TRẢ BÀI TỪ VỰNG (${vocabCount} CỤM)
                     </button>
                 </div>
             `;
@@ -7722,7 +7701,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Setup Header
         part1Panel.innerHTML = `
-            <div class="panel-header" style="padding-bottom: ${sectionId === 'dang_01' ? '0' : '20px'};">
+            <div class="panel-header" style="padding-bottom: ${hasTraBai ? '0' : '20px'};">
                 <div class="breadcrumbs">
                     <span>PART 01: PHOTOGRAPHS</span> &nbsp;/&nbsp; <span>${sectionData.type === 'test' ? 'LUYỆN TẬP ETS 2026' : (sectionData.id === 'overview' ? 'TỔNG QUAN' : 'DẠNG CÂU HỎI')}</span>
                     ${targetTab === 'trabai' ? ' &nbsp;/&nbsp; <span style="color: #f59e0b; font-weight: 700;">TRẢ BÀI TỪ VỰNG</span>' : ''}
@@ -7735,8 +7714,8 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const contentArea = document.getElementById("p1-content-area");
 
-        if (sectionId === 'dang_01' && targetTab === 'trabai') {
-            renderTraBaiP1(contentArea);
+        if (hasTraBai && targetTab === 'trabai') {
+            renderTraBaiP1(contentArea, sectionId);
         } else if (sectionData.type === "theory" || sectionData.type === "overview") {
             state.part01SlidesData = sectionData.theory || [];
             state.part01TotalSlides = state.part01SlidesData.length;
@@ -7750,6 +7729,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     window.switchPart01Tab = function(tabName) {
         state.part01ActiveTab = tabName;
+        const currentSec = state.part01ActiveSection || 'dang_01';
+        const trabaiId = currentSec + "_trabai";
         const contentArea = document.getElementById("p1-content-area");
         const theoryBtn = document.getElementById("p1-tab-btn-theory");
         const trabaiBtn = document.getElementById("p1-tab-btn-trabai");
@@ -7758,16 +7739,16 @@ document.addEventListener("DOMContentLoaded", () => {
             if (theoryBtn) theoryBtn.classList.remove("active");
             if (trabaiBtn) trabaiBtn.classList.add("active");
             document.querySelectorAll(".submenu-item").forEach(item => {
-                if (item.getAttribute("data-id") === 'dang_01_trabai') item.classList.add("active");
-                else if (item.getAttribute("data-id") === 'dang_01') item.classList.remove("active");
+                if (item.getAttribute("data-id") === trabaiId) item.classList.add("active");
+                else if (item.getAttribute("data-id") === currentSec) item.classList.remove("active");
             });
-            if (contentArea) renderTraBaiP1(contentArea);
+            if (contentArea) renderTraBaiP1(contentArea, currentSec);
         } else {
             if (trabaiBtn) trabaiBtn.classList.remove("active");
             if (theoryBtn) theoryBtn.classList.add("active");
             document.querySelectorAll(".submenu-item").forEach(item => {
-                if (item.getAttribute("data-id") === 'dang_01') item.classList.add("active");
-                else if (item.getAttribute("data-id") === 'dang_01_trabai') item.classList.remove("active");
+                if (item.getAttribute("data-id") === currentSec) item.classList.add("active");
+                else if (item.getAttribute("data-id") === trabaiId) item.classList.remove("active");
             });
             if (contentArea) renderTheoryP1(contentArea);
         }
@@ -8358,18 +8339,71 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = html;
     }
 
-// ================= PART 01: TRẢ BÀI TỪ VỰNG DẠNG 01 =================
+// ================= PART 01: TRẢ BÀI TỪ VỰNG =================
 
     function saveTraBaiLearned() {
         try {
+            const secId = state.part01ActiveSection || 'dang_01';
             if (window.traBaiState && window.traBaiState.learnedIds) {
-                localStorage.setItem("p1_trabai_learned_ids", JSON.stringify(Array.from(window.traBaiState.learnedIds)));
+                const ids = JSON.stringify(Array.from(window.traBaiState.learnedIds));
+                localStorage.setItem("p1_trabai_learned_ids_" + secId, ids);
+                if (secId === 'dang_01') {
+                    localStorage.setItem("p1_trabai_learned_ids", ids);
+                }
             }
         } catch (e) {}
     }
 
     function getTraBaiFilteredItems() {
+        const secId = state.part01ActiveSection || 'dang_01';
+        if (typeof window.getPart01TraBaiData === 'function') {
+            return window.getPart01TraBaiData(secId);
+        }
+        if (secId === 'dang_02') return window.part01Dang02TraBaiData || [];
+        if (secId === 'dang_03') return window.part01Dang03TraBaiData || [];
         return window.part01Dang01TraBaiData || [];
+    }
+
+    function generatePart1BatchChips(itemsCount, currentBatch, selectFnName) {
+        if (itemsCount <= 25) {
+            return `
+                <button type="button" class="tb-scope-chip active" onclick="${selectFnName}('all', this)">
+                    🌟 Tất cả (${itemsCount} từ)
+                </button>
+            `;
+        }
+        const step = itemsCount > 100 ? 25 : (itemsCount > 50 ? 25 : 20);
+        let html = `
+            <button type="button" class="tb-scope-chip ${(currentBatch || 'all') === 'all' ? 'active' : ''}" onclick="${selectFnName}('all', this)">
+                🌟 Tất cả (${itemsCount} từ)
+            </button>
+        `;
+        let bIdx = 1;
+        for (let start = 0; start < itemsCount; start += step) {
+            const end = Math.min(start + step, itemsCount);
+            const bKey = 'b' + bIdx;
+            html += `
+                <button type="button" class="tb-scope-chip ${currentBatch === bKey ? 'active' : ''}" onclick="${selectFnName}('${bKey}', this)">
+                    Đợt ${bIdx} (${start + 1} - ${end})
+                </button>
+            `;
+            bIdx++;
+        }
+        return html;
+    }
+
+    function slicePart1Batch(items, batch) {
+        if (!batch || batch === 'all') return items;
+        const total = items.length;
+        const step = total > 100 ? 25 : (total > 50 ? 25 : 20);
+        const m = String(batch).match(/^b(\d+)$/);
+        if (m) {
+            const bNum = parseInt(m[1], 10);
+            const start = (bNum - 1) * step;
+            const end = Math.min(start + step, total);
+            return items.slice(start, end);
+        }
+        return items;
     }
 
     function shuffleTraBaiArray(arr) {
@@ -8390,22 +8424,25 @@ document.addEventListener("DOMContentLoaded", () => {
             .trim();
     }
 
-    function renderTraBaiP1(container) {
-        if (!window.part01Dang01TraBaiData || window.part01Dang01TraBaiData.length === 0) {
+    function renderTraBaiP1(container, sectionId = null) {
+        const activeSec = sectionId || state.part01ActiveSection || 'dang_01';
+        state.part01ActiveSection = activeSec;
+        const allData = getTraBaiFilteredItems();
+        if (!allData || allData.length === 0) {
             container.innerHTML = `<div style="text-align: center; padding: 50px; color: #64748b; font-size: 1.1rem;">Đang tải dữ liệu trả bài từ vựng...</div>`;
             return;
         }
 
-        const allData = window.part01Dang01TraBaiData;
-
-        // Initialize state if not present
-        if (!window.traBaiState) {
+        // Initialize state if not present or switched section
+        if (!window.traBaiState || window.traBaiState.currentSection !== activeSec) {
             let savedLearned = [];
             try {
-                savedLearned = JSON.parse(localStorage.getItem("p1_trabai_learned_ids") || "[]");
+                const stored = localStorage.getItem("p1_trabai_learned_ids_" + activeSec) || (activeSec === 'dang_01' ? localStorage.getItem("p1_trabai_learned_ids") : null);
+                savedLearned = JSON.parse(stored || "[]");
             } catch (e) { savedLearned = []; }
 
             window.traBaiState = {
+                currentSection: activeSec,
                 mode: 'flashcard',
                 cardIndex: 0,
                 isFlipped: false,
@@ -8445,7 +8482,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!window.tbKeyHandlerAttached) {
             window.tbKeyHandlerAttached = true;
             document.addEventListener("keydown", (e) => {
-                if (state.part01ActiveSection !== "dang_01" || state.part01ActiveTab !== "trabai") return;
+                if (!['dang_01', 'dang_02', 'dang_03'].includes(state.part01ActiveSection) || state.part01ActiveTab !== "trabai") return;
                 if (!window.traBaiState) return;
                 const mode = window.traBaiState.mode;
 
@@ -8512,6 +8549,16 @@ document.addEventListener("DOMContentLoaded", () => {
         const learnedCount = tbs.learnedIds.size;
         const percentLearned = Math.min(100, Math.round((learnedCount / totalItemsCount) * 100));
 
+        let headerTitle = "TRẢ BÀI TỪ VỰNG: TRANH MÔ TẢ MỘT NGƯỜI";
+        let headerDesc = `Đầy đủ <strong>${totalItemsCount} cụm từ vựng cốt lõi</strong> (bài giảng + bài tập thực hành ETS).`;
+        if (activeSec === "dang_02") {
+            headerTitle = "TRẢ BÀI TỪ VỰNG: TRANH CÓ NHIỀU NGƯỜI";
+            headerDesc = `Đầy đủ <strong>${totalItemsCount} cụm từ vựng trọng tâm</strong> (chủ từ, động từ hành động + bài tập thực hành ETS).`;
+        } else if (activeSec === "dang_03") {
+            headerTitle = "TRẢ BÀI TỪ VỰNG: TRANH MÔ TẢ VẬT";
+            headerDesc = `Đầy đủ <strong>${totalItemsCount} cụm từ vựng trọng tâm</strong> (giới từ, vị trí, cấu trúc mô tả vật + bài tập thực hành ETS).`;
+        }
+
         container.innerHTML = `
             <div class="tb-main-container">
                 <!-- TOP HEADER CARD: STATS & CLEAN NAVIGATION -->
@@ -8521,11 +8568,11 @@ document.addEventListener("DOMContentLoaded", () => {
                             <div style="display: flex; align-items: center; gap: 8px;">
                                 <span style="font-size: 1.5rem;">🎯</span>
                                 <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--text-main); margin: 0;">
-                                    TRẢ BÀI TỪ VỰNG: TRANH MÔ TẢ MỘT NGƯỜI
+                                    ${headerTitle}
                                 </h2>
                             </div>
                             <p style="color: #64748b; font-size: 0.95rem; margin-top: 6px; margin-bottom: 0;">
-                                Đầy đủ <strong>164 cụm từ vựng cốt lõi</strong> (119 cụm bài giảng + 45 cụm 6 câu bài tập thực hành ETS).
+                                ${headerDesc}
                             </p>
                         </div>
                         <!-- Progress stat pill -->
@@ -8540,13 +8587,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         </div>
                     </div>
 
-                    <!-- Mode Switcher Nav (5 modes: Flashcard, Quiz 164 câu, Nghe Đúng / Sai, Dictation Gõ chữ, Tra cứu) -->
+                    <!-- Mode Switcher Nav (5 modes: Flashcard, Quiz, Nghe Đúng / Sai, Dictation Gõ chữ, Tra cứu) -->
                     <div class="tb-modes-nav" style="max-width: 860px;">
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'flashcard' ? 'active' : ''}" onclick="window.tbSetMode('flashcard')">
                             <span>🗂️</span> Lật thẻ Flashcard
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'quiz' ? 'active' : ''}" onclick="window.tbSetMode('quiz')">
-                            <span>⚡</span> Trắc nghiệm (164 câu)
+                            <span>⚡</span> Trắc nghiệm (${totalItemsCount} câu)
                         </button>
                         <button type="button" class="tb-mode-btn ${tbs.mode === 'truefalse' ? 'active' : ''}" onclick="window.tbSetMode('truefalse')">
                             <span>🎧</span> Nghe Đúng / Sai
@@ -8812,7 +8859,7 @@ document.addEventListener("DOMContentLoaded", () => {
         saveTraBaiLearned();
 
         // Update stats bar
-        const totalCount = (window.part01Dang01TraBaiData || []).length;
+        const totalCount = (getTraBaiFilteredItems() || []).length;
         const learnedCount = tbs.learnedIds.size;
         const percent = Math.min(100, Math.round((learnedCount / totalCount) * 100));
 
@@ -8825,7 +8872,7 @@ document.addEventListener("DOMContentLoaded", () => {
         window.tbNextCard();
     };
 
-    // ================= QUIZ MODE (TRẮC NGHIỆM ĐỦ 164 CÂU) =================
+    // ================= QUIZ MODE (TRẮC NGHIỆM) =================
     window.tbRenderQuizView = function(workspace) {
         const tbs = window.traBaiState;
 
@@ -8837,11 +8884,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // If no active quiz, show setup start screen
         if (!tbs.quizQuestions || tbs.quizQuestions.length === 0) {
+            const items = getTraBaiFilteredItems();
+            let secTitleText = "TRANH 1 NGƯỜI";
+            if (state.part01ActiveSection === "dang_02") secTitleText = "TRANH NHIỀU NGƯỜI";
+            else if (state.part01ActiveSection === "dang_03") secTitleText = "TRANH MÔ TẢ VẬT";
+
+            const batchChipsHtml = generatePart1BatchChips(items.length, tbs.quizBatch, 'window.tbSelectQuizBatch');
+
             workspace.innerHTML = `
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
                     <div style="font-size: 3.2rem; margin-bottom: 12px;">⚡</div>
                     <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
-                        TRẮC NGHIỆM PHẢN XẠ TỪ VỰNG PART 01
+                        TRẮC NGHIỆM PHẢN XẠ TỪ VỰNG: ${secTitleText}
                     </h3>
                     <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
                         Đọc nghĩa tiếng Việt ➔ Chọn cụm từ tiếng Anh tương ứng. Hệ thống chấm điểm tức thì, phát âm chuẩn và tự động theo dõi tiến độ toàn bài.
@@ -8851,18 +8905,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
                         <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn phạm vi trả bài:</div>
                         <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                            <button type="button" class="tb-scope-chip ${(tbs.quizBatch || 'all') === 'all' ? 'active' : ''}" onclick="window.tbSelectQuizBatch('all', this)">
-                                🌟 Toàn bộ 164 câu (Khuyên dùng)
-                            </button>
-                            <button type="button" class="tb-scope-chip ${(tbs.quizBatch) === 'b1' ? 'active' : ''}" onclick="window.tbSelectQuizBatch('b1', this)">
-                                Chặng 1: Câu 1 - 50
-                            </button>
-                            <button type="button" class="tb-scope-chip ${(tbs.quizBatch) === 'b2' ? 'active' : ''}" onclick="window.tbSelectQuizBatch('b2', this)">
-                                Chặng 2: Câu 51 - 100
-                            </button>
-                            <button type="button" class="tb-scope-chip ${(tbs.quizBatch) === 'b3' ? 'active' : ''}" onclick="window.tbSelectQuizBatch('b3', this)">
-                                Chặng 3: Câu 101 - 164
-                            </button>
+                            ${batchChipsHtml}
                         </div>
                     </div>
 
@@ -8956,15 +8999,11 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     window.tbStartQuiz = function(customItems = null) {
-        const allData = window.part01Dang01TraBaiData || [];
+        const allData = getTraBaiFilteredItems();
         const tbs = window.traBaiState;
         let pool = customItems;
         if (!pool) {
-            const batch = tbs.quizBatch || 'all';
-            if (batch === 'b1') pool = allData.slice(0, 50);
-            else if (batch === 'b2') pool = allData.slice(50, 100);
-            else if (batch === 'b3') pool = allData.slice(100);
-            else pool = allData; // All 164 items!
+            pool = slicePart1Batch(allData, tbs.quizBatch);
         }
         if (!pool || pool.length === 0) return;
 
@@ -9187,15 +9226,11 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     window.tbStartDictation = function(customItems = null) {
-        const allData = window.part01Dang01TraBaiData || [];
+        const allData = getTraBaiFilteredItems();
         const tbs = window.traBaiState;
         let pool = customItems;
         if (!pool) {
-            const batch = tbs.dictBatch || 'all';
-            if (batch === 'b1') pool = allData.slice(0, 50);
-            else if (batch === 'b2') pool = allData.slice(50, 100);
-            else if (batch === 'b3') pool = allData.slice(100);
-            else pool = allData; // All 164 items!
+            pool = slicePart1Batch(allData, tbs.dictBatch);
         }
         if (!pool || pool.length === 0) return;
 
@@ -9220,11 +9255,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // If not started yet, show setup screen
         if (!tbs.dictQuestions || tbs.dictQuestions.length === 0) {
+            const items = getTraBaiFilteredItems();
+            let secTitleText = "TRANH 1 NGƯỜI";
+            if (state.part01ActiveSection === "dang_02") secTitleText = "TRANH NHIỀU NGƯỜI";
+            else if (state.part01ActiveSection === "dang_03") secTitleText = "TRANH MÔ TẢ VẬT";
+
+            const batchChipsHtml = generatePart1BatchChips(items.length, tbs.dictBatch, 'window.tbSelectDictBatch');
+
             workspace.innerHTML = `
                 <div style="background: #ffffff; border: 1.5px solid #e2e8f0; border-radius: 18px; padding: 40px 30px; text-align: center; max-width: 700px; margin: 0 auto; box-shadow: 0 4px 20px rgba(0,0,0,0.04);">
                     <div style="font-size: 3.2rem; margin-bottom: 12px;">✍️</div>
                     <h3 style="font-size: 1.5rem; font-weight: 800; color: #0f172a; margin-bottom: 10px;">
-                        NGHE VÀ GÕ CHỮ (DICTATION - 164 CỤM TỪ)
+                        NGHE VÀ GÕ CHỮ (DICTATION - ${items.length} CỤM TỪ)
                     </h3>
                     <p style="color: #64748b; font-size: 1.05rem; line-height: 1.6; max-width: 560px; margin: 0 auto 22px auto;">
                         Luyện tập nghe phát âm và gõ lại chính xác từng từ / cụm từ tiếng Anh. Phương pháp này giúp khắc phục triệt để lỗi nghe thiếu âm cuối (ending sounds) và nhớ mặt chữ chuẩn xác.
@@ -9233,18 +9275,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin-bottom: 24px;">
                         <div style="font-size: 0.9rem; font-weight: 700; color: #475569; text-transform: uppercase;">Chọn phạm vi luyện gõ:</div>
                         <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-                            <button type="button" class="tb-scope-chip ${(tbs.dictBatch || 'all') === 'all' ? 'active' : ''}" onclick="window.tbSelectDictBatch('all', this)">
-                                🌟 Toàn bộ 164 cụm (Khuyên dùng)
-                            </button>
-                            <button type="button" class="tb-scope-chip ${(tbs.dictBatch) === 'b1' ? 'active' : ''}" onclick="window.tbSelectDictBatch('b1', this)">
-                                Chặng 1: Cụm 1 - 50
-                            </button>
-                            <button type="button" class="tb-scope-chip ${(tbs.dictBatch) === 'b2' ? 'active' : ''}" onclick="window.tbSelectDictBatch('b2', this)">
-                                Chặng 2: Cụm 51 - 100
-                            </button>
-                            <button type="button" class="tb-scope-chip ${(tbs.dictBatch) === 'b3' ? 'active' : ''}" onclick="window.tbSelectDictBatch('b3', this)">
-                                Chặng 3: Cụm 101 - 164
-                            </button>
+                            ${batchChipsHtml}
                         </div>
                     </div>
 
@@ -9590,7 +9621,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ================= LIST MODE (BẢNG TRA CỨU TOÀN BỘ) =================
     window.tbRenderListView = function(workspace) {
-        const allData = window.part01Dang01TraBaiData || [];
+        const allData = getTraBaiFilteredItems();
         const tbs = window.traBaiState;
 
         // Categories list
@@ -9633,7 +9664,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const box = document.getElementById("tb-list-results-box");
         if (!box) return;
 
-        const allData = window.part01Dang01TraBaiData || [];
+        const allData = getTraBaiFilteredItems();
         const tbs = window.traBaiState;
         const q = tbs.searchQuery || '';
         const cat = tbs.categoryFilter || 'all';
@@ -9697,7 +9728,7 @@ document.addEventListener("DOMContentLoaded", () => {
         saveTraBaiLearned();
 
         // Update header stats
-        const totalCount = (window.part01Dang01TraBaiData || []).length;
+        const totalCount = (getTraBaiFilteredItems() || []).length;
         const learnedCount = tbs.learnedIds.size;
         const percent = Math.min(100, Math.round((learnedCount / totalCount) * 100));
 
