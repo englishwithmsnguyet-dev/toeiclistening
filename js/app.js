@@ -385,11 +385,20 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function isTeacherName(str) {
         const norm = normalizeVietnameseName(str);
-        return norm === "missnguyet2026" ||
+        return norm === "ptmn" ||
+               norm === "co ptmn" ||
+               norm === "miss ptmn" ||
+               norm === "teacher ptmn" ||
+               norm === "ptmn2026" ||
+               norm === "pham thi minh nguyet" ||
+               norm === "pham minh nguyet" ||
+               norm === "minh nguyet" ||
+               norm === "missnguyet2026" ||
                norm === "co nguyet" ||
                norm === "miss nguyet" ||
                norm === "nguyet pham" ||
-               norm === "que anh";
+               norm === "que anh" ||
+               norm.includes("ptmn");
     }
 
     function getStudentRole(inputName) {
@@ -398,7 +407,15 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!norm) return null;
 
         if (isTeacherName(norm)) {
-            return { type: "teacher", displayName: str.trim() };
+            let teacherDisplay = str.trim();
+            if (norm === "ptmn" || norm.includes("ptmn") || norm.includes("minh nguyet")) {
+                teacherDisplay = "Cô Minh Nguyệt (PTMN)";
+            } else if (norm === "missnguyet2026" || norm === "co nguyet" || norm === "miss nguyet" || norm === "nguyet pham") {
+                teacherDisplay = "Cô Nguyệt (Giáo viên)";
+            } else if (norm === "que anh") {
+                teacherDisplay = "Quế Anh (Giáo viên)";
+            }
+            return { type: "teacher", displayName: teacherDisplay };
         }
 
         // Phạm Thị Thu Trang
@@ -641,7 +658,9 @@ document.addEventListener("DOMContentLoaded", () => {
     
     if (submitBtn) {
         submitBtn.addEventListener('click', () => {
-            if (passInput && (passInput.value === "missnguyet2026" || passInput.value.toLowerCase() === "quế anh")) {
+            const rawVal = passInput ? passInput.value.trim() : "";
+            const normVal = normalizeVietnameseName(rawVal);
+            if (rawVal === "missnguyet2026" || normVal === "ptmn" || normVal === "que anh" || normVal === "pham thi minh nguyet" || normVal.includes("ptmn")) {
                 window.isUnlocked = true;
                 sessionStorage.setItem("portal_unlocked_v2", "true");
                 window.closePasswordModal();
@@ -11739,7 +11758,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const role = getStudentRole(rawName);
         if (!role) {
-            nameInputError.textContent = "Hệ thống hiện tại chỉ dành riêng cho học viên: Lương Thị Yến Nhi, Nguyễn Hoàng Caty, Phạm Thị Thu Trang. Vui lòng nhập đúng họ tên học viên!";
+            nameInputError.textContent = "Hệ thống hiện tại dành cho học viên (Lương Thị Yến Nhi, Nguyễn Hoàng Caty, Phạm Thị Thu Trang) và Giáo viên (PTMN). Vui lòng nhập đúng họ tên hoặc tên đăng nhập!";
             nameInputError.style.display = "block";
             studentNameInput.classList.add("shake");
             setTimeout(() => {
