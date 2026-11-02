@@ -2087,7 +2087,7 @@ window.part01Data = [
                 "images": [
                     "slide_185_img_3.png"
                 ],
-                "audio": "media37.mp3",
+                "audio": "part01_practice/dang03_q1.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">The cars </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">being transported </span><span style=\"color: #0070C0;\">in a truck.</span>",
@@ -2095,8 +2095,21 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">There </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">many people</span><span style=\"color: #00B050;\"> </span><span style=\"color: #0070C0;\">in the cars.</span>",
                         "<span style=\"color: #0070C0;\">There </span><span style=\"color: #FF0000;\">are</span><span style=\"color: #0070C0;\"> </span><span style=\"color: #FF0000;\">cars</span><span style=\"color: #00B050;\"> </span><span style=\"color: #0070C0;\">on the top level of the truck.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "A",
+                    "vocab": [
+                        {
+                            "en": "transport in a truck",
+                            "vi": "vận chuyển bằng xe tải"
+                        },
+                        {
+                            "en": "fix",
+                            "vi": "sửa chữa"
+                        },
+                        {
+                            "en": "top level",
+                            "vi": "tầng trên, sàn trên"
+                        }
+                    ]
                 }
             },
             {
@@ -2105,7 +2118,7 @@ window.part01Data = [
                 "images": [
                     "slide_186_img_3.png"
                 ],
-                "audio": "media37.mp3",
+                "audio": "part01_practice/dang03_q2.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">A beverage </span><span style=\"color: #FF0000;\">is being poured </span><span style=\"color: #0070C0;\">into a glass. </span>",
@@ -2113,8 +2126,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">A woman </span><span style=\"color: #FF0000;\">is folding </span><span style=\"color: #0070C0;\">a napkin.</span>",
                         "<span style=\"color: #0070C0;\">A woman </span><span style=\"color: #FF0000;\">is wiping off </span><span style=\"color: #0070C0;\">a table.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "A",
+                    "vocab": [
+                        {
+                            "en": "pour a beverage into a glass",
+                            "vi": "rót đồ uống vào ly"
+                        },
+                        {
+                            "en": "arrange flowers in a vase",
+                            "vi": "cắm hoa trong bình"
+                        },
+                        {
+                            "en": "fold a napkin",
+                            "vi": "gấp khăn ăn"
+                        },
+                        {
+                            "en": "wipe off a table",
+                            "vi": "lau sạch bàn"
+                        }
+                    ]
                 }
             },
             {
@@ -2123,7 +2153,7 @@ window.part01Data = [
                 "images": [
                     "slide_187_img_3.png"
                 ],
-                "audio": "media38.mp3",
+                "audio": "part01_practice/dang03_q3.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\"></span><span style=\"color: #0070C0;\">Some customers </span><span style=\"color: #FF0000;\">are leaving </span><span style=\"color: #0070C0;\">a shop.</span>",
@@ -2131,8 +2161,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\"></span><span style=\"color: #0070C0;\">A worker </span><span style=\"color: #FF0000;\">is fixing </span><span style=\"color: #0070C0;\">some light fixtures.</span>",
                         "<span style=\"color: #0070C0;\"></span><span style=\"color: #0070C0;\">A bench </span><span style=\"color: #FF0000;\">is being moved </span><span style=\"color: #0070C0;\">into a corner.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "B",
+                    "vocab": [
+                        {
+                            "en": "leave a shop",
+                            "vi": "rời khỏi cửa hàng"
+                        },
+                        {
+                            "en": "decorate with plants",
+                            "vi": "trang trí bằng cây cảnh"
+                        },
+                        {
+                            "en": "light fixture",
+                            "vi": "thiết bị chiếu sáng, đèn"
+                        },
+                        {
+                            "en": "move into a corner",
+                            "vi": "chuyển vào góc"
+                        }
+                    ]
                 }
             },
             {
@@ -2141,7 +2188,7 @@ window.part01Data = [
                 "images": [
                     "slide_188_img_3.png"
                 ],
-                "audio": "media38.mp3",
+                "audio": "part01_practice/dang03_q4.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">The plane </span><span style=\"color: #FF0000;\">is docked </span><span style=\"color: #0070C0;\">at the airport.</span>",
@@ -2149,8 +2196,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">There are many people </span><span style=\"color: #FF0000;\">boarding</span><span style=\"color: #0070C0;\"> the plane.</span>",
                         "<span style=\"color: #0070C0;\">There are maintenance workers </span><span style=\"color: #FF0000;\">fixing</span><span style=\"color: #0070C0;\"> the plane.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "A",
+                    "vocab": [
+                        {
+                            "en": "dock at the airport",
+                            "vi": "đỗ ở sân bay, cập cổng"
+                        },
+                        {
+                            "en": "put luggage onto the plane",
+                            "vi": "xếp hành lý lên máy bay"
+                        },
+                        {
+                            "en": "board the plane",
+                            "vi": "lên máy bay"
+                        },
+                        {
+                            "en": "maintenance worker",
+                            "vi": "nhân viên bảo trì"
+                        }
+                    ]
                 }
             },
             {
@@ -2159,7 +2223,7 @@ window.part01Data = [
                 "images": [
                     "slide_189_img_2.png"
                 ],
-                "audio": "media39.mp3",
+                "audio": "part01_practice/dang03_q5.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are cleaners </span><span style=\"color: #0070C0;\">in the lecture hall.</span>",
@@ -2167,8 +2231,21 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are many people </span><span style=\"color: #0070C0;\">in the lecture hall.</span>",
                         "<span style=\"color: #0070C0;\">The lecture hall </span><span style=\"color: #FF0000;\">is unoccupied</span><span style=\"color: #0070C0;\">. </span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "D",
+                    "vocab": [
+                        {
+                            "en": "lecture hall",
+                            "vi": "giảng đường, hội trường"
+                        },
+                        {
+                            "en": "occupied",
+                            "vi": "có người, đang được sử dụng"
+                        },
+                        {
+                            "en": "unoccupied",
+                            "vi": "trống, không có người"
+                        }
+                    ]
                 }
             },
             {
@@ -2177,7 +2254,7 @@ window.part01Data = [
                 "images": [
                     "slide_190_img_3.png"
                 ],
-                "audio": "media39.mp3",
+                "audio": "part01_practice/dang03_q6.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">She </span><span style=\"color: #FF0000;\">is wearing </span><span style=\"color: #0070C0;\">long pants.</span>",
@@ -2185,8 +2262,21 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">Her reflection </span><span style=\"color: #FF0000;\">is in </span><span style=\"color: #0070C0;\">the mirror.</span>",
                         "<span style=\"color: #0070C0;\">She </span><span style=\"color: #FF0000;\">is looking at </span><span style=\"color: #0070C0;\">her reflection. </span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "C",
+                    "vocab": [
+                        {
+                            "en": "reflection in the mirror",
+                            "vi": "hình ảnh phản chiếu trong gương"
+                        },
+                        {
+                            "en": "pay the bill",
+                            "vi": "thanh toán hóa đơn"
+                        },
+                        {
+                            "en": "look at",
+                            "vi": "nhìn vào"
+                        }
+                    ]
                 }
             },
             {
@@ -2195,7 +2285,7 @@ window.part01Data = [
                 "images": [
                     "slide_191_img_2.png"
                 ],
-                "audio": "media40.mp3",
+                "audio": "part01_practice/dang03_q7.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">The frames </span><span style=\"color: #FF0000;\">are being hung </span><span style=\"color: #0070C0;\">on</span><span style=\"color: #FF0000;\"> </span><span style=\"color: #0070C0;\">the wall.</span>",
@@ -2203,8 +2293,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">Documents </span><span style=\"color: #FF0000;\">have been spread out </span><span style=\"color: #0070C0;\">on the desk. </span>",
                         "<span style=\"color: #0070C0;\">One man </span><span style=\"color: #FF0000;\">is pointing </span><span style=\"color: #FF0000;\">at </span><span style=\"color: #0070C0;\">something on the board. </span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "C",
+                    "vocab": [
+                        {
+                            "en": "hang on the wall",
+                            "vi": "treo trên tường"
+                        },
+                        {
+                            "en": "talk on the phone",
+                            "vi": "nói chuyện qua điện thoại"
+                        },
+                        {
+                            "en": "spread out on the desk",
+                            "vi": "trải rộng trên bàn làm việc"
+                        },
+                        {
+                            "en": "point at",
+                            "vi": "chỉ vào"
+                        }
+                    ]
                 }
             },
             {
@@ -2213,7 +2320,7 @@ window.part01Data = [
                 "images": [
                     "slide_192_img_3.png"
                 ],
-                "audio": "media40.mp3",
+                "audio": "part01_practice/dang03_q8.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">A bag </span><span style=\"color: #FF0000;\">has been placed </span><span style=\"color: #0070C0;\">on the floor.</span>",
@@ -2221,8 +2328,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">A newspaper </span><span style=\"color: #FF0000;\">has been spread out </span><span style=\"color: #0070C0;\">on the carpet.</span>",
                         "<span style=\"color: #0070C0;\">The woman </span><span style=\"color: #FF0000;\">is arranging </span><span style=\"color: #0070C0;\">pillows on a sofa.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "A",
+                    "vocab": [
+                        {
+                            "en": "place on the floor",
+                            "vi": "đặt trên sàn nhà"
+                        },
+                        {
+                            "en": "bulletin board",
+                            "vi": "bảng thông báo"
+                        },
+                        {
+                            "en": "spread out on the carpet",
+                            "vi": "trải ra trên thảm"
+                        },
+                        {
+                            "en": "arrange pillows on a sofa",
+                            "vi": "sắp xếp gối trên ghế sofa"
+                        }
+                    ]
                 }
             },
             {
@@ -2231,7 +2355,7 @@ window.part01Data = [
                 "images": [
                     "slide_193_img_3.png"
                 ],
-                "audio": "media41.mp3",
+                "audio": "part01_practice/dang03_q9.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are papers piled </span><span style=\"color: #0070C0;\">on a chair.</span>",
@@ -2239,8 +2363,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">The man </span><span style=\"color: #FF0000;\">is opening </span><span style=\"color: #0070C0;\">a window.</span>",
                         "<span style=\"color: #0070C0;\">The man </span><span style=\"color: #FF0000;\">is reaching for </span><span style=\"color: #0070C0;\">a telephone.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "B",
+                    "vocab": [
+                        {
+                            "en": "papers piled on a chair",
+                            "vi": "giấy tờ chất đống trên ghế"
+                        },
+                        {
+                            "en": "cabinets above a monitor",
+                            "vi": "tủ gắn phía trên màn hình"
+                        },
+                        {
+                            "en": "open a window",
+                            "vi": "mở cửa sổ"
+                        },
+                        {
+                            "en": "reach for a telephone",
+                            "vi": "với tay lấy điện thoại"
+                        }
+                    ]
                 }
             },
             {
@@ -2249,7 +2390,7 @@ window.part01Data = [
                 "images": [
                     "slide_194_img_3.png"
                 ],
-                "audio": "media41.mp3",
+                "audio": "part01_practice/dang03_q10.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are some tables and chairs </span><span style=\"color: #0070C0;\">outdoors.</span>",
@@ -2257,8 +2398,21 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are plastic umbrellas </span><span style=\"color: #0070C0;\">on the tables.</span>",
                         "<span style=\"color: #0070C0;\">There</span><span style=\"color: #00B050;\"> </span><span style=\"color: #FF0000;\">are many flowers </span><span style=\"color: #0070C0;\">in the garden.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "A",
+                    "vocab": [
+                        {
+                            "en": "tables and chairs outdoors",
+                            "vi": "bàn ghế ngoài trời"
+                        },
+                        {
+                            "en": "sit at the table",
+                            "vi": "ngồi tại bàn"
+                        },
+                        {
+                            "en": "plastic umbrella",
+                            "vi": "ô che bằng nhựa"
+                        }
+                    ]
                 }
             },
             {
@@ -2267,7 +2421,7 @@ window.part01Data = [
                 "images": [
                     "slide_196_img_2.png"
                 ],
-                "audio": "media42.mp3",
+                "audio": "part01_practice/dang03_q11.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">A kayak </span><span style=\"color: #FF0000;\">is being paddled </span><span style=\"color: #00B050;\">down a river</span><span style=\"color: #0070C0;\">. </span>",
@@ -2275,8 +2429,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">Some roofs </span><span style=\"color: #FF0000;\">are being repaired</span><span style=\"color: #0070C0;\">. </span>",
                         "<span style=\"color: #0070C0;\">Some chairs </span><span style=\"color: #FF0000;\">have been placed</span><span style=\"color: #00B050;\"> along a canal</span><span style=\"color: #0070C0;\">.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "D",
+                    "vocab": [
+                        {
+                            "en": "paddle a kayak down a river",
+                            "vi": "chèo thuyền kayak xuôi dòng sông"
+                        },
+                        {
+                            "en": "a pile of bricks",
+                            "vi": "một chồng gạch"
+                        },
+                        {
+                            "en": "repair a roof",
+                            "vi": "sửa chữa mái nhà"
+                        },
+                        {
+                            "en": "place chairs along a canal",
+                            "vi": "đặt ghế dọc theo con kênh"
+                        }
+                    ]
                 }
             },
             {
@@ -2285,7 +2456,7 @@ window.part01Data = [
                 "images": [
                     "slide_198_img_3.jpg"
                 ],
-                "audio": "media43.mp3",
+                "audio": "part01_practice/dang03_q12.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">Cars </span><span style=\"color: #FF0000;\">are lined up </span><span style=\"color: #00B050;\">at a </span><span style=\"color: #00B050;\">toll booth</span><span style=\"color: #0070C0;\">. </span>",
@@ -2293,8 +2464,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">A tunnel </span><span style=\"color: #FF0000;\">has been closed </span><span style=\"color: #00B050;\">for construction</span><span style=\"color: #0070C0;\">. </span>",
                         "<span style=\"color: #0070C0;\">Some people </span><span style=\"color: #FF0000;\">are standing </span><span style=\"color: #00B050;\">on the side of a street</span><span style=\"color: #0070C0;\">.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "B",
+                    "vocab": [
+                        {
+                            "en": "line up at a toll booth",
+                            "vi": "xếp hàng tại trạm thu phí"
+                        },
+                        {
+                            "en": "road sign",
+                            "vi": "biển báo giao thông"
+                        },
+                        {
+                            "en": "hang from the ceiling",
+                            "vi": "treo từ trần hầm"
+                        },
+                        {
+                            "en": "close a tunnel for construction",
+                            "vi": "đóng cửa hầm để thi công"
+                        }
+                    ]
                 }
             },
             {
@@ -2303,7 +2491,7 @@ window.part01Data = [
                 "images": [
                     "slide_200_img_3.png"
                 ],
-                "audio": "media44.mp3",
+                "audio": "part01_practice/dang03_q13.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">Some women </span><span style=\"color: #FF0000;\">are crossing </span><span style=\"color: #00B050;\">the street</span><span style=\"color: #0070C0;\">. </span>",
@@ -2311,8 +2499,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">Some clothing </span><span style=\"color: #FF0000;\">is being folded</span><span style=\"color: #0070C0;\">. </span>",
                         "<span style=\"color: #0070C0;\">Some coats </span><span style=\"color: #FF0000;\">are being displayed</span><span style=\"color: #0070C0;\">.</span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "D",
+                    "vocab": [
+                        {
+                            "en": "cross the street",
+                            "vi": "băng qua đường"
+                        },
+                        {
+                            "en": "pay for clothing",
+                            "vi": "trả tiền mua quần áo"
+                        },
+                        {
+                            "en": "fold clothing",
+                            "vi": "gấp quần áo"
+                        },
+                        {
+                            "en": "display coats",
+                            "vi": "trưng bày áo khoác"
+                        }
+                    ]
                 }
             },
             {
@@ -2321,7 +2526,7 @@ window.part01Data = [
                 "images": [
                     "slide_202_img_3.png"
                 ],
-                "audio": "media45.mp3",
+                "audio": "part01_practice/dang03_q14.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">Some curtains </span><span style=\"color: #FF0000;\">have been laid out </span><span style=\"color: #00B050;\">on the floor</span><span style=\"color: #0070C0;\">. </span>",
@@ -2329,8 +2534,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">Some artwork </span><span style=\"color: #FF0000;\">has been hung </span><span style=\"color: #00B050;\">on a wall</span><span style=\"color: #0070C0;\">. </span>",
                         "<span style=\"color: #0070C0;\">Some chairs </span><span style=\"color: #FF0000;\">have been stored </span><span style=\"color: #00B050;\">in a closet</span><span style=\"color: #0070C0;\">. </span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "C",
+                    "vocab": [
+                        {
+                            "en": "lay out on the floor",
+                            "vi": "trải ra trên sàn nhà"
+                        },
+                        {
+                            "en": "place plants outside",
+                            "vi": "đặt cây cảnh ra ngoài trời"
+                        },
+                        {
+                            "en": "hang artwork on a wall",
+                            "vi": "treo tác phẩm tranh nghệ thuật trên tường"
+                        },
+                        {
+                            "en": "store chairs in a closet",
+                            "vi": "cất ghế vào tủ quần áo"
+                        }
+                    ]
                 }
             },
             {
@@ -2339,7 +2561,7 @@ window.part01Data = [
                 "images": [
                     "slide_204_img_3.png"
                 ],
-                "audio": "media46.mp3",
+                "audio": "part01_practice/dang03_q15.mp3",
                 "practice": {
                     "options": [
                         "<span style=\"color: #0070C0;\">A sign </span><span style=\"color: #FF0000;\">is hanging </span><span style=\"color: #00B050;\">on a door</span><span style=\"color: #0070C0;\">. </span>",
@@ -2347,8 +2569,25 @@ window.part01Data = [
                         "<span style=\"color: #0070C0;\">Some shelves </span><span style=\"color: #FF0000;\">are being assembled</span><span style=\"color: #0070C0;\">. </span>",
                         "<span style=\"color: #0070C0;\">Some tools </span><span style=\"color: #FF0000;\">have been scattered </span><span style=\"color: #00B050;\">on the ground</span><span style=\"color: #0070C0;\">. </span>"
                     ],
-                    "answer": "",
-                    "vocab": []
+                    "answer": "B",
+                    "vocab": [
+                        {
+                            "en": "hang on a door",
+                            "vi": "treo trên cánh cửa"
+                        },
+                        {
+                            "en": "stock a cabinet with supplies",
+                            "vi": "xếp đầy đồ dùng vào tủ"
+                        },
+                        {
+                            "en": "assemble shelves",
+                            "vi": "lắp ráp giá kệ"
+                        },
+                        {
+                            "en": "scatter on the ground",
+                            "vi": "vương vãi trên mặt đất"
+                        }
+                    ]
                 }
             }
         ]
