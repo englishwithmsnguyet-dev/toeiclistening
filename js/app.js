@@ -2397,54 +2397,93 @@ document.addEventListener("DOMContentLoaded", () => {
         docContainer.style.lineHeight = "1.75";
         docContainer.style.textAlign = "left";
         
+        // Shared helper for robust theory line cleaning and auto-splitting of glued bullets/questions
+        function cleanAndSplitTheoryLines(rawLines) {
+            const lines = [];
+            if (!rawLines || !Array.isArray(rawLines)) return lines;
+
+            rawLines.forEach(l => {
+                let text = (l || "").trim();
+                if (!text) return;
+
+                // 1. Glued header + subheader
+                const mergedHeader = text.match(/^(<strong><span[^>]*>[^<]+<\/span><\/strong>)(<strong><span[^>]*>[^<]+<\/span><\/strong>)$/i);
+                if (mergedHeader) {
+                    lines.push(mergedHeader[1]);
+                    lines.push(mergedHeader[2]);
+                    return;
+                }
+
+                // 2. Glued note from question
+                const gluedNote = text.match(/^(.*?)(<strong>\s*(?:Chú ý|Lưu ý|CHÚ Ý|LƯU Ý).*)$/i);
+                if (gluedNote) {
+                    cleanAndSplitTheoryLines([gluedNote[1]]).forEach(x => lines.push(x));
+                    lines.push(gluedNote[2]);
+                    return;
+                }
+
+                // 3. Normalize tabs
+                text = text.replace(/\\t|\t/g, " ");
+
+                // 4. Split multiple questions/bullets in one string (?o, </em>o, etc.)
+                let normalized = text
+                    .replace(/\?\s*(?:o|•|◦)\s+(?=[A-ZÀ-Ỹ<])/g, "?\n---SPLIT---\n• ")
+                    .replace(/<\/em>\s*(?:o|•|◦)\s*<em>/gi, "</em>\n---SPLIT---\n• <em>")
+                    .replace(/<\/em>\s*(?:o|•|◦)\s+(?=[A-ZÀ-Ỹ<])/gi, "</em>\n---SPLIT---\n• ")
+                    .replace(/([a-zà-ỹ0-9\.\!\>])\s+o\s+([A-ZÀ-Ỹ])/g, "$1\n---SPLIT---\n• $2");
+
+                if (normalized.includes("\n---SPLIT---\n")) {
+                    let openContext = "";
+                    normalized.split("\n---SPLIT---\n").forEach(part => {
+                        let p = part.trim();
+                        if (!p) return;
+                        
+                        if (openContext && !p.startsWith("<")) {
+                            p = openContext + p;
+                        }
+                        
+                        const openTags = [];
+                        const tagRegex = /<\/?([a-z0-9]+)(?:\s+[^>]*)?>/gi;
+                        let m;
+                        while ((m = tagRegex.exec(p)) !== null) {
+                            const fullTag = m[0];
+                            const tagName = m[1].toLowerCase();
+                            if (fullTag.startsWith("</")) {
+                                if (openTags.length > 0 && openTags[openTags.length - 1].name === tagName) {
+                                    openTags.pop();
+                                }
+                            } else if (!fullTag.endsWith("/>") && !["br", "hr", "img", "input"].includes(tagName)) {
+                                openTags.push({ name: tagName, fullTag: fullTag });
+                            }
+                        }
+                        
+                        openContext = openTags.map(t => t.fullTag).join("");
+                        
+                        for (let i = openTags.length - 1; i >= 0; i--) {
+                            p += "</" + openTags[i].name + ">";
+                        }
+
+                        if (!/^(?:•|o|◦|-)\s+/i.test(p) && !p.startsWith("<h") && !p.startsWith("<div") && !p.startsWith("<strong>")) {
+                            p = "• " + p;
+                        }
+                        lines.push(p);
+                    });
+                    return;
+                }
+
+                lines.push(text);
+            });
+
+            return lines;
+        }
+
         let docHtml = "";
         
         section.theory.forEach((slide, sIdx) => {
             const rawLines = slide.text;
             if (!rawLines || rawLines.length === 0) return;
             
-            // Normalize lines:
-            // 1. Separate merged headers
-            // 2. Separate embedded bullets
-            // 3. Separate notes from questions
-            const lines = [];
-            rawLines.forEach(l => {
-                let text = l.trim();
-                if (!text) return;
-
-                // Check for glued header + subheader
-                const mergedHeaderMatch = text.match(/^(<strong><span[^>]*>[^<]+<\/span><\/strong>)(<strong><span[^>]*>[^<]+<\/span><\/strong>)$/i);
-                if (mergedHeaderMatch) {
-                    lines.push(mergedHeaderMatch[1]);
-                    lines.push(mergedHeaderMatch[2]);
-                    return;
-                }
-
-                // Check for embedded bullets with tab or multiple 'o'
-                if (text.includes("\t") || /<\/em>\s*o\s+<em>/i.test(text) || /\?\s*o\s+<em>/i.test(text)) {
-                    const parts = text.split(/(?:<em>\s*)?\t+(?:<\/em>\s*)?(?:o\s+)?|(?:<\/em>\s*o\s+<em>)|(?:<em>\s*o\s+)/i);
-                    parts.forEach(p => {
-                        let pt = p.trim();
-                        if (pt) {
-                            if (!pt.startsWith("•") && !pt.startsWith("o") && !pt.startsWith("-")) {
-                                pt = "• " + pt;
-                            }
-                            lines.push(pt);
-                        }
-                    });
-                    return;
-                }
-
-                // Check if a question has a note glued to its end
-                const gluedNoteMatch = text.match(/^(.*?<\/em>)(<strong>(?:Chú ý|Lưu ý)[^<]*:?\s*<\/strong>.*)$/i);
-                if (gluedNoteMatch) {
-                    lines.push(gluedNoteMatch[1]);
-                    lines.push(gluedNoteMatch[2]);
-                    return;
-                }
-
-                lines.push(text);
-            });
+            const lines = cleanAndSplitTheoryLines(rawLines);
             
             lines.forEach((line, lIdx) => {
                 let cleanLine = line.trim();
@@ -10071,54 +10110,93 @@ document.addEventListener("DOMContentLoaded", () => {
         docContainer.style.lineHeight = "1.75";
         docContainer.style.textAlign = "left";
         
+        // Shared helper for robust theory line cleaning and auto-splitting of glued bullets/questions
+        function cleanAndSplitTheoryLines(rawLines) {
+            const lines = [];
+            if (!rawLines || !Array.isArray(rawLines)) return lines;
+
+            rawLines.forEach(l => {
+                let text = (l || "").trim();
+                if (!text) return;
+
+                // 1. Glued header + subheader
+                const mergedHeader = text.match(/^(<strong><span[^>]*>[^<]+<\/span><\/strong>)(<strong><span[^>]*>[^<]+<\/span><\/strong>)$/i);
+                if (mergedHeader) {
+                    lines.push(mergedHeader[1]);
+                    lines.push(mergedHeader[2]);
+                    return;
+                }
+
+                // 2. Glued note from question
+                const gluedNote = text.match(/^(.*?)(<strong>\s*(?:Chú ý|Lưu ý|CHÚ Ý|LƯU Ý).*)$/i);
+                if (gluedNote) {
+                    cleanAndSplitTheoryLines([gluedNote[1]]).forEach(x => lines.push(x));
+                    lines.push(gluedNote[2]);
+                    return;
+                }
+
+                // 3. Normalize tabs
+                text = text.replace(/\\t|\t/g, " ");
+
+                // 4. Split multiple questions/bullets in one string (?o, </em>o, etc.)
+                let normalized = text
+                    .replace(/\?\s*(?:o|•|◦)\s+(?=[A-ZÀ-Ỹ<])/g, "?\n---SPLIT---\n• ")
+                    .replace(/<\/em>\s*(?:o|•|◦)\s*<em>/gi, "</em>\n---SPLIT---\n• <em>")
+                    .replace(/<\/em>\s*(?:o|•|◦)\s+(?=[A-ZÀ-Ỹ<])/gi, "</em>\n---SPLIT---\n• ")
+                    .replace(/([a-zà-ỹ0-9\.\!\>])\s+o\s+([A-ZÀ-Ỹ])/g, "$1\n---SPLIT---\n• $2");
+
+                if (normalized.includes("\n---SPLIT---\n")) {
+                    let openContext = "";
+                    normalized.split("\n---SPLIT---\n").forEach(part => {
+                        let p = part.trim();
+                        if (!p) return;
+                        
+                        if (openContext && !p.startsWith("<")) {
+                            p = openContext + p;
+                        }
+                        
+                        const openTags = [];
+                        const tagRegex = /<\/?([a-z0-9]+)(?:\s+[^>]*)?>/gi;
+                        let m;
+                        while ((m = tagRegex.exec(p)) !== null) {
+                            const fullTag = m[0];
+                            const tagName = m[1].toLowerCase();
+                            if (fullTag.startsWith("</")) {
+                                if (openTags.length > 0 && openTags[openTags.length - 1].name === tagName) {
+                                    openTags.pop();
+                                }
+                            } else if (!fullTag.endsWith("/>") && !["br", "hr", "img", "input"].includes(tagName)) {
+                                openTags.push({ name: tagName, fullTag: fullTag });
+                            }
+                        }
+                        
+                        openContext = openTags.map(t => t.fullTag).join("");
+                        
+                        for (let i = openTags.length - 1; i >= 0; i--) {
+                            p += "</" + openTags[i].name + ">";
+                        }
+
+                        if (!/^(?:•|o|◦|-)\s+/i.test(p) && !p.startsWith("<h") && !p.startsWith("<div") && !p.startsWith("<strong>")) {
+                            p = "• " + p;
+                        }
+                        lines.push(p);
+                    });
+                    return;
+                }
+
+                lines.push(text);
+            });
+
+            return lines;
+        }
+
         let docHtml = "";
         
         section.theory.forEach((slide, sIdx) => {
             const rawLines = slide.text;
             if (!rawLines || rawLines.length === 0) return;
             
-            // Normalize lines:
-            // 1. Separate merged headers
-            // 2. Separate embedded bullets
-            // 3. Separate notes from questions
-            const lines = [];
-            rawLines.forEach(l => {
-                let text = l.trim();
-                if (!text) return;
-
-                // Check for glued header + subheader
-                const mergedHeaderMatch = text.match(/^(<strong><span[^>]*>[^<]+<\/span><\/strong>)(<strong><span[^>]*>[^<]+<\/span><\/strong>)$/i);
-                if (mergedHeaderMatch) {
-                    lines.push(mergedHeaderMatch[1]);
-                    lines.push(mergedHeaderMatch[2]);
-                    return;
-                }
-
-                // Check for embedded bullets with tab or multiple 'o'
-                if (text.includes("\t") || /<\/em>\s*o\s+<em>/i.test(text) || /\?\s*o\s+<em>/i.test(text)) {
-                    const parts = text.split(/(?:<em>\s*)?\t+(?:<\/em>\s*)?(?:o\s+)?|(?:<\/em>\s*o\s+<em>)|(?:<em>\s*o\s+)/i);
-                    parts.forEach(p => {
-                        let pt = p.trim();
-                        if (pt) {
-                            if (!pt.startsWith("•") && !pt.startsWith("o") && !pt.startsWith("-")) {
-                                pt = "• " + pt;
-                            }
-                            lines.push(pt);
-                        }
-                    });
-                    return;
-                }
-
-                // Check if a question has a note glued to its end
-                const gluedNoteMatch = text.match(/^(.*?<\/em>)(<strong>(?:Chú ý|Lưu ý)[^<]*:?\s*<\/strong>.*)$/i);
-                if (gluedNoteMatch) {
-                    lines.push(gluedNoteMatch[1]);
-                    lines.push(gluedNoteMatch[2]);
-                    return;
-                }
-
-                lines.push(text);
-            });
+            const lines = cleanAndSplitTheoryLines(rawLines);
             
             lines.forEach((line, lIdx) => {
                 let cleanLine = line.trim();
