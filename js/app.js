@@ -383,11 +383,6 @@ document.addEventListener("DOMContentLoaded", () => {
             .trim();
     }
 
-    function isThuTrangStudent() {
-        const name = localStorage.getItem("studentName") || "";
-        return normalizeVietnameseName(name) === "pham thi thu trang";
-    }
-
     function isTeacherName(str) {
         const norm = normalizeVietnameseName(str);
         return norm === "missnguyet2026" ||
@@ -397,28 +392,67 @@ document.addEventListener("DOMContentLoaded", () => {
                norm === "que anh";
     }
 
+    function getStudentRole(inputName) {
+        const str = inputName || localStorage.getItem("studentName") || "";
+        const norm = normalizeVietnameseName(str);
+        if (!norm) return null;
+
+        if (isTeacherName(norm)) {
+            return { type: "teacher", displayName: str.trim() };
+        }
+
+        // Phạm Thị Thu Trang
+        if (norm === "pham thi thu trang" || norm === "pham thu trang" || norm === "thu trang" || (norm.includes("thu trang") && norm.includes("pham"))) {
+            return { type: "thu_trang", displayName: "Phạm Thị Thu Trang" };
+        }
+
+        // Lương Thị Yến Nhi
+        if (norm === "luong thi yen nhi" || norm === "luong yen nhi" || norm === "yen nhi" || (norm.includes("yen nhi") && norm.includes("luong"))) {
+            return { type: "yen_nhi", displayName: "Lương Thị Yến Nhi" };
+        }
+
+        // Nguyễn Hoàng Caty
+        if (norm === "nguyen hoang caty" || norm === "hoang caty" || norm === "caty" || norm === "nguyen hoang ca ty" || norm.includes("caty")) {
+            return { type: "caty", displayName: "Nguyễn Hoàng Caty" };
+        }
+
+        return null;
+    }
+
+    function isThuTrangStudent() {
+        const role = getStudentRole();
+        return role && role.type === "thu_trang";
+    }
+
     function isContentLocked(partNum, sectionId) {
         if (window.isUnlocked) return false;
 
-        // Restriction rule for student Pham Thi Thu Trang:
-        // Only unlocks Part 01 Overview, Dang 01, and Dang 01 Tra Bai.
-        // Everything else across the portal is locked!
-        if (isThuTrangStudent()) {
+        const role = getStudentRole();
+
+        // Giảng viên / Quản trị viên: Toàn quyền mở khóa
+        if (role && role.type === "teacher") return false;
+
+        // 1. Học viên Phạm Thị Thu Trang: "Thu Trang mở được hết PART 01 nhé!"
+        if (role && role.type === "thu_trang") {
             if (partNum === 1) {
-                if (sectionId === "overview" || sectionId === "dang_01" || sectionId === "dang_01_trabai") {
-                    return false;
-                }
-                return true;
+                return false; // Mở toàn bộ Part 01
             }
-            return true;
+            return true; // Khóa Part 02, Part 03, Part 04
         }
 
-        // Default rules for other learners
-        if (partNum === 4) return true;
-        if (sectionId && LOCKED_SECTIONS.includes(sectionId)) return true;
-        return false;
+        // 2. Học viên Lương Thị Yến Nhi & Nguyễn Hoàng Caty: "Yến Nhi và Caty mở được tới PART 03"
+        if (role && (role.type === "yen_nhi" || role.type === "caty")) {
+            if (partNum === 1 || partNum === 2 || partNum === 3) {
+                return false; // Mở được tới hết Part 03
+            }
+            return true; // Khóa Part 04
+        }
+
+        // Chưa đăng nhập hoặc không thuộc danh sách học viên cấp quyền
+        return true;
     }
 
+    window.getStudentRole = getStudentRole;
     window.isThuTrangStudent = isThuTrangStudent;
     window.isContentLocked = isContentLocked;
 
@@ -1241,7 +1275,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navPart2Btn.addEventListener("click", () => {
         if (isContentLocked(2)) {
-            window.showPaywallModal(() => switchView("part2"), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => switchView("part2"), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng liên hệ giáo viên để được mở thêm!");
             return;
         }
         if (viewPart2.classList.contains("active")) {
@@ -1254,7 +1288,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     navPart3Btn.addEventListener("click", () => {
         if (isContentLocked(3)) {
-            window.showPaywallModal(() => loadSection(state.part03ActiveSection || "overview"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => loadSection(state.part03ActiveSection || "overview"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng liên hệ giáo viên để được mở thêm!");
             return;
         }
         if (state.activeView === "part3") {
@@ -1272,7 +1306,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     if (state.activeView !== "part4") {
                         loadSectionP4(state.part04ActiveSection || "overview");
                     }
-                }, "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                }, "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng liên hệ giáo viên để được mở thêm!");
                 return;
             }
             if (state.activeView === "part4") {
@@ -1294,7 +1328,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cardPart2) {
         cardPart2.addEventListener("click", () => {
             if (isContentLocked(2)) {
-                window.showPaywallModal(() => switchView("part2"), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                window.showPaywallModal(() => switchView("part2"), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng liên hệ giáo viên để được mở thêm!");
                 return;
             }
             switchView("part2");
@@ -1304,7 +1338,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cardPart3) {
         cardPart3.addEventListener("click", () => {
             if (isContentLocked(3)) {
-                window.showPaywallModal(() => loadSection("overview"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                window.showPaywallModal(() => loadSection("overview"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng liên hệ giáo viên để được mở thêm!");
                 return;
             }
             loadSection("overview");
@@ -1314,7 +1348,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (cardPart4) {
         cardPart4.addEventListener("click", () => {
             if (isContentLocked(4)) {
-                window.showPaywallModal(() => loadSectionP4("overview"), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                window.showPaywallModal(() => loadSectionP4("overview"), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng liên hệ giáo viên để được mở thêm!");
                 return;
             }
             loadSectionP4("overview");
@@ -11644,58 +11678,78 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function checkStudentName() {
         const name = localStorage.getItem("studentName");
-        if (!name) {
+        const role = getStudentRole(name);
+        if (!name || !role) {
+            localStorage.removeItem("studentName");
             nameEntryOverlay.style.display = "flex";
             nameEntryOverlay.style.opacity = "1";
             sidebarProfileBox.style.display = "none";
         } else {
             nameEntryOverlay.style.display = "none";
             sidebarProfileBox.style.display = "flex";
-            sidebarStudentName.textContent = name.toUpperCase();
-            profileAvatar.textContent = name.trim().charAt(0).toUpperCase();
-            logStudentEntry(name);
+            sidebarStudentName.textContent = (role.displayName || name).toUpperCase();
+            profileAvatar.textContent = (role.displayName || name).trim().charAt(0).toUpperCase();
+            logStudentEntry(role.displayName || name);
         }
         if (typeof refreshAccessUI === 'function') refreshAccessUI();
     }
 
     startLearningBtn.addEventListener("click", () => {
-        const name = studentNameInput.value.trim();
-        if (!name) {
+        const rawName = studentNameInput.value.trim();
+        if (!rawName) {
+            nameInputError.textContent = "Họ và tên không được để trống!";
             nameInputError.style.display = "block";
             studentNameInput.classList.add("shake");
             setTimeout(() => {
                 studentNameInput.classList.remove("shake");
             }, 400);
-        } else {
-            const oldName = localStorage.getItem("studentName");
-            if (oldName !== name) {
-                sessionStorage.removeItem("loggedSession");
-            }
-            localStorage.setItem("studentName", name);
-            nameInputError.style.display = "none";
-            nameEntryOverlay.style.opacity = "0";
+            return;
+        }
+
+        const role = getStudentRole(rawName);
+        if (!role) {
+            nameInputError.textContent = "Hệ thống hiện tại chỉ dành riêng cho học viên: Lương Thị Yến Nhi, Nguyễn Hoàng Caty, Phạm Thị Thu Trang. Vui lòng nhập đúng họ tên học viên!";
+            nameInputError.style.display = "block";
+            studentNameInput.classList.add("shake");
             setTimeout(() => {
-                nameEntryOverlay.style.display = "none";
-            }, 500);
+                studentNameInput.classList.remove("shake");
+            }, 400);
+            return;
+        }
 
-            sidebarProfileBox.style.display = "flex";
-            sidebarStudentName.textContent = name.toUpperCase();
-            profileAvatar.textContent = name.charAt(0).toUpperCase();
-            logStudentEntry(name);
+        const studentName = role.displayName || rawName;
+        const oldName = localStorage.getItem("studentName");
+        if (oldName !== studentName) {
+            sessionStorage.removeItem("loggedSession");
+        }
+        localStorage.setItem("studentName", studentName);
+        nameInputError.style.display = "none";
+        nameEntryOverlay.style.opacity = "0";
+        setTimeout(() => {
+            nameEntryOverlay.style.display = "none";
+        }, 500);
 
-            // Automatically recognize teacher login
-            if (isTeacherName(name)) {
-                window.isUnlocked = true;
-                sessionStorage.setItem("portal_unlocked_v2", "true");
-            }
+        sidebarProfileBox.style.display = "flex";
+        sidebarStudentName.textContent = studentName.toUpperCase();
+        profileAvatar.textContent = studentName.charAt(0).toUpperCase();
+        logStudentEntry(studentName);
 
-            // Refresh UI permissions across sidebar & dashboard
-            if (typeof refreshAccessUI === 'function') refreshAccessUI();
+        // Automatically recognize teacher login
+        if (role.type === "teacher") {
+            window.isUnlocked = true;
+            sessionStorage.setItem("portal_unlocked_v2", "true");
+        }
 
-            // If Thu Trang logs in, guide directly to Part 01 Overview / Dang 1
-            if (isThuTrangStudent()) {
-                switchView("part1");
-                loadSectionP1("overview");
+        // Refresh UI permissions across sidebar & dashboard
+        if (typeof refreshAccessUI === 'function') refreshAccessUI();
+
+        // If Thu Trang logs in, guide directly to Part 01 Overview
+        if (role.type === "thu_trang") {
+            switchView("part1");
+            loadSectionP1("overview");
+        } else if (role.type === "yen_nhi" || role.type === "caty") {
+            if (state.activeView === "home") {
+                switchView("home");
             }
         }
     });
