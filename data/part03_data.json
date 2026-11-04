@@ -4983,7 +4983,7 @@
     "practice": [
       {
         "slide_index": 327,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 01 </span></strong><br><strong><span style=\"color: #000000;\">Question 02.</span></strong><span style=\"color: #000000;\"> Look at the graphic. Which month do the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">agree to discuss</strong>?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 01 </span></strong><br><strong><span>Question 02.</span></strong><span> Look at the graphic. Which month do the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">agree to discuss</strong>?</span>",
         "choices": {
           "A": "March",
           "B": "April",
@@ -5052,7 +5052,7 @@
       },
       {
         "slide_index": 436,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 03 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Which seat</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">request</strong>?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 03 </span></strong><br><strong><span>Question 03. </span></strong><span>Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Which seat</strong> does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">request</strong>?</span>",
         "choices": {
           "A": "26D",
           "B": "26F",
@@ -5089,7 +5089,7 @@
       },
       {
         "slide_index": 441,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 04 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">going</strong>?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 04 </span></strong><br><strong><span>Question 02. </span></strong><span>Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> are the speakers <strong class=\"question-keyword\" style=\"color: #00B0F0;\">going</strong>?</span>",
         "choices": {
           "A": "To Los Angeles",
           "B": "To San Antonio",
@@ -5154,7 +5154,7 @@
       },
       {
         "slide_index": 481,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 06 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Which item</strong> does the man want to <strong class=\"question-keyword\" style=\"color: #00B0F0;\">return</strong>?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 06 </span></strong><br><strong><span>Question 02. </span></strong><span>Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Which item</strong> does the man want to <strong class=\"question-keyword\" style=\"color: #00B0F0;\">return</strong>?</span>",
         "choices": {
           "A": "The jacket",
           "B": "The sweater",
@@ -5192,7 +5192,7 @@
       },
       {
         "slide_index": 490,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 07 </span></strong><br><strong><span style=\"color: #000000;\">Question 03. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> will the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">go next</strong>?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 07 </span></strong><br><strong><span>Question 03. </span></strong><span>Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Where</strong> will the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">go next</strong>?</span>",
         "choices": {
           "A": "To Building 1",
           "B": "To Building 2",
@@ -5229,7 +5229,7 @@
       },
       {
         "slide_index": 540,
-        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 08 </span></strong><br><strong><span style=\"color: #000000;\">Question 02. </span></strong><span style=\"color: #000000;\">Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the woman&#x27;s ticket <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discounted</strong>?</span>",
+        "question": "<strong><span style=\"color: #FF0000;\">PRACTICE 08 </span></strong><br><strong><span>Question 02. </span></strong><span>Look at the graphic. <strong class=\"question-keyword\" style=\"color: #00B0F0;\">Why</strong> is the woman&#x27;s ticket <strong class=\"question-keyword\" style=\"color: #00B0F0;\">discounted</strong>?</span>",
         "choices": {
           "A": "It is a Monday.",
           "B": "It is after 5 P.M.",
@@ -6137,7 +6137,7 @@
           {
             "id": 62,
             "slide_index": 3062,
-            "question": "<strong>PRACTICE 11 (GRAPHIC)</strong><br>Where is the woman?",
+            "question": "Where is the woman?",
             "choices": {
               "A": "At a restaurant",
               "B": "At a travel agency",
@@ -6207,7 +6207,8 @@
           "W: (63) Thế còn ngay sau cuộc gặp của tôi với nhân viên Chicago thì sao?",
           "M: ĐƯỢC RỒI. Nhân tiện, (64) bạn có thấy công ty chúng tôi đã giành được giải thưởng vì những đóng góp của chúng tôi cho cộng đồng không? Nó vừa được công bố sáng nay."
         ],
-        "graphic": "data/graphics/ets26_t01_q62_64.png"
+        "graphic": "data/graphics/ets26_t01_q62_64.png",
+        "image": "data/graphics/ets26_t01_q62_64.png"
       },
       {
         "set_index": 12,
@@ -6216,7 +6217,7 @@
           {
             "id": 65,
             "slide_index": 3065,
-            "question": "<strong>PRACTICE 12 (GRAPHIC)</strong><br>Where do the speakers work?",
+            "question": "Where do the speakers work?",
             "choices": {
               "A": "At an amusement park",
               "B": "At an art museum",
@@ -6286,7 +6287,8 @@
           "M: Ồ, (66) Tôi nghĩ chúng ta nên chuyển thông tin đó khỏi trang \"Giới thiệu về chúng tôi\" và tạo một trang riêng cho chỉ đường và thông tin đỗ xe. Bằng cách đó, mọi người có thể tìm thấy nó dễ dàng hơn.",
           "W: Tôi rất vui khi thực hiện sự thay đổi đó. Nhưng (67) chúng tôi đang trong quá trình cập nhật phần mềm nên sẽ phải đợi đến thứ Hai."
         ],
-        "graphic": "data/graphics/ets26_t01_q65_67.png"
+        "graphic": "data/graphics/ets26_t01_q65_67.png",
+        "image": "data/graphics/ets26_t01_q65_67.png"
       },
       {
         "set_index": 13,
@@ -6295,7 +6297,7 @@
           {
             "id": 68,
             "slide_index": 3068,
-            "question": "<strong>PRACTICE 13 (GRAPHIC)</strong><br>What news does the man share?",
+            "question": "What news does the man share?",
             "choices": {
               "A": "A station road will be closed for repair.",
               "B": "A project has been approved.",
@@ -6365,7 +6367,8 @@
           "M: Ừm. Nếu chúng tôi hỏi các tay đua, (69) Tôi cá là họ sẽ nói rằng vị trí thuận tiện nhất là càng gần sân ga càng tốt.",
           "W: (69) Hãy làm điều đó. (70) Tôi sẽ liên hệ với một số công ty để ước tính."
         ],
-        "graphic": "data/graphics/ets26_t01_q68_70.png"
+        "graphic": "data/graphics/ets26_t01_q68_70.png",
+        "image": "data/graphics/ets26_t01_q68_70.png"
       }
     ]
   },
@@ -7179,7 +7182,7 @@
           {
             "id": 62,
             "slide_index": 3062,
-            "question": "<strong>PRACTICE 11 (GRAPHIC)</strong><br>What did the man's client request?",
+            "question": "What did the man's client request?",
             "choices": {
               "A": "A large shipment",
               "B": "A shortened timeline",
@@ -7257,7 +7260,8 @@
           "M: Không, chuyện gì đang xảy ra vậy?",
           "W: Rõ ràng, (64) anh ấy đang có kế hoạch nghỉ hưu vào tháng tới."
         ],
-        "graphic": "data/graphics/ets26_t02_q62_64.png"
+        "graphic": "data/graphics/ets26_t02_q62_64.png",
+        "image": "data/graphics/ets26_t02_q62_64.png"
       },
       {
         "set_index": 12,
@@ -7266,7 +7270,7 @@
           {
             "id": 65,
             "slide_index": 3065,
-            "question": "<strong>PRACTICE 12 (GRAPHIC)</strong><br>What does the man most likely do?",
+            "question": "What does the man most likely do?",
             "choices": {
               "A": "Install windows",
               "B": "Repair roofs",
@@ -7340,7 +7344,8 @@
           "M: Ừm. (67) Tôi có thể dời lại cuộc hẹn vào chiều thứ Ba. Tôi sẽ kiểm tra và liên hệ lại với bạn—Bây giờ tôi đã có số của bạn. Và tên của bạn là?",
           "W: Hoffman—Claudia Hoffman. Cảm ơn. Nói chuyện với bạn sớm."
         ],
-        "graphic": "data/graphics/ets26_t02_q65_67.png"
+        "graphic": "data/graphics/ets26_t02_q65_67.png",
+        "image": "data/graphics/ets26_t02_q65_67.png"
       },
       {
         "set_index": 13,
@@ -7349,7 +7354,7 @@
           {
             "id": 68,
             "slide_index": 3068,
-            "question": "<strong>PRACTICE 13 (GRAPHIC)</strong><br>What industry do the speakers most likely work in?",
+            "question": "What industry do the speakers most likely work in?",
             "choices": {
               "A": "Legal",
               "B": "Construction",
@@ -7421,7 +7426,8 @@
           "W: Ồ, về điều đó: đây là tài liệu tôi cung cấp cho tất cả nhân viên mới. Nó bao gồm một số lời khuyên hữu ích—đặc biệt là lời khuyên này. (70) Bạn đã có danh thiếp chưa?",
           "M: Ừm. Tôi chưa nhận được chúng nhưng hôm nay tôi sẽ gọi cho nhà in để cập nhật."
         ],
-        "graphic": "data/graphics/ets26_t02_q68_70.png"
+        "graphic": "data/graphics/ets26_t02_q68_70.png",
+        "image": "data/graphics/ets26_t02_q68_70.png"
       }
     ]
   },
@@ -8315,7 +8321,8 @@
           "W: (63) Bạn có thể nhường chỗ cho khu vực thực phẩm quốc tế mới của chúng tôi ở phía trước cửa hàng không?",
           "M: (64) Ồ, cuối cùng chuyến hàng đã đến chưa? Cơn bão tuyết ở phía bắc đó đã thực sự ảnh hưởng đến lịch trình giao hàng."
         ],
-        "graphic": "data/graphics/ets26_t03_q62_64.png"
+        "graphic": "data/graphics/ets26_t03_q62_64.png",
+        "image": "data/graphics/ets26_t03_q62_64.png"
       },
       {
         "set_index": 12,
@@ -8396,7 +8403,8 @@
           "M: Tôi làm việc từ 9 đến 5 giờ mỗi ngày ở công việc hiện tại. Bạn có chỗ trống nào sau năm giờ chiều không?",
           "W: (67) Không vấn đề gì. Chúng tôi mở cửa đến sáu giờ chiều. một ngày một tuần."
         ],
-        "graphic": "data/graphics/ets26_t03_q65_67.png"
+        "graphic": "data/graphics/ets26_t03_q65_67.png",
+        "image": "data/graphics/ets26_t03_q65_67.png"
       },
       {
         "set_index": 13,
@@ -8477,7 +8485,8 @@
           "W: (70) Được rồi. Nhắc tôi, tôi nên sử dụng mã phòng ban nào?",
           "M: Ồ, xin lỗi. Tôi quên nói với bạn. Sử dụng số 1009."
         ],
-        "graphic": "data/graphics/ets26_t03_q68_70.png"
+        "graphic": "data/graphics/ets26_t03_q68_70.png",
+        "image": "data/graphics/ets26_t03_q68_70.png"
       }
     ]
   },
@@ -9361,7 +9370,8 @@
           "W: Ồ, vâng—lúc đó tôi đang ở nước ngoài. Cảm ơn đã làm rõ. (64) Bạn có thể cung cấp cho tôi danh sách tất cả các khoản phí ngân hàng đối với các giao dịch được thực hiện ở nước ngoài không?",
           "M: (64) Vâng, tất nhiên. Đây là một tài liệu liệt kê tất cả các thông tin."
         ],
-        "graphic": "data/graphics/ets26_t04_q62_64.png"
+        "graphic": "data/graphics/ets26_t04_q62_64.png",
+        "image": "data/graphics/ets26_t04_q62_64.png"
       },
       {
         "set_index": 12,
@@ -9446,7 +9456,8 @@
           "W: Chà, Xinyu Gu là một nghệ sĩ piano rất nổi tiếng. Và cô ấy ở lại sau buổi hòa nhạc để ký tặng. Điều này nhắc nhở tôi, chúng ta nên bày bàn ở đâu?",
           "M: Câu hỏi hay. Ừm. Lúc đó quán cà phê sẽ đóng cửa. (67) Hãy đặt nó cạnh quán cà phê."
         ],
-        "graphic": "data/graphics/ets26_t04_q65_67.png"
+        "graphic": "data/graphics/ets26_t04_q65_67.png",
+        "image": "data/graphics/ets26_t04_q65_67.png"
       },
       {
         "set_index": 13,
@@ -9531,7 +9542,8 @@
           "W: (69) Tôi sẽ kiểm tra nó! Cảm ơn rất nhiều.",
           "M: Không có gì. Bây giờ—(70) hãy để tôi cho bạn xem phân bón của chúng tôi. Họ ở lối đi số sáu."
         ],
-        "graphic": "data/graphics/ets26_t04_q68_70.png"
+        "graphic": "data/graphics/ets26_t04_q68_70.png",
+        "image": "data/graphics/ets26_t04_q68_70.png"
       }
     ]
   },
@@ -10425,7 +10437,8 @@
           "M: Được chứ. Tôi sẽ gọi cho nhà cung cấp để hỏi về việc chuyển hàng đến đây sớm hơn.",
           "W: Trong lúc đó, (64) tôi sẽ viết một email gửi cho ban quản lý để giải thích việc chúng ta đang cố gắng giải quyết tình huống này như thế nào."
         ],
-        "graphic": "data/graphics/ets26_t05_q62_64.png"
+        "graphic": "data/graphics/ets26_t05_q62_64.png",
+        "image": "data/graphics/ets26_t05_q62_64.png"
       },
       {
         "set_index": 12,
@@ -10504,7 +10517,8 @@
           "M: (67) Chúng ta có thể bắt đầu sử dụng phương thức giao hàng bằng xe đạp bất cứ khi nào có thể. Điều đó sẽ giúp ích.",
           "W: Ý kiến hay. Tôi sẽ nói chuyện với các tài xế để xem ai sẵn sàng chuyển sang giao hàng bằng xe đạp cho những khách hàng ở gần. Một số người thực sự thích tập thể dục."
         ],
-        "graphic": "data/graphics/ets26_t05_q65_67.png"
+        "graphic": "data/graphics/ets26_t05_q65_67.png",
+        "image": "data/graphics/ets26_t05_q65_67.png"
       },
       {
         "set_index": 13,
@@ -10583,7 +10597,8 @@
           "M: Hừm. (69) Bạn có thực sự nghĩ rằng chúng tôi cần giếng trời không? Đó sẽ là một khoản chi phí lớn.",
           "W: Không có nhiều cửa sổ trong sảnh của bạn, vì vậy đó là cách tốt nhất để mang thêm ánh sáng tự nhiên vào phòng. Hơn nữa, những cải tạo được đề xuất của chúng tôi thực sự sẽ nằm dưới mức ngân sách dự kiến. (70) Nếu bạn lật sang trang bốn, bạn sẽ thấy bảng phân tích chi phí."
         ],
-        "graphic": "data/graphics/ets26_t05_q68_70.png"
+        "graphic": "data/graphics/ets26_t05_q68_70.png",
+        "image": "data/graphics/ets26_t05_q68_70.png"
       }
     ]
   }

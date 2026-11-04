@@ -2204,19 +2204,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 490: "data/graphics/Slide490.png",
                 540: "data/graphics/Slide540.png"
             };
-            let imgSrc = `../TOECI LISTENING - PART 03/Slide${q.slide_index}.png`;
-            if (CROPPED_GRAPHICS[q.slide_index]) {
-                imgSrc = CROPPED_GRAPHICS[q.slide_index];
+            const imgSrc = q.graphic || CROPPED_GRAPHICS[q.slide_index] || null;
+            if (imgSrc) {
+                graphicHtml = `
+                    <div class="visual-graphic-container" style="margin: 16px 0; text-align: center; width: 100%;">
+                        <img class="visual-graphic-img" 
+                             src="${imgSrc}" 
+                             onerror="this.style.display='none';"
+                             style="max-width: 100%; max-height: 450px; border: 2px solid var(--border); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; margin: 0 auto;" 
+                             alt="Look at the graphic">
+                    </div>
+                `;
             }
-            graphicHtml = `
-                <div class="visual-graphic-container" style="margin: 16px 0; text-align: center; width: 100%;">
-                    <img class="visual-graphic-img" 
-                         src="${imgSrc}" 
-                         onerror="this.onerror=null; this.src='../TOEIC LISTENING - PART 03/Slide${q.slide_index}.png';"
-                         style="max-width: 100%; max-height: 450px; border: 2px solid var(--border); border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); display: block; margin: 0 auto;" 
-                         alt="Look at the graphic (Slide ${q.slide_index})">
-                </div>
-            `;
         }
 
         if (!qViet) {
@@ -5293,8 +5292,18 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else {
                         SoundEffects.playWrong();
                     }
+                    // Auto-reveal translations and expand explanation/transcript
+                    qCard.querySelectorAll(".c-trans").forEach(t => t.style.display = "block");
+                    const qTrans = qCard.querySelector(".q-trans");
+                    if (qTrans) qTrans.style.display = "block";
                     const scriptCardElement = qCard.querySelector(`#reveal-card-ex-${ex.slide_index}`);
-                    if (scriptCardElement) scriptCardElement.classList.remove("hidden");
+                    if (scriptCardElement) {
+                        scriptCardElement.classList.remove("hidden");
+                        const revContent = scriptCardElement.querySelector(".reveal-content");
+                        if (revContent) revContent.classList.add("open");
+                        const svg = scriptCardElement.querySelector(".reveal-header svg");
+                        if (svg) svg.outerHTML = icons.chevronUp;
+                    }
                     checkBtn.style.display = "none";
                 });
             });
@@ -5474,12 +5483,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 SoundEffects.playWrong();
             }
             
+            // Auto-reveal translations and expand explanation/transcript
+            qCard.querySelectorAll(".c-trans").forEach(t => t.style.display = "block");
+            const qTrans = qCard.querySelector(".q-trans");
+            if (qTrans) qTrans.style.display = "block";
+            const scriptCardElement = qCard.querySelector(`#reveal-card-pr-${q.slide_index}`);
+            if (scriptCardElement) {
+                scriptCardElement.classList.remove("hidden");
+                const revContent = scriptCardElement.querySelector(".reveal-content");
+                if (revContent) revContent.classList.add("open");
+                const svg = scriptCardElement.querySelector(".reveal-header svg");
+                if (svg) svg.outerHTML = icons.chevronUp;
+            }
+            
             // Submit to Google Forms background
             const studentName = localStorage.getItem("studentName") || "Ẩn danh";
             submitToGoogleForm(studentName, `${section.title} - Câu ${currentIdx + 1}`, "Luyện tập (Câu)", isCorrect ? 1 : 0, 1);
-            
-            const scriptCardElement = qCard.querySelector(`#reveal-card-pr-${q.slide_index}`);
-            if (scriptCardElement) scriptCardElement.classList.remove("hidden");
             
             checkBtn.style.display = "none";
             nextBtn.style.display = "flex";
@@ -5792,7 +5811,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const imgSrc = set.image.startsWith("http") || set.image.startsWith("data/") || set.image.startsWith("media/")
                 ? set.image
                 : (set.image.startsWith("Slide") ? `data/graphics/${set.image}` : `media/${set.image}`);
-            imgDiv.innerHTML = `<img src="${imgSrc}" alt="Graphic for Set ${set.set_index}" style="max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">`;
+            imgDiv.innerHTML = `<img src="${imgSrc}" alt="Graphic for Set ${set.set_index}" style="max-width: 100%; max-height: 420px; object-fit: contain; border-radius: 10px; border: 1.5px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.08); background: #ffffff; padding: 6px;">`;
             setWrapper.appendChild(imgDiv);
         }
         
@@ -6051,6 +6070,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 nextBtn.style.display = "flex";
             }
             innerScriptCard.classList.remove("hidden");
+            const revContent = innerScriptCard.querySelector(".reveal-content");
+            if (revContent) revContent.classList.add("open");
+            const svg = innerScriptCard.querySelector(".reveal-header svg");
+            if (svg) svg.outerHTML = icons.chevronUp;
+            qListDiv.querySelectorAll(".q-trans").forEach(qt => qt.style.display = "block");
             
             // Show result modal
             modalScore.textContent = correctCount;
@@ -10962,8 +10986,18 @@ document.addEventListener("DOMContentLoaded", () => {
                     } else {
                         SoundEffects.playWrong();
                     }
+                    // Auto-reveal translations and expand explanation/transcript
+                    qCard.querySelectorAll(".c-trans").forEach(t => t.style.display = "block");
+                    const qTrans = qCard.querySelector(".q-trans");
+                    if (qTrans) qTrans.style.display = "block";
                     const scriptCardElement = qCard.querySelector(`#reveal-card-ex-${ex.slide_index}`);
-                    if (scriptCardElement) scriptCardElement.classList.remove("hidden");
+                    if (scriptCardElement) {
+                        scriptCardElement.classList.remove("hidden");
+                        const revContent = scriptCardElement.querySelector(".reveal-content");
+                        if (revContent) revContent.classList.add("open");
+                        const svg = scriptCardElement.querySelector(".reveal-header svg");
+                        if (svg) svg.outerHTML = icons.chevronUp;
+                    }
                     checkBtn.style.display = "none";
                 });
             });
@@ -11143,12 +11177,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 SoundEffects.playWrong();
             }
             
+            // Auto-reveal translations and expand explanation/transcript
+            qCard.querySelectorAll(".c-trans").forEach(t => t.style.display = "block");
+            const qTrans = qCard.querySelector(".q-trans");
+            if (qTrans) qTrans.style.display = "block";
+            const scriptCardElement = qCard.querySelector(`#reveal-card-pr-${q.slide_index}`);
+            if (scriptCardElement) {
+                scriptCardElement.classList.remove("hidden");
+                const revContent = scriptCardElement.querySelector(".reveal-content");
+                if (revContent) revContent.classList.add("open");
+                const svg = scriptCardElement.querySelector(".reveal-header svg");
+                if (svg) svg.outerHTML = icons.chevronUp;
+            }
+            
             // Submit to Google Forms background
             const studentName = localStorage.getItem("studentName") || "Ẩn danh";
             submitToGoogleForm(studentName, `${section.title} - Câu ${currentIdx + 1}`, "Luyện tập (Câu)", isCorrect ? 1 : 0, 1);
-            
-            const scriptCardElement = qCard.querySelector(`#reveal-card-pr-${q.slide_index}`);
-            if (scriptCardElement) scriptCardElement.classList.remove("hidden");
             
             checkBtn.style.display = "none";
             nextBtn.style.display = "flex";
@@ -11686,6 +11730,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 nextBtn.style.display = "flex";
             }
             innerScriptCard.classList.remove("hidden");
+            const revContent = innerScriptCard.querySelector(".reveal-content");
+            if (revContent) revContent.classList.add("open");
+            const svg = innerScriptCard.querySelector(".reveal-header svg");
+            if (svg) svg.outerHTML = icons.chevronUp;
+            qListDiv.querySelectorAll(".q-trans").forEach(qt => qt.style.display = "block");
             
             // Show result modal
             modalScore.textContent = correctCount;
