@@ -12,7 +12,7 @@
 
     
     <!-- Main Stylesheet -->
-    <link rel="stylesheet" href="css/style.css?v=1.7.3">
+    <link rel="stylesheet" href="css/style.css?v=1.7.4">
     <link rel="stylesheet" href="flower_garden.css">
 </head>
 <body class="dark-mode">
@@ -209,45 +209,98 @@
                 <!-- HOME VIEW -->
                 <section id="view-home" class="content-view">
                     <div class="dashboard-hero">
-                        <h2>XIN CHÀO HỌC VIÊN! 👋</h2>
-                        <p>Hệ thống hỗ trợ tự học lý thuyết và luyện tập trực tuyến, giúp nâng cao kỹ năng nghe hiểu TOEIC của bạn.</p>
+                        <div class="hero-tag">TOEIC LISTENING MASTERY 2026</div>
+                        <h2 id="dashboardGreeting">XIN CHÀO HỌC VIÊN! 👋</h2>
+                        <p>Hệ thống tự học lý thuyết toàn diện &amp; luyện tập thực chiến 4 phần thi TOEIC Listening chuẩn format đề thi ETS. Vui lòng chọn bài học bên dưới để bắt đầu:</p>
                     </div>
                     
                     <div class="dashboard-grid">
-                        <div class="dashboard-card highlight" id="card-part3">
-                            <div class="card-icon">
-                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        <!-- PART 01 -->
+                        <div class="dashboard-card" id="card-part1">
+                            <div class="card-header-row">
+                                <div class="card-icon-box p1-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                                </div>
+                                <div class="card-part-badge p1-badge">PART 01 • 6 CÂU</div>
                             </div>
-                            <h3>PART 03 - SHORT CONVERSATIONS</h3>
-                            <p>Đoạn hội thoại ngắn. Học các dạng câu hỏi chi tiết, luyện tập từ vựng chuyên ngành và làm các câu hỏi thực chiến kèm transcript.</p>
-                            <span class="status-tag active">ĐÃ SẴN SÀNG</span>
-                        </div>
-                        
-                        <div class="dashboard-card" id="card-part2">
-                            <div class="card-icon">
-                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                            <h3 class="card-title">MÔ TẢ TRANH ẢNH</h3>
+                            <div class="card-subtitle-en">Photographs</div>
+                            <p class="card-desc">Luyện quan sát tranh, nắm bắt hành động &amp; trạng thái của người/vật, tránh bẫy thì Being và thực chiến 10 đề thi ETS.</p>
+                            <div class="card-chips">
+                                <span class="chip">3 Dạng tranh</span>
+                                <span class="chip">Trả bài từ vựng</span>
+                                <span class="chip">10 Đề ETS</span>
                             </div>
-                            <h3>PART 02 - QUESTIONS & RESPONSES</h3>
-                            <p>Câu hỏi & Phản hồi. Xem slide lý thuyết và các mẫu ví dụ để học phản xạ trả lời nhanh trong bài nghe.</p>
-                            <span class="status-tag active">SẴN SÀNG</span>
+                            <div class="card-footer-row">
+                                <span class="status-tag active">ĐÃ SẴN SÀNG</span>
+                                <span class="card-cta-btn">Vào học ngay <span class="cta-arrow">→</span></span>
+                            </div>
                         </div>
 
-                        <div class="dashboard-card" id="card-part1">
-                            <div class="card-icon">
-                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                        <!-- PART 02 -->
+                        <div class="dashboard-card" id="card-part2">
+                            <div class="card-header-row">
+                                <div class="card-icon-box p2-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+                                </div>
+                                <div class="card-part-badge p2-badge">PART 02 • 25 CÂU</div>
                             </div>
-                            <h3>PART 01 - PHOTOGRAPHS</h3>
-                            <p>Mô tả tranh ảnh. Luyện kỹ năng quan sát tranh và chọn câu mô tả chính xác nhất.</p>
-                            <span class="status-tag active">ĐÃ SẴN SÀNG</span>
+                            <h3 class="card-title">HỎI &amp; ĐÁP PHẢN XẠ</h3>
+                            <div class="card-subtitle-en">Questions &amp; Responses</div>
+                            <p class="card-desc">Rèn phản xạ nghe - đáp với các dạng câu hỏi Who, Where, When, Why, How, Yes/No, câu hỏi đuôi và bẫy phát âm.</p>
+                            <div class="card-chips">
+                                <span class="chip">5 Dạng câu hỏi</span>
+                                <span class="chip">Bẫy đồng âm</span>
+                                <span class="chip">10 Đề ETS</span>
+                            </div>
+                            <div class="card-footer-row">
+                                <span class="status-tag active">ĐÃ SẴN SÀNG</span>
+                                <span class="card-cta-btn">Vào học ngay <span class="cta-arrow">→</span></span>
+                            </div>
+                        </div>
+
+                        <!-- PART 03 -->
+                        <div class="dashboard-card" id="card-part3">
+                            <div class="card-header-row">
+                                <div class="card-icon-box p3-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                                </div>
+                                <div class="card-part-badge p3-badge">PART 03 • 39 CÂU</div>
+                            </div>
+                            <h3 class="card-title">ĐOẠN HỘI THOẠI</h3>
+                            <div class="card-subtitle-en">Short Conversations</div>
+                            <p class="card-desc">Luyện nghe 13 đoạn hội thoại 2-3 người, chiến thuật đọc trước câu hỏi, câu hỏi suy luận ngụ ý và kết hợp hình ảnh.</p>
+                            <div class="card-chips">
+                                <span class="chip">13 Hội thoại</span>
+                                <span class="chip">Câu hỏi ngụ ý</span>
+                                <span class="chip">Transcript chi tiết</span>
+                            </div>
+                            <div class="card-footer-row">
+                                <span class="status-tag active">ĐÃ SẴN SÀNG</span>
+                                <span class="card-cta-btn">Vào học ngay <span class="cta-arrow">→</span></span>
+                            </div>
                         </div>
                         
+                        <!-- PART 04 -->
                         <div class="dashboard-card locked" id="card-part4">
-                            <div class="card-icon">
-                                <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                            <div class="card-header-row">
+                                <div class="card-icon-box p4-icon">
+                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+                                </div>
+                                <div class="card-part-badge p4-badge">PART 04 • 30 CÂU</div>
                             </div>
-                            <h3>PART 04 - SHORT TALKS</h3>
-                            <p>Đoạn thông tin ngắn. Luyện nghe các bài nói một người (tin thời tiết, thông báo sân bay, quảng cáo...).</p>
-                            <span class="status-tag coming-soon">ĐÃ KHÓA</span>
+                            <h3 class="card-title">BÀI NÓI NGẮN</h3>
+                            <div class="card-subtitle-en">Short Talks</div>
+                            <p class="card-desc">Luyện nghe 10 bài độc thoại một người nói: thông báo sân bay, tin nhắn thoại, bản tin thời tiết, quảng cáo &amp; hướng dẫn.</p>
+                            <div class="card-chips">
+                                <span class="chip">10 Bài nói</span>
+                                <span class="chip">Thông báo &amp; Tin tức</span>
+                                <span class="chip">Script chi tiết</span>
+                            </div>
+                            <div class="card-footer-row">
+                                <span class="status-tag coming-soon">ĐÃ KHÓA 🔒</span>
+                                <span class="card-cta-btn">Mở khóa 🔒</span>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -549,7 +602,7 @@
     <script src="data/part03_data.js?v=2.2.4"></script>
     <script src="data/part03_trabai_data.js?v=1.0.1"></script>
     <script src="data/part04_data.js?v=2.1.0"></script>
-    <script src="js/app.js?v=1.0.93"></script>
+    <script src="js/app.js?v=1.0.94"></script>
     <!-- Flower Garden for TOEIC -->
     <script src="flower_definitions.js"></script>
     <script src="flower_garden.js"></script>

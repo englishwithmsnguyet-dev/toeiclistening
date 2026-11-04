@@ -458,6 +458,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const p3Locked = isContentLocked(3);
         const p4Locked = isContentLocked(4);
 
+        // Update Dashboard Hero Greeting
+        const greetingEl = document.getElementById("dashboardGreeting");
+        if (greetingEl) {
+            const role = getStudentRole();
+            const currentName = role ? (role.displayName || role.name) : localStorage.getItem("studentName");
+            if (currentName) {
+                greetingEl.innerHTML = `XIN CHÀO, <span style="color: #2563eb;">${currentName.toUpperCase()}</span>! 👋`;
+            } else {
+                greetingEl.textContent = "XIN CHÀO HỌC VIÊN! 👋";
+            }
+        }
+
         if (cardPart1) {
             cardPart1.classList.remove("locked");
             const tag = cardPart1.querySelector(".status-tag");
@@ -465,56 +477,67 @@ document.addEventListener("DOMContentLoaded", () => {
                 tag.className = "status-tag active";
                 tag.textContent = "ĐÃ SẴN SÀNG";
             }
+            const cta = cardPart1.querySelector(".card-cta-btn");
+            if (cta) cta.innerHTML = 'Vào học ngay <span class="cta-arrow">→</span>';
         }
 
         if (cardPart2) {
             const tag = cardPart2.querySelector(".status-tag");
+            const cta = cardPart2.querySelector(".card-cta-btn");
             if (p2Locked) {
                 cardPart2.classList.add("locked");
                 if (tag) {
                     tag.className = "status-tag coming-soon";
                     tag.textContent = "ĐÃ KHÓA 🔒";
                 }
+                if (cta) cta.innerHTML = 'Mở khóa 🔒';
             } else {
                 cardPart2.classList.remove("locked");
                 if (tag) {
                     tag.className = "status-tag active";
-                    tag.textContent = "SẴN SÀNG";
+                    tag.textContent = "ĐÃ SẴN SÀNG";
                 }
+                if (cta) cta.innerHTML = 'Vào học ngay <span class="cta-arrow">→</span>';
             }
         }
 
         if (cardPart3) {
             const tag = cardPart3.querySelector(".status-tag");
+            const cta = cardPart3.querySelector(".card-cta-btn");
             if (p3Locked) {
                 cardPart3.classList.add("locked");
                 if (tag) {
                     tag.className = "status-tag coming-soon";
                     tag.textContent = "ĐÃ KHÓA 🔒";
                 }
+                if (cta) cta.innerHTML = 'Mở khóa 🔒';
             } else {
                 cardPart3.classList.remove("locked");
                 if (tag) {
                     tag.className = "status-tag active";
                     tag.textContent = "ĐÃ SẴN SÀNG";
                 }
+                if (cta) cta.innerHTML = 'Vào học ngay <span class="cta-arrow">→</span>';
             }
         }
 
         if (cardPart4) {
             const tag = cardPart4.querySelector(".status-tag");
+            const cta = cardPart4.querySelector(".card-cta-btn");
             if (p4Locked) {
                 cardPart4.classList.add("locked");
                 if (tag) {
                     tag.className = "status-tag coming-soon";
                     tag.textContent = "ĐÃ KHÓA 🔒";
                 }
+                if (cta) cta.innerHTML = 'Mở khóa 🔒';
             } else {
                 cardPart4.classList.remove("locked");
                 if (tag) {
                     tag.className = "status-tag active";
-                    tag.textContent = "ĐÃ MỞ KHÓA";
+                    tag.textContent = "ĐÃ SẴN SÀNG";
                 }
+                if (cta) cta.innerHTML = 'Vào học ngay <span class="cta-arrow">→</span>';
             }
         }
 
@@ -1125,6 +1148,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (typeof togglePart1Submenu !== "undefined") togglePart1Submenu(false);
             togglePart3Submenu(false);
             togglePart4Submenu(false);
+            if (typeof refreshAccessUI === 'function') refreshAccessUI();
         } else if (viewName === "part2") {
             navHomeBtn.classList.remove("active");
             navPart2Btn.classList.add("active");
