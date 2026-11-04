@@ -13,6 +13,7 @@
     
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css?v=1.7.3">
+    <link rel="stylesheet" href="flower_garden.css">
 </head>
 <body class="dark-mode">
     <!-- Canvas for Confetti celebrations -->
@@ -30,11 +31,16 @@
         <!-- SIDEBAR -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <div class="sidebar-logo" style="display: flex; align-items: center; gap: 0px; flex-grow: 1; overflow: hidden;">
-                    <div style="display: flex; flex-direction: column; overflow: hidden;">
-                        <span style="font-weight: 700; font-size: 0.95rem; color: var(--text-main); line-height: 1.2; letter-spacing: 0.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding: 4px 0;">TOEIC LISTENING</span>
+                <a href="https://www.facebook.com/nguyetpham28" target="_blank" rel="noopener noreferrer" class="sidebar-brand-box" title="Ghé thăm Facebook: English with Miss Nguyet" style="text-decoration: none; display: flex; align-items: center; gap: 12px; width: 100%;">
+                    <div class="sidebar-avatar-wrap" style="position: relative; flex-shrink: 0;">
+                        <img src="miss_nguyet.jpg" alt="Miss Nguyet" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover; object-position: center 20%; border: 2px solid #6366f1; box-shadow: 0 0 10px rgba(99, 102, 241, 0.4); display: block;">
+                        <span style="position: absolute; bottom: 1px; right: 1px; width: 10px; height: 10px; border-radius: 50%; background: #10b981; border: 2px solid #fff;"></span>
                     </div>
-                </div>
+                    <div style="display: flex; flex-direction: column; text-align: left; overflow: hidden;">
+                        <div style="font-size: 0.95rem; font-weight: 800; color: #ffffff; white-space: nowrap;">TOEIC LISTENING</div>
+                        <div style="font-size: 0.72rem; font-weight: 700; color: #a5b4fc; letter-spacing: 0.04em; text-transform: uppercase; white-space: nowrap;">ENGLISH WITH MISS NGUYET</div>
+                    </div>
+                </a>
                 <button class="toggle-sidebar-btn" id="toggleSidebarBtn" style="flex-shrink: 0; display: flex; align-items: center; justify-content: center;">
                     <span id="toggleIcon" style="display: flex; align-items: center; justify-content: center; width: 16px; height: 16px;">
                         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m11 17-5-5 5-5M18 17l-5-5 5-5"/></svg>
@@ -527,5 +533,8 @@
     <script src="data/part03_trabai_data.js?v=1.0.1"></script>
     <script src="data/part04_data.js?v=2.1.0"></script>
     <script src="js/app.js?v=1.0.93"></script>
+    <!-- Flower Garden for TOEIC -->
+    <script src="flower_definitions.js"></script>
+    <script src="flower_garden.js"></script>
 </body>
 </html>
