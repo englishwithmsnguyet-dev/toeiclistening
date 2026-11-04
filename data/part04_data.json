@@ -266,7 +266,8 @@
         ],
         "transcript": [
           "<strong><span style=\"color: #000000;\">W: </span></strong><span style=\"color: #000000;\">Hello, </span><strong><span style=\"color: #FF0000;\">(1)</span></strong><span style=\"color: #FF0000;\"> </span><span style=\"color: #000000;\">I&#x27;m calling because I can&#x27;t find my sunglasses</span><span style=\"color: #000000;\">. I think I may have left them in one of your theaters yesterday. The sunglasses should be in a blue case - the case could have fallen under the seat. Anyway, </span><strong><span style=\"color: #FF0000;\">(2)</span></strong><span style=\"color: #FF0000;\"> </span><span style=\"color: #000000;\">I was at the four-thirty showing of “Long Distance Run” and was sitting toward the back of the theater with some friends</span><span style=\"color: #000000;\">. </span><strong><span style=\"color: #FF0000;\">(3)</span></strong><span style=\"color: #FF0000;\"> </span><span style=\"color: #000000;\">If the sunglasses are there, could you call me back to let me know?</span><span style=\"color: #000000;\"> You can call me at any time. My number&#x27;s 555-0129. Thanks. </span>"
-        ]
+        ],
+        "image": "practice2_q2.png"
       },
       {
         "set_index": 3,
@@ -1959,7 +1960,7 @@
       },
       {
         "set_index": 5,
-        "audio": null,
+        "audio": "media38.mp3",
         "questions": [
           {
             "id": 1,
@@ -2004,7 +2005,7 @@
       },
       {
         "set_index": 6,
-        "audio": null,
+        "audio": "media39.mp3",
         "questions": [
           {
             "id": 1,
@@ -2272,13 +2273,14 @@
           {
             "id": 1,
             "slide_index": 297,
-            "question": "<strong>Question 01. </strong>What product does Castillo manufacture?<br>B, Clothing",
+            "question": "<strong>Question 01. </strong>What product does Castillo manufacture?",
             "choices": {
               "A": "Jewelry",
+              "B": "Clothing",
               "C": "Art supplies",
               "D": "Backpacks"
             },
-            "answer": "C"
+            "answer": "B"
           },
           {
             "id": 2,
@@ -2465,7 +2467,7 @@
               "C": "Light fixtures",
               "D": "Kitchen appliances"
             },
-            "answer": "A",
+            "answer": "B",
             "vietnamese_question": "Doanh nghiệp sửa chữa những loại sản phẩm nào?",
             "vietnamese_choices": {
               "A": "Máy tính",
@@ -2473,7 +2475,7 @@
               "C": "thiết bị chiếu sáng",
               "D": "Thiết bị nhà bếp"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Vehicles</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Doanh nghiệp chuyên sửa chữa các dòng xe ô tô (all makes and models of automobiles).</span></div>"
           },
           {
             "id": 72,
@@ -2485,7 +2487,7 @@
               "C": "Extended warranties",
               "D": "A membership loyalty program"
             },
-            "answer": "A",
+            "answer": "C",
             "vietnamese_question": "Người nói đề cập đến lợi ích đặc biệt nào?",
             "vietnamese_choices": {
               "A": "Nhận hàng miễn phí",
@@ -2493,7 +2495,7 @@
               "C": "Bảo hành mở rộng",
               "D": "Một chương trình khách hàng thân thiết"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Extended warranties</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói nêu rõ lợi ích: \"As an added benefit, we offer extended warranties on all vehicles we service\".</span></div>"
           },
           {
             "id": 73,
@@ -2513,7 +2515,7 @@
               "C": "Để tổ chức lễ kỷ niệm cho công ty",
               "D": "Để lắp đặt thiết bị"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>For an inventory count</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Cửa hàng đóng cửa vào thứ Sáu để thực hiện kiểm kê kho hàng quý (complete our quarterly inventory of supplies).</span></div>"
           }
         ],
         "transcript": [
@@ -2537,7 +2539,7 @@
               "C": "Asecurity officer",
               "D": "A corporate executive"
             },
-            "answer": "A",
+            "answer": "B",
             "vietnamese_question": "Người nói rất có thể là ai?",
             "vietnamese_choices": {
               "A": "Một người quản lý cơ sở vật chất",
@@ -2545,7 +2547,7 @@
               "C": "nhân viên an ninh",
               "D": "Một giám đốc điều hành công ty"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>A human resources representative</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói là đại diện nhân sự hướng dẫn định hướng cho các nhân viên mới.</span></div>"
           },
           {
             "id": 75,
@@ -2557,7 +2559,7 @@
               "C": "An identification badge",
               "D": "Log-in credentials"
             },
-            "answer": "A",
+            "answer": "D",
             "vietnamese_question": "Theo người nói, người nghe sẽ tìm thấy gì trong một tập tài liệu?",
             "vietnamese_choices": {
               "A": "Bản đồ tòa nhà",
@@ -2565,7 +2567,7 @@
               "C": "Một huy hiệu nhận dạng",
               "D": "Thông tin đăng nhập"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Log-in credentials</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nghe được hướng dẫn mở bìa hồ sơ để lấy thông tin đăng nhập và mật khẩu tạm thời.</span></div>"
           },
           {
             "id": 76,
@@ -2585,7 +2587,7 @@
               "C": "Họ phải tuân theo một quy ước đặt tên cụ thể.",
               "D": "Chúng phải được lưu trữ hàng năm."
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>They are only accessible from company computers</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Tài liệu và tệp dữ liệu phòng ban chỉ có thể truy cập an toàn từ máy tính công ty.</span></div>"
           }
         ],
         "transcript": [
@@ -2609,7 +2611,7 @@
               "C": "Ata sports stadium",
               "D": "Ata fitness center"
             },
-            "answer": "A",
+            "answer": "B",
             "vietnamese_question": "Loa làm việc ở đâu?",
             "vietnamese_choices": {
               "A": "Tại cơ sở giặt ủi",
@@ -2617,7 +2619,7 @@
               "C": "Sân vận động Ata",
               "D": "Trung tâm thể hình Ata"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>At an amusement park</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói tự giới thiệu gọi đến từ công viên giải trí Denville Amusement Park.</span></div>"
           },
           {
             "id": 78,
@@ -2629,7 +2631,7 @@
               "C": "She needs help assembling it.",
               "D": "She is pleased with it."
             },
-            "answer": "A",
+            "answer": "D",
             "vietnamese_question": "Người nói nói gì về món hàng mà cô ấy đã đặt hàng một tháng trước?",
             "vietnamese_choices": {
               "A": "Nó đến muộn hơn dự kiến.",
@@ -2637,7 +2639,7 @@
               "C": "Cô ấy cần giúp đỡ để lắp ráp nó.",
               "D": "Cô ấy hài lòng với nó."
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>She is pleased with it</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói rất hài lòng với máy chơi game Space Defenders đã mua một tháng trước vì khách rất thích.</span></div>"
           },
           {
             "id": 79,
@@ -2649,7 +2651,7 @@
               "C": "How long a warranty lasts",
               "D": "Who to contact about future orders"
             },
-            "answer": "A",
+            "answer": "B",
             "vietnamese_question": "Người nói yêu cầu người nghe xác nhận điều gì?",
             "vietnamese_choices": {
               "A": "Liệu sản phẩm mới sẽ sớm ra mắt hay không",
@@ -2657,7 +2659,7 @@
               "C": "Bảo hành kéo dài bao lâu",
               "D": "Ai cần liên hệ về các đơn đặt hàng trong tương lai"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>If a new game will be released soon</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói muốn đối tác xác nhận liệu họ có sắp phát hành trò chơi mới hay không.</span></div>"
           }
         ],
         "transcript": [
@@ -2681,7 +2683,7 @@
               "C": "Bedding",
               "D": "Clothing"
             },
-            "answer": "A",
+            "answer": "D",
             "vietnamese_question": "Công ty của diễn giả sản xuất loại sản phẩm nào?",
             "vietnamese_choices": {
               "A": "Nội thất",
@@ -2689,7 +2691,7 @@
               "C": "Bộ đồ giường",
               "D": "Quần áo"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Clothing</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói đề cập đến sự sụt giảm trong doanh số bán quần áo (drop in our clothing sales).</span></div>"
           },
           {
             "id": 81,
@@ -2709,7 +2711,7 @@
               "C": "Tham gia một hội chợ thương mại",
               "D": "Phát triển một dòng sản phẩm mới"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Manufacturing some products locally</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói đề xuất sản xuất một số mặt hàng tại địa phương để giảm thời gian vận chuyển từ nước ngoài.</span></div>"
           },
           {
             "id": 82,
@@ -2729,7 +2731,7 @@
               "C": "Một số hợp đồng sẽ được cập nhật.",
               "D": "Các thủ tục an toàn sẽ được xem xét."
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>A vote will take place.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Tại cuộc họp tiếp theo, hội đồng sẽ tiến hành bỏ phiếu (a vote will take place) để quyết định.</span></div>"
           }
         ],
         "transcript": [
@@ -2746,22 +2748,22 @@
           {
             "id": 83,
             "slide_index": 3083,
-            "question": "GO ON TO THE NEXT PAGE TEST 1 29 83. 84. 85. What is the announcement mainly about?",
+            "question": "What is the announcement mainly about?",
             "choices": {
               "A": "A promotional event",
               "B": "A vacation package",
               "C": "A building renovation",
               "D": "A travel delay"
             },
-            "answer": "A",
-            "vietnamese_question": "TIẾP THEO TRANG TIẾP THEO BÀI KIỂM TRA 1 29 83. 84. 85. Thông báo chủ yếu nói về điều gì?",
+            "answer": "D",
+            "vietnamese_question": "Câu hỏi 83: Thông báo chủ yếu nói về điều gì?",
             "vietnamese_choices": {
               "A": "Một sự kiện khuyến mãi",
               "B": "Gói kỳ nghỉ",
               "C": "Cải tạo tòa nhà",
               "D": "Chuyến đi bị trì hoãn"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>A travel delay</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Thông báo về việc chuyến đi bị hoãn do sự cố kỹ thuật.</span></div>"
           },
           {
             "id": 84,
@@ -2781,7 +2783,7 @@
               "C": "Đề nghị thay đổi ngày đi",
               "D": "Để thông báo cho khách hàng về điểm đến mới"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>To suggest an alternative arrangement</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói gợi ý phương án thay thế là đi chuyến xe buýt khởi hành sau 15 phút.</span></div>"
           },
           {
             "id": 85,
@@ -2793,7 +2795,7 @@
               "C": "How to reserve tick",
               "D": "Where to buy food"
             },
-            "answer": "A",
+            "answer": "D",
             "vietnamese_question": "Người nói nhắc nhở người nghe điều gì?",
             "vietnamese_choices": {
               "A": "Cách tải xuống ứng dụng di động",
@@ -2801,7 +2803,7 @@
               "C": "Cách đặt vé",
               "D": "Mua thực phẩm ở đâu"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Where to buy food</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói nhắc nhở hành khách về vị trí mua đồ ăn (quán cà phê ga mở lúc 8h và các quầy đồ ăn ở sân ga số 1).</span></div>"
           }
         ],
         "transcript": [
@@ -2833,7 +2835,7 @@
               "C": "Tại một studio chụp ảnh",
               "D": "Bảo tàng Ata"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>At a graphic design company</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói làm việc tại công ty thiết kế đồ họa.</span></div>"
           },
           {
             "id": 87,
@@ -2845,7 +2847,7 @@
               "C": "An invoice",
               "D": "Some contracts"
             },
-            "answer": "A",
+            "answer": "B",
             "vietnamese_question": "Người nghe đã nhận được gì qua e-mail?",
             "vietnamese_choices": {
               "A": "Bản tin",
@@ -2853,7 +2855,7 @@
               "C": "Hóa đơn",
               "D": "Một số hợp đồng"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Some images</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Khách hàng nhận được một số hình ảnh mẫu đính kèm trong email.</span></div>"
           },
           {
             "id": 88,
@@ -2865,7 +2867,7 @@
               "C": "She will be on vacation.",
               "D": "She will be at an industry conference."
             },
-            "answer": "A",
+            "answer": "C",
             "vietnamese_question": "Tại sao diễn giả không có mặt vào tuần tới?",
             "vietnamese_choices": {
               "A": "Cô ấy sẽ làm việc ở chi nhánh khác.",
@@ -2873,7 +2875,7 @@
               "C": "Cô ấy sẽ đi nghỉ.",
               "D": "Cô ấy sẽ có mặt tại một hội nghị ngành."
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>She will be on vacation.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói không thể làm việc vào tuần tới vì đang trong kỳ nghỉ phép.</span></div>"
           }
         ],
         "transcript": [
@@ -2905,7 +2907,7 @@
               "C": "kỹ sư",
               "D": "Nhà báo"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Investors</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Bài phát biểu hướng đến các nhà đầu tư kinh doanh.</span></div>"
           },
           {
             "id": 90,
@@ -2917,7 +2919,7 @@
               "C": "A project team has a lot of experience.",
               "D": "Some company policies are outdated."
             },
-            "answer": "A",
+            "answer": "B",
             "vietnamese_question": "Người nói có ý gì khi nói, “Tất cả chúng ta đều ít nhất mười tuổi”?",
             "vietnamese_choices": {
               "A": "Một sự kiện cần phải được di dời.",
@@ -2925,7 +2927,7 @@
               "C": "Nhóm dự án có nhiều kinh nghiệm.",
               "D": "Một số chính sách của công ty đã lỗi thời."
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>An upgrade is not feasible.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói ngụ ý thiết bị đã quá cũ nên việc nâng cấp là không khả thi.</span></div>"
           },
           {
             "id": 91,
@@ -2937,7 +2939,7 @@
               "C": "Areport summary",
               "D": "A discounted ticket"
             },
-            "answer": "A",
+            "answer": "C",
             "vietnamese_question": "Theo người nói, những gì có thể được yêu cầu qua e-mail?",
             "vietnamese_choices": {
               "A": "Một số slide thuyết trình",
@@ -2945,7 +2947,7 @@
               "C": "Tóm tắt báo cáo",
               "D": "Một tấm vé giảm giá"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>A report summary</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nghe có thể gửi email yêu cầu bản tóm tắt báo cáo chi tiết.</span></div>"
           }
         ],
         "transcript": [
@@ -2969,7 +2971,7 @@
               "C": "Create a new product line",
               "D": "Add store locations"
             },
-            "answer": "A",
+            "answer": "B",
             "vietnamese_question": "Người nói muốn làm gì?",
             "vietnamese_choices": {
               "A": "Tăng doanh số bán hàng trực tuyến",
@@ -2977,7 +2979,7 @@
               "C": "Tạo một dòng sản phẩm mới",
               "D": "Thêm vị trí cửa hàng"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Upgrade a payment system</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói muốn nâng cấp hệ thống thanh toán để giải quyết tình trạng chờ đợi.</span></div>"
           },
           {
             "id": 93,
@@ -2997,7 +2999,7 @@
               "C": "Các mặt hàng không có sẵn",
               "D": "Nhân viên không thân thiện"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Long lines</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Khách hàng chủ yếu phàn nàn về việc phải xếp hàng quá lâu (long lines).</span></div>"
           },
           {
             "id": 94,
@@ -3009,7 +3011,7 @@
               "C": "To express frustration",
               "D": "To justify a choice"
             },
-            "answer": "A",
+            "answer": "D",
             "vietnamese_question": "Tại sao người nói lại nói “đó là địa điểm bận rộn nhất của chúng ta”?",
             "vietnamese_choices": {
               "A": "Để yêu cầu một số phản hồi",
@@ -3017,7 +3019,7 @@
               "C": "Để bày tỏ sự thất vọng",
               "D": "Để biện minh cho một sự lựa chọn"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>To justify a choice</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Người nói giải thích lý do chọn chi nhánh đó vì đây là địa điểm đông khách nhất.</span></div>"
           }
         ],
         "transcript": [
@@ -3034,7 +3036,7 @@
           {
             "id": 95,
             "slide_index": 3095,
-            "question": "Burger Incorporated Aegis Technologies Barnum Financial Services Heinkel Media Group According to the speaker, what is special about the Reston Office Tower?",
+            "question": "According to the speaker, what is special about the Reston Office Tower?",
             "choices": {
               "A": "It features an indoor garden.",
               "B": "It exhibits work from local artists.",
@@ -3042,14 +3044,14 @@
               "D": "It has won many awards."
             },
             "answer": "A",
-            "vietnamese_question": "Burger Incorporated Aegis Technologies Barnum Financial Services Heinkel Media Group Theo diễn giả, Tháp văn phòng Reston có gì đặc biệt?",
+            "vietnamese_question": "Câu hỏi 95: Theo người nói, tòa nhà văn phòng Reston có điểm gì đặc biệt?",
             "vietnamese_choices": {
               "A": "Nơi đây có khu vườn trong nhà.",
               "B": "Nó trưng bày tác phẩm của các nghệ sĩ địa phương.",
               "C": "Nó chạy bằng năng lượng mặt trời.",
               "D": "Nó đã giành được nhiều giải thưởng."
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>It features an indoor garden.</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Điểm đặc biệt nhất của tòa nhà Reston Office Tower là khu vườn trong nhà (indoor garden) ở sảnh.</span></div>"
           },
           {
             "id": 96,
@@ -3061,7 +3063,7 @@
               "C": "Floors 11-14",
               "D": "Floors 15-17"
             },
-            "answer": "A",
+            "answer": "C",
             "vietnamese_question": "Nhìn vào đồ họa. Những tầng nào sẽ được sử dụng vào tháng 1?",
             "vietnamese_choices": {
               "A": "Tầng 1-5",
@@ -3069,7 +3071,7 @@
               "C": "Tầng 11-14",
               "D": "Tầng 15-17"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Floors 11-14</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Đối chiếu bảng danh bạ tòa nhà, công ty Barnum Financial chuyển đến vào tháng 1 nằm ở tầng 11-14.</span></div>"
           },
           {
             "id": 97,
@@ -3081,7 +3083,7 @@
               "C": "A floor layout",
               "D": "A recorded interview"
             },
-            "answer": "A",
+            "answer": "D",
             "vietnamese_question": "Người nói nói gì có sẵn trên một trang Web?",
             "vietnamese_choices": {
               "A": "Một số bức ảnh",
@@ -3089,7 +3091,7 @@
               "C": "Bố trí sàn",
               "D": "Một cuộc phỏng vấn được ghi âm"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>A recorded interview</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Bản ghi âm cuộc phỏng vấn đầy đủ với CEO đã được đăng tải trên trang web.</span></div>"
           }
         ],
         "transcript": [
@@ -3106,22 +3108,22 @@
           {
             "id": 98,
             "slide_index": 3098,
-            "question": "This is the end of t Location Grams per Ton Site 1 Site 2 Site 3 98. Who most likely are the listeners?",
+            "question": "Who most likely are the listeners?",
             "choices": {
               "A": "Safety engineers",
               "B": "Laboratory technicians",
               "C": "Legal consultants",
               "D": "Business investors"
             },
-            "answer": "A",
-            "vietnamese_question": "Đây là phần cuối của t Vị trí Số gram trên tấn Trang web 1 Trang web 2 Trang web 3 98. Ai có nhiều khả năng là người nghe nhất?",
+            "answer": "D",
+            "vietnamese_question": "Câu hỏi 98: Người nghe có khả năng nhất là ai?",
             "vietnamese_choices": {
               "A": "Kỹ sư an toàn",
               "B": "Kỹ thuật viên phòng thí nghiệm",
               "C": "Tư vấn pháp luật",
               "D": "Nhà đầu tư kinh doanh"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Business investors</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Đối tượng người nghe là các nhà đầu tư vào dự án khai thác khoáng sản.</span></div>"
           },
           {
             "id": 99,
@@ -3133,7 +3135,7 @@
               "C": "At site 3",
               "D": "At site 4"
             },
-            "answer": "A",
+            "answer": "B",
             "vietnamese_question": "Nhìn vào đồ họa. Mỏ mới sẽ được xây dựng ở đâu?",
             "vietnamese_choices": {
               "A": "Tại địa điểm 1",
@@ -3141,7 +3143,7 @@
               "C": "Tại địa điểm 3",
               "D": "Tại địa điểm 4"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>At site 2</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Khu mỏ mới sẽ được xây dựng tại Địa điểm 2 (Site 2) do có hàm lượng quặng cao nhất (trên 4 gram/tấn).</span></div>"
           },
           {
             "id": 100,
@@ -3161,7 +3163,7 @@
               "C": "Thuê thêm nhân viên",
               "D": "Đang cập nhật hướng dẫn"
             },
-            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong><br><em>(Dữ liệu bài thi đang được cập nhật)</em>"
+            "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Applying for permits</em>).<br><div style='margin-top: 8px; border-left: 3px solid #3b82f6; padding-left: 10px; background: rgba(59, 130, 246, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Phân tích & Dẫn chứng:</strong><br><span style='color: var(--text-main); font-size: 0.95rem;'>Bước tiếp theo của dự án là nộp hồ sơ xin giấy phép khai thác (applying for permits).</span></div>"
           }
         ],
         "transcript": [
@@ -3473,7 +3475,7 @@
           {
             "id": 83,
             "slide_index": 3083,
-            "question": "GO ON TO THE NEXT PAGE ee TEST 2 43 83. 84. 85. What is the purpose of the meeting?",
+            "question": "What is the purpose of the meeting?",
             "choices": {
               "A": "To evaluate vendor contracts",
               "B": "To review hiring policies",
@@ -3481,7 +3483,7 @@
               "D": "To assess editing software"
             },
             "answer": "A",
-            "vietnamese_question": "TIẾP THEO TRANG TIẾP THEO ee BÀI KIỂM TRA 2 43 83. 84. 85. Mục đích của cuộc họp là gì?",
+            "vietnamese_question": "Câu hỏi 83: Mục đích của cuộc họp là gì?",
             "vietnamese_choices": {
               "A": "Để đánh giá hợp đồng nhà cung cấp",
               "B": "Để xem xét chính sách tuyển dụng",
@@ -3761,7 +3763,7 @@
           {
             "id": 95,
             "slide_index": 3095,
-            "question": "Post Office Peach Street Transit TE! Station Cherry Avenue According to the speaker, why was a transit route changed?",
+            "question": "According to the speaker, why was a transit route changed?",
             "choices": {
               "A": "Some stre",
               "B": "Some roads are closed for a bicycle race.",
@@ -3769,7 +3771,7 @@
               "D": "A local politician will be speaking in a park."
             },
             "answer": "A",
-            "vietnamese_question": "Bưu điện Peach Street Transit TE! Station Cherry Avenue Theo diễn giả, tại sao tuyến đường chuyển tuyến lại bị thay đổi?",
+            "vietnamese_question": "Câu hỏi 95: Theo người nói, tại sao tuyến đường trung chuyển lại bị thay đổi?",
             "vietnamese_choices": {
               "A": "Một số căng thẳng",
               "B": "Một số con đường bị đóng cửa để tổ chức cuộc đua xe đạp.",
@@ -3833,7 +3835,7 @@
           {
             "id": 98,
             "slide_index": 3098,
-            "question": "This is the end of tt Workshop (February) | Days Podcasting Mondays Entrepreneurship Tuesdays for Beginners Introduction to Coding _|Wednesdays Accounting for Small Businesses Thursdays 98. Where does the speaker work?",
+            "question": "Where does the speaker work?",
             "choices": {
               "A": "At a restaurant",
               "B": "At a public library",
@@ -3841,7 +3843,7 @@
               "D": "At a hospital"
             },
             "answer": "A",
-            "vietnamese_question": "Đến đây là kết thúc tt Workshop (tháng 2) | Ngày Podcasting Thứ Hai Khởi nghiệp Thứ Ba dành cho người mới bắt đầu Giới thiệu về Viết mã _|Thứ Tư Kế toán cho các doanh nghiệp nhỏ Thứ Năm 98. Diễn giả làm việc ở đâu?",
+            "vietnamese_question": "Câu hỏi 98: Người nói làm việc ở đâu?",
             "vietnamese_choices": {
               "A": "Tại một nhà hàng",
               "B": "Tại một thư viện công cộng",
@@ -4200,7 +4202,7 @@
           {
             "id": 83,
             "slide_index": 3083,
-            "question": "GO ON TO THE NEXT PAGE TEST3 57 83. 84. 85. What industry does the speaker work in?",
+            "question": "What industry does the speaker work in?",
             "choices": {
               "A": "Real estate",
               "B": "Construction",
@@ -4208,7 +4210,7 @@
               "D": "Manufacturing"
             },
             "answer": "A",
-            "vietnamese_question": "TIẾP THEO TRANG TIẾP THEO KIỂM TRA3 57 83. 84. 85. Diễn giả hoạt động trong ngành nào?",
+            "vietnamese_question": "Câu hỏi 83: Người nói làm việc trong ngành nào?",
             "vietnamese_choices": {
               "A": "Bất động sản",
               "B": "Sự thi công",
@@ -4560,7 +4562,7 @@
           {
             "id": 98,
             "slide_index": 3098,
-            "question": "This is the end of tl Green Line Yellow Line Orchard 98. Who most likely is the listener?",
+            "question": "Who most likely is the listener?",
             "choices": {
               "A": "An actor",
               "B": "Aphotographer",
@@ -4568,7 +4570,7 @@
               "D": "An athlete"
             },
             "answer": "A",
-            "vietnamese_question": "Đây là phần cuối của Green Line Yellow Line Orchard 98. Ai có nhiều khả năng là người nghe nhất?",
+            "vietnamese_question": "Câu hỏi 98: Người nghe có khả năng nhất là ai?",
             "vietnamese_choices": {
               "A": "Một diễn viên",
               "B": "Nhiếp ảnh gia",
@@ -4927,7 +4929,7 @@
           {
             "id": 83,
             "slide_index": 3083,
-            "question": "GO ON TO THE NEXT PAGE > TEST4 74 83. 84. 85. What type of business is being advertised?",
+            "question": "What type of business is being advertised?",
             "choices": {
               "A": "An event planning company",
               "B": "A financial advising service",
@@ -4935,7 +4937,7 @@
               "D": "A staffing agency"
             },
             "answer": "A",
-            "vietnamese_question": "ĐẾN TRANG TIẾP THEO > TEST4 74 83. 84. 85. Loại hình kinh doanh nào đang được quảng cáo?",
+            "vietnamese_question": "Câu hỏi 83: Loại hình kinh doanh nào đang được quảng cáo?",
             "vietnamese_choices": {
               "A": "Một công ty tổ chức sự kiện",
               "B": "Một dịch vụ tư vấn tài chính",
@@ -5215,7 +5217,7 @@
           {
             "id": 95,
             "slide_index": 3095,
-            "question": "Tuesday Wednesday Thursday Where are the listeners?",
+            "question": "Where are the listeners?",
             "choices": {
               "A": "Ata farm",
               "B": "At a factory",
@@ -5223,7 +5225,7 @@
               "D": "At a stadium"
             },
             "answer": "A",
-            "vietnamese_question": "Thứ Ba Thứ Tư Thứ Năm Thính giả ở đâu?",
+            "vietnamese_question": "Câu hỏi 95: Người nghe đang ở đâu?",
             "vietnamese_choices": {
               "A": "trang trại ata",
               "B": "Tại một nhà máy",
@@ -5287,7 +5289,7 @@
           {
             "id": 98,
             "slide_index": 3098,
-            "question": "This is the end of t Assignment Organizing the food-serving station Hanging decorations Sandrine | Creating flower arrangements Murat Setting up tables and chairs 98. What type of event is being held tonight?",
+            "question": "What type of event is being held tonight?",
             "choices": {
               "A": "Agrand opening",
               "B": "Acompany anniversary",
@@ -5295,7 +5297,7 @@
               "D": "Awedding celebration"
             },
             "answer": "A",
-            "vietnamese_question": "Đến đây là kết thúc Bài tập Tổ chức quầy phục vụ đồ ăn Treo đồ trang trí Sandrine | Sáng tạo cắm hoa Murat Sắp xếp bàn ghế 98. Tối nay sẽ tổ chức loại sự kiện nào?",
+            "vietnamese_question": "Câu hỏi 98: Sự kiện nào đang được tổ chức tối nay?",
             "vietnamese_choices": {
               "A": "Khai trương",
               "B": "Ngày kỷ niệm công ty",
@@ -5654,7 +5656,7 @@
           {
             "id": 83,
             "slide_index": 3083,
-            "question": "GO ON TO THE NEXT PAGE oe TEST5 85 83. 84. 85. Who is the speaker presenting to?",
+            "question": "Who is the speaker presenting to?",
             "choices": {
               "A": "Loan officers",
               "B": "Construction workers",
@@ -5662,7 +5664,7 @@
               "D": "Bus drivers"
             },
             "answer": "A",
-            "vietnamese_question": "TIẾP THEO TRANG TIẾP THEO oe TEST5 85 83. 84. 85. Người trình bày là ai?",
+            "vietnamese_question": "Câu hỏi 83: Người nói đang thuyết trình cho ai?",
             "vietnamese_choices": {
               "A": "Cán bộ cho vay",
               "B": "Công nhân xây dựng",
@@ -5942,7 +5944,7 @@
           {
             "id": 95,
             "slide_index": 3095,
-            "question": "Fifth Street sam ig || | Library City Hall Museum <1 Rose - | Street Spring Street Where are the listeners?",
+            "question": "Where are the listeners?",
             "choices": {
               "A": "At a bicycle race",
               "B": "At a marathon",
@@ -5950,7 +5952,7 @@
               "D": "At a festival"
             },
             "answer": "A",
-            "vietnamese_question": "Đường số 5 sam ig || | Thư viện Bảo tàng Tòa thị chính <1 Rose - | Phố Phố Xuân Người nghe ở đâu?",
+            "vietnamese_question": "Câu hỏi 95: Người nghe đang ở đâu?",
             "vietnamese_choices": {
               "A": "Tại một cuộc đua xe đạp",
               "B": "Tại một cuộc chạy marathon",
@@ -6014,7 +6016,7 @@
           {
             "id": 98,
             "slide_index": 3098,
-            "question": "This is the end of tl Market Research Stage Chart Stage 1 Analyze Target Population Stage 2 Design Application Stage 3 Develop Application Launch Pilot Software 98. What industry is the mobile app intended for?",
+            "question": "What industry is the mobile app intended for?",
             "choices": {
               "A": "Entertainment",
               "B": "Travel",
@@ -6022,7 +6024,7 @@
               "D": "Finance"
             },
             "answer": "A",
-            "vietnamese_question": "Đây là phần cuối của Sơ đồ giai đoạn nghiên cứu thị trường Giai đoạn 1 Phân tích dân số mục tiêu Giai đoạn 2 Thiết kế ứng dụng Giai đoạn 3 Phát triển ứng dụng Khởi chạy phần mềm thí điểm 98. Ứng dụng di động dành cho ngành nào?",
+            "vietnamese_question": "Câu hỏi 98: Ứng dụng di động được thiết kế cho ngành nào?",
             "vietnamese_choices": {
               "A": "Sự giải trí",
               "B": "Du lịch",

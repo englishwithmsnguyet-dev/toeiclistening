@@ -11499,7 +11499,10 @@ document.addEventListener("DOMContentLoaded", () => {
             imgDiv.style.textAlign = "center";
             imgDiv.style.marginTop = "20px";
             imgDiv.style.marginBottom = "20px";
-            imgDiv.innerHTML = `<img src="data/graphics/part04/${set.image}" alt="Graphic for Set ${set.set_index}" style="max-width: 100%; max-height: 400px; object-fit: contain; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">`;
+            const imgSrc = set.image.startsWith("http") || set.image.startsWith("data/") || set.image.startsWith("media/")
+                ? set.image
+                : `data/graphics/part04/${set.image}`;
+            imgDiv.innerHTML = `<img src="${imgSrc}" alt="Graphic for Set ${set.set_index}" style="max-width: 100%; max-height: 420px; object-fit: contain; border-radius: 10px; border: 1.5px solid var(--border); box-shadow: 0 4px 16px rgba(0,0,0,0.08); background: #ffffff; padding: 6px;">`;
             setWrapper.appendChild(imgDiv);
         }
         
