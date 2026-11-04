@@ -7491,14 +7491,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 .p2-interactive-btn.correct { background: #16a34a; border-color: #15803d; color: white; transform: scale(1.1); box-shadow: 0 0 14px rgba(22, 163, 74, 0.4); }
                 .p2-interactive-btn.incorrect { background: #dc2626; border-color: #b91c1c; color: white; transform: scale(0.95); opacity: 0.85; }
                 
-                .p2-ex-transcript { margin-top: 20px; padding-top: 18px; border-top: 1px dashed #cbd5e1; display: none; }
-                .p2-ex-q-text { font-size: 1.12rem; font-weight: 700; color: #0f172a; margin-bottom: 14px; line-height: 1.6; }
-                .p2-ex-choices { display: flex; flex-direction: column; gap: 8px; }
+                .p2-ex-transcript { margin-top: 20px; padding-top: 18px; border-top: 1.5px dashed #cbd5e1; display: none; width: 100%; text-align: left; }
+                .p2-ex-q-text { font-size: 1.15rem; font-weight: 700; color: #0f172a; margin-bottom: 4px; line-height: 1.5; }
+                .p2-ex-q-vi { font-size: 1rem; color: #2563eb; margin-bottom: 16px; line-height: 1.5; font-style: italic; font-weight: 600; }
+                .p2-ex-choices { display: flex; flex-direction: column; gap: 10px; }
                 .p2-ex-choice-row {
-                    padding: 10px 16px; border-radius: 10px; background: #f8fafc; color: #475569; font-size: 1.05rem;
-                    border: 1px solid #f1f5f9; transition: all 0.2s ease;
+                    padding: 12px 18px; border-radius: 12px; background: #f8fafc; border: 1.5px solid #e2e8f0; transition: all 0.2s ease;
                 }
-                .p2-ex-choice-row.highlight-correct { background: #dcfce7; color: #166534; font-weight: 700; border-color: #86efac; }
+                .p2-ex-choice-row.highlight-correct { background: #ecfdf5 !important; border-color: #86efac !important; box-shadow: 0 2px 10px rgba(16, 185, 129, 0.12); }
+                .p2-ex-choice-en { font-size: 1.05rem; color: #334155; line-height: 1.5; }
+                .p2-ex-choice-row.highlight-correct .p2-ex-choice-en { color: #065f46; font-weight: 700; }
+                .p2-ex-choice-vi { font-size: 0.94rem; color: #64748b; margin-top: 4px; line-height: 1.45; font-style: italic; padding-left: 20px; }
+                .p2-ex-choice-row.highlight-correct .p2-ex-choice-vi { color: #047857; font-weight: 500; }
+                .p2-ex-explanation {
+                    margin-top: 18px; padding: 16px 20px; border-radius: 12px; background: linear-gradient(135deg, #eff6ff 0%, #f0fdf4 100%);
+                    border: 1.5px solid #bfdbfe; color: #1e3a8a; box-shadow: 0 2px 10px rgba(37, 99, 235, 0.05); text-align: left;
+                }
+                .p2-ex-explain-badge { font-size: 0.78rem; font-weight: 800; color: #2563eb; letter-spacing: 0.05em; text-transform: uppercase; margin-bottom: 6px; }
+                .p2-ex-explain-content { font-size: 0.95rem; line-height: 1.6; color: #1e293b; }
             </style>
         `;
         
@@ -7507,13 +7517,24 @@ document.addEventListener("DOMContentLoaded", () => {
             window.checkP2ExampleAnswer = function(exId, selectedKey, correctKey) {
                 const card = document.getElementById(exId);
                 if (!card) return;
+
+                const isCorrect = (selectedKey === correctKey);
+                if (isCorrect) {
+                    if (window.SoundEffects) window.SoundEffects.playCorrect();
+                } else {
+                    if (window.SoundEffects) window.SoundEffects.playWrong();
+                }
+
                 card.querySelectorAll('.p2-interactive-btn').forEach(btn => {
                     btn.style.pointerEvents = 'none';
                     if (btn.id === `btn-${exId}-${correctKey}`) btn.classList.add('correct');
                     else if (btn.id === `btn-${exId}-${selectedKey}` && selectedKey !== correctKey) btn.classList.add('incorrect');
                 });
                 const transcript = card.querySelector('.p2-ex-transcript');
-                if (transcript) transcript.style.display = 'block';
+                if (transcript) {
+                    transcript.style.display = 'block';
+                    transcript.style.animation = 'fadeIn 0.35s ease forwards';
+                }
                 const correctChoice = document.getElementById(`choice-${exId}-${correctKey}`);
                 if (correctChoice) correctChoice.classList.add('highlight-correct');
             };
@@ -7630,6 +7651,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     const exId = `p2-ex-${section.id}-${exCounter}`;
                     const correctAns = item.answer || 'B';
                     
+                    const trans = (window.part02ExamplesTranslations && window.part02ExamplesTranslations[item.slide_index]) || {};
+                    const qVi = item.vietnamese_question || trans.q_vi || '';
+                    const choicesVi = item.vietnamese_choices || trans.choices_vi || {};
+                    const explain = item.explanation || trans.explain || '';
+                    
                     const audioHtml = item.audio ? `
                         <div class="p2-audio-player">
                             <audio id="audio-${exId}" src="${item.audio}" preload="none"></audio>
@@ -7646,13 +7672,27 @@ document.addEventListener("DOMContentLoaded", () => {
                         ['A', 'B', 'C'].forEach(key => {
                             if (item.choices[key]) {
                                 interactiveButtons += `<button class="p2-interactive-btn" id="btn-${exId}-${key}" onclick="window.checkP2ExampleAnswer('${exId}', '${key}', '${correctAns}')">${key}</button>`;
-                                choicesHtml += `<div class="p2-ex-choice-row" id="choice-${exId}-${key}"><strong>(${key})</strong> ${item.choices[key]}</div>`;
+                                const viChoiceText = choicesVi[key] ? `<div class="p2-ex-choice-vi"><em>${choicesVi[key]}</em></div>` : '';
+                                choicesHtml += `
+                                    <div class="p2-ex-choice-row" id="choice-${exId}-${key}">
+                                        <div class="p2-ex-choice-en"><strong>(${key})</strong> ${item.choices[key]}</div>
+                                        ${viChoiceText}
+                                    </div>
+                                `;
                             }
                         });
                     }
                     interactiveButtons += '</div>';
                     choicesHtml += '</div>';
                     
+                    const qViHtml = qVi ? `<div class="p2-ex-q-vi">🇻🇳 <em>${qVi}</em></div>` : '';
+                    const explainHtml = explain ? `
+                        <div class="p2-ex-explanation">
+                            <div class="p2-ex-explain-badge">💡 GIẢI THÍCH CHI TIẾT & BẪY CẦN TRÁNH</div>
+                            <div class="p2-ex-explain-content">${explain}</div>
+                        </div>
+                    ` : '';
+
                     html += `
                         <div class="p2-ex-card" id="${exId}">
                             <div class="p2-ex-badge">VÍ DỤ THỰC HÀNH ${exCounter}</div>
@@ -7660,7 +7700,9 @@ document.addEventListener("DOMContentLoaded", () => {
                             ${interactiveButtons}
                             <div class="p2-ex-transcript" id="transcript-${exId}">
                                 <div class="p2-ex-q-text"><strong>Câu hỏi:</strong> ${(item.question || '').replace(/^EXAMPLE \d+:\s*/i, '')}</div>
+                                ${qViHtml}
                                 ${choicesHtml}
+                                ${explainHtml}
                             </div>
                         </div>
                     `;
