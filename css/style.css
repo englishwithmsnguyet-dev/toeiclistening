@@ -62,7 +62,17 @@ body.light-mode {
     box-sizing: border-box;
     font-family: var(--font-family) !important;
     font-weight: 300;
-    border-radius: 0px !important; /* Satisfies user request: NO ROUNDED CORNERS */
+}
+
+/* Protected Rounded Components: Avatars, Badges, Status Dots, Garden */
+.sidebar-avatar-wrap img,
+.login-teacher-avatar,
+.login-teacher-halo,
+.profile-avatar,
+.status-dot,
+span[style*="border-radius: 50%"],
+img[style*="border-radius: 50%"] {
+    border-radius: 50% !important;
 }
 
 strong, b, h1, h2, h3, h4, h5, h6, .reveal-header, .reveal-header span, .question-text, .question-text * {
@@ -2735,3 +2745,32 @@ body:not(.light-mode) .tb-tf-feedback-wrong {
 
 
 
+
+/* Brand header contrast fix */
+.sidebar-header .sidebar-brand-box {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+}
+.sidebar-brand-title {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--text-main);
+    white-space: nowrap;
+}
+.sidebar-brand-sub {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--color-purple);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+body.light-mode .sidebar-brand-title {
+    color: #1e293b !important;
+}
+body.light-mode .sidebar-brand-sub {
+    color: #4f46e5 !important;
+}
