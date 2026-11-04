@@ -4,71 +4,116 @@ window.SoundEffects = {
 
     init() {
         if (!this.audioCtx) {
-            this.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            const AudioCtx = window.AudioContext || window.webkitAudioContext;
+            if (AudioCtx) {
+                this.audioCtx = new AudioCtx();
+            }
+        }
+    },
+
+    unlock() {
+        this.init();
+        if (this.audioCtx && this.audioCtx.state === 'suspended') {
+            this.audioCtx.resume().catch(() => {});
+        }
+    },
+
+    withActiveContext(fn) {
+        try {
+            this.init();
+            if (!this.audioCtx) return;
+            if (this.audioCtx.state === 'suspended') {
+                this.audioCtx.resume().then(() => {
+                    fn(this.audioCtx);
+                }).catch(() => {
+                    fn(this.audioCtx);
+                });
+            } else {
+                fn(this.audioCtx);
+            }
+        } catch(e) {
+            console.log("SFX error:", e);
         }
     },
 
     playCorrect() {
-        try {
-            this.init();
-            if (this.audioCtx.state === 'suspended') {
-                this.audioCtx.resume();
-            }
-            const now = this.audioCtx.currentTime;
-            const osc1 = this.audioCtx.createOscillator();
-            const gain1 = this.audioCtx.createGain();
-            osc1.type = 'sine';
-            osc1.frequency.setValueAtTime(523.25, now); // C5
-            gain1.gain.setValueAtTime(0, now);
-            gain1.gain.linearRampToValueAtTime(0.18, now + 0.05);
-            gain1.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
-            osc1.connect(gain1);
-            gain1.connect(this.audioCtx.destination);
-
-            const osc2 = this.audioCtx.createOscillator();
-            const gain2 = this.audioCtx.createGain();
-            osc2.type = 'sine';
-            osc2.frequency.setValueAtTime(659.25, now + 0.08); // E5
-            gain2.gain.setValueAtTime(0, now + 0.08);
-            gain2.gain.linearRampToValueAtTime(0.18, now + 0.12);
-            gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.45);
-            osc2.connect(gain2);
-            gain2.connect(this.audioCtx.destination);
-
-            osc1.start(now);
-            osc1.stop(now + 0.3);
-            osc2.start(now + 0.08);
-            osc2.stop(now + 0.45);
-        } catch (e) {
-            console.log("SFX playCorrect error:", e);
-        }
+        this.withActiveContext(ctx => {
+            const now = ctx.currentTime;
+            
+            // Bright cheerful major triad arpeggio: C5 (523Hz) -> E5 (659Hz) -> G5 (784Hz) -> C6 (1046Hz)
+            const notes = [
+                { freq: 523.25, time: now + 0.00, dur: 0.12 },
+                { freq: 659.25, time: now + 0.07, dur: 0.14 },
+                { freq: 783.99, time: now + 0.14, dur: 0.16 },
+                { freq: 1046.50, time: now + 0.21, dur: 0.38 }
+            ];
+            
+            notes.forEach(n => {
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                
+                osc.type = 'triangle';
+                osc.frequency.setValueAtTime(n.freq, n.time);
+                
+                gain.gain.setValueAtTime(0, n.time);
+                gain.gain.linearRampToValueAtTime(0.32, n.time + 0.02);
+                gain.gain.exponentialRampToValueAtTime(0.0001, n.time + n.dur);
+                
+                osc.connect(gain);
+                gain.connect(ctx.destination);
+                
+                osc.start(n.time);
+                osc.stop(n.time + n.dur + 0.05);
+            });
+        });
     },
 
     playWrong() {
-        try {
-            this.init();
-            if (this.audioCtx.state === 'suspended') {
-                this.audioCtx.resume();
-            }
-            const now = this.audioCtx.currentTime;
-            const osc = this.audioCtx.createOscillator();
-            const gain = this.audioCtx.createGain();
-            osc.type = 'triangle';
-            osc.frequency.setValueAtTime(160, now);
-            osc.frequency.linearRampToValueAtTime(90, now + 0.25);
-            gain.gain.setValueAtTime(0, now);
-            gain.gain.linearRampToValueAtTime(0.2, now + 0.04);
-            gain.gain.exponentialRampToValueAtTime(0.001, now + 0.3);
-            osc.connect(gain);
-            gain.connect(this.audioCtx.destination);
-            osc.start(now);
-            osc.stop(now + 0.3);
-        } catch (e) {
-            console.log("SFX playWrong error:", e);
-        }
+        this.withActiveContext(ctx => {
+            const now = ctx.currentTime;
+            
+            // Soft two-tone low buzzer: 210Hz -> 135Hz then 170Hz -> 100Hz
+            const beeps = [
+                { startFreq: 210, endFreq: 135, time: now + 0.00, dur: 0.14 },
+                { startFreq: 170, endFreq: 100, time: now + 0.16, dur: 0.22 }
+            ];
+            
+            beeps.forEach(b => {
+                const osc = ctx.createOscillator();
+                const gain = ctx.createGain();
+                const filter = ctx.createBiquadFilter();
+                
+                osc.type = 'sawtooth';
+                filter.type = 'lowpass';
+                filter.frequency.setValueAtTime(450, b.time);
+                
+                osc.frequency.setValueAtTime(b.startFreq, b.time);
+                osc.frequency.exponentialRampToValueAtTime(b.endFreq, b.time + b.dur);
+                
+                gain.gain.setValueAtTime(0, b.time);
+                gain.gain.linearRampToValueAtTime(0.28, b.time + 0.02);
+                gain.gain.exponentialRampToValueAtTime(0.0001, b.time + b.dur);
+                
+                osc.connect(filter);
+                filter.connect(gain);
+                gain.connect(ctx.destination);
+                
+                osc.start(b.time);
+                osc.stop(b.time + b.dur + 0.05);
+            });
+        });
     }
 };
 var SoundEffects = window.SoundEffects;
+
+// Unlock audio context on user interaction
+if (typeof document !== 'undefined') {
+    ['click', 'touchstart', 'keydown'].forEach(evt => {
+        document.addEventListener(evt, () => {
+            if (window.SoundEffects) window.SoundEffects.unlock();
+        }, { once: true, passive: true });
+    });
+}
 
 
 
@@ -6831,9 +6876,14 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.removeItem(tempKey);
         } catch(e) {}
 
-        // Launch celebratory confetti if score >= 18
-        if (correctCount >= 18 && window.launchConfetti) {
-            window.launchConfetti();
+        // Sound effect and celebratory confetti
+        if (correctCount >= 18) {
+            if (window.SoundEffects) window.SoundEffects.playCorrect();
+            if (window.launchConfetti) window.launchConfetti();
+        } else if (correctCount >= 13) {
+            if (window.SoundEffects) window.SoundEffects.playCorrect();
+        } else {
+            if (window.SoundEffects) window.SoundEffects.playWrong();
         }
 
         // Refresh sidebar badge
@@ -8279,6 +8329,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 const card = document.getElementById(`p1-test-card-${globalQId}`);
                 if (!card) return;
                 
+                const isCorrect = (selectedKey === correctKey);
+                if (isCorrect) {
+                    if (window.SoundEffects) window.SoundEffects.playCorrect();
+                } else {
+                    if (window.SoundEffects) window.SoundEffects.playWrong();
+                }
+
                 const btns = card.querySelectorAll('.p1-interactive-btn');
                 btns.forEach(btn => {
                     btn.style.pointerEvents = 'none';
