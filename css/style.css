@@ -1846,11 +1846,107 @@ body.light-mode .choice-option.selected .choice-radio-circle::after {
     animation: fade-in 0.3s ease forwards;
 }
 
+/* Harmonious Transcript & Explanation Typography */
+.explanation-box {
+    margin-bottom: 20px;
+    padding: 16px 20px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-left: 4px solid var(--color-blue);
+    background: rgba(59, 130, 246, 0.03);
+    border-radius: 8px;
+    font-size: 0.98rem;
+    line-height: 1.65;
+}
+
+body.light-mode .explanation-box {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-left: 4px solid #2563eb;
+}
+
+.explanation-box h5 {
+    color: var(--color-blue);
+    margin: 0 0 10px 0;
+    font-size: 0.98rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+}
+
+body.light-mode .explanation-box h5 {
+    color: #1d4ed8;
+}
+
+.explanation-body,
+.explanation-box p,
+.explanation-box span,
+.explanation-box div {
+    font-size: 0.98rem !important;
+    line-height: 1.65 !important;
+}
+
+.explanation-box p {
+    color: var(--text-main) !important;
+    margin-top: 10px !important;
+    margin-bottom: 0 !important;
+}
+
+body.light-mode .explanation-box p {
+    color: #1e293b !important;
+}
+
+.explanation-box strong {
+    font-weight: 700 !important;
+}
+
+.reveal-content h4 {
+    margin: 22px 0 14px 0 !important;
+    font-size: 0.98rem !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    color: var(--color-purple) !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 8px;
+    letter-spacing: 0.02em;
+}
+
+body.light-mode .reveal-content h4 {
+    color: #7c3aed !important;
+    border-bottom-color: #e2e8f0;
+}
+
 .transcript-line {
-    font-size: 1rem;
-    line-height: 1.7;
-    margin-bottom: 12px;
+    font-size: 0.98rem !important;
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+    margin: 0 !important;
     color: var(--text-main);
+}
+
+body.light-mode .transcript-line {
+    color: #1e293b !important;
+}
+
+.transcript-line strong {
+    font-weight: 700 !important;
+}
+
+.line-trans-text {
+    font-size: 0.94rem !important;
+    font-style: italic;
+    line-height: 1.55 !important;
+    margin-top: 6px !important;
+    color: var(--text-muted) !important;
+    border-left: 2px solid var(--border) !important;
+    padding-left: 10px !important;
+}
+
+body.light-mode .line-trans-text {
+    color: #475569 !important;
+    border-left-color: #cbd5e1 !important;
 }
 
 /* --- E. TOPIC 3-QUESTION SETS --- */
