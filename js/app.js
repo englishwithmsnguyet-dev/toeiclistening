@@ -2507,11 +2507,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 // 2. Glued note from question
-                const gluedNote = text.match(/^(.*?)(<strong>\s*(?:Chú ý|Lưu ý|CHÚ Ý|LƯU Ý).*)$/i);
+                const gluedNote = text.match(/^(.*?)(?:(?<=\S)\s+|(?:<br\s*\/?>)+)((?:💡\s*|⚠️\s*)?<strong>\s*(?:Chú ý|Lưu ý|CHÚ Ý|LƯU Ý).*)$/i);
                 if (gluedNote) {
-                    cleanAndSplitTheoryLines([gluedNote[1]]).forEach(x => lines.push(x));
-                    lines.push(gluedNote[2]);
-                    return;
+                    const prefixText = gluedNote[1].replace(/<[^>]*>/g, '').replace(/^[💡⚠️•o◦\-\*\s]+/u, '').trim();
+                    if (prefixText.length > 0) {
+                        cleanAndSplitTheoryLines([gluedNote[1]]).forEach(x => lines.push(x));
+                        lines.push(gluedNote[2]);
+                        return;
+                    }
                 }
 
                 // 3. Normalize tabs
@@ -2590,14 +2593,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     cleanLine.includes("<strong>Chú ý:") || cleanLine.includes("<strong>Lưu ý:");
 
                 if (isCallout) {
+                    const bodyContent = cleanLine.replace(/^(?:💡|⚠️)\s*/u, "").trim();
+                    if (!bodyContent.replace(/<[^>]*>/g, "").trim()) return;
+
                     let icon = "💡";
-                    if (/^(?:⚠️|CHÚ Ý|Chú ý)/i.test(rawText) || cleanLine.includes("Chú ý")) {
+                    if (/^⚠️/u.test(rawText)) {
+                        icon = "⚠️";
+                    } else if (/^💡/u.test(rawText)) {
+                        icon = "💡";
+                    } else if (/^(?:CHÚ Ý|Chú ý)/i.test(rawText) || cleanLine.includes("Chú ý")) {
                         icon = "⚠️";
                     }
                     docHtml += `
                         <div class="theory-callout-card">
                             <span class="callout-icon">${icon}</span>
-                            <div class="callout-body">${cleanLine}</div>
+                            <div class="callout-body">${bodyContent}</div>
                         </div>
                     `;
                     return;
@@ -10534,11 +10544,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
 
                 // 2. Glued note from question
-                const gluedNote = text.match(/^(.*?)(<strong>\s*(?:Chú ý|Lưu ý|CHÚ Ý|LƯU Ý).*)$/i);
+                const gluedNote = text.match(/^(.*?)(?:(?<=\S)\s+|(?:<br\s*\/?>)+)((?:💡\s*|⚠️\s*)?<strong>\s*(?:Chú ý|Lưu ý|CHÚ Ý|LƯU Ý).*)$/i);
                 if (gluedNote) {
-                    cleanAndSplitTheoryLines([gluedNote[1]]).forEach(x => lines.push(x));
-                    lines.push(gluedNote[2]);
-                    return;
+                    const prefixText = gluedNote[1].replace(/<[^>]*>/g, '').replace(/^[💡⚠️•o◦\-\*\s]+/u, '').trim();
+                    if (prefixText.length > 0) {
+                        cleanAndSplitTheoryLines([gluedNote[1]]).forEach(x => lines.push(x));
+                        lines.push(gluedNote[2]);
+                        return;
+                    }
                 }
 
                 // 3. Normalize tabs
@@ -10617,14 +10630,21 @@ document.addEventListener("DOMContentLoaded", () => {
                     cleanLine.includes("<strong>Chú ý:") || cleanLine.includes("<strong>Lưu ý:");
 
                 if (isCallout) {
+                    const bodyContent = cleanLine.replace(/^(?:💡|⚠️)\s*/u, "").trim();
+                    if (!bodyContent.replace(/<[^>]*>/g, "").trim()) return;
+
                     let icon = "💡";
-                    if (/^(?:⚠️|CHÚ Ý|Chú ý)/i.test(rawText) || cleanLine.includes("Chú ý")) {
+                    if (/^⚠️/u.test(rawText)) {
+                        icon = "⚠️";
+                    } else if (/^💡/u.test(rawText)) {
+                        icon = "💡";
+                    } else if (/^(?:CHÚ Ý|Chú ý)/i.test(rawText) || cleanLine.includes("Chú ý")) {
                         icon = "⚠️";
                     }
                     docHtml += `
                         <div class="theory-callout-card">
                             <span class="callout-icon">${icon}</span>
-                            <div class="callout-body">${cleanLine}</div>
+                            <div class="callout-body">${bodyContent}</div>
                         </div>
                     `;
                     return;
