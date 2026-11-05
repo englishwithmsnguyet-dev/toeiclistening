@@ -1277,6 +1277,111 @@ body.light-mode .theory-bullet.example-bullet::before {
     color: #6366f1;
 }
 
+/* Purpose Clues Group Cards (Dấu hiệu nhận biết mục đích) */
+.purpose-group-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    padding: 18px 22px;
+    margin: 18px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+body.light-mode .purpose-group-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+body:not(.light-mode) .purpose-group-card {
+    background: rgba(23, 20, 48, 0.7);
+    border-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.purpose-group-card.border-blue { border-left: 5px solid #0284c7; }
+.purpose-group-card.border-purple { border-left: 5px solid #8b5cf6; }
+.purpose-group-card.border-teal { border-left: 5px solid #10b981; }
+.purpose-group-card.border-amber { border-left: 5px solid #f59e0b; }
+
+.purpose-group-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: 14px;
+}
+
+body.light-mode .purpose-group-header {
+    color: #0f172a;
+}
+
+.purpose-group-header .header-icon {
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.purpose-items-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.purpose-item-pill {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 10px 16px;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+}
+
+body.light-mode .purpose-item-pill {
+    background: #f1f5f9;
+    border-color: #e2e8f0;
+}
+
+body:not(.light-mode) .purpose-item-pill {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.purpose-item-pill .pill-bullet {
+    color: #6366f1;
+    font-size: 1.3rem;
+    line-height: 1;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.purpose-item-pill .pill-en {
+    font-weight: 700;
+    font-style: italic;
+    color: #0f172a;
+}
+
+body:not(.light-mode) .purpose-item-pill .pill-en {
+    color: #f8fafc;
+}
+
+.purpose-item-pill .pill-vi {
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2px;
+}
+
+body:not(.light-mode) .purpose-item-pill .pill-vi {
+    color: #94a3b8;
+}
+
 /* Theme-aware Vocabulary Styles with high contrast */
 .vocab-term {
     color: var(--color-cyan);

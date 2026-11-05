@@ -2661,6 +2661,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     return;
                 }
 
+                // Custom block element check (e.g. styled cards, tables)
+                if (cleanLine.startsWith("<div") || cleanLine.startsWith("<table")) {
+                    docHtml += cleanLine;
+                    return;
+                }
+
                 // 5. Default paragraph
                 docHtml += `
                     <p class="theory-para">
@@ -10695,6 +10701,12 @@ document.addEventListener("DOMContentLoaded", () => {
                             ${cleanLine}
                         </h4>
                     `;
+                    return;
+                }
+
+                // Custom block element check (e.g. styled cards, tables)
+                if (cleanLine.startsWith("<div") || cleanLine.startsWith("<table")) {
+                    docHtml += cleanLine;
                     return;
                 }
 
