@@ -1549,9 +1549,9 @@ window.part03Data = [
         },
         "vietnamese_transcript": [
           "M: Này Sunisa. Chúng ta sắp phải xuất phát để phục vụ tiệc cho sự kiện tại Quỹ Y tế Kimball, nhưng lại không đủ cốc. Cô có biết lấy thêm cốc ở đâu không?",
-          "W: Ôi không. Tôi đã đặt mua thêm từ nhà cung cấp hai ngày trước nhưng họ vẫn chưa giao.",
+          "W: Ôi không. Tôi đã đặt mua thêm từ nhà cung cấp hai ngày trước nhưng họ vẫn chưa giao. Đây không phải là lần đầu tiên chuyện này xảy ra.",
           "M: Chúng ta phải bắt đầu bày bàn tiệc tại Kimball Medical lúc 9h30, vậy cô tính sao? Tôi không kịp ghé cửa hàng dọc đường đâu.",
-          "W: Được rồi, tôi sẽ hỗ trợ. Tôi sẽ đi mua thêm rồi mang đến cho mọi người."
+          "W: Được rồi, tôi sẽ hỗ trợ. Tôi sẽ đi mua thêm rồi mang đến cho mọi người. — Cảm ơn cô. Tôi sẽ nhắn tin cho cô khi chúng tôi đến nơi để cô biết chỗ tìm chúng tôi."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Tại công ty dịch vụ ăn uống tiệc</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"We're about to leave to cater the event at Kimball Medical Foundation, but there aren't enough cups.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Chúng ta sắp xuất phát để phục vụ tiệc cho sự kiện tại Quỹ Y tế Kimball, nhưng lại không đủ cốc.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Động từ 'cater the event' (phục vụ tiệc ăn uống cho sự kiện) và việc chuẩn bị cốc chén, bày bàn tiệc cho thấy họ làm việc tại một công ty tiệc lưu động (At a catering company).</p>"
       },
@@ -1686,7 +1686,8 @@ window.part03Data = [
           "W: Chào Jorge, công tác chuẩn bị cho buổi triển lãm điêu khắc mới đến đâu rồi?",
           "M: Thật ra chúng ta hơi bị chậm tiến độ... Bảo tàng Nghệ thuật Tạo hình đang cho chúng ta mượn vài bức tượng, nhưng chuyến hàng đang bị chậm trễ.",
           "W: Ôi không, tôi có thể giúp gì không? Phần còn lại của các bức tượng sẽ đến vào chiều nay, và đây là danh sách những việc còn lại cần làm.",
-          "M: Hay là cô giúp hoàn thiện việc bố trí các tác phẩm cuối cùng, còn tôi sẽ tải ảnh khu trưng bày lên trang web nhé?"
+          "M: Hay là cô giúp hoàn thiện việc bố trí các tác phẩm cuối cùng, còn tôi sẽ tải ảnh khu trưng bày lên trang web nhé?",
+          "W: Tuyệt quá - cảm ơn anh!"
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tại viện bảo tàng</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"sculpture exhibit... the Museum of Plastic Arts is loaning us several sculptures... completed displays\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"triển lãm điêu khắc... Bảo tàng Nghệ thuật Tạo hình cho mượn tượng... khu trưng bày\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Các từ khóa 'sculpture exhibit' (triển lãm điêu khắc), 'Museum' (bảo tàng), 'completed displays' (khu trưng bày) cho thấy sự việc diễn ra tại bảo tàng (At a museum).</p>"
       }
@@ -2230,7 +2231,7 @@ window.part03Data = [
         },
         "vietnamese_transcript": [
           "W: Cảm ơn ông đã đồng ý gặp tôi cho buổi phỏng vấn này. Độc giả của Tạp chí Auto World rất háo hức muốn nghe về kế hoạch xây nhà máy sản xuất ô tô mới của công ty ông.",
-          "M: Vâng, chúng tôi sẽ sớm mở một cơ sở tại Indonesia..."
+          "M: Vâng, chúng tôi sẽ sớm mở một cơ sở tại Indonesia. Hiện tại chúng tôi có hai nhà máy trong nước, nên rất mong được mở rộng năng lực sản xuất ra nước ngoài."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Nhà báo</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Thank you for agreeing to meet me for this interview. The readers of Auto World Magazine are eager to hear...\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Cảm ơn ông đã đồng ý gặp tôi cho buổi phỏng vấn này. Độc giả của Tạp chí Auto World rất háo hức...\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ thực hiện phỏng vấn cho độc giả của tạp chí ô tô ('readers of Auto World Magazine'), nên cô ấy là một nhà báo (A journalist).</p>"
       },
@@ -2314,7 +2315,7 @@ window.part03Data = [
         },
         "vietnamese_transcript": [
           "M: Đồ thể thao Crocker xin nghe, tôi có thể giúp gì cho quý khách?",
-          "W: Xin chào, tôi muốn đổi địa chỉ giao hàng của một kiện hàng tôi đã đặt trên trang web của bên anh. Kiện hàng đang gửi tới nhà mới ở Chicago, nhưng ngày chuyển nhà bị hoãn..."
+          "W: Xin chào, tôi muốn đổi địa chỉ giao hàng của một kiện hàng tôi đã đặt trên trang web của bên anh. Kiện hàng đang được gửi tới nhà mới của tôi ở Chicago, nhưng ngày chuyển vào ở bị hoãn nên tôi sẽ chưa có mặt ở đó. Liệu kiện hàng có thể được gửi tới địa chỉ hiện tại của tôi thay thế không?"
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Đại diện chăm sóc khách hàng</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Crocker Sporting Goods, how may I help you?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Đồ thể thao Crocker xin nghe, tôi có thể giúp gì cho quý khách?\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Cách chào tiêu chuẩn của doanh nghiệp và tiếp nhận yêu cầu thay đổi địa chỉ đơn hàng của khách cho thấy người đàn ông là nhân viên chăm sóc khách hàng (A customer service representative).</p>"
       },
@@ -2482,7 +2483,7 @@ window.part03Data = [
         },
         "vietnamese_transcript": [
           "W: Ông Potter phải không ạ? Tôi là Aki Kimura. Tôi quản lý Khu chung cư Pine Street, và tôi gọi để xem liệu ông đã quyết định thuê căn hộ tôi đã dẫn ông đi xem tuần trước chưa.",
-          "M: Thật ra tôi vẫn đang cân nhắc. Tôi rất thích căn bếp mới cải tạo và nó cũng gần chỗ làm. Nhưng căn hộ hơi nhỏ so với số đồ đạc của tôi..."
+          "M: Thật ra tôi vẫn đang cân nhắc. Tôi rất thích căn bếp mới cải tạo và nó cũng gần chỗ làm. Nhưng căn hộ không rộng lắm. Tôi có rất nhiều đồ nội thất và không nghĩ tất cả sẽ xếp vừa trong căn hộ đó."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Quản lý tòa nhà chung cư</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I manage the Pine Street Apartments, and I'm calling to see whether you've made a decision about renting the unit...\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi quản lý Chung cư Pine Street, và gọi để xem ông đã quyết định thuê căn hộ tôi dẫn đi xem chưa...\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ tự giới thiệu: 'I manage the Pine Street Apartments' và hỏi về việc thuê căn hộ ('renting the unit'), nên cô là người quản lý chung cư (An apartment manager).</p>"
       }
@@ -2810,9 +2811,10 @@ window.part03Data = [
           "D": "Một viên pin không sạc được."
         },
         "vietnamese_transcript": [
-          "M1: Chào buổi sáng mọi người, tôi lên lịch cuộc gọi này để bàn về chiến dịch quảng cáo khách sạn Denson. Holly sẽ chia sẻ ý tưởng sơ bộ và Carter đang tham gia qua video call từ văn phòng Tokyo. Carter, anh có đó không?",
-          "M2 (Carter): Chào mọi người, tôi đây.",
-          "W: Được rồi, tôi đã lên ý tưởng cho quảng cáo...",
+          "M1: Chào buổi sáng mọi người, tôi lên lịch cuộc gọi hội nghị này để bàn về chiến dịch quảng cáo mà chúng ta đang phát triển cho Khách sạn Denson - cụ thể hơn là quảng cáo truyền hình. Holly sẽ chia sẻ một số ý tưởng sơ bộ cho việc đó. Và Carter đang tham gia qua cuộc gọi video từ văn phòng Tokyo. Carter, anh có ở đó không?",
+          "M2 (Carter): Xin chào. Vâng, tôi đang ở đây.",
+          "M1: Tuyệt vời. Holly, cô có thể bắt đầu được rồi.",
+          "W: Được rồi, tôi đã lên ý tưởng cho đoạn quảng cáo - mọi người biết đấy, ý tưởng chủ đạo, bối cảnh, và-",
           "M2 (Carter): Mọi người ơi, Carter đây. Xin lỗi vì cắt ngang nhưng âm thanh bỗng nhiên mất tiếng rồi. Có ai vừa nói gì không?"
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Một micro hoạt động không bình thường.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Sorry to interrupt, but the audio suddenly went quiet. Were you saying something?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Xin lỗi vì ngắt lời nhưng âm thanh bỗng nhiên im bặt rồi. Mọi người có nói gì không?\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Carter tham gia cuộc họp video call và thông báo 'the audio suddenly went quiet' (âm thanh đột nhiên mất tiếng), chứng tỏ micro/thiết bị thu âm thanh hoạt động không tốt (A microphone is not functioning properly).</p>"
@@ -2871,7 +2873,7 @@ window.part03Data = [
         "vietnamese_transcript": [
           "W: Chào Jun-Young, tôi là Sandra. Tôi muốn báo là dù tôi đã có số liệu thô để làm báo cáo doanh số quý, nhưng tôi đang gặp vấn đề với phần mềm.",
           "M: Vấn đề gì vậy? Bộ phận Kế toán chúng tôi cần nhận báo cáo đó vào chiều nay.",
-          "W: Chúng ta dùng phần mềm bảo mật để lập báo cáo, nhưng... mật khẩu của tôi không hoạt động. Tôi bị khóa hoàn toàn khỏi hệ thống."
+          "W: Chúng ta dùng phần mềm bảo mật để lập báo cáo, nhưng... mật khẩu của tôi không hoạt động. Tôi bị khóa hoàn toàn khỏi hệ thống. Sự cố này có thể làm chậm việc gửi báo cáo cho anh."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Mật khẩu không hoạt động.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"my password isn't working. I'm completely locked out of the system.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"mật khẩu của tôi không hoạt động. Tôi bị khóa hoàn toàn khỏi hệ thống.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ nói rõ 'my password isn't working' (mật khẩu của tôi không hoạt động), khớp chính xác với đáp án A.</p>"
       },
@@ -2957,7 +2959,8 @@ window.part03Data = [
           "D": "Bỏ lỡ một cuộc điện thoại"
         },
         "vietnamese_transcript": [
-          "M: Này Sue. Hector và tôi định đi ăn trưa ở Nhà hàng Antonio. Cô có muốn đi cùng không? Mọi người trong văn phòng cũng đi nữa, đây là dịp tốt để giao lưu với đồng nghiệp mới.",
+          "M: Chào Sue. Hector và tôi định đi ăn trưa ở Nhà hàng Antonio. Cô có muốn đi cùng chúng tôi không?",
+          "W: Một vài người khác trong văn phòng cũng đi cùng nữa. Đây sẽ là cơ hội tốt để cô giao lưu với các đồng nghiệp mới.",
           "W: Cảm ơn đã rủ tôi, nhưng đi ăn trưa ở đó có hơi xa không? Chúng ta sẽ mất 20 phút chỉ để đi đến đó, như vậy thì không có đủ thời gian để ăn đâu."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Không có đủ thời gian</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"It would take us twenty minutes just to get there, so we wouldn't have enough time to eat.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Mất 20 phút chỉ để đi đến đó, như vậy chúng ta sẽ không có đủ thời gian ăn.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ từ chối vì lo sợ 'wouldn't have enough time to eat' (không đủ thời gian để ăn), ứng với 'Not having enough time'.</p>"
@@ -3172,9 +3175,11 @@ window.part03Data = [
           "D": "Anh ấy phải luyện tập bài thuyết trình."
         },
         "vietnamese_transcript": [
-          "M: Chào Monica, tôi muốn báo là tôi chuẩn bị khởi hành đi hội chợ thương mại đây.",
-          "W: Tốt rồi. Để tôi giúp anh chuyển hàng mẫu lên xe. Nhưng anh không đi ngay bây giờ đấy chứ? Tôi tưởng hội chợ 3 giờ mới bắt đầu cơ mà?",
-          "M: Đúng vậy. Nhưng tôi sợ giao thông trên đường cao tốc sẽ tắc nghẽn nghiêm trọng, nên tôi muốn đi sớm trừ hao thời gian."
+          "M: Chào Monica, tôi chỉ muốn báo cho cô biết là tôi chuẩn bị khởi hành đi hội chợ thương mại đây.",
+          "W: Tốt rồi. Để tôi giúp anh chuyển hàng mẫu lên xe nhé.",
+          "M: Chỉ có một túi nhỏ thôi mà.",
+          "W: Ồ, vậy à. Nhưng anh không định đi ngay bây giờ đấy chứ? Tôi tưởng hội chợ 3 giờ mới bắt đầu cơ mà.",
+          "M: Đúng vậy. Nhưng tôi sợ giao thông trên đường cao tốc sẽ tắc nghẽn nghiêm trọng, nên tôi muốn đi sớm để trừ hao thời gian."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Anh ấy lo ngại về tình hình giao thông tắc đường.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"But I worry that the traffic on the highway will be really bad, so I thought I'd give myself extra time.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Nhưng tôi lo giao thông trên cao tốc sẽ rất tệ, nên tôi nghĩ mình nên đi sớm trừ hao.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người đàn ông giải thích lý do đi sớm là vì lo tắc đường trên cao tốc ('worry that the traffic... will be really bad'), chọn đáp án C (He is worried about traffic).</p>"
       },
@@ -3202,7 +3207,7 @@ window.part03Data = [
         },
         "vietnamese_transcript": [
           "W: Xin chào, tôi là kỹ thuật viên từ Dịch vụ Điện Tilson. Xin lỗi tôi đến muộn. Tôi không tìm được chỗ đỗ xe gần đây nên phải đỗ xe cách đây vài dãy nhà. Anh là chủ cơ sở kinh doanh này phải không?",
-          "M: Vâng, tôi mong cô không phải đi bộ quá xa. Tôi gọi cô vì đèn trong phòng này không hoạt động..."
+          "M: Vâng, tôi mong cô không phải đi bộ quá xa. Tôi gọi cô vì đèn trong phòng này không hoạt động. Đáng lẽ đèn phải tự động bật sáng khi có người bước vào phòng."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Cô ấy phải đỗ xe ở xa.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I couldn't find a parking space nearby, so I had to park my car several blocks from here.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi không tìm được chỗ đỗ xe gần đây nên phải đỗ xe cách xa vài dãy nhà.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ xin lỗi vì đến muộn do phải đỗ xe cách xa vài dãy phố ('park my car several blocks from here'), tương đương với 'She had to park far away'.</p>"
       },
@@ -3233,10 +3238,12 @@ window.part03Data = [
           "D": "Anh ấy muốn tham quan trung tâm thể hình."
         },
         "vietnamese_transcript": [
-          "M: Xin chào, tôi muốn hỏi về việc đăng ký làm thành viên phòng tập của bên bạn. Tôi là tiếp viên hàng không và mới nhận đường bay đến và đi từ thành phố này.",
+          "M: Xin chào, tôi gọi để hỏi về việc đăng ký làm hội viên trung tâm thể hình của bên bạn. Tôi là tiếp viên hàng không và mới bắt đầu bay tuyến đến và đi từ thành phố này.",
           "W: Vậy là anh không sống ở thành phố này à?",
-          "M: Không, tôi ở khách sạn, chỉ có mặt ở đây vào thứ Bảy và Chủ Nhật giữa các chuyến bay. Tôi muốn thuê huấn luyện viên cá nhân.",
-          "W: Không vấn đề gì, chúng tôi có huấn luyện viên vào những ngày đó. Tôi sẽ hẹn lịch cho anh đến điền biểu mẫu đăng ký thành viên nhé."
+          "M: Không, tôi ở khách sạn, tôi chỉ có mặt ở đây vào thứ Bảy và Chủ Nhật, giữa các chuyến bay thôi.",
+          "W: Được rồi. Anh có mục tiêu rèn luyện thể lực cụ thể nào trong đầu chưa?",
+          "M: Thực ra là có. Tôi muốn tập luyện cùng với một huấn luyện viên cá nhân.",
+          "W: Không vấn đề gì. Chúng tôi có huấn luyện viên làm việc vào những ngày đó. Tôi sẽ hẹn lịch cho anh đến điền các mẫu đơn đăng ký hội viên nhé."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Anh ấy phải hoàn thành một số giấy tờ thủ tục.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'll set up an appointment for you to fill out the membership forms.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi sẽ đặt lịch hẹn để anh đến điền các mẫu đơn thành viên.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ lên lịch hẹn để người đàn ông 'fill out the membership forms' (điền đơn đăng ký thành viên), tức là hoàn thành giấy tờ thủ tục (complete some paperwork).</p>"
       },
@@ -3410,8 +3417,8 @@ window.part03Data = [
         },
         "vietnamese_transcript": [
           "M: Xin chào, tôi là Ron Wells, giám đốc tuyển dụng tại Thời trang Douglas. Cảm ơn cô đã đến phỏng vấn cho vị trí nhân viên bán hàng.",
-          "W: Vâng, tôi rất hào hứng với cơ hội làm việc tại đây...",
-          "M: Hãy kể cho tôi nghe về kinh nghiệm bán hàng trước đây của cô.",
+          "W: Vâng. Tôi rất hào hứng với cơ hội được làm việc tại đây. Đây là cửa hàng quần áo yêu thích của tôi.",
+          "M: Tuyệt vời. Hãy kể cho tôi nghe về kinh nghiệm bán hàng trước đây của cô.",
           "W: Suốt 6 tháng qua tôi làm việc tại một cửa hàng ở Trung tâm Thương mại Fountain. Tôi rất thích công việc đó, nhưng tôi đã nghỉ việc vì mất hơn một tiếng đồng hồ để đi làm mỗi ngày."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Quãng đường đi làm quá dài.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I really enjoyed it, but I quit because it took me over an hour to commute there.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi rất thích nơi đó, nhưng tôi đã nghỉ vì mất hơn một tiếng để đi làm tới đó.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ nghỉ việc vì mất hơn một tiếng di chuyển đi làm ('took me over an hour to commute there'), tức là quãng đường đi làm quá xa/mất thời gian (Her commute was too long).</p>"
@@ -3619,7 +3626,7 @@ window.part03Data = [
         "vietnamese_transcript": [
           "W: Chào Bob, tôi nhận được email của anh về buổi đào tạo phần mềm lúc 2 giờ chiều thứ Sáu này. Nhưng lúc đó tôi phải gặp giám đốc tiếp thị của công ty J. Alderman and Sons rồi.",
           "M: Ồ tôi xin lỗi, tôi quên khuấy mất cô có lịch hẹn với khách hàng. Cô nghĩ cuộc gặp kéo dài bao lâu?",
-          "W: Chắc tầm 30 đến 45 phút. Liệu có cách nào anh dời buổi đào tạo bắt đầu muộn hơn trong ngày được không?"
+          "W: Chắc tầm 30 đến 45 phút. Tôi phải xem xét lại hợp đồng với ông ấy. Liệu có cách nào anh dời buổi đào tạo bắt đầu muộn hơn trong ngày được không?"
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Hoãn một buổi đào tạo</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Is there any way that you could start the training later in the day?\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Có cách nào anh bắt đầu buổi đào tạo muộn hơn trong ngày không?\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ hỏi xem có thể dời buổi học phần mềm trễ lại không ('start the training later'), tức là lùi/hoãn buổi đào tạo (Postponing a training session).</p>"
       },
@@ -4116,7 +4123,7 @@ window.part03Data = [
           "M: Cô Batra, sân khấu trông ổn chưa cô? Cây đàn piano đặt đúng chỗ chưa?",
           "W: Bố trí sân khấu ổn rồi. Nhưng liệu chúng ta có thể đảm bảo đủ ánh sáng nền không? Tôi muốn tất cả thành viên trong ban nhạc đều nhìn rõ được.",
           "M: Tất nhiên rồi. Nhưng tôi muốn làm việc đó khi các thành viên còn lại của ban nhạc có mặt ở đây hơn, để tôi chắc chắn ánh sáng đã chuẩn.",
-          "W: Được thôi. Tôi sẽ đi ăn trưa với họ rồi chiều nay tất cả sẽ quay lại đây tập dượt."
+          "W: Được thôi. Tôi sẽ đi ăn trưa với họ rồi chiều nay tất cả sẽ quay lại đây tập dượt. Hẹn gặp lại anh lúc đó nhé."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Hoàn thành công việc vào một lúc khác</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"But I'd rather do it when the rest of your band is here so I can be sure the lighting is right.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Nhưng tôi muốn chỉnh đèn khi các thành viên còn lại có mặt ở đây hơn để chắc chắn ánh sáng chuẩn.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người đàn ông dùng cấu trúc 'I'd rather do it when...' (Tôi thích làm việc đó khi mọi người đến đủ vào buổi chiều hơn), tức là hoàn thành nhiệm vụ vào thời điểm sau đó (Complete a task at a later time).</p>"
       },
@@ -4380,8 +4387,9 @@ window.part03Data = [
           "D": "Công nhân thiếu kinh nghiệm"
         },
         "vietnamese_transcript": [
-          "W: Cảm ơn ông Kessler đã đến kiểm tra. Đội của ông đã thi công bãi đỗ xe văn phòng rất tốt. Tuy nhiên phía sau tòa nhà thì công việc chưa xong, mới chỉ kẻ được vài vạch trắng sơn chỗ đỗ xe.",
-          "M: Đúng vậy, tôi thấy rồi. Đội của tôi đáng lẽ sơn nốt phần đó vào thứ Ba, nhưng toàn bộ đợt mưa lớn vào tuần trước đã khiến chúng tôi bị chậm tiến độ."
+          "W: Cảm ơn ông Kessler đã đến kiểm tra. Đội của ông đã thi công bãi đỗ xe văn phòng rất tốt, mặt bằng nhẵn và phẳng đều. Tuy nhiên phía sau tòa nhà thì công việc chưa xong, mới chỉ kẻ được vài vạch trắng phân chia chỗ đỗ xe.",
+          "M: Ừm... Đúng vậy, tôi thấy rồi. Đội của tôi đáng lẽ sơn nốt phần cuối đó vào thứ Ba, nhưng toàn bộ đợt mưa vào tuần trước đã khiến chúng tôi bị chậm tiến độ.",
+          "W: Tôi hy vọng ông sẽ sớm giải quyết xong việc này."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Điều kiện thời tiết</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"My team was supposed to paint that final section on Tuesday, but all the rain last week put us behind schedule.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Đội của tôi đáng lẽ sơn xong hôm thứ Ba, nhưng những trận mưa tuần trước làm chậm tiến độ.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người đàn ông nêu rõ nguyên nhân là do mưa lớn tuần trước ('all the rain last week'), thuộc về điều kiện thời tiết (Weather conditions).</p>"
       },
@@ -4590,7 +4598,9 @@ window.part03Data = [
           "D": "Đi đến một cửa hàng"
         },
         "vietnamese_transcript": [
-          "M: Này Sunisa. Chúng ta sắp đi phục vụ tiệc ở Quỹ Y tế Kimball nhưng lại thiếu cốc. Anh không có thời gian dừng lại ghé cửa hàng dọc đường đâu.",
+          "M: Này Sunisa. Chúng ta sắp phải xuất phát để phục vụ sự kiện tại Quỹ Y tế Kimball, nhưng lại không có đủ cốc. Cô có biết tôi có thể tìm thêm cốc ở đâu không?",
+          "W: Ôi không. Tôi đã đặt mua một ít từ nhà cung cấp hai ngày trước, nhưng họ vẫn chưa giao tới. Đây không phải là lần đầu tiên chuyện này xảy ra đâu.",
+          "M: Chà, theo lịch chúng ta phải bắt đầu bày bàn tiệc tại Kimball Medical trước 9 giờ 30, vậy cô đề xuất thế nào? Tôi không có thời gian ghé qua cửa hàng trên đường đi đâu.",
           "W: Được rồi, tôi sẽ hỗ trợ. Tôi sẽ đi mua thêm cốc rồi mang đến cho mọi người."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Đi đến một cửa hàng</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"OK, I can help out. I'll go buy more and bring them to you.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Được rồi, tôi sẽ giúp. Tôi sẽ đi mua thêm và mang tới cho mọi người.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ nhận trách nhiệm đi mua thêm cốc chén ('I'll go buy more'), tức là sẽ đi đến cửa hàng (Go to a store).</p>"
@@ -4621,7 +4631,9 @@ window.part03Data = [
           "D": "Xem xét lại một chính sách"
         },
         "vietnamese_transcript": [
-          "M: Chào Nadia, quản lý bộ phận có nói cô đang phụ trách đào tạo nhân viên mới. Tôi xong việc sớm rồi, cô có cần giúp gì không?",
+          "M: Chào Nadia, quản lý bộ phận của chúng ta có nhắc là cô đang đào tạo các nhân viên mới.",
+          "W: Ừ, tôi vẫn còn nhiều việc phải làm lắm, mà khóa đào tạo lại bắt đầu vào thứ Hai rồi. Tôi bận cập nhật tài liệu đào tạo đến mức chưa có thời gian làm bất cứ việc gì khác.",
+          "M: À... Tôi đã hoàn thành dự án của mình sớm hơn dự kiến... Cô cần giúp việc gì nào?",
           "W: Cảm ơn anh nhiều. Anh có thể kiểm tra với Phòng An ninh xem thẻ ra vào của các nhân viên mới đã xong chưa? Tôi gửi yêu cầu từ tuần trước nhưng chưa thấy phản hồi.",
           "M: Không vấn đề gì, tôi sẽ đi giải quyết việc đó ngay."
         ],
@@ -4652,7 +4664,9 @@ window.part03Data = [
           "D": "Kiểm tra một số thông số kỹ thuật"
         },
         "vietnamese_transcript": [
-          "M: Chào bà Dembo. Báo cáo sản xuất mì ống tuần này cho thấy máy cắt mì trên dây chuyền chỉ chạy dưới 50% công suất vào hôm qua.",
+          "M: Chào buổi chiều, bà Dembo. Tôi có một vài lo ngại - tôi có thể cho bà xem báo cáo sản xuất mì ống của chúng ta trong tuần này được không?",
+          "W: Được chứ. Chính xác thì vấn đề là gì vậy?",
+          "M: Thưa bà, theo trang hai của báo cáo, máy cắt mì ống trong dây chuyền sản xuất của chúng ta hôm qua chỉ hoạt động dưới 50% công suất. Chúng ta không đạt được sản lượng đầu ra như thường lệ.",
           "W: Tôi hiểu rồi. Hãy tắt cái máy đó ngay lập tức. Và tôi sẽ gọi một kỹ thuật viên đến kiểm tra động cơ và lưỡi cắt ngay bây giờ. Tuần này chúng ta có đơn hàng mì lớn cần giao đúng hạn."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Yêu cầu bảo trì / sửa chữa máy móc</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"And I'll have a technician look at the motor and blade immediately.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Và tôi sẽ bảo kỹ thuật viên đến kiểm tra động cơ và lưỡi cắt ngay lập tức.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ nói sẽ gọi kỹ thuật viên đến kiểm tra máy ('have a technician look at the motor...'), nghĩa là yêu cầu bảo dưỡng/sửa chữa (Request some maintenance).</p>"
@@ -4840,9 +4854,9 @@ window.part03Data = [
           "D": "Anh ấy hào hứng với việc dạy một khóa học mới."
         },
         "vietnamese_transcript": [
-          "W: Chào Jin-Sung, dạo này anh có thấy quán cà phê bị lạnh không?",
-          "M: Đúng vậy, có lẽ do cánh cửa phụ không đóng kín được tự động. Chắc bản lề bị hỏng hoặc cần cân chỉnh lại.",
-          "W: Tôi sẽ gọi thợ sửa chữa đến sửa trong hôm nay.",
+          "W: Chào Jin-Sung. Ồ, tôi đang thắc mắc... dạo này anh có thấy quán cà phê của chúng ta bị lạnh không?",
+          "M: Thực ra là có đấy. Tôi tự hỏi liệu có phải do cánh cửa phụ không đóng kín được như bình thường không - cánh cửa đó đáng lẽ phải tự động đóng lại. Có lẽ bản lề bị hỏng hoặc cần được căn chỉnh lại.",
+          "W: Chà, tôi thực sự lo lắng về nhiệt độ trong quán. Khách hàng của chúng ta không muốn ngồi trong một quán cà phê lạnh lẽo đâu! Tôi sẽ cố gắng gọi thợ sửa chữa đến sửa nó ngay hôm nay.",
           "M: Thật ra... cô không cần phải gọi đâu. Trước đây tôi từng làm việc ở cửa hàng ngũ kim kim khí đấy."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Anh ấy có thể tự sửa được vấn đề đó.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Actually... you don't need to call. I used to work at a hardware store.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Thực ra... cô không cần phải gọi thợ đâu. Trước đây tôi từng làm ở cửa hàng ngũ kim kim khí mà.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người đàn ông bảo không cần gọi thợ vì anh từng làm ở cửa hàng kim khí, ngụ ý rằng anh ấy có tay nghề và có thể tự sửa được bản lề cửa (He can fix a problem).</p>"
@@ -5006,7 +5020,8 @@ window.part03Data = [
           "M: Michelle, cảm ơn cô đã đồng ý chủ trì cuộc họp chiều nay cùng tôi. Một chủ đề tôi nghĩ chúng ta nên bàn với nhân viên là năng suất nhà máy. Vài tháng nay chúng ta không đạt chỉ tiêu sản xuất bóng đèn.",
           "W: Tôi biết. Năng suất dạo này không ổn định. Chúng ta có một tháng sản xuất rất mạnh, nhưng ngay tháng sau đó lại thấp kỷ lục trong cả năm!",
           "M: Đúng vậy... Vì vậy trong cuộc họp hôm nay, chúng ta hãy tập trung vào tháng có năng suất rất thấp đó.",
-          "W: Tôi biết các máy sản xuất bóng đèn đã bị hỏng vài lần trong tháng đó. Chúng ta nên cho kiểm tra lại toàn bộ máy móc."
+          "W: Tôi biết các máy sản xuất bóng đèn đã bị hỏng vài lần trong tháng đó. Chúng ta nên cho kiểm tra lại toàn bộ máy móc.",
+          "M: Tôi đồng ý. Chúng ta nên thảo luận thêm nội dung gì khác tại cuộc họp nhân viên nhỉ?"
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Tháng 5</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"So at today's meeting, let's focus on the month when productivity was very low.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Vì vậy trong cuộc họp hôm nay, hãy tập trung vào tháng có năng suất rất thấp đó.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Bài nghe yêu cầu tập trung vào tháng có năng suất rất thấp ('lowest we've had in a year'). Đối chiếu với biểu đồ sản lượng trong hình, cột tháng 5 (May) là tháng có sản lượng thấp nhất, do đó đáp án là Tháng 5 (May).</p>",
         "graphic": "data/graphics/Slide327.png"
@@ -5075,9 +5090,11 @@ window.part03Data = [
         },
         "vietnamese_transcript": [
           "M: Cô Parker, cô vẫn muốn tôi đặt chuyến bay đi Hawaii cho cô chứ?",
-          "W: Đúng vậy, chi nhánh mới ở đó chuẩn bị khai trương...",
-          "M: Tất cả chuyến bay ngày 15 tháng 6 đều kín chỗ, chỉ còn vé ngày 14 tháng 6.",
-          "W: Ngày đó cũng được. Tôi muốn một ghế cạnh cửa sổ nếu còn.",
+          "W: Đúng vậy, chi nhánh mới ở đó cuối cùng cũng sắp khai trương, và tôi muốn có mặt ở đó trong tuần đầu tiên để đảm bảo mọi việc diễn ra suôn sẻ.",
+          "M: Được rồi. Cô muốn khởi hành khi nào?",
+          "W: Có chuyến bay nào vào ngày 15 tháng 6 không?",
+          "M: Để tôi kiểm tra trực tuyến ngay bây giờ. Ừm, tất cả chuyến bay ngày hôm đó đều đã kín chỗ. Nhưng có một chuyến bay còn vé vào ngày 14 tháng 6.",
+          "W: Ngày đó cũng được. Tôi muốn một ghế cạnh cửa sổ, nếu còn chỗ.",
           "M: Chỉ còn đúng một chỗ trống cạnh cửa sổ thôi. Tôi sẽ đặt ghế đó cho cô ngay."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ B</strong> (<em>Ghế 26F</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'd prefer a window seat, if there is one. - There's just one seat available by a window. I'll book that for you now.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi muốn ghế cạnh cửa sổ nếu còn. - Chỉ còn duy nhất một ghế trống cạnh cửa sổ. Tôi sẽ đặt cho cô ngay.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ yêu cầu ghế cạnh cửa sổ ('window seat') và người đàn ông thông báo chỉ còn duy nhất một chỗ trống. Nhìn vào sơ đồ máy bay, dãy ghế cửa sổ là dãy A và F. Ghế 26F đang trống (các ghế khác đã kín), vì vậy đáp án là 26F.</p>",
@@ -5107,7 +5124,7 @@ window.part03Data = [
           "D": "Đến Las Vegas"
         },
         "vietnamese_transcript": [
-          "W: Chào José, Lea đây. Anh đã đến sân bay chưa? Tôi còn cách đó khoảng 15 phút, tắc đường kinh khủng. Tôi sợ bị lỡ chuyến bay...",
+          "W: Chào José, Lea đây. Anh đã đến sân bay chưa? Tôi còn cách đó khoảng 15 phút, tắc đường kinh khủng. Tôi sợ bị lỡ chuyến bay mất - mà chuyến tiếp theo thì phải đến tận ngày mai mới có.",
           "M: Đừng lo. Tôi vừa đến nơi và thấy chuyến bay của chúng ta bị hoãn một tiếng. Chắc chắn cô sẽ kịp thôi.",
           "W: Nhẹ cả người. Nhưng anh có thể gọi cho ban tổ chức hội nghị để báo chúng ta sẽ đến muộn buổi tiệc chiêu đãi tối nay không?"
         ],
@@ -5141,9 +5158,10 @@ window.part03Data = [
         },
         "vietnamese_transcript": [
           "W: Xin chào, tôi muốn đổi chiếc tai nghe này lấy một chiếc khác. Hôm qua tôi mua nhưng về nhà đeo thử không thích.",
-          "M: Vâng, cô muốn tìm loại thế nào để tôi tư vấn?",
+          "M: Vâng, tôi có thể giúp cô. Hãy cho tôi biết thêm về loại tai nghe cô đang tìm kiếm để tôi tư vấn chiếc khác phù hợp nhé.",
           "W: Tôi muốn loại tai nghe chụp qua đầu (headband). Và tôi muốn loại có khả năng chống ồn/giảm tiếng ồn. Tôi là kỹ sư điện, ở công trường rất ồn ào khiến tôi khó tập trung.",
-          "M: Hãng Matphase Electronics sản xuất tai nghe rất tốt. Tôi khuyên cô nên dùng mẫu này ở đây. Chúng chống ồn tốt nhất và tôi nghĩ cô sẽ thích."
+          "M: Được rồi, thông tin đó rất hữu ích. Hãng Matphase Electronics sản xuất tai nghe rất tốt. Tôi khuyên cô nên dùng mẫu này ở đây. Chúng chống ồn tốt nhất và tôi nghĩ cô sẽ thích.",
+          "W: Tuyệt vời. Cảm ơn sự giúp đỡ của anh nhé."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ D</strong> (<em>Mẫu C-94</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"Matphase Electronics makes great headphones. I'd recommend this model here. They're the best at reducing noise...\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Hãng Matphase Electronics làm tai nghe rất tốt. Tôi gợi ý mẫu này. Chúng giảm tiếng ồn tốt nhất...\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ yêu cầu tai nghe chụp đầu ('wear on your head') có chống ồn ('reduce noise'), và người đàn ông giới thiệu mẫu tốt nhất của hãng Matphase Electronics. Nhìn vào bảng thông số, mẫu tai nghe chụp đầu chống ồn của hãng Matphase chính là C-94, chọn D.</p>",
         "graphic": "data/graphics/Slide455.png"
@@ -5181,7 +5199,8 @@ window.part03Data = [
           "M: Về đến nhà chuẩn bị cất thì tôi phát hiện có một vết ố bẩn lớn ngay đây. Chị thấy không?",
           "W: Tôi rất tiếc. Được rồi, tôi thấy anh đã chi 32 đô la cho món hàng này.",
           "M: Đúng vậy, và tôi đã thanh toán bằng thẻ tín dụng.",
-          "W: Tôi có thể hoàn tiền vào thẻ tín dụng cho anh."
+          "W: Chà, tôi hoàn toàn có thể hoàn tiền vào thẻ tín dụng cho anh. Anh có muốn tôi làm vậy không?",
+          "M: Nghe ổn đấy."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ C</strong> (<em>Khăn quàng cổ</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"So, it looks like you spent 32 dollars on the item. - Right, and I used my credit card for the purchase.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Tôi thấy anh đã chi 32 đô la cho món đồ này. - Đúng vậy, và tôi dùng thẻ tín dụng.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ kiểm tra giá tiền món đồ trả lại là 32 đô la ('spent 32 dollars on the item'). Nhìn vào tờ hóa đơn trong ảnh, món hàng có giá chính xác $32.00 là The scarf (Khăn quàng cổ), do đó đáp án là C.</p>",
         "graphic": "data/graphics/Slide481.png"
@@ -5255,7 +5274,9 @@ window.part03Data = [
           "W: Bán cho tôi một vé phổ thông thông thường. Tôi đến thành phố này công tác nên ghé qua xem bộ sưu tập tranh chân dung trước giờ họp.",
           "M: Vâng, vé của chị là 5 đô la.",
           "W: Tôi cứ tưởng vé đắt hơn chứ... À, tôi hiểu rồi.",
-          "M: Đúng vậy. Hội trường sắp có diễn giả nói về phục chế nghệ thuật, nếu chị quan tâm có thể ghé xem."
+          "M: Đúng vậy. Và nếu chị quan tâm, chúng tôi có một diễn giả khách mời đang nói về phục chế nghệ thuật tại hội trường. Buổi nói chuyện chuẩn bị bắt đầu đấy.",
+          "W: Tuyệt quá, tôi sẽ đến đó ngay bây giờ. Hội trường ở đâu vậy ạ?",
+          "M: Nó nằm ngay ở cuối hành lang này thôi."
         ],
         "explanation": "<strong style='color: var(--success);'>ĐÁP ÁN ĐÚNG LÀ A</strong> (<em>Hôm nay là thứ Hai.</em>).<br><div style='margin-top: 8px; border-left: 3px solid var(--color-cyan); padding-left: 10px; background: rgba(0, 242, 254, 0.02); padding-top: 4px; padding-bottom: 4px;'><strong>Từ khóa trong bài nghe:</strong><br><span style='color: var(--text-main); font-weight: 500;'>\"I'll take one regular ticket, please... - OK - that'll be five dollars. - Hmm... I thought it would be more ... Oh, I see.\"</span><br><span style='color: var(--text-muted); font-size: 0.9rem;'>→ \"Bán cho tôi một vé thường... - Của chị là 5 đô la. - Tôi tưởng phải đắt hơn chứ... À tôi hiểu rồi.\"</span></div><p style='margin-top: 6px; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 0;'>💡 <strong>Phân tích:</strong> Người phụ nữ mua vé thường ('regular ticket') và ngạc nhiên khi thấy giá chỉ có 5 đô la thay vì mức giá thông thường cao hơn ('thought it would be more... Oh, I see'). Nhìn vào bảng giá vé trong hình, mức giá ưu đãi $5 áp dụng cho ngày thứ Hai (Monday Discount), do đó đáp án là A (It is a Monday).</p>",
         "graphic": "data/graphics/Slide540.png"

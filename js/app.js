@@ -1459,18 +1459,18 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = `
             <div class="audio-player-card" style="border-bottom: 1px solid var(--border); background: rgba(255,255,255,0.015);">
                 <div class="audio-controls-row">
-                    <button class="play-pause-btn" id="play-pause-control">
+                    <button type="button" class="play-pause-btn">
                         ${icons.play}
                     </button>
                     
                     <div class="progress-bar-wrapper">
-                        <span class="time-stamp" id="time-current">00:00</span>
-                        <input type="range" class="progress-slider" id="progress-slider" min="0" value="0" step="0.1">
-                        <span class="time-stamp" id="time-duration">00:00</span>
+                        <span class="time-stamp time-current">00:00</span>
+                        <input type="range" class="progress-slider" min="0" value="0" step="0.1">
+                        <span class="time-stamp time-duration">00:00</span>
                     </div>
                     
                     <div class="speed-selector-wrapper">
-                        <select class="speed-select" id="speed-select">
+                        <select class="speed-select">
                             <option value="0.75">0.75x</option>
                             <option value="1.0" selected>1.0x (Chuẩn)</option>
                             <option value="1.2">1.2x</option>
@@ -1481,27 +1481,35 @@ document.addEventListener("DOMContentLoaded", () => {
             </div>
         `;
         
-        const playBtn = container.querySelector("#play-pause-control");
-        const slider = container.querySelector("#progress-slider");
-        const timeCurrent = container.querySelector("#time-current");
-        const timeDuration = container.querySelector("#time-duration");
-        const speedSelect = container.querySelector("#speed-select");
+        const playBtn = container.querySelector(".play-pause-btn");
+        const slider = container.querySelector(".progress-slider");
+        const timeCurrent = container.querySelector(".time-current");
+        const timeDuration = container.querySelector(".time-duration");
+        const speedSelect = container.querySelector(".speed-select");
         
         const audio = new Audio(audioUrl);
+        audio.preload = "metadata";
         
         const formatTime = (secs) => {
+            if (!isFinite(secs) || isNaN(secs) || secs < 0) return "00:00";
             const m = Math.floor(secs / 60).toString().padStart(2, "0");
             const s = Math.floor(secs % 60).toString().padStart(2, "0");
             return `${m}:${s}`;
         };
         
         audio.addEventListener("loadedmetadata", () => {
-            slider.max = audio.duration;
-            timeDuration.textContent = formatTime(audio.duration);
+            if (isFinite(audio.duration) && audio.duration > 0) {
+                slider.max = audio.duration;
+                timeDuration.textContent = formatTime(audio.duration);
+            }
         });
         
         audio.addEventListener("timeupdate", () => {
             if (!slider.dragging) {
+                if (isFinite(audio.duration) && audio.duration > 0 && Number(slider.max) !== audio.duration) {
+                    slider.max = audio.duration;
+                    timeDuration.textContent = formatTime(audio.duration);
+                }
                 slider.value = audio.currentTime;
                 timeCurrent.textContent = formatTime(audio.currentTime);
             }
@@ -1509,18 +1517,32 @@ document.addEventListener("DOMContentLoaded", () => {
         
         audio.addEventListener("ended", () => {
             playBtn.innerHTML = icons.play;
+            if (state.currentAudio === audio) {
+                state.currentAudio = null;
+                state.currentAudioBtn = null;
+            }
         });
         
         playBtn.addEventListener("click", () => {
             if (audio.paused) {
                 stopAudio();
                 
-                audio.playbackRate = parseFloat(speedSelect.value);
-                audio.play();
+                audio.playbackRate = parseFloat(speedSelect.value) || 1.0;
                 playBtn.innerHTML = icons.pause;
-                
                 state.currentAudio = audio;
                 state.currentAudioBtn = playBtn;
+                
+                const playPromise = audio.play();
+                if (playPromise !== undefined) {
+                    playPromise.catch((err) => {
+                        console.warn("Audio playback failed for", audioUrl, err);
+                        playBtn.innerHTML = icons.play;
+                        if (state.currentAudio === audio) {
+                            state.currentAudio = null;
+                            state.currentAudioBtn = null;
+                        }
+                    });
+                }
             } else {
                 audio.pause();
                 playBtn.innerHTML = icons.play;
@@ -2976,30 +2998,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         } else if (e.key === "2" || e.key === "ArrowRight" || e.key.toLowerCase() === "f") {
                             e.preventDefault();
                             window.tb3AnswerTF(false);
-                        } else if (e.code === "Space") {
-                            e.preventDefault();
-                            if (tbs.tfQuestions[tbs.tfIndex]) {
-                                playTTS(tbs.tfQuestions[tbs.tfIndex].item.en);
-                            }
-                        }
-                    }
-                }
-
-                // True/False (Nghe chọn Đúng / Sai) shortcuts
-                if (mode === "truefalse" && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) {
-                    const tbs = window.traBaiState;
-                    if (tbs.tfAnswered) {
-                        if (e.key === "Enter" || e.code === "Space") {
-                            e.preventDefault();
-                            window.tbNextTFQuestion();
-                        }
-                    } else if (tbs.tfQuestions && tbs.tfQuestions.length > 0) {
-                        if (e.key === "1" || e.key === "ArrowLeft" || e.key.toLowerCase() === "t") {
-                            e.preventDefault();
-                            window.tbAnswerTF(true);
-                        } else if (e.key === "2" || e.key === "ArrowRight" || e.key.toLowerCase() === "f") {
-                            e.preventDefault();
-                            window.tbAnswerTF(false);
                         } else if (e.code === "Space") {
                             e.preventDefault();
                             if (tbs.tfQuestions[tbs.tfIndex]) {
