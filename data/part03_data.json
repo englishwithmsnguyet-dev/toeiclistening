@@ -3464,10 +3464,11 @@
         "text": [
           "<strong>6. CÂU HỎI YÊU CẦU</strong>",
           "<strong>Một số câu hỏi thường gặp về nội dung yêu cầu:</strong>",
-          "• <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">request</strong>?</em>",
-          "• <em>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">inquire about</strong>?</em>",
-          "• <em>What is the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">asked to do</strong>?</em>",
-          "• <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the woman to do</strong>?</em>"
+          "• <em>What does the woman / the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">request</strong>?</em>",
+          "• <em>What does the woman / the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">inquire about</strong>?</em>",
+          "• <em>What is the woman / the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">asked to do</strong>?</em>",
+          "• <em>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the man to do</strong>?</em> / <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the woman to do</strong>?</em>",
+          "• <em>What does the woman <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the man for</strong>?</em> / <em>What does the man <strong class=\"question-keyword\" style=\"color: #00B0F0;\">ask the woman for</strong>?</em>"
         ]
       },
       {
