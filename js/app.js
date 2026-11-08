@@ -7582,7 +7582,36 @@ document.addEventListener("DOMContentLoaded", () => {
         if (section.items && section.items.length > 0) {
             let exCounter = 1;
             
+            // Normalize items to split any theory cards that contain sub-sections (e.g. 1.1, 1.2, 2.1, etc.)
+            const normalizedItems = [];
             section.items.forEach(item => {
+                if (item.type === 'theory' && Array.isArray(item.text) && item.text.length > 1) {
+                    let currentLines = [];
+                    item.text.forEach((line, idx) => {
+                        const raw = line.replace(/<[^>]+>/g, '').trim();
+                        const isSubHeader = (idx > 0) && (/^\d+\.\d+(\.|\s|$)/.test(raw) || ((line.includes('#7c3aed') || line.includes('#dc2626')) && /^\d+\.\d+/.test(raw)));
+                        if (isSubHeader && currentLines.length > 0) {
+                            normalizedItems.push({
+                                ...item,
+                                text: currentLines
+                            });
+                            currentLines = [line];
+                        } else {
+                            currentLines.push(line);
+                        }
+                    });
+                    if (currentLines.length > 0) {
+                        normalizedItems.push({
+                            ...item,
+                            text: currentLines
+                        });
+                    }
+                } else {
+                    normalizedItems.push(item);
+                }
+            });
+            
+            normalizedItems.forEach(item => {
                 if (item.type === 'theory') {
                     if (!item.text || item.text.length === 0) return;
                     
@@ -7591,7 +7620,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     
                     const firstLine = (item.text[0] || '').trim();
                     const rawFirstLine = firstLine.replace(/<[^>]+>/g, '').trim();
-                    const isMainTitle = (/^\d+(\.\d+)?\./.test(rawFirstLine) || /^[A-Z\s]{4,}/.test(rawFirstLine) || firstLine.includes('#dc2626') || firstLine.includes('#7c3aed'))
+                    const isMainTitle = (/^\d+(\.\d+)?(\.|\s|$)/.test(rawFirstLine) || /^[A-Z\s]{4,}/.test(rawFirstLine) || firstLine.includes('#dc2626') || firstLine.includes('#7c3aed'))
                                         && !rawFirstLine.startsWith('+')
                                         && !rawFirstLine.startsWith('-')
                                         && !rawFirstLine.startsWith('👉')
