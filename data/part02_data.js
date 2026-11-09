@@ -564,11 +564,11 @@ window.part02Data = [
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">1.5. Câu trả lời gián tiếp</span>",
           "Đôi khi trong nhiều trường hợp câu trả lời diễn đạt ý nghĩa không biết rõ, không chắc chắn, ví dụ như:",
-          "<span style=\"color: #0284c7; font-style: italic\">I don’t know/ I don’t really know/ I have no idea/ I don’t have a clue/...</span>",
-          "<span style=\"color: #0284c7; font-style: italic\">I am not sure/ Isn’t it allocated to….?/...</span>",
-          "<span style=\"color: #0284c7; font-style: italic\">I can’t remember / I don’t recall / …</span>",
-          "<span style=\"color: #0284c7; font-style: italic\">Let me find out/ Let me check out/ Let me ask... </span>",
-          "<span style=\"color: #0284c7; font-style: italic\">S + haven’t/ hasn’t been decided/ chosen/ assigned/ confirmed/ announced/ finalized/ selected yet... </span>"
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know / I don’t really know / I have no idea / I don’t have a clue / ...</span><br><span style=\"color: #475569; font-style: italic; padding-left: 16px; display: inline-block;\">🇻🇳 <em>Tôi không biết / Tôi thực sự không rõ / Tôi không biết chút nào / Tôi chịu thôi...</em></span>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I am not sure / Isn’t it allocated to….? / ...</span><br><span style=\"color: #475569; font-style: italic; padding-left: 16px; display: inline-block;\">🇻🇳 <em>Tôi không chắc chắn / Chẳng phải việc đó được phân công cho [ai đó] rồi sao?...</em></span>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I can’t remember / I don’t recall / …</span><br><span style=\"color: #475569; font-style: italic; padding-left: 16px; display: inline-block;\">🇻🇳 <em>Tôi không nhớ / Tôi không thể nhớ ra được...</em></span>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Let me find out / Let me check out / Let me ask...</span><br><span style=\"color: #475569; font-style: italic; padding-left: 16px; display: inline-block;\">🇻🇳 <em>Để tôi tìm hiểu xem / Để tôi đi kiểm tra lại / Để tôi hỏi xem...</em></span>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">S + haven’t / hasn’t been decided / chosen / assigned / confirmed / announced / finalized / selected yet...</span><br><span style=\"color: #475569; font-style: italic; padding-left: 16px; display: inline-block;\">🇻🇳 <em>[Chủ ngữ] vẫn chưa được quyết định / lựa chọn / phân công / xác nhận / công bố / chốt lại...</em></span>"
         ]
       },
       {
@@ -1072,7 +1072,12 @@ window.part02Data = [
         "slide_index": 118,
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">3.3. Câu trả lời gián tiếp</span>",
-          "Khi người được hỏi không biết câu trả lời, không thể cung cấp thông tin cho người hỏi (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I haven’t heard anything about that</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t remember</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I didn’t even know</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Nobody told me</span>, …) hoặc sự việc chưa xảy ra (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">We haven’t decided yet</span>). Ngoài ra, người nói có thể đưa ra gợi ý cho người hỏi (<span style=\"color: #0284c7; font-weight: 700; font-style: italic\">How about…?</span>) và một vài <span style=\"font-weight: 700\">trường hợp ngoại lệ khác</span>."
+          "Khi người được hỏi không biết câu trả lời, không thể cung cấp thông tin hoặc sự việc chưa diễn ra:",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I haven’t heard anything about that</span>: <em>Tôi chưa nghe thông tin gì về việc đó cả</em>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t remember / I don’t know / I didn’t even know</span>: <em>Tôi không nhớ / Tôi không biết / Tôi thậm chí còn không biết</em>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Nobody told me</span>: <em>Không ai nói cho tôi biết cả</em>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">We haven’t decided yet</span>: <em>Chúng tôi vẫn chưa quyết định (sự việc chưa chốt)</em>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">How about…?</span>: <em>Hay là...? (đưa ra gợi ý thay thế)</em>"
         ]
       },
       {
@@ -2456,7 +2461,10 @@ window.part02Data = [
         "slide_index": 248,
         "text": [
           "<span style=\"color: #7c3aed; font-weight: 700; font-style: italic\">2.5. Câu trả lời gián tiếp</span>",
-          "Ở dạng này, người nói thường <span style=\"font-weight: 700\">không đưa ra lựa chọn trực tiếp</span>. Thay vào đó, đáp án có thể: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">thể hiện sự không biết hoặc chưa chắc chắn</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">trì hoãn câu trả lời</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đặt câu hỏi ngược lại</span>, hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đưa ra ý kiến để người nghe tự suy ra lựa chọn</span>. Các cách trả lời phổ biến: <span style=\"font-weight: 700\">I don’t know</span>. / <span style=\"font-weight: 700\">I’m not sure</span>. / <span style=\"font-weight: 700\">It hasn’t been decided yet</span>. / <span style=\"font-weight: 700\">Let me check</span>. / <span style=\"font-weight: 700\">Let me ask</span>. / <span style=\"font-weight: 700\">Let me find out</span>."
+          "Ở dạng này, người nói thường <span style=\"font-weight: 700\">không đưa ra lựa chọn trực tiếp</span>. Thay vào đó, đáp án có thể: <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">thể hiện sự không biết hoặc chưa chắc chắn</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">trì hoãn câu trả lời</span>, <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đặt câu hỏi ngược lại</span>, hoặc <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">đưa ra ý kiến để người nghe tự suy ra lựa chọn</span>:",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">I don’t know / I’m not sure</span>: <em>Tôi không biết / Tôi không chắc</em>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">It hasn’t been decided yet</span>: <em>Vẫn chưa có quyết định</em>",
+          "• <span style=\"color: #0284c7; font-weight: 700; font-style: italic\">Let me check / Let me ask / Let me find out</span>: <em>Để tôi kiểm tra / Để tôi hỏi / Để tôi tìm hiểu xem</em>"
         ]
       },
       {
