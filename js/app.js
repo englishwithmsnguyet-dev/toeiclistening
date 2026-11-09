@@ -10274,7 +10274,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 i--;
             }
         }
-        const accuracy = targetWords.length > 0 ? Math.round((correctCount / targetWords.length) * 100) : 0;
+        const totalEvaluated = Math.max(targetWords.length, diff.length);
+        const accuracy = totalEvaluated > 0 ? Math.round((correctCount / totalEvaluated) * 100) : 0;
         return { diff, accuracy, correctCount, totalTargetWords: targetWords.length };
     }
 
@@ -10650,6 +10651,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                     const targetText = items[currentIndex].sentence;
                     const diffRes = computeWordDiff(text, targetText);
+                    const isPerfect = diffRes.accuracy === 100 && !diffRes.diff.some(d => d.type !== 'correct');
+                    if (window.SoundEffects) {
+                        if (isPerfect) {
+                            window.SoundEffects.playCorrect();
+                        } else {
+                            window.SoundEffects.playWrong();
+                        }
+                    }
                     results[currentIndex] = {
                         checked: true,
                         skipped: false,
@@ -10665,6 +10674,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Skip button logic
                 if (skipBtn) {
                     skipBtn.addEventListener("click", () => {
+                        if (window.SoundEffects) {
+                            window.SoundEffects.playWrong();
+                        }
                         results[currentIndex] = {
                             checked: false,
                             skipped: true,
