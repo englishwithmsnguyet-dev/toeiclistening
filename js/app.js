@@ -925,16 +925,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const secBtnVocabularyP2 = document.getElementById("sec-btn-vocabulary-p2");
     const secBtnExamplesP2 = document.getElementById("sec-btn-examples-p2");
     const secBtnPracticeP2 = document.getElementById("sec-btn-practice-p2");
+    const secBtnDictationP2 = document.getElementById("sec-btn-dictation-p2");
     
     const secTheoryP2 = document.getElementById("sec-theory-p2");
     const secVocabularyP2 = document.getElementById("sec-vocabulary-p2");
     const secExamplesP2 = document.getElementById("sec-examples-p2");
     const secPracticeP2 = document.getElementById("sec-practice-p2");
+    const secDictationP2 = document.getElementById("sec-dictation-p2");
     
     const theoryContentAreaP2 = document.getElementById("theory-content-area-p2");
     const vocabularyContentAreaP2 = document.getElementById("vocabulary-content-area-p2");
     const examplesContentAreaP2 = document.getElementById("examples-content-area-p2");
     const practiceContentAreaP2 = document.getElementById("practice-content-area-p2");
+    const dictationContentAreaP2 = document.getElementById("dictation-content-area-p2");
 
     // Part 3 elements
     const breadParent = document.getElementById("bread-parent");
@@ -947,6 +950,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const vocabularyContentArea = document.getElementById("vocabulary-content-area");
     const examplesContentArea = document.getElementById("examples-content-area");
     const practiceContentArea = document.getElementById("practice-content-area");
+    const dictationContentAreaP3 = document.getElementById("dictation-content-area-p3");
 
 
     // Part 4 elements (Main View)
@@ -958,16 +962,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const secBtnVocabularyP4 = document.getElementById("sec-btn-vocabulary-p4");
     const secBtnExamplesP4 = document.getElementById("sec-btn-examples-p4");
     const secBtnPracticeP4 = document.getElementById("sec-btn-practice-p4");
+    const secBtnDictationP4 = document.getElementById("sec-btn-dictation-p4");
     
     const secTheoryP4 = document.getElementById("sec-theory-p4");
     const secVocabularyP4 = document.getElementById("sec-vocabulary-p4");
     const secExamplesP4 = document.getElementById("sec-examples-p4");
     const secPracticeP4 = document.getElementById("sec-practice-p4");
+    const secDictationP4 = document.getElementById("sec-dictation-p4");
     
     const theoryContentAreaP4 = document.getElementById("theory-content-area-p4");
     const vocabularyContentAreaP4 = document.getElementById("vocabulary-content-area-p4");
     const examplesContentAreaP4 = document.getElementById("examples-content-area-p4");
     const practiceContentAreaP4 = document.getElementById("practice-content-area-p4");
+    const dictationContentAreaP4 = document.getElementById("dictation-content-area-p4");
     
     const panelTabBtnsP4 = document.querySelectorAll(".panel-section-btn-p4");
     const panelTabsP4 = document.querySelectorAll(".panel-content-p4");
@@ -1852,6 +1859,23 @@ document.addEventListener("DOMContentLoaded", () => {
                         loadSectionP1(node.id, "trabai");
                     });
                     part1ConceptsNavList.appendChild(trabaiItem);
+
+                    const dictationId = node.id + "_dictation";
+                    const dictationItem = document.createElement("div");
+                    dictationItem.className = "submenu-item group-item";
+                    dictationItem.setAttribute("data-id", dictationId);
+                    const dictationLocked = isContentLocked(1, dictationId);
+                    const dictationLockIcon = dictationLocked ? " 🔒" : "";
+                    dictationItem.innerHTML = `<span class="submenu-dot" style="background: #2563eb;"></span><span class="submenu-text" style="color: #2563eb; font-weight: 700;">🎧 CHÉP CHÍNH TẢ${dictationLockIcon}</span>`;
+                    dictationItem.addEventListener("click", (e) => {
+                        e.stopPropagation();
+                        if (dictationLocked) {
+                            window.showPaywallModal(() => loadSectionP1(node.id, "dictation"), "Phần Chép chính tả hiện đang tạm khoá cho tài khoản của bạn.");
+                            return;
+                        }
+                        loadSectionP1(node.id, "dictation");
+                    });
+                    part1ConceptsNavList.appendChild(dictationItem);
                 }
             }
         });
@@ -2114,6 +2138,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
+        const dictationTabBtn = document.getElementById("sec-btn-dictation");
+        if (dictationTabBtn) {
+            dictationTabBtn.classList.remove("hidden");
+        }
+
         // Auto-switch to requestedTab or the first tab that has content
         let targetTab = requestedTab || "theory";
         if (!requestedTab) {
@@ -2186,6 +2215,8 @@ document.addEventListener("DOMContentLoaded", () => {
             renderExamples(section);
         } else if (tabName === "practice") {
             renderPractice(section);
+        } else if (tabName === "dictation") {
+            renderDictationP3(section);
         }
     }
 
@@ -7393,12 +7424,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const section = window.part02Data.find(s => s.id === sectionId);
         if (!section) return;
         
-        // Hide unused buttons & test section
+        // Show sections bar & configure buttons
+        const panelSectionsBarP2 = document.getElementById("panel-sections-bar-p2");
+        if (panelSectionsBarP2) panelSectionsBarP2.style.display = "flex";
         if (secTestP2) secTestP2.classList.remove("active");
         if (secBtnTheoryP2) secBtnTheoryP2.classList.remove("hidden");
         if (secBtnExamplesP2) secBtnExamplesP2.classList.remove("hidden");
         if (secBtnVocabularyP2) secBtnVocabularyP2.classList.add("hidden");
         if (secBtnPracticeP2) secBtnPracticeP2.classList.add("hidden");
+        if (secBtnDictationP2) secBtnDictationP2.classList.remove("hidden");
         
         renderTheoryP2(section);
         renderExamplesP2(section);
@@ -7817,6 +7851,17 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    if (secBtnDictationP2) {
+        secBtnDictationP2.addEventListener("click", () => {
+            document.querySelectorAll('.panel-section-btn-p2').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.panel-content-p2').forEach(c => c.classList.remove('active'));
+            secBtnDictationP2.classList.add('active');
+            if(secDictationP2) secDictationP2.classList.add('active');
+            const section = window.part02Data ? window.part02Data.find(s => s.id === state.part02ActiveSection) : null;
+            if (section) renderDictationP2(section);
+        });
+    }
+
 // ================= PART 04 FUNCTIONS =================
 
     
@@ -7834,25 +7879,23 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const supportedTraBaiSections = ['dang_01', 'dang_02', 'dang_03'];
         const hasTraBai = supportedTraBaiSections.includes(sectionId);
+        const p1DictationList = window.part01DictationData ? window.part01DictationData[sectionId] : null;
+        const hasDictation = (p1DictationList && p1DictationList.length > 0);
+        const dictationCount = hasDictation ? p1DictationList.length : 0;
 
         // Update active in submenu
         document.querySelectorAll(".submenu-item").forEach(item => {
             const dataId = item.getAttribute("data-id");
-            if (hasTraBai) {
-                const trabaiId = sectionId + "_trabai";
-                if (targetTab === "trabai") {
-                    if (dataId === trabaiId) item.classList.add("active");
-                    else item.classList.remove("active");
-                } else {
-                    if (dataId === sectionId) item.classList.add("active");
-                    else item.classList.remove("active");
-                }
+            const trabaiId = sectionId + "_trabai";
+            const dictationId = sectionId + "_dictation";
+            if (targetTab === "trabai" && dataId === trabaiId) {
+                item.classList.add("active");
+            } else if (targetTab === "dictation" && dataId === dictationId) {
+                item.classList.add("active");
+            } else if (targetTab !== "trabai" && targetTab !== "dictation" && dataId === sectionId) {
+                item.classList.add("active");
             } else {
-                if (dataId === sectionId) {
-                    item.classList.add("active");
-                } else {
-                    item.classList.remove("active");
-                }
+                item.classList.remove("active");
             }
             if (item.classList.contains("active")) {
                 let parentSubmenu = item.closest(".part1-collapsible-submenu");
@@ -7863,7 +7906,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        // Tabs HTML for sections with Trả bài
+        // Tabs HTML for sections with Trả bài or Dictation
         let tabsHtml = '';
         if (hasTraBai) {
             const vocabData = window.getPart01TraBaiData ? window.getPart01TraBaiData(sectionId) : [];
@@ -7877,16 +7920,33 @@ document.addEventListener("DOMContentLoaded", () => {
                     <button type="button" id="p1-tab-btn-trabai" class="p1-tab-nav-btn ${targetTab === 'trabai' ? 'active' : ''}" onclick="window.switchPart01Tab('trabai')">
                         <span style="font-size: 1.15rem;">🎯</span> TRẢ BÀI TỪ VỰNG (${vocabCount} CỤM)
                     </button>
+                    ${hasDictation ? `
+                    <button type="button" id="p1-tab-btn-dictation" class="p1-tab-nav-btn ${targetTab === 'dictation' ? 'active' : ''}" onclick="window.switchPart01Tab('dictation')" style="color: #2563eb; font-weight: 700;">
+                        <span style="font-size: 1.15rem;">🎧</span> NGHE CHÉP CHÍNH TẢ (${dictationCount} CÂU)
+                    </button>
+                    ` : ''}
+                </div>
+            `;
+        } else if (sectionData.type === 'test' && hasDictation) {
+            tabsHtml = `
+                <div class="p1-nav-tabs">
+                    <button type="button" id="p1-tab-btn-theory" class="p1-tab-nav-btn ${targetTab === 'theory' || targetTab === 'test' ? 'active' : ''}" onclick="window.switchPart01Tab('theory')">
+                        <span style="font-size: 1.15rem;">📝</span> BÀI TEST ETS (6 CÂU)
+                    </button>
+                    <button type="button" id="p1-tab-btn-dictation" class="p1-tab-nav-btn ${targetTab === 'dictation' ? 'active' : ''}" onclick="window.switchPart01Tab('dictation')" style="color: #2563eb; font-weight: 700;">
+                        <span style="font-size: 1.15rem;">🎧</span> NGHE CHÉP CHÍNH TẢ (${dictationCount} CÂU)
+                    </button>
                 </div>
             `;
         }
 
         // Setup Header
+        const showTabs = hasTraBai || (sectionData.type === 'test' && hasDictation);
         part1Panel.innerHTML = `
-            <div class="panel-header" style="padding-bottom: ${hasTraBai ? '0' : '20px'};">
+            <div class="panel-header" style="padding-bottom: ${showTabs ? '0' : '20px'};">
                 <div class="breadcrumbs">
                     <span>PART 01: PHOTOGRAPHS</span> &nbsp;/&nbsp; <span>${sectionData.type === 'test' ? 'LUYỆN TẬP ETS 2026' : (sectionData.id === 'overview' ? 'TỔNG QUAN' : 'DẠNG CÂU HỎI')}</span>
-                    ${targetTab === 'trabai' ? ' &nbsp;/&nbsp; <span style="color: #f59e0b; font-weight: 700;">TRẢ BÀI TỪ VỰNG</span>' : ''}
+                    ${targetTab === 'trabai' ? ' &nbsp;/&nbsp; <span style="color: #f59e0b; font-weight: 700;">TRẢ BÀI TỪ VỰNG</span>' : (targetTab === 'dictation' ? ' &nbsp;/&nbsp; <span style="color: #2563eb; font-weight: 700;">NGHE CHÉP CHÍNH TẢ</span>' : '')}
                 </div>
                 <h3 id="panel-title-p1">${sectionData.title}</h3>
                 ${tabsHtml}
@@ -7896,7 +7956,9 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const contentArea = document.getElementById("p1-content-area");
 
-        if (hasTraBai && targetTab === 'trabai') {
+        if (targetTab === 'dictation' && hasDictation) {
+            renderDictationP1(contentArea, sectionId);
+        } else if (hasTraBai && targetTab === 'trabai') {
             renderTraBaiP1(contentArea, sectionId);
         } else if (sectionData.type === "theory" || sectionData.type === "overview") {
             state.part01SlidesData = sectionData.theory || [];
@@ -7913,26 +7975,42 @@ document.addEventListener("DOMContentLoaded", () => {
         state.part01ActiveTab = tabName;
         const currentSec = state.part01ActiveSection || 'dang_01';
         const trabaiId = currentSec + "_trabai";
+        const dictationId = currentSec + "_dictation";
         const contentArea = document.getElementById("p1-content-area");
         const theoryBtn = document.getElementById("p1-tab-btn-theory");
         const trabaiBtn = document.getElementById("p1-tab-btn-trabai");
+        const dictationBtn = document.getElementById("p1-tab-btn-dictation");
+        
+        [theoryBtn, trabaiBtn, dictationBtn].forEach(b => { if (b) b.classList.remove("active"); });
+
+        document.querySelectorAll(".submenu-item").forEach(item => {
+            const did = item.getAttribute("data-id");
+            if (tabName === 'trabai') {
+                if (did === trabaiId) item.classList.add("active");
+                else item.classList.remove("active");
+            } else if (tabName === 'dictation') {
+                if (did === dictationId) item.classList.add("active");
+                else item.classList.remove("active");
+            } else {
+                if (did === currentSec) item.classList.add("active");
+                else item.classList.remove("active");
+            }
+        });
         
         if (tabName === 'trabai') {
-            if (theoryBtn) theoryBtn.classList.remove("active");
             if (trabaiBtn) trabaiBtn.classList.add("active");
-            document.querySelectorAll(".submenu-item").forEach(item => {
-                if (item.getAttribute("data-id") === trabaiId) item.classList.add("active");
-                else if (item.getAttribute("data-id") === currentSec) item.classList.remove("active");
-            });
             if (contentArea) renderTraBaiP1(contentArea, currentSec);
+        } else if (tabName === 'dictation') {
+            if (dictationBtn) dictationBtn.classList.add("active");
+            if (contentArea) renderDictationP1(contentArea, currentSec);
         } else {
-            if (trabaiBtn) trabaiBtn.classList.remove("active");
             if (theoryBtn) theoryBtn.classList.add("active");
-            document.querySelectorAll(".submenu-item").forEach(item => {
-                if (item.getAttribute("data-id") === currentSec) item.classList.add("active");
-                else if (item.getAttribute("data-id") === trabaiId) item.classList.remove("active");
-            });
-            if (contentArea) renderTheoryP1(contentArea);
+            const sectionData = window.part01Data ? window.part01Data.find(s => s.id === currentSec) : null;
+            if (sectionData && sectionData.type === 'test') {
+                if (contentArea) renderTestP1(sectionData, contentArea);
+            } else {
+                if (contentArea) renderTheoryP1(contentArea);
+            }
         }
     };
 
@@ -10130,6 +10208,681 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     };
 
+    // =============================================================
+    // UNIVERSAL DICTATION ENGINE (NGHE CHÉP CHÍNH TẢ)
+    // =============================================================
+    const dictationResultsStore = {};
+    let globalDictationAudio = null;
+
+    function resolveAudioUrl(src) {
+        if (!src) return '';
+        if (src.startsWith('http://') || src.startsWith('https://') || src.startsWith('media/') || src.startsWith('/')) {
+            return src;
+        }
+        return 'media/' + src;
+    }
+
+    window.playDictationAudio = function(audioSrc, rate = 1.0) {
+        if (!audioSrc) return;
+        const resolved = resolveAudioUrl(audioSrc);
+        if (globalDictationAudio) {
+            globalDictationAudio.pause();
+            globalDictationAudio.currentTime = 0;
+        }
+        globalDictationAudio = new Audio(resolved);
+        globalDictationAudio.playbackRate = rate;
+        globalDictationAudio.play().catch(e => console.log("Dictation audio play error:", e));
+    };
+
+    function computeWordDiff(userInput, targetText) {
+        function cleanWord(w) {
+            return (w || "").toLowerCase().replace(/[^a-z0-9\']/g, "");
+        }
+        const userWords = (userInput || "").trim().split(/\s+/).filter(Boolean);
+        const targetWords = (targetText || "").trim().split(/\s+/).filter(Boolean);
+        
+        const uClean = userWords.map(cleanWord);
+        const tClean = targetWords.map(cleanWord);
+        
+        const m = uClean.length;
+        const n = tClean.length;
+        const dp = Array.from({length: m + 1}, () => new Array(n + 1).fill(0));
+        
+        for (let i = 1; i <= m; i++) {
+            for (let j = 1; j <= n; j++) {
+                if (uClean[i - 1] === tClean[j - 1]) {
+                    dp[i][j] = dp[i - 1][j - 1] + 1;
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
+        }
+        
+        let i = m, j = n;
+        const diff = [];
+        let correctCount = 0;
+        while (i > 0 || j > 0) {
+            if (i > 0 && j > 0 && uClean[i - 1] === tClean[j - 1]) {
+                diff.unshift({ type: "correct", userWord: userWords[i - 1], targetWord: targetWords[j - 1] });
+                correctCount++;
+                i--; j--;
+            } else if (j > 0 && (i === 0 || dp[i][j - 1] >= dp[i - 1][j])) {
+                diff.unshift({ type: "missing", targetWord: targetWords[j - 1] });
+                j--;
+            } else if (i > 0 && (j === 0 || dp[i][j - 1] < dp[i - 1][j])) {
+                diff.unshift({ type: "wrong", userWord: userWords[i - 1] });
+                i--;
+            }
+        }
+        const accuracy = targetWords.length > 0 ? Math.round((correctCount / targetWords.length) * 100) : 0;
+        return { diff, accuracy, correctCount, totalTargetWords: targetWords.length };
+    }
+
+    function renderDiffHtml(diff) {
+        if (!diff || diff.length === 0) return '';
+        return diff.map(item => {
+            if (item.type === 'correct') {
+                return `<span class="diff-word correct">${item.userWord}</span>`;
+            } else if (item.type === 'wrong') {
+                return `<span class="diff-word wrong"><del>${item.userWord}</del></span>`;
+            } else if (item.type === 'missing') {
+                return `<span class="diff-word missing">${item.targetWord}</span>`;
+            }
+            return '';
+        }).join(' ');
+    }
+
+    function renderDictationUI(container, items, config = {}) {
+        if (!container) return;
+        if (!items || items.length === 0) {
+            container.innerHTML = `
+                <div style="text-align: center; padding: 48px 20px; color: #64748b; background: #ffffff; border-radius: 16px; border: 1.5px solid #e2e8f0; margin-top: 10px;">
+                    <div style="font-size: 2.8rem; margin-bottom: 12px;">🎧</div>
+                    <h4 style="font-size: 1.25rem; font-weight: 800; color: #1e293b; margin-bottom: 8px;">Chưa có bài nghe chép chính tả cho mục này</h4>
+                    <p style="font-size: 0.95rem; max-width: 500px; margin: 0 auto; line-height: 1.6;">Vui lòng chọn dạng bài hoặc đề thi khác trong menu bên trái để tiếp tục luyện nghe chép chính tả.</p>
+                </div>
+            `;
+            return;
+        }
+
+        const stateKey = config.key || ('dict_' + (config.part || 1) + '_' + (config.sectionId || 'default'));
+        if (!dictationResultsStore[stateKey]) {
+            dictationResultsStore[stateKey] = {};
+        }
+        const results = dictationResultsStore[stateKey];
+
+        let activeSubTab = 'dictation';
+        let currentIndex = 0;
+        let playbackRate = 1.0;
+        let isAudioPlaying = false;
+        let audioElement = new Audio();
+        audioElement.playbackRate = playbackRate;
+
+        function formatTime(seconds) {
+            if (isNaN(seconds) || seconds < 0) return "0:00";
+            const m = Math.floor(seconds / 60);
+            const s = Math.floor(seconds % 60);
+            return `${m}:${s < 10 ? '0' : ''}${s}`;
+        }
+
+        function loadAudio(idx, autoPlay = false) {
+            const item = items[idx];
+            if (!item || !item.audio) return;
+            const fullSrc = resolveAudioUrl(item.audio);
+            audioElement.pause();
+            audioElement.src = fullSrc;
+            audioElement.playbackRate = playbackRate;
+            audioElement.currentTime = 0;
+            isAudioPlaying = false;
+            updatePlayBtnUi(false);
+            if (autoPlay) {
+                audioElement.play().then(() => {
+                    isAudioPlaying = true;
+                    updatePlayBtnUi(true);
+                }).catch(e => console.log("Autoplay blocked or waiting:", e));
+            }
+        }
+
+        function updatePlayBtnUi(playing) {
+            const playBtn = container.querySelector("#dict-audio-play");
+            if (playBtn) {
+                playBtn.innerHTML = playing ? 
+                    `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>` :
+                    `<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>`;
+            }
+        }
+
+        function render() {
+            const completedCount = Object.keys(results).filter(k => results[k] && (results[k].checked || results[k].skipped)).length;
+            const currentItem = items[currentIndex];
+            const currResult = results[currentIndex];
+
+            let contentHtml = '';
+            if (activeSubTab === 'dictation') {
+                contentHtml = `
+                    <div class="dictation-card">
+                        <div class="dictation-card-header">
+                            <div class="dictation-nav-controls">
+                                <button class="dictation-arrow-btn" id="dict-prev-btn" title="Câu trước" ${currentIndex === 0 ? 'disabled' : ''}>
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m15 18-6-6 6-6"/></svg>
+                                </button>
+                                <span class="dictation-counter-text">
+                                    <select id="dict-select-idx" class="dictation-select-dropdown">
+                                        ${items.map((_, i) => `<option value="${i}" ${i === currentIndex ? 'selected' : ''}>${i + 1}</option>`).join('')}
+                                    </select>
+                                    / ${items.length}
+                                </span>
+                                <button class="dictation-arrow-btn" id="dict-next-btn" title="Câu tiếp theo" ${currentIndex === items.length - 1 ? 'disabled' : ''}>
+                                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m9 18 6-6 6 6"/></svg>
+                                </button>
+                            </div>
+                            <div class="dictation-header-right">
+                                <span class="dictation-badge-progress">${completedCount}/${items.length} đã làm</span>
+                            </div>
+                        </div>
+
+                        <!-- Audio Player -->
+                        <div class="dictation-audio-player">
+                            <button class="dict-play-btn" id="dict-audio-play" title="Phát / Dừng">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                            </button>
+                            <span class="dict-time-display" id="dict-time-display">0:00 / 0:00</span>
+                            <input type="range" class="dict-scrubber" id="dict-scrubber" min="0" max="100" value="0" step="0.1">
+                            <div class="dict-player-controls-right">
+                                <button class="dict-ctrl-btn" id="dict-replay-btn" title="Nghe lại câu này (Alt+R)">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 4v6h6"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>
+                                    <span>Nghe lại</span>
+                                </button>
+                                <select id="dict-speed-select" class="dict-speed-select" title="Tốc độ đọc">
+                                    <option value="0.75" ${playbackRate === 0.75 ? 'selected' : ''}>0.75x</option>
+                                    <option value="0.85" ${playbackRate === 0.85 ? 'selected' : ''}>0.85x</option>
+                                    <option value="1" ${playbackRate === 1 ? 'selected' : ''}>1x</option>
+                                    <option value="1.25" ${playbackRate === 1.25 ? 'selected' : ''}>1.25x</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Hint -->
+                        <div class="dictation-hint-row">
+                            <span style="font-size: 1.15rem;">💡</span> <strong style="color: #334155; margin-right: 4px;">Hint:</strong>
+                            <span class="dictation-hint-pill">${currentItem.hint || (currentItem.sentence ? currentItem.sentence.split(' ')[0] : '')}</span>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="dictation-input-wrapper">
+                            <textarea id="dict-input-text" class="dictation-textarea" placeholder="Type what you hear...">${currResult ? (currResult.userInput || '') : ''}</textarea>
+                            <div class="dictation-input-footer">
+                                <span class="dictation-key-hint">Nhấn <kbd>Enter</kbd> để kiểm tra &bull; <kbd>Alt + R</kbd> nghe lại</span>
+                            </div>
+                        </div>
+
+                        <!-- Actions -->
+                        <div class="dictation-actions-row">
+                            ${!currResult || (!currResult.checked && !currResult.skipped) ? `
+                                <button class="dict-btn-primary" id="dict-check-btn">Check</button>
+                                <button class="dict-btn-secondary" id="dict-skip-btn">Skip</button>
+                            ` : `
+                                <button class="dict-btn-primary" id="dict-next-question-btn">Tiếp tục câu tiếp (Enter) &rarr;</button>
+                                <button class="dict-btn-secondary" id="dict-retry-btn">Làm lại câu này</button>
+                            `}
+                        </div>
+
+                        <!-- Result Box -->
+                        ${currResult && (currResult.checked || currResult.skipped) ? `
+                            <div class="dictation-result-box ${currResult.skipped ? 'skipped' : (currResult.accuracy === 100 ? 'perfect' : 'good')}">
+                                <div class="dictation-result-header">
+                                    ${currResult.skipped ? `
+                                        <span class="dict-status-pill skipped">Đã bỏ qua ⏭️</span>
+                                    ` : `
+                                        <span class="dict-status-pill ${currResult.accuracy >= 80 ? 'correct' : 'partial'}">
+                                            ${currResult.accuracy}% Chính xác ${currResult.accuracy === 100 ? '🎉 Hoàn hảo!' : '🎯'}
+                                        </span>
+                                    `}
+                                </div>
+                                
+                                ${currResult.checked ? `
+                                    <div class="dict-diff-display">
+                                        <div style="font-size: 0.95rem; font-weight: 700; color: #475569; margin-bottom: 4px;">Nội dung bạn gõ:</div>
+                                        <div class="dict-diff-words">${renderDiffHtml(currResult.diff)}</div>
+                                    </div>
+                                ` : ''}
+
+                                <div class="dict-correct-sentence-row">
+                                    <div style="font-size: 0.95rem; font-weight: 700; color: #475569; margin-bottom: 4px;">Câu chính xác:</div>
+                                    <div class="dict-correct-sentence">
+                                        <button class="dict-inline-audio-btn" id="dict-result-audio-btn" title="Nghe câu này">🔊</button>
+                                        <span>${currentItem.sentence}</span>
+                                    </div>
+                                </div>
+
+                                ${currentItem.vi ? `
+                                    <div class="dict-translation-row">
+                                        <strong style="color: #334155;">Dịch nghĩa:</strong>
+                                        <span class="dict-translation-text">${currentItem.vi}</span>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            } else {
+                contentHtml = `
+                    <div class="dictation-transcript-card">
+                        <div class="dictation-transcript-header">
+                            <div>
+                                <h4 style="font-size: 1.18rem; font-weight: 800; margin: 0 0 4px; color: #0f172a;">Full Transcript &bull; ${items.length} câu</h4>
+                                <span style="font-size: 0.9rem; color: #64748b;">Nghe toàn bộ transcript và chọn câu để luyện tập</span>
+                            </div>
+                            <span class="dictation-badge-progress">${completedCount}/${items.length} đã làm</span>
+                        </div>
+                        <div class="dictation-transcript-list">
+                            ${items.map((it, idx) => {
+                                const res = results[idx];
+                                const statusBadge = res && res.checked ? 
+                                    (res.accuracy === 100 ? '<span class="dict-tag-pill green">✅ 100%</span>' : `<span class="dict-tag-pill blue">🎯 ${res.accuracy}%</span>`) : 
+                                    (res && res.skipped ? '<span class="dict-tag-pill amber">⏭️ Bỏ qua</span>' : '<span class="dict-tag-pill gray">⚪ Chưa làm</span>');
+                                return `
+                                    <div class="dict-transcript-item ${idx === currentIndex ? 'current' : ''}">
+                                        <div class="dict-transcript-col-num">
+                                            <span class="dict-num-badge">#${idx + 1}</span>
+                                            <button class="dict-item-play-btn" data-audio="${it.audio}" title="Nghe câu ${idx + 1}">
+                                                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                                            </button>
+                                        </div>
+                                        <div class="dict-transcript-col-content">
+                                            <div class="dict-transcript-en">${it.sentence}</div>
+                                            ${it.vi ? `<div class="dict-transcript-vi">${it.vi}</div>` : ''}
+                                            ${it.choices ? `
+                                                <div class="dict-transcript-choices">
+                                                    ${Object.keys(it.choices).map(k => `
+                                                        <div class="dict-choice-sub ${k === it.answer ? 'is-correct' : ''}">
+                                                            <strong>(${k})</strong> ${it.choices[k]}
+                                                            ${it.vietnamese_choices && it.vietnamese_choices[k] ? `<span class="dict-choice-vi">&mdash; ${it.vietnamese_choices[k]}</span>` : ''}
+                                                        </div>
+                                                    `).join('')}
+                                                </div>
+                                            ` : ''}
+                                        </div>
+                                        <div class="dict-transcript-col-action">
+                                            ${statusBadge}
+                                            <button class="dict-jump-btn" data-jump-idx="${idx}" title="Luyện câu này">✍️ Luyện câu này</button>
+                                        </div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = `
+                <div class="dictation-wrapper">
+                    <div class="dictation-subtabs">
+                        <button class="dictation-subtab-btn ${activeSubTab === 'dictation' ? 'active' : ''}" data-subtab="dictation">Dictation</button>
+                        <button class="dictation-subtab-btn ${activeSubTab === 'transcript' ? 'active' : ''}" data-subtab="transcript">Full transcript</button>
+                    </div>
+                    <div id="dictation-subview-content">
+                        ${contentHtml}
+                    </div>
+                </div>
+            `;
+
+            attachEvents();
+        }
+
+        function attachEvents() {
+            // Subtab clicks
+            container.querySelectorAll(".dictation-subtab-btn").forEach(btn => {
+                btn.addEventListener("click", () => {
+                    const tab = btn.getAttribute("data-subtab");
+                    if (tab !== activeSubTab) {
+                        activeSubTab = tab;
+                        render();
+                    }
+                });
+            });
+
+            if (activeSubTab === 'dictation') {
+                const textarea = container.querySelector("#dict-input-text");
+                const checkBtn = container.querySelector("#dict-check-btn");
+                const skipBtn = container.querySelector("#dict-skip-btn");
+                const nextBtn = container.querySelector("#dict-next-question-btn");
+                const retryBtn = container.querySelector("#dict-retry-btn");
+                const prevBtn = container.querySelector("#dict-prev-btn");
+                const nextArrowBtn = container.querySelector("#dict-next-btn");
+                const selectIdx = container.querySelector("#dict-select-idx");
+                const playBtn = container.querySelector("#dict-audio-play");
+                const replayBtn = container.querySelector("#dict-replay-btn");
+                const speedSelect = container.querySelector("#dict-speed-select");
+                const scrubber = container.querySelector("#dict-scrubber");
+                const timeDisplay = container.querySelector("#dict-time-display");
+                const resultAudioBtn = container.querySelector("#dict-result-audio-btn");
+
+                // Focus textarea if not checked
+                const currResult = results[currentIndex];
+                if (textarea && (!currResult || (!currResult.checked && !currResult.skipped))) {
+                    textarea.focus();
+                }
+
+                if (playBtn) {
+                    playBtn.addEventListener("click", () => {
+                        const targetSrc = resolveAudioUrl(items[currentIndex].audio);
+                        if (audioElement.src !== targetSrc && !audioElement.src.endsWith(targetSrc)) {
+                            audioElement.src = targetSrc;
+                        }
+                        if (isAudioPlaying) {
+                            audioElement.pause();
+                            isAudioPlaying = false;
+                            updatePlayBtnUi(false);
+                        } else {
+                            audioElement.playbackRate = playbackRate;
+                            audioElement.play().then(() => {
+                                isAudioPlaying = true;
+                                updatePlayBtnUi(true);
+                            }).catch(e => console.log(e));
+                        }
+                    });
+                }
+
+                if (replayBtn) {
+                    replayBtn.addEventListener("click", () => {
+                        const targetSrc = resolveAudioUrl(items[currentIndex].audio);
+                        if (audioElement.src !== targetSrc && !audioElement.src.endsWith(targetSrc)) {
+                            audioElement.src = targetSrc;
+                        }
+                        audioElement.currentTime = 0;
+                        audioElement.playbackRate = playbackRate;
+                        audioElement.play().then(() => {
+                            isAudioPlaying = true;
+                            updatePlayBtnUi(true);
+                        }).catch(e => console.log(e));
+                    });
+                }
+
+                if (resultAudioBtn) {
+                    resultAudioBtn.addEventListener("click", () => {
+                        window.playDictationAudio(items[currentIndex].audio, playbackRate);
+                    });
+                }
+
+                if (speedSelect) {
+                    speedSelect.addEventListener("change", (e) => {
+                        playbackRate = parseFloat(e.target.value);
+                        audioElement.playbackRate = playbackRate;
+                    });
+                }
+
+                if (scrubber) {
+                    scrubber.addEventListener("input", (e) => {
+                        if (audioElement.duration) {
+                            audioElement.currentTime = (parseFloat(e.target.value) / 100) * audioElement.duration;
+                        }
+                    });
+                }
+
+                audioElement.ontimeupdate = () => {
+                    if (audioElement.duration && scrubber && timeDisplay) {
+                        const pct = (audioElement.currentTime / audioElement.duration) * 100;
+                        scrubber.value = pct;
+                        timeDisplay.textContent = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration)}`;
+                    }
+                };
+
+                audioElement.onloadedmetadata = () => {
+                    if (timeDisplay) {
+                        timeDisplay.textContent = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration)}`;
+                    }
+                };
+
+                audioElement.onended = () => {
+                    isAudioPlaying = false;
+                    updatePlayBtnUi(false);
+                    if (scrubber) scrubber.value = 0;
+                };
+
+                // Check button logic
+                function doCheck() {
+                    const text = textarea ? textarea.value.trim() : '';
+                    if (!text) {
+                        alert("Vui lòng gõ những gì bạn nghe được vào ô bên dưới!");
+                        if (textarea) textarea.focus();
+                        return;
+                    }
+                    const targetText = items[currentIndex].sentence;
+                    const diffRes = computeWordDiff(text, targetText);
+                    results[currentIndex] = {
+                        checked: true,
+                        skipped: false,
+                        userInput: text,
+                        diff: diffRes.diff,
+                        accuracy: diffRes.accuracy
+                    };
+                    render();
+                }
+
+                if (checkBtn) checkBtn.addEventListener("click", doCheck);
+
+                // Skip button logic
+                if (skipBtn) {
+                    skipBtn.addEventListener("click", () => {
+                        results[currentIndex] = {
+                            checked: false,
+                            skipped: true,
+                            userInput: textarea ? textarea.value : ''
+                        };
+                        render();
+                    });
+                }
+
+                // Next question logic
+                function doNext() {
+                    if (currentIndex < items.length - 1) {
+                        currentIndex++;
+                        render();
+                        loadAudio(currentIndex, true);
+                    } else {
+                        alert("Chúc mừng! Bạn đã hoàn thành toàn bộ bài nghe chép chính tả này! 🎉");
+                    }
+                }
+
+                if (nextBtn) nextBtn.addEventListener("click", doNext);
+
+                if (retryBtn) {
+                    retryBtn.addEventListener("click", () => {
+                        delete results[currentIndex];
+                        render();
+                        loadAudio(currentIndex, true);
+                    });
+                }
+
+                if (prevBtn) {
+                    prevBtn.addEventListener("click", () => {
+                        if (currentIndex > 0) {
+                            currentIndex--;
+                            render();
+                            loadAudio(currentIndex, true);
+                        }
+                    });
+                }
+
+                if (nextArrowBtn) {
+                    nextArrowBtn.addEventListener("click", () => {
+                        if (currentIndex < items.length - 1) {
+                            currentIndex++;
+                            render();
+                            loadAudio(currentIndex, true);
+                        }
+                    });
+                }
+
+                if (selectIdx) {
+                    selectIdx.addEventListener("change", (e) => {
+                        currentIndex = parseInt(e.target.value, 10);
+                        render();
+                        loadAudio(currentIndex, true);
+                    });
+                }
+
+                // Keyboard handler on textarea
+                if (textarea) {
+                    textarea.addEventListener("keydown", (e) => {
+                        if (e.key === "Enter" && !e.shiftKey) {
+                            e.preventDefault();
+                            const res = results[currentIndex];
+                            if (!res || (!res.checked && !res.skipped)) {
+                                doCheck();
+                            } else {
+                                doNext();
+                            }
+                        } else if (e.key === "r" && e.altKey) {
+                            e.preventDefault();
+                            if (replayBtn) replayBtn.click();
+                        }
+                    });
+                }
+            } else {
+                // Transcript view events
+                container.querySelectorAll(".dict-item-play-btn").forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        const aud = btn.getAttribute("data-audio");
+                        if (aud) window.playDictationAudio(aud);
+                    });
+                });
+
+                container.querySelectorAll(".dict-jump-btn").forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        const idx = parseInt(btn.getAttribute("data-jump-idx"), 10);
+                        if (!isNaN(idx)) {
+                            currentIndex = idx;
+                            activeSubTab = 'dictation';
+                            render();
+                            loadAudio(currentIndex, true);
+                        }
+                    });
+                });
+            }
+        }
+
+        // Initialize audio & render
+        loadAudio(currentIndex, false);
+        render();
+    }
+
+    window.renderDictationP1 = function(container, sectionId) {
+        const activeSec = sectionId || state.part01ActiveSection || 'dang_01';
+        let items = [];
+        if (window.part01DictationData && window.part01DictationData[activeSec]) {
+            items = window.part01DictationData[activeSec];
+        }
+        renderDictationUI(container, items, { part: 1, sectionId: activeSec });
+    };
+
+    window.renderDictationP2 = function(section) {
+        if (!dictationContentAreaP2) return;
+        const secId = section ? section.id : (state.part02ActiveSection || 'info_who');
+        let items = [];
+        
+        // If tests in part02PracticeData
+        if (window.part02PracticeData) {
+            const test = window.part02PracticeData.find(t => t.id === secId);
+            if (test && test.questions) {
+                test.questions.forEach((q, i) => {
+                    const cleanQ = (q.question || "").replace(/<[^>]+>/g, "").trim();
+                    const viQ = (q.vietnamese_question || "").replace(/<[^>]+>/g, "").trim();
+                    items.push({
+                        id: i + 1,
+                        audio: test.audio,
+                        sentence: cleanQ,
+                        vi: viQ,
+                        hint: cleanQ.split(" ").slice(0, 2).join(" "),
+                        choices: q.choices,
+                        vietnamese_choices: q.vietnamese_choices,
+                        answer: q.answer
+                    });
+                });
+            }
+        }
+        
+        // If concept in part02Data
+        if (items.length === 0 && section && section.examples) {
+            section.examples.forEach((ex, i) => {
+                const cleanQ = (ex.question || ex.text || "").replace(/<[^>]+>/g, "").trim();
+                const viQ = (ex.vietnamese_question || "").replace(/<[^>]+>/g, "").trim();
+                if (cleanQ) {
+                    items.push({
+                        id: i + 1,
+                        audio: ex.audio ? (ex.audio.startsWith('media/') ? ex.audio : 'media/' + ex.audio) : null,
+                        sentence: cleanQ,
+                        vi: viQ,
+                        hint: cleanQ.split(" ").slice(0, 2).join(" "),
+                        choices: ex.choices,
+                        vietnamese_choices: ex.vietnamese_choices,
+                        answer: ex.answer
+                    });
+                }
+            });
+        }
+        
+        renderDictationUI(dictationContentAreaP2, items, { part: 2, sectionId: secId });
+    };
+
+    window.renderDictationP3 = function(section) {
+        if (!dictationContentAreaP3) return;
+        const secId = section ? section.id : (state.part03ActiveSection || 'overview');
+        let items = [];
+        const sec = section || (state.part03Data ? state.part03Data.find(s => s.id === secId) : null);
+        if (sec) {
+            const pool = (sec.practice || []).concat(sec.examples || []);
+            pool.forEach((item, i) => {
+                const cleanQ = (item.question || "").replace(/<[^>]+>/g, "").replace(/^Question\s*\d+[\.\:]?\s*/i, "").trim();
+                const viQ = (item.vietnamese_question || "").replace(/<[^>]+>/g, "").trim();
+                if (cleanQ && item.audio) {
+                    items.push({
+                        id: items.length + 1,
+                        audio: item.audio ? (item.audio.startsWith('media/') ? item.audio : 'media/' + item.audio) : null,
+                        sentence: cleanQ,
+                        vi: viQ,
+                        hint: cleanQ.split(" ").slice(0, 2).join(" "),
+                        choices: item.choices,
+                        answer: item.answer
+                    });
+                }
+            });
+        }
+        renderDictationUI(dictationContentAreaP3, items, { part: 3, sectionId: secId });
+    };
+
+    window.renderDictationP4 = function(section) {
+        if (!dictationContentAreaP4) return;
+        const secId = section ? section.id : (state.part04ActiveSection || 'overview');
+        let items = [];
+        const sec = section || (state.part04Data ? state.part04Data.find(s => s.id === secId) : null);
+        if (sec) {
+            const pool = (sec.examples || []);
+            (sec.practice_sets || []).forEach(ps => {
+                (ps.questions || []).forEach(q => {
+                    pool.push({ ...q, audio: ps.audio });
+                });
+            });
+            pool.forEach((item, i) => {
+                const cleanQ = (item.question || "").replace(/<[^>]+>/g, "").replace(/^Question\s*\d+[\.\:]?\s*/i, "").trim();
+                const viQ = (item.vietnamese_question || "").replace(/<[^>]+>/g, "").trim();
+                if (cleanQ && item.audio) {
+                    items.push({
+                        id: items.length + 1,
+                        audio: item.audio ? (item.audio.startsWith('media/') ? item.audio : 'media/' + item.audio) : null,
+                        sentence: cleanQ,
+                        vi: viQ,
+                        hint: cleanQ.split(" ").slice(0, 2).join(" "),
+                        choices: item.choices,
+                        answer: item.answer
+                    });
+                }
+            });
+        }
+        renderDictationUI(dictationContentAreaP4, items, { part: 4, sectionId: secId });
+    };
+
 
 
     function loadSectionP4(id) {
@@ -10252,6 +11005,11 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
+        const dictationTabBtnP4 = document.getElementById("sec-btn-dictation-p4");
+        if (dictationTabBtnP4) {
+            dictationTabBtnP4.classList.remove("hidden");
+        }
+
         // Auto-switch to the first tab that has content
         let targetTab = "theory";
         if (section.theory && section.theory.length > 0) {
@@ -10306,6 +11064,8 @@ document.addEventListener("DOMContentLoaded", () => {
             renderExamplesP4(section);
         } else if (tabName === "practice") {
             renderPracticeP4(section);
+        } else if (tabName === "dictation") {
+            renderDictationP4(section);
         }
     }
 
