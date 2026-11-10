@@ -464,12 +464,26 @@ document.addEventListener("DOMContentLoaded", () => {
         // Giảng viên / Quản trị viên: Toàn quyền mở khóa
         if (role && role.type === "teacher") return false;
 
-        // 1. Học viên Phạm Thị Thu Trang: "Thu Trang mở được hết PART 01 nhé!"
+        // 1. Học viên Phạm Thị Thu Trang: Mở toàn bộ PART 01 + Tổng quan & toàn bộ WH-Questions (Information Questions) của PART 02
         if (role && role.type === "thu_trang") {
             if (partNum === 1) {
                 return false; // Mở toàn bộ Part 01
             }
-            return true; // Khóa Part 02, Part 03, Part 04
+            if (partNum === 2) {
+                if (!sectionId) return false; // Cho phép mở giao diện Part 02
+                const baseId = String(sectionId).replace(/_(trabai|dictation)$/, "");
+                const allowedP2 = [
+                    "overview",
+                    "info_who",
+                    "info_where",
+                    "info_when",
+                    "info_why",
+                    "info_what",
+                    "info_how"
+                ];
+                return !allowedP2.includes(baseId);
+            }
+            return true; // Khóa các phần còn lại của Part 02, và khóa Part 03, Part 04
         }
 
         // 2. Học viên Lương Thị Yến Nhi & Nguyễn Hoàng Caty: "Yến Nhi và Caty mở được tới PART 03"
@@ -6491,12 +6505,29 @@ document.addEventListener("DOMContentLoaded", () => {
                         submenuItem.addEventListener("click", (e) => {
                             e.stopPropagation();
                             if (isContentLocked(2, item.id)) {
-                                window.showPaywallModal(() => loadSectionP2(item.id), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                                window.showPaywallModal(() => loadSectionP2(item.id, "theory"), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                                 return;
                             }
-                            loadSectionP2(item.id);
+                            loadSectionP2(item.id, "theory");
                         });
                         part2ConceptsNavList.appendChild(submenuItem);
+
+                        const dictationId = item.id + "_dictation";
+                        const dictationSubItem = document.createElement("div");
+                        dictationSubItem.className = "submenu-item group-item";
+                        dictationSubItem.setAttribute("data-id", dictationId);
+                        dictationSubItem.style.paddingLeft = "26px";
+                        const dictLocked = isContentLocked(2, dictationId);
+                        dictationSubItem.innerHTML = `<span class="submenu-dot" style="background: #2563eb;"></span><span class="submenu-text" style="color: #2563eb; font-weight: 700; font-size: 0.88rem;">🎧 CHÉP CHÍNH TẢ${dictLocked ? " 🔒" : ""}</span>`;
+                        dictationSubItem.addEventListener("click", (e) => {
+                            e.stopPropagation();
+                            if (isContentLocked(2, dictationId)) {
+                                window.showPaywallModal(() => loadSectionP2(item.id, "dictation"), "Phần Chép chính tả này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng liên hệ giáo viên để được mở thêm!");
+                                return;
+                            }
+                            loadSectionP2(item.id, "dictation");
+                        });
+                        part2ConceptsNavList.appendChild(dictationSubItem);
                     });
                 }
             });
@@ -7394,9 +7425,9 @@ document.addEventListener("DOMContentLoaded", () => {
         testContentAreaP2.innerHTML = html;
     }
 
-    function loadSectionP2(sectionId) {
+    function loadSectionP2(sectionId, targetTab = "theory") {
         if (isContentLocked(2, sectionId)) {
-            window.showPaywallModal(() => loadSectionP2(sectionId), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => loadSectionP2(sectionId, targetTab), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         
@@ -7405,13 +7436,18 @@ document.addEventListener("DOMContentLoaded", () => {
         if (part2ConceptsNavList) {
             const items = part2ConceptsNavList.querySelectorAll('.submenu-item');
             items.forEach(el => {
-                if (el.getAttribute('data-id') === sectionId) {
+                const dataId = el.getAttribute('data-id');
+                if (targetTab === "dictation" && dataId === sectionId + "_dictation") {
                     el.classList.add('active');
+                } else if (targetTab !== "dictation" && dataId === sectionId) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+                if (dataId === sectionId) {
                     if (breadParentP2) breadParentP2.textContent = "DẠNG CÂU HỎI";
                     if (breadCurrentP2) breadCurrentP2.textContent = el.textContent.replace(' 🔒', '');
                     if (panelTitleP2) panelTitleP2.textContent = el.textContent.replace(' 🔒', '');
-                } else {
-                    el.classList.remove('active');
                 }
             });
         }
@@ -7426,18 +7462,28 @@ document.addEventListener("DOMContentLoaded", () => {
         
         // Show sections bar & configure buttons
         const panelSectionsBarP2 = document.getElementById("panel-sections-bar-p2");
-        if (panelSectionsBarP2) panelSectionsBarP2.style.display = "flex";
+        if (panelSectionsBarP2) panelSectionsBarP2.style.display = sectionId === "overview" ? "none" : "flex";
         if (secTestP2) secTestP2.classList.remove("active");
         if (secBtnTheoryP2) secBtnTheoryP2.classList.remove("hidden");
         if (secBtnExamplesP2) secBtnExamplesP2.classList.remove("hidden");
         if (secBtnVocabularyP2) secBtnVocabularyP2.classList.add("hidden");
         if (secBtnPracticeP2) secBtnPracticeP2.classList.add("hidden");
-        if (secBtnDictationP2) secBtnDictationP2.classList.remove("hidden");
+        if (secBtnDictationP2) {
+            if (sectionId === "overview") {
+                secBtnDictationP2.classList.add("hidden");
+            } else {
+                secBtnDictationP2.classList.remove("hidden");
+            }
+        }
         
         renderTheoryP2(section);
         renderExamplesP2(section);
         
-        if (secBtnTheoryP2) secBtnTheoryP2.click();
+        if (targetTab === "dictation" && secBtnDictationP2 && sectionId !== "overview") {
+            secBtnDictationP2.click();
+        } else if (secBtnTheoryP2) {
+            secBtnTheoryP2.click();
+        }
     }
 
     function renderTheoryP2(section) {
@@ -7858,7 +7904,7 @@ document.addEventListener("DOMContentLoaded", () => {
             secBtnDictationP2.classList.add('active');
             if(secDictationP2) secDictationP2.classList.add('active');
             const section = window.part02Data ? window.part02Data.find(s => s.id === state.part02ActiveSection) : null;
-            if (section) renderDictationP2(section);
+            renderDictationP2(section);
         });
     }
 
@@ -10222,9 +10268,71 @@ document.addEventListener("DOMContentLoaded", () => {
         return 'media/' + src;
     }
 
-    window.playDictationAudio = function(audioSrc, rate = 1.0) {
-        if (!audioSrc) return;
-        const resolved = resolveAudioUrl(audioSrc);
+    function cleanSentenceForSpeech(text) {
+        return (text || "")
+            .replace(/<[^>]+>/g, "")
+            .replace(/^\([A-D]\)\s*/i, "")
+            .replace(/^[A-D][\.\)]\s*/i, "")
+            .replace(/^(M|W|M1|M2|W1|W2|Man|Woman)[\s\-]*(\([A-Za-z]+\))?\s*:\s*/i, "")
+            .trim();
+    }
+
+    function speakSingleSentence(text, rate = 1.0, onStart, onEnd) {
+        const clean = cleanSentenceForSpeech(text);
+        if (!clean) {
+            if (onEnd) onEnd();
+            return;
+        }
+        if (globalDictationAudio) {
+            globalDictationAudio.pause();
+            globalDictationAudio.currentTime = 0;
+        }
+        if ('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+            const utter = new SpeechSynthesisUtterance(clean);
+            utter.lang = 'en-US';
+            utter.rate = rate || 1.0;
+            const voices = window.speechSynthesis.getVoices();
+            const enVoice = voices.find(v => v.lang.startsWith('en') && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Samantha') || v.name.includes('Daniel'))) || voices.find(v => v.lang.startsWith('en'));
+            if (enVoice) utter.voice = enVoice;
+            utter.onstart = () => { if (onStart) onStart(); };
+            utter.onend = () => { if (onEnd) onEnd(); };
+            utter.onerror = () => { if (onEnd) onEnd(); };
+            if (onStart) onStart();
+            window.speechSynthesis.speak(utter);
+        } else if (typeof window.playTTS === 'function') {
+            if (onStart) onStart();
+            window.playTTS(clean);
+            if (onEnd) setTimeout(onEnd, 2000);
+        }
+    }
+
+    window.playDictationAudio = function(itemOrAudioSrc, rate = 1.0, sentenceFallback = "") {
+        if (typeof itemOrAudioSrc === 'object' && itemOrAudioSrc !== null) {
+            const item = itemOrAudioSrc;
+            if (item.singleAudio && item.audio && !item.useTTS) {
+                const resolved = resolveAudioUrl(item.audio);
+                if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+                if (globalDictationAudio) {
+                    globalDictationAudio.pause();
+                    globalDictationAudio.currentTime = 0;
+                }
+                globalDictationAudio = new Audio(resolved);
+                globalDictationAudio.playbackRate = rate;
+                globalDictationAudio.play().catch(() => {
+                    speakSingleSentence(item.sentence, rate);
+                });
+            } else {
+                speakSingleSentence(item.sentence, rate);
+            }
+            return;
+        }
+        if (sentenceFallback) {
+            speakSingleSentence(sentenceFallback, rate);
+            return;
+        }
+        if (!itemOrAudioSrc) return;
+        const resolved = resolveAudioUrl(itemOrAudioSrc);
         if (globalDictationAudio) {
             globalDictationAudio.pause();
             globalDictationAudio.currentTime = 0;
@@ -10239,7 +10347,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return (w || "").toLowerCase().replace(/[^a-z0-9\']/g, "");
         }
         const userWords = (userInput || "").trim().split(/\s+/).filter(Boolean);
-        const targetWords = (targetText || "").trim().split(/\s+/).filter(Boolean);
+        const targetWords = cleanSentenceForSpeech(targetText).split(/\s+/).filter(Boolean);
         
         const uClean = userWords.map(cleanWord);
         const tClean = targetWords.map(cleanWord);
@@ -10318,6 +10426,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let isAudioPlaying = false;
         let audioElement = new Audio();
         audioElement.playbackRate = playbackRate;
+        let ttsAnimInterval = null;
 
         function formatTime(seconds) {
             if (isNaN(seconds) || seconds < 0) return "0:00";
@@ -10326,21 +10435,95 @@ document.addEventListener("DOMContentLoaded", () => {
             return `${m}:${s < 10 ? '0' : ''}${s}`;
         }
 
-        function loadAudio(idx, autoPlay = false) {
-            const item = items[idx];
-            if (!item || !item.audio) return;
-            const fullSrc = resolveAudioUrl(item.audio);
+        function stopAllPlayback() {
             audioElement.pause();
-            audioElement.src = fullSrc;
-            audioElement.playbackRate = playbackRate;
-            audioElement.currentTime = 0;
+            if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+            if (ttsAnimInterval) {
+                clearInterval(ttsAnimInterval);
+                ttsAnimInterval = null;
+            }
             isAudioPlaying = false;
             updatePlayBtnUi(false);
-            if (autoPlay) {
+        }
+
+        function estimateTtsDuration(text, rate) {
+            const words = cleanSentenceForSpeech(text).split(/\s+/).filter(Boolean).length;
+            return Math.max(1.5, Math.min(8, (words * 0.42) / (rate || 1.0)));
+        }
+
+        function playCurrentSentence() {
+            const item = items[currentIndex];
+            if (!item) return;
+            stopAllPlayback();
+
+            if (item.singleAudio && item.audio && !item.useTTS) {
+                const fullSrc = resolveAudioUrl(item.audio);
+                if (audioElement.src !== fullSrc && !audioElement.src.endsWith(fullSrc)) {
+                    audioElement.src = fullSrc;
+                }
+                audioElement.currentTime = 0;
+                audioElement.playbackRate = playbackRate;
                 audioElement.play().then(() => {
                     isAudioPlaying = true;
                     updatePlayBtnUi(true);
-                }).catch(e => console.log("Autoplay blocked or waiting:", e));
+                }).catch(() => {
+                    playCurrentViaTTS(item);
+                });
+            } else {
+                playCurrentViaTTS(item);
+            }
+        }
+
+        function playCurrentViaTTS(item) {
+            const estDur = estimateTtsDuration(item.sentence, playbackRate);
+            const scrubber = container.querySelector("#dict-scrubber");
+            const timeDisplay = container.querySelector("#dict-time-display");
+            let elapsed = 0;
+            if (timeDisplay) timeDisplay.textContent = `0:00 / ${formatTime(estDur)}`;
+            if (scrubber) scrubber.value = 0;
+
+            speakSingleSentence(item.sentence, playbackRate, () => {
+                isAudioPlaying = true;
+                updatePlayBtnUi(true);
+                if (ttsAnimInterval) clearInterval(ttsAnimInterval);
+                ttsAnimInterval = setInterval(() => {
+                    elapsed += 0.1;
+                    const sEl = container.querySelector("#dict-scrubber");
+                    const tEl = container.querySelector("#dict-time-display");
+                    if (sEl) sEl.value = Math.min(98, (elapsed / estDur) * 100);
+                    if (tEl) tEl.textContent = `${formatTime(Math.min(estDur, elapsed))} / ${formatTime(estDur)}`;
+                }, 100);
+            }, () => {
+                if (ttsAnimInterval) {
+                    clearInterval(ttsAnimInterval);
+                    ttsAnimInterval = null;
+                }
+                isAudioPlaying = false;
+                updatePlayBtnUi(false);
+                const sEl = container.querySelector("#dict-scrubber");
+                const tEl = container.querySelector("#dict-time-display");
+                if (sEl) sEl.value = 0;
+                if (tEl) tEl.textContent = `0:00 / ${formatTime(estDur)}`;
+            });
+        }
+
+        function loadAudio(idx, autoPlay = false) {
+            const item = items[idx];
+            if (!item) return;
+            stopAllPlayback();
+            if (item.singleAudio && item.audio && !item.useTTS) {
+                const fullSrc = resolveAudioUrl(item.audio);
+                audioElement.src = fullSrc;
+                audioElement.playbackRate = playbackRate;
+                audioElement.currentTime = 0;
+            } else {
+                audioElement.removeAttribute("src");
+                const estDur = estimateTtsDuration(item.sentence, playbackRate);
+                const timeDisplay = container.querySelector("#dict-time-display");
+                if (timeDisplay) timeDisplay.textContent = `0:00 / ${formatTime(estDur)}`;
+            }
+            if (autoPlay) {
+                playCurrentSentence();
             }
         }
 
@@ -10357,6 +10540,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const completedCount = Object.keys(results).filter(k => results[k] && (results[k].checked || results[k].skipped)).length;
             const currentItem = items[currentIndex];
             const currResult = results[currentIndex];
+            const cleanDisplaySentence = cleanSentenceForSpeech(currentItem.sentence);
 
             let contentHtml = '';
             if (activeSubTab === 'dictation') {
@@ -10369,7 +10553,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                 </button>
                                 <span class="dictation-counter-text">
                                     <select id="dict-select-idx" class="dictation-select-dropdown">
-                                        ${items.map((_, i) => `<option value="${i}" ${i === currentIndex ? 'selected' : ''}>${i + 1}</option>`).join('')}
+                                        ${items.map((it, i) => `<option value="${i}" ${i === currentIndex ? 'selected' : ''}>Câu ${i + 1}${it.source ? ' (' + it.source + ')' : ''}</option>`).join('')}
                                     </select>
                                     / ${items.length}
                                 </span>
@@ -10387,7 +10571,7 @@ document.addEventListener("DOMContentLoaded", () => {
                             <button class="dict-play-btn" id="dict-audio-play" title="Phát / Dừng">
                                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
                             </button>
-                            <span class="dict-time-display" id="dict-time-display">0:00 / 0:00</span>
+                            <span class="dict-time-display" id="dict-time-display">0:00 / ${formatTime(estimateTtsDuration(cleanDisplaySentence, playbackRate))}</span>
                             <input type="range" class="dict-scrubber" id="dict-scrubber" min="0" max="100" value="0" step="0.1">
                             <div class="dict-player-controls-right">
                                 <button class="dict-ctrl-btn" id="dict-replay-btn" title="Nghe lại câu này (Alt+R)">
@@ -10406,7 +10590,8 @@ document.addEventListener("DOMContentLoaded", () => {
                         <!-- Hint -->
                         <div class="dictation-hint-row">
                             <span style="font-size: 1.15rem;">💡</span> <strong style="color: #334155; margin-right: 4px;">Hint:</strong>
-                            <span class="dictation-hint-pill">${currentItem.hint || (currentItem.sentence ? currentItem.sentence.split(' ')[0] : '')}</span>
+                            <span class="dictation-hint-pill">${currentItem.hint || (cleanDisplaySentence ? cleanDisplaySentence.split(' ').slice(0, 2).join(' ') : '')}</span>
+                            ${currentItem.source ? `<span style="margin-left: auto; font-size: 0.82rem; font-weight: 700; color: #64748b; background: #f1f5f9; padding: 3px 10px; border-radius: 999px;">📌 ${currentItem.source}</span>` : ''}
                         </div>
 
                         <!-- Textarea -->
@@ -10452,7 +10637,7 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <div style="font-size: 0.95rem; font-weight: 700; color: #475569; margin-bottom: 4px;">Câu chính xác:</div>
                                     <div class="dict-correct-sentence">
                                         <button class="dict-inline-audio-btn" id="dict-result-audio-btn" title="Nghe câu này">🔊</button>
-                                        <span>${currentItem.sentence}</span>
+                                        <span>${cleanDisplaySentence}</span>
                                     </div>
                                 </div>
 
@@ -10472,13 +10657,14 @@ document.addEventListener("DOMContentLoaded", () => {
                         <div class="dictation-transcript-header">
                             <div>
                                 <h4 style="font-size: 1.18rem; font-weight: 800; margin: 0 0 4px; color: #0f172a;">Full Transcript &bull; ${items.length} câu</h4>
-                                <span style="font-size: 0.9rem; color: #64748b;">Nghe toàn bộ transcript và chọn câu để luyện tập</span>
+                                <span style="font-size: 0.9rem; color: #64748b;">Nghe từng câu rời (không đọc A, B, C, D) và chọn câu bất kỳ để luyện chép chính tả</span>
                             </div>
                             <span class="dictation-badge-progress">${completedCount}/${items.length} đã làm</span>
                         </div>
                         <div class="dictation-transcript-list">
                             ${items.map((it, idx) => {
                                 const res = results[idx];
+                                const cleanItSentence = cleanSentenceForSpeech(it.sentence);
                                 const statusBadge = res && res.checked ? 
                                     (res.accuracy === 100 ? '<span class="dict-tag-pill green">✅ 100%</span>' : `<span class="dict-tag-pill blue">🎯 ${res.accuracy}%</span>`) : 
                                     (res && res.skipped ? '<span class="dict-tag-pill amber">⏭️ Bỏ qua</span>' : '<span class="dict-tag-pill gray">⚪ Chưa làm</span>');
@@ -10486,23 +10672,14 @@ document.addEventListener("DOMContentLoaded", () => {
                                     <div class="dict-transcript-item ${idx === currentIndex ? 'current' : ''}">
                                         <div class="dict-transcript-col-num">
                                             <span class="dict-num-badge">#${idx + 1}</span>
-                                            <button class="dict-item-play-btn" data-audio="${it.audio}" title="Nghe câu ${idx + 1}">
+                                            <button class="dict-item-play-btn" data-item-idx="${idx}" title="Nghe câu ${idx + 1}">
                                                 <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
                                             </button>
                                         </div>
                                         <div class="dict-transcript-col-content">
-                                            <div class="dict-transcript-en">${it.sentence}</div>
+                                            <div class="dict-transcript-en">${cleanItSentence}</div>
                                             ${it.vi ? `<div class="dict-transcript-vi">${it.vi}</div>` : ''}
-                                            ${it.choices ? `
-                                                <div class="dict-transcript-choices">
-                                                    ${Object.keys(it.choices).map(k => `
-                                                        <div class="dict-choice-sub ${k === it.answer ? 'is-correct' : ''}">
-                                                            <strong>(${k})</strong> ${it.choices[k]}
-                                                            ${it.vietnamese_choices && it.vietnamese_choices[k] ? `<span class="dict-choice-vi">&mdash; ${it.vietnamese_choices[k]}</span>` : ''}
-                                                        </div>
-                                                    `).join('')}
-                                                </div>
-                                            ` : ''}
+                                            ${it.source ? `<div style="font-size: 0.78rem; color: #94a3b8; margin-top: 3px;">📌 ${it.source}</div>` : ''}
                                         </div>
                                         <div class="dict-transcript-col-action">
                                             ${statusBadge}
@@ -10520,7 +10697,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <div class="dictation-wrapper">
                     <div class="dictation-subtabs">
                         <button class="dictation-subtab-btn ${activeSubTab === 'dictation' ? 'active' : ''}" data-subtab="dictation">Dictation</button>
-                        <button class="dictation-subtab-btn ${activeSubTab === 'transcript' ? 'active' : ''}" data-subtab="transcript">Full transcript</button>
+                        <button class="dictation-subtab-btn ${activeSubTab === 'transcript' ? 'active' : ''}" data-subtab="transcript">Full transcript (${items.length} câu)</button>
                     </div>
                     <div id="dictation-subview-content">
                         ${contentHtml}
@@ -10537,6 +10714,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 btn.addEventListener("click", () => {
                     const tab = btn.getAttribute("data-subtab");
                     if (tab !== activeSubTab) {
+                        stopAllPlayback();
                         activeSubTab = tab;
                         render();
                     }
@@ -10567,42 +10745,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (playBtn) {
                     playBtn.addEventListener("click", () => {
-                        const targetSrc = resolveAudioUrl(items[currentIndex].audio);
-                        if (audioElement.src !== targetSrc && !audioElement.src.endsWith(targetSrc)) {
-                            audioElement.src = targetSrc;
-                        }
                         if (isAudioPlaying) {
-                            audioElement.pause();
-                            isAudioPlaying = false;
-                            updatePlayBtnUi(false);
+                            stopAllPlayback();
                         } else {
-                            audioElement.playbackRate = playbackRate;
-                            audioElement.play().then(() => {
-                                isAudioPlaying = true;
-                                updatePlayBtnUi(true);
-                            }).catch(e => console.log(e));
+                            playCurrentSentence();
                         }
                     });
                 }
 
                 if (replayBtn) {
                     replayBtn.addEventListener("click", () => {
-                        const targetSrc = resolveAudioUrl(items[currentIndex].audio);
-                        if (audioElement.src !== targetSrc && !audioElement.src.endsWith(targetSrc)) {
-                            audioElement.src = targetSrc;
-                        }
-                        audioElement.currentTime = 0;
-                        audioElement.playbackRate = playbackRate;
-                        audioElement.play().then(() => {
-                            isAudioPlaying = true;
-                            updatePlayBtnUi(true);
-                        }).catch(e => console.log(e));
+                        playCurrentSentence();
                     });
                 }
 
                 if (resultAudioBtn) {
                     resultAudioBtn.addEventListener("click", () => {
-                        window.playDictationAudio(items[currentIndex].audio, playbackRate);
+                        window.playDictationAudio(items[currentIndex], playbackRate);
                     });
                 }
 
@@ -10615,7 +10774,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 if (scrubber) {
                     scrubber.addEventListener("input", (e) => {
-                        if (audioElement.duration) {
+                        const item = items[currentIndex];
+                        if (item && item.singleAudio && item.audio && !item.useTTS && audioElement.duration) {
                             audioElement.currentTime = (parseFloat(e.target.value) / 100) * audioElement.duration;
                         }
                     });
@@ -10630,7 +10790,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 };
 
                 audioElement.onloadedmetadata = () => {
-                    if (timeDisplay) {
+                    if (timeDisplay && audioElement.duration) {
                         timeDisplay.textContent = `${formatTime(audioElement.currentTime)} / ${formatTime(audioElement.duration)}`;
                     }
                 };
@@ -10649,7 +10809,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         if (textarea) textarea.focus();
                         return;
                     }
-                    const targetText = items[currentIndex].sentence;
+                    const targetText = cleanSentenceForSpeech(items[currentIndex].sentence);
                     const diffRes = computeWordDiff(text, targetText);
                     const isPerfect = diffRes.accuracy === 100 && !diffRes.diff.some(d => d.type !== 'correct');
                     if (window.SoundEffects) {
@@ -10756,8 +10916,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Transcript view events
                 container.querySelectorAll(".dict-item-play-btn").forEach(btn => {
                     btn.addEventListener("click", () => {
-                        const aud = btn.getAttribute("data-audio");
-                        if (aud) window.playDictationAudio(aud);
+                        const idx = parseInt(btn.getAttribute("data-item-idx"), 10);
+                        if (!isNaN(idx) && items[idx]) {
+                            window.playDictationAudio(items[idx], playbackRate);
+                        }
                     });
                 });
 
@@ -10792,49 +10954,101 @@ document.addEventListener("DOMContentLoaded", () => {
     window.renderDictationP2 = function(section) {
         if (!dictationContentAreaP2) return;
         const secId = section ? section.id : (state.part02ActiveSection || 'info_who');
+        const secObj = section || (state.part02Data ? state.part02Data.find(s => s.id === secId) : null);
         let items = [];
-        
-        // If tests in part02PracticeData
-        if (window.part02PracticeData) {
-            const test = window.part02PracticeData.find(t => t.id === secId);
-            if (test && test.questions) {
-                test.questions.forEach((q, i) => {
-                    const cleanQ = (q.question || "").replace(/<[^>]+>/g, "").trim();
-                    const viQ = (q.vietnamese_question || "").replace(/<[^>]+>/g, "").trim();
-                    items.push({
-                        id: i + 1,
-                        audio: test.audio,
-                        sentence: cleanQ,
-                        vi: viQ,
-                        hint: cleanQ.split(" ").slice(0, 2).join(" "),
-                        choices: q.choices,
-                        vietnamese_choices: q.vietnamese_choices,
-                        answer: q.answer
-                    });
+
+        function pushQuestionAndChoices(qText, qVi, choicesObj, choicesViObj, labelPrefix) {
+            const cleanQ = cleanSentenceForSpeech(qText);
+            const cleanQVi = (qVi || "").replace(/<[^>]+>/g, "").trim();
+            if (cleanQ && cleanQ.length > 2) {
+                items.push({
+                    id: items.length + 1,
+                    useTTS: true,
+                    singleAudio: false,
+                    sentence: cleanQ,
+                    vi: cleanQVi,
+                    hint: cleanQ.split(" ").slice(0, 2).join(" "),
+                    source: `${labelPrefix} - Câu hỏi`
+                });
+            }
+            if (choicesObj && typeof choicesObj === 'object') {
+                ['A', 'B', 'C', 'D'].forEach(k => {
+                    if (choicesObj[k]) {
+                        const cEn = cleanSentenceForSpeech(choicesObj[k]);
+                        const cVi = choicesViObj && choicesViObj[k] ? (choicesViObj[k] || "").replace(/<[^>]+>/g, "").trim() : "";
+                        if (cEn && cEn.length > 1) {
+                            items.push({
+                                id: items.length + 1,
+                                useTTS: true,
+                                singleAudio: false,
+                                sentence: cEn,
+                                vi: cVi,
+                                hint: cEn.split(" ").slice(0, 2).join(" "),
+                                source: `${labelPrefix} - Đáp án ${k}`
+                            });
+                        }
+                    }
                 });
             }
         }
-        
-        // If concept in part02Data
-        if (items.length === 0 && section && section.examples) {
-            section.examples.forEach((ex, i) => {
-                const cleanQ = (ex.question || ex.text || "").replace(/<[^>]+>/g, "").trim();
-                const viQ = (ex.vietnamese_question || "").replace(/<[^>]+>/g, "").trim();
-                if (cleanQ) {
-                    items.push({
-                        id: i + 1,
-                        audio: ex.audio ? (ex.audio.startsWith('media/') ? ex.audio : 'media/' + ex.audio) : null,
-                        sentence: cleanQ,
-                        vi: viQ,
-                        hint: cleanQ.split(" ").slice(0, 2).join(" "),
-                        choices: ex.choices,
-                        vietnamese_choices: ex.vietnamese_choices,
-                        answer: ex.answer
-                    });
-                }
-            });
+
+        // 1. If test in part02PracticeData (test_01 .. test_10)
+        if (window.part02PracticeData) {
+            const test = window.part02PracticeData.find(t => t.id === secId);
+            if (test && test.questions) {
+                test.questions.forEach((q, idx) => {
+                    pushQuestionAndChoices(
+                        q.question || q.transcript || "",
+                        q.vietnamese_question || q.translation || "",
+                        q.choices,
+                        q.vietnamese_choices,
+                        `Câu ${q.number || (idx + 1)}`
+                    );
+                });
+            }
         }
-        
+
+        // 2. If concept section in part02Data (info_who, info_where, etc.)
+        if (secObj) {
+            // Check secObj.items where type === 'example'
+            if (Array.isArray(secObj.items)) {
+                let exIdx = 0;
+                secObj.items.forEach(it => {
+                    if (it.type === 'example') {
+                        exIdx++;
+                        const trans = (window.part02ExamplesTranslations && it.slide_index) ? window.part02ExamplesTranslations[it.slide_index] : null;
+                        const qVi = it.q_vi || it.vietnamese_question || (trans ? trans.q_vi : "");
+                        const cVi = it.choices_vi || it.vietnamese_choices || (trans ? trans.choices_vi : null);
+                        pushQuestionAndChoices(it.question, qVi, it.choices, cVi, `Ví dụ ${exIdx}`);
+                    }
+                });
+            }
+            // Check secObj.examples
+            if (Array.isArray(secObj.examples)) {
+                secObj.examples.forEach((ex, i) => {
+                    pushQuestionAndChoices(
+                        ex.question || ex.text || "",
+                        ex.vietnamese_question || ex.q_vi || "",
+                        ex.choices,
+                        ex.vietnamese_choices || ex.choices_vi,
+                        `Ví dụ ${i + 1}`
+                    );
+                });
+            }
+            // Check secObj.practice
+            if (Array.isArray(secObj.practice)) {
+                secObj.practice.forEach((pr, i) => {
+                    pushQuestionAndChoices(
+                        pr.question || pr.text || "",
+                        pr.vietnamese_question || pr.q_vi || "",
+                        pr.choices,
+                        pr.vietnamese_choices || pr.choices_vi,
+                        `Luyện tập ${i + 1}`
+                    );
+                });
+            }
+        }
+
         renderDictationUI(dictationContentAreaP2, items, { part: 2, sectionId: secId });
     };
 
@@ -10844,19 +11058,34 @@ document.addEventListener("DOMContentLoaded", () => {
         let items = [];
         const sec = section || (state.part03Data ? state.part03Data.find(s => s.id === secId) : null);
         if (sec) {
-            const pool = (sec.practice || []).concat(sec.examples || []);
+            const pool = (sec.examples || []).concat(sec.practice || []);
             pool.forEach((item, i) => {
-                const cleanQ = (item.question || "").replace(/<[^>]+>/g, "").replace(/^Question\s*\d+[\.\:]?\s*/i, "").trim();
+                // Extract transcript lines if available
+                if (item.transcript) {
+                    const lines = item.transcript.split(/\n|<br\s*\/?>/i).map(l => cleanSentenceForSpeech(l)).filter(l => l.length > 3);
+                    lines.forEach((line, lIdx) => {
+                        items.push({
+                            id: items.length + 1,
+                            useTTS: true,
+                            singleAudio: false,
+                            sentence: line,
+                            vi: "",
+                            hint: line.split(" ").slice(0, 2).join(" "),
+                            source: `Bài ${i + 1} - Hội thoại câu ${lIdx + 1}`
+                        });
+                    });
+                }
+                const cleanQ = cleanSentenceForSpeech((item.question || "").replace(/^Question\s*\d+[\.\:]?\s*/i, ""));
                 const viQ = (item.vietnamese_question || "").replace(/<[^>]+>/g, "").trim();
-                if (cleanQ && item.audio) {
+                if (cleanQ && cleanQ.length > 3) {
                     items.push({
                         id: items.length + 1,
-                        audio: item.audio ? (item.audio.startsWith('media/') ? item.audio : 'media/' + item.audio) : null,
+                        useTTS: true,
+                        singleAudio: false,
                         sentence: cleanQ,
                         vi: viQ,
                         hint: cleanQ.split(" ").slice(0, 2).join(" "),
-                        choices: item.choices,
-                        answer: item.answer
+                        source: `Bài ${i + 1} - Câu hỏi`
                     });
                 }
             });
@@ -10870,24 +11099,38 @@ document.addEventListener("DOMContentLoaded", () => {
         let items = [];
         const sec = section || (state.part04Data ? state.part04Data.find(s => s.id === secId) : null);
         if (sec) {
-            const pool = (sec.examples || []);
+            const pool = (sec.examples || []).slice();
             (sec.practice_sets || []).forEach(ps => {
+                if (ps.transcript) {
+                    const lines = ps.transcript.split(/\n|<br\s*\/?>/i).map(l => cleanSentenceForSpeech(l)).filter(l => l.length > 3);
+                    lines.forEach((line, lIdx) => {
+                        items.push({
+                            id: items.length + 1,
+                            useTTS: true,
+                            singleAudio: false,
+                            sentence: line,
+                            vi: "",
+                            hint: line.split(" ").slice(0, 2).join(" "),
+                            source: `Bài nghe - Câu ${lIdx + 1}`
+                        });
+                    });
+                }
                 (ps.questions || []).forEach(q => {
                     pool.push({ ...q, audio: ps.audio });
                 });
             });
             pool.forEach((item, i) => {
-                const cleanQ = (item.question || "").replace(/<[^>]+>/g, "").replace(/^Question\s*\d+[\.\:]?\s*/i, "").trim();
+                const cleanQ = cleanSentenceForSpeech((item.question || "").replace(/^Question\s*\d+[\.\:]?\s*/i, ""));
                 const viQ = (item.vietnamese_question || "").replace(/<[^>]+>/g, "").trim();
-                if (cleanQ && item.audio) {
+                if (cleanQ && cleanQ.length > 3) {
                     items.push({
                         id: items.length + 1,
-                        audio: item.audio ? (item.audio.startsWith('media/') ? item.audio : 'media/' + item.audio) : null,
+                        useTTS: true,
+                        singleAudio: false,
                         sentence: cleanQ,
                         vi: viQ,
                         hint: cleanQ.split(" ").slice(0, 2).join(" "),
-                        choices: item.choices,
-                        answer: item.answer
+                        source: `Câu hỏi ${i + 1}`
                     });
                 }
             });
@@ -12974,11 +13217,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Refresh UI permissions across sidebar & dashboard
         if (typeof refreshAccessUI === 'function') refreshAccessUI();
 
-        // If Thu Trang logs in, guide directly to Part 01 Overview
-        if (role.type === "thu_trang") {
-            switchView("part1");
-            loadSectionP1("overview");
-        } else if (role.type === "yen_nhi" || role.type === "caty") {
+        // Guide student on login
+        if (role.type === "thu_trang" || role.type === "yen_nhi" || role.type === "caty") {
             if (state.activeView === "home") {
                 switchView("home");
             }
