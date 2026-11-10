@@ -6484,6 +6484,25 @@ document.addEventListener("DOMContentLoaded", () => {
                         loadSectionP2(node.id);
                     });
                     part2ConceptsNavList.appendChild(submenuItem);
+
+                    if (node.id !== "overview") {
+                        const dictationId = node.id + "_dictation";
+                        const dictationSubItem = document.createElement("div");
+                        dictationSubItem.className = "submenu-item";
+                        dictationSubItem.setAttribute("data-id", dictationId);
+                        dictationSubItem.style.paddingLeft = "26px";
+                        const dictLocked = isContentLocked(2, dictationId);
+                        dictationSubItem.innerHTML = `<span class="submenu-dot" style="background: #2563eb;"></span><span class="submenu-text" style="color: #2563eb; font-weight: 700; font-size: 0.88rem;">🎧 CHÉP CHÍNH TẢ${dictLocked ? " 🔒" : ""}</span>`;
+                        dictationSubItem.addEventListener("click", (e) => {
+                            e.stopPropagation();
+                            if (isContentLocked(2, dictationId)) {
+                                window.showPaywallModal(() => loadSectionP2(node.id, "dictation"), "Phần Chép chính tả này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng liên hệ giáo viên để được mở thêm!");
+                                return;
+                            }
+                            loadSectionP2(node.id, "dictation");
+                        });
+                        part2ConceptsNavList.appendChild(dictationSubItem);
+                    }
                 } else if (node.type === "group") {
                     const groupHeader = document.createElement("div");
                     groupHeader.className = "sidebar-group-header";
@@ -10954,6 +10973,13 @@ document.addEventListener("DOMContentLoaded", () => {
     window.renderDictationP2 = function(section) {
         if (!dictationContentAreaP2) return;
         const secId = section ? section.id : (state.part02ActiveSection || 'info_who');
+        
+        // Priority: Use pre-sliced human audio dataset from part02_dictation_data.js
+        if (window.part02DictationData && window.part02DictationData[secId] && window.part02DictationData[secId].length > 0) {
+            renderDictationUI(dictationContentAreaP2, window.part02DictationData[secId], { part: 2, sectionId: secId });
+            return;
+        }
+
         const secObj = section || (state.part02Data ? state.part02Data.find(s => s.id === secId) : null);
         let items = [];
 

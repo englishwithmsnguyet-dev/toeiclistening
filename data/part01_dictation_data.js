@@ -471,13 +471,15 @@
             if (!cleanSentence) return;
             const viText = viMap[`${qNum}_${letter}`] || "";
             const words = cleanSentence.split(" ");
+            const audioFileName = secId.replace("_", "") + "_q" + qNum + "_" + letter + ".mp3";
             dictData[secId].push({
               id: dictData[secId].length + 1,
               sentence: cleanSentence,
               vi: viText,
               hint: words.slice(0, 2).join(" "),
-              useTTS: true,
-              singleAudio: false,
+              audio: "media/part01_dictation/" + audioFileName,
+              useTTS: false,
+              singleAudio: true,
               type: "practice"
             });
           });
@@ -487,23 +489,28 @@
       // 2. Các bài Test 1 -> Test 10 (lấy toàn bộ 4 câu A, B, C, D của cả 6 câu = 24 câu/test)
       if (secId.startsWith("test_")) {
         dictData[secId] = [];
+        const tNum = parseInt(secId.split("_")[1], 10);
+        const tStr = (tNum < 10 ? "0" + tNum : "" + tNum);
         (sec.practice_sets || []).forEach(pset => {
           const qObj = pset.questions && pset.questions[0];
           if (!qObj || !qObj.choices) return;
           const choices = qObj.choices;
           const viChoices = qObj.vietnamese_choices || {};
+          const setStr = (pset.set_index < 10 ? "0" + pset.set_index : "" + pset.set_index);
           ["A", "B", "C", "D"].forEach(letter => {
             const cleanSentence = stripHtmlAndOptionPrefix(choices[letter]);
             if (!cleanSentence) return;
             const viText = stripHtmlAndOptionPrefix(viChoices[letter] || "");
             const words = cleanSentence.split(" ");
+            const audioFileName = "t" + tStr + "_q" + setStr + "_" + letter + ".mp3";
             dictData[secId].push({
               id: dictData[secId].length + 1,
               sentence: cleanSentence,
               vi: viText,
               hint: words.slice(0, 2).join(" "),
-              useTTS: true,
-              singleAudio: false,
+              audio: "media/part01_dictation/" + audioFileName,
+              useTTS: false,
+              singleAudio: true,
               type: "test"
             });
           });
