@@ -9,9 +9,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Who’s managing the production line?",
+      "sentence": "Who's managing the production line?",
       "vi": "Ai đang quản lý dây chuyền sản xuất vậy?",
-      "hint": "Who’s managing",
+      "hint": "Who's managing",
       "source": "Ví dụ 1 - Câu hỏi"
     },
     {
@@ -35,9 +35,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s Lisa’s shift.",
+      "sentence": "It's Lisa's shift.",
       "vi": "Đó là ca làm việc của Lisa.",
-      "hint": "It’s Lisa’s",
+      "hint": "It's Lisa's",
       "source": "Ví dụ 1 - Đáp án B"
     },
     {
@@ -74,7 +74,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, it hasn’t arrived yet.",
+      "sentence": "No, it hasn't arrived yet.",
       "vi": "Chưa, nó vẫn chưa đến.",
       "hint": "No, it",
       "source": "Ví dụ 2 - Đáp án A"
@@ -152,9 +152,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "There’s a part missing.",
+      "sentence": "There's a part missing.",
       "vi": "Có một phần bị thiếu.",
-      "hint": "There’s a",
+      "hint": "There's a",
       "source": "Ví dụ 3 - Đáp án C"
     },
     {
@@ -256,7 +256,7 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Around nine o’clock.",
+      "sentence": "Around nine o'clock.",
       "vi": "Khoảng chín giờ.",
       "hint": "Around nine",
       "source": "Ví dụ 5 - Đáp án C"
@@ -321,9 +321,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Who’s the new public relations manager?",
+      "sentence": "Who's the new public relations manager?",
       "vi": "Ai là trưởng phòng quan hệ công chúng mới vậy?",
-      "hint": "Who’s the",
+      "hint": "Who's the",
       "source": "Ví dụ 7 - Câu hỏi"
     },
     {
@@ -451,7 +451,7 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Just a few minutes after three o’clock.",
+      "sentence": "Just a few minutes after three o'clock.",
       "vi": "Chỉ vài phút sau ba giờ.",
       "hint": "Just a",
       "source": "Ví dụ 9 - Đáp án B"
@@ -464,7 +464,7 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It still hasn’t been announced.",
+      "sentence": "It still hasn't been announced.",
       "vi": "Nó vẫn chưa được công bố.",
       "hint": "It still",
       "source": "Ví dụ 9 - Đáp án C"
@@ -503,9 +503,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I don’t know since I just arrived.",
+      "sentence": "I don't know since I just arrived.",
       "vi": "Tôi không biết vì tôi vừa mới đến.",
-      "hint": "I don’t",
+      "hint": "I don't",
       "source": "Ví dụ 10 - Đáp án B"
     },
     {
@@ -570,9 +570,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, I’m going afterward.",
+      "sentence": "No, I'm going afterward.",
       "vi": "Không, tôi sẽ đi sau đó.",
-      "hint": "No, I’m",
+      "hint": "No, I'm",
       "source": "Ví dụ 1 - Đáp án C"
     },
     {
@@ -622,9 +622,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, it’s too much.",
+      "sentence": "No, it's too much.",
       "vi": "Không, giá quá đắt.",
-      "hint": "No, it’s",
+      "hint": "No, it's",
       "source": "Ví dụ 2 - Đáp án C"
     },
     {
@@ -635,9 +635,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Where’s the closest dry cleaner?",
+      "sentence": "Where's the closest dry cleaner?",
       "vi": "Tiệm giặt khô gần nhất ở đâu vậy?",
-      "hint": "Where’s the",
+      "hint": "Where's the",
       "source": "Ví dụ 3 - Câu hỏi"
     },
     {
@@ -661,9 +661,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "There’s one on Eleventh Street.",
+      "sentence": "There's one on Eleventh Street.",
       "vi": "Có một tiệm trên đường số 11.",
-      "hint": "There’s one",
+      "hint": "There's one",
       "source": "Ví dụ 3 - Đáp án B"
     },
     {
@@ -674,9 +674,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "They’re definitely cleaner now.",
+      "sentence": "They're definitely cleaner now.",
       "vi": "Bây giờ chúng chắc chắn sạch hơn rồi.",
-      "hint": "They’re definitely",
+      "hint": "They're definitely",
       "source": "Ví dụ 3 - Đáp án C"
     },
     {
@@ -700,9 +700,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "They’re on my desk.",
+      "sentence": "They're on my desk.",
       "vi": "Chúng ở trên bàn làm việc của tôi.",
-      "hint": "They’re on",
+      "hint": "They're on",
       "source": "Ví dụ 4 - Đáp án A"
     },
     {
@@ -726,9 +726,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "He’s at his attorney’s office.",
+      "sentence": "He's at his attorney's office.",
       "vi": "Anh ấy đang ở văn phòng luật sư.",
-      "hint": "He’s at",
+      "hint": "He's at",
       "source": "Ví dụ 4 - Đáp án C"
     },
     {
@@ -791,9 +791,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Where’s the instruction manual for the video conferencing software?",
+      "sentence": "Where's the instruction manual for the video conferencing software?",
       "vi": "Sách hướng dẫn sử dụng phần mềm họp trực tuyến ở đâu?",
-      "hint": "Where’s the",
+      "hint": "Where's the",
       "source": "Ví dụ 6 - Câu hỏi"
     },
     {
@@ -895,9 +895,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Where’s the train station?",
+      "sentence": "Where's the train station?",
       "vi": "Ga xe lửa ở đâu vậy?",
-      "hint": "Where’s the",
+      "hint": "Where's the",
       "source": "Ví dụ 8 - Câu hỏi"
     },
     {
@@ -1012,9 +1012,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ve made a list of supplies.",
+      "sentence": "I've made a list of supplies.",
       "vi": "Tôi đã lập danh sách đồ dùng cần thiết.",
-      "hint": "I’ve made",
+      "hint": "I've made",
       "source": "Ví dụ 10 - Đáp án A"
     },
     {
@@ -1064,7 +1064,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "By seven o’clock.",
+      "sentence": "By seven o'clock.",
       "vi": "Trước bảy giờ.",
       "hint": "By seven",
       "source": "Ví dụ 11 - Đáp án A"
@@ -1116,7 +1116,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Not until five o’clock.",
+      "sentence": "Not until five o'clock.",
       "vi": "Mãi đến năm giờ chiều.",
       "hint": "Not until",
       "source": "Ví dụ 12 - Đáp án A"
@@ -1129,9 +1129,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s going to Texas.",
+      "sentence": "It's going to Texas.",
       "vi": "Nó sẽ được chuyển đến Texas.",
-      "hint": "It’s going",
+      "hint": "It's going",
       "source": "Ví dụ 12 - Đáp án B"
     },
     {
@@ -1181,9 +1181,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It hasn’t been decided yet.",
+      "sentence": "It hasn't been decided yet.",
       "vi": "Vẫn chưa được quyết định.",
-      "hint": "It hasn’t",
+      "hint": "It hasn't",
       "source": "Ví dụ 13 - Đáp án B"
     },
     {
@@ -1194,9 +1194,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Yes, I’ve been there.",
+      "sentence": "Yes, I've been there.",
       "vi": "Vâng, tôi đã từng ở đó.",
-      "hint": "Yes, I’ve",
+      "hint": "Yes, I've",
       "source": "Ví dụ 13 - Đáp án C"
     },
     {
@@ -1220,9 +1220,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s currently for sale.",
+      "sentence": "It's currently for sale.",
       "vi": "Nó hiện đang được rao bán.",
-      "hint": "It’s currently",
+      "hint": "It's currently",
       "source": "Ví dụ 14 - Đáp án A"
     },
     {
@@ -1272,9 +1272,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ll ask Martha.",
+      "sentence": "I'll ask Martha.",
       "vi": "Tôi sẽ hỏi Martha nhé.",
-      "hint": "I’ll ask",
+      "hint": "I'll ask",
       "source": "Ví dụ 15 - Đáp án A"
     },
     {
@@ -1337,9 +1337,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’d love to go to the park.",
+      "sentence": "I'd love to go to the park.",
       "vi": "Tôi rất thích đi đến công viên.",
-      "hint": "I’d love",
+      "hint": "I'd love",
       "source": "Ví dụ 16 - Đáp án B"
     },
     {
@@ -1508,7 +1508,7 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I think it’s the same number.",
+      "sentence": "I think it's the same number.",
       "vi": "Tôi nghĩ nó vẫn cùng một số.",
       "hint": "I think",
       "source": "Ví dụ 3 - Đáp án C"
@@ -1547,9 +1547,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s good for your health.",
+      "sentence": "It's good for your health.",
       "vi": "Nó tốt cho sức khỏe của bạn.",
-      "hint": "It’s good",
+      "hint": "It's good",
       "source": "Ví dụ 4 - Đáp án B"
     },
     {
@@ -1599,9 +1599,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "That’s a really short time.",
+      "sentence": "That's a really short time.",
       "vi": "Đó thực sự là một khoảng thời gian ngắn.",
-      "hint": "That’s a",
+      "hint": "That's a",
       "source": "Ví dụ 5 - Đáp án B"
     },
     {
@@ -1651,9 +1651,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I didn’t receive an invitation.",
+      "sentence": "I didn't receive an invitation.",
       "vi": "Tôi không nhận được thư mời.",
-      "hint": "I didn’t",
+      "hint": "I didn't",
       "source": "Ví dụ 6 - Đáp án B"
     },
     {
@@ -1757,9 +1757,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ll answer the phone.",
+      "sentence": "I'll answer the phone.",
       "vi": "Tôi sẽ trả lời điện thoại.",
-      "hint": "I’ll answer",
+      "hint": "I'll answer",
       "source": "Ví dụ 1 - Đáp án B"
     },
     {
@@ -1770,9 +1770,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Because Barb’s party is today.",
+      "sentence": "Because Barb's party is today.",
       "vi": "Bởi vì hôm nay là tiệc của Barb.",
-      "hint": "Because Barb’s",
+      "hint": "Because Barb's",
       "source": "Ví dụ 1 - Đáp án C"
     },
     {
@@ -2030,9 +2030,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Yes, it’s been open for a while.",
+      "sentence": "Yes, it's been open for a while.",
       "vi": "Vâng, nó đã mở cửa được một thời gian rồi.",
-      "hint": "Yes, it’s",
+      "hint": "Yes, it's",
       "source": "Ví dụ 6 - Đáp án C"
     },
     {
@@ -2056,9 +2056,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "They’re forecasting rain.",
+      "sentence": "They're forecasting rain.",
       "vi": "Họ đang dự báo trời mưa.",
-      "hint": "They’re forecasting",
+      "hint": "They're forecasting",
       "source": "Ví dụ 7 - Đáp án A"
     },
     {
@@ -2082,9 +2082,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "You didn’t receive it?",
+      "sentence": "You didn't receive it?",
       "vi": "Bạn chưa nhận được nó sao?",
-      "hint": "You didn’t",
+      "hint": "You didn't",
       "source": "Ví dụ 7 - Đáp án C"
     },
     {
@@ -2108,7 +2108,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Have you seen last quarter’s sales figures?",
+      "sentence": "Have you seen last quarter's sales figures?",
       "vi": "Bạn đã xem số liệu bán hàng của quý trước chưa?",
       "hint": "Have you",
       "source": "Ví dụ 8 - Đáp án A"
@@ -2121,7 +2121,7 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Next Tuesday, at two o’clock.",
+      "sentence": "Next Tuesday, at two o'clock.",
       "vi": "Thứ Ba tới, lúc hai giờ.",
       "hint": "Next Tuesday,",
       "source": "Ví dụ 8 - Đáp án B"
@@ -2134,9 +2134,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’d like to, but it’s expensive.",
+      "sentence": "I'd like to, but it's expensive.",
       "vi": "Tôi muốn lắm, nhưng nó đắt quá.",
-      "hint": "I’d like",
+      "hint": "I'd like",
       "source": "Ví dụ 8 - Đáp án C"
     }
   ],
@@ -2149,9 +2149,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "What’s the price of this item?",
+      "sentence": "What's the price of this item?",
       "vi": "Giá của mặt hàng này là bao nhiêu?",
-      "hint": "What’s the",
+      "hint": "What's the",
       "source": "Ví dụ 1 - Câu hỏi"
     },
     {
@@ -2201,9 +2201,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "What’s the cost estimate for the renovation work?",
+      "sentence": "What's the cost estimate for the renovation work?",
       "vi": "Ước tính chi phí cho công việc cải tạo là bao nhiêu?",
-      "hint": "What’s the",
+      "hint": "What's the",
       "source": "Ví dụ 2 - Câu hỏi"
     },
     {
@@ -2227,9 +2227,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Sure, I’ll send it in.",
+      "sentence": "Sure, I'll send it in.",
       "vi": "Chắc chắn rồi, tôi sẽ gửi nó vào.",
-      "hint": "Sure, I’ll",
+      "hint": "Sure, I'll",
       "source": "Ví dụ 2 - Đáp án B"
     },
     {
@@ -2266,7 +2266,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, it wasn’t raining.",
+      "sentence": "No, it wasn't raining.",
       "vi": "Không, trời không mưa đâu.",
       "hint": "No, it",
       "source": "Ví dụ 3 - Đáp án A"
@@ -2292,7 +2292,7 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "In the manager’s office.",
+      "sentence": "In the manager's office.",
       "vi": "Ở văn phòng của người quản lý.",
       "hint": "In the",
       "source": "Ví dụ 3 - Đáp án C"
@@ -2331,9 +2331,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "He’s downstairs.",
+      "sentence": "He's downstairs.",
       "vi": "Anh ấy đang ở tầng dưới.",
-      "hint": "He’s downstairs.",
+      "hint": "He's downstairs.",
       "source": "Ví dụ 4 - Đáp án B"
     },
     {
@@ -2344,9 +2344,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ll suggest that.",
+      "sentence": "I'll suggest that.",
       "vi": "Tôi sẽ đề xuất điều đó.",
-      "hint": "I’ll suggest",
+      "hint": "I'll suggest",
       "source": "Ví dụ 4 - Đáp án C"
     }
   ],
@@ -2372,9 +2372,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "We’ll take a taxi.",
+      "sentence": "We'll take a taxi.",
       "vi": "Chúng tôi sẽ đi taxi.",
-      "hint": "We’ll take",
+      "hint": "We'll take",
       "source": "Ví dụ 1 - Đáp án A"
     },
     {
@@ -2437,9 +2437,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Nine o’clock in the morning.",
+      "sentence": "Nine o'clock in the morning.",
       "vi": "Chín giờ sáng.",
-      "hint": "Nine o’clock",
+      "hint": "Nine o'clock",
       "source": "Ví dụ 2 - Đáp án B"
     },
     {
@@ -2450,9 +2450,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s a nice building.",
+      "sentence": "It's a nice building.",
       "vi": "Đó là một tòa nhà đẹp.",
-      "hint": "It’s a",
+      "hint": "It's a",
       "source": "Ví dụ 2 - Đáp án C"
     },
     {
@@ -2580,9 +2580,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "At Ingrid’s house.",
+      "sentence": "At Ingrid's house.",
       "vi": "Ở nhà của Ingrid.",
-      "hint": "At Ingrid’s",
+      "hint": "At Ingrid's",
       "source": "Ví dụ 5 - Đáp án A"
     },
     {
@@ -2593,9 +2593,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’m not sure I have time.",
+      "sentence": "I'm not sure I have time.",
       "vi": "Tôi không chắc là mình có thời gian.",
-      "hint": "I’m not",
+      "hint": "I'm not",
       "source": "Ví dụ 5 - Đáp án B"
     },
     {
@@ -2632,7 +2632,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Yes, the view’s beautiful.",
+      "sentence": "Yes, the view's beautiful.",
       "vi": "Vâng, khung cảnh rất đẹp.",
       "hint": "Yes, the",
       "source": "Ví dụ 6 - Đáp án A"
@@ -2684,9 +2684,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s easy to apply.",
+      "sentence": "It's easy to apply.",
       "vi": "Rất dễ dàng để nộp đơn.",
-      "hint": "It’s easy",
+      "hint": "It's easy",
       "source": "Ví dụ 7 - Đáp án A"
     },
     {
@@ -2749,9 +2749,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ve prepared some questions.",
+      "sentence": "I've prepared some questions.",
       "vi": "Tôi đã chuẩn bị sẵn một số câu hỏi.",
-      "hint": "I’ve prepared",
+      "hint": "I've prepared",
       "source": "Ví dụ 8 - Đáp án B"
     },
     {
@@ -2840,9 +2840,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s on the coast.",
+      "sentence": "It's on the coast.",
       "vi": "Nó nằm ở bờ biển.",
-      "hint": "It’s on",
+      "hint": "It's on",
       "source": "Ví dụ 10 - Đáp án A"
     },
     {
@@ -2918,7 +2918,7 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, I don’t usually wear a watch.",
+      "sentence": "No, I don't usually wear a watch.",
       "vi": "Không, tôi không thường đeo đồng hồ.",
       "hint": "No, I",
       "source": "Ví dụ 11 - Đáp án C"
@@ -2970,9 +2970,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Wasn’t it yesterday?",
+      "sentence": "Wasn't it yesterday?",
       "vi": "Không phải hôm qua sao?",
-      "hint": "Wasn’t it",
+      "hint": "Wasn't it",
       "source": "Ví dụ 12 - Đáp án C"
     }
   ],
@@ -3011,9 +3011,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Please don’t touch the walls.",
+      "sentence": "Please don't touch the walls.",
       "vi": "Xin vui lòng không chạm vào các bức tường.",
-      "hint": "Please don’t",
+      "hint": "Please don't",
       "source": "Ví dụ 1 - Đáp án B"
     },
     {
@@ -3024,9 +3024,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, I’m too busy these days.",
+      "sentence": "No, I'm too busy these days.",
       "vi": "Không, dạo này tôi bận quá.",
-      "hint": "No, I’m",
+      "hint": "No, I'm",
       "source": "Ví dụ 1 - Đáp án C"
     },
     {
@@ -3063,7 +3063,7 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, she hasn’t gotten to it yet.",
+      "sentence": "No, she hasn't gotten to it yet.",
       "vi": "Chưa, cô ấy vẫn chưa kịp làm việc đó.",
       "hint": "No, she",
       "source": "Ví dụ 2 - Đáp án B"
@@ -3089,7 +3089,7 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Has Ms. Medrano been to the doctor’s office yet?",
+      "sentence": "Has Ms. Medrano been to the doctor's office yet?",
       "vi": "Bà Medrano đã đến phòng khám bác sĩ chưa?",
       "hint": "Has Ms.",
       "source": "Ví dụ 3 - Câu hỏi"
@@ -3102,7 +3102,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, her appointment isn’t until noon.",
+      "sentence": "No, her appointment isn't until noon.",
       "vi": "Chưa, cuộc hẹn của bà ấy mãi đến trưa mới diễn ra.",
       "hint": "No, her",
       "source": "Ví dụ 3 - Đáp án A"
@@ -3115,9 +3115,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Thanks, I’m feeling much better.",
+      "sentence": "Thanks, I'm feeling much better.",
       "vi": "Cảm ơn, tôi cảm thấy khỏe hơn nhiều rồi.",
-      "hint": "Thanks, I’m",
+      "hint": "Thanks, I'm",
       "source": "Ví dụ 3 - Đáp án B"
     },
     {
@@ -3128,9 +3128,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ll probably wait in the lobby.",
+      "sentence": "I'll probably wait in the lobby.",
       "vi": "Có lẽ tôi sẽ đợi ở sảnh.",
-      "hint": "I’ll probably",
+      "hint": "I'll probably",
       "source": "Ví dụ 3 - Đáp án C"
     },
     {
@@ -3206,9 +3206,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "There’s a public garage close by.",
+      "sentence": "There's a public garage close by.",
       "vi": "Có một nhà để xe công cộng ở ngay gần đó.",
-      "hint": "There’s a",
+      "hint": "There's a",
       "source": "Ví dụ 5 - Đáp án A"
     },
     {
@@ -3258,9 +3258,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "He’s from the Information Technology department.",
+      "sentence": "He's from the Information Technology department.",
       "vi": "Anh ấy đến từ bộ phận Công nghệ thông tin.",
-      "hint": "He’s from",
+      "hint": "He's from",
       "source": "Ví dụ 6 - Đáp án A"
     },
     {
@@ -3401,7 +3401,7 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Do you think it’ll rain tomorrow?",
+      "sentence": "Do you think it'll rain tomorrow?",
       "vi": "Bạn có nghĩ ngày mai trời sẽ mưa không?",
       "hint": "Do you",
       "source": "Ví dụ 9 - Câu hỏi"
@@ -3440,7 +3440,7 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, he can’t.",
+      "sentence": "No, he can't.",
       "vi": "Không, anh ấy không thể.",
       "hint": "No, he",
       "source": "Ví dụ 9 - Đáp án C"
@@ -3466,9 +3466,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Yes, I’ll be there.",
+      "sentence": "Yes, I'll be there.",
       "vi": "Vâng, tôi sẽ có mặt ở đó.",
-      "hint": "Yes, I’ll",
+      "hint": "Yes, I'll",
       "source": "Ví dụ 10 - Đáp án A"
     },
     {
@@ -3531,9 +3531,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ll call the pharmacy.",
+      "sentence": "I'll call the pharmacy.",
       "vi": "Tôi sẽ gọi cho hiệu thuốc.",
-      "hint": "I’ll call",
+      "hint": "I'll call",
       "source": "Ví dụ 11 - Đáp án B"
     },
     {
@@ -3583,9 +3583,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Yes, I’ll come by after lunch.",
+      "sentence": "Yes, I'll come by after lunch.",
       "vi": "Vâng, tôi sẽ ghé qua sau bữa trưa.",
-      "hint": "Yes, I’ll",
+      "hint": "Yes, I'll",
       "source": "Ví dụ 12 - Đáp án B"
     },
     {
@@ -3830,9 +3830,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Sure, I’ll write my name down.",
+      "sentence": "Sure, I'll write my name down.",
       "vi": "Chắc chắn rồi, tôi sẽ viết tên mình vào danh sách.",
-      "hint": "Sure, I’ll",
+      "hint": "Sure, I'll",
       "source": "Ví dụ 17 - Đáp án A"
     },
     {
@@ -3882,9 +3882,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Sorry, you’ll need to call Technical Support.",
+      "sentence": "Sorry, you'll need to call Technical Support.",
       "vi": "Xin lỗi, bạn sẽ cần phải gọi cho Bộ phận Hỗ trợ Kỹ thuật đấy.",
-      "hint": "Sorry, you’ll",
+      "hint": "Sorry, you'll",
       "source": "Ví dụ 18 - Đáp án A"
     },
     {
@@ -3908,9 +3908,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "That’s a useful software program.",
+      "sentence": "That's a useful software program.",
       "vi": "Đó là một chương trình phần mềm hữu ích.",
-      "hint": "That’s a",
+      "hint": "That's a",
       "source": "Ví dụ 18 - Đáp án C"
     }
   ],
@@ -4079,9 +4079,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Don’t we still need to change the newspaper layout?",
+      "sentence": "Don't we still need to change the newspaper layout?",
       "vi": "Chẳng phải chúng ta vẫn cần phải thay đổi bố cục tờ báo sao?",
-      "hint": "Don’t we",
+      "hint": "Don't we",
       "source": "Ví dụ 4 - Câu hỏi"
     },
     {
@@ -4105,9 +4105,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, it’s already been changed.",
+      "sentence": "No, it's already been changed.",
       "vi": "Không, nó đã được thay đổi rồi.",
-      "hint": "No, it’s",
+      "hint": "No, it's",
       "source": "Ví dụ 4 - Đáp án B"
     },
     {
@@ -4170,9 +4170,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, she’s taking a year off.",
+      "sentence": "No, she's taking a year off.",
       "vi": "Không, cô ấy đang nghỉ phép một năm.",
-      "hint": "No, she’s",
+      "hint": "No, she's",
       "source": "Ví dụ 5 - Đáp án C"
     },
     {
@@ -4287,9 +4287,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Aren’t we getting a digital sound system?",
+      "sentence": "Aren't we getting a digital sound system?",
       "vi": "Chẳng phải chúng ta sắp có một hệ thống âm thanh kỹ thuật số sao?",
-      "hint": "Aren’t we",
+      "hint": "Aren't we",
       "source": "Ví dụ 8 - Câu hỏi"
     },
     {
@@ -4339,9 +4339,9 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Hasn’t Alan seen the doctor yet?",
+      "sentence": "Hasn't Alan seen the doctor yet?",
       "vi": "Alan vẫn chưa đi khám bác sĩ à?",
-      "hint": "Hasn’t Alan",
+      "hint": "Hasn't Alan",
       "source": "Ví dụ 9 - Câu hỏi"
     },
     {
@@ -4352,9 +4352,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s in the medical building.",
+      "sentence": "It's in the medical building.",
       "vi": "Nó nằm trong tòa nhà y tế.",
-      "hint": "It’s in",
+      "hint": "It's in",
       "source": "Ví dụ 9 - Đáp án A"
     },
     {
@@ -4365,9 +4365,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "He hasn’t had any time.",
+      "sentence": "He hasn't had any time.",
       "vi": "Anh ấy vẫn chưa có thời gian rảnh.",
-      "hint": "He hasn’t",
+      "hint": "He hasn't",
       "source": "Ví dụ 9 - Đáp án B"
     },
     {
@@ -4378,7 +4378,7 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, we didn’t see it.",
+      "sentence": "No, we didn't see it.",
       "vi": "Không, chúng tôi không thấy nó.",
       "hint": "No, we",
       "source": "Ví dụ 9 - Đáp án C"
@@ -4757,7 +4757,7 @@ window.part02DictationData = {
       "sliceKey": "Q",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "The actors in this play are talented, aren’t they?",
+      "sentence": "The actors in this play are talented, aren't they?",
       "vi": "Các diễn viên trong vở kịch này rất tài năng, phải không?",
       "hint": "The actors",
       "source": "Ví dụ 8 - Câu hỏi"
@@ -4928,7 +4928,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Actually, it closed at six o’clock.",
+      "sentence": "Actually, it closed at six o'clock.",
       "vi": "Thực ra nó đã đóng cửa lúc sáu giờ rồi.",
       "hint": "Actually, it",
       "source": "Ví dụ 1 - Đáp án A"
@@ -5712,9 +5712,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "OK, I’ll print it out.",
+      "sentence": "OK, I'll print it out.",
       "vi": "Được rồi, tôi sẽ in nó ra.",
-      "hint": "OK, I’ll",
+      "hint": "OK, I'll",
       "source": "Ví dụ 3 - Đáp án A"
     },
     {
@@ -6570,9 +6570,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ll check on the delivery status.",
+      "sentence": "I'll check on the delivery status.",
       "vi": "Tôi sẽ kiểm tra tình trạng giao hàng.",
-      "hint": "I’ll check",
+      "hint": "I'll check",
       "source": "Ví dụ 19 - Đáp án C"
     },
     {
@@ -7250,9 +7250,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Sure, I’ll be there",
+      "sentence": "Sure, I'll be there",
       "vi": "Chắc chắn rồi, tôi sẽ đến.",
-      "hint": "Sure, I’ll",
+      "hint": "Sure, I'll",
       "source": "Câu 8 - Đáp án C"
     },
     {
@@ -7328,7 +7328,7 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Of course, I’ll take care of it",
+      "sentence": "Of course, I'll take care of it",
       "vi": "Tất nhiên, tôi sẽ lo việc đó",
       "hint": "Of course,",
       "source": "Câu 10 - Đáp án A"
@@ -7510,9 +7510,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Let’s eat here",
+      "sentence": "Let's eat here",
       "vi": "Hãy ăn ở đây",
-      "hint": "Let’s eat",
+      "hint": "Let's eat",
       "source": "Câu 13 - Đáp án C"
     },
     {
@@ -7549,9 +7549,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "No, I’ll send it now.",
+      "sentence": "No, I'll send it now.",
       "vi": "Không, tôi sẽ gửi nó ngay bây giờ.",
-      "hint": "No, I’ll",
+      "hint": "No, I'll",
       "source": "Câu 14 - Đáp án B"
     },
     {
@@ -7588,9 +7588,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "There’s a lot of rain in the forecast.",
+      "sentence": "There's a lot of rain in the forecast.",
       "vi": "Dự báo sẽ có rất nhiều mưa.",
-      "hint": "There’s a",
+      "hint": "There's a",
       "source": "Câu 15 - Đáp án A"
     },
     {
@@ -7809,9 +7809,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I didn’t bring boots.",
+      "sentence": "I didn't bring boots.",
       "vi": "Tôi không mang ủng.",
-      "hint": "I didn’t",
+      "hint": "I didn't",
       "source": "Câu 19 - Đáp án B"
     },
     {
@@ -7900,9 +7900,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "It’s sold out.",
+      "sentence": "It's sold out.",
       "vi": "Nó đã được bán hết.",
-      "hint": "It’s sold",
+      "hint": "It's sold",
       "source": "Câu 21 - Đáp án A"
     },
     {
@@ -7965,9 +7965,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I haven’t had a chance.",
+      "sentence": "I haven't had a chance.",
       "vi": "Tôi chưa có cơ hội.",
-      "hint": "I haven’t",
+      "hint": "I haven't",
       "source": "Câu 22 - Đáp án B"
     },
     {
@@ -8160,9 +8160,9 @@ window.part02DictationData = {
       "sliceKey": "A",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Why don’t we go see it?",
+      "sentence": "Why don't we go see it?",
       "vi": "Tại sao chúng ta không đi xem nó?",
-      "hint": "Why don’t",
+      "hint": "Why don't",
       "source": "Câu 26 - Đáp án A"
     },
     {
@@ -8225,9 +8225,9 @@ window.part02DictationData = {
       "sliceKey": "B",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "Carat’s already organizing one.",
+      "sentence": "Carat's already organizing one.",
       "vi": "Carat đã tổ chức một cái rồi.",
-      "hint": "Carat’s already",
+      "hint": "Carat's already",
       "source": "Câu 27 - Đáp án B"
     },
     {
@@ -8916,9 +8916,9 @@ window.part02DictationData = {
       "sliceKey": "C",
       "singleAudio": true,
       "useTTS": false,
-      "sentence": "I’ll trt to make it on time.",
+      "sentence": "I'll trt to make it on time.",
       "vi": "Tôi sẽ cố gắng đến đúng giờ.",
-      "hint": "I’ll trt",
+      "hint": "I'll trt",
       "source": "Câu 15 - Đáp án C"
     },
     {

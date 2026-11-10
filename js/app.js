@@ -10290,6 +10290,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function cleanSentenceForSpeech(text) {
         return (text || "")
             .replace(/<[^>]+>/g, "")
+            .replace(/[\u2018\u2019\u02BC\u0060\u00B4\u201B]/g, "'")
             .replace(/^\([A-D]\)\s*/i, "")
             .replace(/^[A-D][\.\)]\s*/i, "")
             .replace(/^(M|W|M1|M2|W1|W2|Man|Woman)[\s\-]*(\([A-Za-z]+\))?\s*:\s*/i, "")
@@ -10363,10 +10364,25 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function computeWordDiff(userInput, targetText) {
         function cleanWord(w) {
-            return (w || "").toLowerCase().replace(/[^a-z0-9\']/g, "");
+            return (w || "")
+                .toLowerCase()
+                .replace(/[\u2018\u2019\u02BC\u0060\u00B4\u201B]/g, "'")
+                .replace(/[^a-z0-9\']/g, "");
         }
-        const userWords = (userInput || "").trim().split(/\s+/).filter(Boolean);
-        const targetWords = cleanSentenceForSpeech(targetText).split(/\s+/).filter(Boolean);
+        function wordsMatch(w1, w2) {
+            if (!w1 || !w2) return false;
+            if (w1 === w2) return true;
+            // Allow match if only difference is apostrophe (e.g. who's vs whos, don't vs dont)
+            if (w1.replace(/'/g, "") === w2.replace(/'/g, "")) return true;
+            return false;
+        }
+
+        const normalizeStr = str => (str || "")
+            .replace(/[\u2018\u2019\u02BC\u0060\u00B4\u201B]/g, "'")
+            .replace(/[\u2010-\u2015]/g, "-");
+
+        const userWords = normalizeStr(userInput).trim().split(/\s+/).filter(Boolean);
+        const targetWords = normalizeStr(cleanSentenceForSpeech(targetText)).split(/\s+/).filter(Boolean);
         
         const uClean = userWords.map(cleanWord);
         const tClean = targetWords.map(cleanWord);
@@ -10377,7 +10393,7 @@ document.addEventListener("DOMContentLoaded", () => {
         
         for (let i = 1; i <= m; i++) {
             for (let j = 1; j <= n; j++) {
-                if (uClean[i - 1] === tClean[j - 1]) {
+                if (wordsMatch(uClean[i - 1], tClean[j - 1])) {
                     dp[i][j] = dp[i - 1][j - 1] + 1;
                 } else {
                     dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
@@ -10389,7 +10405,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const diff = [];
         let correctCount = 0;
         while (i > 0 || j > 0) {
-            if (i > 0 && j > 0 && uClean[i - 1] === tClean[j - 1]) {
+            if (i > 0 && j > 0 && wordsMatch(uClean[i - 1], tClean[j - 1])) {
                 diff.unshift({ type: "correct", userWord: userWords[i - 1], targetWord: targetWords[j - 1] });
                 correctCount++;
                 i--; j--;
