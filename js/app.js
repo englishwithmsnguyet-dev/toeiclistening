@@ -7986,7 +7986,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <span style="font-size: 1.15rem;">🎯</span> TRẢ BÀI TỪ VỰNG (${vocabCount} CỤM)
                     </button>
                     ${hasDictation ? `
-                    <button type="button" id="p1-tab-btn-dictation" class="p1-tab-nav-btn ${targetTab === 'dictation' ? 'active' : ''}" onclick="window.switchPart01Tab('dictation')" style="color: #2563eb; font-weight: 700;">
+                    <button type="button" id="p1-tab-btn-dictation" class="p1-tab-nav-btn ${targetTab === 'dictation' ? 'active' : ''}" onclick="window.switchPart01Tab('dictation')">
                         <span style="font-size: 1.15rem;">🎧</span> NGHE CHÉP CHÍNH TẢ (${dictationCount} CÂU)
                     </button>
                     ` : ''}
@@ -7998,7 +7998,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     <button type="button" id="p1-tab-btn-theory" class="p1-tab-nav-btn ${targetTab === 'theory' || targetTab === 'test' ? 'active' : ''}" onclick="window.switchPart01Tab('theory')">
                         <span style="font-size: 1.15rem;">📝</span> BÀI TEST ETS (6 CÂU)
                     </button>
-                    <button type="button" id="p1-tab-btn-dictation" class="p1-tab-nav-btn ${targetTab === 'dictation' ? 'active' : ''}" onclick="window.switchPart01Tab('dictation')" style="color: #2563eb; font-weight: 700;">
+                    <button type="button" id="p1-tab-btn-dictation" class="p1-tab-nav-btn ${targetTab === 'dictation' ? 'active' : ''}" onclick="window.switchPart01Tab('dictation')">
                         <span style="font-size: 1.15rem;">🎧</span> NGHE CHÉP CHÍNH TẢ (${dictationCount} CÂU)
                     </button>
                 </div>

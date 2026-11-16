@@ -1033,60 +1033,132 @@ body.light-mode #panel-title {
 }
 
 .panel-sections {
-    display: flex;
-    background: rgba(255, 255, 255, 0.02);
-    border-bottom: 2px solid var(--border);
-    padding: 0;
-    margin-bottom: 30px;
-    gap: 0;
-}
-
-body.light-mode .panel-sections {
-    background: rgba(0, 0, 0, 0.01);
-}
-
-.panel-section-btn, .panel-section-btn-p4 {
-    flex: 1;
-    font-weight: 700;
-    font-size: 0.9rem;
-    padding: 14px 16px;
-    border: none;
-    background: transparent;
-    color: var(--text-muted);
-    cursor: pointer;
-    transition: all 0.25s ease;
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     gap: 8px;
-    text-transform: uppercase; /* Uppercase tab headers */
-    border-bottom: 3px solid transparent;
-    margin-bottom: -2px;
+    padding: 6px 8px;
+    background: rgba(241, 245, 249, 0.9);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    border-radius: 14px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
-.panel-section-btn:hover, .panel-section-btn-p4:hover {
-    color: var(--text-main);
-    background: rgba(255, 255, 255, 0.02);
+body:not(.light-mode) .panel-sections,
+body.dark-mode .panel-sections {
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
 }
 
-body.light-mode .panel-section-btn:hover, body.light-mode .panel-section-btn-p4:hover {
-    background: rgba(0, 0, 0, 0.02);
+.panel-section-btn, 
+.panel-section-btn-p2, 
+.panel-section-btn-p4 {
+    border: 1px solid transparent !important;
+    outline: none !important;
+    border-radius: 10px !important;
+    padding: 10px 18px !important;
+    font-weight: 700 !important;
+    font-size: 0.88rem !important;
+    color: #64748b !important;
+    background: transparent !important;
+    cursor: pointer;
+    transition: all 0.22s ease-in-out;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0 !important;
 }
 
-.panel-section-btn.active, .panel-section-btn-p4.active {
-    color: var(--color-cyan);
-    border-bottom: 3px solid var(--color-cyan);
-    background: rgba(0, 242, 254, 0.04);
+body:not(.light-mode) .panel-section-btn,
+body:not(.light-mode) .panel-section-btn-p2,
+body:not(.light-mode) .panel-section-btn-p4 {
+    color: #94a3b8 !important;
 }
 
-body.light-mode .panel-section-btn.active, body.light-mode .panel-section-btn-p4.active {
-    color: var(--color-blue);
-    border-bottom: 3px solid var(--color-blue);
-    background: rgba(59, 130, 246, 0.04);
+.panel-section-btn:hover, 
+.panel-section-btn-p2:hover, 
+.panel-section-btn-p4:hover {
+    color: #1e293b !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.panel-section-btn.hidden, .panel-section-btn-p4.hidden {
-    display: none;
+body:not(.light-mode) .panel-section-btn:hover,
+body:not(.light-mode) .panel-section-btn-p2:hover,
+body:not(.light-mode) .panel-section-btn-p4:hover {
+    color: #f8fafc !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Active tab pill */
+.panel-section-btn.active, 
+.panel-section-btn-p2.active, 
+.panel-section-btn-p4.active {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    color: #ffffff !important;
+    border-color: rgba(37, 99, 235, 0.3) !important;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
+    transform: translateY(-1px);
+}
+
+.panel-section-btn.active svg,
+.panel-section-btn-p2.active svg,
+.panel-section-btn-p4.active svg {
+    stroke: #ffffff !important;
+}
+
+/* Specific styling for Dictation and Tra Bai tabs */
+.panel-section-btn[data-section="dictation"],
+.panel-section-btn-p2[data-section="dictation"],
+.panel-section-btn-p4[data-section="dictation"] {
+    color: #2563eb !important;
+}
+
+body:not(.light-mode) .panel-section-btn[data-section="dictation"],
+body:not(.light-mode) .panel-section-btn-p2[data-section="dictation"],
+body:not(.light-mode) .panel-section-btn-p4[data-section="dictation"] {
+    color: #60a5fa !important;
+}
+
+.panel-section-btn[data-section="dictation"].active,
+.panel-section-btn-p2[data-section="dictation"].active,
+.panel-section-btn-p4[data-section="dictation"].active {
+    background: linear-gradient(135deg, #0284c7, #2563eb) !important;
+    color: #ffffff !important;
+    border-color: rgba(2, 132, 199, 0.4) !important;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4) !important;
+}
+
+.panel-section-btn[data-section="trabai"],
+.panel-section-btn-p2[data-section="trabai"],
+.panel-section-btn-p4[data-section="trabai"] {
+    color: #d97706 !important;
+}
+
+.panel-section-btn[data-section="trabai"].active,
+.panel-section-btn-p2[data-section="trabai"].active,
+.panel-section-btn-p4[data-section="trabai"].active {
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+    color: #ffffff !important;
+    border-color: rgba(245, 158, 11, 0.4) !important;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4) !important;
+}
+
+.panel-section-btn.hidden, 
+.panel-section-btn-p2.hidden, 
+.panel-section-btn-p4.hidden {
+    display: none !important;
 }
 
 .panel-content, .panel-content-p4, .panel-content-p2 {
@@ -2420,55 +2492,72 @@ body.light-mode .q-trans {
 
 /* ================= PART 01: TRẢ BÀI TỪ VỰNG ================= */
 .p1-nav-tabs {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 8px;
-    margin-top: 18px;
-    border-bottom: 2px solid #e2e8f0;
-    padding-bottom: 0;
+    padding: 6px 8px;
+    background: rgba(241, 245, 249, 0.9);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    border-radius: 14px;
+    margin-top: 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
     overflow-x: auto;
 }
 
 body:not(.light-mode) .p1-nav-tabs {
-    border-bottom-color: rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .p1-tab-nav-btn {
-    padding: 12px 22px;
-    font-size: 0.98rem;
+    border: 1px solid transparent !important;
+    outline: none !important;
+    border-radius: 10px !important;
+    padding: 10px 18px !important;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #64748b;
     background: transparent;
-    border: none;
-    border-bottom: 3px solid transparent;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    transition: all 0.2s ease;
-    border-radius: 8px 8px 0 0;
+    transition: all 0.22s ease-in-out;
     white-space: nowrap;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .p1-tab-nav-btn:hover {
     color: #1e293b;
-    background: rgba(0, 0, 0, 0.03);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 body:not(.light-mode) .p1-tab-nav-btn:hover {
-    color: #f1f5f9;
-    background: rgba(255, 255, 255, 0.05);
+    color: #f8fafc;
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .p1-tab-nav-btn.active {
-    color: #2563eb;
-    border-bottom-color: #2563eb;
-    background: rgba(37, 99, 235, 0.05);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
+    transform: translateY(-1px);
 }
 
 #p1-tab-btn-trabai.active {
-    color: #d97706;
-    border-bottom-color: #f59e0b;
-    background: rgba(245, 158, 11, 0.08);
+    background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35) !important;
+}
+
+#p1-tab-btn-dictation.active {
+    background: linear-gradient(135deg, #0284c7, #2563eb) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
 }
 
 /* Tra Bai Container & Controls */
@@ -3161,49 +3250,63 @@ body.light-mode .sidebar-brand-sub {
 }
 
 .dictation-subtabs {
-    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
     gap: 8px;
-    border-bottom: 2px solid #e2e8f0;
-    margin-bottom: 8px;
+    padding: 6px 8px;
+    background: rgba(241, 245, 249, 0.9);
+    border: 1px solid rgba(203, 213, 225, 0.8);
+    border-radius: 14px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 body:not(.light-mode) .dictation-subtabs {
-    border-bottom-color: rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dictation-subtab-btn {
-    padding: 10px 20px;
-    font-size: 0.98rem;
+    border: 1px solid transparent !important;
+    outline: none !important;
+    border-radius: 10px !important;
+    padding: 9px 18px !important;
+    font-size: 0.9rem;
     font-weight: 700;
     color: #64748b;
     background: transparent;
-    border: none;
-    border-bottom: 3px solid transparent;
     cursor: pointer;
-    transition: all 0.2s ease;
-    border-radius: 8px 8px 0 0;
+    transition: all 0.22s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .dictation-subtab-btn:hover {
     color: #1e293b;
-    background: rgba(0, 0, 0, 0.03);
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 body:not(.light-mode) .dictation-subtab-btn:hover {
-    color: #f1f5f9;
-    background: rgba(255, 255, 255, 0.05);
+    color: #f8fafc;
+    background: rgba(255, 255, 255, 0.08);
 }
 
 .dictation-subtab-btn.active {
-    color: #2563eb;
-    border-bottom-color: #2563eb;
-    background: rgba(37, 99, 235, 0.05);
+    background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35) !important;
+    transform: translateY(-1px);
 }
 
 body:not(.light-mode) .dictation-subtab-btn.active {
-    color: #60a5fa;
-    border-bottom-color: #60a5fa;
-    background: rgba(96, 165, 250, 0.1);
+    background: linear-gradient(135deg, #0284c7, #2563eb) !important;
+    color: #ffffff !important;
 }
 
 .dictation-card {
