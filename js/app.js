@@ -464,7 +464,7 @@ document.addEventListener("DOMContentLoaded", () => {
         // Giảng viên / Quản trị viên: Toàn quyền mở khóa
         if (role && role.type === "teacher") return false;
 
-        // 1. Học viên Phạm Thị Thu Trang: Mở toàn bộ PART 01 + Tổng quan & toàn bộ WH-Questions (Information Questions) của PART 02
+        // 1. Học viên Phạm Thị Thu Trang: Mở toàn bộ PART 01 + Tổng quan, WH-Questions, Yes/No Questions & Choice Questions của PART 02
         if (role && role.type === "thu_trang") {
             if (partNum === 1) {
                 return false; // Mở toàn bộ Part 01
@@ -479,7 +479,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     "info_when",
                     "info_why",
                     "info_what",
-                    "info_how"
+                    "info_how",
+                    "yn_basic",
+                    "yn_negative",
+                    "yn_tag",
+                    "yn_embedded",
+                    "choice_questions"
                 ];
                 return !allowedP2.includes(baseId);
             }
@@ -683,7 +688,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const desc = modal.querySelector('p');
             if (desc) {
                 desc.textContent = customMsg || (isThuTrangStudent()
-                    ? "Nội dung này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!"
+                    ? "Nội dung này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!"
                     : "Vui lòng nhập mật khẩu để truy cập.");
             }
 
@@ -1190,15 +1195,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function switchView(viewName) {
         if (viewName === "part2" && isContentLocked(2)) {
-            window.showPaywallModal(() => switchView(viewName), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => switchView(viewName), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         if (viewName === "part3" && isContentLocked(3)) {
-            window.showPaywallModal(() => switchView(viewName), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => switchView(viewName), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         if (viewName === "part4" && isContentLocked(4)) {
-            window.showPaywallModal(() => switchView(viewName), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => switchView(viewName), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         state.activeView = viewName;
@@ -1704,7 +1709,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
                     if (isContentLocked(3, node.id)) {
-                        window.showPaywallModal(() => loadSection(node.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        window.showPaywallModal(() => loadSection(node.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                         return;
                     }
                     loadSection(node.id);
@@ -1731,7 +1736,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
                         if (isContentLocked(3, item.id)) {
-                            window.showPaywallModal(() => loadSection(item.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            window.showPaywallModal(() => loadSection(item.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                             return;
                         }
                         loadSection(item.id);
@@ -1747,7 +1752,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     trabaiSubItem.addEventListener("click", (e) => {
                         e.stopPropagation();
                         if (isContentLocked(3, item.id)) {
-                            window.showPaywallModal(() => loadSection(item.id, "trabai"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            window.showPaywallModal(() => loadSection(item.id, "trabai"), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                             return;
                         }
                         loadSection(item.id, "trabai");
@@ -1774,7 +1779,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
                     if (isContentLocked(3, item.id)) {
-                        window.showPaywallModal(() => loadSection(item.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        window.showPaywallModal(() => loadSection(item.id), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                         return;
                     }
                     loadSection(item.id);
@@ -1848,7 +1853,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
                     if (isContentLocked(1, node.id)) {
-                        window.showPaywallModal(() => loadSectionP1(node.id), "Phần học này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        window.showPaywallModal(() => loadSectionP1(node.id), "Phần học này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                         return;
                     }
                     loadSectionP1(node.id, "theory");
@@ -1913,7 +1918,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
                         if (isContentLocked(1, section.id)) {
-                            window.showPaywallModal(() => loadSectionP1(section.id), "Phần luyện tập này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            window.showPaywallModal(() => loadSectionP1(section.id), "Phần luyện tập này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                             return;
                         }
                         loadSectionP1(section.id);
@@ -1948,7 +1953,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
                     if (isContentLocked(4, node.id)) {
-                        window.showPaywallModal(() => loadSectionP4(node.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        window.showPaywallModal(() => loadSectionP4(node.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                         return;
                     }
                     loadSectionP4(node.id);
@@ -1975,7 +1980,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
                         if (isContentLocked(4, item.id)) {
-                            window.showPaywallModal(() => loadSectionP4(item.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            window.showPaywallModal(() => loadSectionP4(item.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                             return;
                         }
                         loadSectionP4(item.id);
@@ -2002,7 +2007,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 submenuItem.addEventListener("click", (e) => {
                     e.stopPropagation();
                     if (isContentLocked(4, item.id)) {
-                        window.showPaywallModal(() => loadSectionP4(item.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        window.showPaywallModal(() => loadSectionP4(item.id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                         return;
                     }
                     loadSectionP4(item.id);
@@ -2015,7 +2020,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function loadSection(id, requestedTab = null) {
         if (isContentLocked(3, id)) {
-            window.showPaywallModal(() => loadSection(id, requestedTab), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => loadSection(id, requestedTab), "Phần 03 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
             return;
             if (false) {
                 sessionStorage.setItem("portal_unlocked_v2", "true");
@@ -6452,7 +6457,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 item.addEventListener("click", (e) => {
                     e.stopPropagation();
                     if (isContentLocked(2, test.id)) {
-                        window.showPaywallModal(() => loadPart02Test(test.id), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                        window.showPaywallModal(() => loadPart02Test(test.id), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                         return;
                     }
                     loadPart02Test(test.id);
@@ -6478,7 +6483,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     submenuItem.addEventListener("click", (e) => {
                         e.stopPropagation();
                         if (isContentLocked(2, node.id)) {
-                            window.showPaywallModal(() => loadSectionP2(node.id), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+                            window.showPaywallModal(() => loadSectionP2(node.id), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
                             return;
                         }
                         loadSectionP2(node.id);
@@ -6566,7 +6571,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function loadPart02Test(testId) {
         if (isContentLocked(2, testId)) {
-            window.showPaywallModal(() => loadPart02Test(testId), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => loadPart02Test(testId), "Phần 02 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         state.part02ActiveSection = testId;
@@ -7932,7 +7937,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     function loadSectionP1(sectionId, targetTab = 'theory') {
         if (isContentLocked(1, sectionId)) {
-            window.showPaywallModal(() => loadSectionP1(sectionId, targetTab), "Phần học này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => loadSectionP1(sectionId, targetTab), "Phần học này hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
             return;
         }
         if (!window.part01Data) return;
@@ -11184,7 +11189,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function loadSectionP4(id) {
         if (isContentLocked(4, id)) {
-            window.showPaywallModal(() => loadSectionP4(id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành Dạng tranh 1 người hoặc liên hệ giáo viên để được mở thêm!");
+            window.showPaywallModal(() => loadSectionP4(id), "Phần 04 hiện đang tạm khoá cho tài khoản của bạn. Vui lòng hoàn thành các bài học hiện tại hoặc liên hệ giáo viên để được mở thêm!");
             return;
             if (false) {
                 sessionStorage.setItem("portal_unlocked_v2", "true");
