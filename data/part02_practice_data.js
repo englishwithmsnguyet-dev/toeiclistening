@@ -14,8 +14,8 @@ window.part02PracticeData = [
         "question": "How old is this building?",
         "choices": {
           "A": "To ship some materials.",
-          "B": "About ten years old",
-          "C": "Company offices, I think"
+          "B": "About ten years old.",
+          "C": "Company offices, I think."
         },
         "answer": "B",
         "vietnamese_question": "Tòa nhà này bao nhiêu tuổi rồi?",
@@ -24,7 +24,7 @@ window.part02PracticeData = [
           "B": "Khoảng mười năm",
           "C": "Tôi nghĩ là văn phòng công ty"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"About ten years old\" (<em>Khoảng mười năm</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"About ten years old.\" (<em>Khoảng mười năm</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "building",
@@ -45,7 +45,7 @@ window.part02PracticeData = [
             "vi": "vật liệu, tài liệu"
           }
         ],
-        "audio": "media/E26-T01-07.mp3"
+        "audio": "media/part02_practice/questions/t01_q07.mp3"
       },
       {
         "id": 8,
@@ -53,16 +53,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "I'm sorry I was late for the meeting.",
           "B": "Mostly just local musicians.",
-          "C": "Sure, I’ll be there"
+          "C": "Sure, I’ll be there."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn có thể đến xem buổi biểu diễn nhạc jazz của  tôi tối nay không?",
+        "vietnamese_question": "Bạn có thể đến xem buổi biểu diễn nhạc jazz của tôi tối nay không?",
         "vietnamese_choices": {
           "A": "Tôi xin lỗi vì đã đến trễ cuộc họp.",
           "B": "Hầu hết chỉ là các nhạc sĩ địa phương.",
           "C": "Chắc chắn rồi, tôi sẽ đến."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Sure, I’ll be there\" (<em>Chắc chắn rồi, tôi sẽ đến.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Sure, I’ll be there.\" (<em>Chắc chắn rồi, tôi sẽ đến.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "performance",
@@ -83,7 +83,7 @@ window.part02PracticeData = [
             "vi": "địa phương"
           }
         ],
-        "audio": "media/E26-T01-08.mp3"
+        "audio": "media/part02_practice/questions/t01_q08.mp3"
       },
       {
         "id": 9,
@@ -91,7 +91,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "It's what you did for a living.",
           "B": "Submit your assignment here.",
-          "C": "It came from the tenants in B23"
+          "C": "It came from the tenants in B23."
         },
         "answer": "C",
         "vietnamese_question": "Căn hộ nào đã nộp lệnh thi công?",
@@ -100,7 +100,7 @@ window.part02PracticeData = [
           "B": "Nộp bài tập của bạn ở đây.",
           "C": "Nó đến từ những người thuê nhà ở căn B23"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHICH (LỰA CHỌN CỤ THỂ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It came from the tenants in B23\" (<em>Nó đến từ những người thuê nhà ở căn B23</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường dùng đại từ 'the one...', danh từ cụ thể hoặc chỉ rõ đối tượng được chọn.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHICH (LỰA CHỌN CỤ THỂ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It came from the tenants in B23.\" (<em>Nó đến từ những người thuê nhà ở căn B23</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường dùng đại từ 'the one...', danh từ cụ thể hoặc chỉ rõ đối tượng được chọn.</p>\n</div>",
         "vocabulary": [
           {
             "en": "apartment",
@@ -127,24 +127,24 @@ window.part02PracticeData = [
             "vi": "người thuê nhà"
           }
         ],
-        "audio": "media/E26-T01-09.mp3"
+        "audio": "media/part02_practice/questions/t01_q09.mp3"
       },
       {
         "id": 10,
         "question": "Will you contact the vendor about changing our delivery date?",
         "choices": {
-          "A": "Of course, I’ll take care of it",
-          "B": "An e - mail receipt.",
+          "A": "Of course, I’ll take care of it.",
+          "B": "An e-mail receipt.",
           "C": "Could I get change for a dollar?"
         },
         "answer": "A",
-        "vietnamese_question": "Bạn sẽ liên hệ với nhà cung cấp về việc thay đổi  ngày giao hàng chứ?",
+        "vietnamese_question": "Bạn sẽ liên hệ với nhà cung cấp về việc thay đổi ngày giao hàng chứ?",
         "vietnamese_choices": {
           "A": "Tất nhiên, tôi sẽ lo việc đó",
           "B": "Một biên nhận qua email.",
           "C": "Tôi có thể đổi lấy một đô la được không?"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Of course, I’ll take care of it\" (<em>Tất nhiên, tôi sẽ lo việc đó</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Of course, I’ll take care of it.\" (<em>Tất nhiên, tôi sẽ lo việc đó</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "contact",
@@ -165,7 +165,7 @@ window.part02PracticeData = [
             "vi": "ngày giao hàng"
           }
         ],
-        "audio": "media/E26-T01-10.mp3"
+        "audio": "media/part02_practice/questions/t01_q10.mp3"
       },
       {
         "id": 11,
@@ -209,7 +209,7 @@ window.part02PracticeData = [
             "vi": "chỗ rò rỉ, rò rỉ"
           }
         ],
-        "audio": "media/E26-T01-11.mp3"
+        "audio": "media/part02_practice/questions/t01_q11.mp3"
       },
       {
         "id": 12,
@@ -217,7 +217,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "Put it on the highest shelf.",
           "B": "The personnel department.",
-          "C": "Yes, they chose Jacob Borgman"
+          "C": "Yes, they chose Jacob Borgman."
         },
         "answer": "C",
         "vietnamese_question": "Ban lãnh đạo đã có quyết định tuyển dụng chưa?",
@@ -226,7 +226,7 @@ window.part02PracticeData = [
           "B": "Phòng nhân sự.",
           "C": "Vâng, họ đã chọn Jacob Borgman"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, they chose Jacob Borgman\" (<em>Vâng, họ đã chọn Jacob Borgman</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, they chose Jacob Borgman.\" (<em>Vâng, họ đã chọn Jacob Borgman</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "management",
@@ -247,7 +247,7 @@ window.part02PracticeData = [
             "vi": "thông báo"
           }
         ],
-        "audio": "media/E26-T01-12.mp3"
+        "audio": "media/part02_practice/questions/t01_q12.mp3"
       },
       {
         "id": 13,
@@ -255,16 +255,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "He went there yesterday.",
           "B": "Well, maybe a sandwich.",
-          "C": "Let’s eat here"
+          "C": "Let’s eat here."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn muốn ăn ở căng tin của chúng tôi hay đi ra  ngoài?",
+        "vietnamese_question": "Bạn muốn ăn ở căng tin của chúng tôi hay đi ra ngoài?",
         "vietnamese_choices": {
           "A": "Anh ấy đã đến đó ngày hôm qua.",
           "B": "À, có thể là bánh sandwich.",
           "C": "Hãy ăn ở đây"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Let’s eat here\" (<em>Hãy ăn ở đây</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Let’s eat here.\" (<em>Hãy ăn ở đây</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "order",
@@ -285,18 +285,18 @@ window.part02PracticeData = [
             "vi": "no, đầy"
           }
         ],
-        "audio": "media/E26-T01-13.mp3"
+        "audio": "media/part02_practice/questions/t01_q13.mp3"
       },
       {
         "id": 14,
-        "question": "Didn't you e - mail the employment contract to Mr. Patel yesterday?",
+        "question": "Didn't you e-mail the employment contract to Mr. Patel yesterday?",
         "choices": {
           "A": "Yes, I would agree.",
           "B": "No, I’ll send it now.",
           "C": "Check the employee manual."
         },
         "answer": "B",
-        "vietnamese_question": "Không phải hôm qua bạn đã gửi email hợp đồng  lao động cho ông Patel sao?",
+        "vietnamese_question": "Không phải hôm qua bạn đã gửi email hợp đồng lao động cho ông Patel sao?",
         "vietnamese_choices": {
           "A": "Vâng, tôi đồng ý.",
           "B": "Không, tôi sẽ gửi nó ngay bây giờ.",
@@ -323,7 +323,7 @@ window.part02PracticeData = [
             "vi": "nhà ga"
           }
         ],
-        "audio": "media/E26-T01-14.mp3"
+        "audio": "media/part02_practice/questions/t01_q14.mp3"
       },
       {
         "id": 15,
@@ -334,7 +334,7 @@ window.part02PracticeData = [
           "C": "At the end of this corridor."
         },
         "answer": "A",
-        "vietnamese_question": "Chuyến dã ngoại của phòng chúng ta là vào thứ 7  tuần này đúng không?",
+        "vietnamese_question": "Chuyến dã ngoại của phòng chúng ta là vào thứ 7 tuần này đúng không?",
         "vietnamese_choices": {
           "A": "Dự báo sẽ có rất nhiều mưa.",
           "B": "Chắc chắn rồi, tôi thích salad.",
@@ -361,7 +361,7 @@ window.part02PracticeData = [
             "vi": "dự báo thời tiết"
           }
         ],
-        "audio": "media/E26-T01-15.mp3"
+        "audio": "media/part02_practice/questions/t01_q15.mp3"
       },
       {
         "id": 16,
@@ -369,7 +369,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "Just water, please.",
           "B": "For a few dollars more.",
-          "C": "A fifteen - minute break."
+          "C": "A fifteen-minute break."
         },
         "answer": "A",
         "vietnamese_question": "Bạn muốn uống cà phê hay trà",
@@ -393,7 +393,7 @@ window.part02PracticeData = [
             "vi": "thích hơn"
           }
         ],
-        "audio": "media/E26-T01-16.mp3"
+        "audio": "media/part02_practice/questions/t01_q16.mp3"
       },
       {
         "id": 17,
@@ -404,7 +404,7 @@ window.part02PracticeData = [
           "C": "To the end of April."
         },
         "answer": "A",
-        "vietnamese_question": "Chúng ta đã đạt được mục tiêu bán hàng trong  tháng này.",
+        "vietnamese_question": "Chúng ta đã đạt được mục tiêu bán hàng trong tháng này.",
         "vietnamese_choices": {
           "A": "Đó là một tin tuyệt vời.",
           "B": "Một vài lần một ngày.",
@@ -431,7 +431,7 @@ window.part02PracticeData = [
             "vi": "xuất sắc, tuyệt vời"
           }
         ],
-        "audio": "media/E26-T01-17.mp3"
+        "audio": "media/part02_practice/questions/t01_q17.mp3"
       },
       {
         "id": 18,
@@ -463,7 +463,7 @@ window.part02PracticeData = [
             "vi": "hóa ra, diễn ra"
           }
         ],
-        "audio": "media/E26-T01-18.mp3"
+        "audio": "media/part02_practice/questions/t01_q18.mp3"
       },
       {
         "id": 19,
@@ -474,7 +474,7 @@ window.part02PracticeData = [
           "C": "At the visitors' center."
         },
         "answer": "B",
-        "vietnamese_question": "Hôm nay chúng ta nên đi bộ leo núi trên  Wildflower Trail.",
+        "vietnamese_question": "Hôm nay chúng ta nên đi bộ leo núi trên Wildflower Trail.",
         "vietnamese_choices": {
           "A": "Chỗ ngồi này còn trống.",
           "B": "Tôi không mang ủng.",
@@ -501,7 +501,7 @@ window.part02PracticeData = [
             "vi": "đôi ủng, giày bốt"
           }
         ],
-        "audio": "media/E26-T01-19.mp3"
+        "audio": "media/part02_practice/questions/t01_q19.mp3"
       },
       {
         "id": 20,
@@ -533,7 +533,7 @@ window.part02PracticeData = [
             "vi": "khách hàng"
           }
         ],
-        "audio": "media/E26-T01-20.mp3"
+        "audio": "media/part02_practice/questions/t01_q20.mp3"
       },
       {
         "id": 21,
@@ -541,7 +541,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "It’s sold out.",
           "B": "He's a concert violinist.",
-          "C": "They already lel f ."
+          "C": "They already left."
         },
         "answer": "A",
         "vietnamese_question": "Còn vé nào cho buổi hòa nhạc tối nay không?",
@@ -571,7 +571,7 @@ window.part02PracticeData = [
             "vi": "vỗ tay tán thưởng"
           }
         ],
-        "audio": "media/E26-T01-21.mp3"
+        "audio": "media/part02_practice/questions/t01_q21.mp3"
       },
       {
         "id": 22,
@@ -582,9 +582,9 @@ window.part02PracticeData = [
           "C": "About 40 dollars."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn chưa từng sử dụng phần mềm này phải  không?",
+        "vietnamese_question": "Bạn chưa từng sử dụng phần mềm này phải không?",
         "vietnamese_choices": {
-          "A": "Tôi có thể nhận đơn đặt hàng của bạn được  không?",
+          "A": "Tôi có thể nhận đơn đặt hàng của bạn được không?",
           "B": "Tôi chưa có cơ hội.",
           "C": "Khoảng 40 đô la."
         },
@@ -609,7 +609,7 @@ window.part02PracticeData = [
             "vi": "hội nghị"
           }
         ],
-        "audio": "media/E26-T01-22.mp3"
+        "audio": "media/part02_practice/questions/t01_q22.mp3"
       },
       {
         "id": 23,
@@ -647,7 +647,7 @@ window.part02PracticeData = [
             "vi": "ứng viên"
           }
         ],
-        "audio": "media/E26-T01-23.mp3"
+        "audio": "media/part02_practice/questions/t01_q23.mp3"
       },
       {
         "id": 24,
@@ -685,14 +685,14 @@ window.part02PracticeData = [
             "vi": "nhà thầu"
           }
         ],
-        "audio": "media/E26-T01-24.mp3"
+        "audio": "media/part02_practice/questions/t01_q24.mp3"
       },
       {
         "id": 25,
         "question": "Where are the red roses that came in this morning?",
         "choices": {
           "A": "About three liters of water.",
-          "B": "No, I didn't check out the sale",
+          "B": "No, I didn't check out the sale.",
           "C": "I needed some for a large bouquet."
         },
         "answer": "C",
@@ -717,7 +717,7 @@ window.part02PracticeData = [
             "vi": "chuyển công tác, điều chuyển"
           }
         ],
-        "audio": "media/E26-T01-25.mp3"
+        "audio": "media/part02_practice/questions/t01_q25.mp3"
       },
       {
         "id": 26,
@@ -725,7 +725,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "Why don’t we go see it?",
           "B": "After the announcement.",
-          "C": "He made a great speech"
+          "C": "He made a great speech."
         },
         "answer": "A",
         "vietnamese_question": "Bộ phim này đã được đề cử nhiều giải thưởng",
@@ -755,24 +755,24 @@ window.part02PracticeData = [
             "vi": "biên lai, hóa đơn"
           }
         ],
-        "audio": "media/E26-T01-26.mp3"
+        "audio": "media/part02_practice/questions/t01_q26.mp3"
       },
       {
         "id": 27,
         "question": "Who's interested in starting a car pool program?",
         "choices": {
           "A": "Thanks, but I can't swim.",
-          "B": "Carat’s already organizing one.",
+          "B": "Clara's already organizing one.",
           "C": "It's a very interesting article."
         },
         "answer": "B",
-        "vietnamese_question": "Ai có hứng thú đến việc thành lập một nhóm đi  chung xe hơi?",
+        "vietnamese_question": "Ai có hứng thú đến việc thành lập một nhóm đi chung xe hơi?",
         "vietnamese_choices": {
           "A": "Cảm ơn, nhưng tôi không biết bơi.",
-          "B": "Carat đã tổ chức một cái rồi.",
+          "B": "Clara đã tổ chức một nhóm rồi.",
           "C": "Đó là một bài viết rất thú vị."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Carat’s already organizing one.\" (<em>Carat đã tổ chức một cái rồi.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Clara's already organizing one.\" (<em>Clara đã tổ chức một nhóm rồi.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "attend",
@@ -793,24 +793,24 @@ window.part02PracticeData = [
             "vi": "lịch trình, lên lịch"
           }
         ],
-        "audio": "media/E26-T01-27.mp3"
+        "audio": "media/part02_practice/questions/t01_q27.mp3"
       },
       {
         "id": 28,
         "question": "Where will I teach my workshop this month?",
         "choices": {
-          "A": "We just sent an e - mail to all instru ctors",
+          "A": "We just sent an e-mail to all instructors.",
           "B": "Five to seven months.",
           "C": "Yes, it's a beautiful building."
         },
         "answer": "A",
         "vietnamese_question": "Tháng này tôi sẽ tổ chức hội thảo ở đâu?",
         "vietnamese_choices": {
-          "A": "Chúng tôi vừa gửi e-mail cho tất cả các giảng  viên",
+          "A": "Chúng tôi vừa gửi e-mail cho tất cả các giảng viên",
           "B": "Năm đến bảy tháng.",
           "C": "Vâng, đó là một tòa nhà đẹp."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We just sent an e - mail to all instru ctors\" (<em>Chúng tôi vừa gửi e-mail cho tất cả các giảng  viên</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We just sent an e-mail to all instructors.\" (<em>Chúng tôi vừa gửi e-mail cho tất cả các giảng viên</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "budget",
@@ -831,24 +831,24 @@ window.part02PracticeData = [
             "vi": "đề xuất, phương án"
           }
         ],
-        "audio": "media/E26-T01-28.mp3"
+        "audio": "media/part02_practice/questions/t01_q28.mp3"
       },
       {
         "id": 29,
         "question": "Why are we moving these sweaters to the back of the store?",
         "choices": {
-          "A": "In the new shopping maliy",
+          "A": "In the new shopping mall.",
           "B": "Yes, they come in other colors.",
-          "C": "Our spring merchandise is arriving soon"
+          "C": "Our spring merchandise is arriving soon."
         },
         "answer": "C",
-        "vietnamese_question": "Tại sao chúng ta lại chuyển những chiếc áo len  này ra phía sau cửa hàng?",
+        "vietnamese_question": "Tại sao chúng ta lại chuyển những chiếc áo len này ra phía sau cửa hàng?",
         "vietnamese_choices": {
           "A": "Trong khu mua sắm mới",
           "B": "Vâng, chúng có nhiều màu khác",
           "C": "Hàng hóa mùa xuân của chúng ta sắp đến"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Our spring merchandise is arriving soon\" (<em>Hàng hóa mùa xuân của chúng ta sắp đến</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Our spring merchandise is arriving soon.\" (<em>Hàng hóa mùa xuân của chúng ta sắp đến</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "sweater",
@@ -869,7 +869,7 @@ window.part02PracticeData = [
             "vi": "đến nơi"
           }
         ],
-        "audio": "media/E26-T01-29.mp3"
+        "audio": "media/part02_practice/questions/t01_q29.mp3"
       },
       {
         "id": 30,
@@ -877,16 +877,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "Thank you for meeting me.",
           "B": "A contact lens prescription.",
-          "C": "I have very limited time ."
+          "C": "I have very limited time."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn có muốn thực hiện một số hợp đồng này  không?",
+        "vietnamese_question": "Bạn có muốn thực hiện một số hợp đồng này không?",
         "vietnamese_choices": {
           "A": "Cảm ơn bạn đã gặp tôi.",
           "B": "Đơn thuốc kính áp tròng.",
           "C": "Tôi có rất ít thời gian."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I have very limited time .\" (<em>Tôi có rất ít thời gian.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I have very limited time.\" (<em>Tôi có rất ít thời gian.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "catering",
@@ -907,14 +907,14 @@ window.part02PracticeData = [
             "vi": "tùy chọn, sự lựa chọn"
           }
         ],
-        "audio": "media/E26-T01-30.mp3"
+        "audio": "media/part02_practice/questions/t01_q30.mp3"
       },
       {
         "id": 31,
         "question": "What type of job are you looking for?",
         "choices": {
           "A": "No, at ten A.M.",
-          "B": "I really like working with computers",
+          "B": "I really like working with computers.",
           "C": "Just a résumé is needed."
         },
         "answer": "B",
@@ -924,7 +924,7 @@ window.part02PracticeData = [
           "B": "Tôi thực sự thích làm việc với máy tính",
           "C": "Chỉ cần một bản lý lịch."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I really like working with computers\" (<em>Tôi thực sự thích làm việc với máy tính</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I really like working with computers.\" (<em>Tôi thực sự thích làm việc với máy tính</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
         "vocabulary": [
           {
             "en": "flight",
@@ -945,7 +945,7 @@ window.part02PracticeData = [
             "vi": "sự khởi hành"
           }
         ],
-        "audio": "media/E26-T01-31.mp3"
+        "audio": "media/part02_practice/questions/t01_q31.mp3"
       }
     ]
   },
@@ -961,11 +961,11 @@ window.part02PracticeData = [
         "question": "Have the machines on the factory floor been cleaned?",
         "choices": {
           "A": "No. not yet.",
-          "B": "It's in the shipping container .",
-          "C": "I just put it in the trash bin"
+          "B": "It's in the shipping container.",
+          "C": "I just put it in the trash bin."
         },
         "answer": "A",
-        "vietnamese_question": "Máy móc trên sàn nhà xưởng đã được vệ sinh  chưa?",
+        "vietnamese_question": "Máy móc trên sàn nhà xưởng đã được vệ sinh chưa?",
         "vietnamese_choices": {
           "A": "Chưa, vẫn chưa.",
           "B": "Nó ở trong thùng vận chuyển.",
@@ -986,7 +986,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-07.mp3"
+        "audio": "media/part02_practice/questions/t02_q07.mp3"
       },
       {
         "id": 8,
@@ -1012,14 +1012,14 @@ window.part02PracticeData = [
             "vi": "ngân sách"
           }
         ],
-        "audio": "media/E26-T02-08.mp3"
+        "audio": "media/part02_practice/questions/t02_q08.mp3"
       },
       {
         "id": 9,
         "question": "You're going to water the plants before you leave, aren't you?",
         "choices": {
           "A": "I walked the whole way.",
-          "B": "Yes, right after lunch .",
+          "B": "Yes, right after lunch.",
           "C": "In the breakroom."
         },
         "answer": "B",
@@ -1029,7 +1029,7 @@ window.part02PracticeData = [
           "B": "Vâng, ngay sau bữa trưa.",
           "C": "Trong phòng nghỉ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, right after lunch .\" (<em>Vâng, ngay sau bữa trưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Yes, right after lunch.\" (<em>Vâng, ngay sau bữa trưa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "going",
@@ -1044,7 +1044,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-09.mp3"
+        "audio": "media/part02_practice/questions/t02_q09.mp3"
       },
       {
         "id": 10,
@@ -1055,7 +1055,7 @@ window.part02PracticeData = [
           "C": "The seminar is three days long."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn không đặt lịch hẹn với bác sĩ nhãn khoa phải  không?",
+        "vietnamese_question": "Bạn không đặt lịch hẹn với bác sĩ nhãn khoa phải không?",
         "vietnamese_choices": {
           "A": "Những chiếc kính đó trông rất đẹp với bạn.",
           "B": "Tôi đã lên lịch rồi.",
@@ -1082,14 +1082,14 @@ window.part02PracticeData = [
             "vi": "hội thảo"
           }
         ],
-        "audio": "media/E26-T02-10.mp3"
+        "audio": "media/part02_practice/questions/t02_q10.mp3"
       },
       {
         "id": 11,
         "question": "I'm going to try to fix this printer.",
         "choices": {
           "A": "You're right, it doesn't fit.",
-          "B": "Double - sided copies.",
+          "B": "Double-sided copies.",
           "C": "Are you sure it can be repaired?"
         },
         "answer": "C",
@@ -1114,11 +1114,11 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-11.mp3"
+        "audio": "media/part02_practice/questions/t02_q11.mp3"
       },
       {
         "id": 12,
-        "question": "What should we do with these brochures",
+        "question": "What should we do with these brochures?",
         "choices": {
           "A": "A trip to the seashore.",
           "B": "Yes, I found it already.",
@@ -1140,7 +1140,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T02-12.mp3"
+        "audio": "media/part02_practice/questions/t02_q12.mp3"
       },
       {
         "id": 13,
@@ -1166,24 +1166,24 @@ window.part02PracticeData = [
             "vi": "thay vào đó"
           }
         ],
-        "audio": "media/E26-T02-13.mp3"
+        "audio": "media/part02_practice/questions/t02_q13.mp3"
       },
       {
         "id": 14,
         "question": "Why don't we stop by the office cafeteria on our way to the workshop?",
         "choices": {
           "A": "Sure, we have time for that.",
-          "B": "A full - service buffet.",
+          "B": "A full-service buffet.",
           "C": "The topic is professional networking."
         },
         "answer": "A",
-        "vietnamese_question": "Tại sao chúng ta không ghé qua quán cà phê văn  phòng trên đường đến xưởng?",
+        "vietnamese_question": "Tại sao chúng ta không ghé qua quán cà phê văn phòng trên đường đến xưởng?",
         "vietnamese_choices": {
-          "A": "Chắc chắn rồi, chúng ta có thời gian cho việc  đó.",
+          "A": "Chắc chắn rồi, chúng ta có thời gian cho việc đó.",
           "B": "Một bữa tiệc buffet đầy đủ dịch vụ.",
           "C": "Chủ đề là mạng lưới chuyên nghiệp."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sure, we have time for that.\" (<em>Chắc chắn rồi, chúng ta có thời gian cho việc  đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sure, we have time for that.\" (<em>Chắc chắn rồi, chúng ta có thời gian cho việc đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "workshop",
@@ -1198,7 +1198,7 @@ window.part02PracticeData = [
             "vi": "quán ăn tự phục vụ"
           }
         ],
-        "audio": "media/E26-T02-14.mp3"
+        "audio": "media/part02_practice/questions/t02_q14.mp3"
       },
       {
         "id": 15,
@@ -1206,10 +1206,10 @@ window.part02PracticeData = [
         "choices": {
           "A": "We need a table for five.",
           "B": "Yes, it was delicious.",
-          "C": "I’ll trt to make it on time."
+          "C": "I'll try to make it on time."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn đã thử món mì ống nổi tiếng của chúng tôi  chưa?",
+        "vietnamese_question": "Bạn đã thử món mì ống nổi tiếng của chúng tôi chưa?",
         "vietnamese_choices": {
           "A": "Chúng tôi cần một bàn cho năm người.",
           "B": "Rồi, nó rất ngon.",
@@ -1230,7 +1230,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-15.mp3"
+        "audio": "media/part02_practice/questions/t02_q15.mp3"
       },
       {
         "id": 16,
@@ -1241,7 +1241,7 @@ window.part02PracticeData = [
           "C": "The position has been filled."
         },
         "answer": "B",
-        "vietnamese_question": "Ai là người biểu diễn mở màn buổi hòa nhạc tối  nay?",
+        "vietnamese_question": "Ai là người biểu diễn mở màn buổi hòa nhạc tối nay?",
         "vietnamese_choices": {
           "A": "Bạn có thể tăng âm lượng lên được không?",
           "B": "Một ca sĩ nhạc jazz đến từ Pháp.",
@@ -1262,24 +1262,24 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-16.mp3"
+        "audio": "media/part02_practice/questions/t02_q16.mp3"
       },
       {
         "id": 17,
         "question": "When do the product demonstrations start?",
         "choices": {
-          "A": "The schedule was e - mailed last Friday.",
+          "A": "The schedule was e-mailed last Friday.",
           "B": "Some innovative features.",
           "C": "In room 202, I think."
         },
         "answer": "A",
         "vietnamese_question": "Khi nào buổi giới thiệu sản phẩm bắt đầu?",
         "vietnamese_choices": {
-          "A": "Lịch trình đã được gửi qua email vào thứ 6  tuần trước.",
+          "A": "Lịch trình đã được gửi qua email vào thứ 6 tuần trước.",
           "B": "Một số tính năng cải tiến.",
           "C": "Tôi nghĩ là ở phòng 202."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The schedule was e - mailed last Friday.\" (<em>Lịch trình đã được gửi qua email vào thứ 6  tuần trước.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The schedule was e-mailed last Friday.\" (<em>Lịch trình đã được gửi qua email vào thứ 6 tuần trước.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "schedule",
@@ -1288,7 +1288,7 @@ window.part02PracticeData = [
             "vi": "lịch trình, sắp xếp"
           }
         ],
-        "audio": "media/E26-T02-17.mp3"
+        "audio": "media/part02_practice/questions/t02_q17.mp3"
       },
       {
         "id": 18,
@@ -1296,16 +1296,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "That date works for me.",
           "B": "Usually our online reviews.",
-          "C": "Just send me the changes you want ."
+          "C": "Just send me the changes you want."
         },
         "answer": "C",
-        "vietnamese_question": "Tôi đã thử cập nhật trang Web nhưng không  được.",
+        "vietnamese_question": "Tôi đã thử cập nhật trang Web nhưng không được.",
         "vietnamese_choices": {
           "A": "Ngày đó phù hợp với tôi.",
           "B": "Thông thường chúng tôi đánh giá trực tuyến.",
-          "C": "Chỉ cần gửi cho tôi những thay đổi mà bạn  muốn."
+          "C": "Chỉ cần gửi cho tôi những thay đổi mà bạn muốn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Just send me the changes you want .\" (<em>Chỉ cần gửi cho tôi những thay đổi mà bạn  muốn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Just send me the changes you want.\" (<em>Chỉ cần gửi cho tôi những thay đổi mà bạn muốn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "tried",
@@ -1320,13 +1320,13 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-18.mp3"
+        "audio": "media/part02_practice/questions/t02_q18.mp3"
       },
       {
         "id": 19,
         "question": "Did you hire a new welding specialist?",
         "choices": {
-          "A": "The part's back - ordered.",
+          "A": "The part's back-ordered.",
           "B": "Yes, he starts tomorrow.",
           "C": "No, it should be higher."
         },
@@ -1346,21 +1346,21 @@ window.part02PracticeData = [
             "vi": "thuê, tuyển dụng"
           }
         ],
-        "audio": "media/E26-T02-19.mp3"
+        "audio": "media/part02_practice/questions/t02_q19.mp3"
       },
       {
         "id": 20,
         "question": "How was the color palette for the lobby chosen?",
         "choices": {
           "A": "Blue and orange.",
-          "B": "It was fine, thanks,",
+          "B": "It was fine, thanks.",
           "C": "I wasn't involved."
         },
         "answer": "C",
         "vietnamese_question": "Bảng màu cho sảnh được chọn bằng cách nào?",
         "vietnamese_choices": {
           "A": "Màu xanh và màu cam.",
-          "B": "Không sao đâu, cảm ơn,",
+          "B": "Nó ổn, cảm ơn.",
           "C": "Tôi không liên quan."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I wasn't involved.\" (<em>Tôi không liên quan.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
@@ -1372,24 +1372,24 @@ window.part02PracticeData = [
             "vi": "vật tư, đồ dùng"
           }
         ],
-        "audio": "media/E26-T02-20.mp3"
+        "audio": "media/part02_practice/questions/t02_q20.mp3"
       },
       {
         "id": 21,
-        "question": "office?",
+        "question": "When are we ordering more supplies for the office?",
         "choices": {
           "A": "In the storage closet.",
-          "B": "Next week on Monda y .",
+          "B": "Next week on Monday.",
           "C": "The new desk looks great!"
         },
         "answer": "B",
-        "vietnamese_question": "Khi nào chúng ta đặt mua thêm đồ dùng cho văn  phòng?",
+        "vietnamese_question": "Khi nào chúng ta đặt mua thêm đồ dùng cho văn phòng?",
         "vietnamese_choices": {
           "A": "Trong tủ đựng đồ.",
           "B": "Tuần tới vào thứ 2.",
           "C": "Chiếc bàn mới trông thật tuyệt!"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Next week on Monda y .\" (<em>Tuần tới vào thứ 2.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Next week on Monday.\" (<em>Tuần tới vào thứ 2.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Nghe câu hỏi When để bắt ngay mốc thời gian cụ thể (Next week on Monday).</p>\n</div>",
         "vocabulary": [
           {
             "en": "office",
@@ -1398,7 +1398,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-21.mp3"
+        "audio": "media/part02_practice/questions/t02_q21.mp3"
       },
       {
         "id": 22,
@@ -1409,13 +1409,13 @@ window.part02PracticeData = [
           "C": "Yes, I'd love a glass of water."
         },
         "answer": "A",
-        "vietnamese_question": "Pin của máy bơm nước sẽ sử dụng năng lượng  mặt trời phải không?",
+        "vietnamese_question": "Pin của máy bơm nước sẽ sử dụng năng lượng mặt trời phải không?",
         "vietnamese_choices": {
-          "A": "Chúng tôi vẫn đang trong giai đoạn lập kế  hoạch.",
+          "A": "Chúng tôi vẫn đang trong giai đoạn lập kế hoạch.",
           "B": "Một trăm bốn mươi đô la mỗi năm.",
           "C": "Vâng, tôi muốn một cốc nước."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're still in the planning stages.\" (<em>Chúng tôi vẫn đang trong giai đoạn lập kế  hoạch.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're still in the planning stages.\" (<em>Chúng tôi vẫn đang trong giai đoạn lập kế hoạch.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
         "vocabulary": [
           {
             "en": "battery",
@@ -1430,14 +1430,14 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-22.mp3"
+        "audio": "media/part02_practice/questions/t02_q22.mp3"
       },
       {
         "id": 23,
         "question": "Where can I buy a charger for this laptop?",
         "choices": {
           "A": "Around three o'clock.",
-          "B": "I can order one for you",
+          "B": "I can order one for you.",
           "C": "A limited return policy."
         },
         "answer": "B",
@@ -1447,7 +1447,7 @@ window.part02PracticeData = [
           "B": "Tôi có thể đặt một cái cho bạn",
           "C": "Chính sách hoàn trả có giới hạn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I can order one for you\" (<em>Tôi có thể đặt một cái cho bạn</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I can order one for you.\" (<em>Tôi có thể đặt một cái cho bạn</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "charger",
@@ -1462,7 +1462,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-23.mp3"
+        "audio": "media/part02_practice/questions/t02_q23.mp3"
       },
       {
         "id": 24,
@@ -1488,24 +1488,24 @@ window.part02PracticeData = [
             "vi": "bài thuyết trình"
           }
         ],
-        "audio": "media/E26-T02-24.mp3"
+        "audio": "media/part02_practice/questions/t02_q24.mp3"
       },
       {
         "id": 25,
         "question": "When's the new department director supposed to start?",
         "choices": {
           "A": "It's an hour long.",
-          "B": "Ms. Pavlova isn't retiring for several weeks",
+          "B": "Ms. Pavlova isn't retiring for several weeks.",
           "C": "No, that department's upstairs."
         },
         "answer": "B",
-        "vietnamese_question": "Khi nào giám đốc bộ phận mới sẽ bắt đầu làm  việc?",
+        "vietnamese_question": "Khi nào giám đốc bộ phận mới sẽ bắt đầu làm việc?",
         "vietnamese_choices": {
           "A": "Nó dài một giờ.",
-          "B": "Cô Pavlova vẫn chưa nghỉ hưu trong vài tuần  nữa.",
+          "B": "Cô Pavlova vẫn chưa nghỉ hưu trong vài tuần nữa.",
           "C": "Không, phòng đó ở trên lầu."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Ms. Pavlova isn't retiring for several weeks\" (<em>Cô Pavlova vẫn chưa nghỉ hưu trong vài tuần  nữa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"Ms. Pavlova isn't retiring for several weeks.\" (<em>Cô Pavlova vẫn chưa nghỉ hưu trong vài tuần nữa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "director",
@@ -1520,7 +1520,7 @@ window.part02PracticeData = [
             "vi": "phòng ban"
           }
         ],
-        "audio": "media/E26-T02-25.mp3"
+        "audio": "media/part02_practice/questions/t02_q25.mp3"
       },
       {
         "id": 26,
@@ -1531,7 +1531,7 @@ window.part02PracticeData = [
           "C": "They're being picked up."
         },
         "answer": "C",
-        "vietnamese_question": "Tôi nên giao những chiếc pizza này hay bạn sẽ  giao?",
+        "vietnamese_question": "Tôi nên giao những chiếc pizza này hay bạn sẽ giao?",
         "vietnamese_choices": {
           "A": "Không, cảm ơn - Tôi không đói.",
           "B": "Mười đô la cho hai người.",
@@ -1546,7 +1546,7 @@ window.part02PracticeData = [
             "vi": "giao hàng"
           }
         ],
-        "audio": "media/E26-T02-26.mp3"
+        "audio": "media/part02_practice/questions/t02_q26.mp3"
       },
       {
         "id": 27,
@@ -1557,7 +1557,7 @@ window.part02PracticeData = [
           "C": "Two dollars per pound."
         },
         "answer": "B",
-        "vietnamese_question": "Lịch trình vận chuyển tháng này đã được điều  chỉnh.",
+        "vietnamese_question": "Lịch trình vận chuyển tháng này đã được điều chỉnh.",
         "vietnamese_choices": {
           "A": "Tôi cũng không thể tìm thấy chúng.",
           "B": "Những ngày nào đã được thay đổi?",
@@ -1578,7 +1578,7 @@ window.part02PracticeData = [
             "vi": "lô hàng"
           }
         ],
-        "audio": "media/E26-T02-27.mp3"
+        "audio": "media/part02_practice/questions/t02_q27.mp3"
       },
       {
         "id": 28,
@@ -1604,7 +1604,7 @@ window.part02PracticeData = [
             "vi": "có sẵn, rảnh rỗi"
           }
         ],
-        "audio": "media/E26-T02-28.mp3"
+        "audio": "media/part02_practice/questions/t02_q28.mp3"
       },
       {
         "id": 29,
@@ -1612,16 +1612,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "The newspaper is delivered daily.",
           "B": "An interior design course.",
-          "C": "There are plenty in the bi n ders."
+          "C": "There are plenty in the binders."
         },
         "answer": "C",
-        "vietnamese_question": "Tại sao chúng tôi không cung cấp thêm mẫu giấy  dán tường?",
+        "vietnamese_question": "Tại sao chúng tôi không cung cấp thêm mẫu giấy dán tường?",
         "vietnamese_choices": {
           "A": "Báo được giao hàng ngày.",
           "B": "Một khóa học thiết kế nội thất.",
           "C": "Có rất nhiều trong bìa hồ sơ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"There are plenty in the bi n ders.\" (<em>Có rất nhiều trong bìa hồ sơ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"There are plenty in the binders.\" (<em>Có rất nhiều trong bìa hồ sơ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "provide",
@@ -1636,7 +1636,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-29.mp3"
+        "audio": "media/part02_practice/questions/t02_q29.mp3"
       },
       {
         "id": 30,
@@ -1647,13 +1647,13 @@ window.part02PracticeData = [
           "C": "A house on Maple Street."
         },
         "answer": "A",
-        "vietnamese_question": "Chiều nay bạn có thể dẫn tôi đi tham quan khu  nhà được không?",
+        "vietnamese_question": "Chiều nay bạn có thể dẫn tôi đi tham quan khu nhà được không?",
         "vietnamese_choices": {
-          "A": "Xin lỗi, tôi không có thời gian cho đến ngày  mai.",
+          "A": "Xin lỗi, tôi không có thời gian cho đến ngày mai.",
           "B": "Nó có thiết kế rất hiện đại.",
           "C": "Một ngôi nhà trên đường Maple."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sorry, I won't have time until tomorrow.\" (<em>Xin lỗi, tôi không có thời gian cho đến ngày  mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Sorry, I won't have time until tomorrow.\" (<em>Xin lỗi, tôi không có thời gian cho đến ngày mai.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "give",
@@ -1668,7 +1668,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-30.mp3"
+        "audio": "media/part02_practice/questions/t02_q30.mp3"
       },
       {
         "id": 31,
@@ -1700,7 +1700,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T02-31.mp3"
+        "audio": "media/part02_practice/questions/t02_q31.mp3"
       }
     ]
   },
@@ -1741,7 +1741,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-07.mp3"
+        "audio": "media/part02_practice/questions/t03_q07.mp3"
       },
       {
         "id": 8,
@@ -1773,7 +1773,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-08.mp3"
+        "audio": "media/part02_practice/questions/t03_q08.mp3"
       },
       {
         "id": 9,
@@ -1805,7 +1805,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-09.mp3"
+        "audio": "media/part02_practice/questions/t03_q09.mp3"
       },
       {
         "id": 10,
@@ -1837,7 +1837,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-10.mp3"
+        "audio": "media/part02_practice/questions/t03_q10.mp3"
       },
       {
         "id": 11,
@@ -1869,7 +1869,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T03-11.mp3"
+        "audio": "media/part02_practice/questions/t03_q11.mp3"
       },
       {
         "id": 12,
@@ -1895,7 +1895,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-12.mp3"
+        "audio": "media/part02_practice/questions/t03_q12.mp3"
       },
       {
         "id": 13,
@@ -1927,11 +1927,11 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-13.mp3"
+        "audio": "media/part02_practice/questions/t03_q13.mp3"
       },
       {
         "id": 14,
-        "question": "There wa s a sale at the furniture store.",
+        "question": "There was a sale at the furniture store.",
         "choices": {
           "A": "No, it wasn't in storage.",
           "B": "Did you buy anything?",
@@ -1959,18 +1959,18 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-14.mp3"
+        "audio": "media/part02_practice/questions/t03_q14.mp3"
       },
       {
         "id": 15,
-        "question": "Can you show me how to submit a tech help ticket.",
+        "question": "Can you show me how to submit a tech help ticket?",
         "choices": {
           "A": "Let me send you the link.",
           "B": "A broken power cable.",
           "C": "No, over ten minutes."
         },
         "answer": "A",
-        "vietnamese_question": "Bạn có thể chỉ cho tôi cách gửi phiếu trợ giúp kỹ  thuật được không.",
+        "vietnamese_question": "Bạn có thể chỉ cho tôi cách gửi phiếu trợ giúp kỹ thuật được không.",
         "vietnamese_choices": {
           "A": "Hãy để tôi gửi cho bạn đường liên kết.",
           "B": "Cáp nguồn bị hỏng.",
@@ -1985,7 +1985,7 @@ window.part02PracticeData = [
             "vi": "vé"
           }
         ],
-        "audio": "media/E26-T03-15.mp3"
+        "audio": "media/part02_practice/questions/t03_q15.mp3"
       },
       {
         "id": 16,
@@ -1998,11 +1998,11 @@ window.part02PracticeData = [
         "answer": "A",
         "vietnamese_question": "Nút nguồn trên thiết bị này nằm ở đâu?",
         "vietnamese_choices": {
-          "A": "Tôi chưa bao giờ sử dụng model này trước  đây.",
+          "A": "Tôi chưa bao giờ sử dụng model này trước đây.",
           "B": "Mười euro một giờ.",
           "C": "Chúng tôi tính phí nhiều hơn cho ảnh màu."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've never used that model before.\" (<em>Tôi chưa bao giờ sử dụng model này trước  đây.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've never used that model before.\" (<em>Tôi chưa bao giờ sử dụng model này trước đây.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "power",
@@ -2017,22 +2017,22 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-16.mp3"
+        "audio": "media/part02_practice/questions/t03_q16.mp3"
       },
       {
         "id": 17,
-        "question": "Do you want to take a walk now, or would later be better.",
+        "question": "Do you want to take a walk now, or would later be better?",
         "choices": {
           "A": "A nearby lake.",
           "B": "I'm free to walk now.",
           "C": "No, I don't use a fitness tracker."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có muốn đi dạo bây giờ không, hay là để  sau?",
+        "vietnamese_question": "Bạn có muốn đi dạo bây giờ không, hay là để sau?",
         "vietnamese_choices": {
           "A": "Một cái hồ gần đó.",
           "B": "Bây giờ tôi rảnh để đi.",
-          "C": "Không, tôi không sử dụng máy theo dõi sức  khỏe."
+          "C": "Không, tôi không sử dụng máy theo dõi sức khỏe."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI LỰA CHỌN (CHOICE QUESTION A OR B)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I'm free to walk now.\" (<em>Bây giờ tôi rảnh để đi.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chọn một trong hai phương án, chọn cả hai (either/both), hoặc từ chối cả hai (neither). Tuyệt đối không chọn Yes/No.</p>\n</div>",
         "vocabulary": [
@@ -2049,7 +2049,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-17.mp3"
+        "audio": "media/part02_practice/questions/t03_q17.mp3"
       },
       {
         "id": 18,
@@ -2075,7 +2075,7 @@ window.part02PracticeData = [
             "vi": "thiết bị"
           }
         ],
-        "audio": "media/E26-T03-18.mp3"
+        "audio": "media/part02_practice/questions/t03_q18.mp3"
       },
       {
         "id": 19,
@@ -2107,14 +2107,14 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-19.mp3"
+        "audio": "media/part02_practice/questions/t03_q19.mp3"
       },
       {
         "id": 20,
         "question": "Is the heating system working?",
         "choices": {
           "A": "Yes, that's my Web site.",
-          "B": "A five - kilometer run.",
+          "B": "A five-kilometer run.",
           "C": "I just called maintenance."
         },
         "answer": "C",
@@ -2133,24 +2133,24 @@ window.part02PracticeData = [
             "vi": "bảo trì"
           }
         ],
-        "audio": "media/E26-T03-20.mp3"
+        "audio": "media/part02_practice/questions/t03_q20.mp3"
       },
       {
         "id": 21,
-        "question": "yet?",
+        "question": "Isn't the roadwork in front of city hall finished yet?",
         "choices": {
           "A": "I just finished my conference presentation.",
           "B": "A lot of traffic in the evening.",
           "C": "No, they still have another month to go."
         },
         "answer": "C",
-        "vietnamese_question": "Việc làm đường trước tòa thị chính vẫn chưa  xong sao?",
+        "vietnamese_question": "Việc làm đường trước tòa thị chính vẫn chưa xong sao?",
         "vietnamese_choices": {
           "A": "Tôi vừa hoàn thành bài thuyết trình tại hội nghị.",
           "B": "Rất nhiều xe cộ vào buổi tối.",
           "C": "Không, họ vẫn còn một tháng nữa."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"No, they still have another month to go.\" (<em>Không, họ vẫn còn một tháng nữa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI PHỦ ĐỊNH (NEGATIVE QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"No, they still have another month to go.\" (<em>Không, họ vẫn còn một tháng nữa.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Câu hỏi phủ định trả lời như câu Yes/No bình thường; người nói xác nhận công việc chưa xong và còn kéo dài thêm một tháng.</p>\n</div>",
         "vocabulary": [
           {
             "en": "conference",
@@ -2165,24 +2165,24 @@ window.part02PracticeData = [
             "vi": "bài thuyết trình"
           }
         ],
-        "audio": "media/E26-T03-21.mp3"
+        "audio": "media/part02_practice/questions/t03_q21.mp3"
       },
       {
         "id": 22,
-        "question": "Who will lead the new - employee training today?",
+        "question": "Who will lead the new-employee training today?",
         "choices": {
           "A": "We're using a recorded video.",
           "B": "Yes, right after lunch.",
           "C": "Classroom 124."
         },
         "answer": "A",
-        "vietnamese_question": "Ai sẽ lãnh đạo buổi đào tạo nhân viên mới ngày  hôm nay?",
+        "vietnamese_question": "Ai sẽ lãnh đạo buổi đào tạo nhân viên mới ngày hôm nay?",
         "vietnamese_choices": {
-          "A": "Chúng tôi đang sử dụng một đoạn video đã  ghi lại.",
+          "A": "Chúng tôi đang sử dụng một đoạn video đã ghi lại.",
           "B": "Vâng, ngay sau bữa trưa.",
           "C": "Lớp học 124."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're using a recorded video.\" (<em>Chúng tôi đang sử dụng một đoạn video đã  ghi lại.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We're using a recorded video.\" (<em>Chúng tôi đang sử dụng một đoạn video đã ghi lại.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "employee",
@@ -2197,7 +2197,7 @@ window.part02PracticeData = [
             "vi": "đào tạo, huấn luyện"
           }
         ],
-        "audio": "media/E26-T03-22.mp3"
+        "audio": "media/part02_practice/questions/t03_q22.mp3"
       },
       {
         "id": 23,
@@ -2208,7 +2208,7 @@ window.part02PracticeData = [
           "C": "It's this Wednesday."
         },
         "answer": "C",
-        "vietnamese_question": "Việc kiểm tra an toàn được lên lịch vào tháng này  hay tháng sau?",
+        "vietnamese_question": "Việc kiểm tra an toàn được lên lịch vào tháng này hay tháng sau?",
         "vietnamese_choices": {
           "A": "Tôi nghĩ tôi đã lưu tập tin.",
           "B": "Người giám sát nhà máy.",
@@ -2229,7 +2229,7 @@ window.part02PracticeData = [
             "vi": "sự thanh tra, kiểm tra"
           }
         ],
-        "audio": "media/E26-T03-23.mp3"
+        "audio": "media/part02_practice/questions/t03_q23.mp3"
       },
       {
         "id": 24,
@@ -2261,7 +2261,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-24.mp3"
+        "audio": "media/part02_practice/questions/t03_q24.mp3"
       },
       {
         "id": 25,
@@ -2293,7 +2293,7 @@ window.part02PracticeData = [
             "vi": "chiết khấu, giảm giá"
           }
         ],
-        "audio": "media/E26-T03-25.mp3"
+        "audio": "media/part02_practice/questions/t03_q25.mp3"
       },
       {
         "id": 26,
@@ -2304,7 +2304,7 @@ window.part02PracticeData = [
           "C": "I have a performance scheduled with my band."
         },
         "answer": "C",
-        "vietnamese_question": "Tại sao chúng ta không đi cắm trại vào cuối tuần  tới nhỉ?",
+        "vietnamese_question": "Tại sao chúng ta không đi cắm trại vào cuối tuần tới nhỉ?",
         "vietnamese_choices": {
           "A": "Vâng, chiếc đèn bàn đó khá đẹp.",
           "B": "Chúng ta nên rẽ trái hay rẽ phải?",
@@ -2325,24 +2325,24 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-26.mp3"
+        "audio": "media/part02_practice/questions/t03_q26.mp3"
       },
       {
         "id": 27,
         "question": "The workshop for this afternoon was postponed, wasn't it?",
         "choices": {
           "A": "At the post office.",
-          "B": "I haven't checked my e - mail.",
+          "B": "I haven't checked my e-mail.",
           "C": "A ticket for two o'clock, please."
         },
         "answer": "B",
-        "vietnamese_question": "Buổi workshop chiều nay đã bị hoãn lại phải  không?",
+        "vietnamese_question": "Buổi workshop chiều nay đã bị hoãn lại phải không?",
         "vietnamese_choices": {
           "A": "Tại bưu điện.",
           "B": "Tôi chưa kiểm tra e-mail của mình.",
           "C": "Làm ơn cho một vé đi lúc 2 giờ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I haven't checked my e - mail.\" (<em>Tôi chưa kiểm tra e-mail của mình.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I haven't checked my e-mail.\" (<em>Tôi chưa kiểm tra e-mail của mình.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "workshop",
@@ -2357,18 +2357,18 @@ window.part02PracticeData = [
             "vi": "vé"
           }
         ],
-        "audio": "media/E26-T03-27.mp3"
+        "audio": "media/part02_practice/questions/t03_q27.mp3"
       },
       {
         "id": 28,
-        "question": "How a re our production figures last month?",
+        "question": "How were our production figures last month?",
         "choices": {
           "A": "They produce electric cars.",
           "B": "Nine o'clock in the morning.",
           "C": "We were closed down for a week."
         },
         "answer": "C",
-        "vietnamese_question": "Số liệu sản xuất tháng trước của chúng ta như thế  nào?",
+        "vietnamese_question": "Số liệu sản xuất tháng trước của chúng ta như thế nào?",
         "vietnamese_choices": {
           "A": "Họ sản xuất ô tô điện.",
           "B": "Chín giờ sáng.",
@@ -2389,15 +2389,15 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-28.mp3"
+        "audio": "media/part02_practice/questions/t03_q28.mp3"
       },
       {
         "id": 29,
         "question": "When can I see the speech therapist?",
         "choices": {
-          "A": "A one - hour session.",
+          "A": "A one-hour session.",
           "B": "Just a microphone.",
-          "C": "How about tomorrow afternoon."
+          "C": "How about tomorrow afternoon?"
         },
         "answer": "C",
         "vietnamese_question": "Khi nào tôi có thể gặp nhà trị liệu ngôn ngữ?",
@@ -2406,7 +2406,7 @@ window.part02PracticeData = [
           "B": "Chỉ là một chiếc micro.",
           "C": "Chiều mai thì sao?"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"How about tomorrow afternoon.\" (<em>Chiều mai thì sao?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"How about tomorrow afternoon?\" (<em>Chiều mai thì sao?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "speech",
@@ -2421,7 +2421,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-29.mp3"
+        "audio": "media/part02_practice/questions/t03_q29.mp3"
       },
       {
         "id": 30,
@@ -2453,7 +2453,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T03-30.mp3"
+        "audio": "media/part02_practice/questions/t03_q30.mp3"
       },
       {
         "id": 31,
@@ -2464,7 +2464,7 @@ window.part02PracticeData = [
           "C": "The contract is now officially signed."
         },
         "answer": "C",
-        "vietnamese_question": "Cuộc họp với khách hàng buổi sáng của bạn thế  nào?",
+        "vietnamese_question": "Cuộc họp với khách hàng buổi sáng của bạn thế nào?",
         "vietnamese_choices": {
           "A": "Rất vui được gặp bạn.",
           "B": "Không, ở phòng họp số hai.",
@@ -2491,7 +2491,7 @@ window.part02PracticeData = [
             "vi": "khách hàng"
           }
         ],
-        "audio": "media/E26-T03-31.mp3"
+        "audio": "media/part02_practice/questions/t03_q31.mp3"
       }
     ]
   },
@@ -2508,7 +2508,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "Yes, at one o'clock.",
           "B": "Because we drove.",
-          "C": "I'd like to return this item, please"
+          "C": "I'd like to return this item, please."
         },
         "answer": "A",
         "vietnamese_question": "Quán có mở cửa vào ngày chủ nhật không?",
@@ -2532,7 +2532,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T04-07.mp3"
+        "audio": "media/part02_practice/questions/t04_q07.mp3"
       },
       {
         "id": 8,
@@ -2558,7 +2558,7 @@ window.part02PracticeData = [
             "vi": "nhà cung ứng"
           }
         ],
-        "audio": "media/E26-T04-08.mp3"
+        "audio": "media/part02_practice/questions/t04_q08.mp3"
       },
       {
         "id": 9,
@@ -2569,7 +2569,7 @@ window.part02PracticeData = [
           "C": "A large plate of pasta."
         },
         "answer": "B",
-        "vietnamese_question": "Tôi có nên đặt bữa tối vào thứ Sáu hoặc thứ  Bảy không?",
+        "vietnamese_question": "Tôi có nên đặt bữa tối vào thứ Sáu hoặc thứ Bảy không?",
         "vietnamese_choices": {
           "A": "Quán rượu bên bờ biển.",
           "B": "Thứ Bảy thì tốt hơn.",
@@ -2584,14 +2584,14 @@ window.part02PracticeData = [
             "vi": "sự đặt chỗ"
           }
         ],
-        "audio": "media/E26-T04-09.mp3"
+        "audio": "media/part02_practice/questions/t04_q09.mp3"
       },
       {
         "id": 10,
         "question": "Will Dr. Ivanova be late today?",
         "choices": {
           "A": "No, you shouldn't have to wait long.",
-          "B": "It's iust under the desk.",
+          "B": "It's just under the desk.",
           "C": "Sure, I can do that for you."
         },
         "answer": "A",
@@ -2599,7 +2599,7 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Không, bạn không cần phải đợi lâu.",
           "B": "Nó ở dưới gầm bàn.",
-          "C": "Chắc chắn rồi, tôi có thể làm điều đó cho  bạn."
+          "C": "Chắc chắn rồi, tôi có thể làm điều đó cho bạn."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"No, you shouldn't have to wait long.\" (<em>Không, bạn không cần phải đợi lâu.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
@@ -2616,15 +2616,15 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T04-10.mp3"
+        "audio": "media/part02_practice/questions/t04_q10.mp3"
       },
       {
         "id": 11,
-        "question": "M - Au Aren't there locker rooms at this gym?",
+        "question": "Aren't there locker rooms at this gym?",
         "choices": {
           "A": "These socks are quite comfortable.",
           "B": "She teaches an exercise class.",
-          "C": "Yes, they're on the lower floor"
+          "C": "Yes, they're on the lower floor."
         },
         "answer": "C",
         "vietnamese_question": "Phòng tập này không có phòng thay đồ à?",
@@ -2633,7 +2633,7 @@ window.part02PracticeData = [
           "B": "Cô ấy dạy một lớp tập thể dục.",
           "C": "Vâng, họ ở tầng dưới"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, they're on the lower floor\" (<em>Vâng, họ ở tầng dưới</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, they're on the lower floor.\" (<em>Vâng, họ ở tầng dưới</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "aren",
@@ -2648,7 +2648,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T04-11.mp3"
+        "audio": "media/part02_practice/questions/t04_q11.mp3"
       },
       {
         "id": 12,
@@ -2659,10 +2659,10 @@ window.part02PracticeData = [
           "C": "No, I'm certain about that."
         },
         "answer": "A",
-        "vietnamese_question": "Ai cần bản sao chứng chỉ huấn luyện an toàn  của tôi?",
+        "vietnamese_question": "Ai cần bản sao chứng chỉ huấn luyện an toàn của tôi?",
         "vietnamese_choices": {
           "A": "Maksim có.",
-          "B": "Bạn có thể treo áo vest của mình lên cái  móc đó.",
+          "B": "Bạn có thể treo áo vest của mình lên cái móc đó.",
           "C": "Không, tôi chắc chắn về điều đó."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Maksim does.\" (<em>Maksim có.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
@@ -2674,7 +2674,7 @@ window.part02PracticeData = [
             "vi": "đào tạo, huấn luyện"
           }
         ],
-        "audio": "media/E26-T04-12.mp3"
+        "audio": "media/part02_practice/questions/t04_q12.mp3"
       },
       {
         "id": 13,
@@ -2685,7 +2685,7 @@ window.part02PracticeData = [
           "C": "Yes, of course."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn có thể gọi điện cho ông Feras và cho ông  ấy biết chúng ta đang ở sảnh khách sạn được  không?",
+        "vietnamese_question": "Bạn có thể gọi điện cho ông Feras và cho ông ấy biết chúng ta đang ở sảnh khách sạn được không?",
         "vietnamese_choices": {
           "A": "Cảm ơn bạn, nó vừa mới được cải tạo.",
           "B": "Bữa sáng kiểu lục địa miễn phí.",
@@ -2706,7 +2706,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T04-13.mp3"
+        "audio": "media/part02_practice/questions/t04_q13.mp3"
       },
       {
         "id": 14,
@@ -2732,7 +2732,7 @@ window.part02PracticeData = [
             "vi": "chiết khấu, giảm giá"
           }
         ],
-        "audio": "media/E26-T04-14.mp3"
+        "audio": "media/part02_practice/questions/t04_q14.mp3"
       },
       {
         "id": 15,
@@ -2740,10 +2740,10 @@ window.part02PracticeData = [
         "choices": {
           "A": "Actually, it's in the morning.",
           "B": "That office is on the corner.",
-          "C": "I have the train schedule here ."
+          "C": "I have the train schedule here."
         },
         "answer": "A",
-        "vietnamese_question": "Bạn sẽ tham gia lớp học kinh doanh vào buổi  chiều phải không?",
+        "vietnamese_question": "Bạn sẽ tham gia lớp học kinh doanh vào buổi chiều phải không?",
         "vietnamese_choices": {
           "A": "Thực ra bây giờ là vào buổi sáng.",
           "B": "Văn phòng đó ở góc đường.",
@@ -2758,7 +2758,7 @@ window.part02PracticeData = [
             "vi": "lịch trình, sắp xếp"
           }
         ],
-        "audio": "media/E26-T04-15.mp3"
+        "audio": "media/part02_practice/questions/t04_q15.mp3"
       },
       {
         "id": 16,
@@ -2769,7 +2769,7 @@ window.part02PracticeData = [
           "C": "Certainly, I have some right here."
         },
         "answer": "C",
-        "vietnamese_question": "Tôi có thể xem một số mẫu cắm hoa trước khi  đặt hàng không?",
+        "vietnamese_question": "Tôi có thể xem một số mẫu cắm hoa trước khi đặt hàng không?",
         "vietnamese_choices": {
           "A": "Nó dành cho một lễ trao giải.",
           "B": "Phí giao hàng nhanh.",
@@ -2784,7 +2784,7 @@ window.part02PracticeData = [
             "vi": "buổi lễ"
           }
         ],
-        "audio": "media/E26-T04-16.mp3"
+        "audio": "media/part02_practice/questions/t04_q16.mp3"
       },
       {
         "id": 17,
@@ -2792,7 +2792,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "Some customer reviews.",
           "B": "We already have one.",
-          "C": "I take my coffee with sugar"
+          "C": "I take my coffee with sugar."
         },
         "answer": "B",
         "vietnamese_question": "Bạn không muốn mua chiếc ghế sofa màu đen?",
@@ -2816,7 +2816,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T04-17.mp3"
+        "audio": "media/part02_practice/questions/t04_q17.mp3"
       },
       {
         "id": 18,
@@ -2848,7 +2848,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T04-18.mp3"
+        "audio": "media/part02_practice/questions/t04_q18.mp3"
       },
       {
         "id": 19,
@@ -2856,16 +2856,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "Are there any outdoor tables available?",
           "B": "The door to the building is still open.",
-          "C": "I read an online newspaper every morning"
+          "C": "I read an online newspaper every morning."
         },
         "answer": "C",
-        "vietnamese_question": "Lần đầu tiên bạn tìm hiểu về cơ hội việc làm  này là ở đâu?",
+        "vietnamese_question": "Lần đầu tiên bạn tìm hiểu về cơ hội việc làm này là ở đâu?",
         "vietnamese_choices": {
           "A": "Có bàn ngoài trời nào không?",
           "B": "Cánh cửa vào tòa nhà vẫn mở.",
           "C": "Tôi đọc báo trực tuyến mỗi sáng"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I read an online newspaper every morning\" (<em>Tôi đọc báo trực tuyến mỗi sáng</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I read an online newspaper every morning.\" (<em>Tôi đọc báo trực tuyến mỗi sáng</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "available",
@@ -2874,7 +2874,7 @@ window.part02PracticeData = [
             "vi": "có sẵn, rảnh rỗi"
           }
         ],
-        "audio": "media/E26-T04-19.mp3"
+        "audio": "media/part02_practice/questions/t04_q19.mp3"
       },
       {
         "id": 20,
@@ -2882,16 +2882,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "Probably in the conference room.",
           "B": "They were hired by our manager.",
-          "C": "Do we have enough handouts"
+          "C": "Do we have enough handouts?"
         },
         "answer": "C",
         "vietnamese_question": "Tôi có nên mang gì đến cuộc họp không?",
         "vietnamese_choices": {
           "A": "Có lẽ là trong phòng họp.",
           "B": "Họ được người quản lý của chúng tôi thuê.",
-          "C": "Chúng ta có đủ tài liệu  không"
+          "C": "Chúng ta có đủ tài liệu không"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Do we have enough handouts\" (<em>Chúng ta có đủ tài liệu  không</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Do we have enough handouts?\" (<em>Chúng ta có đủ tài liệu không</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "conference",
@@ -2906,7 +2906,7 @@ window.part02PracticeData = [
             "vi": "người quản lý"
           }
         ],
-        "audio": "media/E26-T04-20.mp3"
+        "audio": "media/part02_practice/questions/t04_q20.mp3"
       },
       {
         "id": 21,
@@ -2914,13 +2914,13 @@ window.part02PracticeData = [
         "choices": {
           "A": "I'd have to look at the receipt.",
           "B": "The fitness center is across from the reception desk.",
-          "C": "I'll be e a ting breakfast in my room."
+          "C": "I'll be eating breakfast in my room."
         },
         "answer": "A",
-        "vietnamese_question": "Tổng chi phí cho thời gian lưu trú tại khách sạn  là bao nhiêu?",
+        "vietnamese_question": "Tổng chi phí cho thời gian lưu trú tại khách sạn là bao nhiêu?",
         "vietnamese_choices": {
           "A": "Tôi sẽ phải xem biên nhận.",
-          "B": "Trung tâm thể dục nằm đối diện bàn tiếp  tân.",
+          "B": "Trung tâm thể dục nằm đối diện bàn tiếp tân.",
           "C": "Tôi sẽ ăn sáng trong phòng."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I'd have to look at the receipt.\" (<em>Tôi sẽ phải xem biên nhận.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
@@ -2932,7 +2932,7 @@ window.part02PracticeData = [
             "vi": "biên lai"
           }
         ],
-        "audio": "media/E26-T04-21.mp3"
+        "audio": "media/part02_practice/questions/t04_q21.mp3"
       },
       {
         "id": 22,
@@ -2943,7 +2943,7 @@ window.part02PracticeData = [
           "C": "It's on the other shelf."
         },
         "answer": "A",
-        "vietnamese_question": "Tại sao bạn lại theo đuổi nghề thiết kế trò chơi  điện tử?",
+        "vietnamese_question": "Tại sao bạn lại theo đuổi nghề thiết kế trò chơi điện tử?",
         "vietnamese_choices": {
           "A": "Bởi vì tôi có tài năng về việc đó.",
           "B": "Đây là máy tính xách tay mới của tôi.",
@@ -2964,7 +2964,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T04-22.mp3"
+        "audio": "media/part02_practice/questions/t04_q22.mp3"
       },
       {
         "id": 23,
@@ -2972,16 +2972,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "The speech was inspiring.",
           "B": "Tunji updated the memo.",
-          "C": "Registration closed yesterday"
+          "C": "Registration closed yesterday."
         },
         "answer": "C",
-        "vietnamese_question": "Tôi muốn tham dự hội chợ việc làm vào tháng  tới.",
+        "vietnamese_question": "Tôi muốn tham dự hội chợ việc làm vào tháng tới.",
         "vietnamese_choices": {
           "A": "Bài phát biểu đầy cảm hứng.",
           "C": "Đăng ký đã đóng ngày hôm qua",
           "B": "Tunji đã cập nhật bản ghi nhớ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Registration closed yesterday\" (<em>Đăng ký đã đóng ngày hôm qua</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Registration closed yesterday.\" (<em>Đăng ký đã đóng ngày hôm qua</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "attend",
@@ -2990,7 +2990,7 @@ window.part02PracticeData = [
             "vi": "tham dự"
           }
         ],
-        "audio": "media/E26-T04-23.mp3"
+        "audio": "media/part02_practice/questions/t04_q23.mp3"
       },
       {
         "id": 24,
@@ -3001,7 +3001,7 @@ window.part02PracticeData = [
           "C": "I'm still waiting."
         },
         "answer": "C",
-        "vietnamese_question": "Chưa có ai gọi lại cho bạn để phỏng vấn lần thứ  hai à?",
+        "vietnamese_question": "Chưa có ai gọi lại cho bạn để phỏng vấn lần thứ hai à?",
         "vietnamese_choices": {
           "A": "Một số điện thoại mới.",
           "B": "Có, bất kỳ vị trí nào còn trống.",
@@ -3022,7 +3022,7 @@ window.part02PracticeData = [
             "vi": "có sẵn, rảnh rỗi"
           }
         ],
-        "audio": "media/E26-T04-24.mp3"
+        "audio": "media/part02_practice/questions/t04_q24.mp3"
       },
       {
         "id": 25,
@@ -3033,7 +3033,7 @@ window.part02PracticeData = [
           "C": "I'll buy mine at the door."
         },
         "answer": "C",
-        "vietnamese_question": "Chúng ta cần bao nhiêu vé cho buổi hòa nhạc  tối nay?",
+        "vietnamese_question": "Chúng ta cần bao nhiêu vé cho buổi hòa nhạc tối nay?",
         "vietnamese_choices": {
           "A": "Nhà hát nằm trên Đại lộ Johnson.",
           "B": "Đúng bảy giờ ba mươi.",
@@ -3054,7 +3054,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T04-25.mp3"
+        "audio": "media/part02_practice/questions/t04_q25.mp3"
       },
       {
         "id": 26,
@@ -3062,7 +3062,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "A much higher salary.",
           "B": "A lot of good résumés have come in.",
-          "C": "In the building across the street"
+          "C": "In the building across the street."
         },
         "answer": "B",
         "vietnamese_question": "Khi nào họ sẽ quyết định thuê ai?",
@@ -3080,7 +3080,7 @@ window.part02PracticeData = [
             "vi": "thuê, tuyển dụng"
           }
         ],
-        "audio": "media/E26-T04-26.mp3"
+        "audio": "media/part02_practice/questions/t04_q26.mp3"
       },
       {
         "id": 27,
@@ -3106,7 +3106,7 @@ window.part02PracticeData = [
             "vi": "hợp đồng"
           }
         ],
-        "audio": "media/E26-T04-27.mp3"
+        "audio": "media/part02_practice/questions/t04_q27.mp3"
       },
       {
         "id": 28,
@@ -3114,16 +3114,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "I've been really busy with the Williams account.",
           "B": "Some customer addresses.",
-          "C": "She arrives on Wednesday"
+          "C": "She arrives on Wednesday."
         },
         "answer": "A",
-        "vietnamese_question": "Các bản cập nhật cơ sở dữ liệu diễn ra như thế  nào?",
+        "vietnamese_question": "Các bản cập nhật cơ sở dữ liệu diễn ra như thế nào?",
         "vietnamese_choices": {
-          "A": "Tôi thực sự bận rộn với tài khoản  Williams.",
+          "A": "Tôi thực sự bận rộn với tài khoản Williams.",
           "B": "Một số địa chỉ khách hàng.",
           "C": "Cô ấy đến vào thứ Tư"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've been really busy with the Williams account.\" (<em>Tôi thực sự bận rộn với tài khoản  Williams.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've been really busy with the Williams account.\" (<em>Tôi thực sự bận rộn với tài khoản Williams.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "customer",
@@ -3132,24 +3132,24 @@ window.part02PracticeData = [
             "vi": "khách hàng"
           }
         ],
-        "audio": "media/E26-T04-28.mp3"
+        "audio": "media/part02_practice/questions/t04_q28.mp3"
       },
       {
         "id": 29,
         "question": "When can I bring these boxes into the warehouse?",
         "choices": {
           "A": "Ten in a package.",
-          "B": "Thanks - 1 just bought it.",
-          "C": "We'll need to clear some space"
+          "B": "Thanks - I just bought it.",
+          "C": "We'll need to clear some space."
         },
         "answer": "C",
-        "vietnamese_question": "Khi nào tôi có thể mang những hộp này vào  kho?",
+        "vietnamese_question": "Khi nào tôi có thể mang những hộp này vào kho?",
         "vietnamese_choices": {
           "A": "Mười cái trong một gói.",
-          "B": "Cảm ơn-1 vừa mua nó.",
+          "B": "Cảm ơn - tôi vừa mua nó.",
           "C": "Chúng ta cần giải phóng một số không gian"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"We'll need to clear some space\" (<em>Chúng ta cần giải phóng một số không gian</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"We'll need to clear some space.\" (<em>Chúng ta cần giải phóng một số không gian</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "warehouse",
@@ -3164,7 +3164,7 @@ window.part02PracticeData = [
             "vi": "kiện hàng, gói"
           }
         ],
-        "audio": "media/E26-T04-29.mp3"
+        "audio": "media/part02_practice/questions/t04_q29.mp3"
       },
       {
         "id": 30,
@@ -3196,7 +3196,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T04-30.mp3"
+        "audio": "media/part02_practice/questions/t04_q30.mp3"
       },
       {
         "id": 31,
@@ -3207,9 +3207,9 @@ window.part02PracticeData = [
           "C": "He's always so professional."
         },
         "answer": "B",
-        "vietnamese_question": "Công ty có trả tiền cho các khóa học phát triển  chuyên môn không?",
+        "vietnamese_question": "Công ty có trả tiền cho các khóa học phát triển chuyên môn không?",
         "vietnamese_choices": {
-          "A": "Insook đã giúp phát triển một sản phẩm  mới.",
+          "A": "Insook đã giúp phát triển một sản phẩm mới.",
           "B": "Chúng tôi có thặng dư ngân sách đáng kể.",
           "C": "Anh ấy luôn rất chuyên nghiệp."
         },
@@ -3228,7 +3228,7 @@ window.part02PracticeData = [
             "vi": "vé"
           }
         ],
-        "audio": "media/E26-T04-31.mp3"
+        "audio": "media/part02_practice/questions/t04_q31.mp3"
       }
     ]
   },
@@ -3241,14 +3241,14 @@ window.part02PracticeData = [
     "questions": [
       {
         "id": 7,
-        "question": "W - Br There's a meeting in the conference room soon, right?",
+        "question": "There's a meeting in the conference room soon, right?",
         "choices": {
           "A": "Yes, it's for the whole department.",
           "B": "No, put it in the closet.",
           "C": "The rent is too high."
         },
         "answer": "A",
-        "vietnamese_question": "W-Anh sắp có cuộc họp ở phòng họp phải  không?",
+        "vietnamese_question": "Sắp có cuộc họp ở phòng họp phải không?",
         "vietnamese_choices": {
           "A": "Vâng, nó dành cho cả bộ phận.",
           "B": "Không, cất nó vào tủ đi.",
@@ -3269,7 +3269,7 @@ window.part02PracticeData = [
             "vi": "phòng ban"
           }
         ],
-        "audio": "media/E26-T05-07.mp3"
+        "audio": "media/part02_practice/questions/t05_q07.mp3"
       },
       {
         "id": 8,
@@ -3280,7 +3280,7 @@ window.part02PracticeData = [
           "C": "Because the artist is out of town."
         },
         "answer": "C",
-        "vietnamese_question": "Tại sao bức tranh tường ở sảnh vẫn chưa được  vẽ?",
+        "vietnamese_question": "Tại sao bức tranh tường ở sảnh vẫn chưa được vẽ?",
         "vietnamese_choices": {
           "A": "Đỏ và vàng.",
           "B": "Hãy nhấc cái thang lên.",
@@ -3301,7 +3301,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-08.mp3"
+        "audio": "media/part02_practice/questions/t05_q08.mp3"
       },
       {
         "id": 9,
@@ -3333,7 +3333,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-09.mp3"
+        "audio": "media/part02_practice/questions/t05_q09.mp3"
       },
       {
         "id": 10,
@@ -3344,7 +3344,7 @@ window.part02PracticeData = [
           "C": "I prefer the red jacket."
         },
         "answer": "B",
-        "vietnamese_question": "Tôi đề nghị chúng ta sơn phòng chờ màu xanh  nhạt.",
+        "vietnamese_question": "Tôi đề nghị chúng ta sơn phòng chờ màu xanh nhạt.",
         "vietnamese_choices": {
           "A": "Doctor Park khai mạc lúc 3 giờ.",
           "B": "Đó là một ý tưởng hay.",
@@ -3365,7 +3365,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-10.mp3"
+        "audio": "media/part02_practice/questions/t05_q10.mp3"
       },
       {
         "id": 11,
@@ -3376,7 +3376,7 @@ window.part02PracticeData = [
           "C": "I saw the piano recital."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có biết rằng trường âm nhạc đóng cửa vào  Chủ nhật?",
+        "vietnamese_question": "Bạn có biết rằng trường âm nhạc đóng cửa vào Chủ nhật?",
         "vietnamese_choices": {
           "A": "Bốn mươi đô la một giờ.",
           "B": "Không, tôi không biết điều đó.",
@@ -3397,18 +3397,18 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-11.mp3"
+        "audio": "media/part02_practice/questions/t05_q11.mp3"
       },
       {
         "id": 12,
         "question": "How do I find the office manager?",
         "choices": {
           "A": "The receptionist would know.",
-          "B": "Desk lamps and headsets",
+          "B": "Desk lamps and headsets.",
           "C": "Twelve euros."
         },
         "answer": "A",
-        "vietnamese_question": "Làm cách nào để tìm được người quản lý văn  phòng?",
+        "vietnamese_question": "Làm cách nào để tìm được người quản lý văn phòng?",
         "vietnamese_choices": {
           "A": "Nhân viên tiếp tân sẽ biết.",
           "B": "Đèn bàn và tai nghe",
@@ -3423,7 +3423,7 @@ window.part02PracticeData = [
             "vi": "người quản lý"
           }
         ],
-        "audio": "media/E26-T05-12.mp3"
+        "audio": "media/part02_practice/questions/t05_q12.mp3"
       },
       {
         "id": 13,
@@ -3436,7 +3436,7 @@ window.part02PracticeData = [
         "answer": "B",
         "vietnamese_question": "Khi nào bạn đặt hàng gỗ?",
         "vietnamese_choices": {
-          "A": "Vâng, đó là một nơi tuyệt vời để đi bộ  đường dài.",
+          "A": "Vâng, đó là một nơi tuyệt vời để đi bộ đường dài.",
           "B": "Hiện tại nó đã hết hàng.",
           "C": "Nhà kho trên đường William."
         },
@@ -3449,7 +3449,7 @@ window.part02PracticeData = [
             "vi": "kho hàng"
           }
         ],
-        "audio": "media/E26-T05-13.mp3"
+        "audio": "media/part02_practice/questions/t05_q13.mp3"
       },
       {
         "id": 14,
@@ -3457,16 +3457,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "Ten packages a minute.",
           "B": "We met last Thursday.",
-          "C": "We decided to keep the old one"
+          "C": "We decided to keep the old one."
         },
         "answer": "C",
         "vietnamese_question": "Máy đóng gói mới ở đâu?",
         "vietnamese_choices": {
           "A": "Mười gói một phút.",
-          "B": "Chúng tôi đã gặp nhau vào thứ Năm tuần  trước.",
+          "B": "Chúng tôi đã gặp nhau vào thứ Năm tuần trước.",
           "C": "Chúng tôi quyết định giữ lại cái cũ"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"We decided to keep the old one\" (<em>Chúng tôi quyết định giữ lại cái cũ</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"We decided to keep the old one.\" (<em>Chúng tôi quyết định giữ lại cái cũ</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "packaging",
@@ -3481,7 +3481,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-14.mp3"
+        "audio": "media/part02_practice/questions/t05_q14.mp3"
       },
       {
         "id": 15,
@@ -3489,7 +3489,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "An awfully long commute.",
           "B": "OK - I'll update your schedule.",
-          "C": "It's right down the hallway"
+          "C": "It's right down the hallway."
         },
         "answer": "B",
         "vietnamese_question": "Chiều nay tôi sẽ ra khỏi văn phòng.",
@@ -3513,7 +3513,7 @@ window.part02PracticeData = [
             "vi": "đi lại (đi làm)"
           }
         ],
-        "audio": "media/E26-T05-15.mp3"
+        "audio": "media/part02_practice/questions/t05_q15.mp3"
       },
       {
         "id": 16,
@@ -3521,16 +3521,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "Yes - I'm planning a trip to Barcelona.",
           "B": "This is your second time, isn't it?",
-          "C": "Blueprints for a high - rise building."
+          "C": "Blueprints for a high-rise building."
         },
         "answer": "A",
         "vietnamese_question": "Bạn có đi nghỉ khi dự án này kết thúc không?",
         "vietnamese_choices": {
-          "A": "Vâng-Tôi đang lên kế hoạch cho một  chuyến đi tới Barcelona.",
+          "A": "Vâng-Tôi đang lên kế hoạch cho một chuyến đi tới Barcelona.",
           "B": "Đây là lần thứ hai của bạn phải không?",
           "C": "Bản thiết kế cho một tòa nhà cao tầng."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Yes - I'm planning a trip to Barcelona.\" (<em>Vâng-Tôi đang lên kế hoạch cho một  chuyến đi tới Barcelona.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Yes - I'm planning a trip to Barcelona.\" (<em>Vâng-Tôi đang lên kế hoạch cho một chuyến đi tới Barcelona.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "taking",
@@ -3545,7 +3545,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-16.mp3"
+        "audio": "media/part02_practice/questions/t05_q16.mp3"
       },
       {
         "id": 17,
@@ -3556,7 +3556,7 @@ window.part02PracticeData = [
           "C": "A recent hiring decision."
         },
         "answer": "B",
-        "vietnamese_question": "Hãy đăng báo cáo bán hàng lên trang Web của  nhóm chúng ta.",
+        "vietnamese_question": "Hãy đăng báo cáo bán hàng lên trang Web của nhóm chúng ta.",
         "vietnamese_choices": {
           "A": "Chúng tôi đang đi chung taxi đến sân bay.",
           "B": "Tôi có thể làm điều đó.",
@@ -3571,14 +3571,14 @@ window.part02PracticeData = [
             "vi": "báo cáo"
           }
         ],
-        "audio": "media/E26-T05-17.mp3"
+        "audio": "media/part02_practice/questions/t05_q17.mp3"
       },
       {
         "id": 18,
         "question": "Which airline are you planning on using?",
         "choices": {
           "A": "The usual one.",
-          "B": "A one - way ticket.",
+          "B": "A one-way ticket.",
           "C": "Yes, you can use mine."
         },
         "answer": "A",
@@ -3597,7 +3597,7 @@ window.part02PracticeData = [
             "vi": "vé"
           }
         ],
-        "audio": "media/E26-T05-18.mp3"
+        "audio": "media/part02_practice/questions/t05_q18.mp3"
       },
       {
         "id": 19,
@@ -3623,7 +3623,7 @@ window.part02PracticeData = [
             "vi": "lô hàng"
           }
         ],
-        "audio": "media/E26-T05-19.mp3"
+        "audio": "media/part02_practice/questions/t05_q19.mp3"
       },
       {
         "id": 20,
@@ -3655,7 +3655,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-20.mp3"
+        "audio": "media/part02_practice/questions/t05_q20.mp3"
       },
       {
         "id": 21,
@@ -3666,7 +3666,7 @@ window.part02PracticeData = [
           "C": "It's seven meters long."
         },
         "answer": "B",
-        "vietnamese_question": "Có bao nhiêu nhân viên làm việc trong công ty  của bạn  phòng?",
+        "vietnamese_question": "Có bao nhiêu nhân viên làm việc trong công ty của bạn phòng?",
         "vietnamese_choices": {
           "A": "Tôi không ngại ghi chép trong cuộc họp.",
           "B": "Tôi nghĩ là khoảng vài chục.",
@@ -3681,7 +3681,7 @@ window.part02PracticeData = [
             "vi": "phòng ban"
           }
         ],
-        "audio": "media/E26-T05-21.mp3"
+        "audio": "media/part02_practice/questions/t05_q21.mp3"
       },
       {
         "id": 22,
@@ -3692,7 +3692,7 @@ window.part02PracticeData = [
           "C": "Two sessions per day."
         },
         "answer": "A",
-        "vietnamese_question": "Chúng ta nên sớm tham gia khóa đào tạo, phải  không?",
+        "vietnamese_question": "Chúng ta nên sớm tham gia khóa đào tạo, phải không?",
         "vietnamese_choices": {
           "A": "Chúng ta vẫn còn vài phút.",
           "B": "Có một bản đồ trên tường.",
@@ -3707,7 +3707,7 @@ window.part02PracticeData = [
             "vi": "đào tạo, huấn luyện"
           }
         ],
-        "audio": "media/E26-T05-22.mp3"
+        "audio": "media/part02_practice/questions/t05_q22.mp3"
       },
       {
         "id": 23,
@@ -3715,7 +3715,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "To fix the vending machine.",
           "B": "One hundred dollars per day.",
-          "C": "Next to the travel agency"
+          "C": "Next to the travel agency."
         },
         "answer": "B",
         "vietnamese_question": "Có giới hạn chi phí đi lại không?",
@@ -3739,7 +3739,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-23.mp3"
+        "audio": "media/part02_practice/questions/t05_q23.mp3"
       },
       {
         "id": 24,
@@ -3750,10 +3750,10 @@ window.part02PracticeData = [
           "C": "I'm not on the hiring team."
         },
         "answer": "C",
-        "vietnamese_question": "Khi nào tôi nên nói với giám đốc rằng tôi quan  tâm đến vị trí quản lý?",
+        "vietnamese_question": "Khi nào tôi nên nói với giám đốc rằng tôi quan tâm đến vị trí quản lý?",
         "vietnamese_choices": {
-          "A": "Có, chúng tôi đang kéo dài thời gian làm  việc.",
-          "B": "Không phải Andrey đã đạo diễn vở kịch  sao?",
+          "A": "Có, chúng tôi đang kéo dài thời gian làm việc.",
+          "B": "Không phải Andrey đã đạo diễn vở kịch sao?",
           "C": "Tôi không thuộc nhóm tuyển dụng."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I'm not on the hiring team.\" (<em>Tôi không thuộc nhóm tuyển dụng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
@@ -3765,14 +3765,14 @@ window.part02PracticeData = [
             "vi": "giám đốc"
           }
         ],
-        "audio": "media/E26-T05-24.mp3"
+        "audio": "media/part02_practice/questions/t05_q24.mp3"
       },
       {
         "id": 25,
         "question": "The layout of the footwear department has changed.",
         "choices": {
           "A": "There's a charging station in the café.",
-          "B": "Yes, a three - bedroom apartment.",
+          "B": "Yes, a three-bedroom apartment.",
           "C": "The store has a new manager."
         },
         "answer": "C",
@@ -3797,7 +3797,7 @@ window.part02PracticeData = [
             "vi": "phòng ban"
           }
         ],
-        "audio": "media/E26-T05-25.mp3"
+        "audio": "media/part02_practice/questions/t05_q25.mp3"
       },
       {
         "id": 26,
@@ -3808,7 +3808,7 @@ window.part02PracticeData = [
           "C": "He started that position in July."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có thể xem báo cáo doanh thu tháng này  không?",
+        "vietnamese_question": "Bạn có thể xem báo cáo doanh thu tháng này không?",
         "vietnamese_choices": {
           "A": "Chương trình tin tức có nhiều thông tin.",
           "B": "Chiều mai tôi có chút thời gian rảnh.",
@@ -3823,7 +3823,7 @@ window.part02PracticeData = [
             "vi": "báo cáo"
           }
         ],
-        "audio": "media/E26-T05-26.mp3"
+        "audio": "media/part02_practice/questions/t05_q26.mp3"
       },
       {
         "id": 27,
@@ -3849,7 +3849,7 @@ window.part02PracticeData = [
             "vi": "bản dự toán, ước tính"
           }
         ],
-        "audio": "media/E26-T05-27.mp3"
+        "audio": "media/part02_practice/questions/t05_q27.mp3"
       },
       {
         "id": 28,
@@ -3860,7 +3860,7 @@ window.part02PracticeData = [
           "C": "I'll have to pay a little bit extra."
         },
         "answer": "C",
-        "vietnamese_question": "Chẳng phải vali của bạn sẽ nặng hơn trọng  lượng cho phép sao?",
+        "vietnamese_question": "Chẳng phải vali của bạn sẽ nặng hơn trọng lượng cho phép sao?",
         "vietnamese_choices": {
           "A": "Giấy phép xây dựng đã đến hôm nay.",
           "B": "Có chỗ ngồi ở sảnh.",
@@ -3881,7 +3881,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T05-28.mp3"
+        "audio": "media/part02_practice/questions/t05_q28.mp3"
       },
       {
         "id": 29,
@@ -3892,13 +3892,13 @@ window.part02PracticeData = [
           "C": "That's a cargo airplane."
         },
         "answer": "A",
-        "vietnamese_question": "Ai sản xuất động cơ cho máy móc của chúng  ta?",
+        "vietnamese_question": "Ai sản xuất động cơ cho máy móc của chúng ta?",
         "vietnamese_choices": {
-          "A": "Koji phụ trách các hợp đồng với nhà cung  cấp.",
+          "A": "Koji phụ trách các hợp đồng với nhà cung cấp.",
           "B": "Tôi xin lỗi-phòng chứa đã đầy rồi.",
           "C": "Đó là một chiếc máy bay chở hàng."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Koji is in charge of supplier contracts.\" (<em>Koji phụ trách các hợp đồng với nhà cung  cấp.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Koji is in charge of supplier contracts.\" (<em>Koji phụ trách các hợp đồng với nhà cung cấp.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "supplier",
@@ -3907,7 +3907,7 @@ window.part02PracticeData = [
             "vi": "nhà cung ứng"
           }
         ],
-        "audio": "media/E26-T05-29.mp3"
+        "audio": "media/part02_practice/questions/t05_q29.mp3"
       },
       {
         "id": 30,
@@ -3918,7 +3918,7 @@ window.part02PracticeData = [
           "C": "How much does it cost?"
         },
         "answer": "A",
-        "vietnamese_question": "Chúng ta nên gặp nhau ở cửa hàng bách hóa  trên đường số 5 hay ở Grover Lane?",
+        "vietnamese_question": "Chúng ta nên gặp nhau ở cửa hàng bách hóa trên đường số 5 hay ở Grover Lane?",
         "vietnamese_choices": {
           "A": "Hãy hỏi Patricia trước.",
           "B": "Không, tôi không phiền.",
@@ -3933,24 +3933,24 @@ window.part02PracticeData = [
             "vi": "phòng ban"
           }
         ],
-        "audio": "media/E26-T05-30.mp3"
+        "audio": "media/part02_practice/questions/t05_q30.mp3"
       },
       {
         "id": 31,
         "question": "Which band is playing at the club tonight?",
         "choices": {
           "A": "There's always a comedy show on Thursday nights.",
-          "B": "Yes, I've played the piano for many years",
+          "B": "Yes, I've played the piano for many years.",
           "C": "Their number one hit."
         },
         "answer": "A",
         "vietnamese_question": "Ban nhạc nào sẽ chơi ở câu lạc bộ tối nay?",
         "vietnamese_choices": {
-          "A": "Tại bến phà",
+          "A": "Luôn có chương trình hài kịch vào tối thứ Năm.",
           "B": "Vâng, tôi đã chơi piano được nhiều năm",
           "C": "Bản hit số một của họ."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHICH (LỰA CHỌN CỤ THỂ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There's always a comedy show on Thursday nights.\" (<em>Tại bến phà</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường dùng đại từ 'the one...', danh từ cụ thể hoặc chỉ rõ đối tượng được chọn.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHICH (LỰA CHỌN CỤ THỂ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There's always a comedy show on Thursday nights.\" (<em>Luôn có chương trình hài kịch vào tối thứ Năm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường dùng đại từ 'the one...', danh từ cụ thể hoặc chỉ rõ đối tượng được chọn.</p>\n</div>",
         "vocabulary": [
           {
             "en": "conference",
@@ -3965,7 +3965,7 @@ window.part02PracticeData = [
             "vi": "bài thuyết trình"
           }
         ],
-        "audio": "media/E26-T05-31.mp3"
+        "audio": "media/part02_practice/questions/t05_q31.mp3"
       }
     ]
   },
@@ -4006,7 +4006,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-07.mp3"
+        "audio": "media/part02_practice/questions/t06_q07.mp3"
       },
       {
         "id": 8,
@@ -4017,7 +4017,7 @@ window.part02PracticeData = [
           "C": "Because it's after lunch."
         },
         "answer": "A",
-        "vietnamese_question": "Bạn có thể cho tôi biết văn phòng an ninh ở đâu  không?",
+        "vietnamese_question": "Bạn có thể cho tôi biết văn phòng an ninh ở đâu không?",
         "vietnamese_choices": {
           "A": "Hôm nay là ngày đầu tiên của tôi ở đây.",
           "B": "Một bức ảnh cho huy hiệu.",
@@ -4038,7 +4038,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-08.mp3"
+        "audio": "media/part02_practice/questions/t06_q08.mp3"
       },
       {
         "id": 9,
@@ -4070,7 +4070,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-09.mp3"
+        "audio": "media/part02_practice/questions/t06_q09.mp3"
       },
       {
         "id": 10,
@@ -4085,9 +4085,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Phòng họp số 3.",
           "B": "Phí nhập học là hợp lý.",
-          "C": "Mọi người trong đội của chúng tôi đang  đến."
+          "C": "Mọi người trong đội của chúng tôi đang đến."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Everybody on our team is coming.\" (<em>Mọi người trong đội của chúng tôi đang  đến.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Everybody on our team is coming.\" (<em>Mọi người trong đội của chúng tôi đang đến.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "conference",
@@ -4096,7 +4096,7 @@ window.part02PracticeData = [
             "vi": "hội nghị"
           }
         ],
-        "audio": "media/E26-T06-10.mp3"
+        "audio": "media/part02_practice/questions/t06_q10.mp3"
       },
       {
         "id": 11,
@@ -4107,7 +4107,7 @@ window.part02PracticeData = [
           "C": "The blue one with gold trim."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có thể yêu cầu kỹ thuật viên sửa chữa máy  đóng gói không?",
+        "vietnamese_question": "Bạn có thể yêu cầu kỹ thuật viên sửa chữa máy đóng gói không?",
         "vietnamese_choices": {
           "A": "Ba năm học ở trường kỹ thuật.",
           "B": "Chắc chắn rồi, tôi sẽ làm điều đó.",
@@ -4122,7 +4122,7 @@ window.part02PracticeData = [
             "vi": "sửa chữa"
           }
         ],
-        "audio": "media/E26-T06-11.mp3"
+        "audio": "media/part02_practice/questions/t06_q11.mp3"
       },
       {
         "id": 12,
@@ -4130,7 +4130,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "There's blue paper in the cabinet.",
           "B": "Yes, it was my idea.",
-          "C": "Fifty should be enough for everyone"
+          "C": "Fifty should be enough for everyone."
         },
         "answer": "C",
         "vietnamese_question": "Tôi nên sao chép bao nhiêu bản đề xuất?",
@@ -4139,7 +4139,7 @@ window.part02PracticeData = [
           "B": "Vâng, đó là ý tưởng của tôi.",
           "C": "Năm mươi là đủ cho tất cả mọi người"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW MUCH / HOW MANY (SỐ LƯỢNG & GIÁ CẢ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Fifty should be enough for everyone\" (<em>Năm mươi là đủ cho tất cả mọi người</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp số lượng, giá tiền hoặc phương thức thanh toán.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW MUCH / HOW MANY (SỐ LƯỢNG & GIÁ CẢ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Fifty should be enough for everyone.\" (<em>Năm mươi là đủ cho tất cả mọi người</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp số lượng, giá tiền hoặc phương thức thanh toán.</p>\n</div>",
         "vocabulary": [
           {
             "en": "proposal",
@@ -4148,7 +4148,7 @@ window.part02PracticeData = [
             "vi": "bản đề xuất"
           }
         ],
-        "audio": "media/E26-T06-12.mp3"
+        "audio": "media/part02_practice/questions/t06_q12.mp3"
       },
       {
         "id": 13,
@@ -4180,7 +4180,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-13.mp3"
+        "audio": "media/part02_practice/questions/t06_q13.mp3"
       },
       {
         "id": 14,
@@ -4212,18 +4212,18 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-14.mp3"
+        "audio": "media/part02_practice/questions/t06_q14.mp3"
       },
       {
         "id": 15,
-        "question": "Did you want to sign up for a one - year magazine subscription?",
+        "question": "Did you want to sign up for a one-year magazine subscription?",
         "choices": {
           "A": "How much will it cost?",
           "B": "Near the service center.",
           "C": "Akiko works at the front desk."
         },
         "answer": "A",
-        "vietnamese_question": "Bạn có muốn đăng ký đặt mua tạp chí một năm  không?",
+        "vietnamese_question": "Bạn có muốn đăng ký đặt mua tạp chí một năm không?",
         "vietnamese_choices": {
           "A": "Nó sẽ có giá bao nhiêu?",
           "B": "Gần trung tâm dịch vụ.",
@@ -4244,7 +4244,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-15.mp3"
+        "audio": "media/part02_practice/questions/t06_q15.mp3"
       },
       {
         "id": 16,
@@ -4276,7 +4276,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-16.mp3"
+        "audio": "media/part02_practice/questions/t06_q16.mp3"
       },
       {
         "id": 17,
@@ -4302,7 +4302,7 @@ window.part02PracticeData = [
             "vi": "vật tư, đồ dùng"
           }
         ],
-        "audio": "media/E26-T06-17.mp3"
+        "audio": "media/part02_practice/questions/t06_q17.mp3"
       },
       {
         "id": 18,
@@ -4313,7 +4313,7 @@ window.part02PracticeData = [
           "C": "50 euros each."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có muốn tôi giúp bạn mở một tài khoản tiết  kiệm không?",
+        "vietnamese_question": "Bạn có muốn tôi giúp bạn mở một tài khoản tiết kiệm không?",
         "vietnamese_choices": {
           "A": "Tôi đã đếm chúng rồi.",
           "B": "Điều đó thật tuyệt.",
@@ -4328,7 +4328,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T06-18.mp3"
+        "audio": "media/part02_practice/questions/t06_q18.mp3"
       },
       {
         "id": 19,
@@ -4342,10 +4342,10 @@ window.part02PracticeData = [
         "vietnamese_question": "Bạn đăng tin tuyển dụng khi nào?",
         "vietnamese_choices": {
           "A": "Trên bảng thông báo ở hành lang.",
-          "B": "Nó đã có mặt trên trang web được một  tháng.",
+          "B": "Nó đã có mặt trên trang web được một tháng.",
           "C": "Bạn có thể đóng cửa lại được không?"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"It's been on the Web site for a month.\" (<em>Nó đã có mặt trên trang web được một  tháng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"It's been on the Web site for a month.\" (<em>Nó đã có mặt trên trang web được một tháng.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "post",
@@ -4360,7 +4360,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-19.mp3"
+        "audio": "media/part02_practice/questions/t06_q19.mp3"
       },
       {
         "id": 20,
@@ -4392,11 +4392,11 @@ window.part02PracticeData = [
             "vi": "người quản lý"
           }
         ],
-        "audio": "media/E26-T06-20.mp3"
+        "audio": "media/part02_practice/questions/t06_q20.mp3"
       },
       {
         "id": 21,
-        "question": "Are you traveling in business class or economy",
+        "question": "Are you traveling in business class or economy?",
         "choices": {
           "A": "My flight was just canceled.",
           "B": "My focus is history.",
@@ -4418,7 +4418,7 @@ window.part02PracticeData = [
             "vi": "chuyến bay"
           }
         ],
-        "audio": "media/E26-T06-21.mp3"
+        "audio": "media/part02_practice/questions/t06_q21.mp3"
       },
       {
         "id": 22,
@@ -4429,13 +4429,13 @@ window.part02PracticeData = [
           "C": "There are six folders on the table."
         },
         "answer": "A",
-        "vietnamese_question": "Số lượng người đăng ký tạp chí của chúng tôi  gần đây đã giảm.",
+        "vietnamese_question": "Số lượng người đăng ký tạp chí của chúng tôi gần đây đã giảm.",
         "vietnamese_choices": {
-          "A": "Có chỗ trong ngân sách dành cho quảng cáo  nhiều hơn.",
+          "A": "Có chỗ trong ngân sách dành cho quảng cáo nhiều hơn.",
           "B": "Phí thành viên hàng năm.",
           "C": "Có sáu tập tài liệu trên bàn."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There's room in the budget for more advertising.\" (<em>Có chỗ trong ngân sách dành cho quảng cáo  nhiều hơn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"There's room in the budget for more advertising.\" (<em>Có chỗ trong ngân sách dành cho quảng cáo nhiều hơn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "budget",
@@ -4456,7 +4456,7 @@ window.part02PracticeData = [
             "vi": "gần đây"
           }
         ],
-        "audio": "media/E26-T06-22.mp3"
+        "audio": "media/part02_practice/questions/t06_q22.mp3"
       },
       {
         "id": 23,
@@ -4464,16 +4464,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "The glass can be any color you want.",
           "B": "No, the sun isn't out today.",
-          "C": "I pay a company to do all the maintenance"
+          "C": "I pay a company to do all the maintenance."
         },
         "answer": "C",
-        "vietnamese_question": "Làm thế nào để bạn làm sạch các tấm pin mặt  trời mà không làm hỏng chúng?",
+        "vietnamese_question": "Làm thế nào để bạn làm sạch các tấm pin mặt trời mà không làm hỏng chúng?",
         "vietnamese_choices": {
           "A": "Kính có thể có bất kỳ màu nào bạn muốn.",
           "B": "Không, hôm nay mặt trời không tắt.",
-          "C": "Tôi trả tiền cho một công ty để thực hiện tất  cả việc bảo trì"
+          "C": "Tôi trả tiền cho một công ty để thực hiện tất cả việc bảo trì"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I pay a company to do all the maintenance\" (<em>Tôi trả tiền cho một công ty để thực hiện tất  cả việc bảo trì</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I pay a company to do all the maintenance.\" (<em>Tôi trả tiền cho một công ty để thực hiện tất cả việc bảo trì</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "maintenance",
@@ -4482,7 +4482,7 @@ window.part02PracticeData = [
             "vi": "bảo trì"
           }
         ],
-        "audio": "media/E26-T06-23.mp3"
+        "audio": "media/part02_practice/questions/t06_q23.mp3"
       },
       {
         "id": 24,
@@ -4493,7 +4493,7 @@ window.part02PracticeData = [
           "C": "No, thank you."
         },
         "answer": "A",
-        "vietnamese_question": "Khi nào tôi sẽ nhận được chứng chỉ của mình  qua đường bưu điện?",
+        "vietnamese_question": "Khi nào tôi sẽ nhận được chứng chỉ của mình qua đường bưu điện?",
         "vietnamese_choices": {
           "A": "Tôi sẽ phải kiểm tra với văn phòng.",
           "B": "Rẽ trái ở chỗ đèn giao thông.",
@@ -4514,7 +4514,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-24.mp3"
+        "audio": "media/part02_practice/questions/t06_q24.mp3"
       },
       {
         "id": 25,
@@ -4522,7 +4522,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "The plants need more water.",
           "B": "Sorry, refunds are not allowed.",
-          "C": "I work in the home decor area"
+          "C": "I work in the home decor area."
         },
         "answer": "C",
         "vietnamese_question": "Chúng ta không bán máy cắt cỏ Ramirez à?",
@@ -4531,7 +4531,7 @@ window.part02PracticeData = [
           "B": "Xin lỗi, không được phép hoàn lại tiền.",
           "C": "Tôi làm việc trong lĩnh vực trang trí nhà cửa"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I work in the home decor area\" (<em>Tôi làm việc trong lĩnh vực trang trí nhà cửa</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I work in the home decor area.\" (<em>Tôi làm việc trong lĩnh vực trang trí nhà cửa</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "sell",
@@ -4546,7 +4546,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-25.mp3"
+        "audio": "media/part02_practice/questions/t06_q25.mp3"
       },
       {
         "id": 26,
@@ -4557,7 +4557,7 @@ window.part02PracticeData = [
           "C": "Alphabetical order is fine, I think."
         },
         "answer": "B",
-        "vietnamese_question": "Chúng ta có nên gặp nhau để thảo luận về dự án  nghiên cứu của mình không?",
+        "vietnamese_question": "Chúng ta có nên gặp nhau để thảo luận về dự án nghiên cứu của mình không?",
         "vietnamese_choices": {
           "A": "Một hướng dẫn xuất bản.",
           "B": "Đặt thứ gì đó lên lịch của tôi.",
@@ -4578,7 +4578,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-26.mp3"
+        "audio": "media/part02_practice/questions/t06_q26.mp3"
       },
       {
         "id": 27,
@@ -4589,7 +4589,7 @@ window.part02PracticeData = [
           "C": "The leaves come out in the spring."
         },
         "answer": "B",
-        "vietnamese_question": "Khi nào nhân viên dọn vệ sinh rời đi trong  ngày?",
+        "vietnamese_question": "Khi nào nhân viên dọn vệ sinh rời đi trong ngày?",
         "vietnamese_choices": {
           "A": "Một tủ đựng đồ ở hành lang.",
           "B": "Thường là vào lúc sáu giờ.",
@@ -4604,7 +4604,7 @@ window.part02PracticeData = [
             "vi": "nhân viên, đội ngũ"
           }
         ],
-        "audio": "media/E26-T06-27.mp3"
+        "audio": "media/part02_practice/questions/t06_q27.mp3"
       },
       {
         "id": 28,
@@ -4612,10 +4612,10 @@ window.part02PracticeData = [
         "choices": {
           "A": "With a store gift card.",
           "B": "I wear a size 38.",
-          "C": "A friend recommended them"
+          "C": "A friend recommended them."
         },
         "answer": "A",
-        "vietnamese_question": "Hôm nay bạn muốn thanh toán cho đôi giày này  như thế nào?",
+        "vietnamese_question": "Hôm nay bạn muốn thanh toán cho đôi giày này như thế nào?",
         "vietnamese_choices": {
           "A": "Với thẻ quà tặng của cửa hàng.",
           "B": "Tôi mặc cỡ 38.",
@@ -4636,7 +4636,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T06-28.mp3"
+        "audio": "media/part02_practice/questions/t06_q28.mp3"
       },
       {
         "id": 29,
@@ -4644,16 +4644,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "I've heard that sales have increased.",
           "B": "The next issue of the magazine.",
-          "C": "Isn't the policy in effect already"
+          "C": "Isn't the policy in effect already?"
         },
         "answer": "A",
         "vietnamese_question": "Đó là một quảng cáo hiệu quả phải không?",
         "vietnamese_choices": {
-          "A": "Tôi nghe nói doanh số bán hàng đã tăng  lên.",
+          "A": "Tôi nghe nói doanh số bán hàng đã tăng lên.",
           "B": "Số tiếp theo của tạp chí.",
           "C": "Chính sách này đã có hiệu lực chưa"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've heard that sales have increased.\" (<em>Tôi nghe nói doanh số bán hàng đã tăng  lên.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I've heard that sales have increased.\" (<em>Tôi nghe nói doanh số bán hàng đã tăng lên.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
         "vocabulary": [
           {
             "en": "already",
@@ -4662,7 +4662,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T06-29.mp3"
+        "audio": "media/part02_practice/questions/t06_q29.mp3"
       },
       {
         "id": 30,
@@ -4675,11 +4675,11 @@ window.part02PracticeData = [
         "answer": "A",
         "vietnamese_question": "Tại sao chúng ta không đi dạo sau bữa trưa nhỉ?",
         "vietnamese_choices": {
-          "A": "Báo cáo bán hàng sẽ đến hạn vào lúc một  giờ.",
+          "A": "Báo cáo bán hàng sẽ đến hạn vào lúc một giờ.",
           "B": "Không, ở khu vực đỗ xe B.",
           "C": "Làm ơn cho tôi ăn spaghetti."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The sales report is due at one o'clock.\" (<em>Báo cáo bán hàng sẽ đến hạn vào lúc một  giờ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The sales report is due at one o'clock.\" (<em>Báo cáo bán hàng sẽ đến hạn vào lúc một giờ.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "report",
@@ -4688,39 +4688,51 @@ window.part02PracticeData = [
             "vi": "báo cáo"
           }
         ],
-        "audio": "media/E26-T06-30.mp3"
+        "audio": "media/part02_practice/questions/t06_q30.mp3"
       },
       {
         "id": 31,
         "question": "I decided to move the seasonal merchandise to the front of the store.",
         "choices": {
-          "A": "Theater renovations",
-          "B": "Changes to a performance schedule",
-          "C": "Selection of a new lighting director (D) A promotional gift"
+          "A": "Did you put some of it in the window display?",
+          "B": "For our summer clothing collection.",
+          "C": "The moving van is coming tomorrow."
         },
         "answer": "A",
-        "vietnamese_question": "Tôi quyết định chuyển hàng hóa theo mùa ra  phía trước cửa hàng.",
+        "vietnamese_question": "Tôi quyết định chuyển hàng hóa theo mùa ra phía trước cửa hàng.",
         "vietnamese_choices": {
-          "A": "Cải tạo nhà hát",
-          "B": "Thay đổi lịch biểu diễn",
-          "C": "Lựa chọn giám đốc ánh sáng mới  (D) Một món quà khuyến mãi    33. Người đàn ông nói gì về một tác phẩm âm  nhạc?"
+          "A": "Bạn đã trưng bày một số món hàng đó ở tủ kính chưa?",
+          "B": "Cho bộ sưu tập quần áo mùa hè của chúng ta.",
+          "C": "Xe tải chuyển đồ sẽ đến vào ngày mai."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Theater renovations\" (<em>Cải tạo nhà hát</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Did you put some of it in the window display?\" (<em>Bạn đã trưng bày một số món hàng đó ở tủ kính chưa?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Với câu trần thuật thông báo việc di chuyển hàng hóa ra phía trước cửa hàng, đáp án đúng hỏi nối tiếp tự nhiên về việc trưng bày ở tủ kính (window display).</p>\n</div>",
         "vocabulary": [
           {
-            "en": "schedule",
-            "ipa": "/ˈʃedjuːl/",
-            "pos": "n, v",
-            "vi": "lịch trình, sắp xếp"
+            "en": "seasonal",
+            "ipa": "/ˈsiːzənl/",
+            "pos": "adj",
+            "vi": "theo mùa"
           },
           {
-            "en": "director",
-            "ipa": "/dəˈrektə/",
+            "en": "merchandise",
+            "ipa": "/ˈmɜːtʃəndaɪs/",
             "pos": "n",
-            "vi": "giám đốc"
+            "vi": "hàng hóa"
+          },
+          {
+            "en": "window display",
+            "ipa": "/ˈwɪndəʊ dɪˈspleɪ/",
+            "pos": "n",
+            "vi": "tủ kính trưng bày"
+          },
+          {
+            "en": "collection",
+            "ipa": "/kəˈlekʃn/",
+            "pos": "n",
+            "vi": "bộ sưu tập"
           }
         ],
-        "audio": "media/E26-T06-31.mp3"
+        "audio": "media/part02_practice/questions/t06_q31.mp3"
       }
     ]
   },
@@ -4740,11 +4752,11 @@ window.part02PracticeData = [
           "C": "Yes, his flight has been arranged."
         },
         "answer": "A",
-        "vietnamese_question": "Ai là người cung cấp dịch vụ cắm hoa cho bữa  tiệc?",
+        "vietnamese_question": "Ai là người cung cấp dịch vụ cắm hoa cho bữa tiệc?",
         "vietnamese_choices": {
           "A": "Người bán hoa trên Phố Chính.",
           "B": "Cô ấy đã có một sự nghiệp lâu dài.",
-          "C": "Vâng, chuyến bay của anh ấy đã được sắp  xếp."
+          "C": "Vâng, chuyến bay của anh ấy đã được sắp xếp."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The florist on Main Street.\" (<em>Người bán hoa trên Phố Chính.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
@@ -4755,7 +4767,7 @@ window.part02PracticeData = [
             "vi": "chuyến bay"
           }
         ],
-        "audio": "media/E26-T07-07.mp3"
+        "audio": "media/part02_practice/questions/t07_q07.mp3"
       },
       {
         "id": 8,
@@ -4763,16 +4775,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "At the finish line.",
           "B": "No, it wasn't expensive.",
-          "C": "I was meeting with a client"
+          "C": "I was meeting with a client."
         },
         "answer": "C",
-        "vietnamese_question": "Tại sao bạn không hoàn thành báo cáo ngân  sách?",
+        "vietnamese_question": "Tại sao bạn không hoàn thành báo cáo ngân sách?",
         "vietnamese_choices": {
           "A": "Ở vạch đích.",
           "B": "Không, nó không đắt.",
           "C": "Tôi đang gặp một khách hàng"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I was meeting with a client\" (<em>Tôi đang gặp một khách hàng</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I was meeting with a client.\" (<em>Tôi đang gặp một khách hàng</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "client",
@@ -4793,24 +4805,24 @@ window.part02PracticeData = [
             "vi": "đắt đỏ"
           }
         ],
-        "audio": "media/E26-T07-08.mp3"
+        "audio": "media/part02_practice/questions/t07_q08.mp3"
       },
       {
         "id": 9,
         "question": "What floor are you going to?",
         "choices": {
           "A": "Can I have a copy of this?",
-          "B": "The twenty - fifth.",
+          "B": "The twenty-fifth.",
           "C": "That painting will look nice there."
         },
         "answer": "B",
         "vietnamese_question": "Bạn định lên tầng mấy?",
         "vietnamese_choices": {
-          "A": "Tôi có thể có một bản sao của cái này  không?",
+          "A": "Tôi có thể có một bản sao của cái này không?",
           "B": "Ngày thứ hai mươi lăm.",
           "C": "Bức tranh đó sẽ trông rất đẹp ở đó."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"The twenty - fifth.\" (<em>Ngày thứ hai mươi lăm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHAT (HỎI THÔNG TIN SỰ VẬT / SỰ VIỆC)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"The twenty-fifth.\" (<em>Ngày thứ hai mươi lăm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Cần lắng nghe kỹ động từ và danh từ theo sau What để nắm đối tượng cần trả lời.</p>\n</div>",
         "vocabulary": [
           {
             "en": "floor",
@@ -4825,7 +4837,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-09.mp3"
+        "audio": "media/part02_practice/questions/t07_q09.mp3"
       },
       {
         "id": 10,
@@ -4840,9 +4852,9 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Khu vực chứa đồ ở tầng dưới.",
           "B": "Mã dự án mới.",
-          "C": "Có một cuốn sách hướng dẫn trong ngăn  kéo."
+          "C": "Có một cuốn sách hướng dẫn trong ngăn kéo."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"There's a manual in the drawer.\" (<em>Có một cuốn sách hướng dẫn trong ngăn  kéo.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW (CÁCH THỨC / PHƯƠNG TIỆN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"There's a manual in the drawer.\" (<em>Có một cuốn sách hướng dẫn trong ngăn kéo.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án chỉ cách thức thực hiện, phương tiện đi lại hoặc cảm nhận trạng thái.</p>\n</div>",
         "vocabulary": [
           {
             "en": "this",
@@ -4857,7 +4869,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-10.mp3"
+        "audio": "media/part02_practice/questions/t07_q10.mp3"
       },
       {
         "id": 11,
@@ -4889,13 +4901,13 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T07-11.mp3"
+        "audio": "media/part02_practice/questions/t07_q11.mp3"
       },
       {
         "id": 12,
         "question": "Did you read the press release?",
         "choices": {
-          "A": "I haven't checked my e - mail all day.",
+          "A": "I haven't checked my e-mail all day.",
           "B": "It's not raining here yet.",
           "C": "The switch works fine."
         },
@@ -4906,7 +4918,7 @@ window.part02PracticeData = [
           "B": "Ở đây vẫn chưa mưa.",
           "C": "Công tắc hoạt động tốt."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I haven't checked my e - mail all day.\" (<em>Tôi đã không kiểm tra e-mail cả ngày.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I haven't checked my e-mail all day.\" (<em>Tôi đã không kiểm tra e-mail cả ngày.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "read",
@@ -4921,7 +4933,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-12.mp3"
+        "audio": "media/part02_practice/questions/t07_q12.mp3"
       },
       {
         "id": 13,
@@ -4929,16 +4941,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "That photo's on the front page.",
           "B": "Here's the paper for your newsletter.",
-          "C": "Yes, it was renewed for another six months"
+          "C": "Yes, it was renewed for another six months."
         },
         "answer": "C",
-        "vietnamese_question": "Chẳng phải chúng ta đã gia hạn đăng ký báo  vào tháng trước sao?",
+        "vietnamese_question": "Chẳng phải chúng ta đã gia hạn đăng ký báo vào tháng trước sao?",
         "vietnamese_choices": {
           "A": "Bức ảnh đó ở trên trang nhất.",
           "B": "Đây là tờ báo cho bản tin của bạn.",
-          "C": "Vâng, nó đã được gia hạn thêm sáu tháng  nữa"
+          "C": "Vâng, nó đã được gia hạn thêm sáu tháng nữa"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, it was renewed for another six months\" (<em>Vâng, nó đã được gia hạn thêm sáu tháng  nữa</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, it was renewed for another six months.\" (<em>Vâng, nó đã được gia hạn thêm sáu tháng nữa</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "didn",
@@ -4953,7 +4965,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-13.mp3"
+        "audio": "media/part02_practice/questions/t07_q13.mp3"
       },
       {
         "id": 14,
@@ -4961,16 +4973,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "I can't quite reach the top shelf.",
           "B": "We're fully funded through the end of the year.",
-          "C": "Because our accountant is on vacation"
+          "C": "Because our accountant is on vacation."
         },
         "answer": "B",
-        "vietnamese_question": "Khi nào chúng ta sẽ đề cập đến nhu cầu ngân  sách của mình với điều phối viên tiếp cận cộng  đồng?",
+        "vietnamese_question": "Khi nào chúng ta sẽ đề cập đến nhu cầu ngân sách của mình với điều phối viên tiếp cận cộng đồng?",
         "vietnamese_choices": {
           "A": "Tôi không thể với tới kệ trên cùng.",
-          "B": "Chúng tôi được cấp vốn đầy đủ cho đến  cuối năm.",
+          "B": "Chúng tôi được cấp vốn đầy đủ cho đến cuối năm.",
           "C": "Bởi vì kế toán của chúng tôi đang đi nghỉ"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"We're fully funded through the end of the year.\" (<em>Chúng tôi được cấp vốn đầy đủ cho đến  cuối năm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"We're fully funded through the end of the year.\" (<em>Chúng tôi được cấp vốn đầy đủ cho đến cuối năm.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "will",
@@ -4985,7 +4997,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-14.mp3"
+        "audio": "media/part02_practice/questions/t07_q14.mp3"
       },
       {
         "id": 15,
@@ -4993,16 +5005,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "Usually an annual checkup.",
           "B": "No, parking is not free.",
-          "C": "Yes, and she'll see you in a minute"
+          "C": "Yes, and she'll see you in a minute."
         },
         "answer": "C",
-        "vietnamese_question": "Hôm nay tôi có hẹn với bác sĩ Hamdy phải  không?",
+        "vietnamese_question": "Hôm nay tôi có hẹn với bác sĩ Hamdy phải không?",
         "vietnamese_choices": {
           "A": "Thường là kiểm tra sức khỏe hàng năm.",
           "B": "Không, bãi đậu xe không miễn phí.",
           "C": "Vâng, và cô ấy sẽ gặp bạn sau một phút nữa"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, and she'll see you in a minute\" (<em>Vâng, và cô ấy sẽ gặp bạn sau một phút nữa</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI ĐUÔI (TAG QUESTION)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Yes, and she'll see you in a minute.\" (<em>Vâng, và cô ấy sẽ gặp bạn sau một phút nữa</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Người hỏi tìm kiếm sự xác nhận. Đáp án có thể khẳng định hoặc phủ định kèm giải thích.</p>\n</div>",
         "vocabulary": [
           {
             "en": "appointment",
@@ -5017,7 +5029,7 @@ window.part02PracticeData = [
             "vi": "thường niên, hàng năm"
           }
         ],
-        "audio": "media/E26-T07-15.mp3"
+        "audio": "media/part02_practice/questions/t07_q15.mp3"
       },
       {
         "id": 16,
@@ -5043,7 +5055,7 @@ window.part02PracticeData = [
             "vi": "lô hàng"
           }
         ],
-        "audio": "media/E26-T07-16.mp3"
+        "audio": "media/part02_practice/questions/t07_q16.mp3"
       },
       {
         "id": 17,
@@ -5054,13 +5066,13 @@ window.part02PracticeData = [
           "C": "The grass needs cutting."
         },
         "answer": "A",
-        "vietnamese_question": "Bạn có thể dời lịch cắt tóc của tôi sang thứ Hai  được không?",
+        "vietnamese_question": "Bạn có thể dời lịch cắt tóc của tôi sang thứ Hai được không?",
         "vietnamese_choices": {
-          "B": "Tôi sẽ mở một cửa sổ để đón không khí  trong lành vào.",
+          "B": "Tôi sẽ mở một cửa sổ để đón không khí trong lành vào.",
           "C": "Cỏ cần cắt.",
-          "A": "Không, chúng tôi đã kín chỗ vào ngày hôm  đó."
+          "A": "Không, chúng tôi đã kín chỗ vào ngày hôm đó."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"No, we're fully booked that day.\" (<em>Không, chúng tôi đã kín chỗ vào ngày hôm  đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"No, we're fully booked that day.\" (<em>Không, chúng tôi đã kín chỗ vào ngày hôm đó.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "able",
@@ -5075,7 +5087,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-17.mp3"
+        "audio": "media/part02_practice/questions/t07_q17.mp3"
       },
       {
         "id": 18,
@@ -5083,7 +5095,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "The bus stop is five kilometers away.",
           "B": "There are enough for all of us.",
-          "C": "No, I went to a training session"
+          "C": "No, I went to a training session."
         },
         "answer": "A",
         "vietnamese_question": "Tôi nên đi tàu hay xe buýt đến sân bay?",
@@ -5101,7 +5113,7 @@ window.part02PracticeData = [
             "vi": "đào tạo, huấn luyện"
           }
         ],
-        "audio": "media/E26-T07-18.mp3"
+        "audio": "media/part02_practice/questions/t07_q18.mp3"
       },
       {
         "id": 19,
@@ -5133,7 +5145,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-19.mp3"
+        "audio": "media/part02_practice/questions/t07_q19.mp3"
       },
       {
         "id": 20,
@@ -5144,7 +5156,7 @@ window.part02PracticeData = [
           "C": "Those should be printed in color."
         },
         "answer": "B",
-        "vietnamese_question": "Cuộc họp mặt công ty tháng này có được tổ  chức ở Benson Park không?",
+        "vietnamese_question": "Cuộc họp mặt công ty tháng này có được tổ chức ở Benson Park không?",
         "vietnamese_choices": {
           "A": "Tôi thường đỗ xe bên đài phun nước.",
           "B": "Ngoài trời hầu hết các ngày vẫn lạnh.",
@@ -5165,7 +5177,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-20.mp3"
+        "audio": "media/part02_practice/questions/t07_q20.mp3"
       },
       {
         "id": 21,
@@ -5173,16 +5185,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "We should get them by the end of the week.",
           "B": "A famous director.",
-          "C": "Twenty - five euros."
+          "C": "Twenty-five euros."
         },
         "answer": "A",
-        "vietnamese_question": "Khi nào vé cho buổi biểu diễn sẽ sẵn sàng để  nhận?",
+        "vietnamese_question": "Khi nào vé cho buổi biểu diễn sẽ sẵn sàng để nhận?",
         "vietnamese_choices": {
-          "A": "Chúng ta sẽ nhận được chúng vào cuối  tuần.",
+          "A": "Chúng ta sẽ nhận được chúng vào cuối tuần.",
           "B": "Một đạo diễn nổi tiếng.",
           "C": "Hai mươi lăm euro."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We should get them by the end of the week.\" (<em>Chúng ta sẽ nhận được chúng vào cuối  tuần.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"We should get them by the end of the week.\" (<em>Chúng ta sẽ nhận được chúng vào cuối tuần.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "director",
@@ -5191,7 +5203,7 @@ window.part02PracticeData = [
             "vi": "giám đốc"
           }
         ],
-        "audio": "media/E26-T07-21.mp3"
+        "audio": "media/part02_practice/questions/t07_q21.mp3"
       },
       {
         "id": 22,
@@ -5199,10 +5211,10 @@ window.part02PracticeData = [
         "choices": {
           "A": "I saw some boxes on the loading dock.",
           "B": "She's wearing a red hat.",
-          "C": "A lunch appointment at twelve thirty"
+          "C": "A lunch appointment at twelve thirty."
         },
         "answer": "A",
-        "vietnamese_question": "Không biết vật liệu đóng gói đã được đặt hàng  chưa.",
+        "vietnamese_question": "Không biết vật liệu đóng gói đã được đặt hàng chưa.",
         "vietnamese_choices": {
           "A": "Tôi thấy một số hộp trên bến tải.",
           "B": "Cô ấy đang đội một chiếc mũ màu đỏ.",
@@ -5223,7 +5235,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T07-22.mp3"
+        "audio": "media/part02_practice/questions/t07_q22.mp3"
       },
       {
         "id": 23,
@@ -5234,7 +5246,7 @@ window.part02PracticeData = [
           "C": "Did you check the weather report?"
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có thể vui lòng gửi cho tôi báo cáo bán  hàng được không?",
+        "vietnamese_question": "Bạn có thể vui lòng gửi cho tôi báo cáo bán hàng được không?",
         "vietnamese_choices": {
           "A": "Giảm 50% hàng hóa của mùa trước.",
           "B": "Tất nhiên-tôi sẽ làm ngay bây giờ.",
@@ -5249,7 +5261,7 @@ window.part02PracticeData = [
             "vi": "báo cáo"
           }
         ],
-        "audio": "media/E26-T07-23.mp3"
+        "audio": "media/part02_practice/questions/t07_q23.mp3"
       },
       {
         "id": 24,
@@ -5281,7 +5293,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-24.mp3"
+        "audio": "media/part02_practice/questions/t07_q24.mp3"
       },
       {
         "id": 25,
@@ -5292,9 +5304,9 @@ window.part02PracticeData = [
           "C": "We only use electric appliances."
         },
         "answer": "C",
-        "vietnamese_question": "Máy sưởi của bạn sử dụng bao nhiêu dầu vào  mùa đông?",
+        "vietnamese_question": "Máy sưởi của bạn sử dụng bao nhiêu dầu vào mùa đông?",
         "vietnamese_choices": {
-          "A": "Chúng tôi có thể cần phải dừng lại để đổ  xăng trong chuyến đi của mình.",
+          "A": "Chúng tôi có thể cần phải dừng lại để đổ xăng trong chuyến đi của mình.",
           "B": "Công thức đó yêu cầu bơ.",
           "C": "Chúng tôi chỉ sử dụng các thiết bị điện."
         },
@@ -5313,7 +5325,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-25.mp3"
+        "audio": "media/part02_practice/questions/t07_q25.mp3"
       },
       {
         "id": 26,
@@ -5321,13 +5333,13 @@ window.part02PracticeData = [
         "choices": {
           "A": "In aisle six.",
           "B": "That's a really healthy recipe.",
-          "C": "The library is closed on Sundays"
+          "C": "The library is closed on Sundays."
         },
         "answer": "A",
         "vietnamese_question": "Tôi có thể tìm vitamin ở đâu?",
         "vietnamese_choices": {
           "A": "Ở lối đi số sáu.",
-          "B": "Đó thực sự là một công thức tốt cho sức  khỏe.",
+          "B": "Đó thực sự là một công thức tốt cho sức khỏe.",
           "C": "Thư viện đóng cửa vào Chủ nhật"
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHERE (HỎI NƠI CHỐN / VỊ TRÍ)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"In aisle six.\" (<em>Ở lối đi số sáu.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường có giới từ chỉ nơi chốn (in, at, on, to...) hoặc tên địa điểm cụ thể. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
@@ -5345,7 +5357,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-26.mp3"
+        "audio": "media/part02_practice/questions/t07_q26.mp3"
       },
       {
         "id": 27,
@@ -5360,7 +5372,7 @@ window.part02PracticeData = [
         "vietnamese_choices": {
           "A": "Phần mềm đã thực hiện hầu hết công việc.",
           "B": "Khách hàng trung thành của chúng tôi.",
-          "C": "Những chiếc thùng vẫn còn ở trong nhà  kho."
+          "C": "Những chiếc thùng vẫn còn ở trong nhà kho."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"The software did most of the work.\" (<em>Phần mềm đã thực hiện hầu hết công việc.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
@@ -5377,7 +5389,7 @@ window.part02PracticeData = [
             "vi": "khảo sát"
           }
         ],
-        "audio": "media/E26-T07-27.mp3"
+        "audio": "media/part02_practice/questions/t07_q27.mp3"
       },
       {
         "id": 28,
@@ -5385,12 +5397,12 @@ window.part02PracticeData = [
         "choices": {
           "A": "No, just an older laptop model.",
           "B": "I'm almost finished.",
-          "C": "It's about a two - hour drive from here"
+          "C": "It's about a two-hour drive from here."
         },
         "answer": "B",
-        "vietnamese_question": "Khi nào bạn sẽ hoàn tất việc thử nghiệm ứng  dụng di động mới?",
+        "vietnamese_question": "Khi nào bạn sẽ hoàn tất việc thử nghiệm ứng dụng di động mới?",
         "vietnamese_choices": {
-          "A": "Không, chỉ là một mẫu máy tính xách tay  cũ hơn.",
+          "A": "Không, chỉ là một mẫu máy tính xách tay cũ hơn.",
           "B": "Tôi gần xong rồi.",
           "C": "Cách đây khoảng hai giờ lái xe"
         },
@@ -5409,7 +5421,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-28.mp3"
+        "audio": "media/part02_practice/questions/t07_q28.mp3"
       },
       {
         "id": 29,
@@ -5435,7 +5447,7 @@ window.part02PracticeData = [
             "vi": "bài thuyết trình"
           }
         ],
-        "audio": "media/E26-T07-29.mp3"
+        "audio": "media/part02_practice/questions/t07_q29.mp3"
       },
       {
         "id": 30,
@@ -5443,10 +5455,10 @@ window.part02PracticeData = [
         "choices": {
           "A": "Yes, but it's been torn down.",
           "B": "You can hang your keys on this hook.",
-          "C": "My car has a flat tire"
+          "C": "My car has a flat tire."
         },
         "answer": "A",
-        "vietnamese_question": "Không phải trước kia đường này có bãi đỗ xe  sao?",
+        "vietnamese_question": "Không phải trước kia đường này có bãi đỗ xe sao?",
         "vietnamese_choices": {
           "A": "Đúng, nhưng nó đã bị phá bỏ.",
           "B": "Bạn có thể treo chìa khóa lên móc này.",
@@ -5467,7 +5479,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T07-30.mp3"
+        "audio": "media/part02_practice/questions/t07_q30.mp3"
       },
       {
         "id": 31,
@@ -5478,7 +5490,7 @@ window.part02PracticeData = [
           "C": "A daily schedule."
         },
         "answer": "A",
-        "vietnamese_question": "Bạn có sẵn sàng làm việc vào thứ Năm hoặc thứ  Sáu không?",
+        "vietnamese_question": "Bạn có sẵn sàng làm việc vào thứ Năm hoặc thứ Sáu không?",
         "vietnamese_choices": {
           "A": "Có buổi huấn luyện bắt buộc vào thứ Sáu.",
           "B": "Vâng, đó là một buổi biểu diễn hay.",
@@ -5505,7 +5517,7 @@ window.part02PracticeData = [
             "vi": "thiết bị"
           }
         ],
-        "audio": "media/E26-T07-31.mp3"
+        "audio": "media/part02_practice/questions/t07_q31.mp3"
       }
     ]
   },
@@ -5546,7 +5558,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-07.mp3"
+        "audio": "media/part02_practice/questions/t08_q07.mp3"
       },
       {
         "id": 8,
@@ -5572,18 +5584,18 @@ window.part02PracticeData = [
             "vi": "cuộc hẹn"
           }
         ],
-        "audio": "media/E26-T08-08.mp3"
+        "audio": "media/part02_practice/questions/t08_q08.mp3"
       },
       {
         "id": 9,
-        "question": "Why don't we have a company picnic?.",
+        "question": "Why don't we have a company picnic?",
         "choices": {
           "A": "Potato salad and green beans.",
           "B": "Because it costs a lot of money.",
           "C": "I already have that one."
         },
         "answer": "B",
-        "vietnamese_question": "Tại sao chúng ta không tổ chức một chuyến dã  ngoại cùng công ty?",
+        "vietnamese_question": "Tại sao chúng ta không tổ chức một chuyến dã ngoại cùng công ty?",
         "vietnamese_choices": {
           "A": "Salad khoai tây và đậu xanh.",
           "B": "Bởi vì nó tốn rất nhiều tiền.",
@@ -5598,7 +5610,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T08-09.mp3"
+        "audio": "media/part02_practice/questions/t08_q09.mp3"
       },
       {
         "id": 10,
@@ -5624,7 +5636,7 @@ window.part02PracticeData = [
             "vi": "hội nghị"
           }
         ],
-        "audio": "media/E26-T08-10.mp3"
+        "audio": "media/part02_practice/questions/t08_q10.mp3"
       },
       {
         "id": 11,
@@ -5656,7 +5668,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-11.mp3"
+        "audio": "media/part02_practice/questions/t08_q11.mp3"
       },
       {
         "id": 12,
@@ -5688,7 +5700,7 @@ window.part02PracticeData = [
             "vi": "sự đặt chỗ"
           }
         ],
-        "audio": "media/E26-T08-12.mp3"
+        "audio": "media/part02_practice/questions/t08_q12.mp3"
       },
       {
         "id": 13,
@@ -5699,7 +5711,7 @@ window.part02PracticeData = [
           "C": "The weather is nice right now."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có thể vui lòng tra cứu vị trí trên điện thoại  của bạn được không?",
+        "vietnamese_question": "Bạn có thể vui lòng tra cứu vị trí trên điện thoại của bạn được không?",
         "vietnamese_choices": {
           "A": "Đây là số điện thoại của tôi.",
           "B": "Được rồi, chờ một chút.",
@@ -5720,7 +5732,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-13.mp3"
+        "audio": "media/part02_practice/questions/t08_q13.mp3"
       },
       {
         "id": 14,
@@ -5746,7 +5758,7 @@ window.part02PracticeData = [
             "vi": "hội thảo"
           }
         ],
-        "audio": "media/E26-T08-14.mp3"
+        "audio": "media/part02_practice/questions/t08_q14.mp3"
       },
       {
         "id": 15,
@@ -5778,7 +5790,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-15.mp3"
+        "audio": "media/part02_practice/questions/t08_q15.mp3"
       },
       {
         "id": 16,
@@ -5789,7 +5801,7 @@ window.part02PracticeData = [
           "C": "No, it's too dark down there."
         },
         "answer": "C",
-        "vietnamese_question": "Chúng ta có nên chuyển phòng chờ của nhân  viên xuống tầng hầm không?",
+        "vietnamese_question": "Chúng ta có nên chuyển phòng chờ của nhân viên xuống tầng hầm không?",
         "vietnamese_choices": {
           "A": "Anh ấy đã tham dự buổi nói chuyện.",
           "B": "Việc đặt chỗ dành cho hai người.",
@@ -5816,7 +5828,7 @@ window.part02PracticeData = [
             "vi": "phòng chờ"
           }
         ],
-        "audio": "media/E26-T08-16.mp3"
+        "audio": "media/part02_practice/questions/t08_q16.mp3"
       },
       {
         "id": 17,
@@ -5827,7 +5839,7 @@ window.part02PracticeData = [
           "C": "A different password."
         },
         "answer": "A",
-        "vietnamese_question": "Gần đây bạn đã thay hộp mực máy in màu phải  không?",
+        "vietnamese_question": "Gần đây bạn đã thay hộp mực máy in màu phải không?",
         "vietnamese_choices": {
           "A": "Đúng, chỉ vài ngày trước.",
           "B": "Họ đang sơn tường màu xanh lam.",
@@ -5842,24 +5854,24 @@ window.part02PracticeData = [
             "vi": "gần đây"
           }
         ],
-        "audio": "media/E26-T08-17.mp3"
+        "audio": "media/part02_practice/questions/t08_q17.mp3"
       },
       {
         "id": 18,
         "question": "We're not going to be able to fit everyone in this space.",
         "choices": {
-          "A": "A professional - development workshop.",
+          "A": "A professional-development workshop.",
           "B": "There's a larger room down the hallway.",
-          "C": "These shoes are exactly the right size"
+          "C": "These shoes are exactly the right size."
         },
         "answer": "B",
-        "vietnamese_question": "Chúng tôi sẽ không thể vừa tất cả mọi người  trong không gian này.",
+        "vietnamese_question": "Chúng tôi sẽ không thể vừa tất cả mọi người trong không gian này.",
         "vietnamese_choices": {
           "A": "Một hội thảo phát triển chuyên môn.",
-          "B": "Có một căn phòng lớn hơn ở cuối hành  lang.",
+          "B": "Có một căn phòng lớn hơn ở cuối hành lang.",
           "C": "Đôi giày này đúng kích cỡ"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"There's a larger room down the hallway.\" (<em>Có một căn phòng lớn hơn ở cuối hành  lang.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"There's a larger room down the hallway.\" (<em>Có một căn phòng lớn hơn ở cuối hành lang.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "workshop",
@@ -5868,7 +5880,7 @@ window.part02PracticeData = [
             "vi": "buổi tập huấn"
           }
         ],
-        "audio": "media/E26-T08-18.mp3"
+        "audio": "media/part02_practice/questions/t08_q18.mp3"
       },
       {
         "id": 19,
@@ -5894,7 +5906,7 @@ window.part02PracticeData = [
             "vi": "phòng ban"
           }
         ],
-        "audio": "media/E26-T08-19.mp3"
+        "audio": "media/part02_practice/questions/t08_q19.mp3"
       },
       {
         "id": 20,
@@ -5926,7 +5938,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-20.mp3"
+        "audio": "media/part02_practice/questions/t08_q20.mp3"
       },
       {
         "id": 21,
@@ -5952,7 +5964,7 @@ window.part02PracticeData = [
             "vi": "khách hàng"
           }
         ],
-        "audio": "media/E26-T08-21.mp3"
+        "audio": "media/part02_practice/questions/t08_q21.mp3"
       },
       {
         "id": 22,
@@ -5960,16 +5972,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "This letter needs more postage.",
           "B": "An incorrect serial code.",
-          "C": "Waseem is the software administrator"
+          "C": "Waseem is the software administrator."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn có thường xuyên phải cài đặt bản cập nhật  không?",
+        "vietnamese_question": "Bạn có thường xuyên phải cài đặt bản cập nhật không?",
         "vietnamese_choices": {
           "A": "Bức thư này cần thêm bưu phí.",
           "B": "Mã nối tiếp không chính xác.",
           "C": "Waseem là quản trị viên phần mềm"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW OFTEN (TẦN SUẤT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Waseem is the software administrator\" (<em>Waseem là quản trị viên phần mềm</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp tần suất (once a week, every month, rarely...).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW OFTEN (TẦN SUẤT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Waseem is the software administrator.\" (<em>Waseem là quản trị viên phần mềm</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp tần suất (once a week, every month, rarely...).</p>\n</div>",
         "vocabulary": [
           {
             "en": "often",
@@ -5984,7 +5996,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-22.mp3"
+        "audio": "media/part02_practice/questions/t08_q22.mp3"
       },
       {
         "id": 23,
@@ -6016,7 +6028,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-23.mp3"
+        "audio": "media/part02_practice/questions/t08_q23.mp3"
       },
       {
         "id": 24,
@@ -6030,10 +6042,10 @@ window.part02PracticeData = [
         "vietnamese_question": "Có danh sách khách đã được mời không?",
         "vietnamese_choices": {
           "A": "Phòng 305 đang được chuẩn bị cho bạn.",
-          "B": "Người cung cấp thực phẩm có tất cả thông  tin cần thiết.",
+          "B": "Người cung cấp thực phẩm có tất cả thông tin cần thiết.",
           "C": "Một phòng tiệc trên Phố Chính."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"The caterer has all the necessary information.\" (<em>Người cung cấp thực phẩm có tất cả thông  tin cần thiết.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"The caterer has all the necessary information.\" (<em>Người cung cấp thực phẩm có tất cả thông tin cần thiết.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
           {
             "en": "list",
@@ -6048,7 +6060,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-24.mp3"
+        "audio": "media/part02_practice/questions/t08_q24.mp3"
       },
       {
         "id": 25,
@@ -6059,7 +6071,7 @@ window.part02PracticeData = [
           "C": "It's in the next shipment."
         },
         "answer": "A",
-        "vietnamese_question": "Gửi bằng chuyển phát nhanh hay chuyển phát  qua đêm sẽ rẻ hơn?",
+        "vietnamese_question": "Gửi bằng chuyển phát nhanh hay chuyển phát qua đêm sẽ rẻ hơn?",
         "vietnamese_choices": {
           "A": "Thư chuyển phát nhanh ít tốn kém hơn.",
           "B": "Tôi muốn một cái lớn.",
@@ -6080,7 +6092,7 @@ window.part02PracticeData = [
             "vi": "đắt đỏ"
           }
         ],
-        "audio": "media/E26-T08-25.mp3"
+        "audio": "media/part02_practice/questions/t08_q25.mp3"
       },
       {
         "id": 26,
@@ -6091,7 +6103,7 @@ window.part02PracticeData = [
           "C": "No, I shut off all the lights."
         },
         "answer": "A",
-        "vietnamese_question": "Làm cách nào để bật điều hòa ở văn phòng  này?",
+        "vietnamese_question": "Làm cách nào để bật điều hòa ở văn phòng này?",
         "vietnamese_choices": {
           "A": "Nhiệt độ được điều khiển tự động.",
           "B": "Rẽ trái sau bưu điện.",
@@ -6112,7 +6124,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-26.mp3"
+        "audio": "media/part02_practice/questions/t08_q26.mp3"
       },
       {
         "id": 27,
@@ -6120,16 +6132,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "I have my own car.",
           "B": "That's enough, thanks.",
-          "C": "I misplaced the instruction manual"
+          "C": "I misplaced the instruction manual."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn đã huấn luyện Hikaru cách sử dụng kính  hiển vi mới chưa?",
+        "vietnamese_question": "Bạn đã huấn luyện Hikaru cách sử dụng kính hiển vi mới chưa?",
         "vietnamese_choices": {
           "A": "Tôi có ô tô riêng.",
           "B": "Thế là đủ rồi, cảm ơn.",
           "C": "Tôi đã làm thất lạc hướng dẫn sử dụng"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I misplaced the instruction manual\" (<em>Tôi đã làm thất lạc hướng dẫn sử dụng</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I misplaced the instruction manual.\" (<em>Tôi đã làm thất lạc hướng dẫn sử dụng</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "have",
@@ -6144,7 +6156,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-27.mp3"
+        "audio": "media/part02_practice/questions/t08_q27.mp3"
       },
       {
         "id": 28,
@@ -6155,7 +6167,7 @@ window.part02PracticeData = [
           "C": "A law firm in Glenview."
         },
         "answer": "A",
-        "vietnamese_question": "Chúng ta sẽ họp trong tuần này để thảo luận về  việc sáp nhập sắp tới.",
+        "vietnamese_question": "Chúng ta sẽ họp trong tuần này để thảo luận về việc sáp nhập sắp tới.",
         "vietnamese_choices": {
           "A": "Tôi có nó trên lịch của tôi.",
           "B": "Vui lòng nhập vào đường cao tốc.",
@@ -6176,7 +6188,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-28.mp3"
+        "audio": "media/part02_practice/questions/t08_q28.mp3"
       },
       {
         "id": 29,
@@ -6208,24 +6220,24 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T08-29.mp3"
+        "audio": "media/part02_practice/questions/t08_q29.mp3"
       },
       {
         "id": 30,
         "question": "Did the deal to lease the equipment go through?",
         "choices": {
-          "A": "A one - bedroom apartment.",
+          "A": "A one-bedroom apartment.",
           "B": "The supply catalog is in the filing cabinet.",
           "C": "Not yet - but we hope to have it finalized this quarter."
         },
         "answer": "C",
-        "vietnamese_question": "Thỏa thuận cho thuê thiết bị có được thực hiện  không?",
+        "vietnamese_question": "Thỏa thuận cho thuê thiết bị có được thực hiện không?",
         "vietnamese_choices": {
           "A": "Căn hộ một phòng ngủ.",
           "B": "Danh mục cung cấp nằm trong tủ hồ sơ.",
-          "C": "Chưa-nhưng chúng tôi hy vọng nó sẽ được  hoàn thành trong quý này."
+          "C": "Chưa-nhưng chúng tôi hy vọng nó sẽ được hoàn thành trong quý này."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Not yet - but we hope to have it finalized this quarter.\" (<em>Chưa-nhưng chúng tôi hy vọng nó sẽ được  hoàn thành trong quý này.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Not yet - but we hope to have it finalized this quarter.\" (<em>Chưa-nhưng chúng tôi hy vọng nó sẽ được hoàn thành trong quý này.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "equipment",
@@ -6234,7 +6246,7 @@ window.part02PracticeData = [
             "vi": "thiết bị"
           }
         ],
-        "audio": "media/E26-T08-30.mp3"
+        "audio": "media/part02_practice/questions/t08_q30.mp3"
       },
       {
         "id": 31,
@@ -6248,10 +6260,10 @@ window.part02PracticeData = [
         "vietnamese_question": "Bạn có muốn lái thử chiếc xe này không?",
         "vietnamese_choices": {
           "A": "Bởi vì không có chỗ đậu xe.",
-          "B": "Tôi nghe nói một mẫu mới sẽ ra mắt vào  tháng 3.",
+          "B": "Tôi nghe nói một mẫu mới sẽ ra mắt vào tháng 3.",
           "C": "Chỉ có hai cánh cửa."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU ĐỀ NGHỊ & LỜI MỜI (SUGGESTIONS / INVITATIONS)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I heard a new model is coming out in March.\" (<em>Tôi nghe nói một mẫu mới sẽ ra mắt vào  tháng 3.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thể hiện sự đồng ý (Sure, That sounds great) hoặc từ chối lịch sự kèm lý do.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU ĐỀ NGHỊ & LỜI MỜI (SUGGESTIONS / INVITATIONS)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"I heard a new model is coming out in March.\" (<em>Tôi nghe nói một mẫu mới sẽ ra mắt vào tháng 3.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thể hiện sự đồng ý (Sure, That sounds great) hoặc từ chối lịch sự kèm lý do.</p>\n</div>",
         "vocabulary": [
           {
             "en": "available",
@@ -6260,7 +6272,7 @@ window.part02PracticeData = [
             "vi": "có sẵn, rảnh rỗi"
           }
         ],
-        "audio": "media/E26-T08-31.mp3"
+        "audio": "media/part02_practice/questions/t08_q31.mp3"
       }
     ]
   },
@@ -6295,7 +6307,7 @@ window.part02PracticeData = [
             "vi": "trợ lý"
           }
         ],
-        "audio": "media/E26-T09-07.mp3"
+        "audio": "media/part02_practice/questions/t09_q07.mp3"
       },
       {
         "id": 8,
@@ -6321,7 +6333,7 @@ window.part02PracticeData = [
             "vi": "hội thảo"
           }
         ],
-        "audio": "media/E26-T09-08.mp3"
+        "audio": "media/part02_practice/questions/t09_q08.mp3"
       },
       {
         "id": 9,
@@ -6353,7 +6365,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-09.mp3"
+        "audio": "media/part02_practice/questions/t09_q09.mp3"
       },
       {
         "id": 10,
@@ -6364,7 +6376,7 @@ window.part02PracticeData = [
           "C": "Try the file cabinet."
         },
         "answer": "A",
-        "vietnamese_question": "Bạn đã làm gì cho bữa tiệc nghỉ hưu của ông  Sugiyama?",
+        "vietnamese_question": "Bạn đã làm gì cho bữa tiệc nghỉ hưu của ông Sugiyama?",
         "vietnamese_choices": {
           "A": "Tôi đã giúp trang trí căn phòng.",
           "B": "Anh ấy không mệt.",
@@ -6385,7 +6397,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-10.mp3"
+        "audio": "media/part02_practice/questions/t09_q10.mp3"
       },
       {
         "id": 11,
@@ -6417,13 +6429,13 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-11.mp3"
+        "audio": "media/part02_practice/questions/t09_q11.mp3"
       },
       {
         "id": 12,
         "question": "Isn't this the last train out?",
         "choices": {
-          "A": "A round - trip ticket to New York.",
+          "A": "A round-trip ticket to New York.",
           "B": "The office next door.",
           "C": "No, there's one more."
         },
@@ -6443,7 +6455,7 @@ window.part02PracticeData = [
             "vi": "vé"
           }
         ],
-        "audio": "media/E26-T09-12.mp3"
+        "audio": "media/part02_practice/questions/t09_q12.mp3"
       },
       {
         "id": 13,
@@ -6454,7 +6466,7 @@ window.part02PracticeData = [
           "C": "Yes, the guidebook was helpful."
         },
         "answer": "A",
-        "vietnamese_question": "Điểm nổi bật của chuyến thăm thành phố của  bạn vào cuối tuần này là gì?",
+        "vietnamese_question": "Điểm nổi bật của chuyến thăm thành phố của bạn vào cuối tuần này là gì?",
         "vietnamese_choices": {
           "A": "Chắc chắn là bảo tàng nghệ thuật!",
           "B": "Xin lỗi, tôi đã có kế hoạch rồi.",
@@ -6469,7 +6481,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T09-13.mp3"
+        "audio": "media/part02_practice/questions/t09_q13.mp3"
       },
       {
         "id": 14,
@@ -6480,7 +6492,7 @@ window.part02PracticeData = [
           "C": "No, I think that's the right address."
         },
         "answer": "A",
-        "vietnamese_question": "Câu chuyện tin tức về việc sáp nhập được xuất  bản khi nào?",
+        "vietnamese_question": "Câu chuyện tin tức về việc sáp nhập được xuất bản khi nào?",
         "vietnamese_choices": {
           "A": "Một vài tuần trước.",
           "B": "Một phóng viên của tờ Springfield News.",
@@ -6501,7 +6513,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-14.mp3"
+        "audio": "media/part02_practice/questions/t09_q14.mp3"
       },
       {
         "id": 15,
@@ -6512,7 +6524,7 @@ window.part02PracticeData = [
           "C": "I bought some lightbulbs."
         },
         "answer": "B",
-        "vietnamese_question": "Chúng ta cần lắp đặt hệ thống an ninh tại văn  phòng.",
+        "vietnamese_question": "Chúng ta cần lắp đặt hệ thống an ninh tại văn phòng.",
         "vietnamese_choices": {
           "A": "Đó là huy hiệu ID mới.",
           "B": "Vâng, tôi nghĩ đó là một ý tưởng hay.",
@@ -6533,7 +6545,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-15.mp3"
+        "audio": "media/part02_practice/questions/t09_q15.mp3"
       },
       {
         "id": 16,
@@ -6565,7 +6577,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-16.mp3"
+        "audio": "media/part02_practice/questions/t09_q16.mp3"
       },
       {
         "id": 17,
@@ -6576,7 +6588,7 @@ window.part02PracticeData = [
           "C": "Sure, I can take a photograph."
         },
         "answer": "A",
-        "vietnamese_question": "Khi nào chúng ta có thể sử dụng máy in màu  mới?",
+        "vietnamese_question": "Khi nào chúng ta có thể sử dụng máy in màu mới?",
         "vietnamese_choices": {
           "A": "Chiều nay.",
           "B": "Được rồi, nghe điều đó thật vui.",
@@ -6597,7 +6609,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-17.mp3"
+        "audio": "media/part02_practice/questions/t09_q17.mp3"
       },
       {
         "id": 18,
@@ -6608,7 +6620,7 @@ window.part02PracticeData = [
           "C": "We have enough for three months."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn có thể đặt thêm vài cái đĩa giấy được  không?",
+        "vietnamese_question": "Bạn có thể đặt thêm vài cái đĩa giấy được không?",
         "vietnamese_choices": {
           "A": "Cảm ơn vì lời mời.",
           "B": "Anh ấy có việc làm ở nhà hàng.",
@@ -6629,7 +6641,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-18.mp3"
+        "audio": "media/part02_practice/questions/t09_q18.mp3"
       },
       {
         "id": 19,
@@ -6640,7 +6652,7 @@ window.part02PracticeData = [
           "C": "I don't cook with vegetable oil."
         },
         "answer": "B",
-        "vietnamese_question": "Tôi có nên nhận đơn hàng đồ ăn cho cô Santos  không?",
+        "vietnamese_question": "Tôi có nên nhận đơn hàng đồ ăn cho cô Santos không?",
         "vietnamese_choices": {
           "A": "Chúng ta hãy gặp nhau vào tuần tới.",
           "B": "Vâng, nếu bạn có thời gian.",
@@ -6661,7 +6673,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-19.mp3"
+        "audio": "media/part02_practice/questions/t09_q19.mp3"
       },
       {
         "id": 20,
@@ -6672,7 +6684,7 @@ window.part02PracticeData = [
           "C": "I'll take the elevator."
         },
         "answer": "A",
-        "vietnamese_question": "Tại sao bạn không phân phát tờ rơi này khắp  văn phòng?",
+        "vietnamese_question": "Tại sao bạn không phân phát tờ rơi này khắp văn phòng?",
         "vietnamese_choices": {
           "A": "Chắc chắn-đó là một ý tưởng tuyệt vời.",
           "B": "Chuyến bay của chúng tôi bị hủy.",
@@ -6687,7 +6699,7 @@ window.part02PracticeData = [
             "vi": "chuyến bay"
           }
         ],
-        "audio": "media/E26-T09-20.mp3"
+        "audio": "media/part02_practice/questions/t09_q20.mp3"
       },
       {
         "id": 21,
@@ -6701,7 +6713,7 @@ window.part02PracticeData = [
         "vietnamese_question": "Bạn có hay đi xem ca nhạc không?",
         "vietnamese_choices": {
           "A": "Tôi đạp xe đi làm hàng ngày.",
-          "B": "Không, anh ấy không phải là nhạc sĩ  chuyên nghiệp.",
+          "B": "Không, anh ấy không phải là nhạc sĩ chuyên nghiệp.",
           "C": "Tôi không có nhiều thời gian rảnh."
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW OFTEN (TẦN SUẤT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I don't have a lot of free time.\" (<em>Tôi không có nhiều thời gian rảnh.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án cung cấp tần suất (once a week, every month, rarely...).</p>\n</div>",
@@ -6719,7 +6731,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-21.mp3"
+        "audio": "media/part02_practice/questions/t09_q21.mp3"
       },
       {
         "id": 22,
@@ -6730,7 +6742,7 @@ window.part02PracticeData = [
           "C": "I printed it on both sides."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có muốn tôi sửa máy in ở văn phòng của  bạn không?",
+        "vietnamese_question": "Bạn có muốn tôi sửa máy in ở văn phòng của bạn không?",
         "vietnamese_choices": {
           "A": "Một tài liệu chính thức.",
           "B": "Vâng, điều đó sẽ hữu ích.",
@@ -6751,7 +6763,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-22.mp3"
+        "audio": "media/part02_practice/questions/t09_q22.mp3"
       },
       {
         "id": 23,
@@ -6762,7 +6774,7 @@ window.part02PracticeData = [
           "C": "Two square kilometers."
         },
         "answer": "A",
-        "vietnamese_question": "Kho của công ty sẽ được xây dựng ở thành phố  hay xa hơn?",
+        "vietnamese_question": "Kho của công ty sẽ được xây dựng ở thành phố hay xa hơn?",
         "vietnamese_choices": {
           "A": "Nó sẽ ở trong thành phố.",
           "B": "Vâng, anh ấy đang mặc áo len màu đỏ.",
@@ -6777,7 +6789,7 @@ window.part02PracticeData = [
             "vi": "kho hàng"
           }
         ],
-        "audio": "media/E26-T09-23.mp3"
+        "audio": "media/part02_practice/questions/t09_q23.mp3"
       },
       {
         "id": 24,
@@ -6803,7 +6815,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T09-24.mp3"
+        "audio": "media/part02_practice/questions/t09_q24.mp3"
       },
       {
         "id": 25,
@@ -6814,7 +6826,7 @@ window.part02PracticeData = [
           "C": "People like watching videos."
         },
         "answer": "C",
-        "vietnamese_question": "Làm thế nào chúng ta có thể đào tạo tất cả các  thành viên mới trong nhóm?",
+        "vietnamese_question": "Làm thế nào chúng ta có thể đào tạo tất cả các thành viên mới trong nhóm?",
         "vietnamese_choices": {
           "A": "Vâng, tôi đã làm việc đó.",
           "B": "Nó không lâu như chúng tôi nghĩ.",
@@ -6835,7 +6847,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-25.mp3"
+        "audio": "media/part02_practice/questions/t09_q25.mp3"
       },
       {
         "id": 26,
@@ -6846,9 +6858,9 @@ window.part02PracticeData = [
           "C": "Because the party decorations were expensive."
         },
         "answer": "B",
-        "vietnamese_question": "Bữa tiệc dự kiến bắt đầu lúc 6 giờ tối phải  không?",
+        "vietnamese_question": "Bữa tiệc dự kiến bắt đầu lúc 6 giờ tối phải không?",
         "vietnamese_choices": {
-          "A": "Tôi đã thêm tên cô ấy vào danh sách khách  mời.",
+          "A": "Tôi đã thêm tên cô ấy vào danh sách khách mời.",
           "B": "Không, lời mời ghi là bảy.",
           "C": "Bởi vì đồ trang trí bữa tiệc rất đắt tiền."
         },
@@ -6861,7 +6873,7 @@ window.part02PracticeData = [
             "vi": "đắt đỏ"
           }
         ],
-        "audio": "media/E26-T09-26.mp3"
+        "audio": "media/part02_practice/questions/t09_q26.mp3"
       },
       {
         "id": 27,
@@ -6869,10 +6881,10 @@ window.part02PracticeData = [
         "choices": {
           "A": "She'll be here soon.",
           "B": "You dropped your pen.",
-          "C": "You're right about that"
+          "C": "You're right about that."
         },
         "answer": "A",
-        "vietnamese_question": "Người quản lý muốn chúng tôi đến lấy hàng  hay giao hàng?",
+        "vietnamese_question": "Người quản lý muốn chúng tôi đến lấy hàng hay giao hàng?",
         "vietnamese_choices": {
           "A": "Cô ấy sẽ đến đây sớm thôi.",
           "B": "Bạn làm rơi bút.",
@@ -6893,7 +6905,7 @@ window.part02PracticeData = [
             "vi": "vật tư, đồ dùng"
           }
         ],
-        "audio": "media/E26-T09-27.mp3"
+        "audio": "media/part02_practice/questions/t09_q27.mp3"
       },
       {
         "id": 28,
@@ -6901,7 +6913,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "His briefcase is on his desk.",
           "B": "Yes, it is a nice office.",
-          "C": "I can come in for just a minute"
+          "C": "I can come in for just a minute."
         },
         "answer": "A",
         "vietnamese_question": "Hôm nay Jacob có đến văn phòng không?",
@@ -6925,7 +6937,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-28.mp3"
+        "audio": "media/part02_practice/questions/t09_q28.mp3"
       },
       {
         "id": 29,
@@ -6936,13 +6948,13 @@ window.part02PracticeData = [
           "C": "I enjoyed that film."
         },
         "answer": "A",
-        "vietnamese_question": "Bạn có tham gia cùng nhóm cho cuộc họp hôm  nay không?",
+        "vietnamese_question": "Bạn có tham gia cùng nhóm cho cuộc họp hôm nay không?",
         "vietnamese_choices": {
-          "A": "Khách hàng hàng đầu của tôi ở trong thị  trấn.",
+          "A": "Khách hàng hàng đầu của tôi ở trong thị trấn.",
           "B": "Tiệm bánh Vittorio's.",
           "C": "Tôi rất thích bộ phim đó."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"My top client is in town.\" (<em>Khách hàng hàng đầu của tôi ở trong thị  trấn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"My top client is in town.\" (<em>Khách hàng hàng đầu của tôi ở trong thị trấn.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "client",
@@ -6951,7 +6963,7 @@ window.part02PracticeData = [
             "vi": "khách hàng"
           }
         ],
-        "audio": "media/E26-T09-29.mp3"
+        "audio": "media/part02_practice/questions/t09_q29.mp3"
       },
       {
         "id": 30,
@@ -6962,7 +6974,7 @@ window.part02PracticeData = [
           "C": "Do you need any help with it?"
         },
         "answer": "C",
-        "vietnamese_question": "Tôi đang tổ chức một chương trình ăn uống  lành mạnh tại văn phòng.",
+        "vietnamese_question": "Tôi đang tổ chức một chương trình ăn uống lành mạnh tại văn phòng.",
         "vietnamese_choices": {
           "A": "Cô ấy học ở chương trình sân khấu đó.",
           "B": "Ngay bên cạnh máy chiếu mới.",
@@ -6983,7 +6995,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T09-30.mp3"
+        "audio": "media/part02_practice/questions/t09_q30.mp3"
       },
       {
         "id": 31,
@@ -6991,7 +7003,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "The largest model available.",
           "B": "Only a few more times.",
-          "C": "It's been running perfectly since I bought it"
+          "C": "It's been running perfectly since I bought it."
         },
         "answer": "C",
         "vietnamese_question": "Xe của bạn có đắt tiền để sửa chữa không?",
@@ -7000,7 +7012,7 @@ window.part02PracticeData = [
           "B": "Chỉ một vài lần nữa thôi.",
           "C": "Nó đã chạy hoàn hảo kể từ khi tôi mua nó"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It's been running perfectly since I bought it\" (<em>Nó đã chạy hoàn hảo kể từ khi tôi mua nó</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"It's been running perfectly since I bought it.\" (<em>Nó đã chạy hoàn hảo kể từ khi tôi mua nó</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "repair",
@@ -7021,7 +7033,7 @@ window.part02PracticeData = [
             "vi": "có sẵn, rảnh rỗi"
           }
         ],
-        "audio": "media/E26-T09-31.mp3"
+        "audio": "media/part02_practice/questions/t09_q31.mp3"
       }
     ]
   },
@@ -7056,18 +7068,18 @@ window.part02PracticeData = [
             "vi": "giao hàng"
           }
         ],
-        "audio": "media/E26-T10-07.mp3"
+        "audio": "media/part02_practice/questions/t10_q07.mp3"
       },
       {
         "id": 8,
         "question": "Is your flight tomorrow or this afternoon?",
         "choices": {
-          "A": "In - flight snacks.",
+          "A": "In-flight snacks.",
           "B": "It's this afternoon.",
           "C": "At baggage claim."
         },
         "answer": "B",
-        "vietnamese_question": "Chuyến bay của bạn là ngày mai hay chiều  nay?",
+        "vietnamese_question": "Chuyến bay của bạn là ngày mai hay chiều nay?",
         "vietnamese_choices": {
           "A": "Đồ ăn nhẹ trên chuyến bay.",
           "B": "Đó là chiều nay.",
@@ -7088,7 +7100,7 @@ window.part02PracticeData = [
             "vi": "hành lý"
           }
         ],
-        "audio": "media/E26-T10-08.mp3"
+        "audio": "media/part02_practice/questions/t10_q08.mp3"
       },
       {
         "id": 9,
@@ -7099,7 +7111,7 @@ window.part02PracticeData = [
           "C": "Every other week."
         },
         "answer": "C",
-        "vietnamese_question": "Nhóm nghiên cứu lên lịch các buổi đào tạo  thường xuyên như thế nào?",
+        "vietnamese_question": "Nhóm nghiên cứu lên lịch các buổi đào tạo thường xuyên như thế nào?",
         "vietnamese_choices": {
           "A": "Tôi nghĩ là trưởng nhóm.",
           "B": "Một số phần mềm mới.",
@@ -7120,7 +7132,7 @@ window.part02PracticeData = [
             "vi": "đào tạo, huấn luyện"
           }
         ],
-        "audio": "media/E26-T10-09.mp3"
+        "audio": "media/part02_practice/questions/t10_q09.mp3"
       },
       {
         "id": 10,
@@ -7128,10 +7140,10 @@ window.part02PracticeData = [
         "choices": {
           "A": "Sure, that's fine.",
           "B": "I don't believe him either.",
-          "C": "The gas station on your right"
+          "C": "The gas station on your right."
         },
         "answer": "A",
-        "vietnamese_question": "Tôi có thể thanh toán hóa đơn bằng thẻ tín dụng  không?",
+        "vietnamese_question": "Tôi có thể thanh toán hóa đơn bằng thẻ tín dụng không?",
         "vietnamese_choices": {
           "A": "Chắc chắn rồi, điều đó ổn thôi.",
           "B": "Tôi cũng không tin anh ấy.",
@@ -7152,7 +7164,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-10.mp3"
+        "audio": "media/part02_practice/questions/t10_q10.mp3"
       },
       {
         "id": 11,
@@ -7178,18 +7190,18 @@ window.part02PracticeData = [
             "vi": "bản đề xuất"
           }
         ],
-        "audio": "media/E26-T10-11.mp3"
+        "audio": "media/part02_practice/questions/t10_q11.mp3"
       },
       {
         "id": 12,
         "question": "Where do you plan to stay during your visit to the city?",
         "choices": {
           "A": "I thought the building had twelve floors.",
-          "B": "Oh, just to present at a conferènce.",
+          "B": "Oh, just to present at a conference.",
           "C": "At a friend's house."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn dự định ở đâu trong chuyến thăm thành  phố?",
+        "vietnamese_question": "Bạn dự định ở đâu trong chuyến thăm thành phố?",
         "vietnamese_choices": {
           "A": "Tôi nghĩ tòa nhà có 12 tầng.",
           "B": "Ồ, chỉ để trình bày tại một hội nghị thôi.",
@@ -7210,7 +7222,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-12.mp3"
+        "audio": "media/part02_practice/questions/t10_q12.mp3"
       },
       {
         "id": 13,
@@ -7242,7 +7254,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-13.mp3"
+        "audio": "media/part02_practice/questions/t10_q13.mp3"
       },
       {
         "id": 14,
@@ -7253,7 +7265,7 @@ window.part02PracticeData = [
           "C": "I only take dance."
         },
         "answer": "C",
-        "vietnamese_question": "Bạn cũng tham gia các lớp tập thể dục hay chỉ  học khiêu vũ?",
+        "vietnamese_question": "Bạn cũng tham gia các lớp tập thể dục hay chỉ học khiêu vũ?",
         "vietnamese_choices": {
           "A": "Người hướng dẫn dạy vào buổi sáng.",
           "B": "Đôi giày này vừa vặn hoàn hảo.",
@@ -7274,7 +7286,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-14.mp3"
+        "audio": "media/part02_practice/questions/t10_q14.mp3"
       },
       {
         "id": 15,
@@ -7285,7 +7297,7 @@ window.part02PracticeData = [
           "C": "Within the next few days."
         },
         "answer": "C",
-        "vietnamese_question": "Khi nào máy pha cà phê mới sẽ được lắp đặt ở  sảnh?",
+        "vietnamese_question": "Khi nào máy pha cà phê mới sẽ được lắp đặt ở sảnh?",
         "vietnamese_choices": {
           "A": "Không, nó không đắt.",
           "B": "Cửa trước không khóa.",
@@ -7300,24 +7312,24 @@ window.part02PracticeData = [
             "vi": "đắt đỏ"
           }
         ],
-        "audio": "media/E26-T10-15.mp3"
+        "audio": "media/part02_practice/questions/t10_q15.mp3"
       },
       {
         "id": 16,
         "question": "The new marketing director will be hired soon, won't she?",
         "choices": {
-          "A": "Didn't you check your e - mail?",
+          "A": "Didn't you check your e-mail?",
           "B": "It's about ten minutes from here.",
           "C": "No, a little lower."
         },
         "answer": "A",
-        "vietnamese_question": "Giám đốc tiếp thị mới sẽ sớm được thuê phải  không?",
+        "vietnamese_question": "Giám đốc tiếp thị mới sẽ sớm được thuê phải không?",
         "vietnamese_choices": {
           "A": "Bạn chưa kiểm tra e-mail của mình à?",
           "B": "Cách đây khoảng mười phút.",
           "C": "Không, thấp hơn một chút."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Didn't you check your e - mail?\" (<em>Bạn chưa kiểm tra e-mail của mình à?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU TRẦN THUẬT (STATEMENT)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Didn't you check your e-mail?\" (<em>Bạn chưa kiểm tra e-mail của mình à?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Không có từ để hỏi; cần chọn câu phản hồi tự nhiên, thể hiện sự đồng tình, giải quyết vấn đề hoặc cung cấp thêm thông tin.</p>\n</div>",
         "vocabulary": [
           {
             "en": "director",
@@ -7326,7 +7338,7 @@ window.part02PracticeData = [
             "vi": "giám đốc"
           }
         ],
-        "audio": "media/E26-T10-16.mp3"
+        "audio": "media/part02_practice/questions/t10_q16.mp3"
       },
       {
         "id": 17,
@@ -7334,10 +7346,10 @@ window.part02PracticeData = [
         "choices": {
           "A": "Insook can do those for you.",
           "B": "A conference in Chicago.",
-          "C": "No, in Research and Development"
+          "C": "No, in Research and Development."
         },
         "answer": "A",
-        "vietnamese_question": "Tôi thực sự cần một số trợ giúp về đồ họa trình  bày.",
+        "vietnamese_question": "Tôi thực sự cần một số trợ giúp về đồ họa trình bày.",
         "vietnamese_choices": {
           "A": "Insook có thể làm những việc đó cho bạn.",
           "B": "Một hội nghị ở Chicago.",
@@ -7358,7 +7370,7 @@ window.part02PracticeData = [
             "vi": "bài thuyết trình"
           }
         ],
-        "audio": "media/E26-T10-17.mp3"
+        "audio": "media/part02_practice/questions/t10_q17.mp3"
       },
       {
         "id": 18,
@@ -7369,11 +7381,11 @@ window.part02PracticeData = [
           "C": "Thanks, the scheduling software has been helpful!"
         },
         "answer": "A",
-        "vietnamese_question": "Tôi có thể nói chuyện với ai về việc đặt lịch cắt  tóc?",
+        "vietnamese_question": "Tôi có thể nói chuyện với ai về việc đặt lịch cắt tóc?",
         "vietnamese_choices": {
           "A": "Chiều mai bạn có rảnh không?",
           "B": "Làm ơn đừng quá ngắn ở hai bên.",
-          "C": "Cảm ơn, phần mềm lập kế hoạch rất hữu  ích!"
+          "C": "Cảm ơn, phần mềm lập kế hoạch rất hữu ích!"
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHO (HỎI NGƯỜI / TRÁCH NHIỆM)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Will you be available tomorrow afternoon?\" (<em>Chiều mai bạn có rảnh không?</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường là tên người, chức vụ, bộ phận hoặc đại từ chỉ người. Tránh chọn đáp án trả lời Yes/No.</p>\n</div>",
         "vocabulary": [
@@ -7384,24 +7396,24 @@ window.part02PracticeData = [
             "vi": "có sẵn, rảnh rỗi"
           }
         ],
-        "audio": "media/E26-T10-18.mp3"
+        "audio": "media/part02_practice/questions/t10_q18.mp3"
       },
       {
         "id": 19,
         "question": "Did you already prepare the agenda for the department meeting?",
         "choices": {
           "A": "We should close the windows.",
-          "B": "It was postponed",
-          "C": "I bought them at the department store"
+          "B": "It was postponed.",
+          "C": "I bought them at the department store."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn đã chuẩn bị chương trình nghị sự cho cuộc  họp bộ phận chưa?",
+        "vietnamese_question": "Bạn đã chuẩn bị chương trình nghị sự cho cuộc họp bộ phận chưa?",
         "vietnamese_choices": {
           "A": "Chúng ta nên đóng cửa sổ lại.",
           "B": "Nó đã bị hoãn lại",
           "C": "Tôi đã mua chúng ở cửa hàng bách hóa"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"It was postponed\" (<em>Nó đã bị hoãn lại</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"It was postponed.\" (<em>Nó đã bị hoãn lại</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
           {
             "en": "department",
@@ -7416,7 +7428,7 @@ window.part02PracticeData = [
             "vi": "đã... rồi"
           }
         ],
-        "audio": "media/E26-T10-19.mp3"
+        "audio": "media/part02_practice/questions/t10_q19.mp3"
       },
       {
         "id": 20,
@@ -7424,7 +7436,7 @@ window.part02PracticeData = [
         "choices": {
           "A": "The coffee shop on Bayview Avenue.",
           "B": "I prefer drinking tea.",
-          "C": "We'll need to place an order for paper"
+          "C": "We'll need to place an order for paper."
         },
         "answer": "B",
         "vietnamese_question": "Bạn uống cà phê có hoặc không có sữa?",
@@ -7448,7 +7460,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-20.mp3"
+        "audio": "media/part02_practice/questions/t10_q20.mp3"
       },
       {
         "id": 21,
@@ -7461,11 +7473,11 @@ window.part02PracticeData = [
         "answer": "A",
         "vietnamese_question": "Tại sao bạn cài đặt phần mềm mới?",
         "vietnamese_choices": {
-          "A": "Bởi vì phần mềm hiện tại của chúng tôi đã  lỗi thời.",
+          "A": "Bởi vì phần mềm hiện tại của chúng tôi đã lỗi thời.",
           "B": "Chúng tôi thuê một gian hàng lớn.",
           "C": "Tôi sẽ mặc áo khoác."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Because our current software is outdated.\" (<em>Bởi vì phần mềm hiện tại của chúng tôi đã  lỗi thời.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Because our current software is outdated.\" (<em>Bởi vì phần mềm hiện tại của chúng tôi đã lỗi thời.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "installing",
@@ -7480,7 +7492,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-21.mp3"
+        "audio": "media/part02_practice/questions/t10_q21.mp3"
       },
       {
         "id": 22,
@@ -7488,16 +7500,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "That portable projector was recently replaced.",
           "B": "An unexpected surplus.",
-          "C": "I sent an e - mail a few minutes ago"
+          "C": "I sent an e-mail a few minutes ago."
         },
         "answer": "C",
-        "vietnamese_question": "Khi nào dự báo chi phí cho tháng tới sẽ sẵn  sàng?",
+        "vietnamese_question": "Khi nào dự báo chi phí cho tháng tới sẽ sẵn sàng?",
         "vietnamese_choices": {
-          "A": "Máy chiếu di động đó gần đây đã được thay  thế.",
+          "A": "Máy chiếu di động đó gần đây đã được thay thế.",
           "B": "Một khoản thặng dư bất ngờ.",
           "C": "Tôi đã gửi e-mail cách đây vài phút"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I sent an e - mail a few minutes ago\" (<em>Tôi đã gửi e-mail cách đây vài phút</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"I sent an e-mail a few minutes ago.\" (<em>Tôi đã gửi e-mail cách đây vài phút</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "recently",
@@ -7506,22 +7518,22 @@ window.part02PracticeData = [
             "vi": "gần đây"
           }
         ],
-        "audio": "media/E26-T10-22.mp3"
+        "audio": "media/part02_practice/questions/t10_q22.mp3"
       },
       {
         "id": 23,
-        "question": "Would you ask Tae - Joon to help set up the product display?",
+        "question": "Would you ask Tae-Joon to help set up the product display?",
         "choices": {
           "A": "Several kinds of headsets.",
           "B": "No, I can do it myself.",
-          "C": "I can't see the bottom line of the chart"
+          "C": "I can't see the bottom line of the chart."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có nhờ Tae-Joon giúp sắp xếp trưng bày  sản phẩm không?",
+        "vietnamese_question": "Bạn có nhờ Tae-Joon giúp sắp xếp trưng bày sản phẩm không?",
         "vietnamese_choices": {
           "A": "Một số loại tai nghe.",
           "B": "Không, tôi có thể tự làm được.",
-          "C": "Tôi không thể nhìn thấy dòng dưới cùng  của biểu đồ"
+          "C": "Tôi không thể nhìn thấy dòng dưới cùng của biểu đồ"
         },
         "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (B):</strong> \"No, I can do it myself.\" (<em>Không, tôi có thể tự làm được.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
         "vocabulary": [
@@ -7538,7 +7550,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-23.mp3"
+        "audio": "media/part02_practice/questions/t10_q23.mp3"
       },
       {
         "id": 24,
@@ -7564,7 +7576,7 @@ window.part02PracticeData = [
             "vi": "hợp đồng"
           }
         ],
-        "audio": "media/E26-T10-24.mp3"
+        "audio": "media/part02_practice/questions/t10_q24.mp3"
       },
       {
         "id": 25,
@@ -7572,16 +7584,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "No, I can't hear anything.",
           "B": "Company headquarters.",
-          "C": "Because she's meeting with her manager"
+          "C": "Because she's meeting with her manager."
         },
         "answer": "C",
         "vietnamese_question": "Tại sao cô Pérez vẫn chưa đến?",
         "vietnamese_choices": {
           "A": "Không, tôi không thể nghe thấy gì cả.",
           "B": "Trụ sở công ty.",
-          "C": "Bởi vì cô ấy đang gặp người quản lý của  mình"
+          "C": "Bởi vì cô ấy đang gặp người quản lý của mình"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Because she's meeting with her manager\" (<em>Bởi vì cô ấy đang gặp người quản lý của  mình</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHY (HỎI LÝ DO / NGUYÊN NHÂN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"Because she's meeting with her manager.\" (<em>Bởi vì cô ấy đang gặp người quản lý của mình</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án giải thích lý do (thường chứa because, to V, for, due to... hoặc giải thích trực tiếp tình huống).</p>\n</div>",
         "vocabulary": [
           {
             "en": "manager",
@@ -7596,18 +7608,18 @@ window.part02PracticeData = [
             "vi": "trụ sở chính"
           }
         ],
-        "audio": "media/E26-T10-25.mp3"
+        "audio": "media/part02_practice/questions/t10_q25.mp3"
       },
       {
         "id": 26,
         "question": "I heard that our company might be merging with another one.",
         "choices": {
           "A": "Oh, I didn't know that.",
-          "B": "A good - selling product.",
+          "B": "A good-selling product.",
           "C": "Akira told me to put it there."
         },
         "answer": "A",
-        "vietnamese_question": "Tôi nghe nói công ty chúng tôi có thể sẽ sáp  nhập với một công ty khác.",
+        "vietnamese_question": "Tôi nghe nói công ty chúng tôi có thể sẽ sáp nhập với một công ty khác.",
         "vietnamese_choices": {
           "A": "Ồ, tôi đã không biết điều đó.",
           "B": "Một sản phẩm bán chạy.",
@@ -7628,7 +7640,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-26.mp3"
+        "audio": "media/part02_practice/questions/t10_q26.mp3"
       },
       {
         "id": 27,
@@ -7639,7 +7651,7 @@ window.part02PracticeData = [
           "C": "They're both studying nursing."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn có thể mời bệnh nhân tiếp theo vào được  không?",
+        "vietnamese_question": "Bạn có thể mời bệnh nhân tiếp theo vào được không?",
         "vietnamese_choices": {
           "A": "Nó ở trong tủ.",
           "B": "Phòng chờ trống.",
@@ -7660,7 +7672,7 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-27.mp3"
+        "audio": "media/part02_practice/questions/t10_q27.mp3"
       },
       {
         "id": 28,
@@ -7692,39 +7704,51 @@ window.part02PracticeData = [
             "vi": "từ vựng trong câu"
           }
         ],
-        "audio": "media/E26-T10-28.mp3"
+        "audio": "media/part02_practice/questions/t10_q28.mp3"
       },
       {
         "id": 29,
-        "question": "Are the blueberries ready to harvest?",
+        "question": "How long will it take us to get to the theater?",
         "choices": {
-          "A": "I'll try the strawberry flavor.",
-          "B": "We have a view of the beach.",
-          "C": "It's not summertime yet."
+          "A": "Tickets for the performance are sold-out.",
+          "B": "At seven o'clock, I think.",
+          "C": "Actually, I don't have a preference."
         },
         "answer": "A",
-        "vietnamese_question": "Quả việt quất đã sẵn sàng để thu hoạch chưa?",
+        "vietnamese_question": "Chúng ta sẽ mất bao lâu để đến nhà hát?",
         "vietnamese_choices": {
-          "A": "Tôi sẽ thử hương dâu.",
-          "B": "Chúng tôi có tầm nhìn ra bãi biển.",
-          "C": "Vẫn chưa đến mùa hè."
+          "A": "Vé cho buổi biểu diễn đã bán hết rồi.",
+          "B": "Tôi nghĩ là lúc 7 giờ.",
+          "C": "Thực ra tôi không có sở thích cụ thể nào cả."
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI YES/NO (TRỢ ĐỘNG TỪ / TO-BE)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"I'll try the strawberry flavor.\" (<em>Tôi sẽ thử hương dâu.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án có thể trả lời trực tiếp bằng Yes/No hoặc trả lời gián tiếp cung cấp thông tin liên quan.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI HOW LONG (KHOẢNG THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (A):</strong> \"Tickets for the performance are sold-out.\" (<em>Vé cho buổi biểu diễn đã bán hết rồi.</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Câu trả lời gián tiếp: thay vì trả lời thời gian di chuyển, người nói báo rằng vé biểu diễn đã bán hết (nên không cần đi nữa). Loại (B) vì trả lời mốc giờ thay vì khoảng thời gian.</p>\n</div>",
         "vocabulary": [
           {
-            "en": "blueberries",
-            "ipa": "/blueberries/",
-            "pos": "n/v",
-            "vi": "từ vựng trong câu"
+            "en": "theater",
+            "ipa": "/ˈθɪətər/",
+            "pos": "n",
+            "vi": "nhà hát, rạp hát"
           },
           {
-            "en": "ready",
-            "ipa": "/ready/",
-            "pos": "n/v",
-            "vi": "từ vựng trong câu"
+            "en": "performance",
+            "ipa": "/pəˈfɔːməns/",
+            "pos": "n",
+            "vi": "buổi biểu diễn"
+          },
+          {
+            "en": "sold-out",
+            "ipa": "/ˌsəʊld ˈaʊt/",
+            "pos": "adj",
+            "vi": "đã bán hết, cháy vé"
+          },
+          {
+            "en": "preference",
+            "ipa": "/ˈprefrəns/",
+            "pos": "n",
+            "vi": "sự ưa thích, ưu tiên"
           }
         ],
-        "audio": "media/E26-T10-29.mp3"
+        "audio": "media/part02_practice/questions/t10_q29.mp3"
       },
       {
         "id": 30,
@@ -7732,12 +7756,12 @@ window.part02PracticeData = [
         "choices": {
           "A": "We enjoyed their talk.",
           "B": "I'll probably do both.",
-          "C": "Twenty people attended. 3 1."
+          "C": "Twenty people attended."
         },
         "answer": "B",
-        "vietnamese_question": "Bạn sẽ gửi báo cáo hay thuyết trình cho khách  hàng của chúng ta phải không?",
+        "vietnamese_question": "Bạn sẽ gửi báo cáo hay thuyết trình cho khách hàng của chúng ta phải không?",
         "vietnamese_choices": {
-          "A": "Chúng tôi rất thích cuộc nói chuyện của  họ.",
+          "A": "Chúng tôi rất thích cuộc nói chuyện của họ.",
           "B": "Có lẽ tôi sẽ làm cả hai.",
           "C": "Hai mươi người đã tham dự."
         },
@@ -7756,7 +7780,7 @@ window.part02PracticeData = [
             "vi": "báo cáo"
           }
         ],
-        "audio": "media/E26-T10-30.mp3"
+        "audio": "media/part02_practice/questions/t10_q30.mp3"
       },
       {
         "id": 31,
@@ -7764,16 +7788,16 @@ window.part02PracticeData = [
         "choices": {
           "A": "Sure, my car will be fixed soon.",
           "B": "Next to the main entrance.",
-          "C": "The design still needs to be finalized"
+          "C": "The design still needs to be finalized."
         },
         "answer": "C",
-        "vietnamese_question": "Khi nào chúng ta nên treo áp phích cho hội nghị  của mình?",
+        "vietnamese_question": "Khi nào chúng ta nên treo áp phích cho hội nghị của mình?",
         "vietnamese_choices": {
           "A": "Chắc chắn rồi, xe của tôi sẽ sớm được sửa.",
           "B": "Bên cạnh lối vào chính.",
           "C": "Thiết kế vẫn cần được hoàn thiện"
         },
-        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"The design still needs to be finalized\" (<em>Thiết kế vẫn cần được hoàn thiện</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
+        "explanation": "<div style='line-height: 1.8;'>\n<div style='margin-bottom: 8px;'><span style='background: rgba(37, 99, 235, 0.15); color: #2563eb; font-weight: 700; padding: 2px 10px; border-radius: 4px; font-size: 0.85rem;'>DẠNG CÂU: CÂU HỎI WHEN (HỎI THỜI GIAN)</span></div>\n<p style='margin-bottom: 8px;'>👉 <strong>Đáp án chính xác là (C):</strong> \"The design still needs to be finalized.\" (<em>Thiết kế vẫn cần được hoàn thiện</em>).</p>\n<p style='color: var(--text-muted); font-size: 0.95rem; margin-bottom: 0;'>💡 <strong>Chiến thuật phản xạ:</strong> Đáp án thường chỉ mốc hoặc khoảng thời gian (ngày, giờ, thứ...). Tránh bẫy nhầm lẫn giữa When và Where.</p>\n</div>",
         "vocabulary": [
           {
             "en": "conference",
@@ -7782,7 +7806,7 @@ window.part02PracticeData = [
             "vi": "hội nghị"
           }
         ],
-        "audio": "media/E26-T10-31.mp3"
+        "audio": "media/part02_practice/questions/t10_q31.mp3"
       }
     ]
   }

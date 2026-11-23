@@ -7106,7 +7106,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 `;
             }
 
-            const qAudioSrc = q.audio || `media/E26-T${testData.id.split('_')[1]}-${qNum < 10 ? '0' + qNum : qNum}.mp3`;
+            const qAudioSrc = q.audio || `media/part02_practice/questions/t${testData.id.split('_')[1]}_q${qNum < 10 ? '0' + qNum : qNum}.mp3`;
 
             reviewQuestionsHtml += `
                 <div class="p2-review-card ${isCorrect ? 'is-correct' : 'is-wrong'}" id="review-card-q${qNum}">
