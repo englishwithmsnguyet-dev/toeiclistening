@@ -2511,12 +2511,9 @@ window.part02Data = [
         "slide_index": 252,
         "text": [
           "<span style=\"font-weight: 700\">1. Dạng câu hỏi</span>",
-          "Đây là nhóm câu dùng để:",
-          "<span style=\"font-style: italic\">đưa ra gợi ý hoặc đề xuất </span>",
-          "<span style=\"font-style: italic\">yêu cầu hoặc nhờ vả </span>",
-          "<span style=\"font-style: italic\">mời hoặc rủ ai đó tham gia một hoạt động </span>",
-          "<span style=\"font-style: italic\">đề nghị giúp đỡ hoặc cung cấp dịch vụ </span>",
-          "<span style=\"font-weight: 700\">Trong TOEIC Part 2, các dạng câu này thường xuất hiện trong các tình huống giao tiếp hằng ngày hoặc nơi làm việc.</span>"
+          "<p style=\"font-size: 1.05rem; color: #475569; margin: 2px 0 14px 0;\">Đây là nhóm câu được sử dụng với <strong style=\"color: #0284c7;\">4 mục đích giao tiếp</strong> chính:</p>",
+          "<div class=\"p2-purpose-grid\"><div class=\"p2-purpose-card p2-card-blue\"><div class=\"p2-purpose-header\"><span class=\"p2-purpose-icon\">💡</span><div class=\"p2-purpose-title\">Gợi ý / Đề xuất</div></div><div class=\"p2-purpose-desc\">Đưa ra ý tưởng, gợi ý giải pháp hoặc đề xuất cùng thực hiện việc gì đó.</div><div class=\"p2-purpose-examples\">Let’s... / Why don’t we...? / How about...?</div></div><div class=\"p2-purpose-card p2-card-green\"><div class=\"p2-purpose-header\"><span class=\"p2-purpose-icon\">🤝</span><div class=\"p2-purpose-title\">Yêu cầu / Nhờ vả</div></div><div class=\"p2-purpose-desc\">Nhờ người khác làm việc gì đó một cách lịch sự, nhã nhặn.</div><div class=\"p2-purpose-examples\">Could you...? / Would you mind...? / Can you...?</div></div><div class=\"p2-purpose-card p2-card-purple\"><div class=\"p2-purpose-header\"><span class=\"p2-purpose-icon\">💌</span><div class=\"p2-purpose-title\">Lời mời / Rủ rê</div></div><div class=\"p2-purpose-desc\">Mời hoặc rủ ai đó tham gia một sự kiện, hoạt động cụ thể.</div><div class=\"p2-purpose-examples\">Would you like to...? / Do you want to...?</div></div><div class=\"p2-purpose-card p2-card-amber\"><div class=\"p2-purpose-header\"><span class=\"p2-purpose-icon\">🙋</span><div class=\"p2-purpose-title\">Đề nghị giúp đỡ</div></div><div class=\"p2-purpose-desc\">Chủ động đề nghị hỗ trợ hoặc cung cấp dịch vụ cho đối phương.</div><div class=\"p2-purpose-examples\">Would you like me to...? / Let me...</div></div></div>",
+          "<div class=\"p2-note-box\"><span class=\"p2-note-icon\">📌</span><div class=\"p2-note-content\"><strong>Bối cảnh trong bài thi TOEIC Part 2:</strong> Các dạng câu này xuất hiện rất nhiều trong các tình huống giao tiếp công sở thường nhật (nhờ gửi tài liệu, mời đi ăn trưa, đề nghị hỗ trợ công việc) hoặc dịch vụ khách hàng.</div></div>"
         ]
       },
       {
@@ -2580,10 +2577,10 @@ window.part02Data = [
         "slide_index": 258,
         "text": [
           "<span style=\"color: #0284c7; font-weight: 700\">6. Would you like me to + V₀?</span>",
-          "Dùng để đề nghị giúp đỡ ai đó.",
+          "Dùng để đề nghị giúp đỡ ai đó (Để tôi giúp bạn... nhé? / Bạn có muốn tôi...?).",
           "<span style=\"font-weight: 700\">Ex:</span>",
-          "<span style=\"font-style: italic\">Would you like to join us for dinner?</span>",
-          "<span style=\"font-style: italic\">Would you like to attend the conference next week?</span>"
+          "<span style=\"font-style: italic\">Would you like me to help you with that report?</span>",
+          "<span style=\"font-style: italic\">Would you like me to pick you up at the airport?</span>"
         ]
       },
       {

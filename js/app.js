@@ -7551,6 +7551,110 @@ document.addEventListener("DOMContentLoaded", () => {
                     padding: 14px 18px; border-radius: 12px; border-left: 4px solid #0284c7;
                     font-size: 1.1rem; line-height: 1.8; margin: 8px 0;
                 }
+
+                /* PURPOSE GRID & CARDS (FOR P2 SUGGESTIONS & INVITATIONS) */
+                .p2-purpose-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+                    gap: 16px;
+                    margin: 16px 0;
+                }
+                .p2-purpose-card {
+                    background: #ffffff;
+                    border-radius: 14px;
+                    padding: 18px 20px;
+                    border: 1.5px solid #e2e8f0;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+                    transition: all 0.25s ease;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    position: relative;
+                    overflow: hidden;
+                }
+                .p2-purpose-card::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 5px;
+                    height: 100%;
+                }
+                .p2-purpose-card:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+                }
+                .p2-card-blue { border-color: #bfdbfe; background: linear-gradient(180deg, #ffffff 0%, #eff6ff 100%); }
+                .p2-card-blue::before { background: #2563eb; }
+                .p2-card-green { border-color: #bbf7d0; background: linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%); }
+                .p2-card-green::before { background: #16a34a; }
+                .p2-card-purple { border-color: #ddd6fe; background: linear-gradient(180deg, #ffffff 0%, #faf5ff 100%); }
+                .p2-card-purple::before { background: #8b5cf6; }
+                .p2-card-amber { border-color: #fde68a; background: linear-gradient(180deg, #ffffff 0%, #fffbeb 100%); }
+                .p2-card-amber::before { background: #f59e0b; }
+                
+                .p2-purpose-header {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                }
+                .p2-purpose-icon {
+                    font-size: 1.3rem;
+                    width: 36px;
+                    height: 36px;
+                    min-width: 36px;
+                    border-radius: 10px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: #ffffff;
+                    box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+                    border: 1px solid rgba(0,0,0,0.05);
+                }
+                .p2-purpose-title {
+                    font-weight: 800;
+                    font-size: 1.05rem;
+                    color: #0f172a;
+                }
+                .p2-purpose-desc {
+                    font-size: 0.95rem;
+                    color: #475569;
+                    line-height: 1.5;
+                }
+                .p2-purpose-examples {
+                    font-size: 0.88rem;
+                    font-weight: 600;
+                    background: rgba(255,255,255,0.9);
+                    padding: 6px 10px;
+                    border-radius: 8px;
+                    color: #0369a1;
+                    border: 1px dashed rgba(2, 132, 199, 0.35);
+                    margin-top: 4px;
+                }
+                
+                .p2-note-box {
+                    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+                    border: 1.5px solid #7dd3fc;
+                    border-radius: 12px;
+                    padding: 16px 20px;
+                    margin-top: 14px;
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 12px;
+                }
+                .p2-note-icon {
+                    font-size: 1.3rem;
+                    flex-shrink: 0;
+                    margin-top: 2px;
+                }
+                .p2-note-content {
+                    font-size: 1rem;
+                    color: #0c4a6e;
+                    line-height: 1.6;
+                }
+                .p2-note-content strong {
+                    color: #0369a1;
+                }
                 
                 /* IN-LINE VOCABULARY BOX */
                 .p2-vocab-box {
@@ -7747,7 +7851,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         const rawText = line.replace(/<[^>]+>/g, '').trim();
                         if (line.startsWith('👉') || rawText.toLowerCase().includes('ví dụ') || rawText.toLowerCase().includes('ví dụ:')) {
                             listHtml += `<div class="p2-text-highlight">${line.replace('👉', '').trim()}</div>`;
-                        } else if (line.trim().toLowerCase().startsWith('<img')) {
+                        } else if (line.trim().toLowerCase().startsWith('<img') || line.trim().toLowerCase().startsWith('<div') || line.trim().toLowerCase().startsWith('<table') || line.trim().toLowerCase().startsWith('<ul') || line.trim().toLowerCase().startsWith('<ol') || line.trim().toLowerCase().startsWith('<p')) {
                             listHtml += line;
                         } else if (/^\d+\.\d+/.test(rawText) || line.includes('#7c3aed') || line.includes('#7030A0')) {
                             listHtml += `<div class="p2-subheading-line">${line}</div>`;
