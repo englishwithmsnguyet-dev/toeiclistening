@@ -464,31 +464,12 @@ document.addEventListener("DOMContentLoaded", () => {
         // Giảng viên / Quản trị viên: Toàn quyền mở khóa
         if (role && role.type === "teacher") return false;
 
-        // 1. Học viên Phạm Thị Thu Trang: Mở toàn bộ PART 01 + Tổng quan, WH-Questions, Yes/No Questions & Choice Questions của PART 02
+        // 1. Học viên Phạm Thị Thu Trang: Mở toàn bộ PART 01 & PART 02 (gồm toàn bộ bài học, Chép chính tả và TEST 01 - TEST 10)
         if (role && role.type === "thu_trang") {
-            if (partNum === 1) {
-                return false; // Mở toàn bộ Part 01
+            if (partNum === 1 || partNum === 2) {
+                return false; // Mở toàn bộ Part 01 và Part 02 (bao gồm tất cả các TEST)
             }
-            if (partNum === 2) {
-                if (!sectionId) return false; // Cho phép mở giao diện Part 02
-                const baseId = String(sectionId).replace(/_(trabai|dictation)$/, "");
-                const allowedP2 = [
-                    "overview",
-                    "info_who",
-                    "info_where",
-                    "info_when",
-                    "info_why",
-                    "info_what",
-                    "info_how",
-                    "yn_basic",
-                    "yn_negative",
-                    "yn_tag",
-                    "yn_embedded",
-                    "choice_questions"
-                ];
-                return !allowedP2.includes(baseId);
-            }
-            return true; // Khóa các phần còn lại của Part 02, và khóa Part 03, Part 04
+            return true; // Khóa Part 03, Part 04
         }
 
         // 2. Học viên Lương Thị Yến Nhi & Nguyễn Hoàng Caty: "Yến Nhi và Caty mở được tới PART 03"
